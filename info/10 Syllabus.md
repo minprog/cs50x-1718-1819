@@ -1,4 +1,4 @@
-# CS50x<br><small>Programming 1+2</small>
+# CS50x University of Amsterdam<br><small>Programming 1+2</small>
 
 ## Syllabus, Fall 2017
 
