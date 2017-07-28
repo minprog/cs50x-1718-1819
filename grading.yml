@@ -1,0 +1,154 @@
+grades:
+    scratch:
+        type: float
+        subgrades:
+            scope: integer
+            correctness: integer
+        calculation: (scope * correctness / 25.0 * 9 + 1).round(1)
+        hide_calculated: true
+    c:
+        type: float
+        subgrades:
+            scope: integer
+            correctness: integer
+            design: integer
+            style: integer
+        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        hide_calculated: true
+    crypto:
+        type: float
+        subgrades:
+            scope: integer
+            correctness: integer
+            design: integer
+            style: integer
+        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        hide_calculated: true
+    fifteen:
+        type: float
+        subgrades:
+            scope: integer
+            correctness: integer
+            design: integer
+            style: integer
+        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        hide_calculated: true
+    forensics:
+        type: float
+        subgrades:
+            scope: integer
+            correctness: integer
+            design: integer
+            style: integer
+        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        hide_calculated: true
+    quiz1:
+        type: pass
+        subgrades:
+            points: integer
+        calculation: points >= 14 && -1 || 0
+    resit1:
+        type: pass
+        subgrades:
+            points: integer
+        calculation: points >= 14 && -1 || 0
+    mispell:
+        type: float
+        subgrades:
+            scope: integer
+            correctness: integer
+            design: integer
+            style: integer
+            hacker: boolean
+        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        hide_calculated: true
+    sentimental:
+        type: float
+        subgrades:
+            scope: integer
+            correctness: integer
+            design: integer
+            style: integer
+            hacker: boolean
+        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        hide_calculated: true
+    finance:
+        type: float
+        subgrades:
+            scope: integer
+            correctness: integer
+            design: integer
+            style: integer
+            hacker: boolean
+        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        hide_calculated: true
+    mashup:
+        type: float
+        subgrades:
+            scope: integer
+            correctness: integer
+            design: integer
+            style: integer
+            hacker: boolean
+        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        hide_calculated: true
+    quiz2:
+        type: pass
+        subgrades:
+            points: integer
+        calculation: points >= 14 && -1 || 0
+    resit2:
+        type: pass
+        subgrades:
+            points: integer
+
+calculation:
+    p1normal:
+        quiz1: 0
+        psets1: 100
+    p1resit:
+        resit1: 0
+        psets1: 100
+    p2normal:
+        quiz2: 0
+        psets2: 100
+    p2resit:
+        resit2: 0
+        psets2: 100
+
+psets1:
+    drop: scope
+    submits:
+        scratch: 1
+        c: 1
+        crypto: 1
+        fifteen: 1
+        forensics: 1
+
+psets2:
+    drop: scope
+    submits:
+        mispell: 1
+        sentimental: 1
+        finance: 1
+        mashup: 1
+
+quiz1:
+    required: true
+    submits:
+        quiz1: 1
+
+resit1:
+    required: true
+    submits:
+        resit1: 1
+
+quiz2:
+    required: true
+    submits:
+        quiz2: 1
+
+resit2:
+    required: true
+    submits:
+        resit2: 1

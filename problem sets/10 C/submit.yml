@@ -1,0 +1,11 @@
+name: c
+files:
+    everyone:
+        - hello.c
+        - water.c
+    less:
+        - greedy.c
+        - mario.c
+    more:
+        - credit.c
+        - mario.c
