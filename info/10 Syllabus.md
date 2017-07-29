@@ -25,20 +25,32 @@ problem sets, and take a quiz. You are also expected to attend the daily lab ses
 
 ## Grades
 
-All students must ordinarily submit all five problem sets and take the quiz in
+All students must ordinarily submit all problem sets and take the quiz in
 order to be eligible for a satisfactory grade unless granted an exception in
 writing by the course's heads.
 
-Problem sets are evaluated primarily along axes of scope,
-correctness, design, and style, with scores ordinarily determined by scope × (3
-× correctness + 2 × design + 1 × style). Mid-semester
-comparisons among students of scores are not reliable indicators of standing.
+The final grade for this course is primarily determined by averaging the scores for the problem sets. The quiz has to be passed, but has no weight in the final grade.
 
-Although you must submit all problem sets, your lowest score among those
-problem sets on which you received perfect scores for the axis of scope will be
-dropped when final grades are determined.
+### Programming 1
 
-The final grade for this course is primarily determined by averaging the scores for the problem sets. The final exam has to be passed, but has no weight in the final grade.
+|               | Language   |     |
+| ------------- | ---------- | --- |
+| Problem Set 0 | Scratch    |  8% |
+| Problem Set 1 | C          | 23% |
+| Problem Set 2 | C          | 23% |
+| Problem Set 3 | C          | 23% |
+| Problem Set 4 | C          | 23% |
+| Quiz          |            |  0% |
+
+### Programming 2
+
+|               | Language   |     |
+| ------------- | ---------- | --- |
+| Problem Set 5 | C          | 25% |
+| Problem Set 6 | Python     | 25% |
+| Problem Set 7 | HTML       | 25% |
+| Problem Set 8 | Javascript | 25% |
+| Quiz          |            |  0% |
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
@@ -49,7 +61,7 @@ The course is not graded on a curve. The course does not have pre-determined
 cutoffs for final grades. Those less comfortable and somewhere in between are
 not at a disadvantage vis-à-vis those more comfortable. Each student's final
 grade is individually determined at term's end after input from the teaching
-fellows. Remarkable effort and upward trending are always considered.
+assistants. Remarkable effort and upward trending are always considered.
 
 ## Lectures
 
@@ -77,28 +89,34 @@ or in particularly small groups. To arrange, contact the course's heads.
 
 ## Problem Sets
 
-Five problem sets are assigned during the course. Each is due by a pre-set deadline: Friday, just before midnight (except the first one!). Lateness of electronic submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to submitting twenty-four hours late. Late work is not ordinarily accepted, except in cases of medical emergency.
-
-A schedule of problem sets, subject to change, appears below.
+Five problem sets are assigned during the course. Each is due by a pre-set deadline: Friday, just before midnight (except the first one!). Lateness of electronic submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to submitting twenty-four hours late. Late work is not ordinarily accepted, except in cases of medical emergency. A schedule of problem sets, subject to change, appears below.
 
 ### Programming 1
 
-|               | Language   | Hispeed |  Lospeed    |  Avond    |  
-| ------------- | ---------- | ------- |  ------ |  ------ |  
-| Problem Set 0 | Scratch    |  4-Sep  |  15-Sep |  15-Sep |  
-| Problem Set 1 | C          |  7-Sep  |   7-Oct |   7-Oct |  
-| Problem Set 2 | C          | 13-Sep  |   1-Nov |   1-Nov |  
-| Problem Set 3 | C          | 19-Sep  |  16-Nov |  16-Nov |  
-| Problem Set 4 | C          | 26-Sep  |   7-Dec |   7-Dec |  
+|               | Hispeed | Lospeed |  Avond |
+| ------------- | ------- | ------- | ------ |
+| Problem Set 0 |  4-Sep  |  15-Sep | 15-Sep |
+| Problem Set 1 |  7-Sep  |   7-Oct |  7-Oct |
+| Problem Set 2 | 13-Sep  |   1-Nov |  1-Nov |
+| Problem Set 3 | 19-Sep  |  16-Nov | 16-Nov |
+| Problem Set 4 | 26-Sep  |   7-Dec |  7-Dec |
 
 ### Programming 2
 
-|               | Language   | Hispeed    |  Lospeed    |  Avond    |  
-| ------------- | ---------- | ------ |  ------ |  ------ |  
-| Problem Set 5 | C          |  1-Mar |   1-Mar |   1-Mar |  
-| Problem Set 6 | Python     |  1-Apr |   1-Apr |   1-Apr |  
-| Problem Set 7 | HTML       |  1-May |   1-May |   1-May |  
-| Problem Set 8 | Javascript |  1-Jun |   1-Jun |   1-Jun |  
+|               | Hispeed | Lospeed |  Avond |
+| ------------- | ------- | ------- | ------ |
+| Problem Set 5 |  1-Mar  |  1-Mar  |  1-Mar |
+| Problem Set 6 |  1-Apr  |  1-Apr  |  1-Apr |
+| Problem Set 7 |  1-May  |  1-May  |  1-May |
+| Problem Set 8 |  1-Jun  |  1-Jun  |  1-Jun |
+
+Problem sets are evaluated primarily along axes of scope,
+correctness, design, and style, with scores ordinarily determined by scope × (3
+× correctness + 2 × design + 1 × style).
+
+Although you must submit all problem sets, your lowest score among those
+problem sets on which you received perfect scores for the axis of scope will be
+dropped when final grades are determined.
 
 Re-submission of problem sets is not possible until the following semester. If you re-submit any problem set for a second time, we require that it is complete and bug-free, so as to not burden the staff with grading. It has shown to be vital to engage with all problem sets in order to pass this course.
 
