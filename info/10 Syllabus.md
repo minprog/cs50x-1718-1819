@@ -82,7 +82,7 @@ Five problem sets are assigned during the course. Each is due by a pre-set deadl
 A schedule of problem sets, subject to change, appears below.
 
 <div class="row">
-	<div class="col-md-4">
+<div class="col-md-4">
 
 ### Hispeed
 
@@ -101,8 +101,8 @@ A schedule of problem sets, subject to change, appears below.
 | Problem Set 7 | HTML       |  1-May |  
 | Problem Set 8 | Javascript |  1-Jun |  
 
-	</div>
-	<div class="col-md-4">
+</div>
+<div class="col-md-4">
   	
 ### Lospeed
 
@@ -121,8 +121,8 @@ A schedule of problem sets, subject to change, appears below.
 | Problem Set 7 | HTML       |  1-May |  
 | Problem Set 8 | Javascript |  1-Jun |  
 
-	</div>
-	<div class="col-md-4">
+</div>
+<div class="col-md-4">
 
 ### Avond
 
@@ -141,7 +141,7 @@ A schedule of problem sets, subject to change, appears below.
 | Problem Set 7 | HTML       |  1-May |  
 | Problem Set 8 | Javascript |  1-Jun |  
 
-	</div>
+</div>
 </div>
 
 
