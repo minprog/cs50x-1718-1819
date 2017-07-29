@@ -81,69 +81,24 @@ Five problem sets are assigned during the course. Each is due by a pre-set deadl
 
 A schedule of problem sets, subject to change, appears below.
 
-<div class="row">
-<div class="col-md-4">
+### Programming 1
 
-### Hispeed
+|               | Language   | Hispeed |  Lospeed    |  Avond    |  
+| ------------- | ---------- | ------- |  ------ |  ------ |  
+| Problem Set 0 | Scratch    |  4-Sep  |  15-Sep |  15-Sep |  
+| Problem Set 1 | C          |  7-Sep  |   7-Oct |   7-Oct |  
+| Problem Set 2 | C          | 13-Sep  |   1-Nov |   1-Nov |  
+| Problem Set 3 | C          | 19-Sep  |  16-Nov |  16-Nov |  
+| Problem Set 4 | C          | 26-Sep  |   7-Dec |   7-Dec |  
 
-| Programming 1 | Language   | Due    |  
-| ------------- | ---------- | ------ |  
-| Problem Set 0 | Scratch    |  4-Sep |  
-| Problem Set 1 | C          |  7-Sep |  
-| Problem Set 2 | C          | 13-Sep |  
-| Problem Set 3 | C          | 19-Sep |  
-| Problem Set 4 | C          | 26-Sep |  
+### Programming 2
 
-| Programming 2 | Language   | Due    |  
-| ------------- | ---------- | ------ |  
-| Problem Set 5 | C          |  1-Mar |  
-| Problem Set 6 | Python     |  1-Apr |  
-| Problem Set 7 | HTML       |  1-May |  
-| Problem Set 8 | Javascript |  1-Jun |  
-
-</div>
-<div class="col-md-4">
-  	
-### Lospeed
-
-| Programming 1 | Language   | Due    |  
-| ------------- | ---------- | ------ |  
-| Problem Set 0 | Scratch    | 15-Sep |  
-| Problem Set 1 | C          |  7-Oct |  
-| Problem Set 2 | C          |  1-Nov |  
-| Problem Set 3 | C          | 16-Nov |  
-| Problem Set 4 | C          |  7-Dec |  
-
-| Programming 2 | Language   | Due    |  
-| ------------- | ---------- | ------ |  
-| Problem Set 5 | C          |  1-Mar |  
-| Problem Set 6 | Python     |  1-Apr |  
-| Problem Set 7 | HTML       |  1-May |  
-| Problem Set 8 | Javascript |  1-Jun |  
-
-</div>
-<div class="col-md-4">
-
-### Avond
-
-| Programming 1 | Language   | Due    |  
-| ------------- | ---------- | ------ |  
-| Problem Set 0 | Scratch    | 15-Sep |  
-| Problem Set 1 | C          |  7-Oct |  
-| Problem Set 2 | C          |  1-Nov |  
-| Problem Set 3 | C          | 16-Nov |  
-| Problem Set 4 | C          |  7-Dec |  
-
-| Programming 2 | Language   | Due    |  
-| ------------- | ---------- | ------ |  
-| Problem Set 5 | C          |  1-Mar |  
-| Problem Set 6 | Python     |  1-Apr |  
-| Problem Set 7 | HTML       |  1-May |  
-| Problem Set 8 | Javascript |  1-Jun |  
-
-</div>
-</div>
-
+|               | Language   | Hispeed    |  Lospeed    |  Avond    |  
+| ------------- | ---------- | ------ |  ------ |  ------ |  
+| Problem Set 5 | C          |  1-Mar |   1-Mar |   1-Mar |  
+| Problem Set 6 | Python     |  1-Apr |   1-Apr |   1-Apr |  
+| Problem Set 7 | HTML       |  1-May |   1-May |   1-May |  
+| Problem Set 8 | Javascript |  1-Jun |   1-Jun |   1-Jun |  
 
 Re-submission of problem sets is not possible until the following semester. If you re-submit any problem set for a second time, we require that it is complete and bug-free, so as to not burden the staff with grading. It has shown to be vital to engage with all problem sets in order to pass this course.
 
