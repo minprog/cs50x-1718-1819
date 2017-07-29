@@ -51,6 +51,110 @@ not at a disadvantage vis-à-vis those more comfortable. Each student's final
 grade is individually determined at term's end after input from the teaching
 fellows. Remarkable effort and upward trending are always considered.
 
+## Lectures
+
+Lectures discuss theory that helps you solve your problems sets and prepare you for the final exam. Watch the lectures before or on your way to the lab sessions, in order to be able to spend your lab time programming and asking questions.
+
+## Sections
+
+Lectures are supplemented by weekly, 90-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your teaching fellow and a group of classmates present, as well as to dive into hands-on activities.
+
+## Walkthroughs
+
+Embedded into problem sets are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs while starting with your problem sets.
+
+## Office Hours
+
+Office hours are opportunities for assistance with problem sets alongside the
+course's teaching assistants. Office hours ordinarily take place on weekdays.
+
+## Tutoring
+
+For students who avail themselves of the course's other resources but still
+find themselves struggling, the course offers tutoring, to the extent possible,
+providing opportunities for students to work with the course's staff one-on-one
+or in particularly small groups. To arrange, contact the course's heads.
+
+## Problem Sets
+
+Five problem sets are assigned during the course. Each is due by a pre-set deadline: Friday, just before midnight (except the first one!). Lateness of electronic submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to submitting twenty-four hours late. Late work is not ordinarily accepted, except in cases of medical emergency.
+
+A schedule of problem sets, subject to change, appears below.
+
+<div class="row">
+	<div class="col-md-4">
+
+### Hispeed
+
+| Programming 1 | Language   | Due    |  
+| ------------- | ---------- | ------ |  
+| Problem Set 0 | Scratch    |  4-Sep |  
+| Problem Set 1 | C          |  7-Sep |  
+| Problem Set 2 | C          | 13-Sep |  
+| Problem Set 3 | C          | 19-Sep |  
+| Problem Set 4 | C          | 26-Sep |  
+
+| Programming 2 | Language   | Due    |  
+| ------------- | ---------- | ------ |  
+| Problem Set 5 | C          |  1-Mar |  
+| Problem Set 6 | Python     |  1-Apr |  
+| Problem Set 7 | HTML       |  1-May |  
+| Problem Set 8 | Javascript |  1-Jun |  
+
+	</div>
+	<div class="col-md-4">
+  	
+### Lospeed
+
+| Programming 1 | Language   | Due    |  
+| ------------- | ---------- | ------ |  
+| Problem Set 0 | Scratch    | 15-Sep |  
+| Problem Set 1 | C          |  7-Oct |  
+| Problem Set 2 | C          |  1-Nov |  
+| Problem Set 3 | C          | 16-Nov |  
+| Problem Set 4 | C          |  7-Dec |  
+
+| Programming 2 | Language   | Due    |  
+| ------------- | ---------- | ------ |  
+| Problem Set 5 | C          |  1-Mar |  
+| Problem Set 6 | Python     |  1-Apr |  
+| Problem Set 7 | HTML       |  1-May |  
+| Problem Set 8 | Javascript |  1-Jun |  
+
+	</div>
+	<div class="col-md-4">
+
+### Avond
+
+| Programming 1 | Language   | Due    |  
+| ------------- | ---------- | ------ |  
+| Problem Set 0 | Scratch    | 15-Sep |  
+| Problem Set 1 | C          |  7-Oct |  
+| Problem Set 2 | C          |  1-Nov |  
+| Problem Set 3 | C          | 16-Nov |  
+| Problem Set 4 | C          |  7-Dec |  
+
+| Programming 2 | Language   | Due    |  
+| ------------- | ---------- | ------ |  
+| Problem Set 5 | C          |  1-Mar |  
+| Problem Set 6 | Python     |  1-Apr |  
+| Problem Set 7 | HTML       |  1-May |  
+| Problem Set 8 | Javascript |  1-Jun |  
+
+	</div>
+</div>
+
+
+Re-submission of problem sets is not possible until the following semester. If you re-submit any problem set for a second time, we require that it is complete and bug-free, so as to not burden the staff with grading. It has shown to be vital to engage with all problem sets in order to pass this course.
+
+## Test
+
+The course has one 60-minute test, covering weeks 0 to 2 and intending to check up on your progress in the course. The test does not need to be passed in order to pass the course.
+
+## Quiz
+
+The course has one 90-minute quiz. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. One resit is offered, as soon as one (1) week after the quiz.
+
 ## Books
 
 No books are required for this course. If one seeks additional reference, here are some suggestions:
@@ -85,54 +189,6 @@ Hacker's Delight, Second Edition
 Henry S. Warren Jr.  
 Pearson Education, 2013  
 ISBN 9780321842688
-
-## Lectures
-
-Lectures discuss theory that helps you solve your problems sets and prepare you for the final exam. Watch the lectures before or on your way to the lab sessions, in order to be able to spend your lab time programming and asking questions.
-
-## Sections
-
-Lectures are supplemented by weekly, 90-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your teaching fellow and a group of classmates present, as well as to dive into hands-on activities.
-
-## Walkthroughs
-
-Embedded into problem sets are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs while starting with your problem sets.
-
-## Office Hours
-
-Office hours are opportunities for assistance with problem sets alongside the
-course's teaching assistants. Office hours ordinarily take place on weekdays.
-
-## Tutoring
-
-For students who avail themselves of the course's other resources but still
-find themselves struggling, the course offers tutoring, to the extent possible,
-providing opportunities for students to work with the course's staff one-on-one
-or in particularly small groups. To arrange, contact the course's heads.
-
-## Problem Sets
-
-Five problem sets are assigned during the course. Each is due by a pre-set deadline: Friday, just before midnight (except the first one!). Lateness of electronic submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to submitting twenty-four hours late. Late work is not ordinarily accepted, except in cases of medical emergency.
-
-A schedule of problem sets, subject to change, appears below.
-
-| problem set   | language | due             |  
-| ------------- | -------- | --------------- |  
-| Problem Set 0 | Scratch  | 6-Feb at 23:59  |  
-| Problem Set 1 | C        | 10-Feb at 23:59 |  
-| Problem Set 2 | C        | 17-Feb at 23:59 |  
-| Problem Set 3 | C        | 24-Feb at 23:59 |  
-| Problem Set 4 | C        | 3-Mar at 23:59  |  
-
-Re-submission of problem sets is not possible until the following semester. If you re-submit any problem set for a second time, we require that it is complete and bug-free, so as to not burden the staff with grading. It has shown to be vital to engage with all problem sets in order to pass this course.
-
-## Test
-
-The course has one 60-minute test, covering weeks 0 to 2 and intending to check up on your progress in the course. The test does not need to be passed in order to pass the course.
-
-## Quiz
-
-The course has one 90-minute quiz. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. One resit is offered, as soon as one (1) week after the quiz.
 
 ## Doing your own work
 
