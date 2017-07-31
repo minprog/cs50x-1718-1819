@@ -31,9 +31,8 @@ writing by the course's heads.
 
 The final grade for this course is primarily determined by averaging the scores for the problem sets. The quiz has to be passed, but has no weight in the final grade.
 
-### Programming 1
+#### Programming 1
 
-| ------------- | -------- | --: |  
 | Problem Set 0 | Scratch  |  8% |  
 | Problem Set 1 | C        | 23% |  
 | Problem Set 2 | C        | 23% |  
@@ -41,9 +40,8 @@ The final grade for this course is primarily determined by averaging the scores 
 | Problem Set 4 | C        | 23% |  
 | Quiz          |          |  0% |  
 
-### Programming 2
+#### Programming 2
 
-| ------------- | ---------- | --: |  
 | Problem Set 5 | C          | 25% |  
 | Problem Set 6 | Python     | 25% |  
 | Problem Set 7 | HTML       | 25% |  
