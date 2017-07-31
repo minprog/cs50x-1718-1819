@@ -4,24 +4,24 @@
 
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for majors and non-majors alike, with or without prior programming experience.
 
-## Staff
+## Getting Started
 
-The course's staff is your instructor and many lab assistants.
-You are encouraged to speak to any of the staff at the lab. Do you have a question in writing? Feel free to send an e-mail to <help@mprog.nl>.
-
-Martijn Stegeman  
-*instructor*  
-mail: <m.stegeman@uva.nl>
-
-Hella Haanstra (head teaching assistant)  
-Tim Meijer
-
-Need help? Send us a message by using the "Ask" menu, above, during office hours.
+- Join the introductory lecture
+- Solve Problem Set 0 (available now)
+- Attend the lab to work on your problem set
+- Go to your first section and watch the next lecture
+- Prepare for the test and the quiz
+- If in doubt, contact the course's staff at <help@mprog.nl>
 
 ## Expectations
 
-You are expected to watch all lectures, attend all sections, submit five
-problem sets, and take a quiz. You are also expected to attend the daily lab sessions in order to get you moving quickly through the course.
+You are expected to watch all lectures, attend all sections, submit nine problem sets, and take a quiz. You are also expected to attend the lab sessions as required.
+
+## Asking Questions
+
+The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff at the lab to get help with your problem sets or to ask questions about lectures. Send a help request by using the "Ask" menu, above.
+
+Do you have a question in writing? Maybe need an exception? Feel free to send an e-mail to the course's heads via <help@mprog.nl>.
 
 ## Grades
 
@@ -33,24 +33,24 @@ The final grade for this course is primarily determined by averaging the scores 
 
 ### Programming 1
 
-|               | Language   |     |
-| ------------- | ---------- | --- |
-| Problem Set 0 | Scratch    |  8% |
-| Problem Set 1 | C          | 23% |
-| Problem Set 2 | C          | 23% |
-| Problem Set 3 | C          | 23% |
-| Problem Set 4 | C          | 23% |
-| Quiz          |            |  0% |
+|               | Language |     |  
+| ------------- | -------- | --: |  
+| Problem Set 0 | Scratch  |  8% |  
+| Problem Set 1 | C        | 23% |  
+| Problem Set 2 | C        | 23% |  
+| Problem Set 3 | C        | 23% |  
+| Problem Set 4 | C        | 23% |  
+| Quiz          |          |  0% |  
 
 ### Programming 2
 
-|               | Language   |     |
-| ------------- | ---------- | --- |
-| Problem Set 5 | C          | 25% |
-| Problem Set 6 | Python     | 25% |
-| Problem Set 7 | HTML       | 25% |
-| Problem Set 8 | Javascript | 25% |
-| Quiz          |            |  0% |
+|               | Language   |     |  
+| ------------- | ---------- | --: |  
+| Problem Set 5 | C          | 25% |  
+| Problem Set 6 | Python     | 25% |  
+| Problem Set 7 | HTML       | 25% |  
+| Problem Set 8 | Javascript | 25% |  
+| Quiz          |            |  0% |  
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
