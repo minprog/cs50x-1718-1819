@@ -33,8 +33,6 @@ The final grade for this course is primarily determined by averaging the scores 
 
 ### Programming 1
 
-|               | Language |     |  
-| ------------- | -------- | --: |  
 | Problem Set 0 | Scratch  |  8% |  
 | Problem Set 1 | C        | 23% |  
 | Problem Set 2 | C        | 23% |  
@@ -44,8 +42,6 @@ The final grade for this course is primarily determined by averaging the scores 
 
 ### Programming 2
 
-|               | Language   |     |  
-| ------------- | ---------- | --: |  
 | Problem Set 5 | C          | 25% |  
 | Problem Set 6 | Python     | 25% |  
 | Problem Set 7 | HTML       | 25% |  
