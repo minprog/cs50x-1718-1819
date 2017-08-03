@@ -10,7 +10,6 @@ Introduction to the intellectual enterprises of computer science and the art of 
 - Solve Problem Set 0 (available now)
 - Attend the lab to work on your problem set
 - Go to your first section and watch the next lecture
-- Prepare for the test and the quiz
 - If in doubt, contact the course's staff at <help@mprog.nl>
 
 ## Expectations
@@ -89,22 +88,22 @@ Five problem sets are assigned during the course. Each is due by a pre-set deadl
 
 ### Programming 1
 
-|               | Hispeed | Lospeed |  Avond |
-| ------------- | ------- | ------- | ------ |
-| Problem Set 0 |  4-Sep  |  15-Sep | 15-Sep |
-| Problem Set 1 |  7-Sep  |   7-Oct |  7-Oct |
-| Problem Set 2 | 13-Sep  |   1-Nov |  1-Nov |
-| Problem Set 3 | 19-Sep  |  16-Nov | 16-Nov |
-| Problem Set 4 | 26-Sep  |   7-Dec |  7-Dec |
+|               | Hispeed    | Lospeed    | Avond      |  
+| ------------- | ---------- | ---------- | ---------- |  
+| Problem Set 0 | Mon  4-Sep | Wed 6-Sep  | Thu 14-Sep |  
+| Problem Set 1 | Thu  7-Sep | Thu 14-Sep | Thu 5-Oct  |  
+| Problem Set 2 | Thu 14-Sep | Tue 26-Sep | Thu 2-Nov  |  
+| Problem Set 3 | Wed 20-Sep | Thu 5-Oct  | Thu 23-Nov |  
+| Problem Set 4 | Wed 27-Sep | Thu 19-Oct | Thu 14-Dec |  
 
 ### Programming 2
 
-|               | Hispeed | Lospeed |  Avond |
-| ------------- | ------- | ------- | ------ |
-| Problem Set 5 |  1-Mar  |  1-Mar  |  1-Mar |
-| Problem Set 6 |  1-Apr  |  1-Apr  |  1-Apr |
-| Problem Set 7 |  1-May  |  1-May  |  1-May |
-| Problem Set 8 |  1-Jun  |  1-Jun  |  1-Jun |
+|               | Hispeed    | Lospeed    | Avond      |  
+| ------------- | ---------- | ---------- | ---------- |  
+| Problem Set 5 | Fri 6-Oct  | Thu 9-Nov  | Thu 1-Mar  |  
+| Problem Set 6 | Thu 12-Oct | Thu 23-Nov | Thu 29-Mar |  
+| Problem Set 7 | Thu 19-Oct | Tue 5-Dec  | Thu 26-Apr |  
+| Problem Set 8 | Wed 25-Oct | Thu 14-Dec | Thu 24-May |  
 
 Problem sets are evaluated primarily along axes of scope,
 correctness, design, and style, with scores ordinarily determined by scope × (3
