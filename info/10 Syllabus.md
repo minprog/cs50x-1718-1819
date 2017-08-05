@@ -84,7 +84,7 @@ or in particularly small groups. To arrange, contact the course's heads.
 
 ## Problem Sets
 
-Five problem sets are assigned during the course. Each is due by a pre-set deadline: Friday, just before midnight (except the first one!). Lateness of electronic submissions is determined down to the minute by submissions' timestamps. Submitting more than seven minutes late is equivalent to submitting twenty-four hours late. Late work is not ordinarily accepted, except in cases of medical emergency. A schedule of problem sets, subject to change, appears below.
+Nine problem sets are assigned during the course. Each is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency. A schedule of problem sets and deadlines, subject to change, appears below.
 
 ### Programming 1
 
@@ -96,6 +96,8 @@ Five problem sets are assigned during the course. Each is due by a pre-set deadl
 | Problem Set 3 | Wed 20-Sep | Thu 5-Oct  | Thu 23-Nov |  
 | Problem Set 4 | Wed 27-Sep | Thu 19-Oct | Thu 14-Dec |  
 
+(All deadlines are at 23:59 on that date, or just a little bit later.)
+
 ### Programming 2
 
 |               | Hispeed    | Lospeed    | Avond      |  
@@ -105,6 +107,8 @@ Five problem sets are assigned during the course. Each is due by a pre-set deadl
 | Problem Set 7 | Thu 19-Oct | Tue 5-Dec  | Thu 26-Apr |  
 | Problem Set 8 | Wed 25-Oct | Thu 14-Dec | Thu 24-May |  
 
+(All deadlines are at 23:59 on that date, or just a little bit later.)
+
 Problem sets are evaluated primarily along axes of scope,
 correctness, design, and style, with scores ordinarily determined by scope × (3
 × correctness + 2 × design + 1 × style).
@@ -113,7 +117,7 @@ Although you must submit all problem sets, your lowest score among those
 problem sets on which you received perfect scores for the axis of scope will be
 dropped when final grades are determined.
 
-Re-submission of problem sets is not possible until the following semester. If you re-submit any problem set for a second time, we require that it is complete and bug-free, so as to not burden the staff with grading. It has shown to be vital to engage with all problem sets in order to pass this course.
+Re-submission of problem sets is not possible until the following semester. If you submit any problem set for a second time, it is required to be complete and bug-free, so as to not burden the staff with grading.
 
 ## Test
 
