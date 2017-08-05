@@ -32,20 +32,24 @@ The final grade for this course is primarily determined by averaging the scores 
 
 #### Programming 1
 
-| Problem Set 0 | Scratch  |  8% |  
-| Problem Set 1 | C        | 23% |  
-| Problem Set 2 | C        | 23% |  
-| Problem Set 3 | C        | 23% |  
-| Problem Set 4 | C        | 23% |  
-| Quiz          |          |  0% |  
+|               | Language | Weight |  
+| ------------- | -------- | -----: |  
+| Problem Set 0 | Scratch  |     8% |  
+| Problem Set 1 | C        |    23% |  
+| Problem Set 2 | C        |    23% |  
+| Problem Set 3 | C        |    23% |  
+| Problem Set 4 | C        |    23% |  
+| Quiz          |          |     0% |  
 
 #### Programming 2
 
-| Problem Set 5 | C          | 25% |  
-| Problem Set 6 | Python     | 25% |  
-| Problem Set 7 | HTML       | 25% |  
-| Problem Set 8 | Javascript | 25% |  
-| Quiz          |            |  0% |  
+|               | Language   | Weight |  
+| ------------- | ---------- | -----: |  
+| Problem Set 5 | C          |    25% |  
+| Problem Set 6 | Python     |    25% |  
+| Problem Set 7 | HTML       |    25% |  
+| Problem Set 8 | Javascript |    25% |  
+| Quiz          |            |     0% |  
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
