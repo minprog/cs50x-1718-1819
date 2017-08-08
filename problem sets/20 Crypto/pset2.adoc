@@ -8,7 +8,7 @@ layout: 2016/fall
 == tl;dr
  
 [start=0]
-. Watch https://video.cs50.net/2016/fall/lectures/2[Week 2's lecture].
+. Watch Week 2's lecture.
 . Infer a user's initials from their name with `initials.c`.
 . Choose two adventures:
 +
@@ -19,11 +19,10 @@ layout: 2016/fall
 --
 +
 . Submit your code.
-. Submit a form.
 
 == Reminders
 
-Per https://video.cs50.net/2016/fall/lectures/2[Week 2's lecture]:
+Per Week 2's lecture:
 
 * Use `help50` as needed.
 * Use `eprintf` as needed.
@@ -93,78 +92,9 @@ at the prompt to see your last several commands in chronological order if you'd 
 
 == How to Submit
 
-For this problem set, we'll be using a new submission system based on GitHub, a popular site for storing code. Recall that for Problem Set 0 you signed up (hopefully!) for an account on https://github.com/[github.com]. The new system's still in "beta" (a testing phase), so please forgive any bugs! We'll keep an eye on https://cs50.net/discuss[CS50 Discuss] and email over the weekend in case anything goes wrong so that we can fix right away!
-
-=== Step 1 of 4
-
-Execute
-
-[source]
-----
-update50
-----
-
-again to ensure that your IDE is up-to-date.
-
-=== Step 2 of 4
-
-* Recall that you were asked to implement the less-comfortable or more-comfortable version of `initials`. 
-** Be sure that `initials.c` is in `~/workspace/pset2/initials`, as with:
-+
-[source]
-----
-cd ~/workspace/pset2/initials/
-ls
-----
-* Recall that you were asked to implement any two (2) of `caesar`, `vigenere`, and `crack`.
-** If you implemented `caesar`, be sure that `caesar.c` is in `~/workspace/pset2/caesar/`.
-** If you implemented `vigenere`, be sure that `vigenere.c` is in `~/workspace/pset2/vigenere/`.
-** If you implemented `crack`, be sure that `crack.c` is in `~/workspace/pset2/crack/`.
-
-If not sure how to confirm or fix something, do just reach out to your TF or via https://cs50.net/discuss[CS50 Discuss]!
-
-=== Step 3 of 4
-
-* To submit `initials`, execute
-+
-[source]
-----
-cd ~/workspace/pset2/initials/
-submit50 initials
-----
-+
-inputting your GitHub username and GitHub password as prompted.
-* To submit `caesar` (if you implemented it), execute:
-+
-[source]
-----
-cd ~/workspace/pset2/caesar/
-submit50 caesar
-----
-* To submit `vigenere` (if you implemented it), execute:
-+
-[source]
-----
-cd ~/workspace/pset2/vigenere/
-submit50 vigenere
-----
-* To submit `crack` (if you implemented it), execute:
-+
-[source]
-----
-cd ~/workspace/pset2/crack/
-submit50 crack
-----
-
-If you run into any trouble, email sysadmins@cs50.harvard.edu!
-
-You may resubmit any problem as many times as you'd like.
-
-Incidentally, the white and yellow output from `submit50` will soon be simplified; it's some short-term diagnostic output!
-
-=== Step 4 of 4
-  
-Submit https://forms.cs50.net/2016/fall/psets/2[]!
+. Make sure you are signed in to this website!
+. In the form below, add the files that you downloaded.
+. Press "Submit for grading". Presto!
  
 This was Problem Set 2.
 

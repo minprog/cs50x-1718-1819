@@ -7,12 +7,11 @@ layout: 2016/fall
 
 == tl;dr
  
-. Watch https://video.cs50.net/2016/fall/lectures/4[Week 4's lecture].
+. Watch Week 4's lecture.
 . Figure out whodunit.
 . Resize some images.
 . Recover some photos.
 . Submit your code.
-. Submit a form.
 
 == Getting Started
 
@@ -70,38 +69,8 @@ Whoever finds and photographs the most computer scientists (and, in the event of
 
 == How to Submit
 
-=== Step 1 of 2
-
-* Update your IDE:
-+
-[source]
-----
-update50
-----
-* Submit `whodunit`:
-+
-[source]
-----
-cd ~/workspace/pset4/whodunit/
-submit50 whodunit
-----
-* Submit `resize`:
-+
-[source]
-----
-cd ~/workspace/pset4/resize/
-submit50 resize
-----
-* Submit `recover`:
-+
-[source]
-----
-cd ~/workspace/pset4/recover/
-submit50 recover
-----
-
-=== Step 2 of 2
-
-Submit https://forms.cs50.net/2016/fall/psets/4[]!
+. Make sure you are signed in to this website!
+. In the form below, add the files that you downloaded.
+. Press "Submit for grading". Presto!
  
 This was Problem Set 4.
