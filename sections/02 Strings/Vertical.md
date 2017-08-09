@@ -1,4 +1,4 @@
-# GO2 Strings, Vertical
+# Vertical
 
 ## Goal
 

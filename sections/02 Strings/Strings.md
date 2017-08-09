@@ -1,4 +1,4 @@
-# GO2, Strings
+# Strings
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ Now, step into this directory:
 
 
 ## What to do?
-1. Implement +Strings, Vertical 
-2. Implement +Strings, Skip 
-3. Implement +Strings, Eek 
+1. Implement [Vertical](/Vertical)
+2. Implement [Strings](/Strings)
+3. Implement [Eek](/Eek)
 
