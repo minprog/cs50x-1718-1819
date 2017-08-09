@@ -21,7 +21,7 @@ Now, step into this directory:
 
 
 ## What to do?
-1. Implement [Vertical](/sections/02 Strings/Vertical.md)
+1. Implement [Vertical](/sections/02%20Strings/Vertical.md)
 2. Implement [Strings](/Strings)
 3. Implement [Eek](/Eek)
 
