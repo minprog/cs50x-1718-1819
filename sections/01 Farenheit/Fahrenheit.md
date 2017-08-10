@@ -1,4 +1,4 @@
-# Fahrenheit
+# Section 1: Fahrenheit
 
 ## Goal
 

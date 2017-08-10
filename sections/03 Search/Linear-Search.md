@@ -1,4 +1,4 @@
-# Linear Search
+# Section 3: Linear Search
 
 ## Goal
 
@@ -11,13 +11,16 @@ First create a new directory and step into it:
 
     mkdir ~/workspace/section3
     cd ~/workspace/section3
+
 ### Downloading
+
     $ wget https://cs50x.mprog.nl/course/sections/03%20Search/linear.zip
     $ unzip find-linear.zip
     $ rm find-linear.zip
     $ cd find-linear
     $ ls
     find-linear.c
+
 ## Specification
 
 Write a program that can find a needle in a haystack using linear search. Remember linear search? It is the slow way of going through the phone book. You start with the first name in the book and you go through the book name after name until you find the person you were looking for.
@@ -54,7 +57,9 @@ For this assignment you don’t have to worry about the user input. This has alr
 
 1. Implement the function `print_array`. This function will take an integer array as input and will have to print its contents.
 2. Implement the function `search`. With this function you will implement linear search. The input are an integer array and an integer value as input and will return `true` if and only if, the value is found in the array.
+
 ## Walkthrough
+
 ### Compile
 
 You can compile `find-linear.c` by executing the command:
@@ -101,6 +106,7 @@ Near the top of the file, right after the `include`‘s you see the declaration 
 
     bool search(int value, int values[], int size);
     void print_array(int values[], int size);
+
 ### main
 
 After that we have the `main` function. You don’t have to change this function. Line 22 to 30 of the main function deal with the command line argument. This provides us with the needle. Line 33-47 is the code to create the haystack based on the user input. 

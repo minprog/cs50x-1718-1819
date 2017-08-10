@@ -1,4 +1,4 @@
-# Anonymize
+# Section 4: Anonymize
 
 ## Goal
 
@@ -11,13 +11,16 @@ First create a new directory and step into it:
 
     mkdir ~/workspace/section4
     cd ~/workspace/section4
+
 ### Downloading
+
     $ wget https://cs50x.mprog.nl/course/sections/04%20Anonymize/anonymize.zip
     $ unzip anonymize.zip
     $ rm anonymize.zip
     $ cd anonymize
     $ ls
     Makefile  anonymize.c censor.c  censor.h  suspect.bmp
+
 ## Specification
 
 In this assignment you learn how to modify a bitmap image. You need to implement a program that covers the eyes of a suspect's photo with a black bar.
@@ -26,6 +29,7 @@ In this assignment you learn how to modify a bitmap image. You need to implement
 - If you open `suspect.bmp` in the IDE you can make a selection and see the coordinates of your cursor.
 - **It is ok to hardcode the program (the coordinates of the black bar) to only work for this image.**
 - We have already taken care of error checking the user input for you.
+
 ## Background
 
 As you may know an RGB colour is often represented in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) notation, which is wat we want you to use in this assigment as well. The color white `ffffff` means red: `ff`, blue: `ff`, red: `ff`. `ff` in decimal notation is `255`, which is why white can also be written as `(255,255,255)`. In C you can represent a hexadecimal value bij putting `0x` in front of it. `255` can thus be written as `0xff`.
@@ -53,6 +57,7 @@ Now it is up to you to implement `process_pixel` inside `censor.c`. Which pixels
 If you want to change your program you can make it by either calling `make` ```anonymize` or just `make`. The makefile will do the rest. You can now run the program, for example like this:
 
     ./anonymize suspect.bmp censored.bmp
+
 ## Done?
 
 Got time left? Improve your program so it is not hardcoded for `suspect.bmp`. You are now permitted to change anything you need in `anonymize.c`, `censor.c` and `censor.h` to allow the user to input coordinates for the black bar.
