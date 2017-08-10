@@ -12,9 +12,7 @@ First create a new directory and step into it:
     mkdir ~/workspace/section3
     cd ~/workspace/section3
 ## Downloading
-
-
-    $ wget ...
+    $ wget https://cs50x.mprog.nl/course/sections/03%20Search/linear.zip
     $ unzip find-linear.zip
     $ rm find-linear.zip
     $ cd find-linear
@@ -22,9 +20,9 @@ First create a new directory and step into it:
     find-linear.c
 # Specification
 
-Write a program that can find a needle in a haystack using linear search. Remember linear search? Linear search is the simplest search algorithm. It goes through the elements of a list (array), one by one, and checks if it is equal to the element we’re looking for. It continues this process until the element is found (yay!) or the end of the list is reached (in which case the element is decidedly not found).
+Write a program that can find a needle in a haystack using linear search. Remember linear search? It is the slow way of going through the phone book. You start with the first name in the book and you go through the book name after name until you find the person you were looking for.
 
-The haystack in our case, is an array of integers, and the needle an integer. The output of the program should look something like this (where the underlined numbers denote the user input):
+In our case, we’ll not be looking for names in a phone book, but a number (integer) in a list (array). For the purpose of this exercise we’ll call our array the *haystack* and our number the *needle*. The output of the program should look something like this (where the underlined numbers denote the user input):
 
 
     $ ./find-linear 42
@@ -54,17 +52,17 @@ The program `./find-linear` expects one command line argument: the needle. Once 
 
 For this assignment you don’t have to worry about the user input. This has already been implemented for you. You will have to tasks to complete:
 
-1. Implement the function `print_array`. This function will have take an integer array as input and will have to print its contents.
+1. Implement the function `print_array`. This function will take an integer array as input and will have to print its contents.
 2. Implement the function `search`. With this function you will implement linear search. The input are an integer array and an integer value as input and will return `true` if and only if, the value is found in the array.
 # Walkthrough
 ## Compile
 
-You can compiler `find-linear.c` by executing the command:
+You can compile `find-linear.c` by executing the command:
 
 
     make find-linear
 
-This will create the binary `find-linear` which you can execute:
+This will create the binary (executable) `find-linear` which you can execute:
 
 
     ./find-linear 42
@@ -74,7 +72,7 @@ Now you can enter numbers into the haystack. For, example:
 
     haystack[0] = 10
     haystack[1] = 42
-    haystack[2] = ctrl-d
+    haystack[2] = ^d
 
 You will get an output similar to this:
 
@@ -99,6 +97,7 @@ But before getting to that, let’s briefly step through the existing code in or
 ## Declarations
 
 Near the top of the file, right after the `include`‘s you see the declaration of the functions you will have to implement. Here we just tell the compiler that these function will be implemented later in the file.
+
 
     bool search(int value, int values[], int size);
     void print_array(int values[], int size);
@@ -126,6 +125,7 @@ Start by implementing the function `print_array`. The current implementation sta
 
 As you can see, it doesn’t do much yet. Don’t get distracted by the lines:
 
+
         (void)values;
         (void)size;
 
@@ -133,9 +133,11 @@ They don’t actually do anything. These lines should be removed when you start 
 
 To implement this function try to keep the formatting readable. A common way to print an array is with square brackets around it and interspaced with comma’s, like so:
 
+
     [3, 14, 15, 42, 11235, 1]
 
 An empty list should look like this:
+
 
     []
 

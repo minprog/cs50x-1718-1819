@@ -2,7 +2,7 @@
 
 # Goal
 
-You will learn to modify an image. You task is to take the image of a suspicious individual and cover the eyes with a censor bar.
+You will learn to modify an image. Your task is to take the image of a suspicious individual and cover their eyes with a black bar.
 
 # Getting started
 
@@ -12,7 +12,7 @@ First create a new directory and step into it:
     mkdir ~/workspace/section4
     cd ~/workspace/section4
 ## Downloading
-    $ wget ...
+    $ wget https://cs50x.mprog.nl/course/sections/04%20Anonymize/anonymize.zip
     $ unzip anonymize.zip
     $ rm anonymize.zip
     $ cd anonymize
@@ -24,7 +24,7 @@ In this assignment you learn how to modify a bitmap image. You need to implement
 
 - We have provided a photo of the suspect called `suspect.bmp`. You need to make a copy of this image, but change some pixels so the image is censored with a black bar over the suspect's eyes.
 - If you open `suspect.bmp` in the IDE you can make a selection and see the coordinates of your cursor.
-- It is ok to hardcode the program (the coordinates of the black bar) to only work for this image.
+- **It is ok to hardcode the program (the coordinates of the black bar) to only work for this image.**
 - We have already taken care of error checking the user input for you.
 # Background
 

@@ -1,35 +1,20 @@
-# Section 1, Fahrenheit
+# Fahrenheit
 
-# Specification
+# Goal
 
-The goal of this assignment is to create a program that can convert temperatures from Celcius to Fahrenheit.
-In this assignment you learn how to create, compile and run a c-program.
+The goal of this assignment is to create a program that can convert temperatures from Celcius to Fahrenheit. In this assignment you learn how to create, compile and run a c-program.
 
 # Getting started
-## Create a Cloud9 workspace
 
-Head to [cs50.io](https://cs50.io/) and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then click *Create workspace*.
-You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is “creating your workspace” and “creating your container,” which might take a moment. You should eventually see your workspace, which should resemble mine from Week 1. If not, do just email the course’s heads to inquire!
+First, log into CS50 IDE. If you haven’t created an account yet, this is the moment to do so! [Follow these steps](#create-a-cloud9-workspace).
 
-## Update
-
-Toward the bottom of CS50 IDE’s UI is a “terminal window” (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace’s files and directories, compile code, run programs, and even install new software. You should find that its “prompt” resembles the below:
-
-
-    ~/workspace/ $
-
-Click inside of that terminal window and then type:
-
-
-    update50
-
-followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!)
-Next, execute:
+Once logged in, execute
 
 
     mkdir ~/workspace/section1
 
 at your prompt in order to make a directory called `section1` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/section1` or any other character for that matter! Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/section1` denotes a directory called `section1` within `~/workspace`.
+
 Now execute
 
 
@@ -92,7 +77,7 @@ This runs your program, and if it is written correctly it should produce the out
 
 
     Hello, world!
-# Assignment
+# Specification
 ## Fahrenheit
 
 Now, the goal of this program is not to print “Hello, world!”. Your assignment is to write a program that converts a temperature in Celsius to Fahrenheit, as per the sample output below, wherein underlined text represents some user’s input.
@@ -118,7 +103,7 @@ You will want to ask the user for input. There are inbuilt functions in c to do 
 
 This library implements the functions `get_string()`, `get_int()`, and `get_float()`, which ask the user for an input of the corresponding datatype.
 
-For example the program below asks the user to enter their name (a string), and ouputs “Hello, [name]!”.
+For example the program below asks the user to enter their name (a string), and outputs “Hello, <name>!”.
 
 
     #include <cs50.h>
@@ -146,4 +131,26 @@ Know that `printf` can be used to specify how many places after the decimal poin
     }
 
 When executed (by first compiling with `make truncate` and then executing with `./truncate`), this program will output the value of the variable `pi` to exactly 2 decimal places: `3.14`. Can you see why? Perhaps you can adapt that to display the converted temperature to just one decimal place?
+
+# Create a Cloud9 workspace
+
+First, register on [edx.org](https://courses.edx.org/register), which will provide you with an account to log on to the CS50 IDE. If you already have an edX account, it’s no problem to use that one.
+
+Now head to [cs50.io](https://cs50.io/) and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click **Private** under **Hosted workspace**, then click **Create workspace**.
+
+You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is “creating your workspace” and “creating your container,” which might take a moment. You should eventually see your workspace.
+
+## Update
+
+Toward the bottom of CS50 IDE’s UI is a “terminal window” (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace’s files and directories, compile code, run programs, and even install new software. You should find that its “prompt” resembles the below:
+
+
+    ~/workspace/ $
+
+Click inside of that terminal window and then type:
+
+
+    update50
+
+followed by Enter to ensure that your workspace is up-to-date. It might take a few minutes for any updates to complete. (Be sure not to close the tab or CS50 IDE itself until they do!)
 

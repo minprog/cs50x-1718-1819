@@ -18,7 +18,7 @@ Create a new directory and step into it.
 Download the required files for this assignment.
 
 
-    $ wget ...
+    $ wget https://cs50x.mprog.nl/course/sections/05%20BS%20Tree/BS-Tree.zip
     $ unzip binary-tree.zip
     $ rm binary-tree.zip
     $ cd binary-tree
@@ -50,7 +50,6 @@ This shows a hand constructed example (i.e., it is not using the `insert` functi
 # Specification
 - Implement the function `insert`. The function should be implemented such that the tree remains sorted at all times. For any node with `key_value` v, all nodes in the left sub-tree should have a smaller key_value`, and all nodes in the right sub-tree should have a bigger value.
 - Adapt the `main` function in such a way that it creates a tree from the values in `array`, using the `insert` function.
-- Think about edge cases: What does the `insert`  function do with a NULL-pointer? What happens if the `key_value` of a node is equal to the new `key`? 
 
 If you constructed the tree correctly, it should look something like this:
 
@@ -136,13 +135,13 @@ To get you started we’ve already implemented a couple of functions for you:
 
 
     /* Declaration of provided functions */
-    node *create_node(int value, node* left, node* right);
-    node *create_an_example_tree();
-    void print_tree(node *tree);
-
-The function `create_node` creates, you guessed it, a new node. It allocates the memory for the node, sets the fields to the provided values and returns the node pointer.
+    node* create_an_example_tree();
+    node* create_node(int value);
+    void print_tree(node* tree);
 
 The function `create_an_example_tree()` is only there to get you started. Once you’re done with this assignment you should be able to remove this function. It can be helpful to look at the content of this function to get a better understanding of how to build a tree.
+
+The function `create_node` creates, you guessed it, a new node. It allocates the memory for the node, initializes the fields.
 
 Seeing is understanding. The `print_tree` function can be very useful to inspect the results of your efforts. 
 
@@ -150,44 +149,33 @@ Seeing is understanding. The `print_tree` function can be very useful to inspect
 
 The next line is the declaration of the `insert` function that you will have to implement.
 
-    // TODO: inmplement insert
-    void insert(int key, struct node *tree);
+    // TODO: implement insert
+    void insert(int key, struct node* tree);
 
-The easiest way is to implement this function recursively. How? Remember the tree must remain sorted. If the `key` is smaller than the `tree->value` it should be added to the left, otherwise it should be added to the right.
-
-For example, let’s say `key < tree->value`. In this case we have to add the key to the left child of the node. Now, there can be two cases:
-
-- `tree->left == NULL`: In this case there is no left child yet. We’ll have to *create a new node* as a left child.
-- `tree->left != NULL`: In this case we already have a left node. We’ll have to *recurse into it*. Use `insert` to add the `key` to the `tree->left` node.
-
-Before you start implementing `insert` it could help to first implement the `main()` function so that you can test every step on the way.
+Before you start implementing `insert` it could help to first look at the `main()` function. You’ll have to comment out one line before you can proceed.
 
 ## main
 
-Currently, the `main()` function creates and prints an example tree. The line
+The `main()` function has already been implemented for you. But, you’ll have to modify it a bit.
 
+The first line creates a root node containing the first element of the array.
 
-    node *head = create_an_example_tree();
+    node* root = create_node(array[0]);
 
-creates the example tree. And the line
-
-
-    print_tree(head);
-
-prints it.
-
-Instead of the example tree you will have to adapt the `main()` to use your `insert`  function to fill a tree with the contents of the array. The easiest (but not necessarily the most elegant) way to do this, is by first creating a head node with the first element of the array:
-
-
-    node *head = create_node(array[0], NULL, NULL);
-
-And then iteratively add the remainder of the array to the tree:
-
+The next part uses the insert function to add the remaining elements to the tree.
 
     for(int i = 1; i < ARRAY_SIZE; i++)
     {
-      insert(array[i], head);
+      insert(array[i], root);
     }
 
+In order to get you started the next line creates an example tree. **You have to comment out this line** before you start testing.
 
+    // TODO: Comment out this line!!!
+    root = create_an_example_tree();
+
+Lastly, the tree is printed.
+
+    // print result
+    print_tree(root);
 
