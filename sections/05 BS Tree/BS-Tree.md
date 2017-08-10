@@ -1,19 +1,19 @@
-= BS Tree
+# BS Tree
 
-== Goal
+## Goal
 
 For this assignment your team will write a function in C which inserts leaves/nodes into a binary search tree in C. Remember binary search trees? Here’s David explaining them:
 
 https://video.cs50.net/2016/fall/lectures/5?t=1h0m59s
 
-== Getting started
+## Getting started
 
 Create a new directory and step into it.
 
 
     $ mkdir ~/workspace/section5
     $ cd ~/workspace/section5
-=== Download
+### Download
 
 Download the required files for this assignment.
 
@@ -24,7 +24,7 @@ Download the required files for this assignment.
     $ cd binary-tree
     $ ls
     binary-tree.c
-=== Compiling and running
+### Compiling and running
 
 Start by compiling and running the `binary-tree`:
 
@@ -47,7 +47,7 @@ When you run the program, it prints the following tree:
 
 This shows a hand constructed example (i.e., it is not using the `insert` function). In this tree, the right node is printed directly to the right, and the left node is printed below. For example, the right node for `3` is `42` and the left node is `1`. NULL-pointers are printed as a `*`. So, for example, node `42` and `2` have no children.
 
-== Specification
+## Specification
 - Implement the function `insert`. The function should be implemented such that the tree remains sorted at all times. For any node with `key_value` v, all nodes in the left sub-tree should have a smaller key_value`, and all nodes in the right sub-tree should have a bigger value.
 - Adapt the `main` function in such a way that it creates a tree from the values in `array`, using the `insert` function.
 
@@ -97,18 +97,18 @@ If you constructed the tree correctly, it should look something like this:
                                    `-->*
 
 
-== Walkthrough
+## Walkthrough
 
 The file `binary-tree.c` already contains quite a bit of code. 
 
-=== array
+### array
 
 The first lines (after the library `#include`'s) define the array of numbers that you will have to use to construct your tree:
 
     /* array with numbers to be inserted into the tree */
     #define ARRAY_SIZE 20
     int array[ARRAY_SIZE] = {8, 7, 15, 2, 19, 18, 0, 12, 11, 10, 16, 13, 14, 17, 5, 6, 4, 1, 3, 9};
-=== node
+### node
 
 The next part of the code is the declaration of the node struct:
 
@@ -129,7 +129,7 @@ This is the main building block for the search tree. The struct has three fields
 
 Note that a node does *not* always have a left or right child. If the node for instance does not have a left child, the `left` pointer should be set to `NULL`. The same goes for the right child. If the node doesn’t have any children at all, both pointers should be set to `NULL` and we call such a node, a *leaf*.
 
-=== provided functions
+### provided functions
 
 To get you started we’ve already implemented a couple of functions for you:
 
@@ -145,7 +145,7 @@ The function `create_node` creates, you guessed it, a new node. It allocates the
 
 Seeing is understanding. The `print_tree` function can be very useful to inspect the results of your efforts. 
 
-=== insert
+### insert
 
 The next line is the declaration of the `insert` function that you will have to implement.
 
@@ -154,7 +154,7 @@ The next line is the declaration of the `insert` function that you will have to 
 
 Before you start implementing `insert` it could help to first look at the `main()` function. You’ll have to comment out one line before you can proceed.
 
-=== main
+### main
 
 The `main()` function has already been implemented for you. But, you’ll have to modify it a bit.
 

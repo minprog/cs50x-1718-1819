@@ -1,24 +1,24 @@
-= Linear Search
+# Linear Search
 
-== Goal
+## Goal
 
 Write a program that can find a needle in a haystack using linear search. Well, we’ll not be using literal needles and haystacks (that would be too unwieldy), but rather integer numbers and arrays respectively.
 
-== Getting started
+## Getting started
 
 First create a new directory and step into it:
 
 
     mkdir ~/workspace/section3
     cd ~/workspace/section3
-=== Downloading
+### Downloading
     $ wget https://cs50x.mprog.nl/course/sections/03%20Search/linear.zip
     $ unzip find-linear.zip
     $ rm find-linear.zip
     $ cd find-linear
     $ ls
     find-linear.c
-== Specification
+## Specification
 
 Write a program that can find a needle in a haystack using linear search. Remember linear search? It is the slow way of going through the phone book. You start with the first name in the book and you go through the book name after name until you find the person you were looking for.
 
@@ -48,14 +48,14 @@ In our case, we’ll not be looking for names in a phone book, but a number (int
 
 The program `./find-linear` expects one command line argument: the needle. Once it starts, it asks the user to enter a number. It keeps on asking for numbers until the user enters `^D` (ctrl-d). These numbers will form the haystack. The program will have to print the haystack, and find the needle in it.
 
-=== Assignment
+### Assignment
 
 For this assignment you don’t have to worry about the user input. This has already been implemented for you. You will have to tasks to complete:
 
 1. Implement the function `print_array`. This function will take an integer array as input and will have to print its contents.
 2. Implement the function `search`. With this function you will implement linear search. The input are an integer array and an integer value as input and will return `true` if and only if, the value is found in the array.
-== Walkthrough
-=== Compile
+## Walkthrough
+### Compile
 
 You can compile `find-linear.c` by executing the command:
 
@@ -84,7 +84,7 @@ You will get an output similar to this:
 
 It doesn’t work yet! It does not find the needle, and it does not show the array. You still have to write the functions that do this.
 
-=== find-linear.c
+### find-linear.c
 
 Let’s look at the file `find-linear.c`. When you open it you will see that there is already a lot of code written. You can leave most of this code alone. The only thing you will have to implement are the functions:
 
@@ -94,20 +94,20 @@ Let’s look at the file `find-linear.c`. When you open it you will see that the
 
 But before getting to that, let’s briefly step through the existing code in order to provide some context.
 
-=== Declarations
+### Declarations
 
 Near the top of the file, right after the `include`‘s you see the declaration of the functions you will have to implement. Here we just tell the compiler that these function will be implemented later in the file.
 
 
     bool search(int value, int values[], int size);
     void print_array(int values[], int size);
-=== main
+### main
 
 After that we have the `main` function. You don’t have to change this function. Line 22 to 30 of the main function deal with the command line argument. This provides us with the needle. Line 33-47 is the code to create the haystack based on the user input. 
 
 Take a look at line 53 and 56 in the main function. Here you see the calls to the functions `print_array` and `search`, respectively.
 
-=== print_array
+### print_array
 
 Start by implementing the function `print_array`. The current implementation starts on line 68, and looks as follows:
 
@@ -143,7 +143,7 @@ An empty list should look like this:
 
 Make sure that the empty list is also printed correctly!
 
-=== search
+### search
 
 On line 79 you find the empty `search` function:
 
