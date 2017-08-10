@@ -1,10 +1,10 @@
-= Fahrenheit
+# Fahrenheit
 
-== Goal
+## Goal
 
 The goal of this assignment is to create a program that can convert temperatures from Celcius to Fahrenheit. In this assignment you learn how to create, compile and run a c-program.
 
-== Getting started
+## Getting started
 
 First, log into CS50 IDE. If you haven’t created an account yet, this is the moment to do so! [Follow these steps](#create-a-cloud9-workspace).
 
@@ -24,11 +24,11 @@ to move yourself into (i.e., open) that directory. Your prompt should now resemb
 
 
     ~/workspace/section1
-=== Create a new C-file
+### Create a new C-file
 
 You can create a new file using the file browser tab. Under `filesystem`, click on the `workspace` directory to open it. Now right-click on the directory `section1` and select `New File`. Give your file the name `fahrenheit.c`. Now double click on the file to open it.
 
-=== Edit
+### Edit
 
 Let’s start with something simple. Let’s create a program that will print “Hello, world!”. Type the following code into the file:
 
@@ -42,7 +42,7 @@ Let’s start with something simple. Let’s create a program that will print �
 
 Now safe your file (ctrl-s).
 
-=== Compile
+### Compile
 
 To compile the file `fahrenheit.c`, go to the terminal (below the file) and type the command below:
 
@@ -66,7 +66,7 @@ This will show all the existing files in the directory. The output should look s
 
 This shows two files: the file `fahrenheit.c` that you created yourself, and the file `fahrenheit` which was created by the make command. (The `*` at the end of the filename indicates that the file is executable).
 
-=== Run
+### Run
 
 You can now run your program, by typing the following command in the terminal:
 
@@ -77,8 +77,8 @@ This runs your program, and if it is written correctly it should produce the out
 
 
     Hello, world!
-== Specification
-=== Fahrenheit
+## Specification
+### Fahrenheit
 
 Now, the goal of this program is not to print “Hello, world!”. Your assignment is to write a program that converts a temperature in Celsius to Fahrenheit, as per the sample output below, wherein underlined text represents some user’s input.
 .
@@ -93,8 +93,8 @@ To solve this problem, you needn’t do anything more complex than use your curr
 
 Bonus: The program now probably ends after one interaction. Can you make the program repeat the interaction? I.e., once the computer has taken the user input and converted it to Fahrenheit, it asks the user for a new input to convert. It continues to do so until the user enters a value of −274 or below.
 
-== Walkthrough
-=== User input
+## Walkthrough
+### User input
 
 You will want to ask the user for input. There are inbuilt functions in c to do this, but CS50 has created a library to make this a little bit easier. You can include by adding the following line at the top of your file:
 
@@ -117,7 +117,7 @@ For example the program below asks the user to enter their name (a string), and 
     }
 
 
-=== Printing
+### Printing
 
 Know that `printf` can be used to specify how many places after the decimal point you wish to display to the user. For example, assuming you’ve written the following program in a file called `truncate.c`:
 
@@ -132,7 +132,7 @@ Know that `printf` can be used to specify how many places after the decimal poin
 
 When executed (by first compiling with `make truncate` and then executing with `./truncate`), this program will output the value of the variable `pi` to exactly 2 decimal places: `3.14`. Can you see why? Perhaps you can adapt that to display the converted temperature to just one decimal place?
 
-== Create a Cloud9 workspace
+## Create a Cloud9 workspace
 
 First, register on [edx.org](https://courses.edx.org/register), which will provide you with an account to log on to the CS50 IDE. If you already have an edX account, it’s no problem to use that one.
 
@@ -140,7 +140,7 @@ Now head to [cs50.io](https://cs50.io/) and log into CS50 IDE. You may be prompt
 
 You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is “creating your workspace” and “creating your container,” which might take a moment. You should eventually see your workspace.
 
-=== Update
+### Update
 
 Toward the bottom of CS50 IDE’s UI is a “terminal window” (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace’s files and directories, compile code, run programs, and even install new software. You should find that its “prompt” resembles the below:
 
