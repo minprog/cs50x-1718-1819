@@ -1,4 +1,4 @@
-# BS Tree
+# Section 5: BS Tree
 
 ## Goal
 
@@ -13,6 +13,7 @@ Create a new directory and step into it.
 
     $ mkdir ~/workspace/section5
     $ cd ~/workspace/section5
+
 ### Download
 
 Download the required files for this assignment.
@@ -24,6 +25,7 @@ Download the required files for this assignment.
     $ cd binary-tree
     $ ls
     binary-tree.c
+
 ### Compiling and running
 
 Start by compiling and running the `binary-tree`:
@@ -48,6 +50,7 @@ When you run the program, it prints the following tree:
 This shows a hand constructed example (i.e., it is not using the `insert` function). In this tree, the right node is printed directly to the right, and the left node is printed below. For example, the right node for `3` is `42` and the left node is `1`. NULL-pointers are printed as a `*`. So, for example, node `42` and `2` have no children.
 
 ## Specification
+
 - Implement the function `insert`. The function should be implemented such that the tree remains sorted at all times. For any node with `key_value` v, all nodes in the left sub-tree should have a smaller key_value`, and all nodes in the right sub-tree should have a bigger value.
 - Adapt the `main` function in such a way that it creates a tree from the values in `array`, using the `insert` function.
 
@@ -108,6 +111,7 @@ The first lines (after the library `#include`'s) define the array of numbers tha
     /* array with numbers to be inserted into the tree */
     #define ARRAY_SIZE 20
     int array[ARRAY_SIZE] = {8, 7, 15, 2, 19, 18, 0, 12, 11, 10, 16, 13, 14, 17, 5, 6, 4, 1, 3, 9};
+
 ### node
 
 The next part of the code is the declaration of the node struct:
