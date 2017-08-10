@@ -51,8 +51,7 @@ This shows a hand constructed example (i.e., it is not using the `insert` functi
 
 ## Specification
 
-- Implement the function `insert`. The function should be implemented such that the tree remains sorted at all times. For any node with `key_value` v, all nodes in the left sub-tree should have a smaller key_value`, and all nodes in the right sub-tree should have a bigger value.
-- Adapt the `main` function in such a way that it creates a tree from the values in `array`, using the `insert` function.
+- Implement the function `insert`. The function should be implemented such that the tree remains sorted at all times: For any node with `key_value` v, all nodes in the left sub-tree should have a smaller key_value`, and all nodes in the right sub-tree should have a bigger value.
 
 If you constructed the tree correctly, it should look something like this:
 
