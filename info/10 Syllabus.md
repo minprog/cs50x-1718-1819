@@ -62,6 +62,10 @@ not at a disadvantage vis-à-vis those more comfortable. Each student's final
 grade is individually determined at term's end after input from the teaching
 assistants. Remarkable effort and upward trending are always considered.
 
+## Feedback
+
+You will receive written feedback for every assignment that you submit. You are required to discuss that feedback (and your general progress) with a TA. Make sure that you meet regularly so as to assure that we can monitor your progress and that you understand the feedback correctly.
+
 ## Lectures
 
 Lectures discuss theory that helps you solve your problems sets and prepare you for the final exam. Watch the lectures before or on your way to the lab sessions, in order to be able to spend your lab time programming and asking questions.
