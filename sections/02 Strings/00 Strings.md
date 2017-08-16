@@ -14,7 +14,7 @@ Now, step into this directory:
 
 
 ## What to do?
-1. Implement [Vertical](/sections/02%20Strings/Vertical)
+1. Implement [Vertical](#vertical)
 2. Implement [Skip](/sections/02%20Strings/Skip)
 3. Implement [Eek](/sections/02%20Strings/Eek)
 
