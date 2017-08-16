@@ -14,11 +14,11 @@ First create a new directory and step into it:
 
 ### Downloading
 
-    $ wget https://cs50x.mprog.nl/course/sections/04%20Anonymize/anonymize.zip
-    $ unzip anonymize.zip
-    $ rm anonymize.zip
-    $ cd anonymize
-    $ ls
+    wget https://cs50x.mprog.nl/course/sections/04%20Anonymize/anonymize.zip
+    unzip anonymize.zip
+    rm anonymize.zip
+    cd anonymize
+    ls
     Makefile  anonymize.c censor.c  censor.h  suspect.bmp
 
 ## Specification
