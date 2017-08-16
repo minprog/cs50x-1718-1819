@@ -11,19 +11,19 @@ https://video.cs50.net/2016/fall/lectures/5?t=1h0m59s
 Create a new directory and step into it.
 
 
-    $ mkdir ~/workspace/section5
-    $ cd ~/workspace/section5
+    mkdir ~/workspace/section5
+    cd ~/workspace/section5
 
 ### Download
 
 Download the required files for this assignment.
 
 
-    $ wget https://cs50x.mprog.nl/course/sections/05%20BS%20Tree/BS-Tree.zip
-    $ unzip binary-tree.zip
-    $ rm binary-tree.zip
-    $ cd binary-tree
-    $ ls
+    wget https://cs50x.mprog.nl/course/sections/05%20BS%20Tree/binary-tree.zip
+    unzip binary-tree.zip
+    rm binary-tree.zip
+    cd binary-tree
+    ls
     binary-tree.c
 
 ### Compiling and running
@@ -31,8 +31,8 @@ Download the required files for this assignment.
 Start by compiling and running the `binary-tree`:
 
 
-    $ make binary-tree
-    $ ./binary-tree
+    make binary-tree
+    ./binary-tree
 
 When you run the program, it prints the following tree:
 

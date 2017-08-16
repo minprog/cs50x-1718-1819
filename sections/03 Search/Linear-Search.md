@@ -14,12 +14,12 @@ First create a new directory and step into it:
 
 ### Downloading
 
-    $ wget https://cs50x.mprog.nl/course/sections/03%20Search/linear.zip
-    $ unzip find-linear.zip
-    $ rm find-linear.zip
-    $ cd find-linear
-    $ ls
-    find-linear.c
+    wget https://cs50x.mprog.nl/course/sections/03%20Search/linear.zip
+    unzip linear.zip
+    rm linear.zip
+    cd linear
+    ls
+    linear.c
 
 ## Specification
 

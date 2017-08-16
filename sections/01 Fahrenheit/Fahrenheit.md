@@ -116,7 +116,7 @@ For example the program below asks the user to enter their name (a string), and 
     int main(void)
     {
         printf("Enter your name: ");
-        string name = GetString();
+        string name = get_string();
         printf("hello, %s\n", name);
     }
 
