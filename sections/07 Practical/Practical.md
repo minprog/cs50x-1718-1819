@@ -2,7 +2,7 @@
 
 ## Goal
 
-...
+You are going to build a website that can keep track of the subgroups in a practical. In this practical, the students have to work together in subgroups on an assignment. The students are allowed to form these groups themselves. It is up to you to finish the application where students can register their subgroups, so the teacher has an overview of which students are in which groups.
 
 ## Getting started
 
