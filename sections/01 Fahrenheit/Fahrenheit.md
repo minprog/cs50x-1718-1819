@@ -86,7 +86,7 @@ This runs your program, and if it is written correctly it should produce the out
 Now, the goal of this program is not to print “Hello, world!”. Your assignment is to write a program that converts a temperature in Celsius to Fahrenheit, as per the sample output below, wherein underlined text represents some user’s input.
 .
 
-    username@ide50:~/workspace/unit1 $ ./fahrenheit
+    ./fahrenheit
     C: 100
     F: 212.0
 
