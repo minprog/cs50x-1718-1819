@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal of this assignment is to get familiar with and learn how to use classes in Python. This assignment covers only the basis; take a look [here](https://www.tutorialspoint.com/python/python_classes_objects.htm) for a more in depth introduction. (this is not mandatory).
+The goal of this assignment is to get familiar with and learn how to use classes in Python. This assignment covers only the basis; take a look [here](https://www.tutorialspoint.com/python/python_classes_objects.htm) for a more in depth introduction. (This is not mandatory).
 To be more precise, you will be implementing a queue class in Python. Rember the queue datastructure? [Here's David explaining it](https://video.cs50.net/2016/fall/lectures/5?t=47m30s).
 
 ## Getting started
