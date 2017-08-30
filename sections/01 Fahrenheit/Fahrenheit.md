@@ -87,7 +87,7 @@ Now, the goal of this program is not to print “Hello, world!”. Your assignme
 .
 
     ./fahrenheit
-    C: 100
+    C: _100_
     F: 212.0
 
 The formula to compute degrees Celcius (C) to Fahrenheit (F) is F = ((C * 9) / 5) + 32.
@@ -136,7 +136,7 @@ Know that `printf` can be used to specify how many places after the decimal poin
 
 When executed (by first compiling with `make truncate` and then executing with `./truncate`), this program will output the value of the variable `pi` to exactly 2 decimal places: `3.14`. Can you see why? Perhaps you can adapt that to display the converted temperature to just one decimal place?
 
-## Create a Cloud9 workspace
+## Create a Cloud9 workspace {#create-a-cloud9-workspace}
 
 First, register on [edx.org](https://courses.edx.org/register), which will provide you with an account to log on to the CS50 IDE. If you already have an edX account, it’s no problem to use that one.
 
