@@ -87,7 +87,7 @@ Now, the goal of this program is not to print “Hello, world!”. Your assignme
 .
 
     ./fahrenheit
-    C: _100_
+    C: [underline]#100#
     F: 212.0
 
 The formula to compute degrees Celcius (C) to Fahrenheit (F) is F = ((C * 9) / 5) + 32.

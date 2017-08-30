@@ -1,4 +1,4 @@
-# Queue
+# Section 6: Queue
 
 ## Goal
 
