@@ -4,7 +4,9 @@
 
 For this assignment your team will write a function in C which inserts leaves/nodes into a binary search tree in C. Remember binary search trees? Here’s David explaining them:
 
-https://video.cs50.net/2016/fall/lectures/5?t=1h0m59s
+video::pA-8eBZvN1E[youtube,height=540,width=960,options=notitle]
+
+[t=1h0m59s]
 
 ## Getting started
 
