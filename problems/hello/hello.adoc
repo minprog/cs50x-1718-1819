@@ -122,6 +122,8 @@ Hello, world!
 
 === `check50`
 
+Be sure to register for an account at link:https://github.com/[GitHub] and then head to link:https://cs50.me/[CS50.me] to enable ``check50``!
+
 [source,text]
 ----
 check50 cs50/2017/x/hello
