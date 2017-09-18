@@ -127,10 +127,6 @@ dropped when final grades are determined.
 
 Re-submission of problem sets is not possible until the following semester. If you submit any problem set for a second time, it is required to be complete and bug-free, so as to not burden the staff with grading.
 
-## Test
-
-The course has one 60-minute test, covering weeks 0 to 2 and intending to check up on your progress in the course. The test does not need to be passed in order to pass the course.
-
 ## Quiz
 
 The course has one 90-minute quiz. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. One resit is offered, as soon as one (1) week after the quiz.
