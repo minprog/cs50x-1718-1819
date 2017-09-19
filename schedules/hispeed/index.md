@@ -4,10 +4,10 @@
 
 | Week 1   | Problem             |  
 | -------- | ------------------- |  
-| Mon      | scratch             |  
+| Mon      | scratch + lecture 0 & 1 |  
 | Tue      | hello + water       |  
 | Wed      | mario               |  
-| Thu      | greedy/credit       |  
+| Thu      | greedy/credit + lecture 2 |  
 | Fri      | initials            |  
 
 | Week 2   | Problem             |  
@@ -15,14 +15,14 @@
 | Mon      | caesar              |  
 | Tue      | caesar              |  
 | Wed      | vigenere/crack      |  
-| Thu      | vigenere/crack      |  
+| Thu      | vigenere/crack + lecture 3 |  
 | Fri      | find                |  
 
 | Week 3   | Problem             |  
 | -------- | ------------------- |  
 | Mon      | init (fifteen)      |  
 | Tue      | move (fifteen)      |  
-| Wed      | won (fifteen)       |  
+| Wed      | won (fifteen) + lecture 4 |  
 | Thu      | whodunit            |  
 | Fri      | resize              |  
 
@@ -32,7 +32,7 @@
 | Tue      | recover             |  
 | Wed      | recover             |  
 | Thu      | -                   |  
-| Fri      | *test*              |  
+| Fri      | *test* + lecture 5 |  
 
 ## Programming 2
 
