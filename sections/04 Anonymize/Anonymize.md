@@ -32,7 +32,7 @@ In this assignment you learn how to modify a bitmap image. You need to implement
 
 ## Background
 
-As you may know an RGB colour is often represented in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) notation, which is wat we want you to use in this assigment as well. The color white `ffffff` means red: `ff`, blue: `ff`, red: `ff`. `ff` in decimal notation is `255`, which is why white can also be written as `(255,255,255)`. In C you can represent a hexadecimal value bij putting `0x` in front of it. `255` can thus be written as `0xff`.
+As you may know an RGB colour is often represented in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) notation, which is wat we want you to use in this assigment as well. The color white `ffffff` means red: `ff`, green: `ff`, blue: `ff`. `ff` in decimal notation is `255`, which is why white can also be written as `(255,255,255)`. In C you can represent a hexadecimal value bij putting `0x` in front of it. `255` can thus be written as `0xff`.
 
 ### `anonymize.c`
 
