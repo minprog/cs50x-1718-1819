@@ -6,7 +6,7 @@ green conventions below so that we can reliably analyze your code's style.
 Similarly do companies typically adopt their own, company-wide conventions
 for style.
 
-## `style50`
+## Useful: `style50`
 
 Part of this course is the `style50` tool, which can give you pointers[^1] as to where your code might be improved, stylistically speaking. However, do note that this tool subscribes to a particular way of writing code in some cases, while the general remarks below will allow you some more freedom in developing your own style. 
 
