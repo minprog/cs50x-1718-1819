@@ -57,8 +57,8 @@
 | Mon      | quote + buy (finance)              |  
 | Tue      | index (finance)                    |  
 | Wed      | sell + history (finance)           |  
-| Thu      | history + personal touch (finance) |  
-| Fri      | articles (mashup) + lecture 10                 |  
+| Thu      | history + personal touch (finance) + lecture 10 |  
+| Fri      | articles (mashup)                  |  
 
 | Week 8   | Problem                            |  
 | -------- | -------------------                |  
