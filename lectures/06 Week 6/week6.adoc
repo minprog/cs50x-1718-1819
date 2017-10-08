@@ -25,7 +25,7 @@ video::6iXhAZKOVGE[youtube,height=540,width=960,options=notitle]
 * Just like how buildings in the real world have an address to identify them, so do computers on the internet.
 * And there is a system for allocating these addresses, by provider or organization. For example, Harvard's IPs include the ones in the range of `140.247.\#.#` or `128.103.\#.#`.
 * Each of the `#` symbols can be in the range `0` to `255`, and that's the range of values 8 bits can hold. So an IP address with 4 of these numbers are exactly 32 bit values.
-* There are also reserved IPs, known as private addresses, with the ranges `10.\#.#.\#` and `172.16.\#.# - 172.31.\#.#` and `192.168.\#.#` that are used within a particular network, but not with the outside world.
+* There are also reserved IPs, known as private addresses, with the ranges `10.\#.#.\#` and `172.16.#.\# - 172.31.#.\#` and `192.168.#.\#` that are used within a particular network, but not with the outside world.
 * But we rarely, if ever, type in some numbers into our browser to visit websites. There is another technology called DNS (Domain Name System) that maps IP addresses to domain names, and vice versa. So a domain name like `www.google.com` is translated to an IP address behind the scenes.
 * And now that we have IP addresses to send to and receive from, we can create and send packets information with those addresses in them.
 * We send those packets to routers, computer servers, that are in datacenters around the world, that only route information based on the destination IP. By passing our packets from router to router, we can get them to our destination.
