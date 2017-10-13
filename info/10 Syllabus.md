@@ -102,7 +102,7 @@ Nine problem sets are assigned during the course. Each is due by a pre-set deadl
 | Problem Set 1 | Thu  7-Sep | Thu 14-Sep | Thu 5-Oct  |  
 | Problem Set 2 | Thu 14-Sep | Tue 26-Sep | Thu 2-Nov  |  
 | Problem Set 3 | Wed 20-Sep | Thu 5-Oct  | Thu 23-Nov |  
-| Problem Set 4 | Wed 27-Sep | Thu 19-Oct | Thu 14-Dec |  
+| Problem Set 4 | Wed 27-Sep | Fri 20-Oct | Thu 14-Dec |  
 
 (All deadlines are at 23:59 on that date, or just a little bit later.)
 
