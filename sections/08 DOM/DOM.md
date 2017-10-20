@@ -40,6 +40,6 @@ If you wish to learn more about the developer tools click here for [Google Chrom
 
 13. Use JQuery to change to color of the rectangle to orange.
 
-14. Push the responseText of "data.json" to the div with the id "pushData". You can find this JSON [here](https://niettimmeijer.github.io/Week8GO/data.json).
+14. Push the responseText of "data.json" to the div with the id "pushData". You can find this JSON [here](https://niettimmeijer.github.io/Week8GO/data.json). HINT: Use $.getJSON() as described in lecture 10.
 
 15. Parse the responseText to a JSON, and save this in a variable. Then push one of the values to the div with the id "jsonValue".
