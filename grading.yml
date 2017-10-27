@@ -96,7 +96,7 @@ grades:
         type: pass
         subgrades:
             points: integer
-        calculation: points >= 14 && -1 || 0
+        calculation: points >= 10 && -1 || 0
     resit2:
         type: pass
         subgrades:
