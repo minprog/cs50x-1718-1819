@@ -1,13 +1,14 @@
 # Beatles
 
 ## Getting started
+
     mkdir -p ~/workspace/practice/beatles
     cd ~/workspace/practice/beatles/
     wget https://cs50x.mprog.nl/course/practice/beatles/beatles.zip
     unzip beatles.zip
     rm beatles.zip
-## Goal
 
+## Goal
 Write a program that prints the following information:
 
     The members of The Beatles are:
@@ -30,7 +31,6 @@ Write a program that prints the following information:
 We’re going to use structs to accomplish this. 
 
 ## 1, John
-
 The first goal is to create and print a musician struct variable for John.
 
 The file `beatles.c` starts with the definition of a `musician` struct:
@@ -68,7 +68,6 @@ Compile and test. Does the function print `john` as shown above?
 Congratulations you finished the first challenge!
 
 ## 2, Beatles
-
 Now let’s add the other Beatles. Of course we’re not going to create 4 variables for each individual, but an array that will contain all 4 Beatles. 
 
 ### Step 1:
@@ -97,6 +96,7 @@ This segment has the following output:
 
     Pointer: 0x7ffeb861a38c
     Value:   42
+
 - Line 1: We declare the variable `i` and set it’s value to `42`. This value is stored somewhere in the memory of the computer. 
 - Line 2: We can ask at precisely which memory address the value of `i` is stored by using the `&`  operator. 
 - Line 3: Here we simply print the value of `i` itself.
@@ -113,6 +113,7 @@ Output:
 
     Pointer: 0x1bf8010
     Value:   42
+
 - Line 1: Instead of declaring an `int` we declare a pointer `int*` called `i`. With the function `malloc` we reserve enough space in the memory to store an integer value (i.e., 4 bytes). The function gives us the *address* of this part of the memory. This address is assigned to `i`. So here `i` does not contain a value, but a memory address. 
 - Line 2: We use the `*` operator to write `42` into this location of the memory. 
 - Line 3: Here we print the pointer (the memory address). Note, that we don’t need to use the `&` operator this time, because `i` is already a pointer.
