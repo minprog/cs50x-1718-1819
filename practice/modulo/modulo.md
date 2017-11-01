@@ -16,6 +16,7 @@ Create a directory `loopy` in `practice` and step into it:
 
     mkdir ~/workspace/practice/modulo
     cd ~/workspace/practice/modulo
+
 ## Paper
 
 Before we start programming, let’s do some pen and paper exercises. 
