@@ -19,8 +19,8 @@ Create a directory `loopy` in `practice` and step into it:
 
 ## For a while
 
-Did you know you can always translate for loops into while loops and vise versa?
-Try to change to `for` loop into a `while` loop for the following C program:
+Did you know you can always translate `for` loops into `while` loops and vise versa?
+Try to change the `for` loop into a `while` loop for the following C program:
 
 
     #include <stdio.h>
@@ -91,7 +91,7 @@ Now do the reverse: Print the numbers `h-1` to `0`. Try to do this without chang
     0
 
 ###Step 5:
-Now do both at the same time:
+For the last step, try to do both at the same time:
 
 
     1 4
@@ -136,7 +136,7 @@ Copy the following code into the file:
 Complete the program. The first step is to print `h` hashes in a row. Compile and test your program before continuing!
 
 ###Step 4:
-Now try write a program that prints `h` rows of `h` hashes. The output should look something like this:
+Try write a program that prints `h` rows of `h` hashes. The output should look something like this:
 
 
     #####
@@ -148,7 +148,7 @@ Now try write a program that prints `h` rows of `h` hashes. The output should lo
 Compile and test!
 
 ###Step 5:
-Now adapt the program in such a way that it prints an increasing number of hashes. Like this:
+Adapt the program in such a way that it prints an increasing number of hashes. Like this:
 
 
     #
@@ -160,7 +160,7 @@ Now adapt the program in such a way that it prints an increasing number of hashe
 Compile and test!
 
 ###Step 6:
-Now print the appropriate number of spaces to get the original mario pyramid:
+Print the appropriate number of spaces to get the original mario pyramid:
 
 
         #
@@ -170,7 +170,7 @@ Now print the appropriate number of spaces to get the original mario pyramid:
     #####
 
 ###Step 7:
-Now for the extra challenge, make the pyramid twice as high:
+Now, make the pyramid twice as high:
 
 
         #
@@ -184,7 +184,7 @@ Now for the extra challenge, make the pyramid twice as high:
     #####
     #####
 
-## Extra challenge:
+###Extra challenge:
 
 Can you also make the pyramid twice as large?
 
