@@ -10,7 +10,7 @@ Execute in a terminal window:
 
     mkdir -p ~/workspace/practice/pointers
     cd ~/workspace/practice/pointers/
-    wget https://cs50x.mprog.nl/course/practice/strings/pointers.zip
+    wget https://cs50x.mprog.nl/course/practice/40%20strings/pointers.zip
     unzip pointers.zip
     rm pointers.zip
 
