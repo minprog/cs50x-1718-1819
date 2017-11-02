@@ -1,6 +1,6 @@
 # Practice exercises
 
-Let's exercise! Below are links to exercises on several topics from the CS50 course.
+Let's exercise! Below are links to exercises on several topics from the CS50 course. Watch out! It's important that you do these exercises on your own, without any help from friends on the internet. Do feel free to find a TA to ask questions to, though!
 
 ## Week 1: C
 
