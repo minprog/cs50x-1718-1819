@@ -30,7 +30,7 @@ Try to change the `for` loop into a `while` loop for the following C program:
 
 
     #include <stdio.h>
-    
+
     int main(void)
     {
         for(int i = 0; i < 10; i++)
@@ -45,35 +45,35 @@ If you are not sure how to go about this, have another look at loops here: [http
 Before you run the program above, try to write down for yourself what the output will be.
 
 ###Step 2:
-Create a new file called `forawhile.c` in the folder `loopy`. Copy the code above into it. Compile and run. Does the output match your expectation?
+Create a new file called `forawhile.c` in the folder `loopy`. Copy the code above into it. Compile and run. Does the output match your expectations?
 
 ###Step 3:
-Write the same program, but using a `while` loop instead of a `for` loop. Compile and test. Does the output exactly match the output of the original program? 
+Write the same program, but using a `while` loop instead of a `for` loop. Compile and test. Does the output exactly match the output of the original program?
 
 ## Do while
 
-The following piece of code ask the user for a positive integer using a while loop. You challenge is to convert this while loop into a do-while construction.
+The following piece of code asks the user for a positive integer using a while loop. Your challenge is to convert this while loop into a do-while construction.
 
-  #include <stdio.h>
-  #include <cs50.h>
+    #include <stdio.h>
+    #include <cs50.h>
 
-  int main()
-  {
-      int n = 0;
-      while (n <= 0)
-      {
-          printf("Please enter a positive integer: ");
-          n = get_int();
-      }
+    int main()
+    {
+        int n = 0;
+        while (n <= 0)
+        {
+            printf("Please enter a positive integer: ");
+            n = get_int();
+        }
 
-      printf("n = %i\n", n);
-  }
+        printf("n = %i\n", n);
+    }
 
 ### Step 1:
 Create a new file `dowhile.c` in the directory `loopy` and copy the code above into it.
 
 ### Step 2:
-Change the `while` loop into a `do-while` loop. If you are not sure what the difference is, have a look at [https://study.cs50.net/loops](https://study.cs50.net/loops) (sepcifically, slide 5 to 8).
+Change the `while` loop into a `do-while` loop. If you are not sure what the difference is, have a look at [https://study.cs50.net/loops](https://study.cs50.net/loops) (specifically slide 5 to 8).
 
 ## Upside down
 
@@ -87,18 +87,18 @@ Your goal is to write a loop that gives the following output:
     5 0
 
 ###Step 1:
-Create a new file called `upsidedown.c` in the folder `loopy`. 
+Create a new file called `upsidedown.c` in the folder `loopy`.
 
 ###Step 2:
 Copy the following code into the file.
 
 
     #include <stdio.h>
-    
+
     int main(void)
     {
         int h = 5;
-    
+
         // print successive numbers from 1 to h (inclusive)
     }
 
@@ -113,7 +113,7 @@ Print the numbers `1` to `h` (inclusive), each on a new line. (Use a loop for th
     5
 
 ###Step 4:
-Now do the reverse: Print the numbers `h-1` to `0`. Try to do this without changing the structure of the loop too much. The output should look like this:
+Now do the reverse: print the numbers `h-1` to `0`. Try to do this without changing the structure of the loop too much. The output should look like this:
 
 
     4
@@ -149,18 +149,18 @@ Remember Mario? We’re going to do something similar, but we make it a bit more
     #####
 
 ###Step 1:
-Create a new file called `rehash.c` in the folder `loopy`. 
+Create a new file called `rehash.c` in the folder `loopy`.
 
 ###Step 2:
 Copy the following code into the file:
 
 
     #include <stdio.h>
-    
+
     int main(void)
     {
         int h = 5;
-    
+
         // print h hashes:
     }
 
@@ -168,7 +168,7 @@ Copy the following code into the file:
 Complete the program. The first step is to print `h` hashes in a row. Compile and test your program before continuing!
 
 ###Step 4:
-Try write a program that prints `h` rows of `h` hashes. The output should look something like this:
+Write a program that prints `h` rows of `h` hashes. The output should look something like this:
 
 
     #####
@@ -180,7 +180,7 @@ Try write a program that prints `h` rows of `h` hashes. The output should look s
 Compile and test!
 
 ###Step 5:
-Adapt the program in such a way that it prints an increasing number of hashes. Like this:
+Adjust the program in such a way that it prints an increasing number of hashes. Like so:
 
 
     #
@@ -192,7 +192,7 @@ Adapt the program in such a way that it prints an increasing number of hashes. L
 Compile and test!
 
 ###Step 6:
-Print the appropriate number of spaces to get the original mario pyramid:
+Print the appropriate number of spaces to get the original Mario pyramid:
 
 
         #
@@ -231,5 +231,3 @@ Can you also make the pyramid twice as large?
       ########
     ##########
     ##########
-
-
