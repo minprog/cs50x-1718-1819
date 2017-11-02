@@ -1,5 +1,11 @@
 # Introduction to Python
 
+## Refresher
+
+You probably need a little refresher on Python. In the video below, have a good look at the basic data types and syntax in Python. You might want to stop at 27:30, after which Doug will talk about classes, which are the topic of another exercise.
+
+![embed](https://www.youtube.com/embed/8xCzjOnfQbw)
+
 ## Getting started
 
 Execute in a terminal window
