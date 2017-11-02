@@ -1,5 +1,11 @@
 # Strings
 
+## Background
+
+You might want to have another look at pointers before you start. Have a look a this video:
+
+![embed]https://www.youtube.com/watch?v=8VAhORT0ZW8
+
 ## Getting started
 
 If you haven’t done so yet, create a directory called `practice` in your workspace:
