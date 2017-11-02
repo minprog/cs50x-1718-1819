@@ -2,11 +2,15 @@
 
 ## Getting started
 
-Execute in a terminal window
+If you haven’t done so yet, create a directory called `practice` in your workspace:
+
+    mkdir ~/workspace/practice
+
+Execute in a terminal window:
 
     mkdir -p ~/workspace/practice/pointers
     cd ~/workspace/practice/pointers/
-    wget
+    wget https://cs50x.mprog.nl/course/practice/strings/pointers.zip
     unzip pointers.zip
     rm pointers.zip
 
