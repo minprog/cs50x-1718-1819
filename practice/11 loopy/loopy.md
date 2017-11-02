@@ -2,7 +2,13 @@
 
 ## Goal
 
-The objective of this exercise is to become more comfortable with different loop constructions in C.
+The objective of this exercise is to become more comfortable with different loop constructions in C: `for` loops, `while` loops, and `do-while`loops.
+
+## Background
+
+Before you get started you might want to have a look at this video:
+![embed](https://www.youtube.com/embed/QOvo-xFL9II)
+
 
 ## Getting started
 
