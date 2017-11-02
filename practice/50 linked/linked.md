@@ -2,11 +2,15 @@
 
 ## Getting started
 
+If you haven’t done so yet, create a directory called `practice` in your workspace:
+
+    mkdir ~/workspace/practice
+
 Execute in a terminal window
 
     mkdir -p ~/workspace/practice/linked
     cd ~/workspace/practice/linked/
-    wget
+    wget https://cs50x.mprog.nl/course/practice/linked/linked.c
     unzip linked.zip
     rm linked.zip
 

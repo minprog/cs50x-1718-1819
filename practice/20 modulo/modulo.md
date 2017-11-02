@@ -11,7 +11,7 @@ If you haven’t done so yet, create a directory called `practice` in your works
 
     mkdir ~/workspace/practice
 
-Create a directory `loopy` in `practice` and step into it:
+Create a directory `modulo` in `practice` and step into it:
 
 
     mkdir ~/workspace/practice/modulo
