@@ -2,9 +2,9 @@
 
 ## Background
 
-You might want to have another look at pointers before you start. Have a look a this video:
+You might want to have another look at pointers before you start. Check out this video:
 
-![embed](https://www.youtube.com/watch?v=8VAhORT0ZW8)
+![embed](https://www.youtube.com/embed/8VAhORT0ZW8)
 
 ## Getting started
 
