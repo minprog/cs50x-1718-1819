@@ -10,7 +10,7 @@ Execute in a terminal window
 
     mkdir -p ~/workspace/practice/linked
     cd ~/workspace/practice/linked/
-    wget https://cs50x.mprog.nl/course/practice/linked/linked.c
+    wget https://cs50x.mprog.nl/course/practice/50%20linked/linked.zip
     unzip linked.zip
     rm linked.zip
 
