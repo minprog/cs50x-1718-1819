@@ -27,4 +27,4 @@ Let's exercise! Below are links to exercises on several topics from the CS50 cou
 ## Week 8: Python and classes
 
 - [Python](/practice/python): building structures in a new language
-- Classes: model the real world in your program
+- [Classes](/practice/classes): model the real world in your program
