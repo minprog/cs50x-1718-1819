@@ -46,12 +46,12 @@ grades:
         type: pass
         subgrades:
             points: integer
-        calculation: points >= 14 && -1 || 0
+        calculation: points >= 16 && -1 || 0
     resit1:
         type: pass
         subgrades:
             points: integer
-        calculation: points >= 14 && -1 || 0
+        calculation: points >= 16 && -1 || 0
     mispell:
         type: float
         subgrades:
@@ -96,7 +96,7 @@ grades:
         type: pass
         subgrades:
             points: integer
-        calculation: points >= 14 && -1 || 0
+        calculation: points >= 12 && -1 || 0
     resit2:
         type: pass
         subgrades:
@@ -119,11 +119,11 @@ calculation:
 psets1:
     drop: scope
     submits:
-        scratch: 1
-        c: 1
-        crypto: 1
-        fifteen: 1
-        forensics: 1
+        scratch: 8
+        c: 23
+        crypto: 23
+        fifteen: 23
+        forensics: 23
 
 psets2:
     drop: scope

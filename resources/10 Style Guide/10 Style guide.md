@@ -6,6 +6,12 @@ green conventions below so that we can reliably analyze your code's style.
 Similarly do companies typically adopt their own, company-wide conventions
 for style.
 
+## Useful: `style50`
+
+Part of this course is the `style50` tool, which can give you pointers[^1] as to where your code might be improved, stylistically speaking. However, do note that this tool subscribes to a particular way of writing code in some cases, while the general remarks below will allow you some more freedom in developing your own style. 
+
+[^1]: (no pun intended)
+
 ## Comments
 
 Comments make code more readable, not only for others (e.g., your TA) but
@@ -214,6 +220,13 @@ or with:
 When declaring a pointer, write the `*` next to the type, as in:
 
 	int* p;
+
+or, as `style50` would rather see it:
+
+	int *p;
+
+Both variations are fine, but do remember to be consistent! If using on variation or the other, do it everywhere in your code. If your code is embedded in a provided framework, and you subscribe to an alternative style of writing code, do not forget to adjust the framework code accordingly!
+
 
 ## Variables
 

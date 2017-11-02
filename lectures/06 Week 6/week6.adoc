@@ -21,11 +21,11 @@ video::6iXhAZKOVGE[youtube,height=540,width=960,options=notitle]
 * Let's consider how we might connect to the internet at home. We have an internet service provider (ISP) such as Comcast or Verizon, who build some wires into your home that connects you to their network of wires.
 * And the internet is just a connection of all these networks. Applications that we use every day run on top of this physical connection.
 * These days we typically connect to a router (a box that the wire from the outside world plugs into) wirelessly. Once we choose the wireless network that our router is broadcasting and connect to it, a technology called DHCP (Dynamic Host Configuration Protocol) assigns some IP (Internet Protocol) address to our computer, that uniquely identifies it. And this address is how computers across the internet talk to each other.
-* IPv4 (IP version 4) is the most common today, with four numbers of the format ``#.#.#.#``.
+* IPv4 (IP version 4) is the most common today, with four numbers of the format ``\#.#.\#.#``.
 * Just like how buildings in the real world have an address to identify them, so do computers on the internet.
-* And there is a system for allocating these addresses, by provider or organization. For example, Harvard's IPs include the ones in the range of `140.247.#.#` or `128.103.#.#`.
+* And there is a system for allocating these addresses, by provider or organization. For example, Harvard's IPs include the ones in the range of `140.247.\#.#` or `128.103.\#.#`.
 * Each of the `#` symbols can be in the range `0` to `255`, and that's the range of values 8 bits can hold. So an IP address with 4 of these numbers are exactly 32 bit values.
-* There are also reserved IPs, known as private addresses, with the ranges `10.#.#.#` and `172.16.#.# - 172.31.#.#` and `192.168.#.#` that are used within a particular network, but not with the outside world.
+* There are also reserved IPs, known as private addresses, with the ranges `10.\#.#.\#` and `172.16.#.# - 172.31.\#.#` and `192.168.\#.#` that are used within a particular network, but not with the outside world.
 * But we rarely, if ever, type in some numbers into our browser to visit websites. There is another technology called DNS (Domain Name System) that maps IP addresses to domain names, and vice versa. So a domain name like `www.google.com` is translated to an IP address behind the scenes.
 * And now that we have IP addresses to send to and receive from, we can create and send packets information with those addresses in them.
 * We send those packets to routers, computer servers, that are in datacenters around the world, that only route information based on the destination IP. By passing our packets from router to router, we can get them to our destination.

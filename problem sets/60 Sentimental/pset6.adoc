@@ -85,7 +85,7 @@ atop your code. Or you can use https://docs.python.org/3/library/functions.html#
 
 === Problem 4
 
-See link:../../../../problems/sentiments/sentiments.html#walkthrough[Sentiments]
+See link:/problems/sentiments[Sentiments] for the walkthrough
 
 == FAQs
 

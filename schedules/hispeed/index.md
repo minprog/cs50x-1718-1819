@@ -42,14 +42,14 @@
 | Tue      | load (mispellings)                 |  
 | Wed      | check (mispellings)                |  
 | Thu      | check (mispellings)                |  
-| Fri      | size + unload (mispellings)        |  
+| Fri      | size + unload (mispellings) + lecture 6,7, and 8 |  
 
 | Week 6   | Problem                            |  
 | -------- | -------------------                |  
 | Mon      | mario + greedy/credit              |  
 | Tue      | caesar/vigenere/crack              |  
 | Wed      | smile (sentiments)                 |  
-| Thu      | analyze (sentiments)               |  
+| Thu      | analyze (sentiments) + lecture 9              |  
 | Fri      | register (finance)                 |  
 
 | Week 7   | Problem                            |  
@@ -57,7 +57,7 @@
 | Mon      | quote + buy (finance)              |  
 | Tue      | index (finance)                    |  
 | Wed      | sell + history (finance)           |  
-| Thu      | history + personal touch (finance) |  
+| Thu      | history + personal touch (finance) + lecture 10 |  
 | Fri      | articles (mashup)                  |  
 
 | Week 8   | Problem                            |  

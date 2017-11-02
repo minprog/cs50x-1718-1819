@@ -22,9 +22,7 @@ First create a new directory and step into it:
 
 ## Specification
 
-In this assignment you have to make an application to register the subgroups of a workgroup.
-
-- The framework of the website and the database have already been set up.
+In this assignment you have to make an application to register the subgroups of a workgroup. The framework of the website and the database have already been set up. There are three things that still need to be done:
 - Finish the website with a complete registration form
 - Actually register the groups in the database
 - After the user is registered, you should redirect to the overview of the registered groups.
@@ -39,12 +37,12 @@ Start Flask’s built-in web server (within practical/):
 
     flask run
 
-Select CS50 IDE > Web Server to see the distribution code in action.
-In another terminal window, start phpLiteAdmin (within practical/):
+Select CS50 IDE > Web Server in the top left corner to see the distribution code in action.
+In a different terminal window, start phpLiteAdmin (within practical/):
 
     phpliteadmin practical.db
 
-And open the URL that phpliteadmin outputs in a new tab. Notice how practical.db comes with a table called groups. This is where the groups will be registered.
+Open the URL that phpliteadmin outputs in a new tab. Notice how practical.db comes with a table called groups. This is where the groups will be registered.
 
 ## Application
 
@@ -75,8 +73,16 @@ This function renders an apology to the user when something goes wrong. Whatever
 Inside the templates folder is a file called `register.html`. This is the form where the user can fill in the details of the group registration. Right now it only contains a field for the group name. You need to complete the form so it corresponds to the fields in the group table. Via phpliteadmin you can view the structure of the database table.
 Let's get started!
 
+## Recap
+
+- Finish the website with a complete registration form (see register.html)
+- Actually register the groups in the database (register() in application.py. HINT: use SQL)
+- After the user is registered, you should redirect to the overview of the registered groups. (register() in application.py)
+
+Again, there are only two files that need to be changed. Make sure you understand what to do (by understanding what the provided code does) before you start. If you are unsure what to do or need more information, raise your hand and a TA will help you!
+
 ## Done?
 
 Got time left? First, check if you have error checked the user's input in every way and rendered apologies for everything. 
-If you've done that you can improve you application by making a seperate student table, in which the students are registered. The groups table should then reference to the students via their ID. You are allowed to change the groups table and anything else you think you need. What should happen if the same student is part of multiple groups?
+If you've done that you can improve your application by making a seperate student table, in which the students are registered. The groups table should then reference to the students via their ID. You are allowed to change the groups table and anything else you think you need. What should happen if the same student is part of multiple groups?
 
