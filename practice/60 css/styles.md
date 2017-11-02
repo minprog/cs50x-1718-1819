@@ -1,5 +1,11 @@
 # Styles
 
+## Refresher
+
+You probably could do with a little refresher on what HTML & CSS are all about, so check out this video first!
+
+![embed](https://www.youtube.com/embed/dM5V1epAbSs)
+
 ## Getting started
 
 Execute in a terminal window
@@ -9,12 +15,6 @@ Execute in a terminal window
     wget
     unzip styles.zip
     rm styles.zip
-
-## Goal
-
-Getting more familiar with both html and CSS by applying some simple (yet effective!) style commands in both languages.
-
-## HTML
 
 To get started, open up `favourites.html` in a browser window (either Chrome or FireFox). As you may see, the page seems empty. Now open up the same file but in your text editor. Not as empty as it seems! Whenever you've made a change to `favourites.html`, hit F5 (to refresh the page) in your browser to see the changes. Let's do some exercises!
 
@@ -45,6 +45,10 @@ In the same section, make sure your picture has a title.
 #### 1.6
 
 Duplicate your file by right-clicking `duplicate` in your file tree. We will make use of `favourites1.html` soon!
+
+## CSS ##
+
+![embed](https://www.youtube.com/embed/G9mq8-DLVAg)
 
 #### 1.7
 
