@@ -1,4 +1,4 @@
-# Pointers
+# Strings
 
 ## Getting started
 
@@ -46,4 +46,4 @@ Answer the following questions:
 
 > What is the difference between exercise 3 and 4?
 
-##
+
