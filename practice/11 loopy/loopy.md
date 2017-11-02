@@ -33,6 +33,8 @@ Try to change the `for` loop into a `while` loop for the following C program:
         }
     }
 
+If you are not sure how to go about this, have another look at loops here: [https://study.cs50.net/loops](https://study.cs50.net/loops).
+
 ###Step 1:
 Before you run the program above, try to write down for yourself what the output will be.
 
@@ -40,8 +42,32 @@ Before you run the program above, try to write down for yourself what the output
 Create a new file called `forawhile.c` in the folder `loopy`. Copy the code above into it. Compile and run. Does the output match your expectation?
 
 ###Step 3:
-Write the same program, but using a `while` loop instead of a `for` loop. Compile and test. Does the output exactly match the output of the original program?
+Write the same program, but using a `while` loop instead of a `for` loop. Compile and test. Does the output exactly match the output of the original program? 
 
+## Do while
+
+The following piece of code ask the user for a positive integer using a while loop. You challenge is to convert this while loop into a do-while construction.
+
+  #include <stdio.h>
+  #include <cs50.h>
+
+  int main()
+  {
+      int n = 0;
+      while (n <= 0)
+      {
+          printf("Please enter a positive integer: ");
+          n = get_int();
+      }
+
+      printf("n = %i\n", n);
+  }
+
+### Step 1:
+Create a new file `dowhile.c` in the directory `loopy` and copy the code above into it.
+
+### Step 2:
+Change the `while` loop into a `do-while` loop. If you are not sure what the difference is, have a look at [https://study.cs50.net/loops](https://study.cs50.net/loops) (sepcifically, slide 5 to 8).
 
 ## Upside down
 

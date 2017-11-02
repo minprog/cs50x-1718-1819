@@ -20,7 +20,7 @@ Getting a better understanding of how pointers work by applying various concepts
 
 ## Awesome Mix I
 
-Open up `pointer.c`. Here, we provided you with a string, nothing much. Remember that strings are effectively pointers to a character array.
+Open up `pointer.c`. Here, we provided you with a string, nothing much. Remember that strings are effectively pointers to a character array. The syntax of pointers in C is a bit tricky. You might want to have another look at it: [https://study.cs50.net/pointers](https://study.cs50.net/pointers).
 
 ### 1
 
