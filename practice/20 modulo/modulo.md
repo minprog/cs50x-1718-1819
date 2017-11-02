@@ -19,9 +19,12 @@ Create a directory `modulo` in `practice` and step into it:
 
 ## Paper
 
+Do you rember modulo? If not have another look at the [lecture notes of week 1](https://cs50x.mprog.nl/lectures/week-1). The last section shows an example of the use of modulo. Also, take a look here: [https://study.cs50.net/math](https://study.cs50.net/math). On slide 8, modulo is explained.
+
 Before we start programming, let’s do some pen and paper exercises. 
 
 Give the value of x and y:
+
 ###1
 int x = 17/3;
 int y = 17%3;
