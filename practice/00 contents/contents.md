@@ -13,6 +13,8 @@ Let's exercise! Below are links to exercises on several topics from the CS50 cou
 
 ## Week 4: Strings & Memory
 
+*Verplichte stof voor Programmeren 1, maar ook essentiële voorbereiding voor Programmeren 2!*
+
 - [Beatles](/practice/beatles): catalogue the four members of a famous pop band
 - [Strings](/practice/strings): pointers and strings
 
