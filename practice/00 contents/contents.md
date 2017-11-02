@@ -19,3 +19,7 @@ Let's exercise! Below are links to exercises on several topics from the CS50 cou
 ## Week 5: Data structures
 
 - [Linked](/practice/linked): say goodbye to the weakest link in your list!
+
+## Week 6: The web
+
+- [CSS](/practice/css): spice up your site
