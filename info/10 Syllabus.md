@@ -129,7 +129,7 @@ Re-submission of problem sets is not possible until the following semester. If y
 
 ## Quiz
 
-The course has one 90-minute quiz. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. One resit is offered, as soon as one (1) week after the quiz.
+The course has one 90-minute quiz. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. One resit is offered.
 
 ## Books
 
