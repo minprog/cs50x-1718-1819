@@ -1,5 +1,14 @@
 # Linked
 
+## Goal
+
+Get a better understanding of how linked lists work and implement some basic concepts from the sections.
+
+## Background
+
+Have another look at linked lists with this video:
+![embed](https://www.youtube.com/embed/xdkSNe43iNM)
+
 ## Getting started
 
 If you haven’t done so yet, create a directory called `practice` in your workspace:
@@ -13,10 +22,6 @@ Execute in a terminal window
     wget https://cs50x.mprog.nl/course/practice/50%20linked/linked.zip
     unzip linked.zip
     rm linked.zip
-
-## Goal
-
-Get a better understanding of how linked lists work and implement some basic concepts from the sections.
 
 ## Data structures
 

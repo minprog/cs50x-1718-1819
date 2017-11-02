@@ -1,5 +1,9 @@
 # Strings
 
+## Goal
+
+Getting a better understanding of how pointers work by applying various concepts from the sections.
+
 ## Background
 
 You might want to have another look at pointers before you start. Check out this video:
@@ -19,10 +23,6 @@ Execute in a terminal window:
     wget https://cs50x.mprog.nl/course/practice/40%20strings/pointers.zip
     unzip pointers.zip
     rm pointers.zip
-
-## Goal
-
-Getting a better understanding of how pointers work by applying various concepts from the sections.
 
 ## Awesome Mix I
 
