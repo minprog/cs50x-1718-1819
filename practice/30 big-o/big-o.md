@@ -252,7 +252,7 @@ He entered some data that he could find, however he noticed that when he started
 
 ### Q3
 
-It is not your goal to optimice Pycelle's code, but to get a better understanding of why it is running slow. The code contains several functions `sort`, `mean`, and `average`. The `main` function consists of three steps: 1) Compute the deviation of the average for all people of Westors, 2) compute the deviation from the mean, and 3) print the results.
+It is not your goal to optimice Pycelle's code, but to get a better understanding of why it is running slow. The code contains several functions `sort`, `mean`, and `average`. The `main` function consists of three steps: 1) Compute the deviation from the average for all people of Westors, 2) compute the deviation from the mean, and 3) print the results.
 
 
 Write down the worst-case running time (O(N)) for every part of the code:
@@ -260,9 +260,12 @@ Write down the worst-case running time (O(N)) for every part of the code:
 1. Sort: O(N) = ?
 2. Average: O(N) = ?
 3. Mean: O(N) = ?
-4. Step 1 (compute deviation from average for _all_ Westerosi): O(N) = ?
-5. Step 2 (compute deviation from mean for _all_ Westerosi): O(N) = ?
+4. Step 1 (compute the deviation from average for _all_ Westerosi): O(N) = ?
+5. Step 2 (compute the deviation from mean for _all_ Westerosi): O(N) = ?
 6. Step 3 (print data): O(N) = ?
+7. For the entire program: O(N) = ?
+
+> What part of the code should Pycelle focus on optimzing, if he wants to make the program more efficient?
 
 #### Code
 
