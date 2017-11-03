@@ -256,6 +256,7 @@ It is not your goal to optimice Pycelle's code, but to get a better understandin
 
 
 Write down the worst-case running time (O(N)) for every part of the code:
+
 1. Sort: O(N) = ?
 2. Average: O(N) = ?
 3. Mean: O(N) = ?
