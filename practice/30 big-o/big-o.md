@@ -2,13 +2,13 @@
 
 The following exercise doesn't require any programming. These exercises train the understanding of running time complexity.
 
-# Printing
+## Printing
 
 All the code fragments below have a variable `n`. Determine the worst-case running time complexity for these fragments (O(n)).
 
-## Q1.1
+### Q1.1
 
-### Code
+#### Code
 
     int n = 6;
     for(int i = 0; i < n; i++)
@@ -17,13 +17,13 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
     }
     printf("\n");
 
-### Output
+#### Output
 
 	 0  1  2  3  4  5 
 
-## Q1.2
+### Q1.2
 
-### Code
+#### Code
 
     int n = 4;
     for(int i = 0; i < n*3; i++)
@@ -32,13 +32,13 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
     }
     printf("\n");
 
-### Output
+#### Output
 
 	 0  1  2  3  4  5  6  7  8  9 10 11 
 
-## Q1.3
+### Q1.3
 
-### Code
+#### Code
 
     int n = 16;
     for(int i = n; i > 0; i = i / 2)
@@ -47,13 +47,13 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
     }
     printf("\n");
 
-### Output
+#### Output
 
 	16  8  4  2  1 
 
-## Q1.4
+### Q1.4
 
-### Code
+#### Code
 
     int n = 2;
     for(int i = 0; i < 8; i++)
@@ -62,13 +62,13 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
     }
     printf("\n");
 
-### Output
+#### Output
 
 	 2  3  4  5  6  7  8  9
 
-## Q1.5
+### Q1.5
 
-### Code
+#### Code
 
     int n = 5;
     for(int i = 0; i < n; i++)
@@ -80,7 +80,7 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
         printf("\n");
     }
 
-### Output
+#### Output
 
 	 0  0  0  0  0 
 	 0  1  2  3  4 
@@ -88,9 +88,9 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
 	 0  3  6  9 12 
 	 0  4  8 12 16 
 
-## Q1.6
+### Q1.6
 
-### Code
+#### Code
 
     int n = 5;
     for(int i = 0; i < n; i++)
@@ -102,7 +102,7 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
         printf("\n");
     }
 
-### Output
+#### Output
 
 	 0  0 
 	 0  1 
@@ -110,9 +110,9 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
 	 0  3 
 	 0  4 
 
-## Q1.7
+### Q1.7
 
-### Code
+#### Code
 
     int n = 5;
     for(int i = 0; i < n; i++)
@@ -124,7 +124,7 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
         printf("\n");
     }
 
-### Output
+#### Output
 
 	 0  0  0  0 
 	 0  1  2  3 
@@ -133,9 +133,9 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
 	 0  4  8 12 
 
 
-## Q1.8
+### Q1.8
 
-### Code
+#### Code
 
     int n = 8;
     for(int i = n; i > 0; i = i / 2)
@@ -147,7 +147,7 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
         printf("\n");
     }
 
-### Output
+#### Output
 
 	 0  8 16 24 32 40 48 56 
 	 0  4  8 12 16 20 24 28 
@@ -155,13 +155,13 @@ All the code fragments below have a variable `n`. Determine the worst-case runni
 	 0  1  2  3  4  5  6  7 
 
 
-# Functions
+## Functions
 
 For the following functions, write down write down both worst-case and best-case running time (O(n) and Ω(n)).
 
-## Q2.1
+### Q2.1
 
-### Code
+#### Code
 
 	float average(float a[], int n)
 	{
@@ -173,11 +173,11 @@ For the following functions, write down write down both worst-case and best-case
 	    return total/n;
 	}
 
-## Q2.2
+### Q2.2
 
 For this question determine the complexity only for `sort` (not for `swap`).
 
-### code
+#### code
 
 	void sort(float a[],  int n)
 	{
@@ -194,11 +194,11 @@ For this question determine the complexity only for `sort` (not for `swap`).
 	    *b = tmp;
 	}
 
-## Q2.3
+### Q2.3
 
 For the following code assume `swap` from Question 2.2. 
 
-### Code 
+#### Code 
 
 	void sort(float a[],  int n)
 	{
@@ -215,11 +215,11 @@ For the following code assume `swap` from Question 2.2.
 	    }
 	}
 
-## Q2.4
+### Q2.4
 
 For the following piece of code assume `sort` from Question 2.3.
 
-### Code 
+#### Code 
 
 	// computes the mean of array a of size n
 	float mean(float a[], int n)
@@ -230,11 +230,11 @@ For the following piece of code assume `sort` from Question 2.3.
 	    return (a[(n-1)/2] + a[n/2])/2;
 	}
 
-## Q2.5
+### Q2.5
 
 For the following code fragment it is assumed that the input array `a` is already sorted.
 
-### Code
+#### Code
 
 	// computes the mean of sorted array a of size n
 	float mean(float a[], int n)
@@ -244,13 +244,13 @@ For the following code fragment it is assumed that the input array `a` is alread
 	}
 
 
-# Though she be but little, she is fierce!
+## Though she be but little, she is fierce!
 
 Grand Maester Pycelle has noticed that the smaller people in Westoros are more likely to rise to power. Have you ever seen a Wun Wun the giant on a throne? Being quite the little data scientiest, he would like to have a better overview of the body height of all the people of importance in Westeros. Specifically he would like to know the deviation of the height from the average and mean of the population of Westeros. So, Pycelle sat down in front of his computer and wrote a program to compute all of this.
 
 He entered some data that he could find, however he noticed that when he started adding data, his algorithm was getting unacceptably slow. Maybe you can help him figure out why.
 
-## Q3
+### Q3
 
 It is not your goal to optimice Pycelle's code, but to get a better understanding of why it is running slow. The code contains several functions `sort`, `mean`, and `average`. The `main` function consists of three steps: 1) Compute the deviation of the average for all people of Westors, 2) compute the deviation from the mean, and 3) print the results.
 
@@ -263,7 +263,7 @@ Write down the worst-case running time (O(N)) for every part of the code:
 5. Step 2 (compute deviation from mean for _all_ Westerosi): O(N) = ?
 6. Step 3 (print data): O(N) = ?
 
-### Code
+#### Code
 
 	#include <stdio.h>
 	#include <cs50.h>
@@ -344,7 +344,7 @@ Write down the worst-case running time (O(N)) for every part of the code:
 	    *b = tmp;
 	}
 
-### Output
+#### Output
 
 	     Westerosi | Height | d(avg) | d(mean)
 	---------------+--------+--------+--------
