@@ -232,8 +232,8 @@ For the following piece of code assume `sort` from Question 2.3.
 
 #### Code 
 
-	// computes the mean of array a of size n
-	float mean(float a[], int n)
+	// computes the median of array a of size n
+	float median(float a[], int n)
 	{
 	    if(n <= 0) return 0;
 
@@ -247,8 +247,8 @@ For the following code fragment it is assumed that the input array `a` is alread
 
 #### Code
 
-	// computes the mean of sorted array a of size n
-	float mean(float a[], int n)
+	// computes the median of sorted array a of size n
+	float median(float a[], int n)
 	{
 	    if(n <= 0) return 0;
 	    return (a[(n-1)/2] + a[n/2])/2;
@@ -257,22 +257,22 @@ For the following code fragment it is assumed that the input array `a` is alread
 
 ## Though she be but little, she is fierce!
 
-Grand Maester Pycelle has noticed that the smaller people in Westoros are more likely to rise to power. Have you ever seen a Wun Wun the giant on a throne? Being quite the little data scientiest, he would like to have a better overview of the body height of all the people of importance in Westeros. Specifically he would like to know the deviation of the height from the average and mean of the population of Westeros. So, Pycelle sat down in front of his computer and wrote a program to compute all of this.
+Grand Maester Pycelle has noticed that the smaller people in Westoros are more likely to rise to power. Have you ever seen a Wun Wun the giant on a throne? Being quite the little data scientiest, he would like to have a better overview of the body height of all the people of importance in Westeros. Specifically he would like to know the deviation of the height from the average and median of the population of Westeros. So, Pycelle sat down in front of his computer and wrote a program to compute all of this.
 
 He entered some data that he could find, however he noticed that when he started adding data, his algorithm was getting unacceptably slow. Maybe you can help him figure out why.
 
 ### Q3
 
-It is not your goal to optimice Pycelle's code, but to get a better understanding of why it is running slow. The code contains several functions `sort`, `mean`, and `average`. The `main` function consists of three steps: 1) Compute the deviation from the average for all people of Westors, 2) compute the deviation from the mean, and 3) print the results.
+It is not your goal to optimice Pycelle's code, but to get a better understanding of why it is running slow. The code contains several functions `sort`, `median`, and `average`. The `main` function consists of three steps: 1) Compute the deviation from the average for all people of Westors, 2) compute the deviation from the median, and 3) print the results.
 
 
 Write down the worst-case running time (O(N)) for every part of the code:
 
 1. Sort: O(N) = ?
 2. Average: O(N) = ?
-3. Mean: O(N) = ?
+3. median: O(N) = ?
 4. Step 1 (compute the deviation from average for _all_ Westerosi): O(N) = ?
-5. Step 2 (compute the deviation from mean for _all_ Westerosi): O(N) = ?
+5. Step 2 (compute the deviation from median for _all_ Westerosi): O(N) = ?
 6. Step 3 (print data): O(N) = ?
 7. For the entire program: O(N) = ?
 
@@ -286,7 +286,7 @@ Write down the worst-case running time (O(N)) for every part of the code:
 	#define N 20
 
 	float average(int a[], int n);
-	float mean(int a[], int n);
+	float median(int a[], int n);
 	void sort(int a[], int n);
 	void swap(int* a, int* b);
 
@@ -302,27 +302,27 @@ Write down the worst-case running time (O(N)) for every part of the code:
 
 	    // arrays for deviation values
 	    float deviation_from_average[N];
-	    float deviation_from_mean[N];
+	    float deviation_from_median[N];
 
 	    // Step 1: Compute deviation from average
 	    for(int i = 0; i < N; i++)
 	        deviation_from_average[i] = height[i] - average(height, N);
 
-	    // Step 2: Compute deviation from mean
+	    // Step 2: Compute deviation from median
 	    for(int i = 0; i < N; i++)
-	        deviation_from_mean[i] = height[i] - mean(height, N);
+	        deviation_from_median[i] = height[i] - median(height, N);
 
 	    // Step 3: Print data
-	    printf("     Westerosi | Height | d(avg) | d(mean)\n");
+	    printf("     Westerosi | Height | d(avg) | d(median)\n");
 	    printf("---------------+--------+--------+--------\n");
 	    for(int i = 0; i < N; i++)
 	    {
 	        printf("%14s |  %3icm |  %3.0fcm |  %3.0fcm\n", westerosi[i],
-	            height[i], deviation_from_average[i], deviation_from_mean[i]);
+	            height[i], deviation_from_average[i], deviation_from_median[i]);
 	    }
 	}
 
-	float mean(int a[], int n)
+	float median(int a[], int n)
 	{
 	    if(n <= 0) return 0;
 
@@ -361,7 +361,7 @@ Write down the worst-case running time (O(N)) for every part of the code:
 
 #### Output
 
-	     Westerosi | Height | d(avg) | d(mean)
+	     Westerosi | Height | d(avg) | d(median)
 	---------------+--------+--------+--------
 	          Bron |  183cm |  -18cm |    5cm
 	           Jon |  173cm |  -28cm |   -5cm
