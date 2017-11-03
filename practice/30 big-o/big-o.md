@@ -1,10 +1,21 @@
 # Big O
 
-The following exercise doesn't require any programming. These exercises train the understanding of running time complexity.
+The following exercises don't require any programming. These exercises train the understanding of running time complexity.
+
+## Background
+
+Before you start you might want to have another look at the theory. This video explains computational complexity:
+![embed](https://www.youtube.com/embed/trwEuug3YFA)
+
+And, this video discusses a number of sorting algorithms and their complexity:
+![embed](https://www.youtube.com/embed/j_pXizwRKVw)
+
 
 ## Printing
 
-All the code fragments below have a variable `n`. Determine the worst-case running time complexity for these fragments (O(n)).
+All the code fragments below have a variable `n`. Determine the worst-case running time (O(n)) complexity for these fragments. 
+
+> If you are not sure, you can always try to run the code yourself and see what happens if you change the variable `n`.
 
 ### Q1.1
 
