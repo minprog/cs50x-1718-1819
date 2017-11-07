@@ -9,7 +9,7 @@ Get more comfortable with different search and sorting algorithms.
 If you're not sure how bubble sort works, have another look:
 ![embed](https://www.youtube.com/embed/LZaU8GHNsQI)
 
-Consider the following pseudo code for binary search:
+Consider the following pseudo code for bubble sort:
 
 	sort array of lenth n:
 		end := n - 1
