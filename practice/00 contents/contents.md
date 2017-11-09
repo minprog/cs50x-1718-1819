@@ -9,7 +9,9 @@ Let's exercise! Below are links to exercises on several topics from the CS50 cou
 
 ## Week 2: Crypto & Arrays
 
-- [Modulo](/practice/modulo): divide and conquer the modulo operator
+- [Modulo](/practice/modulo): divide and modulo
+- [Functions](/practice/functions): split your program into parts
+- [Recrypt](/practice/recrypt): strings and ASCII
 
 ## Week 4: Strings & Memory
 

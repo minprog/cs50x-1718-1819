@@ -12,7 +12,8 @@ Execute in a terminal window
 
     mkdir -p ~/workspace/practice/styles
     cd ~/workspace/practice/styles/
-    wget
+    wget <favourites.html>
+    wget <styles.css>
     unzip styles.zip
     rm styles.zip
 
