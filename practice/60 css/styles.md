@@ -49,6 +49,10 @@ Duplicate your file by right-clicking `duplicate` in your file tree. We will mak
 
 ## Add CSS styles to the HTML
 
+Now we're going to add some style rules to the HTML. Remember, if you have a `div` element, you might add styles to it as follows:
+
+    <div style="display: none;"></div>
+
 #### 1.7
 
 We continue to work in our original file. Now add some colours! Change the text of the page title to orange, the text of the picture title to green, and the _background_ of the description to yellow.
