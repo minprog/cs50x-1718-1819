@@ -17,6 +17,8 @@ Execute in a terminal window
     unzip styles.zip
     rm styles.zip
 
+[ff](favourites.html)
+
 To get started, open up `favourites.html` in a browser window (either Chrome or FireFox). As you may see, the page seems empty. Now open up the same file but in your text editor. Not as empty as it seems! Whenever you've made a change to `favourites.html`, hit F5 (to refresh the page) in your browser to see the changes. Let's do some exercises!
 
 #### 1.1
