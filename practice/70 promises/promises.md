@@ -2,7 +2,7 @@
 
 ## Goal
 
-Learn to use jQuery-promises. When we build websites we often want to request data (e.g., from other a database or another website or service). When we`re loading this data we want to make sure that the website stays usable. Ajax, and more sepcifically jQuery promises, allow us to do this. Here you learn how to do this. You will start with a badly programmed website (i.e., it blocks while waiting for data) and you`re going to fix it!
+Learn to use jQuery-promises. When we build websites we often want to request data (e.g., from other a database or another website or service). When we're loading this data we want to make sure that the website stays usable. Ajax, and more sepcifically jQuery promises, allow us to do this. Here you learn how to do this. You will start with a badly programmed website (i.e., it blocks while waiting for data) and you're going to fix it!
 
 ## Background
 
@@ -25,27 +25,27 @@ Further reading, the Ajax API:
     cd ~/workspace/practice/promises
 
 ## Exercise
-The framework you`ve downloaded contains a very minimal setup for a website: A webserver (`application.py`), an plain html webpage (`index.html` in the directory `templates`), some Javascript (`scripts.js` in the directory `static`).
+The framework you've downloaded contains a very minimal setup for a website: A webserver (`application.py`), an plain html webpage (`index.html` in the directory `templates`), some Javascript (`scripts.js` in the directory `static`).
 
-The file `application.py` is prety simple. You don`t have to edit it, but let`s have a quick look. It starts a webserver with three routes: 
+The file `application.py` is prety simple. You don't have to edit it, but let's have a quick look. It starts a webserver with three routes: 
 
 - `"/"`, returns the `index.html` template.
 - `"/slow"`, returns a JSON with some mock data. It is programmed to wait for 3 seconds before it returns the data. Hence, "slow".
 - `"/fast"`, also returns a JSON with some mock data. But, it is slightly faster, it only takes 1 second to return the data.
 
-The file `index.html` is a very basic website template. This file you don`t have to edit either.
+The file `index.html` is a very basic website template. This file you don't have to edit either.
 
 - It includes the `jQuery` library.
 - It imports our own `scripts.js`.
 - It contains two buttons, 'slow' and 'fast'. When they are clicked they respectively call the functions `slow()` and `fast()` from our `script.js` (more on that later).
-- Further, it contains two `<p>` elements with the id`s `data1` and `data2` into which we will load our data from the Javascript.
+- Further, it contains two `<p>` elements with the id's `data1` and `data2` into which we will load our data from the Javascript.
 
 The purpose of the file `scripts.js` is to load data from our server and put them in the `index.html`. This is the file where you have to make some changes.
 - The function `slow()` reads data from a route called `"/slow"`, which takes 3 seconds to return data.
 - The function `fast()` reads data from a route called `"/fast"`, which takes 1 second to return data.
 - The function `loadData()` is a badly programmed function that does the actual loading of the data. It request the data from the provided route. It is not a great function because it blocks the Javascript while it is waiting for the data (i.e., 3 seconds for the `"/slow"` route).
 
-Your goals is to improve the functions `slow()` and `fast()`. Instead of using the **synchronous** `loadData()`, you`re going to use the **asynchronous** jQuery function `$.getJSON()`.
+Your goals is to improve the functions `slow()` and `fast()`. Instead of using the **synchronous** `loadData()`, you're going to use the **asynchronous** jQuery function `$.getJSON()`.
 
 ### TL;DR
 
@@ -53,7 +53,7 @@ You only have to revise the implementation of the functions `slow()` and `fast()
 
 ### Step 1:
 
-Start the webserver by typing the command (make sure you`re in the `promises` directory):
+Start the webserver by typing the command (make sure you're in the `promises` directory):
 
 	flask run 
 
