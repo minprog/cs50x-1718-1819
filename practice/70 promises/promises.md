@@ -28,21 +28,21 @@ Further reading, the Ajax API:
 
 The framework you've downloaded contains a very minimal setup for a website: A webserver (`application.py`), a plain HTML webpage (`index.html` in the directory `templates`), and some Javascript (`scripts.js` in the directory `static`).
 
-The file `application.py` is prety simple. You don't have to edit it, but let's have a quick look. It starts a webserver with four routes: 
+The file `application.py` is pretty simple. You don't have to modify it, but let's have a quick look. It starts a webserver with four routes: 
 
 - `"/"`, renders the `index.html` template.
 - `"/slow"`, returns a JSON with some mock data. It is programmed to wait for 3 seconds before it returns the data. Hence, "slow".
 - `"/fast"`, also returns a JSON with some mock data. But, it is a bit faster, it only takes 1 second to return the data.
-- `"/unreliable"`, is, well, unreliable. About 50% of the time, the route promptly returns with a correct JSON, the other 50% of the time, the route returns an error. For the fisrt part of the exercise we're going to ignor this route.
+- `"/unreliable"`, is, well, unreliable. About 50% of the time, the route promptly returns with a correct JSON, the other 50% of the time, the route returns an error. For the fisrt part of the exercise we're going to ignore this route.
 
-The file `index.html` is a very basic website template. This file you don't have to edit either.
+The file `index.html` is a very basic website template. You don't have to modify this file either.
 
 - It includes the `jQuery` library.
 - It imports our own `scripts.js`.
 - It contains two buttons, 'slow' and 'fast'. When clicked they respectively call the functions `slow()` and `fast()` from our `script.js` (more on that later).
 - Further, it contains two `<p>` elements with the id's `data1` and `data2` into which we will load our data from the Javascript.
 
-The purpose of the file `scripts.js` is to load data from our server and put them in the `index.html`. This is the file where you have to make some changes.
+The purpose of the file `scripts.js` is to load data from our server and insert them into the `index.html`. This is the file where you have to make some changes.
 
 - The function `slow()` reads data from a route called `"/slow"`, which takes 3 seconds to return data.
 - The function `fast()` reads data from a route called `"/fast"`, which takes 1 second to return data.
