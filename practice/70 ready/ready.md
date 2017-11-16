@@ -9,7 +9,7 @@ Get a bit more familiar with using anonymous functions and get some Javascript p
 Before your start you might want to have another look at the DOM structure:
 ![embed](https://www.youtube.com/embed/LKWJpgvfH3U)
 
-And if you your not comofortable with the basics of Javascript, you migh want to have a look at this video:
+And if you're not comfortable with the basics of Javascript, you might want to have a look at this video:
 ![embed](https://www.youtube.com/embed/Z93IaNfavZw)
 
 ## Getting started
