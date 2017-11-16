@@ -2,7 +2,7 @@
 
 ## Goal
 
-In this exercise we will breakdown the implementation of bubble sort in smaller steps. 
+In this exercise we will gradually work towards the implementation of bubble sort. 
 
 ## Exercise 1: Print array
 
@@ -25,7 +25,7 @@ Now write a loop that prints the contents of this array. Example output:
 
 ## Exercise 2: Print array function
 
-Now move this code to a seperate function so that we can reuse it for the foloowing exercises. Create a function called `print_array` that takes two parameter: an `int` representing the size of the array; and an `int` array, the array itself.  
+Now move this code to a seperate function so that we can reuse it for the following exercises. Create a function called `print_array` that takes two parameter: 1) an `int` representing the size of the array and 2) an `int` array, the array itself.  
 
 Change the `main` function to call this function, like so:
 
