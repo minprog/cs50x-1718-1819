@@ -4,6 +4,12 @@
 
 Visit w3school's [SQL editor](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all). All following exercises will apply on the databases provided with this editor.
 
+## Background
+
+To get started, watch the following video.
+
+![embed](https://www.youtube.com/embed/AywtnUjQ6X4)
+
 ## Goal
 
 Getting familiar with SQL databases.
