@@ -19,7 +19,7 @@ Further reading, the Ajax API:
 ## Getting started
 
     cd ~/workspace/practice/
-    wget https://cs50x.mprog.nl/course/practice/70%20promises/promises.zip
+    wget https://cs50x.mprog.nl/course/practice/90%20promises/promises.zip
     unzip promises.zip
     rm promises.zip
     cd ~/workspace/practice/promises
