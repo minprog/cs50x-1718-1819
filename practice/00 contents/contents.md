@@ -38,6 +38,7 @@ Let's exercise! Below are links to exercises on several topics from the CS50 cou
 
 - [CSS](/practice/css): spice up your site
 - [SQL](/practice/sql): SELECT * FROM practice
+- [XKCD](/practice/XKCD): **en route** with Flask.
 
 ## Week 8: Javascript and Python classes
 
