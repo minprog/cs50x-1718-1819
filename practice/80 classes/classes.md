@@ -26,13 +26,13 @@ We're working with the personalia of the students and staff and are looking for 
 
 Answer the following question:
 
-> Why do we write __init__ and not just init?
+> Why do we write `__init__` and not just `init`?
 
 - Test if your `Person` class works by creating a new Person, e.g. yourself.
 - Within Person, create a method `calculate_age()` that (drumroll, please) calculates the Person's age.
 - Implement a function `__str__()` in such a way that it returns `Tim is 23 years old.`
 
-> What does __str__ do for us?
+> What does `__str__` do for us?
 
 - Create a second class `Student`, which _inherits_ from `Person`.
 
@@ -46,7 +46,7 @@ Answer the following question:
 - Implement a function `calculate_mean()`. This should return the Student's GPA.
 - Implement a function `__str__()` in such a way that it returns `Tim's GPA is 8.0.` when called (this should work for any student).
 
-> What happens with the __str__ method in Person now that we made another in Student?
+> What happens with the `__str__` method in Person now that we made another in Student?
 
 HINTS:
 
