@@ -12,11 +12,12 @@ Execute in a terminal window
 
     mkdir -p ~/workspace/practice/styles
     cd ~/workspace/practice/styles/
-    wget
-    unzip styles.zip
-    rm styles.zip
+    wget https://cs50x.mprog.nl/course/practice/60%20css/favourites.html
+    wget https://cs50x.mprog.nl/course/practice/60%20css/styles.css
 
-To get started, open up `favourites.html` in a browser window (either Chrome or FireFox). As you may see, the page seems empty. Now open up the same file but in your text editor. Not as empty as it seems! Whenever you've made a change to `favourites.html`, hit F5 (to refresh the page) in your browser to see the changes. Let's do some exercises!
+## Write HTML
+
+Open up `favourites.html` in a browser window (either Chrome or FireFox). As you may see, the page seems empty. Now open up the same file but in your text editor. Not as empty as it seems! Whenever you've made a change to `favourites.html`, hit F5 (to refresh the page) in your browser to see the changes. Let's do some exercises!
 
 #### 1.1
 
@@ -46,9 +47,11 @@ In the same section, make sure your picture has a title.
 
 Duplicate your file by right-clicking `duplicate` in your file tree. We will make use of `favourites1.html` soon!
 
-## CSS ##
+## Add CSS styles to the HTML
 
-![embed](https://www.youtube.com/embed/G9mq8-DLVAg)
+Now we're going to add some style rules to the HTML. Remember, if you have a `div` element, you might add styles to it as follows:
+
+    <div style="display: none;"></div>
 
 #### 1.7
 
@@ -62,7 +65,9 @@ Center align the description text.
 
 Change the font of *all* titles to Arial.
 
-## CSS
+## Move the styles to a separate file
+
+![embed](https://www.youtube.com/embed/G9mq8-DLVAg)
 
 Open up your duplicated file `favourites1.html` and uncomment line 4. As you load this document in your browser, you notice no styles are applied. Opening up `styles.css`, that seems about right, since the css file we linked to is empty!
 

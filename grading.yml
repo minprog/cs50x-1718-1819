@@ -59,7 +59,6 @@ grades:
             correctness: integer
             design: integer
             style: integer
-            hacker: boolean
         calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
         hide_calculated: true
     sentimental:
@@ -69,7 +68,6 @@ grades:
             correctness: integer
             design: integer
             style: integer
-            hacker: boolean
         calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
         hide_calculated: true
     finance:
@@ -79,7 +77,6 @@ grades:
             correctness: integer
             design: integer
             style: integer
-            hacker: boolean
         calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
         hide_calculated: true
     mashup:
@@ -89,7 +86,6 @@ grades:
             correctness: integer
             design: integer
             style: integer
-            hacker: boolean
         calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
         hide_calculated: true
     quiz2:
