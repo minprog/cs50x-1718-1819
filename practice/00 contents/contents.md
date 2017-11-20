@@ -17,6 +17,7 @@ Let's exercise! Below are links to exercises on several topics from the CS50 cou
 
 - [Big-O](/practice/big-o): analyze the running time of algorithms
 - [Sort](/practice/sort): appreciate the way sort and search functions work
+- [Bubble](/practice/bubble): implement bubble sort from the ground up (not for everyone)
 
 ## Week 4: Strings & Memory
 
@@ -37,3 +38,8 @@ Let's exercise! Below are links to exercises on several topics from the CS50 cou
 
 - [Python](/practice/python): building structures in a new language
 - [Classes](/practice/classes): model the real world in your program
+
+## Week 9: Javascript
+
+- [Promises](/practice/promises): work with promises, an essential JS concept
+
