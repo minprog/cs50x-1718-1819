@@ -30,16 +30,16 @@ Let's exercise! Below are links to exercises on several topics from the CS50 cou
 
 - [Linked](/practice/linked): say goodbye to the weakest link in your list!
 
-## Week 6: The web
-
-- [CSS](/practice/css): spice up your site
-
-## Week 8: Python and classes
+## Week 6: Python intro
 
 - [Python](/practice/python): building structures in a new language
-- [Classes](/practice/classes): model the real world in your program
 
-## Week 9: Javascript
+## Week 7: The web
+
+- [CSS](/practice/css): spice up your site
+- [SQL](/practice/sql): SELECT * FROM practice
+
+## Week 8: Javascript and Python classes
 
 - [Promises](/practice/promises): work with promises, an essential JS concept
-
+- [Classes](/practice/classes): model the real world in your program
