@@ -23,6 +23,7 @@ First create a new directory and step into it:
 ## Specification
 
 In this assignment you have to make an application to register the subgroups of a workgroup. The framework of the website and the database have already been set up. There are three things that still need to be done:
+
 - Finish the website with a complete registration form
 - Actually register the groups in the database
 - After the user is registered, you should redirect to the overview of the registered groups.
@@ -59,6 +60,8 @@ When the user visits the homepage he/she is redirected to the register page.
 
 When the user visits the register page via POST, it means a form was submitted. You can see a TODO here. It is up to you to make sure the fields from the form are imported into the database.
 When the user reaches the page via GET, the html form is rendered.
+
+Not sure how to register a group? Start by writing a correct SQL query in the SQL tab of phpLiteAdmin, for example by trying to register a group called "Test" with students "One", "Two", "Three", "Four", and the current datetime. You can see all registered groups in the Browse tab of the groups table.
 
 ### `overview()`
 
