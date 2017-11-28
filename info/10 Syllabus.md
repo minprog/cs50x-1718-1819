@@ -112,8 +112,8 @@ Nine problem sets are assigned during the course. Each is due by a pre-set deadl
 | ------------- | ---------- | ---------- | ---------- |  
 | Problem Set 5 | Fri 6-Oct  | Thu 9-Nov  | Thu 1-Mar  |  
 | Problem Set 6 | Thu 12-Oct | Thu 23-Nov | Thu 29-Mar |  
-| Problem Set 7 | Thu 19-Oct | Tue 5-Dec  | Thu 26-Apr |  
-| Problem Set 8 | Wed 25-Oct | Thu 14-Dec | Thu 24-May |  
+| Problem Set 7 | Thu 19-Oct | Wed 6-Dec  | Thu 26-Apr |  
+| Problem Set 8 | Wed 25-Oct | Fri 15-Dec | Thu 24-May |  
 
 (All deadlines are at 23:59 on that date, or just a little bit later.)
 
