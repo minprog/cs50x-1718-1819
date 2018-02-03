@@ -47,10 +47,10 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 
 |               | Hispeed    | Lospeed    | Avond      |  
 | ------------- | ---------- | ---------- | ---------- |  
-| Problem Set 5 | Fri  6-Oct | Fri 20-Apr | Thu 1-Mar  |  
-| Problem Set 6 | Thu 12-Oct | Thu 26-Apr | Thu 29-Mar |  
-| Problem Set 7 | Thu 19-Oct | Wed  9-May | Thu 26-Apr |  
-| Problem Set 8 | Wed 25-Oct | Fri 18-May | Thu 24-May |  
+| Problem Set 5 | Fri  9-Mar | Fri 20-Apr | Thu 1-Mar  |  
+| Problem Set 6 | Thu 15-Mar | Thu 26-Apr | Thu 29-Mar |  
+| Problem Set 7 | Wed 21-Mar | Wed  9-May | Thu 26-Apr |  
+| Problem Set 8 | Thu 29-Mar | Fri 18-May | Thu 24-May |  
 
 |               | Hispeed    | Lospeed    | Avond      |  
 | ------------- | ---------- | ---------- | ---------- |  
