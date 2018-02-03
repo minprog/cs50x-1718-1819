@@ -30,29 +30,17 @@ A schedule of problem sets and quizzes, subject to change, appears below.
 
 ### Programming 1
 
-| week |          | mon         | tue     | wed        | thu        | fri        |  
-| ---: | -------- | ----------- | ------- | ---------- | ---------- | ---------- |  
-|    1 | (05-Feb) | **pset 0**  | seminar |            | **pset 1** | seminar    |  
-|    2 | (12-Feb) |             |         |            | **pset 2** | seminar    |  
-|    3 | (19-Feb) |             |         | **pset 3** | training   |            |  
-|    4 | (26-Feb) | **quiz 1**  | seminar |            |            | **pset 4** |  
-|    5 | (05-Mar) | seminar     |         |            |            | **pset 5** |  
-|    6 | (12-Mar) | **resit 1** | seminar |            | **pset 6** |            |  
-|    7 | (19-Mar) | seminar     |         |            | **pset 7** | training   |  
-|    8 | (26-Mar) | **quiz 2**  | seminar |            | **pset 8** |            |  
-|    9 | (02-Apr) |  
-|   10 | (09-Apr) | **resit 2** |  
-
-
-
 |               | Hispeed    | Lospeed    | Avond      |  
 | ------------- | ---------- | ---------- | ---------- |  
 | Problem Set 0 | Mon  5-Feb | Wed 6-Sep  | Thu 14-Sep |  
 | Problem Set 1 | Thu  8-Feb | Thu 14-Sep | Thu 5-Oct  |  
 | Problem Set 2 | Thu 15-Feb | Tue 26-Sep | Thu 2-Nov  |  
 | Problem Set 3 | Wed 21-Feb | Thu 5-Oct  | Thu 23-Nov |  
-| Quiz 1        | Mon 26-Feb |            |            |  
 | Problem Set 4 | Fri  2-Mar | Fri 20-Oct | Thu 14-Dec |  
+
+|               | Hispeed    | Lospeed    | Avond      |  
+| ------------- | ---------- | ---------- | ---------- |  
+| Quiz 1        | Mon 26-Feb |            |            |  
 | Resit Quiz 1  | Mon 12-Mar |            |            |  
 
 (All deadlines are at 23:59 on the date mentioned, or just a little bit later.)
