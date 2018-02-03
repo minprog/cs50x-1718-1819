@@ -37,8 +37,8 @@ A schedule of problem sets and quizzes, subject to change, appears below.
 |    3 | (19-Feb) |             |         | **pset 3** | training   |            |  
 |    4 | (26-Feb) | **quiz 1**  | seminar |            |            | **pset 4** |  
 |    5 | (05-Mar) | seminar     |         |            |            | **pset 5** |  
-|    6 | (12-Mar) | **resit 1** | seminar |            | **pset 6** | seminar    |  
-|    7 | (19-Mar) |             |         |            | **pset 7** | training   |  
+|    6 | (12-Mar) | **resit 1** | seminar |            | **pset 6** |            |  
+|    7 | (19-Mar) | seminar     |         |            | **pset 7** | training   |  
 |    8 | (26-Mar) | **quiz 2**  | seminar |            | **pset 8** |            |  
 |    9 | (02-Apr) |  
 |   10 | (09-Apr) | **resit 2** |  
