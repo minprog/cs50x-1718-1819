@@ -71,6 +71,50 @@ A schedule of problem sets and quizzes, subject to change, appears below.
 (All deadlines are at 23:59 on the date mentioned, or just a little bit later.)
 
 
+## Feedback
+
+You will receive written feedback for every assignment that you submit. You are required to discuss that feedback (and your general progress) with a TA. Make sure that you meet regularly so as to assure that we can monitor your progress and that you understand the feedback correctly.
+
+## Lectures
+
+Lectures discuss theory that helps you solve your problems sets and prepare you for the final exam. Watch the lectures before or on your way to the lab sessions, in order to be able to spend your lab time programming and asking questions.
+
+## Sections
+
+Lectures are supplemented by weekly, 120-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your teaching fellow and a group of classmates present, as well as to dive into hands-on activities.
+
+## Walkthroughs
+
+Embedded into problem sets are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs while starting with your problem sets.
+
+## Office Hours
+
+Office hours are opportunities for assistance with problem sets alongside the
+course's teaching assistants. Office hours ordinarily take place on weekdays.
+
+## Tutoring
+
+For students who avail themselves of the course's other resources but still
+find themselves struggling, the course offers tutoring, to the extent possible,
+providing opportunities for students to work with the course's staff one-on-one
+or in particularly small groups. To arrange, contact the course's heads.
+
+## Problem Sets
+
+Problem sets are evaluated primarily along axes of scope,
+correctness, design, and style, with scores ordinarily determined by scope × (3
+× correctness + 2 × design + 1 × style).
+
+Although you must submit all problem sets, your lowest score among those
+problem sets on which you received perfect scores for the axis of scope will be
+dropped when final grades are determined.
+
+Re-submission of problem sets is not possible until the following semester. If you submit any problem set for a second time, it is required to be complete and bug-free, so as to not burden the staff with grading.
+
+## Quiz
+
+The course has one 90-minute quiz. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. One resit is offered.
+
 ## Grades
 
 All students must ordinarily submit all problem sets and take the quiz in
@@ -111,49 +155,6 @@ not at a disadvantage vis-à-vis those more comfortable. Each student's final
 grade is individually determined at term's end after input from the teaching
 assistants. Remarkable effort and upward trending are always considered.
 
-## Feedback
-
-You will receive written feedback for every assignment that you submit. You are required to discuss that feedback (and your general progress) with a TA. Make sure that you meet regularly so as to assure that we can monitor your progress and that you understand the feedback correctly.
-
-## Lectures
-
-Lectures discuss theory that helps you solve your problems sets and prepare you for the final exam. Watch the lectures before or on your way to the lab sessions, in order to be able to spend your lab time programming and asking questions.
-
-## Sections
-
-Lectures are supplemented by weekly, 90-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your teaching fellow and a group of classmates present, as well as to dive into hands-on activities.
-
-## Walkthroughs
-
-Embedded into problem sets are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs while starting with your problem sets.
-
-## Office Hours
-
-Office hours are opportunities for assistance with problem sets alongside the
-course's teaching assistants. Office hours ordinarily take place on weekdays.
-
-## Tutoring
-
-For students who avail themselves of the course's other resources but still
-find themselves struggling, the course offers tutoring, to the extent possible,
-providing opportunities for students to work with the course's staff one-on-one
-or in particularly small groups. To arrange, contact the course's heads.
-
-## Problem Sets
-
-Problem sets are evaluated primarily along axes of scope,
-correctness, design, and style, with scores ordinarily determined by scope × (3
-× correctness + 2 × design + 1 × style).
-
-Although you must submit all problem sets, your lowest score among those
-problem sets on which you received perfect scores for the axis of scope will be
-dropped when final grades are determined.
-
-Re-submission of problem sets is not possible until the following semester. If you submit any problem set for a second time, it is required to be complete and bug-free, so as to not burden the staff with grading.
-
-## Quiz
-
-The course has one 90-minute quiz. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. One resit is offered.
 
 ## Books
 
