@@ -30,18 +30,18 @@ A schedule of problem sets and quizzes, subject to change, appears below.
 
 ### Programming 1
 
-| week |          | mon     | tue | wed | thu    | fri      |  
-| ---: | -------- | ------- | --- | --- | ------ | -------- |  
-|    1 | (05-Feb) | pset 0  |     |     | pset 1 |          |  
-|    2 | (12-Feb) |         |     |     | pset 2 |          |  
-|    3 | (19-Feb) |         |     |     | pset 3 | training |  
-|    4 | (26-Feb) | quiz 1  |     |     |        | pset 4   |  
-|    5 | (05-Mar) |         |     |     |        | pset 5   |  
-|    6 | (12-Mar) | resit 1 |     |     | pset 6 |          |  
-|    7 | (19-Mar) |         |     |     | pset 7 | training |  
-|    8 | (26-Mar) | quiz 2  |     |     | pset 8 |          |  
+| week |          | mon         | tue     | wed        | thu        | fri        |  
+| ---: | -------- | ----------- | ------- | ---------- | ---------- | ---------- |  
+|    1 | (05-Feb) | **pset 0**  | seminar |            | **pset 1** | seminar    |  
+|    2 | (12-Feb) |             |         |            | **pset 2** | seminar    |  
+|    3 | (19-Feb) |             |         | **pset 3** | training   |            |  
+|    4 | (26-Feb) | **quiz 1**  | seminar |            |            | **pset 4** |  
+|    5 | (05-Mar) | seminar     |         |            |            | **pset 5** |  
+|    6 | (12-Mar) | **resit 1** | seminar |            | **pset 6** | seminar    |  
+|    7 | (19-Mar) |             |         |            | **pset 7** | training   |  
+|    8 | (26-Mar) | **quiz 2**  | seminar |            | **pset 8** |            |  
 |    9 | (02-Apr) |  
-|   10 | (09-Apr) | resit 2 |  
+|   10 | (09-Apr) | **resit 2** |  
 
 
 
