@@ -41,7 +41,7 @@ A schedule of problem sets and quizzes, subject to change, appears below. All de
 |               | Hispeed    | Lospeed    | Avond      |  
 | ------------- | ---------- | ---------- | ---------- |  
 | Quiz 1        | Mon 26-Feb | Mon 26-Mar | Mon 12-Mar |  
-| Retake Quiz 1 | Mon 12-Mar | Wed 11-Apr | Wed 11-Apr |  
+| Retake        | Mon 12-Mar | Wed 11-Apr | Wed 11-Apr |  
 
 ### Programming 2
 
@@ -55,7 +55,7 @@ A schedule of problem sets and quizzes, subject to change, appears below. All de
 |               | Hispeed    | Lospeed    | Avond      |  
 | ------------- | ---------- | ---------- | ---------- |  
 | Quiz 2        | Mon 26-Mar | Mon 28-May | Wed 11-Apr |  
-| Retake Quiz 2 | Wed 11-Apr | Mon 11-Jun | Mon 11-Jun |  
+| Retake        | Wed 11-Apr | Mon 11-Jun | Mon 11-Jun |  
 
 
 ## Feedback
