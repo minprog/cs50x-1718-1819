@@ -1,6 +1,6 @@
 # CS50x University of Amsterdam<br><small>Programming 1+2</small>
 
-## Syllabus, Spring 2018
+## Syllabus, Fall 2017
 
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for majors and non-majors alike, with or without prior programming experience.
 
@@ -10,7 +10,7 @@ Introduction to the intellectual enterprises of computer science and the art of 
 - Solve Problem Set 0 (available now)
 - Attend the lab to work on your problem set
 - Go to your first section and watch the next lecture
-- When in doubt, contact the course's staff at <help@mprog.nl>
+- If in doubt, contact the course's staff at <help@mprog.nl>
 
 ## Expectations
 
@@ -21,55 +21,6 @@ You are expected to watch all lectures, attend all sections, submit nine problem
 The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff at the lab to get help with your problem sets or to ask questions about lectures. Send a help request by using the "Ask" menu, above.
 
 Do you have a question in writing? Maybe need an exception? Feel free to send an e-mail to the course's heads via <help@mprog.nl>.
-
-## Schedule
-
-Nine problem sets are assigned during the course. Each is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency.
-
-A schedule of problem sets and quizzes, subject to change, appears below.
-
-### Programming 1
-
-|        week | mon     | tue | wed | thu    | fri      |  
-| ----------: | ------- | --- | --- | ------ | -------- |  
-|  1 (05-Feb) | pset 0  |     |     | pset 1 |          |  
-|  2 (12-Feb) |         |     |     | pset 2 |          |  
-|  3 (19-Feb) |         |     |     | pset 3 | training |  
-|  4 (26-Feb) | quiz 1  |     |     |        | pset 4   |  
-|  5 (05-Mar) |         |     |     |        | pset 5   |  
-|  6 (12-Mar) | resit 1 |     |     | pset 6 |          |  
-|  7 (19-Mar) |         |     |     | pset 7 | training |  
-|  8 (26-Mar) | quiz 2  |     |     | pset 8 |          |  
-|  9 (02-Apr) |  
-| 10 (09-Apr) | resit 2 |  
-
-
-
-|               | Hispeed    | Lospeed    | Avond      |  
-| ------------- | ---------- | ---------- | ---------- |  
-| Problem Set 0 | Mon  5-Feb | Wed 6-Sep  | Thu 14-Sep |  
-| Problem Set 1 | Thu  8-Feb | Thu 14-Sep | Thu 5-Oct  |  
-| Problem Set 2 | Thu 15-Feb | Tue 26-Sep | Thu 2-Nov  |  
-| Problem Set 3 | Wed 21-Feb | Thu 5-Oct  | Thu 23-Nov |  
-| Quiz 1        | Mon 26-Feb |            |            |  
-| Problem Set 4 | Fri  2-Mar | Fri 20-Oct | Thu 14-Dec |  
-| Resit Quiz 1  | Mon 12-Mar |            |            |  
-
-(All deadlines are at 23:59 on the date mentioned, or just a little bit later.)
-
-### Programming 2
-
-|               | Hispeed    | Lospeed    | Avond      |  
-| ------------- | ---------- | ---------- | ---------- |  
-| Problem Set 5 | Fri 6-Oct  | Thu 9-Nov  | Thu 1-Mar  |  
-| Problem Set 6 | Thu 12-Oct | Thu 23-Nov | Thu 29-Mar |  
-| Problem Set 7 | Thu 19-Oct | Wed 6-Dec  | Thu 26-Apr |  
-| Quiz 1        | Mon 26-Feb |            |            |  
-| Problem Set 8 | Wed 25-Oct | Fri 15-Dec | Thu 24-May |  
-| Resit Quiz 1  | Mon 12-Mar |            |            |  
-
-(All deadlines are at 23:59 on the date mentioned, or just a little bit later.)
-
 
 ## Grades
 
@@ -140,6 +91,31 @@ providing opportunities for students to work with the course's staff one-on-one
 or in particularly small groups. To arrange, contact the course's heads.
 
 ## Problem Sets
+
+Nine problem sets are assigned during the course. Each is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency. A schedule of problem sets and deadlines, subject to change, appears below.
+
+### Programming 1
+
+|               | Hispeed    | Lospeed    | Avond      |  
+| ------------- | ---------- | ---------- | ---------- |  
+| Problem Set 0 | Mon  4-Sep | Wed 6-Sep  | Thu 14-Sep |  
+| Problem Set 1 | Thu  7-Sep | Thu 14-Sep | Thu 5-Oct  |  
+| Problem Set 2 | Thu 14-Sep | Tue 26-Sep | Thu 2-Nov  |  
+| Problem Set 3 | Wed 20-Sep | Thu 5-Oct  | Thu 23-Nov |  
+| Problem Set 4 | Wed 27-Sep | Fri 20-Oct | Thu 14-Dec |  
+
+(All deadlines are at 23:59 on that date, or just a little bit later.)
+
+### Programming 2
+
+|               | Hispeed    | Lospeed    | Avond      |  
+| ------------- | ---------- | ---------- | ---------- |  
+| Problem Set 5 | Fri 6-Oct  | Thu 9-Nov  | Thu 1-Mar  |  
+| Problem Set 6 | Thu 12-Oct | Thu 23-Nov | Thu 29-Mar |  
+| Problem Set 7 | Thu 19-Oct | Wed 6-Dec  | Thu 26-Apr |  
+| Problem Set 8 | Wed 25-Oct | Fri 15-Dec | Thu 24-May |  
+
+(All deadlines are at 23:59 on that date, or just a little bit later.)
 
 Problem sets are evaluated primarily along axes of scope,
 correctness, design, and style, with scores ordinarily determined by scope × (3
