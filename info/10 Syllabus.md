@@ -14,7 +14,7 @@ Introduction to the intellectual enterprises of computer science and the art of 
 
 ## Expectations
 
-You are expected to watch all lectures, attend all sections, submit nine problem sets, and take a quiz. You are also expected to attend the lab sessions as required.
+You are expected to watch all lectures, attend all sections, submit nine problem sets, and take a quiz. You are also expected to attend the lab sessions as required, and for each problem set, discuss your feedback with your teaching assistant.
 
 ## Asking Questions
 
@@ -26,9 +26,9 @@ Do you have a question in writing? Maybe need an exception? Feel free to send an
 
 Nine problem sets are assigned during the course. Each is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency.
 
-A schedule of problem sets and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned, or just a little bit later.
+A schedule of problem set deadlines and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned, or just a little bit later.
 
-### Programming 1
+#### Programming 1
 
 |               | Hispeed    | Lospeed    | Avond      |  
 | ------------- | ---------- | ---------- | ---------- |  
@@ -43,7 +43,7 @@ A schedule of problem sets and quizzes, subject to change, appears below. All de
 | Quiz 1        | Mon 26-Feb | Mon 26-Mar | Mon 12-Mar |  
 | Retake        | Mon 12-Mar | Wed 11-Apr | Wed 11-Apr |  
 
-### Programming 2
+#### Programming 2
 
 |               | Hispeed    | Lospeed    | Avond      |  
 | ------------- | ---------- | ---------- | ---------- |  
@@ -57,10 +57,6 @@ A schedule of problem sets and quizzes, subject to change, appears below. All de
 | Quiz 2        | Mon 26-Mar | Mon 28-May | Wed 11-Apr |  
 | Retake        | Wed 11-Apr | Mon 11-Jun | Mon 11-Jun |  
 
-
-## Feedback
-
-You will receive written feedback for every assignment that you submit. You are required to discuss that feedback (and your general progress) with a TA. Make sure that you meet regularly so as to assure that we can monitor your progress and that you understand the feedback correctly.
 
 ## Lectures
 
@@ -96,11 +92,12 @@ Although you must submit all problem sets, your lowest score among those
 problem sets on which you received perfect scores for the axis of scope will be
 dropped when final grades are determined.
 
-Re-submission of problem sets is not possible until the following semester. If you submit any problem set for a second time, it is required to be complete and bug-free, so as to not burden the staff with grading.
+Re-submission of problem sets is not possible until the following semester.
 
-## Quiz
+## Exam
 
-The course has one 90-minute quiz. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. One resit is offered.
+The course has one 90-minute exam. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. You can only take the exam if you have submitted all problem sets up until the date of the exam. One retake is offered.
+
 
 ## Grades
 
@@ -177,6 +174,22 @@ Hacker's Delight, Second Edition
 Henry S. Warren Jr.  
 Pearson Education, 2013  
 ISBN 9780321842688
+
+
+## Re-taking the course
+
+Resubmission of problem sets is not possible when you complete the course successfully. Should you fail the course, the following rules apply when submitting any problem set for a second time:
+
+- Resubmitting problem sets is not possible until the next semester.
+ 
+- Submissions are required to be complete and bug-free, so as to not burden the staff with grading (i.e., scope and correctness have to be perfect).
+
+- Only scope and correctness will be regraded. Scores for design and style will not be changed even when you improve said design and style of your program (even though we do encourage this).
+
+- Any submissions must be done before retaking the exam.
+
+- Problem sets cannot be submitted or graded a third time.
+
 
 ## Doing your own work
 
