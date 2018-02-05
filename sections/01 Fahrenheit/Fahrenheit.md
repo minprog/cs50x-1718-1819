@@ -1,4 +1,5 @@
 # Section 1: Fahrenheit
+
 ## Goal
 The goal of this assignment is to create a program that can convert temperatures from Celcius to Fahrenheit. In this assignment you learn how to create, compile and run a C-program.
 
