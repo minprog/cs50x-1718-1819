@@ -74,6 +74,7 @@ This runs your program, and if it is written correctly it should produce the out
 Keep in mind that you can use the up and down arrow keys to repeat previously executed commands!
 
 ## Specification
+
 ### Fahrenheit
 Now, the goal of this program is not to print “Hello, world!”. Your assignment is to write a program that converts a temperature in Celsius to Fahrenheit, as per the sample output below, wherein `100` represents some user’s input.
 ```
@@ -90,6 +91,7 @@ To solve this problem, you need not do anything more complex than use your curre
 Bonus: The program now probably ends after one interaction. Can you make the program repeat the interaction? I.e., once the computer has taken the user input and converted it to Fahrenheit, it asks the user for a new input to convert. It continues to do so until the user enters a value of −274 or below.
 
 ## Walkthrough
+
 ### User input
 You will want to ask the user for input. There are inbuilt functions in C to do this, but CS50 has created a library to make this a little bit easier. You can include by adding the following line at the top of your file:
 
