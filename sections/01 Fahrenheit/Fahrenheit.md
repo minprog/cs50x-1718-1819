@@ -88,7 +88,7 @@ The formula to compute degrees Celcius (C) to Fahrenheit (F) is:
 
 To solve this problem, you need not do anything more complex than use your currently existing knowledge of C, and the information contained in this specification, including the temperature conversion formula. No matter how the user inputs the temperature in Celsius (that is, no matter to how many decimal places they choose), take care to display Fahrenheit to *exactly* one decimal place. No need to worry about floating-point imprecision or integer overflow, if you recall what those terms mean.
 
-Bonus: The program now probably ends after one interaction. Can you make the program repeat the interaction? I.e., once the computer has taken the user input and converted it to Fahrenheit, it asks the user for a new input to convert. It continues to do so until the user enters a value of −274 or below.
+Bonus: The program now probably ends after one interaction. Can you make the program repeat the interaction? I.e., once the computer has taken the user input and converted it to Fahrenheit, it asks the user for a new input to convert. It continues to do so until the user enters a value of −274 or above.
 
 ## Walkthrough
 
