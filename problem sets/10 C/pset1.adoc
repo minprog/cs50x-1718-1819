@@ -97,6 +97,12 @@ at the prompt to see your last several commands in chronological order if you'd 
 
 == How to Submit
 
+A small form awaits!
+
+. First of all, https://docs.google.com/forms/d/e/1FAIpQLScIsbV89Tl9mv5FJhviVJBm9Qv0nGRo6KUiYtn8ecQNeW9Szw/viewform?usp=sf_link[fill in this form].
+
+And now, submit.
+
 . When ready to submit, log into https://cs50.io/[CS50 IDE].
 . Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `hello.c` file (that's within your *pset1* directory) and then select *Download*. You should find that your browser has downloaded `hello.c`.
 . Repeat for `water.c`.
