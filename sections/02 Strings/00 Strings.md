@@ -17,4 +17,7 @@ Now, step into this directory:
 1. Implement [Vertical](#vertical)
 2. Implement [Skip](#skip)
 3. Implement [Eek](#eek)
+4. Implement [Palindrome](#palindrome)
 
+## More comfortable
+5. Implement [tHe CaSe Of BoB](#bob)
