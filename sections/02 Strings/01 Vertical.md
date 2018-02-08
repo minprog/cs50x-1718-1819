@@ -20,9 +20,7 @@ Write a program that takes a string from the user and prints each character of t
 
 
 ## Specification
-- Write, in a file called `vertical.c` in your `~/workspace/section2/` directory.
+- Create in a file called `vertical.c` in your `~/workspace/section2/` directory.
 - Ask the user for a text input.
 - Then, print (with the help of `printf` and a loop) the vertical text.
 - Compile the file with the command `make vertical`.
-
-

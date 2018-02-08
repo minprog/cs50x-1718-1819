@@ -11,8 +11,7 @@ Write a program that takes a string from the user and prints each even character
 
 
 ## Specification
-- Write, in a file called `skip.c` in your `~/workspace/section2/` directory.
+- Create in a file called `skip.c` in your `~/workspace/section2/` directory.
 - Ask the user for a text input.
 - Then, print (with the help of `printf` and a loop) only the even characters of this string.
 - Compile the file with the command `make skip`.
-

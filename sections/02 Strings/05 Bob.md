@@ -14,6 +14,6 @@ Create a program that turns a string into the alternating case of Spongebob.
 
 
 ## Specification
-- Write, in a file called `bob.c` in your `~/workspace/section2/` directory.
+- Create a file called `bob.c` in your `~/workspace/section2/` directory.
 - Create a program that asks for user input and changes it into alternating case. Start with lower case, and make sure to skip spaces and punctuation.
 - Compile the program with the command `make bob`.
