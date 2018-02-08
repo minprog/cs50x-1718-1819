@@ -21,3 +21,4 @@ Now, step into this directory:
 
 ## More comfortable
 5. Implement [tHe CaSe Of BoB](#bob)
+6. Implement [Taboo](#taboo)
