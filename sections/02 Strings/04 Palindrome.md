@@ -11,6 +11,6 @@ Write a program that takes a string from the user and determines if it is a pali
 
 
 ## Specification
-- Write, in a file called `palindrome.c` in your `~/workspace/section2/` directory.
+- Create a file called `palindrome.c` in your `~/workspace/section2/` directory.
 - Compile the program with the command `make palindrome`.
 - Make sure your program is not case sensitive.
