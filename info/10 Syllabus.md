@@ -32,11 +32,11 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 
 |               | Hispeed    | Lospeed    | Avond      |  
 | ------------- | ---------- | ---------- | ---------- |  
-| Problem Set 0 | Mon  5-Feb | Thu  8-Feb | Thu 14-Sep |  
-| Problem Set 1 | Thu  8-Feb | Fri 16-Feb | Thu 5-Oct  |  
-| Problem Set 2 | Thu 15-Feb | Fri 23-Feb | Thu 2-Nov  |  
-| Problem Set 3 | Wed 21-Feb | Tue  6-Mar | Thu 23-Nov |  
-| Problem Set 4 | Fri  2-Mar | Fri 16-Mar | Thu 14-Dec |  
+| Problem Set 0 | Mon  5-Feb | Thu  8-Feb | Thu 15-Feb |  
+| Problem Set 1 | Thu  8-Feb | Fri 16-Feb | Thu 8-Mar  |  
+| Problem Set 2 | Thu 15-Feb | Fri 23-Feb | Thu 5-Apr  |  
+| Problem Set 3 | Wed 21-Feb | Tue  6-Mar | Thu 26-Apr |  
+| Problem Set 4 | Fri  2-Mar | Fri 16-Mar | Thu 24-May |  
 
 |               | Hispeed    | Lospeed    | Avond      |  
 | ------------- | ---------- | ---------- | ---------- |  
