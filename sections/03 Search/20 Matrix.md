@@ -1,4 +1,4 @@
-# Exercise 3: Matrix
+# Exercise 3: Matrix {#matrix}
 
 ## Goal
 
