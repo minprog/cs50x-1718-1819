@@ -1,4 +1,4 @@
-# Reverse
+# Exercise 2: Reverse
 
 ## Goal
 
@@ -45,7 +45,7 @@ Try to think of some test cases:
 
 Try to analyze where in the code things go wrong.
 
-* Is it the `main()`-function? The `reverse()`-function? The `print()`-function?
+* Is it the `main()`-function? The `reverse()`-function? The `print_array()`-function?
 * Try to zoom in further. Does something go wrong in a loop? Before? After? Can you use some print statements to find out?
 
 ### Fix

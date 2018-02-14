@@ -1,8 +1,8 @@
-# Section 3: Linear Search
+# Exercise 1: Linear Search
 
 ## Goal
 
-Write a program that can find a needle in a haystack using linear search. Well, we’ll not be using literal needles and haystacks (that would be too unwieldy), but rather integer numbers and arrays respectively.
+Write a program that can find a needle in a haystack using linear search. Well, we won't be using literal needles and haystacks (that would be too unwieldy), but rather integer numbers and arrays respectively.
 
 ## Getting started
 
@@ -25,7 +25,7 @@ First create a new directory and step into it:
 
 Write a program that can find a needle in a haystack using linear search. Remember linear search? It is the slow way of going through the phone book. You start with the first name in the book and you go through the book name after name until you find the person you were looking for.
 
-In our case, we’ll not be looking for names in a phone book, but a number (integer) in a list (array). For the purpose of this exercise we’ll call our array the *haystack* and our number the *needle*. The output of the program should look something like this (where the underlined numbers denote the user input):
+In our case, we won't be looking for names in a phone book, but a number (integer) in a list (array). For the purpose of this exercise we’ll call our array the *haystack* and our number the *needle*. The output of the program should look something like this (where the numbers at the end of each line denote the user input):
 
 
     $ ./find-linear 42
@@ -53,7 +53,7 @@ The program `./find-linear` expects one command line argument: the needle. Once 
 
 ### Assignment
 
-For this assignment you don’t have to worry about the user input. This has already been implemented for you. You will have to tasks to complete:
+For this assignment you don’t have to worry about the user input. This has already been implemented for you. You will have two tasks to complete:
 
 1. Implement the function `print_array`. This function will take an integer array as input and will have to print its contents.
 2. Implement the function `search`. With this function you will implement linear search. The input are an integer array and an integer value as input and will return `true` if and only if, the value is found in the array.
