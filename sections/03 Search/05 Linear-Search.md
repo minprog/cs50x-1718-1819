@@ -1,4 +1,4 @@
-# Exercise 1: Linear Search
+# Exercise 1: Linear Search {#linear-search}
 
 ## Goal
 
