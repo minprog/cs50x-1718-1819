@@ -6,7 +6,7 @@ The goal of this assignment is to create a program that can convert temperatures
 ## Getting started
 First, log into CS50 IDE. If you haven’t created an account yet, this is the moment to do so! If you have already created a Cloud9 workspace, you can skip this step and continue with [Update](#update).
 
-### Create a Cloud9 workspace 
+### Create a Cloud9 workspace
 First, register on [edx.org](https://courses.edx.org/register), which will provide you with an account to log on to the CS50 IDE. If you already have an edX account, it’s no problem to use that one.
 
 Now head to [cs50.io](https://cs50.io/) and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click **Private** under **Hosted workspace**, then click **Create workspace**.
@@ -35,7 +35,7 @@ You can create a new file using the file browser tab. Under `filesystem`, click 
 Let’s start with something simple. Let’s create a program that will print “Hello, world!”. Copy the following code into the file:
 
     #include <stdio.h>
-    
+
     int main(void)
     {
         printf("Hello, world!\n");
@@ -70,7 +70,7 @@ You can now run your program, by typing the following command in the terminal:
 This runs your program, and if it is written correctly it should produce the output:
 
     Hello, world!
-    
+
 Keep in mind that you can use the up and down arrow keys to repeat previously executed commands!
 
 ## Specification
@@ -83,19 +83,19 @@ C: 100
 F: 212.0
 ```
 The formula to compute degrees Celcius (C) to Fahrenheit (F) is:
-    
+
     F = ((C * 9) / 5) + 32.
 
 To solve this problem, you need not do anything more complex than use your currently existing knowledge of C, and the information contained in this specification, including the temperature conversion formula. No matter how the user inputs the temperature in Celsius (that is, no matter to how many decimal places they choose), take care to display Fahrenheit to *exactly* one decimal place. No need to worry about floating-point imprecision or integer overflow, if you recall what those terms mean.
 
-Bonus: The program now probably ends after one interaction. Can you make the program repeat the interaction? I.e., once the computer has taken the user input and converted it to Fahrenheit, it asks the user for a new input to convert. It continues to do so until the user enters a value of −274 or above.
+Bonus: The program now probably ends after one interaction. Can you make the program repeat the interaction? I.e., once the computer has taken the user input and converted it to Fahrenheit, it asks the user for a new input to convert. It continues to do so until the user enters a value of −274 or below.
 
 ## Walkthrough
 
 ### User input
 You will want to ask the user for input. There are inbuilt functions in C to do this, but CS50 has created a library to make this a little bit easier. You can include by adding the following line at the top of your file:
 
-    #include <cs50.h> 
+    #include <cs50.h>
 
 This library implements the functions `get_string()`, `get_int()`, and `get_float()`, which ask the user for an input of the corresponding datatype.
 
@@ -103,7 +103,7 @@ For example the program below asks the user to enter their name (a string), and 
 
     #include <cs50.h>
     #include <stdio.h>
-    
+
     int main(void)
     {
         printf("Enter your name: ");
@@ -116,7 +116,7 @@ For example the program below asks the user to enter their name (a string), and 
 Know that `printf` can be used to specify how many places after the decimal point you wish to display to the user. For example, assuming you’ve written the following program in a file called `truncate.c`:
 
     #include <stdio.h>
-    
+
     int main(void)
     {
        float pi = 3.1415926535;

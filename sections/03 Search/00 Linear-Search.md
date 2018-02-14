@@ -29,25 +29,25 @@ In our case, we’ll not be looking for names in a phone book, but a number (int
 
 
     $ ./find-linear 42
-    
+
     haystack[0] = 3
-    
+
     haystack[1] = 14
-    
+
     haystack[2] = 15
-    
+
     haystack[3] = 42
-    
+
     haystack[4] = 11235
-    
+
     haystack[5] = 1
-    
+
     haystack[6] = ^D
     ---------------------------------------------------------
     I will try to find needle "42" in the following haystack:
     [3, 14, 15, 42, 11235, 1]
     Found needle in haystack!
-    
+
 
 The program `./find-linear` expects one command line argument: the needle. Once it starts, it asks the user to enter a number. It keeps on asking for numbers until the user enters `^D` (ctrl-d). These numbers will form the haystack. The program will have to print the haystack, and find the needle in it.
 
@@ -84,7 +84,7 @@ You will get an output similar to this:
 
     ---------------------------------------------------------
     I will try to find needle "42" in the following haystack:
-    
+
     Didn't find needle in haystack.
 
 It doesn’t work yet! It does not find the needle, and it does not show the array. You still have to write the functions that do this.
@@ -109,7 +109,7 @@ Near the top of the file, right after the `include`‘s you see the declaration 
 
 ### main
 
-After that we have the `main` function. You don’t have to change this function. Line 22 to 30 of the main function deal with the command line argument. This provides us with the needle. Line 33-47 is the code to create the haystack based on the user input. 
+After that we have the `main` function. You don’t have to change this function. Line 22 to 30 of the main function deal with the command line argument. This provides us with the needle. Line 33-47 is the code to create the haystack based on the user input.
 
 Take a look at line 53 and 56 in the main function. Here you see the calls to the functions `print_array` and `search`, respectively.
 
@@ -121,11 +121,11 @@ Start by implementing the function `print_array`. The current implementation sta
     void print_array(int values[], int size)
     {
         // TODO: print all the values in the array.
-        
+
         // the next two lines should eventually be removed
         (void)values;
         (void)size;
-        
+
         return;
     }
 
@@ -157,12 +157,12 @@ On line 79 you find the empty `search` function:
     bool search(int value, int values[], int size)
     {
         // TODO: find value in values. return true if found, otherwise return false.
-        
+
         // the next three lines should eventually be removed
         (void)value;
         (void)values;
         (void)size;
-        
+
         return false;
     }
 
@@ -175,4 +175,3 @@ When you implement `search`, think about the edge cases:
 - What happens if the haystack is empty?
 
 Make sure those cases are handled correctly!
-
