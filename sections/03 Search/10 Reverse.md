@@ -20,15 +20,15 @@ Help Tim with debugging his code. He created a program that reverses an array. I
 
 ### Test
 
-element[0] = 1
+	element[0] = 1
 
-element[1] = 2
+	element[1] = 2
 
-element[2] = 3
+	element[2] = 3
 
-element[3] =
-Input: [1, 2, 3]
-Reversed list: [3, 2, 1]
+	element[3] =
+	Input: [1, 2, 3]
+	Reversed list: [3, 2, 1]
 
 ## Does it work?
 
@@ -46,7 +46,7 @@ Try to think of some test cases:
 Try to analyze where in the code things go wrong.
 
 * Is it the `main()`-function? The `reverse()`-function? The `print()`-function?
-* Try to zoom in further? Does something go wrong in a loop? Before? Can you use some print statements to find out?
+* Try to zoom in further. Does something go wrong in a loop? Before? After? Can you use some print statements to find out?
 
 ### Fix
 
