@@ -4,5 +4,5 @@ For this section you (and two others) will complete up to three exercises (if it
 
 ## What to do?
 1. Implement [Linear-Search](#linear-search)
-2. Implement [Reverse](#Reverse)
-3. Implement [Matrix](#Matrix)
+2. Implement [Reverse](#reverse)
+3. Implement [Matrix](#matrix)
