@@ -38,10 +38,15 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 | Problem Set 3 | Wed 21-Feb | Tue  6-Mar | Thu 26-Apr |  
 | Problem Set 4 | Fri  2-Mar | Fri 16-Mar | Thu 24-May |  
 
-|               | Hispeed    | Lospeed    | Avond      |  
-| ------------- | ---------- | ---------- | ---------- |  
-| Quiz 1        | Mon 26-Feb | Mon 26-Mar | Mon 12-Mar |  
-| Retake        | Mon 12-Mar | Wed 11-Apr | Mon 11-Jun |  
+|               | Hispeed    | Lospeed    |  
+| ------------- | ---------- | ---------- |  
+| Quiz          | Mon 26-Feb | Mon 26-Mar |  
+| Retake        | Mon 12-Mar | Wed 11-Apr |  
+
+|               | Avond      |  
+| ------------- | ---------- |  
+| Quiz option 1 | Mon 12-Mar |  
+| Quiz option 2 | Mon 11-Jun |  
 
 #### Programming 2
 
@@ -52,11 +57,15 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 | Problem Set 7 | Wed 21-Mar | Wed  9-May | Thu 26-Apr |  
 | Problem Set 8 | Thu 29-Mar | Fri 18-May | Thu 24-May |  
 
-|               | Hispeed    | Lospeed    | Avond      |  
-| ------------- | ---------- | ---------- | ---------- |  
-| Quiz 2        | Mon 26-Mar | Mon 28-May | Wed 11-Apr |  
-| Retake        | Wed 11-Apr | Mon 11-Jun | Mon 11-Jun |  
+|               | Hispeed    | Lospeed    |  
+| ------------- | ---------- | ---------- |  
+| Quiz 2        | Mon 26-Mar | Mon 28-May |  
+| Retake        | Wed 11-Apr | Mon 11-Jun |  
 
+|               | Avond      |  
+| ------------- | ---------- |  
+| Quiz option 1 | Wed 11-Apr |  
+| Quiz option 2 | Mon 11-Jun |  
 
 ## Lectures
 
