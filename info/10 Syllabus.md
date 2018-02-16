@@ -41,7 +41,7 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 |               | Hispeed    | Lospeed    | Avond      |  
 | ------------- | ---------- | ---------- | ---------- |  
 | Quiz 1        | Mon 26-Feb | Mon 26-Mar | Mon 12-Mar |  
-| Retake        | Mon 12-Mar | Wed 11-Apr | Wed 11-Apr |  
+| Retake        | Mon 12-Mar | Wed 11-Apr | Mon 11-Jun |  
 
 #### Programming 2
 
