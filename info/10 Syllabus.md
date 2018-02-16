@@ -45,7 +45,7 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 
 |               | Avond      |  
 | ------------- | ---------- |  
-| Quiz option 1 | Mon 12-Mar |  
+| Quiz option 1 | Wed 11-Apr |  
 | Quiz option 2 | Mon 11-Jun |  
 
 #### Programming 2
