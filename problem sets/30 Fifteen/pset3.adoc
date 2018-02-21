@@ -68,8 +68,14 @@ and your prompt should resemble the below.
 
 == How to Submit
 
+A small form awaits! Getting the information is important to us.
+
+. https://goo.gl/forms/u81qNQoyaIo1PFi12[Fill in the form for this pset].
+
+And now, submit.
+
 . Make sure you are signed in to this website!
 . In the form below, add the files that you downloaded.
 . Press "Submit for grading". Presto!
-
+ 
 This was Problem Set 3.
