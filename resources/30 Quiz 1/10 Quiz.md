@@ -2,10 +2,6 @@
 
 On this page you can find some study materials for the exam of 'Programmeren 1'. For each week we have selected the relevant lecture notes, subjects on CS50 Study and homebrewed practice exercises.
 
-## Quiz
-
-[This is an example quiz. Use it to prepare for the real one!](quiz1.pdf)
-
 ## Week 0 - Scratch
 
 ### Lecture Notes
@@ -76,4 +72,6 @@ On this page you can find some study materials for the exam of 'Programmeren 1'.
 - [Sort](/practice/sort): appreciate the way sort and search functions work
 - [Bubble](/practice/bubble): implement bubble sort from the ground up (not for everyone)
 
+## Quiz
 
+[This is an example quiz. Use it to prepare for the real one!](quiz1.pdf)
