@@ -52,9 +52,9 @@ Test the function by changing the line `int y = times_two(x);` into `int y = hal
 
 Create a function called `print_float` that takes a float as input and prints the value with a precision of two decimals.
 
-Test the function by calling `print_float(2.9999)` from the `main` and verify that that it prints:
+Test the function by calling `print_float(2.7444)` from the `main` and verify that that it prints:
 
-	Value = 2.99
+	Value = 2.74
 
 ## Exercise 3
 
