@@ -1,4 +1,4 @@
-# Exercise 2: Anonymize
+# Exercise 2: Anonymize {#anonymize}
 
 ## Goal
 

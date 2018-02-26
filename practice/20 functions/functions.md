@@ -48,7 +48,7 @@ Take a look at how this is done for `times_two` and `print_int`.
 
 Test the function by changing the line `int y = times_two(x);` into `int y = half(x);`.
 
-## Exercise 2 
+## Exercise 2
 
 Create a function called `print_float` that takes a float as input and prints the value with a precision of two decimals.
 
@@ -58,7 +58,7 @@ Test the function by calling `print_float(2.7444)` from the `main` and verify th
 
 ## Exercise 3
 
-Create a function called `average` that takes two *integers* and returns the average of these two integers as a *float*. 
+Create a function called `average` that takes two *integers* and returns the average of these two integers as a *float*.
 
 What should the protoype look like? What are the types of the parameters? What is the type of the return value?
 
@@ -72,15 +72,15 @@ Create a function called `max` that takes two *floats* and returns the maximum v
 
 Test your function.
 
-## Exercsise 5
+## Exercise 5
 
 Create a function called `print_array` that takes two paremeters: a *float array* and an *integer* (denoting the length of the array). The function should print the entire array of floats to a precision of two decimals. E.g.,
- 
+
 	float a[] = {1.555, 3, 1.645, 178};
 	print_array(a, 4);
 
 should print something like:
-	
+
 	1.55, 3.00, 1.64, 178.00
 
 Test if your function works, by creating an array in `main` and call the function `print_array` on that array.
@@ -96,4 +96,3 @@ Create a function that finds the maximum value in a *float* array. Before you im
 Think of a couple of good testcases. What is the max of `{1.555, 3, 1.645, 178}`? What is the max of an array with only one element? What is the max of an empty array?
 
 Test your function.
-
