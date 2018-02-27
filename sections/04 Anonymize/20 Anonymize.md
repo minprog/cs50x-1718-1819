@@ -26,13 +26,13 @@ First create a new directory and step into it:
 In this assignment you learn how to modify a bitmap image. You need to implement a program that covers the eyes of a suspect's photo with a black bar.
 
 - We have provided a photo of the suspect called `suspect.bmp`. You need to make a copy of this image, but change some pixels so the image is censored with a black bar over the suspect's eyes.
-- If you open `suspect.bmp` in the IDE you can make a selection and see the coordinates of your cursor.
+- If you open `suspect.bmp` in the IDE you can make a selection and see the coordinates of your cursor. (This might no longer be possible in the new IDE).
 - **It is ok to hardcode the program (the coordinates of the black bar) to only work for this image.**
 - We have already taken care of error checking the user input for you.
 
 ## Background
 
-As you may know an RGB colour is often represented in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) notation, which is wat we want you to use in this assigment as well. The color white `ffffff` means red: `ff`, green: `ff`, blue: `ff`. `ff` in decimal notation is `255`, which is why white can also be written as `(255,255,255)`. In C you can represent a hexadecimal value bij putting `0x` in front of it. `255` can thus be written as `0xff`.
+As you may know an RGB colour is often represented in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) notation, which is wat we want you to use in this assigment as well. The colour white `ffffff` means red: `ff`, green: `ff`, blue: `ff`. `ff` in decimal notation is `255`, which is why white can also be written as `(255,255,255)`. In C you can represent a hexadecimal value bij putting `0x` in front of it. `255` can thus be written as `0xff`.
 
 ### `anonymize.c`
 
@@ -45,7 +45,9 @@ Now open up `censor.h`. This is a header file that defines the structures needed
 ### `censor.c`
 
 Inside `censor.c` is the function `process_pixel`. This function takes as arguments the current pixel of the input file, as well as its vertical and horizontal location. It returns the changed pixel.
-Makefile
+
+### `Makefile`
+
 A makefile is a file that tells the computer how to compile a program that is made up of different files. You can look at it, but shouldn't change anything.
 
 ### TODO
