@@ -23,9 +23,9 @@ First create a new directory and step into it:
 
 ## Specification
 
-Debug the program `valgrind.c` so that Valgrind shows no errors on completion. Valgrind "is a programming tool for memory debugging, memory leak detection, and profiling.". For more detail, see [Valgrind](http://valgrind.org/).
+Debug the program `valgrind.c` so that Valgrind shows no errors on completion. Valgrind "is a programming tool for memory debugging, memory leak detection, and profiling". For more detail, see [Valgrind](http://valgrind.org/).
 
-The program `./valgrind` expects one command line argument, your name. Once it starts, it will welcome the user, get the users favourite numbers from a `.txt` file, and then reads those numbers out to the user.
+The program `./valgrind` expects one command line argument, your name. Once it starts, it will welcome the user, get the user's favourite numbers from a `.txt` file, and then reads those numbers out to the user.
 
 ### Assignment
 
