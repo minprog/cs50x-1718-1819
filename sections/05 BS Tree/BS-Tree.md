@@ -99,7 +99,7 @@ If you constructed the tree correctly, it should look something like this:
 
 ## Walkthrough
 
-The file `binary-tree.c` already contains quite a bit of code. 
+The file `binary-tree.c` already contains quite a bit of code.
 
 ### array
 
@@ -122,11 +122,11 @@ The next part of the code is the declaration of the node struct:
             struct node *right;
     } node;
 
-This is the main building block for the search tree. The struct has three fields: 
+This is the main building block for the search tree. The struct has three fields:
 
 - `key_value` of the type `int`, which stores the actual value of the node.
-- `left`, a pointer that points to the left child of this node. 
-- `right`, a pointer that points to the right child of this node. 
+- `left`, a pointer that points to the left child of this node.
+- `right`, a pointer that points to the right child of this node.
 
 Note that a node does *not* always have a left or right child. If the node for instance does not have a left child, the `left` pointer should be set to `NULL`. The same goes for the right child. If the node doesn’t have any children at all, both pointers should be set to `NULL` and we call such a node, a *leaf*.
 
@@ -144,7 +144,7 @@ The function `create_an_example_tree()` is only there to get you started. Once y
 
 The function `create_node` creates, you guessed it, a new node. It allocates the memory for the node, initializes the fields.
 
-Seeing is understanding. The `print_tree` function can be very useful to inspect the results of your efforts. 
+Seeing is understanding. The `print_tree` function can be very useful to inspect the results of your efforts.
 
 ### insert
 
@@ -180,3 +180,9 @@ Lastly, the tree is printed.
     // print result
     print_tree(root);
 
+
+## Bonus
+
+As a bonus exercise, add code to the `main` function which deletes the entire tree, freeing the memory which was previously allocated to the tree. After having written the code in `main` which performs the task, you and your team can try to write a separate function which deletes the tree and frees the memory.
+
+Once you and your team have implemented the previous bonus exercise, why not try to add a search function to the code? If there is enough time left of course.
