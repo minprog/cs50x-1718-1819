@@ -40,18 +40,17 @@ more:
 ### Example 2
 
 In the middle of your code you shouldn't write whole sentences, but rather
-small annotations. Even so, they should be properly formatted in your language
-of choice, including spacing and punctuation.
+small annotations.
 
 Don't do this:
 
 {: .language-python}
-    #compute student's average
+    #Compute student's average.
 
 But do it like this:
 
 {: .language-python}
-    # Compute student's average.
+    # compute student's average
 
 ### Example 3
 
@@ -169,7 +168,7 @@ function of the program:
 		number -= 1
 	
 	# Output - might not print zero (e.g., if user put in a float).
-	print user_input
+	print(user_input)
 
 ### Spaces around operators
 
