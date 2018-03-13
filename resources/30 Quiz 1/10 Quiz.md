@@ -70,7 +70,7 @@ On this page you can find some study materials for the exam of 'Programmeren 1'.
 
 - [Big-O](/practice/big-o): analyze the running time of algorithms
 - [Sort](/practice/sort): appreciate the way sort and search functions work
-- [Bubble](/practice/bubble): implement bubble sort from the ground up (not for everyone)
+- [Bubble](/practice/bubble): implement bubble sort from the ground up
 
 ## Quiz
 
