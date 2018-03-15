@@ -83,7 +83,7 @@ Next take a look at `helpers.py`. Ah, there's the implementation of `apology`. N
 
 Next in the file is `login_required`. No worries if this one's a bit cryptic, but if you've ever wondered how a function can return another function, here's an example!
 
-Thereafter is `lookup`, a function that, given a `symbol` (e.g., NFLX), returns a stock quote for that symbol in the form of a `dict` with three keys: `name`, whose value is a `str` (e.g., "Netflix, Inc."); `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`.
+Thereafter is `lookup`, a function that, given a `symbol` (e.g., NFLX), returns a stock quote for that symbol in the form of a `dict` with three keys: `name`, whose value is a `str` (e.g., "Netflix, Inc."); `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`. `lookup` also provides four symbols that can make testing easier and faster: TEST1, TEST2, TEST3, and TEST4. Alpha Vantage can sometimes be fairly slow, and these test-stocks circumvent that issue.
 
 Last in the file is `usd`, a short function that simply formats a `float` as USD (e.g., `1234.56` is formatted as `$1,234.56`).
 
@@ -119,7 +119,7 @@ Once you've implemented `register` correctly, you should be able to register for
 Complete the implementation of `quote` in such a way that it allows a user to look up a stock's current price.
 
 * Require that a user input a stock's symbol.
-* Odds are you'll want to create two new templates (e.g., `quote.html` and `quoted.html`). When a user visits `/quote` via GET, render one of those templates, inside of which should be an HTML form that submits to `/quote` via POST. In response to a POST, `quote` can render that second template, embedding within it one or more values from `lookup`.
+* Odds are you'll want to create two new templates (e.g., `quote.html` and `quoted.html`). When a user visits `/quote` via GET, render one of those templates, inside of which should be an HTML form that submits to `/quote` via POST. In response to a POST, `quote` can render that second template, embedding within it one or more values from `lookup`. Remember that 'lookup' provides you with four testing stocks (TEST1, TEST2, TEST3, and TEST4), which are faster to look up than other stocks.
 
 === `buy`
 
@@ -212,6 +212,7 @@ If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index
 * You're welcome to select an https://www.bootstrapcdn.com/bootswatch/[alternative theme] for your site as well as change the site's aesthetics more generally, including https://memegen.link/api/templates/[apologies].
 * Odds are you'll want to consult http://jinja.pocoo.org/docs/dev/[Jinja's documentation] when implementing your templates.
 * It is *reasonable* to ask others to try out (and try to trigger errors in) your site. Via *Share* in CS50 IDE's top-right corner can you share your *Application* by making it *Public*. Take care not to share your *Editor*, which would provide access to your Python code and SQLite database.
+* Remember that 'lookup' provides you with four testing stocks (TEST1, TEST2, TEST3, and TEST4), which are faster to look up than other stocks. This might make the testing-phase of developing your own Finance-website faster.
 
 == FAQs
 
