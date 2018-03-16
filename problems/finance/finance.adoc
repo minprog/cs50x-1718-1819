@@ -26,7 +26,7 @@ Let's turn our attention now to the app's distribution code!
 
 [source,subs="macros"]
 ----
-$ wget https://github.com/uva/cs50x/blob/master/problems/finance/finance.zip
+$ wget https://cs50x.mprog.nl/course/problems/finance/finance.zip
 $ unzip finance.zip
 $ rm finance.zip
 $ mv problems-finance finance
