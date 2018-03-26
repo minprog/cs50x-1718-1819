@@ -2,12 +2,13 @@
 
 ## Goal
 
-For this weeks assignment you and your team will complete a series of small JavaScript assignments in your browser.
+For this week's assignment you and your team will complete a series of small JavaScript assignments in your browser.
 
 ## Getting started
 
 Start by opening the developer tools by pressing <kbd>F12</kbd> in Windows (Google Chrome & Mozilla Firefox) or <kbd>Cmd</kbd> + <kbd>Opt</kbd> + <kbd>I</kbd> on Mac (Google Chrome & Mozilla Firefox).
 Next, visit [this](https://niettimmeijer.github.io/Week8GO/go.html) page. The assignment below applies to this page.
+
 Notable tools within this kit (for this assignment) are the `Elements` and `Console` tabs. In short, the `Elements` tab is a way of viewing the [DOM](https://en.wikipedia.org/wiki/Document_Object_Model) of a website. The "Console" tab is an active JavaScript console. The JavaScript that was downloaded when accessing the website can acces this console. After the page is done loading, the console can also be used with JavaScript (these scripts will only be run on your computer and will not affect anyone else).  
 
 ## Specification & tips
