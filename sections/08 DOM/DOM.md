@@ -43,4 +43,4 @@ If you wish to learn more about the developer tools click here for [Google Chrom
 15. Parse the responseText to a JSON, and save this in a variable. Then push one of the values to the div with the id "jsonValue".
 
 ## HINT
-Most of the assignments on this page are explained in the [lecture notes of lecture 11](https://cs50x.mprog.nl/lectures/week-11#_some_closure).
+Most of the assignments on this page are explained in the [lecture notes of lecture 10](https://cs50x.mprog.nl/lectures/week-10#_javascript_basics).
