@@ -36,11 +36,11 @@ If you wish to learn more about the developer tools click here for [Google Chrom
 
 ### DOM/JQuery
 
-10. Use JQuery to push "Hello World!" to the div with the id of "pushText".
-11. Use JQuery to add your names to the text "Our names are: ".
+10. Use JQuery to place "Hello World!" in the div with the id of "pushText". This can be done with the `.html()` function.
+11. Use JQuery to add your names to the text "Our names are: ". This can be done with the `.append()` function.
 12. Use JQuery to change the color of "This text is blue" to blue.
 13. Use JQuery to change to color of the rectangle to orange.
-14. Push the responseText of "data.json" to the div with the id "pushData". You can find this JSON [here](https://niettimmeijer.github.io/Week8GO/data.json). HINT: Use $.getJSON() as described in lecture 10.
+14. Place the responseText of "data.json" in the div with the id "pushData". You can find this JSON [here](https://niettimmeijer.github.io/Week8GO/data.json). HINT: Use $.getJSON() as described in lecture 10.
 15. Parse the responseText to a JSON, and save this in a variable. Then push one of the values to the div with the id "jsonValue".
 
 ## HINT
