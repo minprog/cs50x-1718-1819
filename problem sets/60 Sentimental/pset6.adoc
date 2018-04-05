@@ -33,7 +33,7 @@ All code that you write should be consistent with https://www.python.org/dev/pep
 . Implement either of the below exactly as specified but in Python:
 +
 --
-* link:/problems/greedy[Greedy], less comfortable, in a file called `greedy.py` in `pset6/`.
+* link:/problems/greedy[Greedy], less comfortable, in a file called `cash.py` (!!) in `pset6/`.
 * link:/problems/credit[Credit], more comfortable, in a file called `credit.py` in `pset6/`.
 --
 . Implement any (one) of the below exactly as specified but in Python:
@@ -45,7 +45,21 @@ All code that you write should be consistent with https://www.python.org/dev/pep
 --
 . Implement link:/problems/sentiments[Sentiments] in `pset6/sentiments/`.
 
-No `check50` for these!
+== Testing
+
+[source]
+----
+check50 cs50/2017/fall/sentimental/hello
+check50 cs50/2017/fall/sentimental/mario/less
+check50 cs50/2017/fall/sentimental/mario/more
+check50 cs50/2017/fall/sentimental/cash
+check50 cs50/2017/fall/sentimental/credit
+check50 cs50/2017/fall/sentimental/caesar
+check50 cs50/2017/fall/sentimental/vigenere
+----
+
+As before, afraid there's no `check50` for Crack, lest it spoil the fun!
+
 
 == Hints
 

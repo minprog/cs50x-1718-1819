@@ -499,12 +499,19 @@ video::LGOXIN87giE[youtube,list=PLhQjrBD2T383MDO-WBcfAq5SIsoEfoW07]
 
 == Testing
 
-No `check50` for this one, but be sure to try to "break" your own site, as by
+No check50 anymore! Be sure to try to "break" your own site, as by
 
 * searching for cities that don't exist,
 * clicking markers for cities that don't have any articles,
 * dragging and zooming in and out to update your map's markers, and
 * searching with potentially dangerous characters like `'` and `;`.
+
+=== Style
+
+[source]
+----
+style50 application.py
+----
 
 == Staff's Solution
 
