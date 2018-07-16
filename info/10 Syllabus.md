@@ -14,7 +14,7 @@ Introduction to the intellectual enterprises of computer science and the art of 
 
 ## Expectations
 
-You are expected to watch all lectures, attend all sections, submit nine problem sets, and take a quiz. You are also expected to attend the lab sessions as required, and for each problem set, discuss your feedback with your teaching assistant.
+You are expected to watch all lectures, attend all sections, submit nine problem sets, and take a quiz. You are also expected to attend the lab sessions as required, and for each problem set, discuss your feedback with your tutor.
 
 ## Asking Questions
 
