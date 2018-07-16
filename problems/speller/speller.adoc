@@ -2,7 +2,7 @@
 ---
 
 = Speller
- 
+
 == tl;dr
 
 Implement a program that spell-checks a file, per the below.
@@ -183,7 +183,7 @@ where `dictionary` is assumed to be a file containing a list of lowercase words,
 ./speller text
 ----
 
-will be equivalent to running 
+will be equivalent to running
 
 [source]
 ----
@@ -286,7 +286,7 @@ Alright, the challenge now before you is to implement `load`, `check`, `size`, a
 * You may search for (good) hash functions online, so long as you cite the origin of any hash function you integrate into your own code.
 
 Alright, ready to go?
- 
+
 . Implement `load`.
 . Implement `check`.
 . Implement `size`.
@@ -295,24 +295,6 @@ Alright, ready to go?
 == Walkthrough
 
 video::u9-1U1Rgo1o,okH8f9xl0uY,hsruECgJJVQ,O3tErLhuEmY[youtube]
-
-**In the walkthrough for `load`, at https://www.youtube.com/watch?time_continue=373&v=0x9rSfV85g8[00:06:13], note that:**
-
-[source,c]
-----
-strcpy(node1->word = "Hello");
-strcpy(node2->word = "Wello");
-----
-
-**should be:**
-
-[source,c]
-----
-strcpy(node1->word, "Hello");
-strcpy(node2->word, "Wello");
-----
-
-**Video will be fixed shortly!**
 
 == Hints
 
@@ -334,7 +316,7 @@ help50 valgrind --leak-check=full ./speller texts/ralph.txt
 
 == Testing
 
-How to check whether your program is outting the right misspelled words? Well, you're welcome to consult the "answer keys" that are inside of the `keys` directory that's inside of your `speller` directory. For instance, inside of `keys/austinpowers.txt` are all of the words that your program _should_ think are misspelled. 
+How to check whether your program is outting the right misspelled words? Well, you're welcome to consult the "answer keys" that are inside of the `keys` directory that's inside of your `speller` directory. For instance, inside of `keys/austinpowers.txt` are all of the words that your program _should_ think are misspelled.
 
 You could therefore run your program on some text in one window, as with the below.
 

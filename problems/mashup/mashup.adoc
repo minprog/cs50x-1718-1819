@@ -5,7 +5,7 @@ toclevels: 2
 = Mashup
 
 == tl;dr
- 
+
 Implement a website that lets users search for articles atop a map, a la the below.
 
 image::mashup.png["Mashup",role="related thumb"]
@@ -179,8 +179,8 @@ And open the URL that `phpliteadmin` outputs in a new tab. No tables yet! Here o
 
 ==== index.html
 
-Open up `templates/index.html`, which will be your app's one and only HTML page. If you look at the page's `head`, you'll see 
-all those CSS and JavaScript libraries we'll be using (plus some others). Included in HTML comments are URLs for each library's documentation if curious. 
+Open up `templates/index.html`, which will be your app's one and only HTML page. If you look at the page's `head`, you'll see
+all those CSS and JavaScript libraries we'll be using (plus some others). Included in HTML comments are URLs for each library's documentation if curious.
 
 Next take a look at the page's `body`, inside of which is `div` with a unique `id` of `map-canvas`. It's into that `div` that we'll be injecting a map. Below that `div`, meanwhile, is a `form`, inside of which is an `input` of type `text` with a unique `id` of `q` that we'll use to take input from users.
 
@@ -206,7 +206,7 @@ Below `styles` is `options`, another collection of keys and values that will ult
 
 Next we define `canvas`, by using a bit of jQuery to get the DOM node whose unique `id` is `map-canvas`. Whereas `$("#map-canvas")` returns a jQuery object (that has a whole bunch of functionality built-in), `$("#map-canvas").get(0)` returns the actual, underlying DOM node that jQuery is just wrapping.
 
-Perhaps the most powerful line yet is the next one in which we assign `map` (that global variable) a value. With 
+Perhaps the most powerful line yet is the next one in which we assign `map` (that global variable) a value. With
 
 [source,js]
 ----
@@ -232,11 +232,9 @@ google.maps.event.addListener(map, "dragend", function() {
 });
 ----
 
-indicates that we want to listen for a `dragend` event on the map, calling the anonymous function provided when we hear it. That anonymous function, meanwhile, simply calls `update` (another function we'll soon see). Per https://developers.google.com/maps/documentation/javascript/3.exp/reference#Map, `dragend` is "fired" (i.e., broadcasted) "when the user stops dragging the map." 
+indicates that we want to listen for a `dragend` event on the map, calling the anonymous function provided when we hear it. That anonymous function, meanwhile, simply calls `update` (another function we'll soon see). Per https://developers.google.com/maps/documentation/javascript/3.exp/reference#Map, `dragend` is "fired" (i.e., broadcasted) "when the user stops dragging the map."
 
 Similarly do we listen for `zoom_changed`, which is fired "when the map zoom property changes" (i.e., the user zooms in or out).
-
-On the other hand, upon hearing `dragstart`, we ultimately call `removeMarkers` so that all markers disappear temporarily as a user drags the map, thereby avoiding the appearance of a flicker that might otherwise happen as markers are removed and then re-added after the maps bounds (i.e., corners) have changed.
 
 Below those listeners is our configuration of that typeahead plugin. Take another look at https://github.com/corejavascript/typeahead.js/blob/master/doc/jquery_typeahead.md if unsure what `highlight` and `minLength` do here. Most importantly, though, know that the value of `source` (i.e., `search`) is the function that the plugin will call as soon as the user starts typing so that the function can respond with an array of search results based on the user's input. For instance, if the user types `foo` into that text box, the function should ultimately return an array of all places in your database that somehow match `foo`. How to perform those matches will ultimately be left to you! The value of `templates`, meanwhile, is an object with one key, `suggestion`, whose value is a "template" that will be used to format each entry in the plugin's dropdown menu. That template is created by a call to `Handlebars.compile`, a method that comes with http://handlebarsjs.com/[Handlebars], a templating language for JavaScript similar in spirit to Jinja for Python. Right now, that template is simply `<div>TODO</div>`, which means that every entry in that dropdown will literally say `TODO`. Ultimately, you'll want to change that value to something like
 
@@ -245,7 +243,7 @@ Below those listeners is our configuration of that typeahead plugin. Take anothe
 <div>{{place_name}}, {{admin_name1}}, {{postal_code}}</div>
 ----
 
-so that the plugin dynamically inserts those values (`place_name`, `admin_name1`, and `postal_code`) or some others for you. 
+so that the plugin dynamically inserts those values (`place_name`, `admin_name1`, and `postal_code`) or some others for you.
 
 Next notice these lines, which are admittedly a bit cryptic at first glance:
 
@@ -259,7 +257,7 @@ $("#q").on("typeahead:selected", function(eventObject, suggestion, name) {
 });
 ----
 
-These lines are saying that if the HTML element whose unique `id` is `q` fires an event called `typeahead:selected`, as will happen when the user selects an entry from the plugin's dropdown menu, we want jQuery to call an anonymous function whose second argument, `suggestion`, will be an object that represents the entry selected. Within that object must be at least two properties: `latitude` and `longitude`. We'll then call `setCenter` in order to re-center the map at those coordinates, after which we'll call `update` to update any markers. 
+These lines are saying that if the HTML element whose unique `id` is `q` fires an event called `typeahead:selected`, as will happen when the user selects an entry from the plugin's dropdown menu, we want jQuery to call an anonymous function whose second argument, `suggestion`, will be an object that represents the entry selected. Within that object must be at least two properties: `latitude` and `longitude`. We'll then call `setCenter` in order to re-center the map at those coordinates, after which we'll call `update` to update any markers.
 
 Below those lines, meanwhile, are these:
 
@@ -293,11 +291,8 @@ Hm, a `TODO`. Ultimately, this function will need to remove any and all markers 
 
 ===== search
 
-This function is called by the typeahead plugin every time the user changes the mashup's text box, as by typing or deleting a character. The value of the text box (i.e., whatever the user has typed in total) is passed to `search` as `query`. And the plugin also passes to `search` two additional arguments, the last of which (`asyncResults`) is a "callback" function that `search` should call as soon as it's done searching for matches. In other words, this passing in of `asyncResults` empowers `search` to be "asynchronous," whereby it will only call `asyncResults` as soon as it's ready, without blocking any of the mashup's other functionality. Accordingly, `search` uses jQuery's `getJSON` method to contact `/search` asynchronously, passing in one parameter, `geo`, the value of which is `query`. Once `/search` responds (however many milliseconds or seconds later), the anonymous function passed to `done` will be called and passed `data`, whose value will be whatever JSON that `/search` has emitted. (Though if something goes wrong, `fail` is instead called.) Finally called is `asyncResults`, to which `search` passes that same `data` so that the plugin can iterate over the places therein (assuming `/search` found matches) in order to update the plugin's drop-down. Phew.
+This function is called by the typeahead plugin every time the user changes the mashup's text box, as by typing or deleting a character. The value of the text box (i.e., whatever the user has typed in total) is passed to `search` as `query`. And the plugin also passes to `search` two additional arguments, the last of which (`asyncResults`) is a "callback" function that `search` should call as soon as it's done searching for matches. In other words, this passing in of `asyncResults` empowers `search` to be "asynchronous," whereby it will only call `asyncResults` as soon as it's ready, without blocking any of the mashup's other functionality. Accordingly, `search` uses jQuery's `getJSON` method to contact `/search` asynchronously, passing in one parameter, `q`, the value of which is `query`. Once `/search` responds (however many milliseconds or seconds later), `asyncResults` will be called and passed `data`, whose value will be whatever JSON that `/search` has emitted. The plugin can then iterate over the places therein (assuming `/search` found matches) in order to update the plugin's drop-down. Phew.
 
-Notice that we're using ``getJSON``'s "Promise" interface, per http://api.jquery.com/jquery.getjson/. Rather than pass an anonymous function directly to `getJSON` (to be called upon success), we're instead "chaining" together calls to `getJSON`, `done` (whose argument, an anonymous function, will be called upon success), and `fail` (whose argument, another anonymous function, will be called upoon failure). See http://api.jquery.com/jquery.ajax/ for some additional details. And see https://davidwalsh.name/write-javascript-promises for an explanation of promises themselves.
-
-Notice, too, that we're using `console.log` much like you might use `eprintf` in C to log errors for debugging's sake. You may want to do so as well! Just realize that `console.log` will log messages to the browser's console (i.e., the *Console* tab of Chrome's developer tools), not to your terminal window. See https://developer.mozilla.org/en-US/docs/Web/API/Console.log for tips.
 
 ===== showInfo
 
@@ -338,7 +333,7 @@ Not much in this route yet either, just another `TODO`!
 
 ===== `update`
 
-Ah, okay, here's the "back end" that outputs a JSON array of up to 10 places (i.e., cities) that fall within the specified bounds (i.e., within the rectangle defined by those corners). You won't need to make changes to this route, but do read through it line by line, Googling any function with which you're not familiar. 
+Ah, okay, here's the "back end" that outputs a JSON array of up to 10 places (i.e., cities) that fall within the specified bounds (i.e., within the rectangle defined by those corners). You won't need to make changes to this route, but do read through it line by line, Googling any function with which you're not familiar.
 
 And yes, this file's SQL queries assume that the world is flat for simplicity.
 
@@ -398,7 +393,7 @@ in `sqlite3` or phpLiteAdmin. The counts should match!
 
 ==== `articles`
 
-Complete the implementation of `/articles` in such a way that it outputs a JSON array of objects, each of which represents an article for `geo`, whereby `geo` is passed into `/articles` as a GET parameter, as in the staff solution, below. 
+Complete the implementation of `/articles` in such a way that it outputs a JSON array of objects, each of which represents an article for `geo`, whereby `geo` is passed into `/articles` as a GET parameter, as in the staff solution, below.
 
 * http://mashup.cs50.net/articles?geo=02138
 * http://mashup.cs50.net/articles?geo=06511
@@ -414,7 +409,7 @@ and other such variants, where `username` is your own username, to see if you ge
 
 ==== `search`
 
-Complete the implementation of `/search` in such a way that it outputs a JSON array of objects, each of which represents a row from `places` that somehow matches the value of `q`, as in the staff solution below. 
+Complete the implementation of `/search` in such a way that it outputs a JSON array of objects, each of which represents a row from `places` that somehow matches the value of `q`, as in the staff solution below.
 
 * http://mashup.cs50.net/search?q=02138
 * http://mashup.cs50.net/search?q=Cambridge
@@ -462,7 +457,7 @@ and other such variants, where `username` is your own username, to see if you ge
 
 Feel free to tinker with the staff's solution at http://mashup.cs50.net/, inspecting its HTTP requests via Chrome's Network tab as needed, if unsure how your own code should work!
 
-==== `scripts.js`
+=== `scripts.js`
 
 First, toward the top of `scripts.js`, you'll see an anonymous function, inside of which is a definition of `options`, an object, one of whose keys is `center`, the value of which is an object with two keys of its own, `lat`, and `lng`. Per the comment alongside that object, your mashup's map is currently centered on Stanford, California. (D'oh.) Change the coordinates of your map's center to Cambridge (42.3770, -71.1256) or New Haven (41.3184, -72.9318) or anywhere else! (Though be sure to choose coordinates in the US if you downloaded `US.txt`!) Once you save your changes and reload your map, you should find yourself there! Zoom out as needed to confirm visually.
 
@@ -499,19 +494,12 @@ video::LGOXIN87giE[youtube,list=PLhQjrBD2T383MDO-WBcfAq5SIsoEfoW07]
 
 == Testing
 
-No check50 anymore! Be sure to try to "break" your own site, as by
+No `check50` for this one, but be sure to try to "break" your own site, as by
 
 * searching for cities that don't exist,
 * clicking markers for cities that don't have any articles,
 * dragging and zooming in and out to update your map's markers, and
 * searching with potentially dangerous characters like `'` and `;`.
-
-=== Style
-
-[source]
-----
-style50 application.py
-----
 
 == Staff's Solution
 
@@ -525,6 +513,8 @@ It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* t
 
 * You're welcome center your map on some country other than the United States, downloading http://download.geonames.org/export/zip/[some other ZIP file] instead of `US.zip`. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements[Wikipedia] if unfamiliar with ISO 3166-1 alpha-2 codes.
 
+* Know that you can use `console.log` much like you might use `eprintf` in C to log errors for debugging's sake. You may want to do so as well! Just realize that `console.log` will log messages to the browser's console (i.e., the *Console* tab of Chrome's developer tools), not to your terminal window. See https://developer.mozilla.org/en-US/docs/Web/API/Console.log for tips.
+
 == FAQs
 
 === CREATE TABLE places(...) failed: duplicate column name
@@ -532,6 +522,9 @@ It is *reasonable* to look at the staff's HTML and CSS. It is *not reasonable* t
 If you see this message upon running `.import` in `sqlite3`, odds are you haven't run `sqlite3` in the same directory as `mashup.db`. If so, exit `sqlite3` with `.exit`, `cd` to your `mashup` directory, and then re-run `sqlite3 mashup.db`.
 
 == CHANGELOG
+
+* 2018-04-25
+** Updated the Search function and added another Hint about console.log
 
 * 2016-11-04
 ** Initial release.

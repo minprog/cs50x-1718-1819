@@ -14,9 +14,9 @@ image::finance.png["C$50 Finance",role="related thumb"]
 
 If you're not quite sure what it means to buy and sell stocks (i.e., shares of a company), head to http://www.investopedia.com/university/stocks/ for a tutorial.
 
-You're about to implement C$50 Finance, a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks' actual prices and portfolios' values, it will also let you buy (okay, "buy") and sell (okay, "sell") stocks by querying https://www.alphavantage.co/[Alpha Vantage] for stocks' prices.
+You're about to implement C$50 Finance, a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks' actual prices and portfolios' values, it will also let you buy (okay, "buy") and sell (okay, "sell") stocks by querying http://finance.yahoo.com/[Yahoo Finance] for stocks' prices.
 
-Indeed, Alpha Vantage lets you download stock quotes in CSV format via URLs like hhttps://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=NFLX&interval=1min&apikey=NAJXWIA8D6VN6A3K. Notice how Netflix's symbol (NFLX) is embedded in this URL (as the value of the HTTP parameter called `symbol`); that's how Alpha Vantage knows whose data to return. 
+Indeed, Yahoo lets you download stock quotes in CSV format via URLs like http://download.finance.yahoo.com/d/quotes.csv?s=NFLX&f=sl1d1t1c1ohgv&e=.csv. Notice how Netflix's symbol (NFLX) is embedded in this URL (as the value of the HTTP parameter called `s`); that's how Yahoo knows whose data to return. Notice also the value of the HTTP parameter called `f`; it’s a bit cryptic (and officially undocumented), but the value of that parameter tells Yahoo which fields of data to return to you. If curious as to what they mean, here’s a https://web.archive.org/web/20040816081607/http://www.gummy-stuff.org/Yahoo-data.htm[handy reference]. Incidentally, Yahoo sometimes returns prices in currencies other than US dollars (USD) without telling you which, but we'll assume everything's in US dollars for simplicity.
 
 Let's turn our attention now to the app's distribution code!
 
@@ -26,7 +26,7 @@ Let's turn our attention now to the app's distribution code!
 
 [source,subs="macros"]
 ----
-$ wget https://cs50x.mprog.nl/course/problems/finance/finance.zip
+$ wget https://github.com/cs50/problems/archive/finance.zip
 $ unzip finance.zip
 $ rm finance.zip
 $ mv problems-finance finance
@@ -83,7 +83,7 @@ Next take a look at `helpers.py`. Ah, there's the implementation of `apology`. N
 
 Next in the file is `login_required`. No worries if this one's a bit cryptic, but if you've ever wondered how a function can return another function, here's an example!
 
-Thereafter is `lookup`, a function that, given a `symbol` (e.g., NFLX), returns a stock quote for that symbol in the form of a `dict` with three keys: `name`, whose value is a `str` (e.g., "Netflix, Inc."); `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`. `lookup` also provides four symbols that can make testing easier and faster: TEST1, TEST2, TEST3, and TEST4. Alpha Vantage can sometimes be fairly slow, and these test-stocks circumvent that issue.
+Thereafter is `lookup`, a function that, given a `symbol` (e.g., NFLX), returns a stock quote for that symbol in the form of a `dict` with three keys: `name`, whose value is a `str` (e.g., "Netflix, Inc."); `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`.
 
 Last in the file is `usd`, a short function that simply formats a `float` as USD (e.g., `1234.56` is formatted as `$1,234.56`).
 
@@ -119,7 +119,7 @@ Once you've implemented `register` correctly, you should be able to register for
 Complete the implementation of `quote` in such a way that it allows a user to look up a stock's current price.
 
 * Require that a user input a stock's symbol.
-* Odds are you'll want to create two new templates (e.g., `quote.html` and `quoted.html`). When a user visits `/quote` via GET, render one of those templates, inside of which should be an HTML form that submits to `/quote` via POST. In response to a POST, `quote` can render that second template, embedding within it one or more values from `lookup`. Remember that 'lookup' provides you with four testing stocks (TEST1, TEST2, TEST3, and TEST4), which are faster to look up than other stocks.
+* Odds are you'll want to create two new templates (e.g., `quote.html` and `quoted.html`). When a user visits `/quote` via GET, render one of those templates, inside of which should be an HTML form that submits to `/quote` via POST. In response to a POST, `quote` can render that second template, embedding within it one or more values from `lookup`.
 
 === `buy`
 
@@ -175,7 +175,7 @@ video::sy1o1yLob5U[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
 == Testing
 
-Be sure to test your web app manually too, as by
+No `check50` for this one, but be sure to try to "break" your own site, as by
 
 * inputting alpabetical strings into forms when only numbers are expected,
 * inputting zero or negative numbers into forms when only positive numbers are expected,
@@ -184,20 +184,6 @@ Be sure to test your web app manually too, as by
 * trying to sell more shares than a user has,
 * inputting an invalid stock symbol, and
 * including potentially dangerous characters like `'` and `;` in SQL queries.
-
-=== Correctness
-
-[source]
-----
-check50 cs50/2017/fall/finance
-----
-
-=== Style
-
-[source]
-----
-style50 application.py
-----
 
 == Staff's Solution
 
@@ -226,7 +212,6 @@ If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index
 * You're welcome to select an https://www.bootstrapcdn.com/bootswatch/[alternative theme] for your site as well as change the site's aesthetics more generally, including https://memegen.link/api/templates/[apologies].
 * Odds are you'll want to consult http://jinja.pocoo.org/docs/dev/[Jinja's documentation] when implementing your templates.
 * It is *reasonable* to ask others to try out (and try to trigger errors in) your site. Via *Share* in CS50 IDE's top-right corner can you share your *Application* by making it *Public*. Take care not to share your *Editor*, which would provide access to your Python code and SQLite database.
-* Remember that 'lookup' provides you with four testing stocks (TEST1, TEST2, TEST3, and TEST4), which are faster to look up than other stocks. This might make the testing-phase of developing your own Finance-website faster.
 
 == FAQs
 

@@ -5,7 +5,7 @@ toclevels: 1
 = Sentiments
 
 == tl;dr
- 
+
 . Implement a program that categorizes a word as positive or negative.
 +
 [source,subs=quotes]
@@ -188,13 +188,13 @@ Complete the implementation of `analyzer.py` in such a way that
 +
 --
 * assign each word in `text` a value: `1` if the word is in `positives`, `-1` if the word is in `negatives`, and `0` otherwise
-* consider the sum of those values to be the entire text's score 
+* consider the sum of those values to be the entire text's score
 --
 
 For instance, if `text` were "I love you" (and `Analyzer` were instantiated with default values for its named parameters), then its score would be 0 + 1 + 0 = 1, since
 
 * "I" is in neither `positive-words.txt` nor `negative-words.txt`,
-* "love" is in `positive-words.txt`, and 
+* "love" is in `positive-words.txt`, and
 * "you" is in neither `positive-words.txt` nor `negative-words.txt`.
 
 Suffice it to say, https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html[more sophisticated algorithms] exist, but we'll keep things simple!

@@ -4,7 +4,7 @@
 = Crack
 
 == tl;dr
- 
+
 Implement a program that cracks passwords, per the below.
 
 [source,subs=quotes]

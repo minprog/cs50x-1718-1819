@@ -23,8 +23,8 @@ Tile to move:
 
 == Background
 
-The Game of Fifteen is a puzzle played on a square, two-dimensional board with numbered tiles that slide. The goal of this puzzle is to arrange the board's tiles from smallest to largest, left to right, top to bottom, with an empty space in board's bottom-right corner, as in the below. 
- 
+The Game of Fifteen is a puzzle played on a square, two-dimensional board with numbered tiles that slide. The goal of this puzzle is to arrange the board's tiles from smallest to largest, left to right, top to bottom, with an empty space in board's bottom-right corner, as in the below.
+
 ////
 https://en.wikipedia.org/wiki/15_puzzle
 ////
@@ -105,12 +105,12 @@ Incidentally, recall that the positions of tiles numbered 1 and 2 should only st
 
 5  4  3
 
-2  1  _ 
+2  1  _
 ----
 
 Feel free to tweak the appropriate argument to `usleep` to speed up animation. In fact, you're welcome to alter the aesthetics of the game. For (optional) fun with "ANSI escape sequences," including color, take a look at our implementation of `clear` and check out http://isthe.com/chongo/tech/comp/ansi_escapes.html for more tricks.
-    
-You're welcome to write your own functions and even change the prototypes of functions we wrote. But you may not alter the flow of logic in `main` itself so that we can automate some tests of your program once submitted. In particular, `main` must only return `0` if and when the user has actually won the game; non-zero values should be returned in any cases of error, as implied by our distribution code. 
+
+You're welcome to write your own functions and even change the prototypes of functions we wrote. But you may not alter the flow of logic in `main` itself so that we can automate some tests of your program once submitted. In particular, `main` must only return `0` if and when the user has actually won the game; non-zero values should be returned in any cases of error, as implied by our distribution code.
 
 == Testing
 
@@ -120,7 +120,7 @@ To test your implementation of `fifteen`, you can certainly try playing it. (Kno
 ----
 ./fifteen 3 < ~cs50/pset3/3x3.txt
 ----
- 
+
 === `check50`
 
 Note that `check50` assumes that your board's blank space is implemented in `board` as `0`; if you've chosen some other value, best to change to `0` for ``check50``'s sake. Also note that `check50` assumes that you're indexing into `board` a la `board[row][column]`, not `board[column][row]`.
