@@ -2,7 +2,7 @@
 
 ## Syllabus, Fall 2018
 
-Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for majors and non-majors alike, with or without prior programming experience.
+Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
 
 ## Getting Started
 
@@ -30,7 +30,7 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 
 #### Programming 1
 
-|               | Hispeed    | Lospeed    | Avond      |  
+|               | Hispeed    | Lospeed1   | Lospeed 2  |  
 | ------------- | ---------- | ---------- | ---------- |  
 | Problem Set 0 | Mon  5-Feb | Thu  8-Feb | Thu 15-Feb |  
 | Problem Set 1 | Thu  8-Feb | Fri 16-Feb | Thu 8-Mar  |  
@@ -38,31 +38,31 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 | Problem Set 3 | Wed 21-Feb | Tue  6-Mar | Thu 26-Apr |  
 | Problem Set 4 | Fri  2-Mar | Fri 16-Mar | Thu 24-May |  
 
-|               | Hispeed    | Lospeed    |  
+|               | Hispeed    | Lospeed 1  |  
 | ------------- | ---------- | ---------- |  
 | Quiz          | Mon 26-Feb | Mon 26-Mar |  
 | Retake        | Mon 12-Mar | Wed 11-Apr |  
 
-|               | Avond      |  
+|               | Lospeed 2  |  
 | ------------- | ---------- |  
 | Quiz option 1 | Wed 11-Apr |  
 | Quiz option 2 | Mon 11-Jun |  
 
 #### Programming 2
 
-|               | Hispeed    | Lospeed    | Avond      |  
+|               | Hispeed    | Lospeed1   | Lospeed 2  |  
 | ------------- | ---------- | ---------- | ---------- |  
 | Problem Set 5 | Fri  9-Mar | Fri 20-Apr | Thu 1-Mar  |  
 | Problem Set 6 | Thu 15-Mar | Thu 26-Apr | Thu 29-Mar |  
 | Problem Set 7 | Wed 21-Mar | Wed  9-May | Thu 26-Apr |  
 | Problem Set 8 | Thu 29-Mar | Fri 18-May | Thu 24-May |  
 
-|               | Hispeed    | Lospeed    |  
+|               | Hispeed    | Lospeed 1  |  
 | ------------- | ---------- | ---------- |  
 | Quiz 2        | Mon 26-Mar | Mon 28-May |  
 | Retake        | Wed 11-Apr | Mon 11-Jun |  
 
-|               | Avond      |  
+|               | Lospeed 2  |  
 | ------------- | ---------- |  
 | Quiz option 1 | Wed 11-Apr |  
 | Quiz option 2 | Mon 11-Jun |  
@@ -73,7 +73,7 @@ Lectures discuss theory that helps you solve your problems sets and prepare you 
 
 ## Sections
 
-Lectures are supplemented by weekly, 120-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your teaching fellow and a group of classmates present, as well as to dive into hands-on activities.
+Lectures are supplemented by weekly, 90-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your teaching fellow and a group of classmates present, as well as to dive into hands-on activities.
 
 ## Walkthroughs
 
@@ -83,13 +83,6 @@ Embedded into problem sets are "walkthroughs," videos via which the course's sta
 
 Office hours are opportunities for assistance with problem sets alongside the
 course's teaching assistants. Office hours ordinarily take place on weekdays.
-
-## Tutoring
-
-For students who avail themselves of the course's other resources but still
-find themselves struggling, the course offers tutoring, to the extent possible,
-providing opportunities for students to work with the course's staff one-on-one
-or in small groups. To arrange, contact the course's heads.
 
 ## Problem Sets
 
