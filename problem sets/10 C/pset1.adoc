@@ -16,13 +16,17 @@
 
 == Help
 
-For information on or help with this Problem Set:
+For information on (or help with) this Problem Set:
 
 [start=0]
-. Watch Zamyla's walkthroughs herein.
+. Watch the walkthroughs herein.
 . Attend your tutor's *section*.
 . Ask questions during office hours using the "Ask" tool on this website.
 . Visit (or email) the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on link:/#academic_honesty[academic honesty], particularly its link:/#regret["regret clause"].
 
 == Getting Started
 
