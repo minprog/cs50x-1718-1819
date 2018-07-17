@@ -264,6 +264,6 @@ BSc programme. Find them here in [English] and [Dutch].
 [Dutch]: http://uva.nl/plagiaat
 [English]: http://student.uva.nl/en/az/content/plagiarism-and-fraud/plagiarism-and-fraud.html
 
-<h3 id='regret'>Regret</h3>
+### Regret {#regret}
 
 If you commit some act that is not reasonable but bring it to the attention of the course's heads within 72 hours, the course may impose local sanctions that may include an unsatisfactory or failing grade for work submitted, but the course will not refer the matter for further disciplinary action except in cases of repeated acts.
