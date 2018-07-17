@@ -1,4 +1,5 @@
 ---
+layout: 2018/spring
 ---
 :skip-front-matter:
 
@@ -27,6 +28,12 @@ cd ~/workspace/pset6/
 == Problems
 
 . Implement link:sentimental/sentimental[Sentimental].
+. Implement either of:
++
+--
+* link:similarities/less/similarities.html[Similarities], less comfortable
+* link:similarities/more/similarities.html[Similarities], more comfortable
+--
 
 == How to Submit
 
@@ -53,7 +60,12 @@ cd ~/workspace/pset6/
 * `cd ~/workspace/pset6/vigenere/ && submit50 cs50/2018/spring/sentimental/vigenere`
 * `cd ~/workspace/pset6/crack/ && submit50 cs50/2018/spring/sentimental/crack`
 --
-
+. Execute at least one of:
++
+--
+* `cd ~/workspace/pset6/similarities/ && submit50 cs50/2018/spring/similarities/less`
+* `cd ~/workspace/pset6/similarities/ && submit50 cs50/2018/spring/similarities/more`
+--
 
 === Step 2 of 2
 

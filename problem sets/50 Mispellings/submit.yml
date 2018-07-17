@@ -1,6 +1,0 @@
-name: mispell
-files:
-    required:
-        - dictionary.c
-        - dictionary.h
-        - Makefile

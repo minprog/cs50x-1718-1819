@@ -1,4 +1,5 @@
 ---
+layout: 2018/spring
 ---
 
 = Whodunit
@@ -18,13 +19,12 @@ $ [underline]#./whodunit clue.bmp verdict.bmp#
 
 [source,subs="macros"]
 ----
-$ wget https://github.com/cs50/problems/archive/whodunit.zip
+$ wget http://cdn.cs50.net/2017/fall/psets/4/whodunit.zip
 $ unzip whodunit.zip
 $ rm whodunit.zip
-$ mv problems-whodunit whodunit
 $ cd whodunit
 $ ls
-bmp.h  clue.bmp  copy.c  large.bmp  small.bmp  smiley.bmp
+README.md  bmp.h  clue.bmp  copy.c  large.bmp  small.bmp  smiley.bmp
 ----
 
 == Background
@@ -38,7 +38,10 @@ TODO: new BMP
 ////
 image::clue.png[clue.bmp]
 
-You long ago threw away https://s-media-cache-ak0.pinimg.com/564x/a6/10/0c/a6100c96163cd9ec3e6df3621d5db6d5.jpg[that piece of red plastic from childhood] that would solve this mystery for you, and so you must attack it as a computer scientist instead.
+////
+https://s-media-cache-ak0.pinimg.com/564x/a6/10/0c/a6100c96163cd9ec3e6df3621d5db6d5.jpg
+////
+You long ago threw away a6100c96163cd9ec3e6df3621d5db6d5.jpg[that piece of red plastic from childhood] that would solve this mystery for you, and so you must attack it as a computer scientist instead.
 
 But, first, some background.
 
@@ -78,35 +81,19 @@ Okay, let's transition from theory to practice. Within CS50 IDE's file browser, 
 
 image:smiley.png[smiley.png]
 
-Okay, let's now look at the underlying bytes that compose `smiley.bmp` using `xxd`, a command-line "hex editor." Execute
-
-[source]
-----
-xxd -c 24 -g 3 -s 54 smiley.bmp
-----
-
-in a terminal window, and you should see the below. (You might have to increase the terminal window's size.) As before, we've highlighted in red all instances of `0000ff`.
+Okay, let's now look at the underlying bytes that compose `smiley.bmp`. Within CS50 IDE's file browser, right- or control-click *smiley.bmp* and select *Open as hexadecimal* in order to view the file's bytes in hexadecimal (i.e., base-16). In the tab that appears, change *Start with byte* to *54*, change *Bytes per row* to *24*, change *Bytes per column* to *3*. Then click *Set*. **If unable to change these values, try clicking View > Night Mode and try again**. You should see the below, byte 54 onward of `smiley.bmp`. (Recall that a 24-bit BMP's first 14 + 40 = 54 bytes are filled with metadata, so we're simply ignoring that for now.) As before, we've highlighted in red all instances of `0000ff`.
 
 [source,subs=quotes]
 ----
-0000036: ffffff ffffff [red]#0000ff# [red]#0000ff# [red]#0000ff# [red]#0000ff# ffffff ffffff  ........................
-000004e: ffffff [red]#0000ff# ffffff ffffff ffffff ffffff [red]#0000ff# ffffff  ........................
-0000066: [red]#0000ff# ffffff [red]#0000ff# ffffff ffffff [red]#0000ff# ffffff [red]#0000ff#  ........................
-000007e: [red]#0000ff# ffffff ffffff ffffff ffffff ffffff ffffff [red]#0000ff#  ........................
-0000096: [red]#0000ff# ffffff [red]#0000ff# ffffff ffffff [red]#0000ff# ffffff [red]#0000ff#  ........................
-00000ae: [red]#0000ff# ffffff ffffff [red]#0000ff# [red]#0000ff# ffffff ffffff [red]#0000ff#  ........................
-00000c6: ffffff [red]#0000ff# ffffff ffffff ffffff ffffff [red]#0000ff# ffffff  ........................
-00000de: ffffff ffffff [red]#0000ff# [red]#0000ff# [red]#0000ff# [red]#0000ff# ffffff ffffff  ........................
+ffffff ffffff [red]#0000ff# [red]#0000ff# [red]#0000ff# [red]#0000ff# ffffff ffffff
+ffffff [red]#0000ff# ffffff ffffff ffffff ffffff [red]#0000ff# ffffff
+[red]#0000ff# ffffff [red]#0000ff# ffffff ffffff [red]#0000ff# ffffff [red]#0000ff#
+[red]#0000ff# ffffff ffffff ffffff ffffff ffffff ffffff [red]#0000ff#
+[red]#0000ff# ffffff [red]#0000ff# ffffff ffffff [red]#0000ff# ffffff [red]#0000ff#
+[red]#0000ff# ffffff ffffff [red]#0000ff# [red]#0000ff# ffffff ffffff [red]#0000ff#
+ffffff [red]#0000ff# ffffff ffffff ffffff ffffff [red]#0000ff# ffffff
+ffffff ffffff [red]#0000ff# [red]#0000ff# [red]#0000ff# [red]#0000ff# ffffff ffffff
 ----
-
-In the leftmost column above are addresses within the file or, equivalently, offsets from the file's first byte, all of them given in hex. Note that `00000036` in hexadecimal is `54` in decimal. You're thus looking at byte `54` onward of `smiley.bmp`. Recall that a 24-bit BMP's first 14 + 40 = 54 bytes are filled with metadata. If you really want to see that metadata in addition to the bitmap, execute the command below.
-
-[source]
-----
-xxd -c 24 -g 3 smiley.bmp
-----
-
-If `smiley.bmp` actually contained ASCII characters, you'd see them in ``xxd``'s rightmost column instead of all of those dots.
 
 So, `smiley.bmp` is 8 pixels wide by 8 pixels tall, and it's a 24-bit BMP (each of whose pixels is represented with 24 ÷ 8 = 3 bytes). Each row (aka "scanline") thus takes up (8 pixels) × (3 bytes per pixel) = 24 bytes, which happens to be a multiple of 4. It turns out that BMPs are stored a bit differently if the number of bytes in a scanline is not, in fact, a multiple of 4. In `small.bmp`, for instance, is another 24-bit BMP, a green box that's 3 pixels wide by 3 pixels wide. If you view it (as by double-clicking it), you'll see that it resembles the below, albeit much smaller. (Indeed, you might need to zoom in again to see it.)
 
@@ -114,52 +101,38 @@ image:small.png[small.png]
 
 Each scanline in `small.bmp` thus takes up (3 pixels) × (3 bytes per pixel) = 9 bytes, which is not a multiple of 4. And so the scanline is "padded" with as many zeroes as it takes to extend the scanline's length to a multiple of 4. In other words, between 0 and 3 bytes of padding are needed for each scanline in a 24-bit BMP. (Understand why?) In the case of `small.bmp`, 3 bytes' worth of zeroes are needed, since (3 pixels) × (3 bytes per pixel) + (3 bytes of padding) = 12 bytes, which is indeed a multiple of 4.
 
-To "see" this padding, go ahead and run the below.
-
-[source]
-----
-xxd -c 12 -g 3 -s 54 small.bmp
-----
-
-Note that we're using a different value for `-c` than we did for `smiley.bmp` so that `xxd` outputs only 4 columns this time (3 for the green box and 1 for the padding). You should see output like the below; we've highlighted in green all instances of `00ff00`.
+To "see" this padding, right- or control-click *small.bmp* in CS50 IDE's file browser and select *Open as hexadecimal*. In the tab that appears, change *Start with byte* to *54*, change *Bytes per row* to *12*, and change *Bytes per column* to *3*. Then click *Set*. You should see output like the below; we've highlighted in green all instances of `00ff00`.
 
 [source,subs=quotes]
 ----
-    0000036: [green]#00ff00# [green]#00ff00# [green]#00ff00# 000000  ............
-    0000042: [green]#00ff00# ffffff [green]#00ff00# 000000  ............
-    000004e: [green]#00ff00# [green]#00ff00# [green]#00ff00# 000000  ............
+[green]#00ff00# [green]#00ff00# [green]#00ff00# 000000
+[green]#00ff00# ffffff [green]#00ff00# 000000
+[green]#00ff00# [green]#00ff00# [green]#00ff00# 000000
 ----
 
-For contrast, let's use `xxd` on `large.bmp`, which looks identical to `small.bmp` but, at 12 pixels by 12 pixels, is four times as large.  Go ahead and execute the below; you may need to widen your window to avoid wrapping.
-
-[source]
-----
-xxd -c 36 -g 3 -s 54 large.bmp
-----
-
-You should see output like the below; we've again highlighted in green all instances of `00ff00`
+For contrast, let's next look at `large.bmp`, which looks identical to `small.bmp` but, at 12 pixels by 12 pixels, is four times as large. Right- or control-click it in CS50 IDE's file browser, then select *Open as hexadecimal*. You should see output like the below; we've again highlighted in green all instances of `00ff00`
 
 [source,subs=quotes]
 ----
-0000036: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-000005a: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-000007e: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-00000a2: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-00000c6: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# ffffff ffffff ffffff ffffff [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-00000ea: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# ffffff ffffff ffffff ffffff [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-000010e: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# ffffff ffffff ffffff ffffff [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-0000132: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# ffffff ffffff ffffff ffffff [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-0000156: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-000017a: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-000019e: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
-00001c2: [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#  ....................................
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# ffffff ffffff ffffff ffffff [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# ffffff ffffff ffffff ffffff [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# ffffff ffffff ffffff ffffff [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# ffffff ffffff ffffff ffffff [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
+[green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00# [green]#00ff00#
 ----
 
-Worthy of note is that this BMP lacks padding!  After all, (12 pixels) × (3 bytes per pixel) = 36 bytes is indeed a multiple of 4.
+Worthy of note is that this BMP lacks padding! After all, (12 pixels) × (3 bytes per pixel) = 36 bytes is indeed a multiple of 4.
 
 Knowing all this has got to be useful!
 
-Okay, `xxd` only showed you the bytes in these BMPs. How do we actually get at them programmatically? Well, in `copy.c` is a program whose sole purpose in life is to create a copy of a BMP, piece by piece. Of course, you could just use `cp` for that. But `cp` isn't going to help Mr. Boddy. Let's hope that `copy.c` does!
+Okay, CS50 IDE only showed you the bytes in these BMPs. How do we actually get at them programmatically? Well, in `copy.c` is a program whose sole purpose in life is to create a copy of a BMP. Of course, you could just use `cp` for that. But `cp` isn't going to help Mr. Boddy. Let's hope that `copy.c` does!
 
 Go ahead and compile `copy.c` into a program called `copy` using `make`. (Remember how?) Then execute a command like the below.
 
@@ -212,24 +185,11 @@ fprintf(stderr, "Usage: ./whodunit infile outfile\n");
 
 == Questions
 
-Go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`.
+Go ahead and pull up the URLs to which `BITMAPFILEHEADER` and `BITMAPINFOHEADER` are attributed, per the comments in `bmp.h`. Rather than hold your hand further on a stroll through `copy.c`, we're instead going to ask you some questions and let you teach yourself how the code therein works.
 
-Rather than hold your hand further on a stroll through `copy.c`, we're instead going to ask you some questions and let you teach yourself how the code therein works. As always, `man` is your friend, and so, now, is Microsoft Developer Network (aka MSDN). If not sure on first glance how to answer some question, do some quick research and figure it out! You might want to turn to https://reference.cs50.net/stdio as well.
+Open up `README.md` and replace each `TODO` therein with your answer to the question above it. That file happens to be written in Markdown, a lightweight format for text files that makes it easy to stylize text. For instance, we've prefixed each question with `##` so that, when viewed on GitHub, it renders in a larger, bold font. And we've surrounded code-related keywords with backticks (\`) so that they render on GitHub in a monospaced (i.e., code-like) font.
 
-In `questions.txt`, answer each of the following questions in a sentence or more.
-
-. What's `stdint.h`?
-. What's the point of using `uint8_t`, `uint32_t`, `int32_t`, and `uint16_t` in a program?
-. How many bytes is a `BYTE`, a `DWORD`, a `LONG`, and a `WORD`, respectively?
-. What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? Leading bytes used to identify file formats (with high probability) are generally called "magic numbers."
-. What's the difference between `bfSize` and `biSize`?
-. What does it mean if `biHeight` is negative?
-. What field in `BITMAPINFOHEADER` specifies the BMP's color depth (i.e., bits per pixel)?
-. Why might `fopen` return `NULL` in lines 24 and 32 of `copy.c`?
-. Why is the third argument to `fread` always `1` in our code?
-. What value does line 65 of `copy.c` assign to `padding` if `bi.biWidth` is `3`?
-. What does `fseek` do?
-. What is `SEEK_CUR`?
+No need to write your answers in Markdown; plaintext suffices. But if you'd like to format your answers somehow, see https://guides.github.com/features/mastering-markdown/ for a tutorial.
 
 == Specification
 
@@ -284,7 +244,7 @@ cp copy.c whodunit.c
 
 Then add and/or change just a few lines of code.
 
-There's nothing hidden in `smiley.bmp`, but feel free to test your program out on its pixels nonetheless, if only because that BMP is small and you can thus compare it and your own program's output with `xxd` during development.
+There's nothing hidden in `smiley.bmp`, but feel free to test your program out on its pixels nonetheless, if only because that BMP is small and you can thus compare it and your own program's output with CS50 IDE's hex viewer during development.
 
 Rest assured that more than one solution is possible. So long as Mr. Boddy's drawing is identifiable (by you), no matter its legibility, Mr. Boddy will rest in peace.
 
@@ -297,16 +257,3 @@ Because `whodunit` can be implemented in several ways, afraid you can't check yo
 == Staff's Solution
 
 No solution from the staff, lest it spoil your fun!
-
-== FAQs
-
-_None so far! Reload this page periodically to check if any arise!_
-
-== Changelog
-
-* 2016-09-30
-** Added explanation of `fprintf`.
-* 2016-09-27
-** Added a clarification regarding which file pointer to use for `fprintf`.
-* 2016-09-23
-** Initial release.

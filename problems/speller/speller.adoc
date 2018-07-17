@@ -1,4 +1,5 @@
 ---
+layout: 2018/spring
 ---
 
 = Speller
@@ -9,17 +10,17 @@ Implement a program that spell-checks a file, per the below.
 
 [source,subs=quotes]
 ----
-$ [underline]#./speller texts/austinpowers.txt#
+$ [underline]#./speller texts/lalaland.txt#
 MISSPELLED WORDS
 
 [...]
-Bigglesworth
+AHHHHHHHHHHHHHHHHHHHHHHHHHHHT
 [...]
-Virtucon
+Shangri
 [...]
-friggin'
+fianc
 [...]
-trippy
+Sebastian's
 [...]
 
 WORDS MISSPELLED:
@@ -38,10 +39,9 @@ TIME IN TOTAL:
 
 [source,subs="macros"]
 ----
-$ wget https://github.com/cs50/problems/archive/speller.zip
+$ wget http://cdn.cs50.net/2017/fall/psets/5/speller.zip
 $ unzip speller.zip
 $ rm speller.zip
-$ mv problems-speller speller
 $ cd speller
 $ ls
 dictionaries/  dictionary.c  dictionary.h  keys/  Makefile  questions.txt  speller.c  texts/
@@ -74,7 +74,7 @@ The line below defines a variable called `CFLAGS` that specifies, in turn, that 
 
 [source]
 ----
-CFLAGS = -ggdb3 -O0 -Qunused-arguments -std=c11 -Wall -Werror
+CFLAGS = -fsanitize=integer -fsanitize=undefined -ggdb3 -O0 -Qunused-arguments -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wshadow
 ----
 
 The line below defines a variable called `EXE`, the value of which will be our program's name.
@@ -205,36 +205,36 @@ Odds are, you didn't spend enough time looking over `speller.c`. Go back one squ
 
 ==== `texts/`
 
-So that you can test your implementation of `speller`, we've also provided you with a whole bunch of texts, among them the script from _Austin Powers: International Man of Mystery_, a sound bite from Ralph Wiggum, three million bytes from Tolstoy, some excerpts from Machiavelli and Shakespeare, the entirety of the King James V Bible, and more. So that you know what to expect, open and skim each of those files, all of which are in a directory called `texts` within your `pset5` directory.
+So that you can test your implementation of `speller`, we've also provided you with a whole bunch of texts, among them the script from _La La Land_, the text of the Affordable Care Act, three million bytes from Tolstoy, some excerpts from _The Federalist Papers_ and Shakespeare, the entirety of the King James V Bible and the Koran, and more. So that you know what to expect, open and skim each of those files, all of which are in a directory called `texts` within your `pset5` directory.
 
 Now, as you should know from having read over `speller.c` carefully, the output of `speller`, if executed with, say,
 
 [source]
 ----
-./speller texts/austinpowers.txt
+./speller texts/lalaland.txt
 ----
 
 will eventually resemble the below. For now, try executing the staff's solution (using the default dictionary) with the below.
 
 [source]
 ----
-~cs50/pset5/speller texts/austinpowers.txt
+~cs50/pset5/speller texts/lalaland.txt
 ----
 
-Below's some of the output you'll see. For amusement's sake, we've excerpted some of our favorite "misspellings." And lest we spoil the fun, we've omitted our own statistics for now.
+Below's some of the output you'll see. For information's sake, we've excerpted some examples of "misspellings." And lest we spoil the fun, we've omitted our own statistics for now.
 
 [source]
 ----
 MISSPELLED WORDS
 
 [...]
-Bigglesworth
+AHHHHHHHHHHHHHHHHHHHHHHHHHHHT
 [...]
-Virtucon
+Shangri
 [...]
-friggin'
+fianc
 [...]
-trippy
+Sebastian's
 [...]
 
 WORDS MISSPELLED:
@@ -255,18 +255,7 @@ Incidentally, to be clear, by "misspelled" we simply mean that some word is not 
 
 == Questions
 
-Open up `questions.txt` and answer each of the following questions in one or more sentences.
-
---
-[start=0]
-. What is pneumonoultramicroscopicsilicovolcanoconiosis?
-. According to its man page, what does `getrusage` do?
-. Per that same man page, how many members are in a variable of type `struct rusage`?
-. Why do you think we pass `before` and `after` by reference (instead of by value) to `calculate`, even though we're not changing their contents?
-. Explain as precisely as possible, in a paragraph or more, how `main` goes about reading words from a file. In other words, convince us that you indeed understand how that function's `for` loop works.
-. Why do you think we used `fgetc` to read each word's characters one at a time rather than use `fscanf` with a format string like `"%s"` to read whole words at a time? Put another way, what problems might arise by relying on `fscanf` alone?
-. Why do you think we declared the parameters for `check` and `load` as `const` (which means "constant")?
---
+Open up `README.md` and answer each of the questions therein.
 
 == Specification
 
@@ -294,7 +283,8 @@ Alright, ready to go?
 
 == Walkthrough
 
-video::u9-1U1Rgo1o,okH8f9xl0uY,hsruECgJJVQ,O3tErLhuEmY[youtube]
+[role=embed-responsive-21by9]
+video::u9-1U1Rgo1o[youtube,list=PLhQjrBD2T382vvokQIExRCKZq-q8PzSVz]
 
 == Hints
 
@@ -302,7 +292,7 @@ Be sure to `free` in `unload` any memory that you allocated in `load`! Recall th
 
 [source]
 ----
-valgrind --leak-check=full ./speller texts/ralph.txt
+valgrind ./speller texts/ralph.txt
 ----
 
 If you run `valgrind` without specifying a `text` for `speller`, your implementations of `load` and `unload` won't actually get called (and thus analyzed).
@@ -311,33 +301,33 @@ If unsure how to interpret the output of `valgrind`, do just ask `help50` for he
 
 [source]
 ----
-help50 valgrind --leak-check=full ./speller texts/ralph.txt
+help50 valgrind ./speller texts/ralph.txt
 ----
 
 == Testing
 
-How to check whether your program is outting the right misspelled words? Well, you're welcome to consult the "answer keys" that are inside of the `keys` directory that's inside of your `speller` directory. For instance, inside of `keys/austinpowers.txt` are all of the words that your program _should_ think are misspelled.
+How to check whether your program is outting the right misspelled words? Well, you're welcome to consult the "answer keys" that are inside of the `keys` directory that's inside of your `speller` directory. For instance, inside of `keys/lalaland.txt` are all of the words that your program _should_ think are misspelled.
 
 You could therefore run your program on some text in one window, as with the below.
 
 [source]
 ----
-./speller texts/austinpowers.txt
+./speller texts/lalaland.txt
 ----
 
 And you could then run the staff's solution on the same text in another window, as with the below.
 
 [source]
 ----
-~cs50/pset5/speller texts/austinpowers.txt
+~cs50/pset5/speller texts/lalaland.txt
 ----
 
-And you could then compare the windows visually side by side. That could get tedious quickly, though. So you might instead want to "redirect" your program's output to a file (just like you may have done with `generate` in Problem Set 3), as with the below.
+And you could then compare the windows visually side by side. That could get tedious quickly, though. So you might instead want to "redirect" your program's output to a file, as with the below.
 
 [source]
 ----
-./speller texts/austinpowers.txt > student.txt
-~cs50/pset5/speller texts/austinpowers.txt > staff.txt
+./speller texts/lalaland.txt > student.txt
+~cs50/pset5/speller texts/lalaland.txt > staff.txt
 ----
 
 You can then compare both files side by side in the same window with a program like `diff`, as with the below.
@@ -351,7 +341,7 @@ Alternatively, to save time, you could just compare your program's output (assum
 
 [source]
 ----
-diff -y student.txt keys/austinpowers.txt
+diff -y student.txt keys/lalaland.txt
 ----
 
 If your program's output matches the staff's, `diff` will output two columns that should be identical except for, perhaps, the running times at the bottom. If the columns differ, though, you'll see a `>` or `|` where they differ. For instance, if you see
@@ -360,15 +350,15 @@ If your program's output matches the staff's, `diff` will output two columns tha
 ----
 MISSPELLED WORDS                                                MISSPELLED WORDS
 
-FOTTAGE                                                         FOTTAGE
-INT                                                             INT
-                                                              > EVIL'S
-s                                                               s
-                                                              > EVIL'S
-Farbissina                                                      Farbissina
+TECHNO                                                          TECHNO
+L                                                               L
+                                                              > Thelonious
+Prius                                                           Prius
+                                                              > MIA
+L                                                               L
 ----
 
-that means your program (whose output is on the left) does not think that `EVIL's` is misspelled, even though the staff's output (on the right) does, as is implied by the absence of `EVIL's` in the lefthand column and the presence of `EVIL's` in the righthand column.
+that means your program (whose output is on the left) does not think that `Thelonious` or `MIA` is misspelled, even though the staff's output (on the right) does, as is implied by the absence of, say, `Thelonious` in the lefthand column and the presence of `Thelonious` in the righthand column.
 
 === `check50`
 
@@ -376,7 +366,7 @@ To test your code less manually (though still not exhaustively), you may also ex
 
 [source]
 ----
-check50 cs50/2017/x/speller
+check50 cs50/2018/spring/speller
 ----
 
 Note that `check50` will also check for memory leaks, so be sure you've run `valgrind` as well.
@@ -387,30 +377,5 @@ How to assess just how fast (and correct) your code is? Well, as always, feel fr
 
 [source]
 ----
-~cs50/pset5/speller texts/austinpowers.txt
+~cs50/pset5/speller texts/lalaland.txt
 ----
-
-== FAQs
-
-_None so far! Reload this page periodically to check if any arise!_
-
-== Changelog
-
-* 2016-10-08
-** Corrected walkthrough for `load`, wherein sample code had
-+
-[source,c]
-----
-node1->word = "Hello";
-node2->word = "World";
-----
-+
-instead of
-+
-[source,c]
-----
-strcpy(node1->word, "Hello");
-strcpy(node2->word, "World");
-----
-* 2016-09-30
-** Initial release.

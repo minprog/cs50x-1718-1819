@@ -1,16 +1,14 @@
 ---
-layout: 2016/fall
 ---
 :skip-front-matter:
 
 = Problem Set 2: Crypto
 
 == tl;dr
- 
+
 [start=0]
-. Watch Week 2's lecture.
-. Infer a user's initials from their name with `initials.c`.
-. Choose two adventures:
+. Watch https://video.cs50.net/2017/fall/lectures/2[Lecture 2].
+. Choose two out of three adventures:
 +
 --
 * Implement Caesar's cipher.
@@ -19,10 +17,13 @@ layout: 2016/fall
 --
 +
 . Submit your code.
+. Submit a form.
+
+include::help-harvard.adoc[]
 
 == Reminders
 
-Per Week 2's lecture:
+Per https://video.cs50.net/2017/fall/lectures/2[Lecture 2]:
 
 * Use `help50` as needed.
 * Use `eprintf` as needed.
@@ -48,7 +49,7 @@ Next, execute
 mkdir ~/workspace/pset2/
 ----
 
-at your prompt in order to make a directory called `pset2` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset2` or any other character for that matter!  Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/pset2` denotes a directory called `pset2` within `~/workspace`.
+at your prompt in order to make a directory called `pset2` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset2/` or any other character for that matter!  Keep in mind that `~` denotes your home directory, `~/workspace/` denotes a directory called `workspace` therein, and `~/workspace/pset2/` denotes a directory called `pset2` within `~/workspace/`.
 
 Now execute
 
@@ -71,61 +72,57 @@ If not, retrace your steps and see if you can determine where you went wrong. Yo
 history
 ----
 
-at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like. 
+at the prompt to see your last several commands in chronological order if you'd like to do some sleuthing. You can also scroll through the same one line at a time by hitting your keyboard's up and down arrows; hit Enter to re-execute any command that you'd like.
 
 == What to Do
 
-. Implement either of:
-+
---
-* link:/problems/initials-less[Initials], less comfortable
-* link:/problems/initials-more[Initials], more comfortable
---
-+
-. Implement any two (2) of:
-+
---
-* link:/problems/caesar[Caesar], less comfortable
-* link:/problems/vigenere[Vigenere], less comfortable
-* link:/problems/crack[Crack], more comfortable
---
+Implement any two (2) of:
+
+* link:caesar/caesar.html[Caesar], less comfortable
+* link:vigenere/vigenere.html[Vigenère], less comfortable
+* link:crack/crack.html[Crack], more comfortable
+
+You're welcome but not expected to implement all three; if you submit all three, we'll grade your two best.
 
 == How to Submit
 
-A small form awaits! Getting the information is important to us.
+=== Step 1 of 2
 
-. https://goo.gl/forms/SnAiioDqLipGf30h1[Fill in the form].
+. Log into https://cs50.io/[CS50 IDE] and open a terminal window, if not open already.
+. Ensure your workspace is up-to-date by executing:
++
+[source]
+----
+update50
+----
+. Submit at least two of:
++
+--
+* Caesar, by executing:
++
+[source]
+----
+cd ~/workspace/pset2/caesar/
+submit50 cs50/2018/spring/caesar
+----
+* Vigenère, by executing:
++
+[source]
+----
+cd ~/workspace/pset2/vigenere/
+submit50 cs50/2018/spring/vigenere
+----
+* Crack, by executing:
++
+[source]
+----
+cd ~/workspace/pset2/crack/
+submit50 cs50/2018/spring/crack
+----
+--
 
-And now, submit.
+=== Step 2 of 2
 
-. Make sure you are signed in to this website!
-. In the form below, add the files that you downloaded.
-. Press "Submit for grading". Presto!
- 
+Submit https://forms.cs50.net/2018/spring/psets/2[] (starting on or after Mon 2/5)!
+
 This was Problem Set 2.
-
-== FAQs
-
-=== Not a directory
-
-If you execute, e.g.,
-
-[source]
-----
-cd ~/workspace/pset2/initials/
-----
-
-and see
-
-[source]
-----
-bash: cd: /home/ubuntu/workspace/pset2/initials/: Not a directory
-----
-
-odds are you don't have a `pset2/` directory inside of `~/workspace/` and/or you don't have an `initials/` directory inside of `~/workspace/pset2/`. Check as much using `ls` (remember how?) or poke around your IDE's file browser at left. Make sure that:
-
-* you have a `pset2/` directory inside of `~/workspace/`,
-* you have an `initials/` directory inside of `~/workspace/pset2/`, inside of which is `initials.c`,
-* you have an `caesar/` directory inside of `~/workspace/pset2/`, inside of which is `caesar.c`,
-* you have an `vigenere/` directory inside of `~/workspace/pset2/`, inside of which is `vigenere.c`, and/or
-* you have an `crack/` directory inside of `~/workspace/pset2/`, inside of which is `crack.c`.

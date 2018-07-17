@@ -1,66 +1,70 @@
 ---
-layout: 2016/fall
 ---
 :skip-front-matter:
 
 = Problem Set 5: Mispellings
 
 == tl;dr
- 
-. Watch Week 5's lecture.
+
+[start=0]
+. Watch https://video.cs50.net/2017/fall/lectures/5[Lecture 5].
 . Answer some questions about a spell checker.
 . Implement a spell checker.
+. Submit your code.
+. Submit a form.
+
+include::help-harvard.adoc[]
 
 == Getting Started
 
-Log into https://cs50.io/[cs50.io] and execute
+Log into https://cs50.io/[cs50.io] and execute the below in a terminal window.
 
 [source]
 ----
 update50
-----
-
-within a terminal window to make sure your workspace is up-to-date. 
-
-Next, execute
-
-[source]
-----
 mkdir ~/workspace/pset5/
-----
-
-at your prompt in order to make a directory called `pset5` in your `workspace` directory.
-
-Now execute
-
-[source]
-----
 cd ~/workspace/pset5/
-----
-
-and your prompt should resemble the below.
-
-[source]
-----
-~/workspace/pset5/ $
 ----
 
 == Academic Honesty
 
-Do keep in mind the course's policy on http://docs.cs50.net/2016/fall/syllabus/cs50.html#academic-honesty[academic honesty], particularly its "regret clause."
+Do keep in mind the course's policy on http://docs.cs50.net/2017/fall/syllabus/cs50.html#academic-honesty[academic honesty], particularly its "regret clause."
 
 == Problems
 
-* Implement link:/problems/speller[Speller]
+* Implement link:speller/speller.html[Speller]
 
 === Big Board
 
-If you'd like to put your code to the test against classmates' code (just for fun), upload your solution to our https://bigboard.quinner.nl/[Big Board] website before or after you submit!
+If you'd like to put your code to the test against classmates' code (just for fun), execute the command below to challenge the Big Board before or after you submit.
+
+[source]
+----
+check50 cs50/2018/spring/challenges/speller
+----
+
+Then visit https://speller.cs50.net/cs50/2018/spring/challenges/speller[] to see where you rank!
 
 == How to Submit
 
-. Make sure you are signed in to this website!
-. In the form below, add the files that you downloaded.
-. Press "Submit for grading". Presto!
- 
+=== Step 1 of 2
+
+* Update your IDE:
++
+[source]
+----
+update50
+----
+* Submit `speller`:
++
+[source]
+----
+cd ~/workspace/pset5/speller/
+submit50 cs50/2018/spring/speller
+----
+
+=== Step 2 of 2
+
+Submit https://forms.cs50.net/2018/spring/psets/5[], beginning Mon 2/26!
+
 This was Problem Set 5.

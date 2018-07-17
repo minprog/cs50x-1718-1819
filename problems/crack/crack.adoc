@@ -1,4 +1,5 @@
 ---
+layout: 2018/spring
 ---
 
 = Crack
@@ -21,16 +22,16 @@ Even though passwords in `/etc/shadow` are hashed, the hash function is not alwa
 
 [source]
 ----
-andi:50.jPgLzVirkc
-jason:50YHuxoCN9Jkc
-malan:50QvlJWn2qJGE
-mzlatkova:50CPlMDLT06yY
-patrick:50WUNAFdX/yjA
-rbowden:50fkUxYHbnXGw
-summer:50C6B0oz0HWzo
-stelios:50nq4RV/NVU0I
-wmartin:50vtwu4ujL.Dk
-zamyla:50i2t3sOSAZtk
+anushree:50xcIMJ0y.RXo
+brian:50mjprEcqC/ts
+bjbrown:50GApilQSG3E2
+lloyd:50n0AAUD.pL8g
+malan:50CcfIk1QrPr6
+maria:509nVI8B9VfuA
+natmelo:50JIIyhDORqMU
+rob:50JGnXUgaafgc
+stelios:51u8F0dkeDSbY
+zamyla:50cI2vYkF0YU2
 ----
 
 == Specification
@@ -42,10 +43,12 @@ Design and implement a program, `crack`, that cracks passwords.
 * If your program is executed without any command-line arguments or with more than one command-line argument, your program should print an error (of your choice) and exit immediately, with `main` returning `1` (thereby signifying an error).
 * Otherwise, your program must proceed to crack the given password, ideally as quickly as possible, ultimately printing the password in the clear followed by `\n`, nothing more, nothing less, with `main` returning `0`.
 * Assume that each password has been hashed with C's DES-based (not MD5-based) `crypt` function.
-* Assume that each password is no longer than (gasp) four characters
+* Assume that each password is no longer than five (5) characters. Gasp!
 * Assume that each password is composed entirely of alphabetical characters (uppercase and/or lowercase).
 
 == Walkthrough
+
+**Note: The walkthrough video incorrectly states that passwords are no longer than four (4) characters. Instead, per the specification, make sure to handle passwords that are up to five (5) characters.**
 
 video::w78QYcmpA8o[youtube]
 
@@ -61,13 +64,22 @@ Usage: ./crack hash
 
 [source,subs=quotes]
 ----
-$ [underline]#./crack 50fkUxYHbnXGw#
-rofl
+$ [underline]#./crack 50JGnXUgaafgc#
+ROFL
 ----
 
 == Testing
 
+=== Correctness
+
 No `check50` for this one! But odds are, if you can crack all ten passwords above, you're in good shape!
+
+=== Style
+
+[source]
+----
+style50 crack.c
+----
 
 == Hints
 
@@ -86,21 +98,4 @@ Per that man page, you'll likely want to put
 #include <unistd.h>
 ----
 
-at the top of your file in order to use `crypt`. Moreover, you'll want to link with `-lcrypt`, as by compiling not with `make` but with:
-
-[source]
-----
-clang -ggdb3 -O0 -std=c11 -Wall -Werror -Wshadow crack.c -lcrypt -lcs50 -lm -o crack
-----
-
-== FAQs
-
-_None so far! Reload this page periodically to check if any arise!_
-
-== CHANGELOG
-
-* 2016-09-14
-** Fixed underlining of user input.
-** Added tl;dr.
-* 2016-09-09
-** Initial release.
+at the top of your file in order to use `crypt`.

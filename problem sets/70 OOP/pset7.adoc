@@ -1,0 +1,34 @@
+---
+layout: 2018/spring
+---
+:skip-front-matter:
+
+= Problem Set 7: OOP
+
+== tl;dr
+
+[start=0]
+. Watch
+
+
+== Getting Started
+
+----
+update50
+mkdir ~/workspace/pset7/
+cd ~/workspace/pset7/
+----
+
+== Problems
+
+. Implement something
+
+== How to Submit
+
+=== Step 1 of 2
+
+?
+
+=== Step 2 of 2
+
+?

@@ -1,77 +1,90 @@
 ---
-layout: 2016/fall
 ---
 :skip-front-matter:
 
 = Problem Set 4: Forensics
 
 == tl;dr
- 
-. Watch Week 4's lecture.
+
+[start=0]
+. Attend or watch https://video.cs50.net/2017/fall/lectures/4[Lecture 4].
 . Figure out whodunit.
 . Resize some images.
-. Recover some photos.
+. Recover some photos
 . Submit your code.
+. Submit a form.
+
+include::help-harvard.adoc[]
 
 == Getting Started
 
-Alright, here we go again!
-
-Log into https://cs50.io/[cs50.io] and execute
+Log into https://cs50.io/[cs50.io] and execute the below in a terminal window.
 
 [source]
 ----
 update50
-----
-
-within a terminal window to make sure your workspace is up-to-date. 
-
-Next, execute
-
-[source]
-----
 mkdir ~/workspace/pset4/
-----
-
-at your prompt in order to make a directory called `pset4` in your `workspace` directory.
-
-Now execute
-
-[source]
-----
 cd ~/workspace/pset4/
-----
-
-and your prompt should resemble the below.
-
-[source]
-----
-~/workspace/pset4/ $
 ----
 
 == What to Do
 
-. Implement link:/problems/whodunit[Whodunit]
+. Implement link:whodunit/whodunit.html[Whodunit]
 . Implement either of:
 +
 --
-* link:/problems/resize-less[Resize], less comfortable
-* link:/problems/resize-more[Resize], more comfortable
+* link:resize/less/resize.html[Resize], less comfortable
+* link:resize/more/resize.html[Resize], more comfortable
 --
 +
-. Implement link:/problems/recover[Recover]
-
+. Implement link:recover/recover.html[Recover]
 
 == How to Submit
 
-A small form awaits! Getting the information is important to us.
+=== Step 1 of 2
 
-. https://goo.gl/forms/k2D2hPvnOg32QdTq1[Fill in the form for this pset].
+. Log into https://cs50.io/[CS50 IDE] and open a terminal window, if not open already.
+. Ensure your workspace is up-to-date by executing:
++
+[source]
+----
+update50
+----
+. Submit Whodunit:
++
+[source]
+----
+cd ~/workspace/pset4/whodunit/
+submit50 cs50/2018/spring/whodunit
+----
+. Submit either or both of:
++
+--
+* Resize, less comfortable:
++
+[source]
+----
+cd ~/workspace/pset4/resize/less
+submit50 cs50/2018/spring/resize/less
+----
+* Resize, more comfortable:
++
+[source]
+----
+cd ~/workspace/pset4/resize/more
+submit50 cs50/2018/spring/resize/more
+----
+--
+. Submit Recover:
++
+[source]
+----
+cd ~/workspace/pset4/recover
+submit50 cs50/2018/spring/recover
+----
 
-And now, submit.
+=== Step 2 of 2
 
-. Make sure you are signed in to this website!
-. In the form below, add the files that you downloaded.
-. Press "Submit for grading". Presto!
- 
+Submit https://forms.cs50.net/2018/spring/psets/4[]! Note that this form has a few questions related to mid-semester feedback for the course's staff, and so will take a little bit longer than the last few forms.
+
 This was Problem Set 4.

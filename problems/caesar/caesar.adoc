@@ -1,4 +1,5 @@
 ---
+layout: 2018/spring
 ---
 
 = Caesar
@@ -127,11 +128,18 @@ Usage: ./caesar k
 
 == Testing
 
-=== `check50`
+=== Correctness
 
 [source]
 ----
-check50 cs50/2017/x/caesar
+check50 cs50/2018/spring/caesar
+----
+
+=== Style
+
+[source]
+----
+style50 caesar.c
 ----
 
 == Staff's Solution
@@ -190,15 +198,4 @@ Incidentally, you'll need to `#include` yet another header file in order to use 
 
 Besides `atoi`, you might find some handy functions documented at https://reference.cs50.net/[reference.cs50.net] under *ctype.h* and *stdlib.h*. For instance, `isalpha` might prove helpful when iterating over plaintext's characters.
 
-And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forget about `%`, C's modulo operator. You might also want to check out http://asciitable.com/, which reveals the ASCII codes for more than just alphabetical characters, just in case you find yourself printing some characters accidentally.
-
-== FAQs
-
-_None so far! Reload this page periodically to check if any arise!_
-
-== CHANGELOG
-
-* 2017-02-01
-** Clarified requirement of a newline at the end of the ciphered text.
-* 2016-09-09
-** Initial release.
+And, with regard to wrapping around from `Z` to `A` (or `z` to `a`), don't forget about `%`, C's modulo operator. You might also want to check out http://asciichart.com/, which reveals the ASCII codes for more than just alphabetical characters, just in case you find yourself printing some characters accidentally.
