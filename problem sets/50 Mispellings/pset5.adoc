@@ -7,13 +7,25 @@
 == tl;dr
 
 [start=0]
-. Watch https://video.cs50.net/2017/fall/lectures/5[Lecture 5].
+. Watch link:/lectures/week-5[Lecture 5].
 . Answer some questions about a spell checker.
 . Implement a spell checker.
 . Submit your code.
-. Submit a form.
 
-include::help-harvard.adoc[]
+== Help
+
+For information on (or help with) this Problem Set:
+
+[start=0]
+. Watch the walkthroughs herein.
+. Attend your tutor's *section*.
+* Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+. Ask questions during office hours using the "Ask" tool on this website.
+. Visit (or email) the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on link:/#academic_honesty[academic honesty], particularly its link:/#regret["regret clause"].
 
 == Getting Started
 
@@ -36,35 +48,12 @@ Do keep in mind the course's policy on http://docs.cs50.net/2017/fall/syllabus/c
 
 === Big Board
 
-If you'd like to put your code to the test against classmates' code (just for fun), execute the command below to challenge the Big Board before or after you submit.
-
-[source]
-----
-check50 cs50/2018/spring/challenges/speller
-----
-
-Then visit https://speller.cs50.net/cs50/2018/spring/challenges/speller[] to see where you rank!
+If you'd like to put your code to the test against classmates' code (just for fun), upload your solution to our https://bigboard.quinner.nl/[Big Board] website before or after you submit!
 
 == How to Submit
 
-=== Step 1 of 2
-
-* Update your IDE:
-+
-[source]
-----
-update50
-----
-* Submit `speller`:
-+
-[source]
-----
-cd ~/workspace/pset5/speller/
-submit50 cs50/2018/spring/speller
-----
-
-=== Step 2 of 2
-
-Submit https://forms.cs50.net/2018/spring/psets/5[], beginning Mon 2/26!
+. Make sure you are signed in to this website!
+. In the form below, add the files that you downloaded.
+. Press "Submit for grading". Presto!
 
 This was Problem Set 5.

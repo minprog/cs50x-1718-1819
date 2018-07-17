@@ -7,14 +7,26 @@
 == tl;dr
 
 [start=0]
-. Attend or watch https://video.cs50.net/2017/fall/lectures/4[Lecture 4].
+. Watch link:/lectures/week-4[Lecture 4].
 . Figure out whodunit.
 . Resize some images.
 . Recover some photos
 . Submit your code.
-. Submit a form.
 
-include::help-harvard.adoc[]
+== Help
+
+For information on (or help with) this Problem Set:
+
+[start=0]
+. Watch the walkthroughs herein.
+. Attend your tutor's *section*.
+* Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+. Ask questions during office hours using the "Ask" tool on this website.
+. Visit (or email) the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on link:/#academic_honesty[academic honesty], particularly its link:/#regret["regret clause"].
 
 == Getting Started
 
@@ -29,62 +41,20 @@ cd ~/workspace/pset4/
 
 == What to Do
 
-. Implement link:whodunit/whodunit.html[Whodunit]
+. Implement link:/problems/whodunit/[Whodunit]
 . Implement either of:
 +
 --
-* link:resize/less/resize.html[Resize], less comfortable
-* link:resize/more/resize.html[Resize], more comfortable
+* link:/problems/resize_less/[Resize], less comfortable
+* link:/problems/resize_more/[Resize], more comfortable
 --
 +
-. Implement link:recover/recover.html[Recover]
+. Implement link:/problems/recover/[Recover]
 
 == How to Submit
 
-=== Step 1 of 2
-
-. Log into https://cs50.io/[CS50 IDE] and open a terminal window, if not open already.
-. Ensure your workspace is up-to-date by executing:
-+
-[source]
-----
-update50
-----
-. Submit Whodunit:
-+
-[source]
-----
-cd ~/workspace/pset4/whodunit/
-submit50 cs50/2018/spring/whodunit
-----
-. Submit either or both of:
-+
---
-* Resize, less comfortable:
-+
-[source]
-----
-cd ~/workspace/pset4/resize/less
-submit50 cs50/2018/spring/resize/less
-----
-* Resize, more comfortable:
-+
-[source]
-----
-cd ~/workspace/pset4/resize/more
-submit50 cs50/2018/spring/resize/more
-----
---
-. Submit Recover:
-+
-[source]
-----
-cd ~/workspace/pset4/recover
-submit50 cs50/2018/spring/recover
-----
-
-=== Step 2 of 2
-
-Submit https://forms.cs50.net/2018/spring/psets/4[]! Note that this form has a few questions related to mid-semester feedback for the course's staff, and so will take a little bit longer than the last few forms.
+. Make sure you are signed in to this website!
+. In the form below, add the files that you downloaded.
+. Press "Submit for grading". Presto!
 
 This was Problem Set 4.
