@@ -17,27 +17,27 @@ layout: 2018/spring
 . Implement the below exactly as specified but in Python:
 +
 --
-* link:../../../../../problems/hello/hello.html[Hello], in `pset6/hello/hello.py`
+* link:/problems/hello/[Hello], in `pset6/hello/hello.py`
 --
 . Implement either of the below exactly as specified but in Python:
 +
 --
-* link:../../../../../problems/mario/less/mario.html[Mario], less comfortable, in `pset6/mario/mario.py`
-* link:../../../../../problems/mario/more/mario.html[Mario], more comfortable, in `pset6/mario/mario.py`
+* link:/problems/mario_less/[Mario], less comfortable, in `pset6/mario/mario.py`
+* link:/problems/mario/more/[Mario], more comfortable, in `pset6/mario/mario.py`
 --
 +
 . Implement either of the below exactly as specified but in Python:
 +
 --
-* link:../../../../../problems/cash/cash.html[Cash], less comfortable, in `pset6/cash/cash.py`
-* link:../../../../../problems/credit/credit.html[Credit], more comfortable, in `pset6/credit/credit.py`
+* link:/problems/cash/[Cash], less comfortable, in `pset6/cash/cash.py`
+* link:/problems/credit/[Credit], more comfortable, in `pset6/credit/credit.py`
 --
 . Implement any (one) of the below exactly as specified but in Python:
 +
 --
-* link:../../2/caesar/caesar.html[Caesar], less comfortable, in `pset6/caesar/caesar.py`
-* link:../../2/vigenere/vigenere.html[Vigenère], less comfortable, in `pset6/vigenere/vigenere.py`
-* link:../../2/crack/crack.html[Crack], more comfortable, in `pset6/crack/crack.py`
+* link:/problems/caesar/[Caesar], less comfortable, in `pset6/caesar/caesar.py`
+* link:/problems/vigenere/[Vigenère], less comfortable, in `pset6/vigenere/vigenere.py`
+* link:/problems/crack/[Crack], more comfortable, in `pset6/crack/crack.py`
 --
 
 == Walkthroughs

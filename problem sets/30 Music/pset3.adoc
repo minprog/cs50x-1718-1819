@@ -18,7 +18,7 @@ For information on (or help with) this Problem Set:
 [start=0]
 . Watch the walkthroughs herein.
 . Attend your tutor's *section*.
-* Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
 . Ask questions during office hours using the "Ask" tool on this website.
 . Visit (or email) the course's heads.
 

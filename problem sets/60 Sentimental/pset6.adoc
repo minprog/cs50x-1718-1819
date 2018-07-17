@@ -7,7 +7,7 @@
 == tl;dr
 
 [start=0]
-. Watch link:/lectures/week-6[Lecture 6]
+. Watch link:/lectures/lecture-8[Lecture 8]
 . Port some programs from C to Python.
 . Submit your code.
 
@@ -18,7 +18,7 @@ For information on (or help with) this Problem Set:
 [start=0]
 . Watch the walkthroughs herein.
 . Attend your tutor's *section*.
-* Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
 . Ask questions during office hours using the "Ask" tool on this website.
 . Visit (or email) the course's heads.
 
@@ -37,37 +37,15 @@ cd ~/workspace/pset6/
 
 == Problems
 
-. Implement link:sentimental/sentimental[Sentimental].
+All code that you write should be consistent with https://www.python.org/dev/peps/pep-0008/[Style Guide for Python Code], otherwise known as PEP 8.
+
+. Implement link:/problems/sentimental/[Sentimental].
 
 == How to Submit
 
-=== Step 1 of 2
-
-. Execute `update50`
-. Execute `cd ~/workspace/pset6/hello/ && submit50 cs50/2018/spring/sentimental/hello`
-. Execute at least one of:
-+
---
-* `cd ~/workspace/pset6/mario && submit50 cs50/2018/spring/sentimental/mario/less`
-* `cd ~/workspace/pset6/mario && submit50 cs50/2018/spring/sentimental/mario/more`
---
-. Execute at least one of:
-+
---
-* `cd ~/workspace/pset6/cash/ && submit50 cs50/2018/spring/sentimental/cash`
-* `cd ~/workspace/pset6/credit/ && submit50 cs50/2018/spring/sentimental/credit`
---
-. Execute at least one of:
-+
---
-* `cd ~/workspace/pset6/caesar/ && submit50 cs50/2018/spring/sentimental/caesar`
-* `cd ~/workspace/pset6/vigenere/ && submit50 cs50/2018/spring/sentimental/vigenere`
-* `cd ~/workspace/pset6/crack/ && submit50 cs50/2018/spring/sentimental/crack`
---
-
-
-=== Step 2 of 2
-
-Submit https://forms.cs50.net/2018/spring/psets/6[]!
+. Make sure you are signed in to this website!
+. Zip your "pset6"-folder using `zip <target> <source>` where both target and source can be "pset6".
+. In the form below, add the files that you downloaded.
+. Press "Submit for grading". Presto!
 
 This was Problem Set 6.
