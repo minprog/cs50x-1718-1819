@@ -7,12 +7,24 @@
 == tl;dr
 
 [start=0]
-. Watch https://video.cs50.net/2017/fall/lectures/10[Lecture 10].
+. Watch link:lectures/lecture-10[Lecture 10].
 . Implement a stock-trading website.
 . Submit your code.
-. Submit a form.
 
-include::help-harvard.adoc[]
+== Help
+
+For information on (or help with) this Problem Set:
+
+[start=0]
+. Watch the walkthroughs herein.
+. Attend your tutor's *section*.
+. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+. Ask questions during office hours using the "Ask" tool on this website.
+. Visit (or email) the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on link:/#academic_honesty[academic honesty], particularly its link:/#regret["regret clause"].
 
 == Getting Started
 
@@ -25,7 +37,7 @@ cd ~/workspace/pset9/
 
 == Problems
 
-Implement link:finance/finance.html[C$50 Finance] in `pset7/finance/`.
+Implement link:/problems/finance/[C$50 Finance] in `pset9/finance/`.
 
 == Hints
 
@@ -36,17 +48,9 @@ Implement link:finance/finance.html[C$50 Finance] in `pset7/finance/`.
 
 == How to Submit
 
-=== Step 1 of 2
+. Make sure you are signed in to this website!
+. Zip your "pset9"-folder using `zip <target> <source>` where both target and source can be "pset9".
+. In the form below, add the files that you downloaded.
+. Press "Submit for grading". Presto!
 
-[source]
-----
-update50
-cd ~/workspace/pset7/finance/
-submit50 cs50/2018/spring/finance
-----
-
-=== Step 2 of 2
-
-Submit https://forms.cs50.net/2018/spring/psets/7[]!
-
-This was Problem Set 7.
+This was Problem Set 9.

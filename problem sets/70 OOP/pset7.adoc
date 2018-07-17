@@ -8,8 +8,25 @@ layout: 2018/spring
 == tl;dr
 
 [start=0]
-. Watch
+. Watch link:/lectures/lecture-oop/[the Lecture on OOP].
+. Implement some stuff
+. Implement some more
+. Submit your code.
 
+== Help
+
+For information on (or help with) this Problem Set:
+
+[start=0]
+. Watch the walkthroughs herein.
+. Attend your tutor's *section*.
+. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+. Ask questions during office hours using the "Ask" tool on this website.
+. Visit (or email) the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on link:/#academic_honesty[academic honesty], particularly its link:/#regret["regret clause"].
 
 == Getting Started
 
@@ -25,10 +42,8 @@ cd ~/workspace/pset7/
 
 == How to Submit
 
-=== Step 1 of 2
+. Make sure you are signed in to this website!
+. In the form below, add the files that you downloaded.
+. Press "Submit for grading". Presto!
 
-?
-
-=== Step 2 of 2
-
-?
+This was Problem Set 7.
