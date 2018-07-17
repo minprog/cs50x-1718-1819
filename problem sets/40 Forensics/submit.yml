@@ -1,0 +1,6 @@
+name: forensics
+files:
+    required:
+        - whodunit.c
+        - resize.c
+        - recover.c

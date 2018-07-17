@@ -7,7 +7,7 @@
 == tl;dr
 
 [start=0]
-. Watch link:/lectures/week-2[Lecture 2].
+. Watch link:/lectures/lecture-2[Lecture 2].
 . Choose two out of three adventures:
 +
 --

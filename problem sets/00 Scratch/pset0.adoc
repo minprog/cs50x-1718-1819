@@ -6,7 +6,7 @@
 == tl;dr
 
 [start=0]
-. Watch link:/lectures/week-0[Week 0's lecture].
+. Watch link:/lectures/lecture-0[Week 0's lecture].
 . Program in Scratch.
 . Submit a form.
 

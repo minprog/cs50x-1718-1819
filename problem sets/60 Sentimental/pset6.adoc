@@ -2,18 +2,29 @@
 ---
 :skip-front-matter:
 
-= Problem Set 6: Déjà vu
+= Problem Set 6: Sentimental
 
 == tl;dr
 
 [start=0]
-. Watch https://video.cs50.net/2017/fall/lectures/6[Lecture 6], https://video.cs50.net/2017/fall/lectures/7[Lecture 7], https://video.cs50.net/2017/fall/lectures/8[Lecture 8], and https://video.cs50.net/2017/fall/lectures/9[Lecture 9], if you haven't already.
+. Watch link:/lectures/week-6[Lecture 6]
 . Port some programs from C to Python.
-. Detect some similarities.
 . Submit your code.
-. Submit a form.
 
-include::help-harvard.adoc[]
+== Help
+
+For information on (or help with) this Problem Set:
+
+[start=0]
+. Watch the walkthroughs herein.
+. Attend your tutor's *section*.
+* Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+. Ask questions during office hours using the "Ask" tool on this website.
+. Visit (or email) the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on link:/#academic_honesty[academic honesty], particularly its link:/#regret["regret clause"].
 
 == Getting Started
 

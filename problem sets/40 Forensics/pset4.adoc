@@ -7,7 +7,7 @@
 == tl;dr
 
 [start=0]
-. Watch link:/lectures/week-4[Lecture 4].
+. Watch link:/lectures/lecture-4[Lecture 4].
 . Figure out whodunit.
 . Resize some images.
 . Recover some photos

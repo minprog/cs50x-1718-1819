@@ -7,7 +7,7 @@
 == tl;dr
 
 [start=0]
-. Watch link:/lectures/week-3[Lecture 3].
+. Watch link:/lectures/lecture-3[Lecture 3].
 . Make beautiful music.
 . Submit your code.
 

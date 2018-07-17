@@ -7,7 +7,7 @@
 == tl;dr
 
 [start=0]
-. Watch link:/lectures/week-5[Lecture 5].
+. Watch link:/lectures/lecture-5[Lecture 5].
 . Answer some questions about a spell checker.
 . Implement a spell checker.
 . Submit your code.
