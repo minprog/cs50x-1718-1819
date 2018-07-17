@@ -1,5 +1,4 @@
 ---
-toc: false
 ---
 :skip-front-matter:
 
@@ -8,15 +7,22 @@ toc: false
 == tl;dr
 
 [start=0]
-. Attend or watch https://video.cs50.net/2017/fall/lectures/1[Week 1's first lecture].
-. Watch https://video.cs50.net/2017/fall/lectures/2?t=22m47s[22m47s] through https://video.cs50.net/2017/fall/lectures/2?t=50m1s[50m1s] of Lecture 2 (sneak preview!).
+. Watch link:/lectures/week-1[Week 1's first lecture].
+. Watch the first 50 minutes of link:/lectures/week-2[Lecture 2] (sneak preview!).
 . Get your CS50 IDE set up with `hello.c`.
 . Recreate one of Mario's pyramids, in `mario.c`.
 . Accept some cash in `cash.c` or credit in `credit.c`.
 . Submit your code.
-. Submit a form.
 
-include::help-harvard.adoc[]
+== Help
+
+For information on or help with this Problem Set:
+
+[start=0]
+. Watch Zamyla's walkthroughs herein.
+. Attend your tutor's *section*.
+. Ask questions during office hours using the "Ask" tool on this website.
+. Visit (or email) the course's heads.
 
 == Getting Started
 
@@ -24,7 +30,9 @@ Recall that CS50 IDE is a web-based "integrated development environment" that al
 
 === Logging In
 
-Head to https://cs50.io/[cs50.io] and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then choose *Harvard's CS50* under *Choose a template*, and click *Create workspace*.
+First, register on https://courses.edx.org/register[edx.org], which will provide you with an account to log on to the CS50 IDE. If you already have an edX account, it's no problem to use that one.
+
+Now head to https://cs50.io/[cs50.io] and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then click *Create workspace*.
 
 You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble David's from Week 1. If not, do just email the course's heads to inquire!
 
@@ -80,72 +88,30 @@ at the prompt to see your last several commands in chronological order if you'd 
 
 == What to Do
 
-. Implement link:../../../../problems/hello/hello.html[Hello]
+. Implement link:/problems/hello[Hello]
 . Implement either of:
 +
 --
-* link:../../../../problems/mario/less/mario.html[Mario], less comfortable
-* link:../../../../problems/mario/more/mario.html[Mario], more comfortable
+* link:/problems/mario_less/[Mario], less comfortable
+* link:/problems/mario_more/[Mario], more comfortable
 --
 +
 . Implement either of:
 +
 --
-* link:../../../../problems/cash/cash.html[Cash], less comfortable
-* link:../../../../problems/credit/credit.html[Credit], more comfortable
+* link:/problems/cash/[Cash], less comfortable
+* link:/problems/credit/[Credit], more comfortable
 --
 
 == How to Submit
 
-=== Step 1 of 2
-
-. Log into https://cs50.io/[CS50 IDE] and open a terminal window, if not open already.
-. Submit Hello by executing:
-+
-[source]
-----
-cd ~/workspace/pset1/hello
-submit50 cs50/2018/spring/hello
-----
-. Submit either or both of:
-+
---
-* Mario, less comfortable, by executing:
-+
-[source]
-----
-cd ~/workspace/pset1/mario/less
-submit50 cs50/2018/spring/mario/less
-----
-* Mario, more comfortable, by executing:
-+
-[source]
-----
-cd ~/workspace/pset1/mario/more
-submit50 cs50/2018/spring/mario/more
-----
---
-. Submit either or both of:
-+
---
-* Cash, by executing:
-+
-[source]
-----
-cd ~/workspace/pset1/cash
-submit50 cs50/2018/spring/cash
-----
-* Credit, by executing:
-+
-[source]
-----
-cd ~/workspace/pset1/credit
-submit50 cs50/2018/spring/credit
-----
---
-
-=== Step 2 of 2
-
-Submit https://forms.cs50.net/2018/spring/psets/1 on or after Mon 1/29. Once you have submitted that form (as well as your source code), you are done! If you end up resubmitting your files (per step 1 of 2), no need to resubmit the form.
+. When ready to submit, log into https://cs50.io/[CS50 IDE].
+. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `hello.c` file (that's within your *pset1* directory) and then select *Download*. You should find that your browser has downloaded `hello.c`.
+. Repeat for `water.c`.
+. Repeat for `mario.c`.
+. Repeat for `greedy.c` or `credit.c`.
+. Make sure you are signed in to this website!
+. In the form below, add the files that you downloaded.
+. Press "Submit for grading". Presto!
 
 This was Problem Set 1.

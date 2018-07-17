@@ -16,7 +16,11 @@ For help with Week 0 and Problem Set 0:
 
 * Ask questions in class using the "Ask" tool on this website.
 * Watch https://youtu.be/697pD31GCZg[Zamyla's walkthrough].
-* Email the course's heads.
+* Email or visit the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on http://docs.cs50.net/2017/fall/syllabus/cs50.html#academic-honesty[academic honesty], particularly its "regret clause."
 
 == Itching to Program?
 

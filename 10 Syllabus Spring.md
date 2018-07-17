@@ -200,15 +200,13 @@ Resubmission of problem sets is not possible when you complete the course succes
 - Problem sets cannot be submitted or graded a third time.
 
 
-## Doing your own work
+== Doing your own work
 
 This course's philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course's material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
 
 The essence of all work that you submit to this course must be your own. Collaboration on problem sets is not permitted except to the extent that you may ask classmates and others for help so long as that help does not reduce to another doing your work for you. Generally speaking, when asking for help, you may show your code to others, but you may not view theirs, so long as you and they respect this policy's other constraints. Collaboration on the course's test and quiz is not permitted at all.
 
 Below are rules of thumb that (inexhaustively) characterize acts that the course considers reasonable and not reasonable. If in doubt as to whether some act is reasonable, do not commit it until you solicit and receive approval in writing from the course's heads. Acts considered not reasonable by the course are handled harshly.
-
-If you commit some act that is not reasonable but bring it to the attention of the course's heads within 72 hours, the course may impose local sanctions that may include an unsatisfactory or failing grade for work submitted, but the course will not refer the matter for further disciplinary action except in cases of repeated acts.
 
 ### Reasonable
 
@@ -272,3 +270,7 @@ BSc programme. Find them here in [English] and [Dutch].
 
 [Dutch]: http://uva.nl/plagiaat
 [English]: http://student.uva.nl/en/az/content/plagiarism-and-fraud/plagiarism-and-fraud.html
+
+=== Regret
+
+If you commit some act that is not reasonable but bring it to the attention of the course's heads within 72 hours, the course may impose local sanctions that may include an unsatisfactory or failing grade for work submitted, but the course will not refer the matter for further disciplinary action (except in cases of repeated acts).
