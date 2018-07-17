@@ -193,7 +193,7 @@ Resubmission of problem sets is not possible when you complete the course succes
 - Problem sets cannot be submitted or graded a third time.
 
 
-## Doing your own work
+<h2 id='academic_honesty'>Doing your own work</h2>
 
 This course's philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course's material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
 
@@ -264,6 +264,6 @@ BSc programme. Find them here in [English] and [Dutch].
 [Dutch]: http://uva.nl/plagiaat
 [English]: http://student.uva.nl/en/az/content/plagiarism-and-fraud/plagiarism-and-fraud.html
 
-### Regret
+<h3 id='regret'>Regret</h3>
 
 If you commit some act that is not reasonable but bring it to the attention of the course's heads within 72 hours, the course may impose local sanctions that may include an unsatisfactory or failing grade for work submitted, but the course will not refer the matter for further disciplinary action except in cases of repeated acts.
