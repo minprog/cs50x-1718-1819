@@ -23,7 +23,7 @@ $ [underline]#./resize 4 small.bmp large.bmp#
 Be sure you're familiar with the structure of 24-bit uncompressed BMPs, as introduced in link:../../whodunit/whodunit[Whodunit].
 
 == Distribution
-2018/spring
+
 === Downloading
 
 [source,subs="macros"]
