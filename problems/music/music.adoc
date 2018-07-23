@@ -1,9 +1,7 @@
 ---
 layout: 2018/spring
-music:
-  font_family: "Bravura Text"
 ---
-
+[header]
 <style>
 .music {
     style="font-family: "Bravura Text";
