@@ -1,13 +1,7 @@
 ---
 layout: 2018/spring
 ---
-[header]
-<style>
-.music {
-    style="font-family: "Bravura Text";
-}
-</style>
-
+:docinfo1:
 = Music
 
 == tl;dr
