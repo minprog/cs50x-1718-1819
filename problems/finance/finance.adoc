@@ -52,14 +52,6 @@ export API_KEY=value
 ----
 +
 where `value` is that (pasted) value, without any space immediately before or after the `=`. You also may wish to paste that value in a text document somewhere, in case you need it again later.
-. *If you downloaded the problem set distribution code before Sun 3/25*, you will also need to edit `application.py` by adding the line:
-+
-[source]
-----
-import os
-----
-+
-above the line `from cs50 import SQL` atop that file.
 
 === Running
 
@@ -95,7 +87,7 @@ Next take a look at `helpers.py`. Ah, there's the implementation of `apology`. N
 
 Next in the file is `login_required`. No worries if this one's a bit cryptic, but if you've ever wondered how a function can return another function, here's an example!
 
-Thereafter is `lookup`, a function that, given a `symbol` (e.g., MSFT), returns a stock quote for that symbol in the form of a `dict` with two keys: `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`. There's a cryptic Python-looking call embedded in the URL to `os.getenv('API_KEY')`. We'll ultimately need to set some value on our system called `API_KEY`, but instructions for that are below!
+Thereafter is `lookup`, a function that, given a `symbol` (e.g., MSFT), returns a stock quote for that symbol in the form of a `dict` with two keys: `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`. There's a cryptic Python-looking call embedded in the URL to `os.getenv('API_KEY')`. The value of this environment variable were set with the `export` command we used earlier.
 
 Last in the file is `usd`, a short function that simply formats a `float` as USD (e.g., `1234.56` is formatted as `$1,234.56`).
 
@@ -185,6 +177,8 @@ Implement at least one personal touch of your choice:
 * Allow users to buy more shares or sell shares of stocks they already own via `index` itself, without having to type stocks' symbols manually.
 * Require users' passwords to have some number of letters, numbers, and/or symbols.
 * Implement some other feature of comparable scope.
+
+Make sure to clearly indicate in your code what you have implemented as your personal touch. This can be done by putting `PERSONAL TOUCH: <explanation>` in your comments.
 
 == Walkthroughs
 
