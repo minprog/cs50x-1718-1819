@@ -2,7 +2,6 @@
 layout: 2018/spring
 ---
 = Music
-:docinfo: shared
 
 == tl;dr
 
