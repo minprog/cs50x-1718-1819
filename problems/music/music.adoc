@@ -2,6 +2,12 @@
 layout: 2018/spring
 ---
 
+<style>
+.music {
+    font-family: "Bravura Text";
+}
+</style>
+
 = Music
 
 == tl;dr
