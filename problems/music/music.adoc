@@ -4,7 +4,11 @@ layout: 2018/spring
 ++++
 <style>
 .music {
-  font-family: "Bravura Text"
+  font-family: "Bravura Text";
+  font-size: 2em;
+  line-height: 0.5em;
+  position: relative;
+  top: 0.25em;
 }
 </style>
 ++++
