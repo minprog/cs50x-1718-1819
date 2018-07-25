@@ -2,8 +2,12 @@
 layout: 2018/spring
 ---
 = Music
-++++
++++++++++++++++++++++++
 <style>
+@font-face {
+font-family: "Bravura Text";
+src: url(BravuraText.woff);
+}
 .music {
   font-family: "Bravura Text";
   font-size: 2em;
@@ -12,7 +16,7 @@ layout: 2018/spring
   top: 0.25em;
 }
 </style>
-++++
++++++++++++++++++++++++
 
 == tl;dr
 
