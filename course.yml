@@ -4,6 +4,11 @@ course:
     submit: Prog18
     mail: help@mprog.nl
 
+syllabus: /resources/syllabus
+
+links:
+    Syllabus: /resources/syllabus
+
 ask:
     hands: true
 
