@@ -32,40 +32,41 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 
 |               | Hispeed    | Lospeed1   | Lospeed 2  |
 | ------------- | ---------- | ---------- | ---------- |
-| Problem Set 0 | Mon  5-Feb | Thu  8-Feb | Thu 15-Feb |
-| Problem Set 1 | Thu  8-Feb | Fri 16-Feb | Thu 8-Mar  |
-| Problem Set 2 | Thu 15-Feb | Fri 23-Feb | Thu 5-Apr  |
-| Problem Set 3 | Wed 21-Feb | Tue  6-Mar | Thu 26-Apr |
-| Problem Set 4 | Fri  2-Mar | Fri 16-Mar | Thu 24-May |
+| Problem Set 0 | Mon 3-Sep  |  |  |
+| Problem Set 1 | Fri 7-Sep  |  |  |
+| Problem Set 2 | Fri 14-Sep |  |  |
+| Problem Set 3 | Fri 21-Sep |  |  |
+| Problem Set 4 | Fri 28-Sep |  |  |
 
 |               | Hispeed    | Lospeed 1  |
 | ------------- | ---------- | ---------- |
-| Quiz          | Mon 26-Feb | Mon 26-Mar |
-| Retake        | Mon 12-Mar | Wed 11-Apr |
+| Quiz          | Mon 24-sep |  |
+| Retake        |  |  |
 
 |               | Lospeed 2  |
 | ------------- | ---------- |
-| Quiz option 1 | Wed 11-Apr |
-| Quiz option 2 | Mon 11-Jun |
+| Quiz option 1 | |
+| Quiz option 2 | |
 
 #### Programming 2
 
 |               | Hispeed    | Lospeed1   | Lospeed 2  |
 | ------------- | ---------- | ---------- | ---------- |
-| Problem Set 5 | Fri  9-Mar | Fri 20-Apr | Thu 1-Mar  |
-| Problem Set 6 | Thu 15-Mar | Thu 26-Apr | Thu 29-Mar |
-| Problem Set 7 | Wed 21-Mar | Wed  9-May | Thu 26-Apr |
-| Problem Set 8 | Thu 29-Mar | Fri 18-May | Thu 24-May |
+| Problem Set 5 | Fri 5-Oct  |  |  |
+| Problem Set 6 | Wed 10-Oct |  |  |
+| Problem Set 7 | Wed 17-Oct |  |  |
+| Problem Set 8 | Fri 19-Oct |  |  |
+| Problem Set 9 | Fri 26-Oct |  |  |
 
 |               | Hispeed    | Lospeed 1  |
 | ------------- | ---------- | ---------- |
-| Quiz 2        | Mon 26-Mar | Mon 28-May |
-| Retake        | Wed 11-Apr | Mon 11-Jun |
+| Quiz          | Mon 22-Oct |  |
+| Retake        |  |  |
 
 |               | Lospeed 2  |
 | ------------- | ---------- |
-| Quiz option 1 | Wed 11-Apr |
-| Quiz option 2 | Mon 11-Jun |
+| Quiz option 1 | |
+| Quiz option 2 | |
 
 ## Lectures
 
