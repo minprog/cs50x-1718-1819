@@ -55,7 +55,8 @@ Now, all of those keys, when pressed, generate vibrations and, in turn, waves of
 https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
 ////
 
-.Chronological sequence of pictures of the compression of air molecules for a sound wave moving in the rightward direction. Source: link:https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf[https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf].
+Source: link:https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf[https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf].
+[caption="Chronological sequence of pictures of the compression of air molecules for a sound wave moving in the rightward direction."]
 image::MathematicsOfMusic.png[width="100%"]
 
 Among the most noteworthy (ha!) notes is Middle C, highlighted in cyan earlier, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another notable (ha!) note, A4, highlighted in yellow earlier, otherwise known as A440, since the frequency of its sound waves is 440 Hz; which means that they oscilate up and down 440 times per second.
