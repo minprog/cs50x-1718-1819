@@ -2,6 +2,7 @@
 layout: 2018/spring
 ---
 = Music
+
 [subs="none"]
 +++++++++++++++++++++++
 <style>
