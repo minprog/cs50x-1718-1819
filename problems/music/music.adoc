@@ -2,20 +2,20 @@
 layout: 2018/spring
 ---
 = Music
-[subs="pass"]
+[subs="none"]
 +++++++++++++++++++++++
 <style>
-@font-face {
-font-family: "Bravura Text";
-src: url(BravuraText.woff);
-}
-.music {
-  font-family: "Bravura Text";
-  font-size: 2em;
-  line-height: 0.5em;
-  position: relative;
-  top: 0.25em;
-}
+  @font-face {
+    font-family: "Bravura Text";
+    src: url(BravuraText.woff);
+  }
+  .music {
+    font-family: "Bravura Text";
+    font-size: 2em;
+    line-height: 0.5em;
+    position: relative;
+    top: 0.25em;
+  }
 </style>
 +++++++++++++++++++++++
 
