@@ -8,7 +8,7 @@ layout: 2018/spring
 <style>
   @font-face {
     font-family: "BravuraText";
-    src: url("/problems/music/BravuraText.woff");
+    src: url("/problems/music/BravuraText.woff") format("woff");
   }
   .music {
     font-family: "BravuraText";
