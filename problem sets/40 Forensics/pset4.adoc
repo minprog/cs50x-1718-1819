@@ -1,77 +1,60 @@
 ---
-layout: 2016/fall
 ---
 :skip-front-matter:
 
 = Problem Set 4: Forensics
 
 == tl;dr
- 
-. Watch Week 4's lecture.
+
+[start=0]
+. Watch link:/lectures/lecture-4[Lecture 4].
 . Figure out whodunit.
 . Resize some images.
-. Recover some photos.
+. Recover some photos
 . Submit your code.
+
+== Help
+
+For information on (or help with) this Problem Set:
+
+[start=0]
+. Watch the walkthroughs herein.
+. Attend your tutor's *section*.
+. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+. Ask questions during office hours using the "Ask" tool on this website.
+. Visit (or email) the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on link:/#academic_honesty[academic honesty], particularly its link:/#regret["regret clause"].
 
 == Getting Started
 
-Alright, here we go again!
-
-Log into https://cs50.io/[cs50.io] and execute
+Log into https://cs50.io/[cs50.io] and execute the below in a terminal window.
 
 [source]
 ----
 update50
-----
-
-within a terminal window to make sure your workspace is up-to-date. 
-
-Next, execute
-
-[source]
-----
 mkdir ~/workspace/pset4/
-----
-
-at your prompt in order to make a directory called `pset4` in your `workspace` directory.
-
-Now execute
-
-[source]
-----
 cd ~/workspace/pset4/
-----
-
-and your prompt should resemble the below.
-
-[source]
-----
-~/workspace/pset4/ $
 ----
 
 == What to Do
 
-. Implement link:/problems/whodunit[Whodunit]
+. Implement link:/problems/whodunit/[Whodunit]
 . Implement either of:
 +
 --
-* link:/problems/resize-less[Resize], less comfortable
-* link:/problems/resize-more[Resize], more comfortable
+* link:/problems/resize_less/[Resize], less comfortable
+* link:/problems/resize_more/[Resize], more comfortable
 --
 +
-. Implement link:/problems/recover[Recover]
-
+. Implement link:/problems/recover/[Recover]
 
 == How to Submit
-
-A small form awaits! Getting the information is important to us.
-
-. https://goo.gl/forms/k2D2hPvnOg32QdTq1[Fill in the form for this pset].
-
-And now, submit.
 
 . Make sure you are signed in to this website!
 . In the form below, add the files that you downloaded.
 . Press "Submit for grading". Presto!
- 
+
 This was Problem Set 4.

@@ -1,0 +1,56 @@
+---
+---
+:skip-front-matter:
+
+= Problem Set 9: C$50 Finance
+
+== tl;dr
+
+[start=0]
+. Watch link:lectures/lecture-10[Lecture 10].
+. Implement a stock-trading website.
+. Submit your code.
+
+== Help
+
+For information on (or help with) this Problem Set:
+
+[start=0]
+. Watch the walkthroughs herein.
+. Attend your tutor's *section*.
+. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+. Ask questions during office hours using the "Ask" tool on this website.
+. Visit (or email) the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on link:/#academic_honesty[academic honesty], particularly its link:/#regret["regret clause"].
+
+== Getting Started
+
+[source]
+----
+update50
+mkdir ~/workspace/pset9/
+cd ~/workspace/pset9/
+----
+
+== Problems
+
+Implement link:/problems/finance/[C$50 Finance] in `pset9/finance/`.
+
+== Hints
+
+* Be sure to use Python 3, not Python 2. The former is installed by default on CS50 IDE, but if Google leads you to Python's official documentation, be sure the URLs begin with https://docs.python.org/3/, not https://docs.python.org/2/.
+* Insofar as a goal of this problem set is to teach you how to teach yourself a new language, keep in mind that these acts are not only *reasonable*, per the syllabus, but encouraged toward that end:
+** Incorporating a few lines of code that you find online or elsewhere into your own code, provided that those lines are not themselves solutions to assigned problems and that you cite the lines' origins.
+** Turning to the web or elsewhere for instruction beyond the course's own, for references, and for solutions to technical difficulties, but not for outright solutions to problem set's problems or your own final project.
+
+== How to Submit
+
+. Make sure you are signed in to this website!
+. Zip your "pset9"-folder using `zip <target> <source>` where both target and source can be "pset9".
+. In the form below, add the files that you downloaded.
+. Press "Submit for grading". Presto!
+
+This was Problem Set 9.

@@ -1,5 +1,0 @@
-name: fifteen
-files:
-    required:
-        - helpers.c
-        - fifteen.c

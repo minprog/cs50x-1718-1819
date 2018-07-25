@@ -1,8 +1,8 @@
 # CS50x University of Amsterdam<br><small>Programming 1+2</small>
 
-## Syllabus, Spring 2018
+## Syllabus, Fall 2018
 
-Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for majors and non-majors alike, with or without prior programming experience.
+Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ Introduction to the intellectual enterprises of computer science and the art of 
 
 ## Expectations
 
-You are expected to watch all lectures, attend all sections, submit nine problem sets, and take a quiz. You are also expected to attend the lab sessions as required, and for each problem set, discuss your feedback with your teaching assistant.
+You are expected to watch all lectures, attend all sections, submit nine problem sets, and take a quiz. You are also expected to attend the lab sessions as required, and for each problem set, discuss your feedback with your tutor.
 
 ## Asking Questions
 
@@ -30,42 +30,43 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 
 #### Programming 1
 
-|               | Hispeed    | Lospeed    | Avond      |  
-| ------------- | ---------- | ---------- | ---------- |  
-| Problem Set 0 | Mon  5-Feb | Thu  8-Feb | Thu 15-Feb |  
-| Problem Set 1 | Thu  8-Feb | Fri 16-Feb | Thu 8-Mar  |  
-| Problem Set 2 | Thu 15-Feb | Fri 23-Feb | Thu 5-Apr  |  
-| Problem Set 3 | Wed 21-Feb | Tue  6-Mar | Thu 26-Apr |  
-| Problem Set 4 | Fri  2-Mar | Fri 16-Mar | Thu 24-May |  
+|               | Hispeed    | Lospeed1   | Lospeed 2  |
+| ------------- | ---------- | ---------- | ---------- |
+| Problem Set 0 | Mon 3-Sep  |  |  |
+| Problem Set 1 | Fri 7-Sep  |  |  |
+| Problem Set 2 | Fri 14-Sep |  |  |
+| Problem Set 3 | Fri 21-Sep |  |  |
+| Problem Set 4 | Fri 28-Sep |  |  |
 
-|               | Hispeed    | Lospeed    |  
-| ------------- | ---------- | ---------- |  
-| Quiz          | Mon 26-Feb | Mon 26-Mar |  
-| Retake        | Mon 12-Mar | Wed 11-Apr |  
+|               | Hispeed    | Lospeed 1  |
+| ------------- | ---------- | ---------- |
+| Quiz          | Mon 24-sep |  |
+| Retake        |  |  |
 
-|               | Avond      |  
-| ------------- | ---------- |  
-| Quiz option 1 | Wed 11-Apr |  
-| Quiz option 2 | Mon 11-Jun |  
+|               | Lospeed 2  |
+| ------------- | ---------- |
+| Quiz option 1 | |
+| Quiz option 2 | |
 
 #### Programming 2
 
-|               | Hispeed    | Lospeed    | Avond      |  
-| ------------- | ---------- | ---------- | ---------- |  
-| Problem Set 5 | Fri  9-Mar | Fri 20-Apr | Thu 1-Mar  |  
-| Problem Set 6 | Thu 15-Mar | Thu 26-Apr | Thu 29-Mar |  
-| Problem Set 7 | Wed 21-Mar | Wed  9-May | Thu 26-Apr |  
-| Problem Set 8 | Thu 29-Mar | Fri 18-May | Thu 24-May |  
+|               | Hispeed    | Lospeed1   | Lospeed 2  |
+| ------------- | ---------- | ---------- | ---------- |
+| Problem Set 5 | Fri 5-Oct  |  |  |
+| Problem Set 6 | Wed 10-Oct |  |  |
+| Problem Set 7 | Wed 17-Oct |  |  |
+| Problem Set 8 | Fri 19-Oct |  |  |
+| Problem Set 9 | Fri 26-Oct |  |  |
 
-|               | Hispeed    | Lospeed    |  
-| ------------- | ---------- | ---------- |  
-| Quiz 2        | Mon 26-Mar | Mon 28-May |  
-| Retake        | Wed 11-Apr | Mon 11-Jun |  
+|               | Hispeed    | Lospeed 1  |
+| ------------- | ---------- | ---------- |
+| Quiz          | Mon 22-Oct |  |
+| Retake        |  |  |
 
-|               | Avond      |  
-| ------------- | ---------- |  
-| Quiz option 1 | Wed 11-Apr |  
-| Quiz option 2 | Mon 11-Jun |  
+|               | Lospeed 2  |
+| ------------- | ---------- |
+| Quiz option 1 | |
+| Quiz option 2 | |
 
 ## Lectures
 
@@ -73,7 +74,7 @@ Lectures discuss theory that helps you solve your problems sets and prepare you 
 
 ## Sections
 
-Lectures are supplemented by weekly, 120-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your teaching fellow and a group of classmates present, as well as to dive into hands-on activities.
+Lectures are supplemented by weekly, 90-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your teaching fellow and a group of classmates present, as well as to dive into hands-on activities.
 
 ## Walkthroughs
 
@@ -83,13 +84,6 @@ Embedded into problem sets are "walkthroughs," videos via which the course's sta
 
 Office hours are opportunities for assistance with problem sets alongside the
 course's teaching assistants. Office hours ordinarily take place on weekdays.
-
-## Tutoring
-
-For students who avail themselves of the course's other resources but still
-find themselves struggling, the course offers tutoring, to the extent possible,
-providing opportunities for students to work with the course's staff one-on-one
-or in particularly small groups. To arrange, contact the course's heads.
 
 ## Problem Sets
 
@@ -118,24 +112,24 @@ The final grade for this course is primarily determined by averaging the scores 
 
 #### Programming 1
 
-|               | Language | Weight |  
-| ------------- | -------- | -----: |  
-| Problem Set 0 | Scratch  |     8% |  
-| Problem Set 1 | C        |    23% |  
-| Problem Set 2 | C        |    23% |  
-| Problem Set 3 | C        |    23% |  
-| Problem Set 4 | C        |    23% |  
-| Quiz          |          |     0% |  
+|               | Language | Weight |
+| ------------- | -------- | -----: |
+| Problem Set 0 | Scratch  |     8% |
+| Problem Set 1 | C        |    23% |
+| Problem Set 2 | C        |    23% |
+| Problem Set 3 | C        |    23% |
+| Problem Set 4 | C        |    23% |
+| Quiz          |          |     0% |
 
 #### Programming 2
 
-|               | Language   | Weight |  
-| ------------- | ---------- | -----: |  
-| Problem Set 5 | C          |    25% |  
-| Problem Set 6 | Python     |    25% |  
-| Problem Set 7 | HTML       |    25% |  
-| Problem Set 8 | Javascript |    25% |  
-| Quiz          |            |     0% |  
+|               | Language   | Weight |
+| ------------- | ---------- | -----: |
+| Problem Set 5 | C          |    25% |
+| Problem Set 6 | Python     |    25% |
+| Problem Set 7 | HTML       |    25% |
+| Problem Set 8 | Javascript |    25% |
+| Quiz          |            |     0% |
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
@@ -155,33 +149,33 @@ No books are required for this course. If one seeks additional reference, here a
 
 *For Those Less Comfortable*
 
-C Programming Absolute Beginner's Guide, Third Edition  
-Greg Perry, Dean Miller  
-Pearson Education, 2014  
+C Programming Absolute Beginner's Guide, Third Edition
+Greg Perry, Dean Miller
+Pearson Education, 2014
 ISBN 9780789751980
 
 *For Those More Comfortable*
 
-Programming in C, Fourth Edition  
-Stephen G. Kochan  
-Pearson Education, 2015  
+Programming in C, Fourth Edition
+Stephen G. Kochan
+Pearson Education, 2015
 ISBN 9780321776419
 
 The book below is recommended for those interested in understanding how their
 own computers work for personal edification.
 
-How Computers Work, Tenth Edition  
-Ron White  
-Que Publishing, 2014  
+How Computers Work, Tenth Edition
+Ron White
+Que Publishing, 2014
 ISBN 9780789749840
 
 This last book below is recommended for aspiring hackers, those interested in
 programming tricks and low-level optimization of code for applications beyond
 the scope of this course.
 
-Hacker's Delight, Second Edition  
-Henry S. Warren Jr.  
-Pearson Education, 2013  
+Hacker's Delight, Second Edition
+Henry S. Warren Jr.
+Pearson Education, 2013
 ISBN 9780321842688
 
 
@@ -190,7 +184,7 @@ ISBN 9780321842688
 Resubmission of problem sets is not possible when you complete the course successfully. Should you fail the course, the following rules apply when submitting any problem set for a second time:
 
 - Resubmitting problem sets is not possible until the next semester.
- 
+
 - Submissions are required to be complete and bug-free, so as to not burden the staff with grading (i.e., scope and correctness have to be perfect).
 
 - Only scope and correctness will be regraded. Scores for design and style will not be changed even when you improve said design and style of your program (even though we do encourage this).
@@ -200,15 +194,13 @@ Resubmission of problem sets is not possible when you complete the course succes
 - Problem sets cannot be submitted or graded a third time.
 
 
-## Doing your own work
+## Doing your own work {#academic_honesty}
 
 This course's philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course's material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
 
 The essence of all work that you submit to this course must be your own. Collaboration on problem sets is not permitted except to the extent that you may ask classmates and others for help so long as that help does not reduce to another doing your work for you. Generally speaking, when asking for help, you may show your code to others, but you may not view theirs, so long as you and they respect this policy's other constraints. Collaboration on the course's test and quiz is not permitted at all.
 
 Below are rules of thumb that (inexhaustively) characterize acts that the course considers reasonable and not reasonable. If in doubt as to whether some act is reasonable, do not commit it until you solicit and receive approval in writing from the course's heads. Acts considered not reasonable by the course are handled harshly.
-
-If you commit some act that is not reasonable but bring it to the attention of the course's heads within 72 hours, the course may impose local sanctions that may include an unsatisfactory or failing grade for work submitted, but the course will not refer the matter for further disciplinary action except in cases of repeated acts.
 
 ### Reasonable
 
@@ -272,3 +264,7 @@ BSc programme. Find them here in [English] and [Dutch].
 
 [Dutch]: http://uva.nl/plagiaat
 [English]: http://student.uva.nl/en/az/content/plagiarism-and-fraud/plagiarism-and-fraud.html
+
+### Regret {#regret}
+
+If you commit some act that is not reasonable but bring it to the attention of the course's heads within 72 hours, the course may impose local sanctions that may include an unsatisfactory or failing grade for work submitted, but the course will not refer the matter for further disciplinary action except in cases of repeated acts.

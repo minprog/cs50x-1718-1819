@@ -1,5 +1,4 @@
 ---
-layout: 2016/fall
 ---
 :skip-front-matter:
 
@@ -8,12 +7,26 @@ layout: 2016/fall
 == tl;dr
 
 [start=0]
-. Watch Week 1's lecture.
+. Watch link:/lectures/lecture-1[Week 1's first lecture].
+. Watch the first 50 minutes of link:/lectures/lecture-2[Lecture 2] (sneak preview!).
 . Get your CS50 IDE set up with `hello.c`.
-. Calculate your water consumption with `water.c`.
 . Recreate one of Mario's pyramids, in `mario.c`.
-. Provide a user with either cash or credit in `greedy.c` or `credit.c`.
+. Accept some cash in `cash.c` or credit in `credit.c`.
 . Submit your code.
+
+== Help
+
+For information on (or help with) this Problem Set:
+
+[start=0]
+. Watch the walkthroughs herein.
+. Attend your tutor's *section*.
+. Ask questions during office hours using the "Ask" tool on this website.
+. Visit (or email) the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on link:/#academic_honesty[academic honesty], particularly its link:/#regret["regret clause"].
 
 == Getting Started
 
@@ -25,20 +38,20 @@ First, register on https://courses.edx.org/register[edx.org], which will provide
 
 Now head to https://cs50.io/[cs50.io] and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click *Private* under *Hosted workspace*, then click *Create workspace*.
 
-You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble mine from Week 1. If not, do just email the course's heads to inquire!
+You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace, which should resemble David's from Week 1. If not, do just email the course's heads to inquire!
 
 === Updating
 
 Toward the bottom of CS50 IDE's UI is a "terminal window" (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace's files and directories, compile code, run programs, and even install new software. You should find that its "prompt" resembles the below.
 
-[source,text]
+[source]
 ----
 ~/workspace/ $
 ----
 
 Click inside of that terminal window and then type
 
-[source,text]
+[source]
 ----
 update50
 ----
@@ -52,7 +65,7 @@ Next, execute
 mkdir ~/workspace/pset1/
 ----
 
-at your prompt in order to make a directory called `pset1` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset1` or any other character for that matter!  Keep in mind that `~` denotes your home directory, `~/workspace` denotes a directory called `workspace` therein, and `~/workspace/pset1` denotes a directory called `pset1` within `~/workspace`.
+at your prompt in order to make a directory called `pset1` in your `workspace` directory. Take care not to overlook the space between `mkdir` and `~/workspace/pset1/` or any other character for that matter! Keep in mind that `~` denotes your home directory, `~/workspace/` denotes a directory called `workspace` therein, and `~/workspace/pset1/` denotes a directory called `pset1` within `~/workspace/`.
 
 Now execute
 
@@ -70,7 +83,7 @@ to move yourself into (i.e., open) that directory. Your prompt should now resemb
 
 If not, retrace your steps and see if you can determine where you went wrong. You can actually execute
 
-[source,bash]
+[source]
 ----
 history
 ----
@@ -80,28 +93,21 @@ at the prompt to see your last several commands in chronological order if you'd 
 == What to Do
 
 . Implement link:/problems/hello[Hello]
-. Implement link:/problems/water[Water]
 . Implement either of:
 +
 --
-* link:/problems/mario-less[Mario], less comfortable
-* link:/problems/mario-more[Mario], more comfortable
+* link:/problems/mario_less/[Mario], less comfortable
+* link:/problems/mario_more/[Mario], more comfortable
 --
 +
 . Implement either of:
 +
 --
-* link:/problems/greedy[Greedy], less comfortable
-* link:/problems/credit[Credit], more comfortable
+* link:/problems/cash/[Cash], less comfortable
+* link:/problems/credit/[Credit], more comfortable
 --
 
 == How to Submit
-
-A small form awaits!
-
-. First of all, https://docs.google.com/forms/d/e/1FAIpQLScIsbV89Tl9mv5FJhviVJBm9Qv0nGRo6KUiYtn8ecQNeW9Szw/viewform?usp=sf_link[fill in this form].
-
-And now, submit.
 
 . When ready to submit, log into https://cs50.io/[CS50 IDE].
 . Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `hello.c` file (that's within your *pset1* directory) and then select *Download*. You should find that your browser has downloaded `hello.c`.

@@ -1,0 +1,54 @@
+---
+layout: 2018/spring
+---
+:skip-front-matter:
+
+= Problem Set 8: Similarities
+
+== tl;dr
+
+[start=0]
+. Watch link:/lectures/shorts-on-http-and-html/[these shorts on HTTP and HTML] and link:/lectures/lecture-9[Lecture 9].
+. Detect some similarities.
+. Submit your code.
+
+== Help
+
+For information on (or help with) this Problem Set:
+
+[start=0]
+. Watch the walkthroughs herein.
+. Attend your tutor's *section*.
+. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+. Ask questions during office hours using the "Ask" tool on this website.
+. Visit (or email) the course's heads.
+
+== Academic Honesty
+
+Do keep in mind the course's policy on link:/#academic_honesty[academic honesty], particularly its link:/#regret["regret clause"].
+
+== Getting Started
+
+[source]
+----
+update50
+mkdir ~/workspace/pset8/
+cd ~/workspace/pset8/
+----
+
+== Problems
+
+. Implement either of:
++
+--
+* link:/problems/similarities_less/[Similarities], less comfortable
+* link:/problems/similarities_more/[Similarities], more comfortable
+--
+
+== How to Submit
+
+. Make sure you are signed in to this website!
+. In the form below, add the files that you downloaded.
+. Press "Submit for grading". Presto!
+
+This was Problem Set 8.

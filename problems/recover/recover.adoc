@@ -1,4 +1,5 @@
 ---
+layout: 2018/spring
 ---
 
 = Recover
@@ -14,7 +15,7 @@ $ [underline]#./recover card.raw#
 
 == Background
 
-In anticipation of this problem, I spent the past several days taking photos of people I know, all of which were saved by my digital camera as JPEGs on a memory card. (Okay, it's possible I actually spent the past several days on Facebook instead.) Unfortunately, I somehow deleted them all! Thankfully, in the computer world, "deleted" tends not to mean "deleted" so much as "forgotten." My computer insists that the card is now blank, but I'm pretty sure that's not quite true. Indeed, I'm hoping you can write a program that recovers the photos for me!
+In anticipation of this problem, we spent the past several days taking photos of people we know, all of which were saved on a digital camera as JPEGs on a memory card. (Okay, it's possible we actually spent the past several days on Facebook instead.) Unfortunately, we somehow deleted them all! Thankfully, in the computer world, "deleted" tends not to mean "deleted" so much as "forgotten." Even though the camera insists that the card is now blank, we're pretty sure that's not quite true. Indeed, we're hoping (er, expecting!) you can write a program that recovers the photos for us!
 
 Even though JPEGs are more complicated than BMPs, JPEGs have "signatures," patterns of bytes that can distinguish them from other file formats. Specifically, the first three bytes of JPEGs are
 
@@ -43,7 +44,7 @@ Now, I only have one memory card, but there are a lot of you! And so I've gone a
 ----
 $ mkdir recover
 $ cd recover
-$ wget http://cdn.cs50.net/2016/fall/psets/4/pset4/card.raw
+$ wget http://cdn.cs50.net/2017/fall/psets/4/recover/card.raw
 $ ls
 card.raw
 ----
@@ -87,7 +88,7 @@ $ [underline]#echo $?#
 
 [source]
 ----
-check50 cs50/2017/x/recover
+check50 cs50/2018/spring/recover
 ----
 
 == Staff's Solution
@@ -122,17 +123,3 @@ rm -f *.jpg
 ----
 
 Just be careful with that `-f` switch, as it "forces" deletion without prompting you.
-
-== FAQs
-
-=== :( handles lack of forensic image
-
-If you find that when you run `check50` on your `recover.c` file you are not passing this particular check—though you are certain that you are addressing it in your code—make sure that your error message is going to `stderr` (as via `fprintf`), and not simply to `stdout` (as via `printf`).
-
-== Changelog
-
-* 2016-09-27
-** Added a clarification regarding which file pointer to use for `fprintf`.
-** Added FAQ about `check50`.
-* 2016-09-23
-** Initial release.
