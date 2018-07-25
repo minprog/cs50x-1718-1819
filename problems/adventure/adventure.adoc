@@ -1,0 +1,217 @@
+---
+layout: 2018/spring
+toclevels: 1
+---
+
+= Adventure
+
+== tl;dr
+
+. Load the game data from their files.
+. Implement classes required to move and interact with the game.
+. Play it!
+
+== Background
+
+Back in the days, before dedicated graphics cards were a thing, text-based adventure games we're incredibly popular. This type of game consists entirely out of text, and is traversed by commands much like the ones you would enter in the terminal.
+One such game is Colossal Cave Adventure, created by link:https://en.wikipedia.org/wiki/William_Crowther_(programmer)/[William Crowther] in 1975, that served as the inspiration for the text adventure game genre.
+
+In Adventure you have to navigate between "Rooms" through commands such as "WEST" and "EAST", but also "IN" or "OUT".
+Like so:
+----
+    You are standing at the end of a road before a small brick
+    building. A small stream flows out of the building and
+    down a gully to the south. A road runs up a small hill
+    to the west.
+    > WEST
+    You are at the end of a road at the top of a small hill.
+    You can see a small building in the valley to the east.
+    > EAST
+    Outside building.
+    >
+----
+
+But there is more than just navigating, at all times you can ask for HELP for an explanation of the game, or LOOK to get a detailed description of the room you are in.
+From the previous example you could see that the second time a room is entered a shorter description was shown. If we were to use look we would see the following:
+----
+    > LOOK
+    You are standing at the end of a road before a small brick
+    building. A small stream flows out of the building and
+    down a gully to the south. A road runs up a small hill
+    to the west.
+    >
+----
+
+Besides moving and looking there is also interaction with objects. These objects are located within room and are yours to take and drop (TAKE <obj>, DROP <obj>).
+Forgot what you've picked up throughout your journey? Using the INVENTORY command you get a list of what you're carrying around. Interacting with objects would look like this:
+----
+    Inside building
+    You are inside a building, a well house for a large spring.
+    There is a a set of keys here
+    > TAKE keys
+    Taken.
+    > INVENTORY
+    KEYS, a set of keys
+    > DROP keys
+    Dropped.
+    > INVENTORY
+    inventory is empty.
+    >
+----
+
+Use these objects to pass otherwise unpassable blockades, such as the "strong steel grate".
+
+== Distribution
+
+=== Downloading
+
+[source,subs="macros"]
+----
+$ wget https://wouter.mprog.nl/course/problems/adventure/adventure.zip
+$ unzip adventure.zip
+$ rm adventure.zip
+$ cd adventure
+$ ls
+TODO
+----
+
+=== Understanding
+
+==== `adventure.py`
+
+Instead of working from a single file, we've split up our classes into seperate files. This keeps our files short and tidy, but we'll still have to link them up. For that we'll have to import them as follows:
+[source]
+----
+import room, object
+----
+This line tells python to look for the files room.py and object.py and make their contents reachable from within adventure.py.
+Remember that calling on their contents is done through referencing the module and suffixing the desired function or class name.
+For example `room.Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a room object for you.
+
+Further on are the functions to load the game data and play the game, though they're still little more than TODO's.
+
+
+=== `room.py & object.py`
+
+These are your classes. The blueprints for the objects that your game will need to funciton properly.
+Plenty of TODO's here as well!
+
+=== `data`
+
+Within the data folder you can find everything you need to create your objects and rooms with.
+There's 5 datafiles with which you can create 3 versions of Adventure. TinyRooms.txt being the smallest version, has only 3 rooms and no objects whatsoever. Great for starting out with!
+SmallRooms.txt and SmallObjects is a tad bit larger and includes, obviously, objects.
+The full game of Adventure is contained within CrowtherRooms.txt and CrowtherObjects.txt.
+
+== What to do
+
+=== Loading...
+
+TinyRooms, the smallest version of the game, contains the following data:
+----
+    1
+    Outside building
+    You are standing at the end of a road before a small brick
+    building.  A small stream flows out of the building and
+    down a gully to the south.  A road runs up a small hill
+    to the west.
+    -----
+    WEST     2
+    UP       2
+    NORTH    3
+    IN       3
+
+    2
+    End of road
+    You are at the end of a road at the top of a small hill.
+    You can see a small building in the valley to the east.
+    -----
+    EAST     1
+    DOWN     1
+
+    3
+    Inside building
+    You are inside a building, a well house for a large spring.
+    -----
+    SOUTH     1
+    OUT       1
+----
+
+These are the descriptions for all rooms in the game and how navigate between them. Each descriptions consists out of 4 parts:
+  <id>
+  <name>
+  <description>
+  ---
+  <routes>
+
+First we'll have to parse this data into our program. Since a room is a bit more complicated than a simple string or integer we have set you up with a class named Room in room.py.
+In adventure.py you'll find the loadRooms function. As you can see we've already opened the file for you, but you'll have to do the parsing part.
+Implement the Room class en loadRooms function so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
+
+Test for phase 1.
+
+=== Let's get a move on
+
+Next up is moving to and from rooms using Room's move method. For this we'll have to parse the routes first though and keep track of which rooms are connected.
+Add an attribute to the Room class that we can use to see if the given command is a valid move.
+You can test moving around as follows:
+----
+  print(rooms[0].move("WEST")) # should print room 2: End of road
+  print(rooms[0].move("IN")) # should print room 3: Inside building
+----
+  
+==== `sentences`
+
+
+== Walkthroughs
+
+video::JlGPuG6fIXs[youtube,list=PLhQjrBD2T382DOV8V9pWN7NTp0uRLvIYa]
+
+== Testing
+
+To test your implementation of `lines`, `sentences`, and/or `substrings` via the command line, execute `compare` as follows, where `FILE1` and `FILE2` are any two text files:
+
+[source]
+----
+./compare --lines FILE1 FILE2
+./compare --sentences FILE1 FILE2
+./compare --substrings 1 FILE1 FILE2
+./compare --substrings 2 FILE1 FILE2
+...
+----
+
+To test your implementations via a web app, execute
+
+[source]
+----
+flask run
+----
+
+and then visit the outputted URL.
+
+See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for sample inputs, though be sure to test with some of your own!
+
+=== `check50`
+
+```
+check50 cs50/2018/spring/similarities/less
+```
+
+=== `style50`
+
+```
+style50 helpers.py
+```
+
+== Staff's Solution
+
+=== CLI
+
+[source]
+----
+~cs50/pset6/less/compare
+----
+
+=== Web
+
+http://similarities.cs50.net/less

@@ -9,8 +9,8 @@ layout: 2018/spring
 
 [start=0]
 . Watch link:/lectures/lecture-oop/[the Lecture on OOP].
-. Implement some stuff
-. Implement some more
+. Create a Deck of Cards.
+. Make a text-based Adventure game.
 . Submit your code.
 
 == Help
@@ -38,12 +38,13 @@ cd ~/workspace/pset7/
 
 == Problems
 
-. Implement something
+. Get familiar with objects through link:/problems/deck_of_cards/[a Game of Cards]
+. Implement link:/problems/adventure/[Adventure]
 
 == How to Submit
 
 . Make sure you are signed in to this website!
-. In the form below, add the files that you downloaded.
+. In the form below, add a zip of the files that you downloaded.
 . Press "Submit for grading". Presto!
 
 This was Problem Set 7.
