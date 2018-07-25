@@ -55,7 +55,7 @@ Now, all of those keys, when pressed, generate vibrations and, in turn, waves of
 https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
 ////
 
-Source: link:https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf[https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf].
+.Source: link:https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf[].
 [caption="Chronological sequence of pictures of the compression of air molecules for a sound wave moving in the rightward direction."]
 image::MathematicsOfMusic.png[width="100%"]
 
