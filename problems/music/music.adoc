@@ -5,10 +5,12 @@ layout: 2018/spring
 
 [subs="none"]
 +++++++++++++++++++++++
-<style>
+<style type="text/css">
   @font-face {
     font-family: "BravuraText";
-    src: url("/problems/music/BravuraText.woff") format("woff");
+    src: url('BravuraText.eot');
+    src: url('BravuraText.otf') format('opentype'),
+          url('BravuraText.woff') format('woff');
   }
   .music {
     font-family: "BravuraText";
