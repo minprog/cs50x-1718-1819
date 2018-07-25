@@ -15,7 +15,7 @@ layout: 2018/spring
   }
   @font-face {
     font-family: "Bravura Text";
-    src: url("./BravuraText.woff");
+    src: url("/problems/music/BravuraText.woff");
   }
 </style>
 +++++++++++++++++++++++
