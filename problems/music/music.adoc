@@ -4,7 +4,7 @@ layout: 2018/spring
 = Music
 ++++
 <style>
-@font-face {
+\@font-face {
 font-family: "Bravura Text";
 src: url("BravuraText.woff");
 }
