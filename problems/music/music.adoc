@@ -6,10 +6,6 @@ layout: 2018/spring
 [subs="none"]
 +++++++++++++++++++++++
 <style>
-  @font-face {
-    font-family: "Bravura Text";
-    src: url(BravuraText.woff);
-  }
   .music {
     font-family: "Bravura Text";
     font-size: 2em;
