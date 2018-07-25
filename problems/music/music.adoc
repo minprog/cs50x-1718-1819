@@ -1,6 +1,7 @@
 ---
 layout: 2018/spring
 ---
+= Music
 ++++
 <style>
 .music {
@@ -10,10 +11,12 @@ layout: 2018/spring
   position: relative;
   top: 0.25em;
 }
+@font-face {
+  font-family: "Bravura Text";
+  src: url(BravuraText.woff);
+}
 </style>
 ++++
-= Music
-
 == tl;dr
 
 . Learn to read sheet music.
