@@ -43,6 +43,7 @@ Pianos typically have as many as 88 keys, 52 of which are white. With only seven
 https://en.wikipedia.org/wiki/A440_(pitch_standard)#/media/File:Piano_Frequencies.svg
 ////
 image::Piano_Frequencies.png[width="100%"]
+Source: link:https://en.wikipedia.org/wiki/A440_(pitch_standard)[]
 
 Not only are notes identified by letters (and accidentals), then, but also by octaves, per the below.
 
@@ -54,9 +55,9 @@ Now, all of those keys, when pressed, generate vibrations and, in turn, waves of
 https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf
 ////
 
-.Source: link:https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf[].
 [caption="Chronological sequence of pictures of the compression of air molecules for a sound wave moving in the rightward direction."]
 image::MathematicsOfMusic.png[width="100%"]
+Source: link:https://web.stanford.edu/~zhoufan/MathematicsOfMusic.pdf[].
 
 Among the most noteworthy (ha!) notes is Middle C, highlighted in cyan earlier, otherwise known as C4, since that C is in the piano's fourth octave. Above Middle C (i.e., to its right) is another notable (ha!) note, A4, highlighted in yellow earlier, otherwise known as A440, since the frequency of its sound waves is 440 Hz; which means that they oscilate up and down 440 times per second.
 
