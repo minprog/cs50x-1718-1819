@@ -6,6 +6,7 @@ layout: 2018/spring
 .music {
   font-family: "Bravura Text"
 }
+</style>
 ++++
 = Music
 
