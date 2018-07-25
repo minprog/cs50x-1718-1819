@@ -42,7 +42,7 @@ Pianos typically have as many as 88 keys, 52 of which are white. With only seven
 ////
 https://en.wikipedia.org/wiki/A440_(pitch_standard)#/media/File:Piano_Frequencies.svg
 ////
-.Source: link:https://en.wikipedia.org/wiki/A440_(pitch_standard)[https://en.wikipedia.org/wiki/A440_(pitch_standard)]
+.Source: link:https://en.wikipedia.org/wiki/A440_(pitch_standard)[]
 image::Piano_Frequencies.png[width="100%"]
 
 Not only are notes identified by letters (and accidentals), then, but also by octaves, per the below.
