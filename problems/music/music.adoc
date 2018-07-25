@@ -44,7 +44,7 @@ https://en.wikipedia.org/wiki/A440_(pitch_standard)#/media/File:Piano_Frequencie
 ////
 .Source: link:https://en.wikipedia.org/wiki/A440_(pitch_standard)[]
 [caption=""]
-image::Piano_Frequencies.svg.png[width="100%"]
+image::Piano_Frequencies.png[width="100%"]
 
 Not only are notes identified by letters (and accidentals), then, but also by octaves, per the below.
 
