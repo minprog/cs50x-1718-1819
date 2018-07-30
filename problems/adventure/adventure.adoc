@@ -42,7 +42,8 @@ From the previous example you could see that the second time a room is entered a
     >
 ----
 
-Besides moving and looking there is also interaction with items. These items are located within room and are yours to take and drop (TAKE <obj>, DROP <obj>).
+Besides moving and looking there is also interaction with items. These items are located within room and are yours to take and drop (TAKE <item>, DROP <item>).
+
 Forgot what you've picked up throughout your journey? Using the INVENTORY command you get a list of what you're carrying around. Interacting with items would look like this:
 ----
     Inside building
@@ -86,7 +87,7 @@ import room, item
 ----
 This line tells python to look for the files room.py and item.py and make their contents reachable from within adventure.py.
 Remember that calling on their contents is done through referencing the module and suffixing the desired function or class name.
-For example `room.Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a room object for you.
+For example `room.Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a Room object for you.
 
 Further on are the functions to load the game data and play the game, though they're still little more than TODO's.
 
@@ -100,8 +101,8 @@ Plenty of TODO's here as well!
 
 Within the data folder you can find everything you need to create your items and rooms with.
 There's 5 datafiles with which you can create 3 versions of Adventure. TinyRooms.txt being the smallest version, has only 3 rooms and no items whatsoever. Great for starting out with!
-SmallRooms.txt and SmallObjects is a tad bit larger and includes, obviously, items.
-The full game of Adventure is contained within CrowtherRooms.txt and CrowtherObjects.txt.
+SmallRooms.txt and SmallItems is a tad bit larger and includes, obviously, items.
+The full game of Adventure is contained within CrowtherRooms.txt and CrowtherItems.txt.
 
 == What to do? Start out tiny
 
@@ -211,8 +212,8 @@ Have it behave as follows:
   HELP prints instructions for the game.
   INVENTORY lists the item in your inventory.
   LOOK lists the complete description of the room and its contents.
-  TAKE <obj> take obj from the room.
-  DROP <obj> drop obj from your inventory.
+  TAKE <item> take obj from the room.
+  DROP <item> drop obj from your inventory.
 ----
 
 `QUIT` let's the player stop the game. Print `Thanks for playing!` and terminate the program cleanly.
@@ -237,8 +238,8 @@ We're going to add items to the game that help the player pass obstacles or forc
 
 === Loot
 
-Items in Adventure have a name, description and location. To add these items to the game we'll once again have to first parse their data file. You can find them inside the `SmallObjects.txt` and `CrowtherObjects.txt`.
-They look alot like rooms, but are just a bit simpeler. In `SmallObjects.txt` you'll find the following data:
+Items in Adventure have a name, description and location. To add these items to the game we'll once again have to first parse their data file. You can find them inside the `SmallItems.txt` and `CrowtherItems.txt`.
+They look alot like rooms, but are just a bit simpeler. In `SmallItems.txt` you'll find the following data:
 
 ----
   KEYS
@@ -262,7 +263,7 @@ This time there's only a:
 ----
 
 Just like rooms, items all share the same three attributes. It's just their values that are unique.
-This is why it would be a great idea use a class for items. Both the class `Item` and the function to load them (`loadObjects`) have been created already. It's up to you to implement them.
+This is why it would be a great idea use a class for items. Both the class `Item` and the function to load them (`loadItems`) have been created already. It's up to you to implement them.
 Note that for now it's not necessary to put the items in rooms yet, we'll check if all items have been correctly created first.
 
 TODO een test voor deze stap.
