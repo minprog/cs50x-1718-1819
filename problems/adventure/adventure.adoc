@@ -105,7 +105,9 @@ The full game of Adventure is contained within CrowtherRooms.txt and CrowtherObj
 
 == What to do
 
-=== Loading...
+=== Start out tiny
+
+==== Loading...
 
 TinyRooms, the smallest version of the game, contains the following data:
 ----
@@ -145,23 +147,237 @@ These are the descriptions for all rooms in the game and how navigate between th
   <routes>
 
 First we'll have to parse this data into our program. Since a room is a bit more complicated than a simple string or integer we have set you up with a class named Room in room.py.
-In adventure.py you'll find the loadRooms function. As you can see we've already opened the file for you, but you'll have to do the parsing part.
-Implement the Room class en loadRooms function so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
+In adventure.py you'll find the `loadRooms` function. As you can see we've already opened the file for you, but you'll have to do the parsing part.
+Implement the Room class en `loadRooms` function so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
 
-Test for phase 1.
+Hier komt de; Test for phase 1.
 
-=== Let's get a move on
+==== Where am I?
 
-Next up is moving to and from rooms using Room's move method. For this we'll have to parse the routes first though and keep track of which rooms are connected.
+Implement printing functions. __STR__ of __REPR__ of print_methods?
+TODO short vs long description.
+
+==== Let's get a move on
+
+Next up is moving to and from rooms using Room's `move` method. For this we'll first have to parse the routes though and keep track of which rooms are connected.
 Add an attribute to the Room class that we can use to see if the given command is a valid move.
-You can test moving around as follows:
+I.E. Can we `move` "EAST" from the first room?
+
+You can test moving around by executing the following code:
 ----
   print(rooms[0].move("WEST")) # should print room 2: End of road
   print(rooms[0].move("IN")) # should print room 3: Inside building
 ----
-  
-==== `sentences`
 
+
+==== Interactive controls
+
+Time for the first steps into making this a game; have players give commands.
+For this you'll have to finish the `play` function.
+
+Each time a player enters a room for the first time, we'll provide them with a full description of the room.
+Following the description we'll prompt the player for a command. The '>' will mark this prompt. It will ook like this:
+
+----
+  You are standing at the end of a road before a small brick
+  building.  A small stream flows out of the building and
+  down a gully to the south.  A road runs up a small hill
+  to the west.
+  >
+----
+
+If the player attempts a command that cannot be executed tell them they tried an "Invalid command." and prompt for another command using the '>'.
+Like so:
+----
+  > OUT
+  Invalid command.
+  >
+----
+
+If a player enters a room he's already seen, only give them the short description.
+
+==== HELP!
+
+Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT`, `HELP` and `LOOK` commands.
+
+`HELP` prints instructions to remind the player of their commands and how to use them.
+Have it behave as follows:
+----
+  > HELP
+  You can move by typing directions such as EAST/WEST/IN/OUT
+  QUIT quits the game.
+  HELP prints instructions for the game.
+  INVENTORY lists the object in your inventory.
+  LOOK lists the complete description of the room and its contents.
+  TAKE <obj> take obj from the room.
+  DROP <obj> drop obj from your inventory.
+----
+
+`QUIT` let's the player stop the game. Print `Thanks for playing!` and terminate the program cleanly.
+
+----
+  > QUIT
+  Thanks for playing!
+----
+
+`LOOK` prints a full description of the room, even if the room was visited earlier.
+
+----
+  Inside building
+  > LOOK
+  You are inside a building, a well house for a large spring.
+----
+
+=== Small & Crowther small
+Now that we have the basics of our game completed; a player can move between rooms and has a few commands to help out with the game, it's time to implement some more advanced features of the game.
+We're going to add items to the game that help the player pass obstacles or force the player back if they miss said items.
+
+==== Items
+Items in Adventure have a name, description and location. To add these items to the game we'll once again have to first parse their data file. You can find them inside the `SmallObjects.txt` and `CrowtherObjects.txt`.
+They look alot like rooms, but are just a bit simpeler. In `SmallObjects.txt` you'll find the following data:
+
+----
+  KEYS
+  a set of keys
+  3
+
+  LAMP
+  a brightly shining brass lamp
+  8
+
+  ROD
+  a black rod with a rusty star
+  12
+----
+
+This time there's only a:
+----
+  name
+  description
+  room_id
+----
+
+Just like rooms, items all share the same three attributes. It's just their values that are unique.
+This is why it would be a great idea use a class for items. Both the class `Item` and the function to load them (`loadObjects`) have been created already. It's up to you to implement them.
+Note that for now it's not necessary to put the items in rooms yet, we'll check if all items have been correctly created first.
+
+TODO een test voor deze stap.
+
+==== Now where did I leave my keys?
+
+Items can be located in either rooms or the players own inventory. Let's start out with placing the items in their alotted rooms.
+This raises the question of how to keep track of ownership over these items. It's up to you to decide how to do this, but it's recommended to first decide 'who' knows where an item is; does the item itself keep track of it's location, or do the inventories of the rooms and player denote where the item is.
+
+Next up is actually loading the items into the rooms when the game starts, make sure each item is placed in it's intended location!
+
+When a player visits a room with one or more items the game will have to let the player know which items there are in addition to the description of the room:
+----
+  You are inside a building, a well house for a large spring.
+  KEYS: a set of keys
+----
+
+It's formatted as follows:
+  <description>
+  <item_1>
+  <item_2>
+  etc.
+
+Don't forget to add this feature to the `LOOK` coomand!
+
+==== What's mine is mine
+It's now time to implement the `TAKE` <item> command. By use of `TAKE` the player can pick up an item from a room they're in. In other words, ownership transfers from a room to the player.
+Of course there is some error catching to do, what happens for instance if a player takes something that is not in the room? Or an item that is located inside another room the player is not currently in?
+Both cases should be met by printin "`No such object.`" Resulting in the following gameplay:
+----
+  You are inside a building, a well house for a large spring.
+  KEYS: a set of keys
+  > TAKE KEYS
+  KEYS taken.
+  > TAKE KEYS
+  No such object.
+  > TAKE SOMETHING
+  No such object.
+  >
+----
+
+Any item the player picks up, they can also drop using the `DROP` command. Ownership then transfers from the player to the room he is currently in (no throwing items to other rooms!). Once again when a player were to drop an item not in his possession they are met with "`No such object.`". Dropping items looks alot like picking them up:
+----
+  You are inside a building, a well house for a large spring.
+  KEYS: a set of keys
+  > TAKE KEYS
+  KEYS taken.
+  > DROP KEYS
+  KEYS dropped.
+  > DROP KEYS
+  No such object.
+  > TAKE KEYS
+  KEYS taken.
+----
+
+Make sure you can pick up items that you previously dropped!
+
+For the player to keep track of their owned items you'll have to implement the `INVENTORY` command. It should print all items currently owned by the player, like this:
+----
+  > INVENTORY
+  KEYS: a set of keys
+  LAMP: a brightly shining brass lamp
+  > DROP KEYS
+  KEYS dropped.
+  > INVENTORY
+  LAMP: a brightly shining brass lamp
+  > DROP LAMP
+  LAMP dropped.
+  > INVENTORY
+  Your inventory is empty.
+  >
+----
+
+==== Members only.
+Now that you've implemented items, the game has become significantly more interesting. Since they allow you to implement conditional movement; movements can now depend on items being in the inventory of the player. Room 6, for instance, allows access to rooms 7 and 8 through the same movement `DOWN`, depending on whether the player owns the keys. To progress in the game the player will first need to find the keys.
+
+The datafiles show such conditional movements in the following way:
+----
+  DOWN       8/KEYS
+  DOWN       7
+----
+
+Only one condition can exist per movement and it is always an item. If the player has the required item, the conditional movement is always made; it is not an optional movement.
+
+This makes moving around a bit more complicated. Aside from checking only that the direction is connected to a room, you'll now have to check for the conditional movement.
+Depending on your earlier implementation of moving, you might have to slightly alter your code.
+
+A conditional movement would look like this:
+----
+  TODO: een betere conditional movement zonder FORCED
+----
+
+==== You shall not pass.
+Sometimes a player will attempt a movement he cannot make yet, because they are missing the required item. Passing the steel grate in room 6 for example requires keys.
+Instead of printing a custom message, we'll have the player move into a special sort of room. This room displays a description for what happened, and then forcefully moves the player to where the forced movement points.
+This move happpens automatically and immediately after printing the full description.
+
+Another example of forced movements can be found in the Crowther rooms 70 through 75. These rooms even have a conditional `FORCED` movement. These are the final few rooms, so SPOILER ALERT; if all required items are owned the player will win and go to room 77. If not, the player continues to room 76 and has to try and find the remaining "`treasures`". The interesting part is that rooms 70 through 75 are devoid of a description! This makes it possible to have conditional movement based on 6 objects, even though 5 extra rooms are required to do so.
+
+This leaves you to implement this `FORCED` movement to the game. Luckily a room with `FORCED` movement can only contain that movement and no others. So you won't have to take anything else into account when a `FORCED` movement is encountered!
+
+Being `FORCED` moved looks like this:
+----
+  You are in a 25-foot depression floored with bare dirt.
+  Set into the dirt is a strong steel grate mounted in
+  concrete.  A dry streambed leads into the depression from
+  the north.
+  > INVENTORY
+  Your inventory is empty.
+  > DOWN
+  The grate is locked and you don't have any keys.
+  Outside grate
+  > DOWN
+  The grate is locked and you don't have any keys.
+  Outside grate
+  >
+----
+
+Remember to always print the full description when a room `FORCED` is entered. There's no room to `LOOK` around, since the player is immediately moved by the game.
 
 == Walkthroughs
 
@@ -173,23 +389,9 @@ To test your implementation of `lines`, `sentences`, and/or `substrings` via the
 
 [source]
 ----
-./compare --lines FILE1 FILE2
-./compare --sentences FILE1 FILE2
-./compare --substrings 1 FILE1 FILE2
-./compare --substrings 2 FILE1 FILE2
-...
+./TEST_ADVENTURE
 ----
 
-To test your implementations via a web app, execute
-
-[source]
-----
-flask run
-----
-
-and then visit the outputted URL.
-
-See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for sample inputs, though be sure to test with some of your own!
 
 === `check50`
 
