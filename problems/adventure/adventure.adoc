@@ -42,8 +42,8 @@ From the previous example you could see that the second time a room is entered a
     >
 ----
 
-Besides moving and looking there is also interaction with objects. These objects are located within room and are yours to take and drop (TAKE <obj>, DROP <obj>).
-Forgot what you've picked up throughout your journey? Using the INVENTORY command you get a list of what you're carrying around. Interacting with objects would look like this:
+Besides moving and looking there is also interaction with items. These items are located within room and are yours to take and drop (TAKE <obj>, DROP <obj>).
+Forgot what you've picked up throughout your journey? Using the INVENTORY command you get a list of what you're carrying around. Interacting with items would look like this:
 ----
     Inside building
     You are inside a building, a well house for a large spring.
@@ -59,7 +59,7 @@ Forgot what you've picked up throughout your journey? Using the INVENTORY comman
     >
 ----
 
-Use these objects to pass otherwise unpassable blockades, such as the "strong steel grate".
+Use these items to pass otherwise unpassable blockades, such as the "strong steel grate".
 
 == Distribution
 
@@ -82,25 +82,25 @@ TODO
 Instead of working from a single file, we've split up our classes into seperate files. This keeps our files short and tidy, but we'll still have to link them up. For that we'll have to import them as follows:
 [source]
 ----
-import room, object
+import room, item
 ----
-This line tells python to look for the files room.py and object.py and make their contents reachable from within adventure.py.
+This line tells python to look for the files room.py and item.py and make their contents reachable from within adventure.py.
 Remember that calling on their contents is done through referencing the module and suffixing the desired function or class name.
 For example `room.Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a room object for you.
 
 Further on are the functions to load the game data and play the game, though they're still little more than TODO's.
 
 
-=== `room.py & object.py`
+=== `room.py & item.py`
 
-These are your classes. The blueprints for the objects that your game will need to funciton properly.
+These are your classes. The blueprints for the objects that your game will need to function properly.
 Plenty of TODO's here as well!
 
 === `data`
 
-Within the data folder you can find everything you need to create your objects and rooms with.
-There's 5 datafiles with which you can create 3 versions of Adventure. TinyRooms.txt being the smallest version, has only 3 rooms and no objects whatsoever. Great for starting out with!
-SmallRooms.txt and SmallObjects is a tad bit larger and includes, obviously, objects.
+Within the data folder you can find everything you need to create your items and rooms with.
+There's 5 datafiles with which you can create 3 versions of Adventure. TinyRooms.txt being the smallest version, has only 3 rooms and no items whatsoever. Great for starting out with!
+SmallRooms.txt and SmallObjects is a tad bit larger and includes, obviously, items.
 The full game of Adventure is contained within CrowtherRooms.txt and CrowtherObjects.txt.
 
 == What to do? Start out tiny
@@ -209,7 +209,7 @@ Have it behave as follows:
   You can move by typing directions such as EAST/WEST/IN/OUT
   QUIT quits the game.
   HELP prints instructions for the game.
-  INVENTORY lists the object in your inventory.
+  INVENTORY lists the item in your inventory.
   LOOK lists the complete description of the room and its contents.
   TAKE <obj> take obj from the room.
   DROP <obj> drop obj from your inventory.
@@ -294,20 +294,20 @@ Don't forget to add this feature to the `LOOK` coomand!
 
 It's now time to implement the `TAKE` <item> command. By use of `TAKE` the player can pick up an item from a room they're in. In other words, ownership transfers from a room to the player.
 Of course there is some error catching to do, what happens for instance if a player takes something that is not in the room? Or an item that is located inside another room the player is not currently in?
-Both cases should be met by printin "`No such object.`" Resulting in the following gameplay:
+Both cases should be met by printin "`No such item.`" Resulting in the following gameplay:
 ----
   You are inside a building, a well house for a large spring.
   KEYS: a set of keys
   > TAKE KEYS
   KEYS taken.
   > TAKE KEYS
-  No such object.
+  No such item.
   > TAKE SOMETHING
-  No such object.
+  No such item.
   >
 ----
 
-Any item the player picks up, they can also drop using the `DROP` command. Ownership then transfers from the player to the room they are currently in (no throwing items to other rooms!). Once again when a player were to drop an item not in their possession they are met with "`No such object.`". Dropping items looks alot like picking them up:
+Any item the player picks up, they can also drop using the `DROP` command. Ownership then transfers from the player to the room they are currently in (no throwing items to other rooms!). Once again when a player were to drop an item not in their possession they are met with "`No such item.`". Dropping items looks alot like picking them up:
 ----
   You are inside a building, a well house for a large spring.
   KEYS: a set of keys
@@ -316,7 +316,7 @@ Any item the player picks up, they can also drop using the `DROP` command. Owner
   > DROP KEYS
   KEYS dropped.
   > DROP KEYS
-  No such object.
+  No such item.
   > TAKE KEYS
   KEYS taken.
 ----
@@ -367,7 +367,7 @@ Sometimes a player will attempt a movement they cannot make yet, because they ar
 Instead of printing a custom message, we'll have the player move into a special sort of room. This room displays a description for what happened, and then forcefully moves the player to where the forced movement points.
 This move happpens automatically and immediately after printing the full description.
 
-Another example of forced movements can be found in the Crowther rooms 70 through 75. These rooms even have a conditional `FORCED` movement. These are the final few rooms, so SPOILER ALERT; if all required items are owned the player will win and go to room 77. If not, the player continues to room 76 and has to try and find the remaining "`treasures`". The interesting part is that rooms 70 through 75 are devoid of a description! This makes it possible to have conditional movement based on 6 objects, even though 5 extra rooms are required to do so.
+Another example of forced movements can be found in the Crowther rooms 70 through 75. These rooms even have a conditional `FORCED` movement. These are the final few rooms, so SPOILER ALERT; if all required items are owned the player will win and go to room 77. If not, the player continues to room 76 and has to try and find the remaining "`treasures`". The interesting part is that rooms 70 through 75 are devoid of a description! This makes it possible to have conditional movement based on 6 items, even though 5 extra rooms are required to do so.
 
 This leaves you to implement this `FORCED` movement to the game. Luckily a room with `FORCED` movement can only contain that movement and no others. So you won't have to take anything else into account when a `FORCED` movement is encountered!
 
