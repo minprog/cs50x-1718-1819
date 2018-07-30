@@ -42,9 +42,9 @@ From the previous example you could see that the second time a room is entered a
     >
 ----
 
-Besides moving and looking there is also interaction with items. These items are located within room and are yours to take and drop (TAKE <item>, DROP <item>).
+Besides moving and looking there is also interaction with items. These items are located within room and are yours to take and drop (`TAKE` <item>, `DROP` <item>).
 
-Forgot what you've picked up throughout your journey? Using the INVENTORY command you get a list of what you're carrying around. Interacting with items would look like this:
+Forgot what you've picked up throughout your journey? Using the `INVENTORY` command you get a list of what you're carrying around. Interacting with items would look like this:
 ----
     Inside building
     You are inside a building, a well house for a large spring.
@@ -106,7 +106,7 @@ The full game of Adventure is contained within CrowtherRooms.txt and CrowtherIte
 
 == What to do? Start out tiny
 
-=== Loading...
+=== `Loading...`
 
 TinyRooms, the smallest version of the game, contains the following data:
 ----
@@ -138,7 +138,7 @@ TinyRooms, the smallest version of the game, contains the following data:
     OUT       1
 ----
 
-These are the descriptions for all rooms in the game and how navigate between them. Each descriptions consists out of 4 parts:
+These are the descriptions for all rooms in the game and how to navigate between them. Each descriptions consists of 4 parts:
 ----
   <id>
   <name>
@@ -154,13 +154,13 @@ Implement the Room class en `loadRooms` function so that each room from TinyRoom
 Hier komt de; Test for phase 1.
 
 
-=== Where am I?
+=== `Where am I?`
 
 Implement printing functions. __STR__ of __REPR__ of print_methods?
 TODO short vs long description.
 
 
-=== Let's get a move on
+=== `Let's get a move on`
 
 Next up is moving to and from rooms using Room's `move` method. For this we'll first have to parse the routes though and keep track of which rooms are connected.
 Add an attribute to the Room class that we can use to see if the given command is a valid move.
@@ -173,7 +173,7 @@ You can test moving around by executing the following code:
 ----
 
 
-=== Interactive controls
+=== `Interactive controls`
 
 Time for the first steps into making this a game; have players give commands.
 For this you'll have to finish the `play` function.
@@ -199,7 +199,7 @@ Like so:
 
 If a player enters a room he's already seen, only give them the short description.
 
-==== HELP!
+=== `HELP!`
 
 Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT`, `HELP` and `LOOK` commands.
 
@@ -232,11 +232,11 @@ Have it behave as follows:
 ----
 
 
-=== Small & Crowther small
+=== `Small & Crowther small`
 Now that we have the basics of our game completed; a player can move between rooms and has a few commands to help out with the game, it's time to implement some more advanced features of the game.
 We're going to add items to the game that help the player pass obstacles or force the player back if they miss said items.
 
-=== Loot
+=== `Loot`
 
 Items in Adventure have a name, description and location. To add these items to the game we'll once again have to first parse their data file. You can find them inside the `SmallItems.txt` and `CrowtherItems.txt`.
 They look alot like rooms, but are just a bit simpeler. In `SmallItems.txt` you'll find the following data:
@@ -269,7 +269,7 @@ Note that for now it's not necessary to put the items in rooms yet, we'll check 
 TODO een test voor deze stap.
 
 
-=== Now where did I leave my keys?
+=== `Now where did I leave my keys?`
 
 Items can be located in either rooms or the players own inventory. Let's start out with placing the items in their alotted rooms.
 This raises the question of how to keep track of ownership over these items. It's up to you to decide how to do this, but it's recommended to first decide 'who' knows where an item is; does the item itself keep track of it's location, or do the inventories of the rooms and player denote where the item is.
@@ -291,7 +291,7 @@ It's formatted as follows:
 Don't forget to add this feature to the `LOOK` coomand!
 
 
-=== What's mine is mine
+=== `What's mine is mine`
 
 It's now time to implement the `TAKE` <item> command. By use of `TAKE` the player can pick up an item from a room they're in. In other words, ownership transfers from a room to the player.
 Of course there is some error catching to do, what happens for instance if a player takes something that is not in the room? Or an item that is located inside another room the player is not currently in?
@@ -341,7 +341,7 @@ For the player to keep track of their owned items you'll have to implement the `
 ----
 
 
-=== Members only
+=== `Members only`
 
 Now that you've implemented items, the game has become significantly more interesting. Since they allow you to implement conditional movement; movements can now depend on items being in the inventory of the player. Room 6, for instance, allows access to rooms 7 and 8 through the same movement `DOWN`, depending on whether the player owns the keys. To progress in the game the player will first need to find the keys.
 
@@ -362,7 +362,7 @@ A conditional movement would look like this:
 ----
 
 
-=== You shall not pass
+=== `You shall not pass`
 
 Sometimes a player will attempt a movement they cannot make yet, because they are missing the required item. Passing the steel grate in room 6 for example requires keys.
 Instead of printing a custom message, we'll have the player move into a special sort of room. This room displays a description for what happened, and then forcefully moves the player to where the forced movement points.
