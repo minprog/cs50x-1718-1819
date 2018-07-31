@@ -358,7 +358,25 @@ Depending on your earlier implementation of moving, you might have to slightly a
 
 A conditional movement would look like this:
 ----
-  TODO: een betere conditional movement zonder FORCED
+  You are crawling over cobbles in a low east/west passage.
+  There is a dim light to the east.
+  > DROP LAMP
+  LAMP dropped.
+  > WEST
+  It is now pitch dark.  If you proceed you will likely fall
+  into a pit.
+  > EAST
+  Cobble crawl
+  LAMP: a brightly shining brass lamp
+  > TAKE LAMP
+  LAMP taken.
+  > EAST
+  You are in a debris room filled with stuff washed in from
+  the surface.  A low wide passage with cobbles becomes
+  plugged with mud and debris here, but an extremely narrow
+  canyon leads upward and west.  Unfortunately, the passage
+  is blocked by a barrier marked "Under Construction."
+  >
 ----
 
 
@@ -368,7 +386,7 @@ Sometimes a player will attempt a movement they cannot make yet, because they ar
 Instead of printing a custom message, we'll have the player move into a special sort of room. This room displays a description for what happened, and then forcefully moves the player to where the forced movement points.
 This move happpens automatically and immediately after printing the full description.
 
-Another example of forced movements can be found in the Crowther rooms 70 through 75. These rooms even have a conditional `FORCED` movement. These are the final few rooms, so SPOILER ALERT; if all required items are owned the player will win and go to room 77. If not, the player continues to room 76 and has to try and find the remaining "`treasures`". The interesting part is that rooms 70 through 75 are devoid of a description! This makes it possible to have conditional movement based on 6 items, even though 5 extra rooms are required to do so.
+Another example of forced movements can be found in the Crowther rooms 70 through 75. These rooms even have a conditional `FORCED` movement. These are the final few rooms, if all required items are owned the player will win the game and go to room 77. If not, the player continues to room 76 and has to try and find the remaining "`treasures`". The interesting part is that rooms 70 through 75 are devoid of a description! This makes it possible to have conditional movement based on 6 items, even though 5 extra rooms are required to do so.
 
 This leaves you to implement this `FORCED` movement to the game. Luckily a room with `FORCED` movement can only contain that movement and no others. So you won't have to take anything else into account when a `FORCED` movement is encountered!
 
