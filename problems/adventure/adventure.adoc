@@ -83,18 +83,20 @@ TODO
 Instead of working from a single file, we've split up our classes into seperate files. This keeps our files short and tidy, but we'll still have to link them up. For that we'll have to import them as follows:
 [source]
 ----
-import room, item
+import player, room
 ----
-This line tells python to look for the files room.py and item.py and make their contents reachable from within adventure.py.
+This line tells python to look for the files room.py and player.py and make their contents reachable from within adventure.py.
 Remember that calling on their contents is done through referencing the module and suffixing the desired function or class name.
 For example `room.Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a Room object for you.
 
 Further on are the functions to load the game data and play the game, though they're still little more than TODO's.
 
+The `play` function will contain the main loop that makes your game playable. We've already given you a headstart here, but you'll have to figure out how to best use your classes here.
 
-=== `room.py & item.py`
+=== `player.py & room.py`
 
-These are your classes. The blueprints for the objects that your game will need to function properly.
+These are your classes. The blueprints for objects that your game will need to function properly.
+The Player class contains most of the commands already, but they've not been implemented yet. Whereas Room is still mostly empty
 Plenty of TODO's here as well!
 
 === `data`
@@ -168,8 +170,8 @@ I.E. Can we `move` "EAST" from the first room?
 
 You can test moving around by executing the following code:
 ----
-  print(rooms[0].move("WEST")) # should print room 2: End of road
-  print(rooms[0].move("IN")) # should print room 3: Inside building
+  print(player_1.move("WEST")) # should print room 2: End of road
+  print(player_1.move("IN")) # should print room 3: Inside building
 ----
 
 
@@ -201,7 +203,8 @@ If a player enters a room he's already seen, only give them the short descriptio
 
 === `HELP!`
 
-Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT`, `HELP` and `LOOK` commands.
+Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT` and `HELP`, you won't find them in the files so you'll have to decide for yourself where to declare them.
+Also implement `LOOK`, finish it's implementation in the player class.
 
 `HELP` prints instructions to remind the player of their commands and how to use them.
 Have it behave as follows:
@@ -212,8 +215,8 @@ Have it behave as follows:
   HELP prints instructions for the game.
   INVENTORY lists the item in your inventory.
   LOOK lists the complete description of the room and its contents.
-  TAKE <item> take obj from the room.
-  DROP <item> drop obj from your inventory.
+  TAKE <item> take item from the room.
+  DROP <item> drop item from your inventory.
 ----
 
 `QUIT` let's the player stop the game. Print `Thanks for playing!` and terminate the program cleanly.
@@ -262,9 +265,9 @@ This time there's only a:
   room_id
 ----
 
-Just like rooms, items all share the same three attributes. It's just their values that are unique.
+Just like rooms, items all share the same three attributes.
 This is why it would be a great idea use a class for items. Both the class `Item` and the function to load them (`loadItems`) have been created already. It's up to you to implement them.
-Note that for now it's not necessary to put the items in rooms yet, we'll check if all items have been correctly created first.
+Note that for now it's not necessary to put the items in rooms, we'll check if all items have been correctly created first.
 
 TODO een test voor deze stap.
 
