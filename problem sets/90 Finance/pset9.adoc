@@ -7,7 +7,7 @@
 == tl;dr
 
 [start=0]
-. Watch link:lectures/lecture-10[Lecture 10].
+. Watch link:/lectures/lecture-10[Lecture 10].
 . Implement a stock-trading website.
 . Submit your code.
 
