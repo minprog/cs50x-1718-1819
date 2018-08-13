@@ -13,7 +13,7 @@ toclevels: 1
 
 == Background
 
-Back in the days, before dedicated graphics cards were a thing, text-based adventure games we're incredibly popular. This type of game consists entirely out of text, and is traversed by commands much like the ones you would enter in the terminal.
+Back in the days, before dedicated graphics cards were a thing, text-based adventure games were incredibly popular. This type of game consists entirely out of text, and is traversed by commands much like the ones you would enter in the terminal.
 One such game is Colossal Cave Adventure, created by link:https://en.wikipedia.org/wiki/William_Crowther_(programmer)/[William Crowther] in 1975, that served as the inspiration for the text adventure game genre.
 
 In Adventure you have to navigate between "Rooms" through commands such as "WEST" and "EAST", but also "IN" or "OUT".
@@ -42,7 +42,7 @@ From the previous example you could see that the second time a room is entered a
     >
 ----
 
-Besides moving and looking there is also interaction with items. These items are located within room and are yours to take and drop (`TAKE` <item>, `DROP` <item>).
+Besides moving and looking there is also interaction with items. These items are located within rooms and are yours to take and drop (`TAKE` <item>, `DROP` <item>).
 
 Forgot what you've picked up throughout your journey? Using the `INVENTORY` command you get a list of what you're carrying around. Interacting with items would look like this:
 ----
@@ -89,14 +89,19 @@ This line tells python to look for the files room.py and player.py and make thei
 Remember that calling on their contents is done through referencing the module and suffixing the desired function or class name.
 For example `room.Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a Room object for you.
 
-Further on are the functions to load the game data and play the game, though they're still little more than TODO's.
+You'll be doing this for the `loadRooms` and `loadItems` functions, but for now they're still little more than TODO's.
 
-The `play` function will contain the main loop that makes your game playable. We've already given you a headstart here, but you'll have to figure out how to best use your classes here.
+The `play` function contains the main loop that makes your game playable. We've already given you a headstart here, but you'll have to figure out how to best use your classes here.
+We've initialized a player for you, giving them an id, name and initial location. Change these accordingly.
+Use that player within the while loop and have them move and execute other commands. As you can see we use a set to determine how commands should be executed, you can add sets and lists of your own to your liking!
+
+
 
 === `player.py & room.py`
 
 These are your classes. The blueprints for objects that your game will need to function properly.
-The Player class contains most of the commands already, but they've not been implemented yet. Whereas Room is still mostly empty
+The Player class contains most of the commands already, but they've not been implemented yet. Whereas Room is still mostly empty, that one is all up to you!
+
 Plenty of TODO's here as well!
 
 === `data`
@@ -140,7 +145,7 @@ TinyRooms, the smallest version of the game, contains the following data:
     OUT       1
 ----
 
-These are the descriptions for all rooms in the game and how to navigate between them. Each descriptions consists of 4 parts:
+These are the details for all rooms in the game and how to navigate between them. Each room consists of 4 parts:
 ----
   <id>
   <name>
@@ -149,6 +154,7 @@ These are the descriptions for all rooms in the game and how to navigate between
   <routes>
 ----
 
+You'll find that the name is actually a short description of the room, whereas the 'description' is fully descriptive. Keep this in mind for later parts of the game!
 First we'll have to parse this data into our program. Since a room is a bit more complicated than a simple string or integer we have set you up with a class named Room in room.py.
 In adventure.py you'll find the `loadRooms` function. As you can see we've already opened the file for you, but you'll have to do the parsing part.
 Implement the Room class en `loadRooms` function so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
@@ -156,32 +162,27 @@ Implement the Room class en `loadRooms` function so that each room from TinyRoom
 Hier komt de; Test for phase 1.
 
 
-=== `Where am I?`
-
-Implement printing functions. __STR__ of __REPR__ of print_methods?
-TODO short vs long description.
-
-
 === `Let's get a move on`
 
-Next up is moving to and from rooms using Room's `move` method. For this we'll first have to parse the routes though and keep track of which rooms are connected.
-Add an attribute to the Room class that we can use to see if the given command is a valid move.
+Next up is moving to and from rooms using Player's `move` method. For this we'll first have to parse the routes though to track of which rooms are connected.
+Add an attribute to the Room class that can be used to see if the given command is a valid move. Use the player's `current_room` attribute to find and update the player's location.
 I.E. Can we `move` "EAST" from the first room?
 
-You can test moving around by executing the following code:
+You can test moving around by executing the following (pseudo-)code:
 ----
-  print(player_1.move("WEST")) # should print room 2: End of road
-  print(player_1.move("IN")) # should print room 3: Inside building
+  room = player_1.move("WEST")) # should the return the 'room 2' object
+  `print the name of the room` # should print room 2: "End of road"
+  room = player_1.move("IN") # should the return the 'room 3' object
+  `print the name of the room` # should print room 3: "Inside building"
 ----
 
 
 === `Interactive controls`
 
-Time for the first steps into making this a game; have players give commands.
-For this you'll have to finish the `play` function.
+Time for your first steps into making this a game; have players give commands.
 
 Each time a player enters a room for the first time, we'll provide them with a full description of the room.
-Following the description we'll prompt the player for a command. The '>' will mark this prompt. It will ook like this:
+Following the description we'll prompt the player for a command. The '>' will mark this prompt. It should look like this:
 
 ----
   You are standing at the end of a road before a small brick
@@ -191,7 +192,7 @@ Following the description we'll prompt the player for a command. The '>' will ma
   >
 ----
 
-If the player attempts a command that cannot be executed tell them they tried an "Invalid command." and prompt for another command using the '>'.
+If the player attempts a command that cannot be executed tell them they attempted an "Invalid command." and prompt for another command using the '>'.
 Like so:
 ----
   > OUT
@@ -203,8 +204,8 @@ If a player enters a room he's already seen, only give them the short descriptio
 
 === `HELP!`
 
-Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT` and `HELP`, you won't find them in the files so you'll have to decide for yourself where to declare them.
-Also implement `LOOK`, finish it's implementation in the player class.
+Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT` and `HELP` commands, you won't find them in the files so you'll have to decide for yourself where to declare them.
+Also implement `LOOK`; finish it's implementation in the player class.
 
 `HELP` prints instructions to remind the player of their commands and how to use them.
 Have it behave as follows:
@@ -412,6 +413,9 @@ Being `FORCED` moved looks like this:
 
 Remember to always print the full description when a room `FORCED` is entered. There's no room to `LOOK` around, since the player is immediately moved by the game.
 
+=== `The winner takes all`
+
+Now that the Crowther game is playable, let's also make it winnable. From the `CrowtherRooms.txt` file you can see that room 77 corresponds to victory, implement this condition into your game and gracefully terminate the game after attaining victory.
 
 == Requirements
 
