@@ -13,7 +13,7 @@ toclevels: 1
 
 == Background
 
-Back in the days, before dedicated graphics cards were a thing, text-based adventure games we're incredibly popular. This type of game consists entirely out of text, and is traversed by commands much like the ones you would enter in the terminal.
+Back in the days, before dedicated graphics cards were a thing, text-based adventure games were incredibly popular. This type of game consists entirely out of text, and is traversed by commands much like the ones you would enter in the terminal.
 One such game is Colossal Cave Adventure, created by link:https://en.wikipedia.org/wiki/William_Crowther_(programmer)/[William Crowther] in 1975, that served as the inspiration for the text adventure game genre.
 
 In Adventure you have to navigate between "Rooms" through commands such as "WEST" and "EAST", but also "IN" or "OUT".
@@ -42,7 +42,7 @@ From the previous example you could see that the second time a room is entered a
     >
 ----
 
-Besides moving and looking there is also interaction with items. These items are located within room and are yours to take and drop (`TAKE` <item>, `DROP` <item>).
+Besides moving and looking there is also interaction with items. These items are located within rooms and are yours to take and drop (`TAKE` <item>, `DROP` <item>).
 
 Forgot what you've picked up throughout your journey? Using the `INVENTORY` command you get a list of what you're carrying around. Interacting with items would look like this:
 ----
@@ -413,6 +413,9 @@ Being `FORCED` moved looks like this:
 
 Remember to always print the full description when a room `FORCED` is entered. There's no room to `LOOK` around, since the player is immediately moved by the game.
 
+=== `The winner takes all`
+
+Now that the Crowther game is playable, let's also make it winnable. From the `CrowtherRooms.txt` file you can see that room 77 corresponds to victory, implement this condition into your game and gracefully terminate the game after attaining victory.
 
 == Requirements
 
