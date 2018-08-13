@@ -89,14 +89,19 @@ This line tells python to look for the files room.py and player.py and make thei
 Remember that calling on their contents is done through referencing the module and suffixing the desired function or class name.
 For example `room.Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a Room object for you.
 
-Further on are the functions to load the game data and play the game, though they're still little more than TODO's.
+You'll be doing this for the `loadRooms` and `loadItems` functions, but for now they're still little more than TODO's.
 
-The `play` function will contain the main loop that makes your game playable. We've already given you a headstart here, but you'll have to figure out how to best use your classes here.
+The `play` function contains the main loop that makes your game playable. We've already given you a headstart here, but you'll have to figure out how to best use your classes here.
+We've initialized a player for you, giving them an id, name and initial location. Change these accordingly.
+Use that player within the while loop and have them move and execute other commands. As you can see we use a set to determine how commands should be executed, you can add sets and lists of your own to your liking!
+
+
 
 === `player.py & room.py`
 
 These are your classes. The blueprints for objects that your game will need to function properly.
-The Player class contains most of the commands already, but they've not been implemented yet. Whereas Room is still mostly empty
+The Player class contains most of the commands already, but they've not been implemented yet. Whereas Room is still mostly empty, that one is all up to you!
+
 Plenty of TODO's here as well!
 
 === `data`
@@ -159,8 +164,8 @@ Hier komt de; Test for phase 1.
 
 === `Let's get a move on`
 
-Next up is moving to and from rooms using Room's `move` method. For this we'll first have to parse the routes though and keep track of which rooms are connected.
-Add an attribute to the Room class that we can use to see if the given command is a valid move.
+Next up is moving to and from rooms using Player's `move` method. For this we'll first have to parse the routes though to track of which rooms are connected.
+Add an attribute to the Room class that can be used to see if the given command is a valid move. Use the player's `current_room` attribute to find and update the player's location.
 I.E. Can we `move` "EAST" from the first room?
 
 You can test moving around by executing the following (pseudo-)code:
@@ -177,7 +182,7 @@ You can test moving around by executing the following (pseudo-)code:
 Time for your first steps into making this a game; have players give commands.
 
 Each time a player enters a room for the first time, we'll provide them with a full description of the room.
-Following the description we'll prompt the player for a command. The '>' will mark this prompt. It will ook like this:
+Following the description we'll prompt the player for a command. The '>' will mark this prompt. It should look like this:
 
 ----
   You are standing at the end of a road before a small brick
@@ -187,7 +192,7 @@ Following the description we'll prompt the player for a command. The '>' will ma
   >
 ----
 
-If the player attempts a command that cannot be executed tell them they tried an "Invalid command." and prompt for another command using the '>'.
+If the player attempts a command that cannot be executed tell them they attempted an "Invalid command." and prompt for another command using the '>'.
 Like so:
 ----
   > OUT
@@ -199,8 +204,8 @@ If a player enters a room he's already seen, only give them the short descriptio
 
 === `HELP!`
 
-Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT` and `HELP`, you won't find them in the files so you'll have to decide for yourself where to declare them.
-Also implement `LOOK`, finish it's implementation in the player class.
+Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT` and `HELP` commands, you won't find them in the files so you'll have to decide for yourself where to declare them.
+Also implement `LOOK`; finish it's implementation in the player class.
 
 `HELP` prints instructions to remind the player of their commands and how to use them.
 Have it behave as follows:
