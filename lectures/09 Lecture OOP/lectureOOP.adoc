@@ -1,6 +1,6 @@
 :author: Dr. Ana Bell
 
-video::-DP1i2ZU9gk[youtube, height=540, width=960, options=notitle]
+video::-DP1i2ZU9gk[youtube, height=540, width=960, options=notitle, end=1940]
 
 == An introduction to object-oriented programming in Python - MIT
 
