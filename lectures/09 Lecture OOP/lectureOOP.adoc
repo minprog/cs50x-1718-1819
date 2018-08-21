@@ -2,7 +2,7 @@
 
 video::-DP1i2ZU9gk[youtube, height=540, width=960, options=notitle]
 
-== OOP
+== An introduction to object-oriented programming in Python - MIT
 The following content is provided under a Creative Commons license. Your support will help MIT OpenCourseWare continue to offer high quality educational resources for free. To make a donation or view additional materials from hundreds of MIT courses, visit MIT OpenCourseWare at ocw.mit.edu.
 
 PROFESSOR: All right everyone. Let's get started. So today's lecture and Wednesday's lecture, we're going to talk about this thing called object oriented programming. And if you haven't programmed before, I think this is a fairly tough concept to grasp. But hopefully with many, many examples and just by looking at the code available from lectures, you'll hopefully get the hang of it quickly. So let's talk a little bit about objects. And we've seen objects in Python so far. Objects are basically data in Python. So every object that we've seen has a certain type. OK, that we know.
