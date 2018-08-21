@@ -365,7 +365,7 @@ The datafiles show such conditional movements in the following way:
   DOWN       7
 ----
 
-Only one condition can exist for movements and it is always an item. If the player has the required item, the conditional movement is always made; it is not an optional movement.
+Only one condition can exist per movements and it is always an item. So if a room has a direction with multiple conditions, the data file has an entry for each condition. If the player has the required item, the conditional movement is always made; it is not an optional movement. In case of multiple conditions and the player meeting all requirements just follow the order they appear in the data file, meaning the top-most condition is checked first.
 
 This makes moving around a bit more complicated. Aside from checking only that the direction is connected to a room, you'll now have to check for the conditional movement.
 Depending on your earlier implementation of moving, you might have to slightly alter your code.
