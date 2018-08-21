@@ -96,7 +96,7 @@ This line tells python to look for the files room.py and player.py and make thei
 The Room and Player class can now be freely used by functions in `adventure.py`.
 For example `Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a Room object for you.
 
-You'll be creating these objects in the `loadRooms` function, but for now it is still little more than a TODO.
+You'll be creating these objects in the `load_rooms` function, but for now it is still little more than a TODO.
 
 The `play` function contains the main loop that makes your game playable. We've already given you a headstart here, but you'll have to figure out how to best use your classes.
 We've initialized a player for you with dummy values, giving them an id, name and initial location, you can change these if or when necessary.
@@ -164,8 +164,8 @@ Where <routes> consist of a <direction> and <id>. For example, Room 2 - End of r
 
 You'll find that the name is actually a short description of the room, whereas the 'description' is fully descriptive. Keep this in mind for later parts of the game!
 First we'll have to parse this data into our program. Since a room is a bit more complicated than a simple string or integer we have set you up with a class named Room in room.py.
-In adventure.py you'll find the `loadRooms` function. As you can see we've already opened the file for you, but you'll have to do the parsing part.
-Implement the Room class en `loadRooms` function so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
+In adventure.py you'll find the `load_rooms` function. As you can see we've already opened the file for you, but you'll have to do the parsing part.
+Implement the Room class en `load_rooms` function so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
 
 Hier komt de; Test for phase 1.
 
@@ -270,14 +270,14 @@ They look alot like rooms, but are just a bit simpeler.
 
 These are the details for all items in the Small game. Each item consists of 3 parts:
 ----
-  name
-  description
-  room_id
+  <name>
+  <description>
+  <room_id>
 ----
 Here room_id is the id for the room where the item initially can be found.
 
 Just like rooms, items all share the same three attributes.
-This is why it would be a great idea use a class for items. Both the class `Item` and the function to load them (`loadItems`) have been created already. It's up to you to implement them.
+This is why it would be a great idea use a class for items. Neither the class `Item` or the function to load them have been created yet. It's up to you to implement them.
 Note that for now it's not necessary to put the items in rooms, we'll check if all items have been correctly created first.
 
 TODO een test voor deze stap.
@@ -285,7 +285,7 @@ TODO een test voor deze stap.
 
 === Placing items.
 
-Items can be located in either rooms or the players own inventory. Let's start out with placing the items in their alotted rooms.
+Items can be either located in rooms or the players own inventory. Let's start out with placing the items in their alotted rooms.
 This raises the question of how to keep track of ownership over these items. It's up to you to decide how to do this, but it's recommended to first decide 'who' knows where an item is; does the item itself keep track of its location, or do the inventories of the rooms and player denote where the item is.
 
 Now let's connect the rooms and items as the game starts up, make sure each item is placed in its intended location!
