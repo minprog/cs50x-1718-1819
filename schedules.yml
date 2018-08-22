@@ -1,0 +1,88 @@
+Lospeed:
+    Module 1:
+        'Lecture 0': '/lectures/week-0'
+        'Problem set 0: Scratch': '/psets/scratch'
+    Module 2:
+        'Lecture 1': '/lectures/week-1'
+        'Problem set 1: C': '/psets/c'
+        'Style guide': '/resources/style-guide'
+    Module 3:
+        'Lecture 2': '/lectures/week-2'
+        'Problem set 2: Crypto': '/psets/crypto'
+        'Style guide': '/resources/style-guide'
+    Module 4:
+        'Lecture 3': '/lectures/week-3'
+        'Problem set 3: Fifteen': '/psets/fifteen'
+        'Style guide': '/resources/style-guide'
+    Module 5:
+        'Lecture 4': '/lectures/week-4'
+        'Problem set 4: Forensics': '/psets/forensics'
+        'Style guide': '/resources/style-guide'
+        'Quiz Preparations': '/resources/quiz'
+    Module 9:
+        'Lecture 5': '/lectures/week-5'
+        'Problem set 5: Mispellings': '/psets/mispellings'
+        'Style guide': '/resources/style-guide'
+    Module 10:
+        'Lecture 6': '/lectures/week-6'
+        'Lecture 7': '/lectures/week-7'
+        'Lecture 8': '/lectures/week-8'
+        'Problem set 6: Sentimental': '/psets/sentimental'
+    Module 11:
+        'Problem set 6: Sentimental': '/psets/sentimental'
+    Module 12:
+        'Lecture 9': '/lectures/week-9'
+        'Problem set 7: C$50 Finance': '/psets/finance'
+    Module 13:
+        'Lecture 10': '/lectures/week-10'
+        'Problem set 8: Mashup': '/psets/mashup'
+    Module 14:
+        'Problem set 8: Mashup': '/psets/mashup'
+    Module 15:
+        'Quiz prep': '/resources/quiz'
+    
+
+Hispeed:
+    Module 0:
+        'Lecture 0': '/lectures/lecture-0'
+        'Problem set 0: Scratch': '/psets/scratch'
+    Module 1:
+        'Lecture 1': '/lectures/lecture-1'
+        'Practice: Calculations': '/practice/calculations'
+        'Try: IDE': '/try/ide'
+        'Problem: Water': '/problems/water'
+    Module 2:
+        'Practice: Logic': '/practice/logic'
+        'Problem: Mario': '/problems/water'
+    Module 3:
+        'Practice: Updates': '/practice/updates'
+        'Problem: Cash': '/problems/cash'
+    Module 4:
+        'Lecture 2': '/lectures/week-2'
+        'Practice: Strings': '/practice/strings'
+        'Problem: Initials': '/problems/initials'
+    Module 5:
+        'Practice: Conditionals': '/practice/conditionals'
+        'Problem: Caesar': '/problems/caesar'
+    Module 6:
+        'Problem: Vigenere': '/problems/vigenere'
+    Week 3:
+        'Lecture 3': '/lectures/week-3'
+        'Problem set 3: Fifteen': '/psets/fifteen'
+    Week 4:
+        'Lecture 4': '/lectures/week-4'
+        'Problem set 4: Forensics': '/psets/forensics'
+    Week 5:
+        'Lecture 5': '/lectures/week-5'
+        'Problem set 5: Mispellings': '/psets/mispellings'
+    Week 6:
+        'Lecture 6': '/lectures/week-6'
+        'Lecture 7': '/lectures/week-7'
+        'Lecture 8': '/lectures/week-8'
+        'Problem set 6: Sentimental': '/psets/sentimental'
+    Week 7:
+        'Lecture 9': '/lectures/week-9'
+        'Problem set 7: C$50 Finance': '/psets/finance'
+    Week 8:
+        'Lecture 10': '/lectures/week-10'
+        'Problem set 8: Mashup': '/psets/mashup'
