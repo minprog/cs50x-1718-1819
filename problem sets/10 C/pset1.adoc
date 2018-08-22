@@ -113,7 +113,7 @@ at the prompt to see your last several commands in chronological order if you'd 
 . Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `hello.c` file (that's within your *pset1* directory) and then select *Download*. You should find that your browser has downloaded `hello.c`.
 . Repeat for `water.c`.
 . Repeat for `mario.c`.
-. Repeat for `greedy.c` or `credit.c`.
+. Repeat for `cash.c` or `credit.c`.
 . Make sure you are signed in to this website!
 . In the form below, add the files that you downloaded.
 . Press "Submit for grading". Presto!
