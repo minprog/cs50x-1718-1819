@@ -52,7 +52,7 @@ On this page you can find some study materials for the exam of 'Programmeren 1'.
 - [Functions](/practice/functions): split your program into parts
 - [Recrypt](/practice/recrypt): strings and ASCII
 
-## Week 3 - Fifteen
+## Week 3 - Music
 
 ### Lecture Notes
 
