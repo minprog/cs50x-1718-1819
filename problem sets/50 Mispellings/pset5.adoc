@@ -44,7 +44,7 @@ Do keep in mind the course's policy on http://docs.cs50.net/2017/fall/syllabus/c
 
 == Problems
 
-* Implement link:speller/speller.html[Speller]
+* Implement link:/problems/speller/[Speller]
 
 === Big Board
 

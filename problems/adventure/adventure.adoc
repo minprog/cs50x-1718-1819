@@ -7,13 +7,12 @@ toclevels: 1
 
 == tl;dr
 
-. Load the game data from their files.
-. Implement classes required to move and interact with the game.
-. Play it!
+. Implement Crowther's Adventure game using OOP in Python.
+. Play your game!
 
 == Background
 
-Back in the days, before dedicated graphics cards were a thing, text-based adventure games we're incredibly popular. This type of game consists entirely out of text, and is traversed by commands much like the ones you would enter in the terminal.
+Back in the days, before dedicated graphics cards were a thing, text-based adventure games were incredibly popular. This type of game consists entirely out of text, and is traversed by commands much like the ones you would enter in the terminal.
 One such game is Colossal Cave Adventure, created by link:https://en.wikipedia.org/wiki/William_Crowther_(programmer)/[William Crowther] in 1975, that served as the inspiration for the text adventure game genre.
 
 In Adventure you have to navigate between "Rooms" through commands such as "WEST" and "EAST", but also "IN" or "OUT".
@@ -31,7 +30,7 @@ Like so:
     >
 ----
 
-But there is more than just navigating, at all times you can ask for HELP for an explanation of the game, or LOOK to get a detailed description of the room you are in.
+But there is more than just navigating, at all times you can ask for `HELP` for an explanation of the game, or `LOOK` to get a detailed description of the room you are in.
 From the previous example you could see that the second time a room is entered a shorter description was shown. If we were to use look we would see the following:
 ----
     > LOOK
@@ -42,8 +41,9 @@ From the previous example you could see that the second time a room is entered a
     >
 ----
 
-Besides moving and looking there is also interaction with objects. These objects are located within room and are yours to take and drop (TAKE <obj>, DROP <obj>).
-Forgot what you've picked up throughout your journey? Using the INVENTORY command you get a list of what you're carrying around. Interacting with objects would look like this:
+Besides moving and looking there is also interaction with items. These items are located within rooms and are yours to take and drop (`TAKE` <item>, `DROP` <item>).
+
+Forgot what you've picked up throughout your journey? Using the `INVENTORY` command you get a list of what you're carrying around. Interacting with items would look like this:
 ----
     Inside building
     You are inside a building, a well house for a large spring.
@@ -59,7 +59,7 @@ Forgot what you've picked up throughout your journey? Using the INVENTORY comman
     >
 ----
 
-Use these objects to pass otherwise unpassable blockades, such as the "strong steel grate".
+Use these items to pass otherwise unpassable blockades, such as the "strong steel grate".
 
 == Distribution
 
@@ -77,35 +77,50 @@ TODO
 
 === Understanding
 
+Though Crowther originally wrote his game in Fortran, an imperative programming language that has been around since the 1950s, we will be taking a more modern aproach to its implementation.
+
+You will make your first foray into Object-Oriented Programming (OOP), instead of having your main function keep track of all relevant variables and states we'll disperse this information over a variety of classes.
+We've gone ahead and made a basic setup for you. The player and room classes have been seperated from the main file, but it's up to you to implement their unfinished methods.
+
+Keeping code seperated is a key part of OOP, and makes your code more easily readable and maintainable. See for yourself!
+
 ==== `adventure.py`
 
 Instead of working from a single file, we've split up our classes into seperate files. This keeps our files short and tidy, but we'll still have to link them up. For that we'll have to import them as follows:
 [source]
 ----
-import room, object
+from player import Player
+prom room import Room
 ----
-This line tells python to look for the files room.py and object.py and make their contents reachable from within adventure.py.
-Remember that calling on their contents is done through referencing the module and suffixing the desired function or class name.
-For example `room.Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a room object for you.
+This line tells python to look for the files room.py and player.py and make their imported contents reachable from within adventure.py.
+The Room and Player class can now be freely used by functions in `adventure.py`.
+For example `Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a Room object for you.
 
-Further on are the functions to load the game data and play the game, though they're still little more than TODO's.
+You'll be creating these objects in the `load_rooms` function, but for now it is still little more than a TODO.
+
+The `play` function contains the main loop that makes your game playable. We've already given you a headstart here, but you'll have to figure out how to best use your classes.
+We've initialized a player for you with dummy values, giving them an id, name and initial location, you can change these if or when necessary.
+Use that player within the while loop and have them move and execute other commands. As you can see we use a set to determine how commands should be executed, you can add sets and lists of your own to your liking!
 
 
-=== `room.py & object.py`
 
-These are your classes. The blueprints for the objects that your game will need to funciton properly.
+=== `player.py & room.py`
+
+These are your classes. The blueprints for objects that your game will need to function properly.
+The Player class contains most of the commands already, but they've not been implemented yet. Whereas Room is still mostly empty, that one is all up to you!
+
 Plenty of TODO's here as well!
 
 === `data`
 
-Within the data folder you can find everything you need to create your objects and rooms with.
-There's 5 datafiles with which you can create 3 versions of Adventure. TinyRooms.txt being the smallest version, has only 3 rooms and no objects whatsoever. Great for starting out with!
-SmallRooms.txt and SmallObjects is a tad bit larger and includes, obviously, objects.
-The full game of Adventure is contained within CrowtherRooms.txt and CrowtherObjects.txt.
+Within the data folder you can find everything you need to create your items and rooms with.
+There are 5 datafiles with which you can create 3 versions of Adventure. TinyRooms.txt being the smallest version, has only 3 rooms and no items whatsoever. Great for starting out with!
+SmallRooms.txt and SmallItems.txt is a tad bit larger and includes, obviously, items.
+The full game of Adventure is contained within CrowtherRooms.txt and CrowtherItems.txt.
 
-== What to do
+== What to do? Tiny.
 
-=== Loading...
+=== Parsing data files.
 
 TinyRooms, the smallest version of the game, contains the following data:
 ----
@@ -137,31 +152,290 @@ TinyRooms, the smallest version of the game, contains the following data:
     OUT       1
 ----
 
-These are the descriptions for all rooms in the game and how navigate between them. Each descriptions consists out of 4 parts:
+These are the details for all rooms in the game and how to navigate between them. Each room consists of 4 parts:
+----
   <id>
   <name>
   <description>
   ---
   <routes>
+----
+Where <routes> consist of a <direction> and <id>. For example, Room 2 - End of road is connected to room 1 - Outside building by directions 'EAST' and 'DOWN'.
 
+You'll find that the name is actually a short description of the room, whereas the 'description' is fully descriptive. Keep this in mind for later parts of the game!
 First we'll have to parse this data into our program. Since a room is a bit more complicated than a simple string or integer we have set you up with a class named Room in room.py.
-In adventure.py you'll find the loadRooms function. As you can see we've already opened the file for you, but you'll have to do the parsing part.
-Implement the Room class en loadRooms function so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
+In adventure.py you'll find the `load_rooms` function. As you can see we've already opened the file for you, but you'll have to do the parsing part.
+Implement the Room class en `load_rooms` function so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
 
-Test for phase 1.
+Hier komt de; Test for phase 1.
 
-=== Let's get a move on
 
-Next up is moving to and from rooms using Room's move method. For this we'll have to parse the routes first though and keep track of which rooms are connected.
-Add an attribute to the Room class that we can use to see if the given command is a valid move.
-You can test moving around as follows:
+=== Moving the player.
+
+Next up is moving to and from rooms using Player's `move` method. To be able to move though, we'll first have to implement the routes. Parse the routes from the data file to see which rooms are connected.
+Add an attribute to the Room class that can be used to see if the given command is a valid move. Use the player's `current_room` attribute to find and update the player's location.
+I.E. Can we `move` "EAST" from the first room?
+
+You can test moving around in the following way:
 ----
-  print(rooms[0].move("WEST")) # should print room 2: End of road
-  print(rooms[0].move("IN")) # should print room 3: Inside building
+  room = player_1.move("WEST") # should the return the 'room 2' object
+  `print the name of the room` # should print room 2: "End of road"
+  room = player_1.move("IN") # should the return the 'room 3' object
+  `print the name of the room` # should print room 3: "Inside building"
 ----
-  
-==== `sentences`
 
+
+=== Prompt for commands.
+
+Time for your first steps into making this a game; have players give commands.
+
+Each time a player enters a room for the first time, we'll provide them with a full description of the room.
+Following the description we'll prompt the player for a command. The '>' will mark this prompt. It should look like this:
+
+----
+  You are standing at the end of a road before a small brick
+  building.  A small stream flows out of the building and
+  down a gully to the south.  A road runs up a small hill
+  to the west.
+  >
+----
+
+If the player attempts a command that cannot be executed tell them they attempted an "Invalid command." and prompt for another command using the '>'.
+Like so:
+----
+  > OUT
+  Invalid command.
+  >
+----
+
+If a player enters a room they've already seen, only give them the short description.
+
+=== Additional commands.
+
+Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT`, `HELP` and `LOOK` commands, you won't find them in the files however.
+When finding a place for these functions think of what seperates them from other functions. Are they specific to a certain class or do they serve a general purpose? Often times if you find yourself passing an object to a function, you might as well have declared it as a method of that object.
+
+`HELP` prints instructions to remind the player of their commands and how to use them.
+Have it behave as follows:
+----
+  > HELP
+  You can move by typing directions such as EAST/WEST/IN/OUT
+  QUIT quits the game.
+  HELP prints instructions for the game.
+  INVENTORY lists the item in your inventory.
+  LOOK lists the complete description of the room and its contents.
+  TAKE <item> take item from the room.
+  DROP <item> drop item from your inventory.
+----
+
+`QUIT` lets the player stop the game. Print `Thanks for playing!` and terminate the program cleanly.
+
+----
+  > QUIT
+  Thanks for playing!
+----
+
+`LOOK` prints a full description of the room the player is currently in, even if the room was visited earlier.
+
+----
+  Inside building
+  > LOOK
+  You are inside a building, a well house for a large spring.
+----
+
+
+=== Small & Crowther. Small.
+Now that we have the basics of our game completed; a player can move between rooms and has a few commands to help out with the game, it's time to implement some more advanced features of the game.
+We're going to add items to the game that help the player pass obstacles or force the player back if they miss said items.
+
+=== Adding items.
+
+Items in Adventure have a name, description and location. To add these items to the game we'll once again have to first parse their data file. You can find them inside the `SmallItems.txt` and `CrowtherItems.txt`.
+They look alot like rooms, but are just a bit simpeler.
+
+`SmallItems.txt`, one step up from Tiny, contains the following data:
+----
+  KEYS
+  a set of keys
+  3
+
+  LAMP
+  a brightly shining brass lamp
+  8
+
+  ROD
+  a black rod with a rusty star
+  12
+----
+
+These are the details for all items in the Small game. Each item consists of 3 parts:
+----
+  <name>
+  <description>
+  <room_id>
+----
+Here room_id is the id for the room where the item initially can be found.
+
+Just like rooms, items all share the same three attributes.
+This is why it would be a great idea use a class for items. Neither the class `Item` or the function to load them have been created yet. It's up to you to implement them.
+Note that for now it's not necessary to put the items in rooms, we'll check if all items have been correctly created first.
+
+TODO een test voor deze stap.
+
+
+=== Placing items.
+
+Items can be either located in rooms or the players own inventory. Let's start out with placing the items in their alotted rooms.
+This raises the question of how to keep track of ownership over these items. It's up to you to decide how to do this, but it's recommended to first decide 'who' knows where an item is; does the item itself keep track of its location, or do the inventories of the rooms and player denote where the item is.
+
+Now let's connect the rooms and items as the game starts up, make sure each item is placed in its intended location!
+
+When a player visits a room with one or more items the game will have to let the player know which items there are in addition to the description of the room:
+----
+  You are inside a building, a well house for a large spring.
+  KEYS: a set of keys
+----
+
+It is formatted as follows:
+  <description>
+  <item_1>
+  <item_2>
+  etc.
+
+Don't forget to add this feature to the `LOOK` coomand!
+
+
+=== Taking and dropping items.
+
+It's now time to implement the `TAKE` <item> command. By use of `TAKE` the player can pick up an item from a room they're in. In other words, the item moves from a room to the player.
+Of course there is some error catching to do, what happens for instance if a player takes something that is not in the room? Or an item that is located inside a room the player is not currently in?
+Both cases should be met by printing "`No such item.`" Resulting in the following gameplay:
+----
+  You are inside a building, a well house for a large spring.
+  KEYS: a set of keys
+  > TAKE KEYS
+  KEYS taken.
+  > TAKE KEYS
+  No such item.
+  > TAKE SOMETHING
+  No such item.
+  >
+----
+
+Any item the player picks up, they can also drop using the `DROP` command. Ownership then transfers from the player to the room they are currently in (no throwing items to other rooms!). Once again when a player were to drop an item not in their possession they are met with "`No such item.`". Dropping items looks alot like picking them up:
+----
+  You are inside a building, a well house for a large spring.
+  KEYS: a set of keys
+  > TAKE KEYS
+  KEYS taken.
+  > DROP KEYS
+  KEYS dropped.
+  > DROP KEYS
+  No such item.
+  > TAKE KEYS
+  KEYS taken.
+----
+
+Make sure you can pick up items that you previously dropped!
+
+For the player to keep track of their owned items you'll have to implement the `INVENTORY` command. It should print all items currently owned by the player, like this:
+----
+  > INVENTORY
+  KEYS: a set of keys
+  LAMP: a brightly shining brass lamp
+  > DROP KEYS
+  KEYS dropped.
+  > INVENTORY
+  LAMP: a brightly shining brass lamp
+  > DROP LAMP
+  LAMP dropped.
+  > INVENTORY
+  Your inventory is empty.
+  >
+----
+
+
+=== Conditional movement.
+
+Now that you've implemented items, the game has become significantly more interesting. Since they allow you to implement conditional movement; movements can now depend on items being in the inventory of the player. Room 6, for instance, allows access to rooms 7 and 8 through the same movement `DOWN`, depending on whether the player owns the keys. To progress in the game the player will first need to find the keys.
+
+The datafiles show such conditional movements in the following way:
+----
+  DOWN       8/KEYS
+  DOWN       7
+----
+
+Only one condition can exist per movements and it is always an item. So if a room has a direction with multiple conditions, the data file has an entry for each condition. If the player has the required item, the conditional movement is always made; it is not an optional movement. In case of multiple conditions and the player meeting all requirements just follow the order they appear in the data file, meaning the top-most condition is checked first.
+
+This makes moving around a bit more complicated. Aside from checking only that the direction is connected to a room, you'll now have to check for the conditional movement.
+Depending on your earlier implementation of moving, you might have to slightly alter your code.
+
+Why conditional movements you ask? Well, you can use them to have the 'same' room show a different description. Instead of having a conditional description, displaying one of more descriptions based on the items you have on you, you just move to a different room.
+This may be easier to understand with the following example. If you forget to bring a lamp into the dark room, all you see is darkness. Whereas bringing the lamp shows you exactly what is in the room. Technically it is the same room, with two different descriptions, but in the code we've turned it into two seperate rooms. This makes it easy to add as many conditional movements for a room as we'd like.
+A conditional movement would look like this:
+----
+  You are crawling over cobbles in a low east/west passage.
+  There is a dim light to the east.
+  > DROP LAMP
+  LAMP dropped.
+  > WEST
+  It is now pitch dark.  If you proceed you will likely fall
+  into a pit.
+  > EAST
+  Cobble crawl
+  LAMP: a brightly shining brass lamp
+  > TAKE LAMP
+  LAMP taken.
+  > EAST
+  You are in a debris room filled with stuff washed in from
+  the surface.  A low wide passage with cobbles becomes
+  plugged with mud and debris here, but an extremely narrow
+  canyon leads upward and west.  Unfortunately, the passage
+  is blocked by a barrier marked "Under Construction."
+  >
+----
+
+
+=== Forced movement.
+
+Sometimes a player will attempt a movement they cannot make yet, because they are missing the required item. Passing the steel grate in room 6 for example requires keys.
+Instead of printing a custom message, we'll have the player move into a special sort of room. This room displays a description for what happened, and then forcefully moves the player to where the forced movement points.
+This move happpens automatically and immediately after printing the full description.
+
+Another example of forced movements can be found in the Crowther rooms 70 through 75. These rooms even have a conditional `FORCED` movement. These are the final few rooms, if all required items are owned the player will win the game and go to room 77. If not, the player continues to room 76 and has to try and find the remaining "`treasures`". The interesting part is that rooms 70 through 75 are devoid of a description! This makes it possible to have conditional movement based on 6 items, even though 5 extra rooms are required to do so.
+
+This leaves you to implement this `FORCED` movement to the game. Luckily a room with `FORCED` movement can only contain that movement and no others. So you won't have to take anything else into account when a `FORCED` move is encountered!
+
+Being `FORCED` moved looks like this:
+----
+  You are in a 25-foot depression floored with bare dirt.
+  Set into the dirt is a strong steel grate mounted in
+  concrete.  A dry streambed leads into the depression from
+  the north.
+  > INVENTORY
+  Your inventory is empty.
+  > DOWN
+  The grate is locked and you don't have any keys.
+  Outside grate
+  > DOWN
+  The grate is locked and you don't have any keys.
+  Outside grate
+  >
+----
+
+Remember to always print the full description when a room `FORCED` is entered. There's no room to `LOOK` around, since the player is immediately moved by the game.
+
+=== The winner takes all
+
+Now that the Crowther game is playable, let's also make it winnable. From the `CrowtherRooms.txt` file you can see that room 77 corresponds to victory, implement this condition into your game and gracefully terminate the game after attaining victory.
+
+== Specification
+
+Implement an Object-Oriented version of Crowther's Adventure game.
+- Implement functions for loading data into objects.
+- The game should make use of the player and room classes.
+- The game should prompt the user for commands and either execute those or warn about a non-existent command.
+- The game must be winnable.
 
 == Walkthroughs
 
@@ -169,27 +443,13 @@ video::JlGPuG6fIXs[youtube,list=PLhQjrBD2T382DOV8V9pWN7NTp0uRLvIYa]
 
 == Testing
 
-To test your implementation of `lines`, `sentences`, and/or `substrings` via the command line, execute `compare` as follows, where `FILE1` and `FILE2` are any two text files:
+To test your implementation of `adventure` via the command line, execute `adventure` as follows:
 
 [source]
 ----
-./compare --lines FILE1 FILE2
-./compare --sentences FILE1 FILE2
-./compare --substrings 1 FILE1 FILE2
-./compare --substrings 2 FILE1 FILE2
-...
+./TEST_ADVENTURE
 ----
 
-To test your implementations via a web app, execute
-
-[source]
-----
-flask run
-----
-
-and then visit the outputted URL.
-
-See http://cdn.cs50.net/2017/fall/psets/6/similarities/inputs/ for sample inputs, though be sure to test with some of your own!
 
 === `check50`
 
@@ -214,4 +474,4 @@ style50 helpers.py
 
 === Web
 
-http://similarities.cs50.net/less
+http://playfic.com/games/mgscox/adventure
