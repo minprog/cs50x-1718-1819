@@ -1,13 +1,6 @@
 course:
     title: CS50x UvA
     short: CS50x
-    submit: Prog18
-    mail: help@mprog.nl
-
-syllabus: /resources/syllabus
-
-ask:
-    hands: true
 
 acknowledgements:
     - 'Based on CS50 from http://cs50.tv/2017/fall/ -- Copyright 2011--2018, David J. Malan.'
