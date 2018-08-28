@@ -183,6 +183,7 @@ You can test moving around in the following way:
   room = player_1.move("IN") # should the return the 'room 3' object
   `print the name of the room` # should print room 3: "Inside building"
 ----
+Don't forget to update the `play` function in `adventure.py`! Check the `SmallSynonyms.txt` for all directions your game should be able to handle.
 
 
 === Prompt for commands.
