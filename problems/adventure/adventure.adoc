@@ -170,14 +170,14 @@ Implement the `Room` class en `load_rooms` function so that each room from TinyR
 
 Hint: When parsing the file, look for recurring elements that seperate different data entries. It also might be a good idea to strip any leftover newlines for the data-fields.
 
-Hier komt de; Test for phase 1.
+TODO Hier komt de; Test for phase 1.
 
 
 === Moving the player.
 
 Next up is moving to and from rooms using Player's `move` method. To be able to move though, we'll first have to implement the routes. Parse the routes from the data file to see which rooms are connected.
 Add an attribute to the Room class that can be used to see if the given command is a valid move. Use the player's `current_room` attribute to find and update the player's location.
-I.E. Can we `move` "EAST" from the first room?
+I.E. Can we `move` "EAST" from the first room? If not, let the player know they tried an "Invalid command.".
 
 You can test moving around in the following way:
 ----
@@ -186,7 +186,6 @@ You can test moving around in the following way:
   room = player_1.move("IN") # should the return the 'room 3' object
   `print the name of the room` # should print room 3: "Inside building"
 ----
-Don't forget to update the `play` function in `adventure.py`! Check the `SmallSynonyms.txt` for all directions your game should be able to handle.
 
 
 === Prompt for commands.
@@ -213,6 +212,7 @@ Like so:
 ----
 
 If a player enters a room they've already seen, only give them the short description.
+Check the `SmallSynonyms.txt` for all directions your game should be able to handle.
 
 === Additional commands.
 
@@ -278,7 +278,7 @@ These are the details for all items in the Small game. Each item consists of 3 p
   <description>
   <room_id>
 ----
-Here room_id is the id for the room where the item initially can be found.
+Here room_id is the id for the room where the item can initially be found.
 
 Just like rooms, items all share the same three attributes.
 This is why it would be a great idea use a class for items. Neither the class `Item` or the function to load them have been created yet. It's up to you to implement them.
