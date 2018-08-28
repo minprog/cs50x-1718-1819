@@ -1,151 +1,110 @@
 Lospeed:
     Module 0:
         'Lecture 0': '/lectures/lecture-0'
-    Module 1:
         'Problem set 0: Scratch': '/psets/scratch'
-    Module 2:
+    Module 1:
         'Lecture 1': '/lectures/lecture-1'
-    Module 3:
-        'Try: IDE': '/try/ide'
-    Module 4:
+        'Training: IDE': '/try/ide'
         'Practice: Calculations': '/practice/calculations'
-    Module 5:
         'Problem: Water': '/problems/water'
-    Module 6:
         'Practice: Logic': '/practice/logic'
-    Module 7:
         'Problem: Mario': '/problems/water'
-    Module 8:
         'Practice: Updates': '/practice/updates'
-    Module 9:
+        'Practice: While': '/practice/while'
         'Problem: Cash': '/problems/cash'
-    Module 10:
+    Module 2:
         'Lecture 2': '/lectures/lecture-2'
-    Module 11:
-        'Practice: Strings': '/practice/strings'
-    Module 12:
         'Practice: Conditionals': '/practice/conditionals'
-    Module 13:
-        'Problem: Initials': '/problems/initials'
-    Module 14:
-        'Problem: Caesar': '/problems/caesar'
-    Module 15:
-        'Problem: Vigenere': '/problems/vigenere'
-    Module 16:
-        'Lecture 3': '/lectures/lecture-3'
-    Module 17:
         'Practice: Strings': '/practice/strings'
-    Module 18:
-        'Concepts: Lists': '/practice/lists'
-    Module 19:
+        'Practice: For': '/practice/for'
+        'Practice: Loop patterns': '/practice/loop-patterns'
+        'Problem: Initials': '/problems/initials'
+        'Problem: Caesar': '/problems/caesar'
+        'Problem: Vigenere': '/problems/vigenere'
+    Module 3:
+        'Lecture 3': '/lectures/lecture-3'
+        'Practice: Functions': '/practice/functions'
+        'Practice: Lists': '/practice/lists'
+        'Practice: List Patterns': '/practice/list-patterns'
         'Problem: Music': '/problems/music'
-    Module 20:
         'Problem: Find': '/problems/find'
-    Module 21:
+    Module 4:
         'Quiz 0': '/quizzes/quiz-0'
-    Module 22:
+    Module 5:
         'Lecture 4': '/lectures/lecture-4'
-    Module 23:
         'Problem: Whodunit': '/problems/whodunit'
-    Module 24:
         'Problem: Resize': '/problems/resize'
-    Module 25:
         'Problem: Recover': '/problems/recover'
-    Module 26:
-        'Lecture 4': '/lectures/lecture-4'
-    Module 27:
+    Module 6:
+        'Lecture 5': '/lectures/lecture-4'
         'Problem: Speller': '/problems/speller'
-    Module 28:
-        'Lecture 4': '/lectures/lecture-4'
-    Module 29:
+    Module 7:
+        'Lecture 8': '/lectures/lecture-4'
         'Problem: Sentimental': '/problems/sentimental'
-    Module 30:
+    Module 8:
         'Lecture: OOP': '/lectures/lecture-oop'
-    Module 31:
         'Problem: Game of Cards': '/problems/game-of-cards'
-    Module 32:
         'Problem: Adventure': '/problems/adventure'
-    Module 33:
+    Module 9:
         'Lecture: HTML': '/lectures/lecture-html'
-    Module 34:
         'Problem: Similarities': '/problems/adventure'
-    Module 35:
+    Module 10:
+        'Quiz 1': '/quizzes/quiz-1'
+    Module 11:
         'Lecture 10': '/lectures/lecture-10'
-    Module 36:
         'Problem: finance': '/problems/finance'
 
 Hispeed:
-    Module 0:
+    Day 0:
         'Lecture 0': '/lectures/lecture-0'
-    Module 1:
         'Problem set 0: Scratch': '/psets/scratch'
-    Module 2:
+    Week 1:
         'Lecture 1': '/lectures/lecture-1'
-    Module 3:
-        'Try: IDE': '/try/ide'
-    Module 4:
+        'Training: IDE': '/try/ide'
         'Practice: Calculations': '/practice/calculations'
-    Module 5:
         'Problem: Water': '/problems/water'
-    Module 6:
         'Practice: Logic': '/practice/logic'
-    Module 7:
         'Problem: Mario': '/problems/water'
-    Module 8:
         'Practice: Updates': '/practice/updates'
-    Module 9:
+        'Practice: While': '/practice/while'
         'Problem: Cash': '/problems/cash'
-    Module 10:
+    Week 2:
         'Lecture 2': '/lectures/lecture-2'
-    Module 11:
-        'Practice: Strings': '/practice/strings'
-    Module 12:
         'Practice: Conditionals': '/practice/conditionals'
-    Module 13:
-        'Problem: Initials': '/problems/initials'
-    Module 14:
-        'Problem: Caesar': '/problems/caesar'
-    Module 15:
-        'Problem: Vigenere': '/problems/vigenere'
-    Module 16:
-        'Lecture 3': '/lectures/lecture-3'
-    Module 17:
         'Practice: Strings': '/practice/strings'
-    Module 18:
-        'Concepts: Lists': '/practice/lists'
-    Module 19:
+        'Practice: For': '/practice/for'
+        'Practice: Loop patterns': '/practice/loop-patterns'
+        'Problem: Initials': '/problems/initials'
+        'Problem: Caesar': '/problems/caesar'
+        'Problem: Vigenere': '/problems/vigenere'
+    Week 3:
+        'Lecture 3': '/lectures/lecture-3'
+        'Practice: Functions': '/practice/functions'
+        'Practice: Lists': '/practice/lists'
+        'Practice: List Patterns': '/practice/list-patterns'
         'Problem: Music': '/problems/music'
-    Module 20:
         'Problem: Find': '/problems/find'
-    Module 21:
+    Quiz 0:
         'Quiz 0': '/quizzes/quiz-0'
-    Module 22:
+    Week 4:
         'Lecture 4': '/lectures/lecture-4'
-    Module 23:
         'Problem: Whodunit': '/problems/whodunit'
-    Module 24:
         'Problem: Resize': '/problems/resize'
-    Module 25:
         'Problem: Recover': '/problems/recover'
-    Module 26:
-        'Lecture 4': '/lectures/lecture-4'
-    Module 27:
+    Week 5:
+        'Lecture 5': '/lectures/lecture-4'
         'Problem: Speller': '/problems/speller'
-    Module 28:
-        'Lecture 4': '/lectures/lecture-4'
-    Module 29:
+    Week 6:
+        'Lecture 8': '/lectures/lecture-4'
         'Problem: Sentimental': '/problems/sentimental'
-    Module 30:
         'Lecture: OOP': '/lectures/lecture-oop'
-    Module 31:
         'Problem: Game of Cards': '/problems/game-of-cards'
-    Module 32:
         'Problem: Adventure': '/problems/adventure'
-    Module 33:
+    Week 7:
         'Lecture: HTML': '/lectures/lecture-html'
-    Module 34:
         'Problem: Similarities': '/problems/adventure'
-    Module 35:
+    Quiz 1:
+        'Quiz 1': '/quizzes/quiz-1'
+    Week 8:
         'Lecture 10': '/lectures/lecture-10'
-    Module 36:
         'Problem: finance': '/problems/finance'
