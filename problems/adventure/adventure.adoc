@@ -13,7 +13,7 @@ toclevels: 1
 == Background
 
 Back in the days, before dedicated graphics cards were a thing, text-based adventure games were incredibly popular. This type of game consists entirely out of text, and is traversed by commands much like the ones you would enter in the terminal.
-One such game is Colossal Cave Adventure, created by link:https://en.wikipedia.org/wiki/William_Crowther_(programmer)/[William Crowther] in 1975, that served as the inspiration for the text adventure game genre.
+One such game is Colossal Cave Adventure, created by link:https://en.wikipedia.org/wiki/William_Crowther_(programmer)[William Crowther] in 1975, that served as the inspiration for the text adventure game genre.
 
 In Adventure you have to navigate between "Rooms" through commands such as "WEST" and "EAST", but also "IN" or "OUT".
 Like so:
@@ -72,7 +72,7 @@ $ unzip adventure.zip
 $ rm adventure.zip
 $ cd adventure
 $ ls
-TODO
+adventure.py  data/  player.py  room.py
 ----
 
 === Understanding
@@ -90,7 +90,7 @@ Instead of working from a single file, we've split up our classes into seperate 
 [source]
 ----
 from player import Player
-prom room import Room
+from room import Room
 ----
 This line tells python to look for the files room.py and player.py and make their imported contents reachable from within adventure.py.
 The Room and Player class can now be freely used by functions in `adventure.py`.
@@ -104,14 +104,14 @@ Use that player within the while loop and have them move and execute other comma
 
 
 
-=== `player.py & room.py`
+==== `player.py & room.py`
 
 These are your classes. The blueprints for objects that your game will need to function properly.
 The Player class contains most of the commands already, but they've not been implemented yet. Whereas Room is still mostly empty, that one is all up to you!
 
 Plenty of TODO's here as well!
 
-=== `data`
+==== `data/`
 
 Within the data folder you can find everything you need to create your items and rooms with.
 There are 5 datafiles with which you can create 3 versions of Adventure. TinyRooms.txt being the smallest version, has only 3 rooms and no items whatsoever. Great for starting out with!
@@ -164,17 +164,20 @@ Where <routes> consist of a <direction> and <id>. For example, Room 2 - End of r
 
 You'll find that the name is actually a short description of the room, whereas the 'description' is fully descriptive. Keep this in mind for later parts of the game!
 First we'll have to parse this data into our program. Since a room is a bit more complicated than a simple string or integer we have set you up with a class named Room in room.py.
-In adventure.py you'll find the `load_rooms` function. As you can see we've already opened the file for you, but you'll have to do the parsing part.
-Implement the Room class en `load_rooms` function so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
 
-Hier komt de; Test for phase 1.
+In adventure.py you'll find the `load_rooms` function. As you can see we've already opened the file for you, but you'll have to do the parsing part.
+Implement the `Room` class en `load_rooms` function so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
+
+Hint: When parsing the file, look for recurring elements that seperate different data entries. It also might be a good idea to strip any leftover newlines for the data-fields.
+
+TODO Hier komt de; Test for phase 1.
 
 
 === Moving the player.
 
 Next up is moving to and from rooms using Player's `move` method. To be able to move though, we'll first have to implement the routes. Parse the routes from the data file to see which rooms are connected.
 Add an attribute to the Room class that can be used to see if the given command is a valid move. Use the player's `current_room` attribute to find and update the player's location.
-I.E. Can we `move` "EAST" from the first room?
+I.E. Can we `move` "EAST" from the first room? If not, let the player know they tried an "Invalid command.".
 
 You can test moving around in the following way:
 ----
@@ -209,6 +212,7 @@ Like so:
 ----
 
 If a player enters a room they've already seen, only give them the short description.
+Check the `SmallSynonyms.txt` for all directions your game should be able to handle.
 
 === Additional commands.
 
@@ -274,7 +278,7 @@ These are the details for all items in the Small game. Each item consists of 3 p
   <description>
   <room_id>
 ----
-Here room_id is the id for the room where the item initially can be found.
+Here room_id is the id for the room where the item can initially be found.
 
 Just like rooms, items all share the same three attributes.
 This is why it would be a great idea use a class for items. Neither the class `Item` or the function to load them have been created yet. It's up to you to implement them.
