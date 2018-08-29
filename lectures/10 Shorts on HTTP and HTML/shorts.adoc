@@ -9,6 +9,6 @@ video::YK78KhMf7bs[youtube, height=540, width=960, options=notitle]
 == HTML
 Unfortunately, there is no transcript available for this video.
 
-==This last video is optional.
+== This last video is optional.
 video::Ub3FKU21ubk[youtube, height=540, width=960, options=notitle]
 == CSS
