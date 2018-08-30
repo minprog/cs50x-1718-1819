@@ -7,7 +7,7 @@
 == tl;dr
 
 [start=0]
-. Watch link:/lectures/lecture-8[Lecture 8]
+. Watch link:/lectures/lecture-6[Lecture 6].
 . Port some programs from C to Python.
 . Submit your code.
 

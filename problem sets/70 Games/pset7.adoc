@@ -3,12 +3,12 @@ layout: 2018/spring
 ---
 :skip-front-matter:
 
-= Problem Set 7: OOP
+= Problem Set 7: Games
 
 == tl;dr
 
 [start=0]
-. Watch link:/lectures/lecture-oop/[the Lecture on OOP].
+. Watch link:/lectures/lecture-7[Lecture 7].
 . Create a Deck of Cards.
 . Make a text-based Adventure game.
 . Submit your code.
