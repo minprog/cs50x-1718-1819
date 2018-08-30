@@ -2,7 +2,7 @@ name: CS50x UvA
 short_name: CS50x
 
 links:
-    CS50 Reference: "<i class='fa fa-book mr-2'></i> https://reference.cs50.net"
+    "<i class='fa fa-book mr-2'></i> CS50 Reference": https://reference.cs50.net
 
 acknowledgements:
     - 'Based on CS50 from http://cs50.tv/2017/fall/ -- Copyright 2011--2018, David J. Malan.'
