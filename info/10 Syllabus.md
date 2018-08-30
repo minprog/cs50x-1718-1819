@@ -104,43 +104,38 @@ The course has one 90-minute exam. It is "closed-book," meaning that you are all
 
 ## Grades
 
-All students must ordinarily submit all problem sets and take the quiz in
-order to be eligible for a satisfactory grade unless granted an exception in
-writing by the course's heads.
+All students must ordinarily submit all problem sets, take all tests and take the quiz in order to
+be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-The final grade for this course is primarily determined by averaging the scores for the problem sets. The quiz has to be passed, but has no weight in the final grade.
+The final grade for this course is primarily determined by averaging the scores for the problem
+sets. The quiz has to be passed, but has no weight in the final grade.
 
 #### Programming 1
 
 |               | Language | Weight |
 | ------------- | -------- | -----: |
-| Problem Set 0 | Scratch  |     8% |
-| Problem Set 1 | C        |    23% |
-| Problem Set 2 | C        |    23% |
-| Problem Set 3 | C        |    23% |
-| Problem Set 4 | C        |    23% |
+| Problem Set 0 | Scratch  |     0% |
+| Problem Set 1 | C        |    25% |
+| Problem Set 2 | C        |    25% |
+| Problem Set 3 | C        |    25% |
+| Problem Set 4 | C        |    25% |
 | Quiz          |          |     0% |
 
 #### Programming 2
 
-|               | Language   | Weight |
-| ------------- | ---------- | -----: |
-| Problem Set 5 | C          |    25% |
-| Problem Set 6 | Python     |    25% |
-| Problem Set 7 | HTML       |    25% |
-| Problem Set 8 | Javascript |    25% |
-| Quiz          |            |     0% |
+|               | Language | Weight |  
+| ------------- | -------- | -----: |  
+| Problem Set 5 | C        |    25% |  
+| Problem Set 6 | Python   |     0% |  
+| Problem Set 7 | Python   |    25% |  
+| Problem Set 8 | Python   |    25% |  
+| Problem Set 9 | HTML     |    25% |  
+| Quiz          |          |     0% |  
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
 However, what ultimately matters in this course is not so much where you end up
 relative to your classmates but where you end up relative to yourself in Week 0.
-
-The course is not graded on a curve. The course does not have pre-determined
-cutoffs for final grades. Those less comfortable and somewhere in between are
-not at a disadvantage vis-à-vis those more comfortable. Each student's final
-grade is individually determined at term's end after input from the teaching
-assistants. Remarkable effort and upward trending are always considered.
 
 
 ## Books
