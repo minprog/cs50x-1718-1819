@@ -26,7 +26,7 @@ Do you have a question in writing? Maybe need an exception? Feel free to send an
 
 ## Schedule
 
-Nine problem sets are assigned during the course. Each is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency.
+Ten problem sets are assigned during the course. For fulltime students, each is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency.
 
 A schedule of problem set deadlines and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned, or just a little bit later.
 
