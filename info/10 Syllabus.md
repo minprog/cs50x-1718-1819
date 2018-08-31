@@ -2,6 +2,8 @@
 
 ## Syllabus, Fall 2018
 
+WORK IN PROGRESS NOT FINAL
+
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
 
 ## Getting Started
@@ -30,43 +32,43 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 
 #### Programming 1
 
-|               | Hispeed    | Lospeed1   | Lospeed 2  |
-| ------------- | ---------- | ---------- | ---------- |
-| Problem Set 0 | Mon 3-Sep  |  |  |
-| Problem Set 1 | Fri 7-Sep  |  |  |
-| Problem Set 2 | Fri 14-Sep |  |  |
-| Problem Set 3 | Fri 21-Sep |  |  |
-| Problem Set 4 | Fri 28-Sep |  |  |
+|               | Hispeed    |  
+| ------------- | ---------- |  
+| Problem Set 0 | Mon 3-Sep  |  
+| Problem Set 1 | Fri 7-Sep  |  
+| Problem Set 2 | Fri 14-Sep |  
+| Problem Set 3 | Fri 21-Sep |  
+| Problem Set 4 | Fri 28-Sep |  
 
-|               | Hispeed    | Lospeed 1  |
-| ------------- | ---------- | ---------- |
-| Quiz          | Mon 24-sep |  |
-| Retake        |  |  |
+|               | Hispeed    |  
+| ------------- | ---------- |  
+| Quiz          | Mon 24-Sep |  
+| Retake        | Mon 22-Oct |  
 
-|               | Lospeed 2  |
-| ------------- | ---------- |
-| Quiz option 1 | |
-| Quiz option 2 | |
+|               | Lospeed    |  
+| ------------- | ---------- |  
+| Quiz option 1 | Mon 22-Oct |  
+| Quiz option 2 | Mon 14-Jan |  
 
 #### Programming 2
 
-|               | Hispeed    | Lospeed1   | Lospeed 2  |
-| ------------- | ---------- | ---------- | ---------- |
-| Problem Set 5 | Fri 5-Oct  |  |  |
-| Problem Set 6 | Wed 10-Oct |  |  |
-| Problem Set 7 | Wed 17-Oct |  |  |
-| Problem Set 8 | Fri 19-Oct |  |  |
-| Problem Set 9 | Fri 26-Oct |  |  |
+|               | Hispeed    |  
+| ------------- | ---------- |  
+| Problem Set 5 | Fri 5-Oct  |  
+| Problem Set 6 | Wed 10-Oct |  
+| Problem Set 7 | Wed 17-Oct |  
+| Problem Set 8 | Fri 19-Oct |  
+| Problem Set 9 | Fri 26-Oct |  
 
-|               | Hispeed    | Lospeed 1  |
-| ------------- | ---------- | ---------- |
-| Quiz          | Mon 22-Oct |  |
-| Retake        |  |  |
+|               | Hispeed    |  
+| ------------- | ---------- |  
+| Quiz          | Mon 22-Oct |  
+| Retake        | Mon 17-Dec |  
 
-|               | Lospeed 2  |
-| ------------- | ---------- |
-| Quiz option 1 | |
-| Quiz option 2 | |
+|               | Lospeed 2  |  
+| ------------- | ---------- |  
+| Quiz option 1 | Mon 22-Oct |  
+| Quiz option 2 | Mon 14-Jan |  
 
 ## Lectures
 
@@ -112,25 +114,25 @@ sets. The quiz has to be passed, but has no weight in the final grade.
 
 #### Programming 1
 
-|               | Language | Weight |
-| ------------- | -------- | -----: |
-| Problem Set 0 | Scratch  |     0% |
-| Problem Set 1 | C        |    25% |
-| Problem Set 2 | C        |    25% |
-| Problem Set 3 | C        |    25% |
-| Problem Set 4 | C        |    25% |
-| Quiz          |          |     0% |
+|          | Language | Weight |  
+| -------- | -------- | -----: |  
+| Module 0 | Scratch  |     0% |  
+| Module 1 | C        |    24% |  
+| Module 2 | C        |    24% |  
+| Module 3 | C        |    24% |  
+| Module 4 | C        |    28% |  
+| Quiz     |          |     0% |  
 
 #### Programming 2
 
-|               | Language | Weight |  
-| ------------- | -------- | -----: |  
-| Problem Set 5 | C        |    25% |  
-| Problem Set 6 | Python   |     0% |  
-| Problem Set 7 | Python   |    25% |  
-| Problem Set 8 | Python   |    25% |  
-| Problem Set 9 | HTML     |    25% |  
-| Quiz          |          |     0% |  
+|          | Language | Weight |  
+| -------- | -------- | -----: |  
+| Module 5 | C        |    25% |  
+| Module 6 | Python   |    15% |  
+| Module 7 | Python   |    25% |  
+| Module 8 | Python   |    15% |  
+| Module 9 | HTML     |    20% |  
+| Quiz     |          |     0% |  
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
