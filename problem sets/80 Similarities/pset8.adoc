@@ -8,7 +8,7 @@ layout: 2018/spring
 == tl;dr
 
 [start=0]
-. Watch link:/lectures/shorts-on-http-and-html/[these shorts on HTTP and HTML] and link:/lectures/lecture-9[Lecture 9].
+. Watch link:/lectures/lecture-8[Lecture 8].
 . Detect some similarities.
 . Submit your code.
 
