@@ -8,6 +8,7 @@ Introduction to the intellectual enterprises of computer science and the art of 
 
 ## Getting Started
 
+- Watch Lecture 0
 - Solve Problem Set 0 (available now)
 - Attend the lab to work on your problem set
 - Proceed to the next module
