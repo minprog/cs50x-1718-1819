@@ -8,10 +8,9 @@ Introduction to the intellectual enterprises of computer science and the art of 
 
 ## Getting Started
 
-- Join the introductory lecture
 - Solve Problem Set 0 (available now)
 - Attend the lab to work on your problem set
-- Go to your first section and watch the next lecture
+- Proceed to the next module
 - When in doubt, contact the course's staff at <help@mprog.nl>
 
 ## Expectations
