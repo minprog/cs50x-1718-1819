@@ -1,4 +1,4 @@
 name: scratch
 files:
-    include:
+    required:
         - scratch_file.sb2
