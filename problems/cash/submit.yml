@@ -1,0 +1,4 @@
+name: cash
+files:
+    everyone:
+        - cash.c
