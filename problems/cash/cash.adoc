@@ -14,7 +14,7 @@ Change owed: [underline]#0.41#
 4
 ----
 
-Although we would normally expect you to choose this version of the problem, aimed at "less comfortable" students, you may choose to do link:/problems/cash[cash], intended for "more comfortable" students, instead!
+Although we would normally expect you to choose this version of the problem, aimed at students who are "less comfortable" with programming, you may choose to do link:/problems/cash[cash], intended for "more comfortable" students, instead!
 
 == Background
 
