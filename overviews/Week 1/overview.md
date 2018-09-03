@@ -30,17 +30,17 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 3. Implement either of:
 
-    - [Mario](/problems/mario-less), less comfortable
+    - [Mario](/problems/mario-less), for those less comfortable
 
-    - [Mario](/problems/mario-more), more comfortable
+    - [Mario](/problems/mario-more), for those more comfortable
 
 3. Practice with book chapter 3 (variables)
 
 3. Implement either of:
 
-    - [Cash](/problems/cash), less comfortable
+    - [Cash](/problems/cash), for those less comfortable
 
-    - [Credit](/problems/credit), more comfortable
+    - [Credit](/problems/credit), for those more comfortable
 
 ## How to Submit
 
