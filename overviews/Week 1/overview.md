@@ -24,11 +24,15 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 2. Implement [Water](/problems/water)
 
+3. Practice with book chapters 1 (calculations) and 2 (logic)
+
 3. Implement either of:
 
     - [Mario](/problems/mario-less), less comfortable
 
     - [Mario](/problems/mario-more), more comfortable
+
+3. Practice with book chapter 3 (variables)
 
 3. Implement either of:
 
