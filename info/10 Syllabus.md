@@ -4,19 +4,20 @@
 
 WORK IN PROGRESS NOT FINAL
 
-Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
-
-## Getting Started
-
-- Watch Lecture 0
-- Solve Problem Set 0 (available now)
-- Attend the lab to work on your problem set
-- Proceed to the next module
-- When in doubt, contact the course's staff at <help@mprog.nl>
+Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python and SQL plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
 
 ## Expectations
 
-You are expected to watch all lectures, attend all sections, submit nine problem sets, and take a quiz. You are also expected to attend the lab sessions as required, and for each problem set, discuss your feedback with your tutor.
+You are expected to:
+
+- watch all lectures,
+- attend all sections,
+- submit all problems,
+- take all tests, and
+- take a quiz.
+
+You are also expected to attend the lab sessions as required, and for each problem set, discuss your feedback with your tutor or mentor.
+
 
 ## Asking Questions
 
@@ -24,21 +25,107 @@ The course's staff consists of your instructor and many teaching assistants. You
 
 Do you have a question in writing? Maybe need an exception? Feel free to send an e-mail to the course's heads via <help@mprog.nl>.
 
+
+## Grades
+
+All students must ordinarily submit all problems, take all tests and take the quiz in order to
+be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+
+The final grade for this course is primarily determined by averaging the scores for the problems, as per the below. The quiz has to be passed, but has no weight in the final grade.
+
+#### Programming 1
+
+| Problem        | Language | Weight |  
+| -------------- | -------- | -----: |  
+| Scratch        | Scratch  |     0% |  
+| Water          | C        |     0% |  
+| Mario          | C        |    12% |  
+| Cash/Credit    | C        |    12% |  
+| Caesar         | C        |    12% |  
+| Initials       | C        |     0% |  
+| Vigenere/crack | C        |    12% |  
+| Music          | C        |    12% |  
+| Find           | C        |    12% |  
+| Whodunit       | C        |     6% |  
+| Resize         | C        |    12% |  
+| Recover        | C        |    10% |  
+| 11 Tests       |          |     0% |  
+| 1 Quiz         |          |     0% |  
+
+#### Programming 2
+
+|               | Language | Weight |  
+| ------------- | -------- | -----: |  
+| Speller       | C        |    25% |  
+| Sentimental   | Python   |    15% |  
+| Game of Cards | Python   |     0% |  
+| Adventure     | Python   |    25% |  
+| Similarities  | Python   |    15% |  
+| Finance       | HTML     |    20% |  
+| X Tests       |          |     0% |  
+| Quiz          |          |     0% |  
+
+Know that this course draws quite the spectrum of students, including "those
+less comfortable", "those more comfortable", and those somewhere in between.
+However, what ultimately matters in this course is not so much where you end up
+relative to your classmates but where you end up relative to yourself in Week 0.
+
+
+## Lectures
+
+Lectures discuss theory that helps you solve your problems sets and prepare you for the final exam. Watch the lectures before or on your way to the lab sessions, in order to be able to spend your lab time programming and asking questions.
+
+
+## Sections
+
+For hispeed only, lectures are supplemented by weekly, 90-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your tutor and a group of classmates present, as well as to dive into hands-on activities.
+
+
+## Walkthroughs
+
+Embedded into problem sets are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs while starting with your problem sets.
+
+
+## Office Hours
+
+Office hours are opportunities for assistance with problem sets alongside the
+course's teaching assistants. Office hours ordinarily take place on weekdays.
+
+
+## Problems
+
+Problems are the core of the course, enabling you to practice your problem solving skills.
+
+Problems are evaluated primarily along axes of correctness, design, and style, with scores
+ordinarily determined by 3 × correctness + 2 × design + 1 × style.
+
+Although you must submit all problems, your lowest score among those
+problems on which you received perfect scores for the axis of correctness will be
+dropped when final grades are determined.
+
+Re-submission of problems is not possible until the following semester.
+
+
+## Exam
+
+The course has one 90-minute exam. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. You can only take the exam if you have submitted all problems up until the date of the exam. One retake is offered.
+
+
 ## Schedule
 
-Ten problem sets are assigned during the course. For fulltime students, each is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency.
+For fulltime students, each module is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency.
 
-A schedule of problem set deadlines and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned, or just a little bit later.
+A schedule of problem deadlines and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned, or just a little bit later.
 
 #### Programming 1
 
 |               | Hispeed    |  
 | ------------- | ---------- |  
-| Problem Set 0 | Mon 3-Sep  |  
-| Problem Set 1 | Fri 7-Sep  |  
-| Problem Set 2 | Fri 14-Sep |  
-| Problem Set 3 | Fri 21-Sep |  
-| Problem Set 4 | Fri 28-Sep |  
+| Module 0      | Mon 3-Sep  |  
+| Module 1      | Fri 7-Sep  |  
+| Module 2      | Fri 14-Sep |  
+| Module 3      | Fri 21-Sep |  
+| Module 4      | Fri 28-Sep |  
 
 |               | Hispeed    |  
 | ------------- | ---------- |  
@@ -54,11 +141,11 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 
 |               | Hispeed    |  
 | ------------- | ---------- |  
-| Problem Set 5 | Fri 5-Oct  |  
-| Problem Set 6 | Wed 10-Oct |  
-| Problem Set 7 | Wed 17-Oct |  
-| Problem Set 8 | Fri 19-Oct |  
-| Problem Set 9 | Fri 26-Oct |  
+| Module 5      | Fri 5-Oct  |  
+| Module 6      | Wed 10-Oct |  
+| Module 7      | Wed 17-Oct |  
+| Module 8      | Fri 19-Oct |  
+| Module 9      | Fri 26-Oct |  
 
 |               | Hispeed    |  
 | ------------- | ---------- |  
@@ -70,75 +157,6 @@ A schedule of problem set deadlines and quizzes, subject to change, appears belo
 | Quiz option 1 | Mon 22-Oct |  
 | Quiz option 2 | Mon 14-Jan |  
 
-## Lectures
-
-Lectures discuss theory that helps you solve your problems sets and prepare you for the final exam. Watch the lectures before or on your way to the lab sessions, in order to be able to spend your lab time programming and asking questions.
-
-## Sections
-
-Lectures are supplemented by weekly, 90-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your teaching fellow and a group of classmates present, as well as to dive into hands-on activities.
-
-## Walkthroughs
-
-Embedded into problem sets are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs while starting with your problem sets.
-
-## Office Hours
-
-Office hours are opportunities for assistance with problem sets alongside the
-course's teaching assistants. Office hours ordinarily take place on weekdays.
-
-## Problem Sets
-
-Problem sets are evaluated primarily along axes of scope,
-correctness, design, and style, with scores ordinarily determined by scope × (3
-× correctness + 2 × design + 1 × style).
-
-Although you must submit all problem sets, your lowest score among those
-problem sets on which you received perfect scores for the axis of scope will be
-dropped when final grades are determined.
-
-Re-submission of problem sets is not possible until the following semester.
-
-## Exam
-
-The course has one 90-minute exam. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. You can only take the exam if you have submitted all problem sets up until the date of the exam. One retake is offered.
-
-
-## Grades
-
-All students must ordinarily submit all problem sets, take all tests and take the quiz in order to
-be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
-
-The final grade for this course is primarily determined by averaging the scores for the problem
-sets. The quiz has to be passed, but has no weight in the final grade.
-
-#### Programming 1
-
-|          | Language | Weight |  
-| -------- | -------- | -----: |  
-| Module 0 | Scratch  |     0% |  
-| Module 1 | C        |    24% |  
-| Module 2 | C        |    24% |  
-| Module 3 | C        |    24% |  
-| Module 4 | C        |    28% |  
-| Quiz     |          |     0% |  
-
-#### Programming 2
-
-|          | Language | Weight |  
-| -------- | -------- | -----: |  
-| Module 5 | C        |    25% |  
-| Module 6 | Python   |    15% |  
-| Module 7 | Python   |    25% |  
-| Module 8 | Python   |    15% |  
-| Module 9 | HTML     |    20% |  
-| Quiz     |          |     0% |  
-
-Know that this course draws quite the spectrum of students, including "those
-less comfortable", "those more comfortable", and those somewhere in between.
-However, what ultimately matters in this course is not so much where you end up
-relative to your classmates but where you end up relative to yourself in Week 0.
-
 
 ## Books
 
@@ -146,49 +164,49 @@ No books are required for this course. If one seeks additional reference, here a
 
 *For Those Less Comfortable*
 
-C Programming Absolute Beginner's Guide, Third Edition
-Greg Perry, Dean Miller
-Pearson Education, 2014
+C Programming Absolute Beginner's Guide, Third Edition  
+Greg Perry, Dean Miller  
+Pearson Education, 2014  
 ISBN 9780789751980
 
 *For Those More Comfortable*
 
-Programming in C, Fourth Edition
-Stephen G. Kochan
-Pearson Education, 2015
+Programming in C, Fourth Edition  
+Stephen G. Kochan  
+Pearson Education, 2015  
 ISBN 9780321776419
 
 The book below is recommended for those interested in understanding how their
 own computers work for personal edification.
 
-How Computers Work, Tenth Edition
-Ron White
-Que Publishing, 2014
+How Computers Work, Tenth Edition  
+Ron White  
+Que Publishing, 2014  
 ISBN 9780789749840
 
 This last book below is recommended for aspiring hackers, those interested in
 programming tricks and low-level optimization of code for applications beyond
 the scope of this course.
 
-Hacker's Delight, Second Edition
-Henry S. Warren Jr.
-Pearson Education, 2013
+Hacker's Delight, Second Edition  
+Henry S. Warren Jr.  
+Pearson Education, 2013  
 ISBN 9780321842688
 
 
 ## Re-taking the course
 
-Resubmission of problem sets is not possible when you complete the course successfully. Should you fail the course, the following rules apply when submitting any problem set for a second time:
+Resubmission of problem sets is not possible after you complete the course successfully. Should you fail the course, the following rules apply when submitting any problem set for a second time:
 
 - Resubmitting problem sets is not possible until the next semester.
 
-- Submissions are required to be complete and bug-free, so as to not burden the staff with grading (i.e., scope and correctness have to be perfect).
+- Re-submissions are required to be complete and bug-free, so as to not burden the staff with grading (i.e., correctness has to be perfect).
 
-- Only scope and correctness will be regraded. Scores for design and style will not be changed even when you improve said design and style of your program (even though we do encourage this).
+- Only correctness will be re-graded. Scores for design and style will not be changed even when you improve said design and style of your program (even though we do encourage this!).
 
-- Any submissions must be done before retaking the exam.
+- Any re-submissions must be done before retaking the exam.
 
-- Problem sets cannot be submitted or graded a third time.
+- Problems cannot be submitted or graded a third time.
 
 
 ## Doing your own work {#academic_honesty}
