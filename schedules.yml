@@ -63,7 +63,7 @@ Hispeed:
         'Lecture 1': '/lectures/lecture-1'
         'Training: IDE': '/training/ide'
         'Problem: Water': '/problems/water'
-        'Problem: Mario': '/problems/water'
+        'Problem: Mario': '/problems/mario'
         'Problem: Cash': '/problems/cash'
     Week 2:
         'Lecture 2': '/lectures/lecture-2'
