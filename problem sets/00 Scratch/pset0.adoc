@@ -74,8 +74,8 @@ Oh, and if you'd like to exhibit your project in Fall 2017 and Spring 2018's stu
 
 == How to Submit
 
-In the form below, paste your project's URL and press Submit.
+From the Scratch editor, download your project as per "Download to my computer" in the **File** menu. Then, in the form below, upload the downloaded file and press Submit.
 
-If you have any questions or issues with the above steps, reach out to the TA's or Heads!
+If you have any questions or issues with the above steps, reach out to the TAs or Heads!
 
 This was Problem Set 0.
