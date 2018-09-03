@@ -67,7 +67,7 @@ Use these items to pass otherwise unpassable blockades, such as the "strong stee
 
 [source,subs="macros"]
 ----
-$ wget https://wouter.mprog.nl/course/problems/adventure/adventure.zip
+$ wget https://cs50x.mprog.nl/course/problems/adventure/adventure.zip
 $ unzip adventure.zip
 $ rm adventure.zip
 $ cd adventure

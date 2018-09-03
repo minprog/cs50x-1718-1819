@@ -2,6 +2,8 @@
 
 ## Syllabus, Fall 2018
 
+WORK IN PROGRESS NOT FINAL
+
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
 
 ## Getting Started
@@ -24,49 +26,49 @@ Do you have a question in writing? Maybe need an exception? Feel free to send an
 
 ## Schedule
 
-Nine problem sets are assigned during the course. Each is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency.
+Ten problem sets are assigned during the course. For fulltime students, each is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency.
 
 A schedule of problem set deadlines and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned, or just a little bit later.
 
 #### Programming 1
 
-|               | Hispeed    | Lospeed1   | Lospeed 2  |
-| ------------- | ---------- | ---------- | ---------- |
-| Problem Set 0 | Mon 3-Sep  |  |  |
-| Problem Set 1 | Fri 7-Sep  |  |  |
-| Problem Set 2 | Fri 14-Sep |  |  |
-| Problem Set 3 | Fri 21-Sep |  |  |
-| Problem Set 4 | Fri 28-Sep |  |  |
+|               | Hispeed    |  
+| ------------- | ---------- |  
+| Problem Set 0 | Mon 3-Sep  |  
+| Problem Set 1 | Fri 7-Sep  |  
+| Problem Set 2 | Fri 14-Sep |  
+| Problem Set 3 | Fri 21-Sep |  
+| Problem Set 4 | Fri 28-Sep |  
 
-|               | Hispeed    | Lospeed 1  |
-| ------------- | ---------- | ---------- |
-| Quiz          | Mon 24-sep |  |
-| Retake        |  |  |
+|               | Hispeed    |  
+| ------------- | ---------- |  
+| Quiz          | Mon 24-Sep |  
+| Retake        | Mon 22-Oct |  
 
-|               | Lospeed 2  |
-| ------------- | ---------- |
-| Quiz option 1 | |
-| Quiz option 2 | |
+|               | Lospeed    |  
+| ------------- | ---------- |  
+| Quiz option 1 | Mon 22-Oct |  
+| Quiz option 2 | Mon 14-Jan |  
 
 #### Programming 2
 
-|               | Hispeed    | Lospeed1   | Lospeed 2  |
-| ------------- | ---------- | ---------- | ---------- |
-| Problem Set 5 | Fri 5-Oct  |  |  |
-| Problem Set 6 | Wed 10-Oct |  |  |
-| Problem Set 7 | Wed 17-Oct |  |  |
-| Problem Set 8 | Fri 19-Oct |  |  |
-| Problem Set 9 | Fri 26-Oct |  |  |
+|               | Hispeed    |  
+| ------------- | ---------- |  
+| Problem Set 5 | Fri 5-Oct  |  
+| Problem Set 6 | Wed 10-Oct |  
+| Problem Set 7 | Wed 17-Oct |  
+| Problem Set 8 | Fri 19-Oct |  
+| Problem Set 9 | Fri 26-Oct |  
 
-|               | Hispeed    | Lospeed 1  |
-| ------------- | ---------- | ---------- |
-| Quiz          | Mon 22-Oct |  |
-| Retake        |  |  |
+|               | Hispeed    |  
+| ------------- | ---------- |  
+| Quiz          | Mon 22-Oct |  
+| Retake        | Mon 17-Dec |  
 
-|               | Lospeed 2  |
-| ------------- | ---------- |
-| Quiz option 1 | |
-| Quiz option 2 | |
+|               | Lospeed 2  |  
+| ------------- | ---------- |  
+| Quiz option 1 | Mon 22-Oct |  
+| Quiz option 2 | Mon 14-Jan |  
 
 ## Lectures
 
@@ -104,43 +106,38 @@ The course has one 90-minute exam. It is "closed-book," meaning that you are all
 
 ## Grades
 
-All students must ordinarily submit all problem sets and take the quiz in
-order to be eligible for a satisfactory grade unless granted an exception in
-writing by the course's heads.
+All students must ordinarily submit all problem sets, take all tests and take the quiz in order to
+be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-The final grade for this course is primarily determined by averaging the scores for the problem sets. The quiz has to be passed, but has no weight in the final grade.
+The final grade for this course is primarily determined by averaging the scores for the problem
+sets. The quiz has to be passed, but has no weight in the final grade.
 
 #### Programming 1
 
-|               | Language | Weight |
-| ------------- | -------- | -----: |
-| Problem Set 0 | Scratch  |     8% |
-| Problem Set 1 | C        |    23% |
-| Problem Set 2 | C        |    23% |
-| Problem Set 3 | C        |    23% |
-| Problem Set 4 | C        |    23% |
-| Quiz          |          |     0% |
+|          | Language | Weight |  
+| -------- | -------- | -----: |  
+| Module 0 | Scratch  |     0% |  
+| Module 1 | C        |    24% |  
+| Module 2 | C        |    24% |  
+| Module 3 | C        |    24% |  
+| Module 4 | C        |    28% |  
+| Quiz     |          |     0% |  
 
 #### Programming 2
 
-|               | Language   | Weight |
-| ------------- | ---------- | -----: |
-| Problem Set 5 | C          |    25% |
-| Problem Set 6 | Python     |    25% |
-| Problem Set 7 | HTML       |    25% |
-| Problem Set 8 | Javascript |    25% |
-| Quiz          |            |     0% |
+|          | Language | Weight |  
+| -------- | -------- | -----: |  
+| Module 5 | C        |    25% |  
+| Module 6 | Python   |    15% |  
+| Module 7 | Python   |    25% |  
+| Module 8 | Python   |    15% |  
+| Module 9 | HTML     |    20% |  
+| Quiz     |          |     0% |  
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
 However, what ultimately matters in this course is not so much where you end up
 relative to your classmates but where you end up relative to yourself in Week 0.
-
-The course is not graded on a curve. The course does not have pre-determined
-cutoffs for final grades. Those less comfortable and somewhere in between are
-not at a disadvantage vis-à-vis those more comfortable. Each student's final
-grade is individually determined at term's end after input from the teaching
-assistants. Remarkable effort and upward trending are always considered.
 
 
 ## Books
