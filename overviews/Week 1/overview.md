@@ -1,6 +1,6 @@
 # Week 1 overview
 
-In this module, you'll learn about the C programming language. It's a small language that has been used to make small and large programs alike. You will start with the small ones!
+In this module, you'll learn about the C programming language. It's a great language that has been used to make small and large programs alike. You will start with the small ones!
 
 ## Help
 
