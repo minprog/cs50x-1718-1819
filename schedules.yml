@@ -59,14 +59,11 @@ Hispeed:
         'Lecture 0': '/lectures/lecture-0'
         'Problem set 0: Scratch': '/psets/scratch'
     Week 1:
+        Overview: /overviews/week-1
         'Lecture 1': '/lectures/lecture-1'
-        'Training: IDE': '/try/ide'
-        'Practice: Calculations': '/practice/calculations'
+        'Training: IDE': '/training/ide'
         'Problem: Water': '/problems/water'
-        'Practice: Logic': '/practice/logic'
         'Problem: Mario': '/problems/water'
-        'Practice: Updates': '/practice/updates'
-        'Practice: While': '/practice/while'
         'Problem: Cash': '/problems/cash'
     Week 2:
         'Lecture 2': '/lectures/lecture-2'
