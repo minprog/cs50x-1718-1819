@@ -21,7 +21,7 @@ You are also expected to attend the lab sessions as required, and for each probl
 
 ## Asking Questions
 
-The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff at the lab to get help with your problem sets or to ask questions about lectures.
+The course's staff consists of your instructor and many teaching assistants. You are encouraged to speak to any of the staff at the lab to get help with problems or to ask questions about lectures.
 
 Do you have a question in writing? Maybe need an exception? Feel free to send an e-mail to the course's heads via <help@mprog.nl>.
 
