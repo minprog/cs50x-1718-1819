@@ -1,5 +1,4 @@
 name: scratch
-url: true
 files:
     include:
         - scratch_file.sb2
