@@ -93,7 +93,7 @@ pass:[#####]
 
 [source]
 ----
-check50 cs50/2018/spring/mario/less
+check50 --local cs50/2018/spring/mario/less
 ----
 
 === Style

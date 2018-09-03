@@ -96,7 +96,7 @@ INVALID
 
 [source]
 ----
-check50 cs50/2018/spring/credit
+check50 --local cs50/2018/spring/credit
 ----
 
 === Style
