@@ -26,7 +26,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 3. Practice with book chapters 1 (calculations) and 2 (logic)
 
-    Note: you will get prints of these chapters in section, no need to get started beforehand! If you don't have section yet, you can start with Mario!
+    Note: you will get prints of these chapters in section, no need to get started beforehand! If you don't have section yet, you can skip this step and start with Mario! (After completing the prior steps of course).
 
 3. Implement either of:
 
