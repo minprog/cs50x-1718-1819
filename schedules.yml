@@ -3,7 +3,7 @@ Lospeed:
         'Lecture 0': '/lectures/lecture-0'
         'Problem set 0: Scratch': '/psets/scratch'
     Module 1:
-        Overview: /overviews/week-1
+        Overview: /overviews/module-1
         'Lecture 1': '/lectures/lecture-1'
         'Training: IDE': '/training/ide'
         'Problem: Water': '/problems/water'
@@ -56,7 +56,7 @@ Hispeed:
         'Lecture 0': '/lectures/lecture-0'
         'Problem set 0: Scratch': '/psets/scratch'
     Week 1:
-        Overview: /overviews/week-1
+        Overview: /overviews/module-1
         'Lecture 1': '/lectures/lecture-1'
         'Training: IDE': '/training/ide'
         'Problem: Water': '/problems/water'
