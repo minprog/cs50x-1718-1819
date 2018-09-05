@@ -1,4 +1,4 @@
-name: cash
+name: credit
 files:
     everyone:
         - credit.c
