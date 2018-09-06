@@ -1,6 +1,6 @@
 # Module 2: Crypto
 
-In this module, you'll learn about the cryptographic techniques and about strings in C. Strings will prove to be an important part of almost any program, indeed.
+In this module, you'll learn about cryptographic techniques and about strings in C. Strings will prove to be an important part of almost any program, indeed.
 
 ## Help
 
