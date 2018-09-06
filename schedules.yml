@@ -1,7 +1,7 @@
 Lospeed:
     Module 0:
         'Lecture 0': '/lectures/lecture-0'
-        'Problem set 0: Scratch': '/psets/scratch'
+        'Problem: Scratch': '/problems/scratch'
     Module 1:
         Overview: /overviews/module-1
         'Lecture 1': '/lectures/lecture-1'
@@ -10,19 +10,14 @@ Lospeed:
         'Problem: Mario': '/problems/mario-less'
         'Problem: Cash': '/problems/cash'
     Module 2:
+        Overview: /overviews/module-2
         'Lecture 2': '/lectures/lecture-2'
-        'Practice: Conditionals': '/practice/conditionals'
-        'Practice: Strings': '/practice/strings'
-        'Practice: For': '/practice/for'
-        'Practice: Loop patterns': '/practice/loop-patterns'
         'Problem: Initials': '/problems/initials'
         'Problem: Caesar': '/problems/caesar'
         'Problem: Vigenere': '/problems/vigenere'
     Module 3:
+        Overview: /overviews/module-3
         'Lecture 3': '/lectures/lecture-3'
-        'Practice: Functions': '/practice/functions'
-        'Practice: Lists': '/practice/lists'
-        'Practice: List Patterns': '/practice/list-patterns'
         'Problem: Music': '/problems/music'
         'Problem: Find': '/problems/find'
     Module 4:
@@ -54,7 +49,7 @@ Lospeed:
 Hispeed:
     Day 0:
         'Lecture 0': '/lectures/lecture-0'
-        'Problem set 0: Scratch': '/psets/scratch'
+        'Problem: Scratch': '/problems/scratch'
     Week 1:
         Overview: /overviews/module-1
         'Lecture 1': '/lectures/lecture-1'
@@ -63,6 +58,7 @@ Hispeed:
         'Problem: Mario': '/problems/mario-less'
         'Problem: Cash': '/problems/cash'
     Week 2:
+        Overview: /overviews/module-2
         'Lecture 2': '/lectures/lecture-2'
         'Practice: Conditionals': '/practice/conditionals'
         'Practice: Strings': '/practice/strings'

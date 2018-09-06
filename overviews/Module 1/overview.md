@@ -1,4 +1,4 @@
-# Module 1 overview
+# Module 1: C
 
 In this module, you'll learn about the C programming language. It's a great language that has been used to make small and large programs alike. You will start with the small ones!
 
@@ -8,7 +8,7 @@ For information on (or help with) this week:
 
 1. Watch the walkthroughs included in all problems.
 
-2. Attend your tutor's section.
+2. Attend your tutor's section (if you're hi-speed).
 
 3. Ask questions during office hours using the "Ask" tool on this website.
 
@@ -20,23 +20,25 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## What to Do
 
-1. Get started using the [IDE](/training/ide)
+1. Watch [Lecture 1](/lectures/lecture-1)
 
-2. Implement [Water](/problems/water)
+2. Get started using the [IDE](/training/ide)
 
-3. Practice with book chapters 1 (calculations) and 2 (logic)
+3. Practice with book chapter 1 (calculations) and take the test
 
-    Note: you will get prints of these chapters in section, no need to get started beforehand! If you don't have section yet, you can skip this step and start with Mario! (After completing the prior steps of course).
+4. Implement [Water](/problems/water)
 
-3. Implement either of:
+5. Practice with book chapter 2 (logic) and take the test
+
+6. Implement either of:
 
     - [Mario](/problems/mario-less), for those less comfortable
 
     - [Mario](/problems/mario-more), for those more comfortable
 
-3. Practice with book chapter 3 (variables)
+7. Practice with book chapter 3 (variables) and take the test
 
-3. Implement either of:
+8. Implement either of:
 
     - [Cash](/problems/cash), for those less comfortable
 

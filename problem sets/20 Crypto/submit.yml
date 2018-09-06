@@ -1,6 +1,0 @@
-name: crypto
-files:
-    choose two:
-        - caesar.c
-        - vigenere.c
-        - crack.c
