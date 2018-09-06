@@ -1,4 +1,4 @@
 name: credit
 files:
-    everyone:
+    required:
         - credit.c

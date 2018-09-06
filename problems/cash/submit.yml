@@ -1,4 +1,4 @@
 name: cash
 files:
-    everyone:
+    required:
         - cash.c

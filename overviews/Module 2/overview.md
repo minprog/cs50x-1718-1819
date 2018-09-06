@@ -38,7 +38,11 @@ Per [Lecture 2](/lectures/lecture-2):
 
 3. Practice with book chapter 4 (while loops) and take the test
 
-5. Implement [Initials](/problems/initials)
+5. Implement either of:
+
+    - [Initials](/problems/initials-less), for those less comfortable
+
+    - [Initials](/problems/initials-more), for those more comfortable
 
 6. Practice with:
 
