@@ -12,7 +12,7 @@ Lospeed:
     Module 2:
         Overview: /overviews/module-2
         'Lecture 2': '/lectures/lecture-2'
-        'Problem: Initials': '/problems/initials'
+        'Problem: Initials': '/problems/initials-less'
         'Problem: Caesar': '/problems/caesar'
         'Problem: Vigenere': '/problems/vigenere'
     Module 3:
@@ -60,11 +60,7 @@ Hispeed:
     Week 2:
         Overview: /overviews/module-2
         'Lecture 2': '/lectures/lecture-2'
-        'Practice: Conditionals': '/practice/conditionals'
-        'Practice: Strings': '/practice/strings'
-        'Practice: For': '/practice/for'
-        'Practice: Loop patterns': '/practice/loop-patterns'
-        'Problem: Initials': '/problems/initials'
+        'Problem: Initials': '/problems/initials-less'
         'Problem: Caesar': '/problems/caesar'
         'Problem: Vigenere': '/problems/vigenere'
     Week 3:
