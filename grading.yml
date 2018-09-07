@@ -13,14 +13,45 @@ grades:
             correctness: (check_score * 5).round
         calculation: (correctness / 5.0 * 9 + 1).round(1)
         hide_calculated: true
-    c:
+    water:
         type: float
         subgrades:
-            scope: integer
             correctness: integer
             design: integer
             style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
+        hide_calculated: true
+    mario:
+        type: float
+        subgrades:
+            correctness: integer
+            design: integer
+            style: integer
+        calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
+        hide_calculated: true
+    mario_more:
+        type: float
+        subgrades:
+            correctness: integer
+            design: integer
+            style: integer
+        calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
+        hide_calculated: true
+    cash:
+        type: float
+        subgrades:
+            correctness: integer
+            design: integer
+            style: integer
+        calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
+        hide_calculated: true
+    credit:
+        type: float
+        subgrades:
+            correctness: integer
+            design: integer
+            style: integer
+        calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
         hide_calculated: true
     crypto:
         type: float
