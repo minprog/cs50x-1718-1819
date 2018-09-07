@@ -6,12 +6,12 @@ grades:
     book3:
         type: pass
     scratch:
-        type: float
+        type: pass
         subgrades:
             correctness: integer
         automatic:
             correctness: (check_score * 5).round
-        calculation: (correctness / 5.0 * 9 + 1).round(1)
+        calculation: -(correctness/5)
         hide_calculated: true
     water:
         type: pass
@@ -19,7 +19,7 @@ grades:
             correctness: integer
         automatic:
             correctness: (check_score * 5).round
-        calculation: correctness == 5
+        calculation: -(correctness/5)
         hide_calculated: true
     mario:
         type: float
