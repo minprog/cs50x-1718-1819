@@ -14,14 +14,12 @@ grades:
         calculation: (correctness / 5.0 * 9 + 1).round(1)
         hide_calculated: true
     water:
-        type: float
+        type: pass
         subgrades:
             correctness: integer
-            design: integer
-            style: integer
         automatic:
             correctness: (check_score * 5).round
-        calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
+        calculation: correctness == 5
         hide_calculated: true
     mario:
         type: float
