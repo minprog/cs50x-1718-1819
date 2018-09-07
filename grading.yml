@@ -1,4 +1,10 @@
 grades:
+    book1:
+        type: pass
+    book2:
+        type: pass
+    book3:
+        type: pass
     scratch:
         type: float
         subgrades:
