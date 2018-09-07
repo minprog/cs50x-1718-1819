@@ -29,6 +29,7 @@ grades:
             style: integer
         automatic:
             correctness: (check_score * 5).round
+            style: style_score
         calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
         hide_calculated: true
     mario_more:
