@@ -32,7 +32,7 @@ Unencrypted text is generally called _plaintext_. Encrypted text is generally ca
 
 More generally, Caesar's algorithm (i.e., cipher) encrypts messages by "rotating" each letter by _k_ positions. More formally, if _p_ is some plaintext (i.e., an unencrypted message), _p~i~_ is the _i^th^_ character in _p_, and _k_ is a secret key (i.e., a non-negative integer), then each letter, _c~i~_, in the ciphertext, _c_, is computed as
 
-$$c_i = (p_i + k) \bmod 26$$
+\$\$c_i = (p_i + k) \bmod 26\$\$
 
 wherein $\bmod 26$ here means "remainder when dividing by 26." This formula perhaps makes the cipher seem more complicated than it is, but it's really just a concise way of expressing the algorithm precisely.
 
