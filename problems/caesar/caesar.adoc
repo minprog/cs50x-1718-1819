@@ -34,7 +34,7 @@ More generally, Caesar's algorithm (i.e., cipher) encrypts messages by "rotating
 
 \$\$c_i = (p_i + k) \bmod 26\$\$
 
-wherein $\bmod 26$ here means "remainder when dividing by 26." This formula perhaps makes the cipher seem more complicated than it is, but it's really just a concise way of expressing the algorithm precisely.
+wherein \$\bmod 26\$ here means "remainder when dividing by 26." This formula perhaps makes the cipher seem more complicated than it is, but it's really just a concise way of expressing the algorithm precisely.
 
 ////
 Up for some math that can be translated to code more readily than intuition alone? For the sake of discussion, think of A as 0, B as 1, ..., H as 7, I as 8, ..., and Z as 25. Suppose that Caesar just wants to say HI to someone confidentially using, this time, a key, _k_, of 3. And so his plaintext, _p_, is HI, in which case his plaintext's first character, _p~0~_, is H (aka 7), and his plaintext's second character, _p~1~_, is I (aka 8). His ciphertext's first character, _c~0~_, is thus K, since:
