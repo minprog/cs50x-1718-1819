@@ -74,7 +74,9 @@ Oh, and if you'd like to exhibit your project in Fall 2017 and Spring 2018's stu
 
 == How to Submit
 
-From the Scratch editor, download your project as per "Download to my computer" in the **File** menu. Then, in the form below, upload the downloaded file and press Submit.
+Once finished with your project, click **See project page** in Scratch's top-right corner. Ensure your project has a title (in Scratch's top-left corner), some instructions (in Scratch's top-right corner), and some notes and/or credits (in Scratch's bottom-right corner). Then click **Share** in Scratch's top-right corner so that others can see your project. Finally, take note of the URL in your browser's address bar. That's your project's URL on MIT's website, and you'll need to paste that URL in the form below.
+
+Also, from the Scratch editor, download your project as per "Download to my computer" in the **File** menu. Then, in the form below, upload the downloaded file and press Submit.
 
 If you have any questions or issues with the above steps, reach out to the TAs or Heads!
 
