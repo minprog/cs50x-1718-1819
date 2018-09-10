@@ -129,7 +129,7 @@ Usage: ./caesar k
 
 [source]
 ----
-check50 cs50/2018/spring/caesar
+check50 --local cs50/2018/spring/caesar
 ----
 
 === Style
