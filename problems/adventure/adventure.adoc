@@ -458,7 +458,7 @@ To test your implementation of `adventure` via the command line, execute `advent
 === `check50`
 
 ```
-check50 cs50/2018/spring/similarities/less
+check50 --local cs50/2018/spring/similarities/less
 ```
 
 === `style50`

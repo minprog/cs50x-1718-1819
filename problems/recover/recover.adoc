@@ -88,7 +88,7 @@ $ [underline]#echo $?#
 
 [source]
 ----
-check50 cs50/2018/spring/recover
+check50 --local cs50/2018/spring/recover
 ----
 
 == Staff's Solution
