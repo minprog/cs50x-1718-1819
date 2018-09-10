@@ -202,7 +202,7 @@ Be sure to test your web app manually too, as by
 
 [source]
 ----
-check50 cs50/2018/spring/finance
+check50 --local cs50/2018/spring/finance
 ----
 
 === Style

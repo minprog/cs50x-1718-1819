@@ -104,7 +104,7 @@ Better yet, if you'd like to compare your outfile's headers against those from t
 
 [source]
 ----
-check50 cs50/2018/spring/resize/less
+check50 --local cs50/2018/spring/resize/less
 ----
 
 == Staff's Solution
