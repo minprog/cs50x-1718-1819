@@ -10,7 +10,7 @@ grades:
         subgrades:
             correctness: integer
         automatic:
-            correctness: (check_score * 5).round
+            correctness: (check_score * 5).floor
         calculation: -(correctness/5)
         hide_calculated: true
     water:
@@ -18,7 +18,7 @@ grades:
         subgrades:
             correctness: integer
         automatic:
-            correctness: (check_score * 5).round
+            correctness: (check_score * 5).floor
         calculation: -(correctness/5)
         hide_calculated: true
     mario:
@@ -28,7 +28,7 @@ grades:
             design: integer
             style: integer
         automatic:
-            correctness: (check_score * 5).round
+            correctness: (check_score * 5).floor
             style: style_score
         calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
@@ -39,7 +39,7 @@ grades:
             design: integer
             style: integer
         automatic:
-            correctness: (check_score * 5).round
+            correctness: (check_score * 5).floor
             style: style_score
         calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
@@ -50,7 +50,7 @@ grades:
             design: integer
             style: integer
         automatic:
-            correctness: (check_score * 5).round
+            correctness: (check_score * 5).floor
             style: style_score
         calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
@@ -61,7 +61,7 @@ grades:
             design: integer
             style: integer
         automatic:
-            correctness: (check_score * 5).round
+            correctness: (check_score * 5).floor
             style: style_score
         calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
