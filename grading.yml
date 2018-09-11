@@ -30,7 +30,7 @@ grades:
         automatic:
             correctness: (check_score * 5).round
             style: style_score
-        calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     mario_more:
         type: float
@@ -41,7 +41,7 @@ grades:
         automatic:
             correctness: (check_score * 5).round
             style: style_score
-        calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     cash:
         type: float
@@ -52,7 +52,7 @@ grades:
         automatic:
             correctness: (check_score * 5).round
             style: style_score
-        calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     credit:
         type: float
@@ -63,7 +63,7 @@ grades:
         automatic:
             correctness: (check_score * 5).round
             style: style_score
-        calculation: ((3 * correctness + 2 * design + 1 * style) / 30.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     crypto:
         type: float
@@ -72,7 +72,7 @@ grades:
             correctness: integer
             design: integer
             style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     fifteen:
         type: float
@@ -81,7 +81,7 @@ grades:
             correctness: integer
             design: integer
             style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     forensics:
         type: float
@@ -90,7 +90,7 @@ grades:
             correctness: integer
             design: integer
             style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     quiz1:
         type: pass
@@ -109,7 +109,7 @@ grades:
             correctness: integer
             design: integer
             style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     sentimental:
         type: float
@@ -118,7 +118,7 @@ grades:
             correctness: integer
             design: integer
             style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     finance:
         type: float
@@ -127,7 +127,7 @@ grades:
             correctness: integer
             design: integer
             style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     mashup:
         type: float
@@ -136,7 +136,7 @@ grades:
             correctness: integer
             design: integer
             style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
         hide_calculated: true
     quiz2:
         type: pass
