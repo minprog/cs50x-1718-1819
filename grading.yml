@@ -11,7 +11,7 @@ grades:
             correctness: integer
         automatic:
             correctness: (check_score * 5).floor
-        calculation: -(correctness/5)
+        calculation: -((correctness+1)/5)
         hide_calculated: true
     water:
         type: pass
