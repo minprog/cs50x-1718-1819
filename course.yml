@@ -19,3 +19,7 @@ feedback_templates:
         explanation: "Will ask student to re-submit, if necessary, at the right problem. Use when submitted file belongs to another problem."
         feedback: "Je inzending bevat een bestand dat hoort bij een andere opdracht. Deze versie wordt niet nagekeken. Mocht je het bestand nog niet bij de juiste opdracht hebben ingestuurd, neem dan snel contact op!"
         grade: 0
+    scratch_link:
+        explanation: "Will ask student to re-submit because of problem with link."
+        feedback: "De link die je hebt ingestuurd voor Scratch is voor ons niet zichtbaar. Check of je je programma hebt geshared volgens de instructies onderaan de opdracht. Je kunt nog een keer submitten als het gecorrigeerd is; je moet dan zowel de link als het .sb2-bestand opnieuw insturen. Mocht het niet lukken, vraag een assistent!"
+        grade: 0
