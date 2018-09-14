@@ -24,6 +24,8 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 2. Get started using the [IDE](/training/ide)
 
+2. Write your first program: [Hello](/problems/hello)
+
 3. Practice with book chapter 1 (calculations) and take the test
 
 4. Implement [Water](/problems/water)

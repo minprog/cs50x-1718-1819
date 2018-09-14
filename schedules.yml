@@ -6,6 +6,7 @@ Lospeed:
         Overview: /overviews/module-1
         'Lecture 1': '/lectures/lecture-1'
         'Training: IDE': '/training/ide'
+        'Problem: Hello': '/problems/hello'
         'Problem: Water': '/problems/water'
         'Problem: Mario': '/problems/mario-less'
         'Problem: Cash': '/problems/cash'
