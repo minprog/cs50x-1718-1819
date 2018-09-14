@@ -5,6 +5,14 @@ grades:
         type: pass
     book3:
         type: pass
+    hello:
+        type: pass
+        subgrades:
+            correctness: integer
+        automatic:
+            correctness: (check_score * 5).floor
+        calculation: -(correctness/5)
+        hide_calculated: true
     scratch:
         type: pass
         subgrades:
