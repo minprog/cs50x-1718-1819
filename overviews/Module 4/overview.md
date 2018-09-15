@@ -44,7 +44,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
     - [Resize](/problems/resize-more), for those more comfortable
 
-5. Implement [whodunit](/problems/whodunit)
+5. Implement [Recover](/problems/recover)
 
 ## How to Submit
 
