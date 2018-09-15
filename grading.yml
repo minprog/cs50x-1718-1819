@@ -21,7 +21,7 @@ templates:
 
 grades:
     scratch:
-        <<: *automatic
+        <<: *fullyauto
         calculation: -((correctness+1)/5)
     hello: *fullyauto
     water: *fullyauto
