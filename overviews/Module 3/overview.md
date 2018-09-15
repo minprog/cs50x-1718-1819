@@ -44,11 +44,16 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 1. Watch [Lecture 3](/lectures/lecture-3)
 
-2. Implement [Music](/problems/music)
+2. Practice with book chapter 6 (for loops), 7 (strings) and take the test
 
-    - [Initials](/problems/initials-more), for those more comfortable
+3. Implement [Music](/problems/music)
 
-<!-- 3. Practice with book chapter 4 (while loops) and take the test -->
+4. Implement either of:
+
+    - [Find](/problems/find-less), for those less comfortable
+
+    - [Find](/problems/find-more), for those more comfortable
+
 
 ## How to Submit
 

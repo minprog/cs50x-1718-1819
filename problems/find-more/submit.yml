@@ -1,0 +1,4 @@
+name: find_more
+files:
+    required:
+        - helpers.c
