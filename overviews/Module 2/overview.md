@@ -36,8 +36,6 @@ Per [Lecture 2](/lectures/lecture-2):
 
 2. Learn how to update the [IDE](/training/updating)
 
-3. Practice with book chapter 4 (while loops) and take the test
-
 5. Implement either of:
 
     - [Initials](/problems/initials-less), for those less comfortable
@@ -46,11 +44,13 @@ Per [Lecture 2](/lectures/lecture-2):
 
 6. Practice with:
 
-    - book chapter 5 (conditionals) and take the test
+    - book chapter 4 (conditionals) and take the test
 
-    - book chapter 6 (strings) and take the test
+    - book chapter 5 (while loops) and take the test
 
-    - book chapter 7 (for-loops) and take the test
+    - book chapter 6 (for-loops) and take the test
+
+    - book chapter 7 (strings) and take the test
 
 7. Implement:
 
