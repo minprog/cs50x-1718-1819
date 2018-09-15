@@ -1,6 +1,6 @@
 # Module 4: Forensics
 
-In this module, you'll learn about, ahem, musical notation, and about algorithms that you might implement in C. Searching and sorting algorithms will be part of many programs that you write!
+In this module, you'll learn about all sorts of techniques to do with forensic research. See if you can recover those photos from that pesky old memory card!
 
 ## Help
 
