@@ -25,7 +25,7 @@ Lospeed:
         Overview: /overviews/module-4
         'Lecture 4': '/lectures/lecture-4'
         'Problem: Whodunit': '/problems/whodunit'
-        'Problem: Resize': '/problems/resize'
+        'Problem: Resize': '/problems/resize-less'
         'Problem: Recover': '/problems/recover'
     Module 5:
         'Quiz 0 (not available yet)': '/quizzes/quiz-0'
@@ -74,7 +74,7 @@ Hispeed:
         Overview: /overviews/module-4
         'Lecture 4': '/lectures/lecture-4'
         'Problem: Whodunit': '/problems/whodunit'
-        'Problem: Resize': '/problems/resize'
+        'Problem: Resize': '/problems/resize-less'
         'Problem: Recover': '/problems/recover'
     Week 5:
         'Lecture 5': '/lectures/lecture-4'
