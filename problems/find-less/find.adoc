@@ -13,6 +13,8 @@ $ [underline]#./generate 1000 | ./find 42#
 Didn't find needle in haystack.
 ----
 
+If among those "more comfortable" with programming, you might choose to do link:/problems/find-more[another version of this problem] instead!
+
 == Distribution
 
 === Downloading

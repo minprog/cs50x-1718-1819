@@ -20,7 +20,7 @@ Lospeed:
         Overview: /overviews/module-3
         'Lecture 3': '/lectures/lecture-3'
         'Problem: Music': '/problems/music'
-        'Problem: Find': '/problems/find'
+        'Problem: Find': '/problems/find-less'
     Module 4:
         'Quiz 0': '/quizzes/quiz-0'
     Module 5:
@@ -66,9 +66,6 @@ Hispeed:
         'Problem: Vigenere': '/problems/vigenere'
     Week 3:
         'Lecture 3': '/lectures/lecture-3'
-        'Practice: Functions': '/practice/functions'
-        'Practice: Lists': '/practice/lists'
-        'Practice: List Patterns': '/practice/list-patterns'
         'Problem: Music': '/problems/music'
         'Problem: Find': '/problems/find'
     Quiz 0:
