@@ -1,4 +1,4 @@
 name: water
 files:
-    everyone:
+    required:
         - water.c
