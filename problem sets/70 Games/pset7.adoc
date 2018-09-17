@@ -38,8 +38,7 @@ cd ~/workspace/pset7/
 
 == Problems
 
-. Get familiar with objects through link:https://lab.cs50.io/WouterVrielink/cs50x/master/problems/cards/Lab[a Game of Cards]
-link:/problems/deck_of_cards/[a Game of Cards]
+. Get familiar with objects through link:https://lab.cs50.io/uva/cs50x/master/problems/cards/Lab[a Game of Cards]
 . Implement link:/problems/adventure/[Adventure]
 
 == How to Submit
