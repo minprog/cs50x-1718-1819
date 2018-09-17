@@ -24,7 +24,6 @@ If among those "more comfortable" with programming, you might choose to do link:
 $ wget https://cdn.cs50.net/ap/2018/problems/find/find.zip
 $ unzip find.zip
 $ rm find.zip
-$ mv problems-find find
 $ cd find
 $ ls
 Makefile    find.c      generate.c  helpers.c   helpers.h
