@@ -21,7 +21,7 @@ If among those "more comfortable" with programming, you might choose to do link:
 
 [source,subs="macros"]
 ----
-$ wget https://github.com/cs50/problems/archive/find.zip
+$ wget https://cdn.cs50.net/ap/2018/problems/find/find.zip
 $ unzip find.zip
 $ rm find.zip
 $ mv problems-find find
