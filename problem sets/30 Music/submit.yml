@@ -1,4 +1,0 @@
-name: music
-files:
-    required:
-        - helpers.c

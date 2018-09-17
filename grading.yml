@@ -1,47 +1,44 @@
+templates:
+    1: &fullyauto
+        type: pass
+        subgrades:
+            correctness: integer
+        automatic:
+            correctness: (check_score * 5).floor
+        calculation: -(correctness/5)
+        hide_calculated: true
+    2: &automatic
+        type: float
+        subgrades:
+            correctness: integer
+            design: integer
+            style: integer
+        automatic:
+            correctness: (check_score * 5).floor
+            style: style_score
+        calculation: ((3 * correctness + 2 * design + 1 * style - 6) * 0.375 + 1).round(1)
+        hide_calculated: true
+
 grades:
     scratch:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-        calculation: (scope * correctness / 25.0 * 9 + 1).round(1)
-        hide_calculated: true
-    c:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
-    crypto:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
-    fifteen:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
-    forensics:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
+        <<: *fullyauto
+        calculation: -((correctness+1)/5)
+    hello: *fullyauto
+    water: *fullyauto
+    mario: *automatic
+    mario_more: *automatic
+    cash: *automatic
+    credit: *automatic
+    initials-less: *fullyauto
+    initials_more: *fullyauto
+    caesar: *automatic
+    vigenere: *automatic
+    crack: *automatic
+    music: *automatic
+    find: *automatic
+    whodunit: *fullyauto
+    resize: *automatic
+    recover: *automatic
     quiz1:
         type: pass
         subgrades:
@@ -52,42 +49,11 @@ grades:
         subgrades:
             points: integer
         calculation: points >= 16 && -1 || 0
-    mispell:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
-    sentimental:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
-    finance:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
-    mashup:
-        type: float
-        subgrades:
-            scope: integer
-            correctness: integer
-            design: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
-        hide_calculated: true
+    speller: *automatic
+    sentimental: *automatic
+    cards: *fullyauto
+    adventure: *automatic
+    finance: *automatic
     quiz2:
         type: pass
         subgrades:

@@ -1,0 +1,4 @@
+name: credit
+files:
+    required:
+        - credit.c

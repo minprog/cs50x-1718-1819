@@ -14,6 +14,8 @@ Change owed: [underline]#0.41#
 4
 ----
 
+Although we would normally expect you to choose this version of the problem, aimed at students who are "less comfortable" with programming, you may choose to do link:/problems/credit[credit], intended for "more comfortable" students, instead!
+
 == Background
 
 image:changer.jpg[Coin Changer Toy, width="50%"]
@@ -66,7 +68,7 @@ Change owed: [underline]#0.41#
 
 [source]
 ----
-check50 cs50/2018/spring/cash
+check50 --local cs50/2018/spring/cash
 ----
 
 === Style

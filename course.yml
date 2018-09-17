@@ -9,3 +9,17 @@ acknowledgements:
     - 'Based on CS50 from http://cs50.tv/2017/fall/ -- Copyright 2011--2018, David J. Malan.'
 
 license: <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+feedback_templates:
+    wrong_file:
+        explanation: "Will ask student to submit a file with the correct name. Only use when file doesn't match expected name and check fails."
+        feedback: "Je hebt een bestand met de verkeerde naam ingeleverd! Submit deze alsjeblieft opnieuw, je kunt een assistent om hulp vragen."
+        grade: 0
+    wrong_submit:
+        explanation: "Will ask student to re-submit, if necessary, at the right problem. Use when submitted file belongs to another problem."
+        feedback: "Je inzending bevat een bestand dat hoort bij een andere opdracht. Deze versie wordt niet nagekeken. Mocht je het bestand nog niet bij de juiste opdracht hebben ingestuurd, neem dan snel contact op!"
+        grade: 0
+    scratch_link:
+        explanation: "Will ask student to re-submit because of problem with link."
+        feedback: "De link die je hebt ingestuurd voor Scratch is voor ons niet zichtbaar. Check of je je programma hebt geshared volgens de instructies onderaan de opdracht. Je kunt nog een keer submitten als het gecorrigeerd is; je moet dan zowel de link als het .sb2-bestand opnieuw insturen. Mocht het niet lukken, vraag een assistent!"
+        grade: 0

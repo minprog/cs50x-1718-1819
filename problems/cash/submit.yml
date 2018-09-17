@@ -1,0 +1,4 @@
+name: cash
+files:
+    required:
+        - cash.c

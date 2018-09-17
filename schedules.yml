@@ -1,40 +1,34 @@
 Lospeed:
     Module 0:
         'Lecture 0': '/lectures/lecture-0'
-        'Problem set 0: Scratch': '/psets/scratch'
+        'Problem: Scratch': '/problems/scratch'
     Module 1:
+        Overview: /overviews/module-1
         'Lecture 1': '/lectures/lecture-1'
-        'Training: IDE': '/try/ide'
-        'Practice: Calculations': '/practice/calculations'
+        'Training: IDE': '/training/ide'
+        'Problem: Hello': '/problems/hello'
         'Problem: Water': '/problems/water'
-        'Practice: Logic': '/practice/logic'
-        'Problem: Mario': '/problems/water'
-        'Practice: Updates': '/practice/updates'
-        'Practice: While': '/practice/while'
+        'Problem: Mario': '/problems/mario-less'
         'Problem: Cash': '/problems/cash'
     Module 2:
+        Overview: /overviews/module-2
         'Lecture 2': '/lectures/lecture-2'
-        'Practice: Conditionals': '/practice/conditionals'
-        'Practice: Strings': '/practice/strings'
-        'Practice: For': '/practice/for'
-        'Practice: Loop patterns': '/practice/loop-patterns'
-        'Problem: Initials': '/problems/initials'
+        'Problem: Initials': '/problems/initials-less'
         'Problem: Caesar': '/problems/caesar'
         'Problem: Vigenere': '/problems/vigenere'
     Module 3:
+        Overview: /overviews/module-3
         'Lecture 3': '/lectures/lecture-3'
-        'Practice: Functions': '/practice/functions'
-        'Practice: Lists': '/practice/lists'
-        'Practice: List Patterns': '/practice/list-patterns'
         'Problem: Music': '/problems/music'
-        'Problem: Find': '/problems/find'
+        'Problem: Find': '/problems/find-less'
     Module 4:
-        'Quiz 0': '/quizzes/quiz-0'
-    Module 5:
+        Overview: /overviews/module-4
         'Lecture 4': '/lectures/lecture-4'
         'Problem: Whodunit': '/problems/whodunit'
-        'Problem: Resize': '/problems/resize'
+        'Problem: Resize': '/problems/resize-less'
         'Problem: Recover': '/problems/recover'
+    Module 5:
+        'Quiz 0 (not available yet)': '/quizzes/quiz-0'
     Module 6:
         'Lecture 5': '/lectures/lecture-4'
         'Problem: Speller': '/problems/speller'
@@ -57,39 +51,30 @@ Lospeed:
 Hispeed:
     Day 0:
         'Lecture 0': '/lectures/lecture-0'
-        'Problem set 0: Scratch': '/psets/scratch'
+        'Problem: Scratch': '/problems/scratch'
     Week 1:
+        Overview: /overviews/module-1
         'Lecture 1': '/lectures/lecture-1'
-        'Training: IDE': '/try/ide'
-        'Practice: Calculations': '/practice/calculations'
+        'Training: IDE': '/training/ide'
         'Problem: Water': '/problems/water'
-        'Practice: Logic': '/practice/logic'
-        'Problem: Mario': '/problems/water'
-        'Practice: Updates': '/practice/updates'
-        'Practice: While': '/practice/while'
+        'Problem: Mario': '/problems/mario-less'
         'Problem: Cash': '/problems/cash'
     Week 2:
+        Overview: /overviews/module-2
         'Lecture 2': '/lectures/lecture-2'
-        'Practice: Conditionals': '/practice/conditionals'
-        'Practice: Strings': '/practice/strings'
-        'Practice: For': '/practice/for'
-        'Practice: Loop patterns': '/practice/loop-patterns'
-        'Problem: Initials': '/problems/initials'
+        'Problem: Initials': '/problems/initials-less'
         'Problem: Caesar': '/problems/caesar'
         'Problem: Vigenere': '/problems/vigenere'
     Week 3:
+        Overview: /overviews/module-3
         'Lecture 3': '/lectures/lecture-3'
-        'Practice: Functions': '/practice/functions'
-        'Practice: Lists': '/practice/lists'
-        'Practice: List Patterns': '/practice/list-patterns'
         'Problem: Music': '/problems/music'
-        'Problem: Find': '/problems/find'
-    Quiz 0:
-        'Quiz 0': '/quizzes/quiz-0'
+        'Problem: Find': '/problems/find-less'
     Week 4:
+        Overview: /overviews/module-4
         'Lecture 4': '/lectures/lecture-4'
         'Problem: Whodunit': '/problems/whodunit'
-        'Problem: Resize': '/problems/resize'
+        'Problem: Resize': '/problems/resize-less'
         'Problem: Recover': '/problems/recover'
     Week 5:
         'Lecture 5': '/lectures/lecture-4'

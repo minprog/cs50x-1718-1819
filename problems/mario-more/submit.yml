@@ -1,0 +1,4 @@
+name: mario_more
+files:
+    everyone:
+        - mario.c

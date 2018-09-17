@@ -1,0 +1,4 @@
+name: hello
+files:
+    required:
+        - hello.c
