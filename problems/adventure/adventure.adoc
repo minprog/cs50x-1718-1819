@@ -441,40 +441,13 @@ Implement an Object-Oriented version of Crowther's Adventure game.
 - The game should prompt the user for commands and either execute those or warn about a non-existent command.
 - The game must be winnable.
 
-== Walkthroughs
-
-video::JlGPuG6fIXs[youtube,list=PLhQjrBD2T382DOV8V9pWN7NTp0uRLvIYa]
-
-== Testing
-
-To test your implementation of `adventure` via the command line, execute `adventure` as follows:
-
-[source]
-----
-./TEST_ADVENTURE
-----
-
-
-=== `check50`
-
-```
-check50 --local cs50/2018/spring/similarities/less
-```
-
 === `style50`
 
 ```
-style50 helpers.py
+style50 adventure.py
+style50 player.py
+style50 room.py
 ```
-
-== Staff's Solution
-
-=== CLI
-
-[source]
-----
-~cs50/pset6/less/compare
-----
 
 === Web
 
