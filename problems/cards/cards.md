@@ -24,6 +24,11 @@ For a quick refresher on Python basic objects watch the following Doug-talk star
 
 {% next "Start: Classes and Objects" %}
 
+## Downloading
+
+	$ wget https://cs50x.mprog.nl/course/problems/cards/cardgame.py
+	$ ls
+
 ## Classes
 
 Classes are blueprints for the components of your projects. They contain the information required for creating individual objects for that component. Information such as the properties (data) describing the object, as well as functions (methods) defining its interactions.
