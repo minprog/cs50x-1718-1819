@@ -6,22 +6,18 @@ On this page you can find some study materials for the exam of 'Programmeren 1'.
 
 ### Lecture Notes
 
-[Lecture Notes Week 0](https://cs50x.mprog.nl/lectures/week-0#_this_is_cs50)
+[Lecture Notes Week 0](https://cs50x.mprog.nl/lectures/lecture-0)
 
 ### CS50 Study
 
 - [Binary](https://study.cs50.net/binary)
 - [Conditions](https://study.cs50.net/conditions)
 
-### Practice
-
-- None
-
 ## Week 1 - C
 
 ### Lecture Notes
 
-[Lecture Notes Week 1](https://cs50x.mprog.nl/lectures/week-1#_scratch_vs_c)
+[Lecture Notes Week 1](https://cs50x.mprog.nl/lectures/lecture-1)
 
 ### CS50 Study
 
@@ -31,13 +27,12 @@ On this page you can find some study materials for the exam of 'Programmeren 1'.
 ### Practice
 
 - [Unscratch](/practice/unscratch): check out the differences between loops in Scratch and loops in C
-- [Loopy](/practice/loopy): write loops with style!
 
 ## Week 2 - Crypto
 
 ### Lecture Notes
 
-[Lecture Notes Week 2](https://cs50x.mprog.nl/lectures/week-2#_last_time)
+[Lecture Notes Week 2](https://cs50x.mprog.nl/lectures/lecture-2)
 
 ### CS50 Study
 
@@ -46,19 +41,15 @@ On this page you can find some study materials for the exam of 'Programmeren 1'.
 - [Functions](https://study.cs50.net/functions)
 - [ASCII](https://study.cs50.net/ascii)
 
-### Practice
-
-- [Modulo](/practice/modulo): divide and modulo
-- [Functions](/practice/functions): split your program into parts
-- [Recrypt](/practice/recrypt): strings and ASCII
-
 ## Week 3 - Music
 
 ### Lecture Notes
 
-[Lecture Notes Week 3](https://cs50x.mprog.nl/lectures/week-3#_last_time)
+[Lecture Notes Week 3](https://cs50x.mprog.nl/lectures/lecture-3)
 
 ### CS50 Study
+
+You should know these algorithms! Not quite by heart, but you should be comfortable applying them to an array of numbers when specified in pseudocode.
 
 - [Binary Search](https://study.cs50.net/binary_search)
 - [Bubble Sort](https://study.cs50.net/bubble_sort)
@@ -68,10 +59,4 @@ On this page you can find some study materials for the exam of 'Programmeren 1'.
 
 ### Practice
 
-- [Big-O](/practice/big-o): analyze the running time of algorithms
 - [Sort](/practice/sort): appreciate the way sort and search functions work
-- [Bubble](/practice/bubble): implement bubble sort from the ground up
-
-## Quiz
-
-[This is an example quiz. Use it to prepare for the real one!](quiz1.pdf)
