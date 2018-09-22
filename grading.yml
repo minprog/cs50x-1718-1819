@@ -35,7 +35,8 @@ grades:
     vigenere: *automatic
     crack: *automatic
     music: *automatic
-    find: *automatic
+    find_less: *automatic
+    find_more: *automatic
     whodunit: *fullyauto
     resize: *automatic
     recover: *automatic
