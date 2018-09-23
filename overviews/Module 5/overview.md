@@ -36,7 +36,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 2. Implement [Speller](/problems/speller)
 
-3. If you'd like to benchmark your code against classmates' solutions, upload it to the https://bigboard.quinner.nl/[Big Board]
+3. If you'd like to benchmark your code against classmates' solutions, upload it to the [Big Board](https://bigboard.quinner.nl/)
 
 ## How to Submit
 

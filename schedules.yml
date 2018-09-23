@@ -1,101 +1,101 @@
 Lospeed:
     Module 0:
-        'Lecture 0': '/lectures/lecture-0'
-        'Problem: Scratch': '/problems/scratch'
+        Lecture 0: /lectures/lecture-0
+        Scratch: /problems/scratch
     Module 1:
         Overview: /overviews/module-1
-        'Lecture 1': '/lectures/lecture-1'
-        'Training: IDE': '/training/ide'
-        'Problem: Hello': '/problems/hello'
-        'Problem: Water': '/problems/water'
-        'Problem: Mario': '/problems/mario-less'
-        'Problem: Cash': '/problems/cash'
+        Lecture 1: /lectures/lecture-1
+        IDE: /training/ide
+        Hello: /problems/hello
+        Water: /problems/water
+        Mario: /problems/mario-less
+        Cash: /problems/cash
     Module 2:
         Overview: /overviews/module-2
-        'Lecture 2': '/lectures/lecture-2'
-        'Problem: Initials': '/problems/initials-less'
-        'Problem: Caesar': '/problems/caesar'
-        'Problem: Vigenere': '/problems/vigenere'
+        Lecture 2: /lectures/lecture-2
+        Initials: /problems/initials-less
+        Caesar: /problems/caesar
+        Vigenere: /problems/vigenere
     Module 3:
         Overview: /overviews/module-3
-        'Lecture 3': '/lectures/lecture-3'
-        'Problem: Music': '/problems/music'
-        'Problem: Find': '/problems/find-less'
+        Lecture 3: /lectures/lecture-3
+        Music: /problems/music
+        Find: /problems/find-less
     Module 4:
         Overview: /overviews/module-4
-        'Lecture 4': '/lectures/lecture-4'
-        'Problem: Whodunit': '/problems/whodunit'
-        'Problem: Resize': '/problems/resize-less'
-        'Problem: Recover': '/problems/recover'
+        Lecture 4: /lectures/lecture-4
+        Whodunit: /problems/whodunit
+        Resize: /problems/resize-less
+        Recover: /problems/recover
+    Quiz 1:
+        Quiz 1: /quizzes/quiz-1
     Module 5:
-        'Quiz 0 (not available yet)': '/quizzes/quiz-0'
-    Module 6:
         Overview: /overviews/module-4
-        'Lecture 5': '/lectures/lecture-4'
-        'Problem: Speller': '/problems/speller'
+        Lecture 5: /lectures/lecture-4
+        Speller: /problems/speller
+    Module 6:
+        Lecture 8: /lectures/lecture-4
+        Sentimental: /problems/sentimental
     Module 7:
-        'Lecture 8': '/lectures/lecture-4'
-        'Problem: Sentimental': '/problems/sentimental'
-    Module 8:
         Overview: /overviews/module-8
-        'Lecture: OOP': '/lectures/lecture-7'
-        'Problem: Game of Cards': '/problems/cards'
-        'Problem: Adventure': '/problems/adventure'
+        Lecture 8a: /lectures/lecture-7
+        Game of Cards: /problems/cards
+        Adventure: /problems/adventure
+    Module 8:
+        Lecture 8b: /lectures/lecture-html
+        Similarities: /problems/adventure
     Module 9:
-        'Lecture: HTML': '/lectures/lecture-html'
-        'Problem: Similarities': '/problems/adventure'
-    Module 10:
-        'Quiz 1': '/quizzes/quiz-1'
-    Module 11:
-        'Lecture 10': '/lectures/lecture-10'
-        'Problem: finance': '/problems/finance'
+        Lecture 10: /lectures/lecture-10
+        finance: /problems/finance
+    Quiz 2:
+        Quiz preparations: /quizzes/quiz-2
 
 Hispeed:
     Day 0:
-        'Lecture 0': '/lectures/lecture-0'
-        'Problem: Scratch': '/problems/scratch'
+        Lecture 0: /lectures/lecture-0
+        Scratch: /problems/scratch
     Week 1:
         Overview: /overviews/module-1
-        'Lecture 1': '/lectures/lecture-1'
-        'Training: IDE': '/training/ide'
-        'Problem: Water': '/problems/water'
-        'Problem: Mario': '/problems/mario-less'
-        'Problem: Cash': '/problems/cash'
+        Lecture 1: /lectures/lecture-1
+        IDE: /training/ide
+        Water: /problems/water
+        Mario: /problems/mario-less
+        Cash: /problems/cash
     Week 2:
         Overview: /overviews/module-2
-        'Lecture 2': '/lectures/lecture-2'
-        'Problem: Initials': '/problems/initials-less'
-        'Problem: Caesar': '/problems/caesar'
-        'Problem: Vigenere': '/problems/vigenere'
+        Lecture 2: /lectures/lecture-2
+        Initials: /problems/initials-less
+        Caesar: /problems/caesar
+        Vigenere: /problems/vigenere
     Week 3:
         Overview: /overviews/module-3
-        'Lecture 3': '/lectures/lecture-3'
-        'Problem: Music': '/problems/music'
-        'Problem: Find': '/problems/find-less'
+        Lecture 3: /lectures/lecture-3
+        Music: /problems/music
+        Find: /problems/find-less
     Quiz 1:
         Quiz preparations: /resources/quiz-1
     Week 4:
         Overview: /overviews/module-4
-        'Lecture 4': '/lectures/lecture-4'
-        'Problem: Whodunit': '/problems/whodunit'
-        'Problem: Resize': '/problems/resize-less'
-        'Problem: Recover': '/problems/recover'
+        Lecture 4: /lectures/lecture-4
+        Whodunit: /problems/whodunit
+        Resize: /problems/resize-less
+        Recover: /problems/recover
     Week 5:
         Overview: /overviews/module-5
-        'Lecture 5': '/lectures/lecture-4'
-        'Problem: Speller': '/problems/speller'
+        Lecture 5: /lectures/lecture-4
+        Speller: /problems/speller
     Week 6:
         Overview: /overviews/module-6
-        'Lecture 8': '/lectures/lecture-4'
-        'Problem: Sentimental': '/problems/sentimental'
-        'Lecture: OOP': '/lectures/lecture-oop'
-        'Problem: Game of Cards': '/problems/game-of-cards'
-        'Problem: Adventure': '/problems/adventure'
+        Lecture 8: /lectures/lecture-4
+        Sentimental: /problems/sentimental
+        Lecture 8a: /lectures/lecture-oop
+        Game of Cards: /problems/game-of-cards
+        Adventure: /problems/adventure
     Week 7:
-        'Lecture: HTML': '/lectures/lecture-html'
-        'Problem: Similarities': '/problems/adventure'
-    Quiz 1:
-        'Quiz 1': '/quizzes/quiz-1'
+        Lecture 8b: /lectures/lecture-html
+        Similarities: /problems/adventure
+    Quiz 2:
+        Quiz preparations: /quizzes/quiz-2
     Week 8:
-        'Lecture 10': '/lectures/lecture-10'
-        'Problem: finance': '/problems/finance'
+        Lecture 10: /lectures/lecture-10
+        finance: /problems/finance
