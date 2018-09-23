@@ -28,27 +28,30 @@ Lospeed:
         Resize: /problems/resize-less
         Recover: /problems/recover
     Quiz 1:
-        Quiz 1: /quizzes/quiz-1
+        Quiz preparations: /resources/quiz-1
     Module 5:
-        Overview: /overviews/module-4
-        Lecture 5: /lectures/lecture-4
+        Overview: /overviews/module-5
+        Lecture 5: /lectures/lecture-5
         Speller: /problems/speller
     Module 6:
+        Overview: /overviews/module-6
         Lecture 8: /lectures/lecture-4
         Sentimental: /problems/sentimental
     Module 7:
-        Overview: /overviews/module-8
+        Overview: /overviews/module-7
         Lecture 8a: /lectures/lecture-7
         Game of Cards: /problems/cards
         Adventure: /problems/adventure
     Module 8:
+        Overview: /overviews/module-8
         Lecture 8b: /lectures/lecture-html
         Similarities: /problems/adventure
     Module 9:
+        Overview: /overviews/module-9
         Lecture 10: /lectures/lecture-10
-        finance: /problems/finance
+        Finance: /problems/finance
     Quiz 2:
-        Quiz preparations: /quizzes/quiz-2
+        Quiz preparations: /resources/quiz-2
 
 Hispeed:
     Day 0:
@@ -92,10 +95,12 @@ Hispeed:
         Game of Cards: /problems/game-of-cards
         Adventure: /problems/adventure
     Week 7:
+        Overview: /overviews/module-7
         Lecture 8b: /lectures/lecture-html
         Similarities: /problems/adventure
     Quiz 2:
         Quiz preparations: /quizzes/quiz-2
     Week 8:
+        Overview: /overviews/module-8
         Lecture 10: /lectures/lecture-10
-        finance: /problems/finance
+        Finance: /problems/finance
