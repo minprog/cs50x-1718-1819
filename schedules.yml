@@ -35,17 +35,18 @@ Lospeed:
         Speller: /problems/speller
     Module 6:
         Overview: /overviews/module-6
-        Lecture 8: /lectures/lecture-4
+        Lecture 6: /lectures/lecture-6
         Sentimental: /problems/sentimental
     Module 7:
         Overview: /overviews/module-7
-        Lecture 8a: /lectures/lecture-7
+        Lecture 7: /lectures/lecture-7
         Game of Cards: /problems/cards
         Adventure: /problems/adventure
     Module 8:
         Overview: /overviews/module-8
-        Lecture 8b: /lectures/lecture-html
-        Similarities: /problems/adventure
+        Lecture 8: /lectures/lecture-8
+        Lecture 9: /lectures/lecture-9
+        Similarities: /problems/similarities
     Module 9:
         Overview: /overviews/module-9
         Lecture 10: /lectures/lecture-10
@@ -85,22 +86,24 @@ Hispeed:
         Recover: /problems/recover
     Week 5:
         Overview: /overviews/module-5
-        Lecture 5: /lectures/lecture-4
+        Lecture 5: /lectures/lecture-5
         Speller: /problems/speller
     Week 6:
         Overview: /overviews/module-6
-        Lecture 8: /lectures/lecture-4
+        Lecture 6: /lectures/lecture-6
         Sentimental: /problems/sentimental
-        Lecture 8a: /lectures/lecture-oop
+        Overview: /overviews/module-7
+        Lecture 7: /lectures/lecture-7
         Game of Cards: /problems/game-of-cards
         Adventure: /problems/adventure
     Week 7:
-        Overview: /overviews/module-7
-        Lecture 8b: /lectures/lecture-html
+        Overview: /overviews/module-8
+        Lecture 8: /lectures/lecture-8
+        Lecture 9: /lectures/lecture-9
         Similarities: /problems/adventure
     Quiz 2:
         Quiz preparations: /quizzes/quiz-2
     Week 8:
-        Overview: /overviews/module-8
+        Overview: /overviews/module-9
         Lecture 10: /lectures/lecture-10
         Finance: /problems/finance
