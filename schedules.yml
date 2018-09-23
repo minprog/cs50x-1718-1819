@@ -30,6 +30,7 @@ Lospeed:
     Module 5:
         'Quiz 0 (not available yet)': '/quizzes/quiz-0'
     Module 6:
+        Overview: /overviews/module-4
         'Lecture 5': '/lectures/lecture-4'
         'Problem: Speller': '/problems/speller'
     Module 7:
@@ -71,6 +72,8 @@ Hispeed:
         'Lecture 3': '/lectures/lecture-3'
         'Problem: Music': '/problems/music'
         'Problem: Find': '/problems/find-less'
+    Quiz 1:
+        Quiz preparations: /resources/quiz-1
     Week 4:
         Overview: /overviews/module-4
         'Lecture 4': '/lectures/lecture-4'
@@ -78,9 +81,11 @@ Hispeed:
         'Problem: Resize': '/problems/resize-less'
         'Problem: Recover': '/problems/recover'
     Week 5:
+        Overview: /overviews/module-5
         'Lecture 5': '/lectures/lecture-4'
         'Problem: Speller': '/problems/speller'
     Week 6:
+        Overview: /overviews/module-6
         'Lecture 8': '/lectures/lecture-4'
         'Problem: Sentimental': '/problems/sentimental'
         'Lecture: OOP': '/lectures/lecture-oop'
