@@ -4,4 +4,4 @@ lab50:
     - readme
     - terminal
   files:
-    - cardgame.py
+    - !include cardgame.py
