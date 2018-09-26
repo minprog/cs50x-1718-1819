@@ -1,0 +1,4 @@
+name: recover
+files:
+    required:
+        - recover.c

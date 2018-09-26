@@ -1,0 +1,4 @@
+name: resize_less
+files:
+    required:
+        - resize.c
