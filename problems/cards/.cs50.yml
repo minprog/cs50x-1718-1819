@@ -3,5 +3,5 @@ lab50:
     - editor
     - readme
     - terminal
-  file:
+  files:
     - cardgame.py
