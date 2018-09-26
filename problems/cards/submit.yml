@@ -1,4 +1,0 @@
-name: cards
-files:
-    required:
-        - cardgame.py
