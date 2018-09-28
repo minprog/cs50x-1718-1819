@@ -2,6 +2,8 @@
 
 video::n_8zxTH7SvA[youtube,height=540,width=960,options=notitle]
 
+(Yep, it's actually lecture 8! But it's the right one!)
+
 [t=0m0s]
 == Python Basics
 
