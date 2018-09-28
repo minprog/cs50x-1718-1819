@@ -10,8 +10,6 @@ For information on (or help with) this week:
 
 2. Attend your tutor's section (if you're hi-speed).
 
-3. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
-
 4. Ask questions during office hours using the "Ask" tool on this website.
 
 5. Visit (or e-mail) the course's heads.
@@ -34,15 +32,17 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 1. Watch [Lecture 7](/lectures/lecture-7)
 
-2. Practice with [Game of Cards](/problems/cards)
+2. Create an account at [GitHub](https://github.com/join). For now, you'll only need it to access the Game of Cards exercises, but in later courses you'll be submitting your programs on this website!
 
-2. Implement [Adventure](/problems/adventure)
+3. Practice with [Game of Cards](https://lab.cs50.io/uva/cs50x/master/problems/cards/lab)
+
+4. Implement [Adventure](/problems/adventure)
 
 ## How to Submit
 
 1. When ready to submit, log into [CS50 IDE](https://cs50.io/).
 
-2. Download your `.c` files.
+2. Download your `.py` files.
 
 3. Make sure you are signed in to this website!
 
