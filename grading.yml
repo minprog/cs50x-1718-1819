@@ -38,7 +38,8 @@ grades:
     find_less: *automatic
     find_more: *automatic
     whodunit: *fullyauto
-    resize: *automatic
+    resize_less: *automatic
+    resize_more: *automatic
     recover: *automatic
     quiz1:
         type: pass
