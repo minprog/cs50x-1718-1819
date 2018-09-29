@@ -72,7 +72,6 @@ grades:
         subgrades:
             points: integer
         calculation: points >= 15 && -1 || 0
-    find: *automatic
 
 calculation:
     p1normal:
