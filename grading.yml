@@ -37,7 +37,12 @@ grades:
     music: *automatic
     find_less: *automatic
     find_more: *automatic
-    whodunit: *fullyauto
+    whodunit:
+        type: float
+        subgrades:
+            correctness: integer
+        calculation: (correctness / 5.0 * 9 + 1).round(1)
+        hide_calculated: true
     resize_less: *automatic
     resize_more: *automatic
     recover: *automatic
