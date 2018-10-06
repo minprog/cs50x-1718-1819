@@ -142,7 +142,7 @@ A schedule of problem deadlines and quizzes, subject to change, appears below. A
 |               | Hispeed    |  
 | ------------- | ---------- |  
 | Module 5      | Fri 5-Oct  |  
-| Module 6      | Wed 10-Oct |  
+| Module 6      | Tue 9-Oct |  
 | Module 7      | Wed 17-Oct |  
 | Module 8      | Fri 19-Oct |  
 | Module 9      | Fri 26-Oct |  
