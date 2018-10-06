@@ -89,15 +89,17 @@ Hispeed:
         Overview: /overviews/module-5
         Lecture 5: /lectures/lecture-5
         Speller: /problems/speller
-    Week 6:
-        Overview: /overviews/module-6
+    Week 6 Part 1:
+        Overview 6: /overviews/module-6
         Lecture 6: /lectures/lecture-6
         Sentimental: /problems/sentimental
+    Week 6-7:
         Overview: /overviews/module-7
         Lecture 7: /lectures/lecture-7
-        Game of Cards: /problems/game-of-cards
+        Join GitHub: https://github.com/join
+        Game of Cards: https://lab.cs50.io/uva/cs50x/master/problems/cards/lab
         Adventure: /problems/adventure
-    Week 7:
+    Week 7 Part 2:
         Overview: /overviews/module-8
         Lecture 8: /lectures/lecture-8
         Lecture 9: /lectures/lecture-9
