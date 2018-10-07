@@ -106,6 +106,10 @@ The initializer is a good place for default values. Let us provide you with the 
 
 **Copy** those declarations into your initializer.
 
+{% next %}
+
+## Deck: instantiating cards
+
 But that's not enough! You'll need to create a `Card` instance for *each* combination of suits and values. Write code to generate those `Card`s and add them to an attribute called `cards.`
 
 {% spoiler "Syntax Help" %}
