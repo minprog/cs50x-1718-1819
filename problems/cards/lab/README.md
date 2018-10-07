@@ -51,16 +51,16 @@ Use the following syntax:
 In the parameter list of the `__init__` method you define for which attributes a value has to be provided. In the method body, you set the corresponding attributes via `self`. Note that `__init__` doesn't `return` anything! It just sets attributes.
 {% endspoiler %}
 
-**Second**, write a `__str__` method. It doesn't take any parameters other than `self`, and should return a string that properly describes the object. In this case, the returned string might look like this:
+**Second**, write a `__str__` method. It doesn't take any parameters other than `self`, and should `return` a string that properly describes the object. In this case, the returned string might look like this:
 
     Ace of spades
 
-where `Ace` and `spades` should be replaced by the values from `self.suit` and `self.value`.
+where `Ace` and `spades` are the values from attributes `self.suit` and `self.value`.
 
 {% spoiler "Syntax Help" %}
-Return an f-string like this one:
+Return a formatted string like this one:
 
-    f"{var1} is {var2}"
+    f"hello, {s}"
 {% endspoiler %}
 
 {% next "Next: Testing" %}
@@ -73,7 +73,7 @@ Let's test your class! Below the class definition (not *in* the definition), add
 
 Anything that's inside this `if` will only be executed if we run the file directly from the command line using `python cardgame.py`.
 
-In the `if`, **write** a few statements to create `Card` objects.
+In the `if`, **write** a few statements to create example `Card` objects.
 
 {% spoiler "Syntax Help" %}
 Use the following syntax:
@@ -103,9 +103,9 @@ In this lab, a Deck will be a standard deck of hearts, diamonds, clubs and spade
 
 ![A UML representation of the Deck class, containing a cards attribute, which is a list of Card objects and two methods, one called shuffle and one called deal. both take no arguments.](deck_class.png)
 
-Before writing those methods, declare the class and add an initializer.
+Before writing those methods, let's declare the class and add an initializer.
 
-**Add** a declaration for the `Deck` class to your code. Then, **add** an initializer. The initializer for this class doesn't take any arguments besides `self`, because a `Deck` will always be the same.
+**Add** a declaration for the `Deck` class to your code. Then, **add** an initializer. The initializer for this class doesn't take any arguments besides `self`, because any `Deck` will always have the same set of cards.
 
 The initializer is a good place for default values. Let us provide you with the declarations of two important attributes for this class:
 
@@ -118,7 +118,9 @@ The initializer is a good place for default values. Let us provide you with the 
 
 ## Deck: instantiating cards
 
-With those `suits` and `values`, the `Deck` class should now be able to create a `Card` instance for each of 52 combinations. Code to do this should be added to the end of the initializer. **Write** code to generate all 52 `Card`s and add them to an list called `cards.`
+With those `suits` and `values`, there is enough information in the `Deck` class to be able to create a `Card` instance for each of 52 combinations.
+
+**Write** code to generate all 52 `Card`s and add them to an list called `cards`. Code to do this should be added to the end of the initializer.
 
 It's possible to generate all cards and add them to the `cards` variable using a single line of code. However, it is no problem to use more lines! Make it work first, then optimize.
 
