@@ -159,7 +159,7 @@ The first of our main methods for the `Deck` class is `shuffle`. It should take 
 
     import random
 
-**Second**, write a `shuffle` method for the `Deck` class. It should do nothing other than call `random.shuffle` with `cards` as a parameter. This will provide shuffling functionality for your class, and *delegate* that functionality to another (Python-provided) module.
+**Second**, write a `shuffle` method for the `Deck` class. It should do nothing other than call `random.shuffle` with the `cards` attribute as a parameter. This will provide shuffling functionality for your class, and *delegate* that functionality to another (Python-provided) module.
 
 {% spoiler "Syntax Help" %}
 As an example, `random.shuffle` can be used to shuffle lists like this:
@@ -175,13 +175,15 @@ print(numbers)
 Have a look at the [Python docs](https://docs.python.org/3/library/random.html#random.shuffle) for more information.
 {% endspoiler %}
 
-Now, with the code that you currently wrote, you can't really see if the `shuffle` method works correctly. You could test one particular property, though: after shuffling, the deck should still have 52 cards (computers definitely do not lose cards during shuffling). Change your test code to create a `Deck`, call `shuffle` on it, and then print it. Is everything correct?
+Now, with the code that you currently wrote, you can't really see if the `shuffle` method works correctly. You could test one particular property, though: after shuffling, the deck should still have 52 cards (because, unlike people, computers definitely do not lose cards during shuffling). Change your test code to shuffle the deck before printing it. Is everything still correct?
 
 {% next %}
 
 ## Deck: dealing
 
-Now that the deck might be shuffled, it should be possible to draw cards from the deck. **Create** a method `deal` that removes the top card from the attribute `cards` and `return` it. Removal means that after calling `deal`, the number of cards in `cards` will have decreased by 1.
+Now that the deck may be shuffled, it should also be possible to draw cards from it.
+
+**Create** a method `deal` that removes the top card from the `cards` list and `return` it. To remove means that after calling `deal`, the number of cards in `cards` will have decreased by 1.
 
 Once again, it's possible to re-use standard Python functionality to remove one `Card` from `cards`. Take a look at the docs for [Python lists](https://docs.python.org/3/tutorial/datastructures.html) and find an appropriate method to do this. Then use that method in your own `deal` method! Don't forget to actually `return` the card that you got from the deck.
 
@@ -193,7 +195,7 @@ In your testing code, add
 
     card = deck.deal()
 
-right after creating the `Deck`. Because the deck hasn't been shuffled yet, this card should be the King of Spades. Use `print(card)` to print the card. **Try** it out!
+right after creating the `Deck`. Because the deck hasn't been shuffled at that point, this card should be the King of Spades. Use `print(card)` to print the card. **Try** it out!
 
 Now test the `shuffle` method! Call it in your testing code and verify that the shuffling is indeed pseudorandom.
 
