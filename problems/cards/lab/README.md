@@ -1,11 +1,3 @@
-<style>
-img
-{
-     height: 50%;
-     width: 50%;
-}
-</style>
-
 # Game of Cards
 
 Object-oriented programming is commonly used to model real-world things, like cars or businesses, as well as their behaviors and interactions. Each class represents a "kind of thing" and bundles relevant functionality in the form of methods. In this lab, you'll model a deck of 52 playing cards.
@@ -25,7 +17,7 @@ In this case, the attributes will contain the minimum of information needed to u
 
 In UML, the class looks like this:
 
-![A class called Card with two attributes: one is called suit of type string, the other is called value, also of type string.](card_class.png){:}
+![A class called Card with two attributes: one is called suit of type string, the other is called value, also of type string.](card_class.png)
 
 **Write** a declaration for the `Card` class. In the editor to the right, add it to `cardgame.py`. You'll write the class body in a minute!
 
