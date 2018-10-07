@@ -215,4 +215,6 @@ This is what your classes should look like from an implementation perspective:
 
 If not quite the same, think about the differences and why you decided to do it differently. Your design might as well be better! Ask your neighbor to discuss.
 
+You won't submit this lab. If you'd like to save the `Card` and `Deck` classes to your computer, now is the time to do so!
+
 This was Game of Cards.
