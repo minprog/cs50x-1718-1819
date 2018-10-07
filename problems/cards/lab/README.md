@@ -4,14 +4,24 @@ Object-oriented programming is commonly used to model real-world things, like ca
 
 <img src="https://raw.githubusercontent.com/Qvdpost/GameOfCards/master/Lab/card_deck.png" style="padding: 10px">
 
-{% next "Start: Classes and Objects" %}
+{% next "Let's get started" %}
 
-## Classes
+## Cards
 
-Classes are blueprints for the components of your projects. They contain the information required for creating individual objects for that component. Information such as the properties (data) describing the object, as well as functions (methods) defining its interactions.
-To decide on what parts of a program should be contained components, consider which sets of data represent a clearly defined concept.
+Let's create a `Card` class first. For this lab, a `Card` is a very simple object. It only contains the bare minimum needed to define what kind of card it is:
 
-In this tutorial we'll walk you through creating a deck of cards. Take a look at the file `cardgame.py`. You'll find two classes already defined with their properties in place.
+- the suit, or color, of the card
+- the value of the card
+
+The first step is to define a `Card` class in `cardgame.py`.
+
+{% spoiler %}
+Use the following syntax:
+
+class ClassName(object):
+{% endspoiler %}
+
+{% next %}
 
 A Card is represented by its suit and value, as can be seen from the `__init__`, these values can be anything however. So a deck of apples and strawberries could also be made using this same Card class.
 Our Deck uses the traditional suits (Hearts, Diamonds, Clubs and Spades) and values (Ace through King).
@@ -120,76 +130,3 @@ Use your understanding of these concepts to tackle your next exercise; implement
 Below you'll find an example of what your code could (or should) look like by the end of the exercise.
 
 {% next "Solution" %}
-
-## Solution
-
-```python
-from random import shuffle
-
-class Card(object):
-    """
-    Representation of a single playing card.
-    """
-    def __init__(self, suit, value):
-        self.suit = suit
-        self.value = value
-
-    def __str__(self):
-        return f"{self.value} of {self.suit}"
-
-class Deck(object):
-    """
-    Representation of a full deck of 52 playing cards.
-    """
-    def __init__(self):
-        self.suits = ['Hearts','Diamonds','Clubs','Spades']
-        self.values = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
-
-        self.cards = self.initialize_cards()
-
-    def initialize_cards(self):
-        """
-        This method creates all individual cards using the suits and values
-        properties. A list of each Card object is returned.
-        """
-        return [Card(suit, value) for suit in self.suits
-                for value in self.values]
-
-    def shuffle(self):
-        """
-        This method shuffles the deck in place.
-        If no cards are present in the deck, an error is raised instead.
-        """
-        if len(self.cards) < 1:
-            raise ValueError("No cards left in the deck.")
-
-        shuffle(self.cards)
-
-
-    def deal(self):
-        """
-        This method removes the top card from the deck and returns it.
-        If no cards are present in the deck, an error is raised instead.
-        """
-        if len(self.cards) == 0:
-            raise ValueError("All cards have been dealt")
-
-        return self.cards.pop()
-
-if __name__ == "__main__":
-    deck = Deck()
-    deck.shuffle()
-
-    print(f"There are {len(deck.cards) cards in the deck.}")
-
-    print("Dealt cards: ")
-    for _ in range(5):
-        card = deck.deal()
-        print(card)
-
-    print()
-
-    print("The Deck: ")
-    for card in deck.cards:
-        print(card)
-```
