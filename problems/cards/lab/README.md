@@ -15,7 +15,7 @@ In this case, the fields will be bare minimum needed to define what kind of card
 - the suit, or color, of the card (like Spades :spades:)
 - the value of the card (2, 3, A, J, ...)
 
-In UML it would look like this:
+In UML it should look like this:
 
 ![a class called Card with two fields: one is called suit of type string, the other is called value, also of type string](card_class.png)
 
@@ -25,6 +25,8 @@ Now, write a declaration for the `Card` class in `cardgame.py`.
 Use the following syntax:
 
     class ClassName(object):
+
+This includes the keyword `class`, the name of your class, as well as the parent class, which is usually `object`.
 {% endspoiler %}
 
 The class is not complete yet, so let's do that next.
