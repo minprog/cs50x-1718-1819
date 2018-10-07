@@ -15,11 +15,13 @@ Let's create a `Card` class first. For this lab, a `Card` is a very simple objec
 
 Now, add a declaration of the `Card` class in `cardgame.py`.
 
-{% spoiler %}
+{% spoiler "Syntax Help" %}
 Use the following syntax:
 
     class ClassName(object):
 {% endspoiler %}
+
+The class is not complete yet, so let's do that next.
 
 {% next %}
 
