@@ -15,11 +15,11 @@ In this case, the attributes will contain the minimum of information needed to u
 - the suit, or color, of the card (like Spades :spades:)
 - the value of the card (2, 3, A, J, ...)
 
-In UML, it looks like this:
+In UML, the class looks like this:
 
 ![a class called Card with two attributes: one is called suit of type string, the other is called value, also of type string](card_class.png)
 
-Now, write a declaration for the `Card` class. In the editor to the right, write the new class in `cardgame.py`
+**Write** a declaration for the `Card` class. In the editor to the right, add it to `cardgame.py`.
 
 {% spoiler "Syntax Help" %}
 Use the following syntax:
@@ -40,7 +40,7 @@ Because `Card` is a data class, there are only two methods that are really neede
 - `__init__` to set values when creating one specific object of type `Card`
 - `__str__` to provide an easily readable description of the `Card` object
 
-First, write an initializer that takes `suit` and `value` parameters and initializes attributes with the same name.
+**First**, write an initializer that takes `suit` and `value` parameters and initializes attributes with the same name.
 
 {% spoiler "Syntax Help" %}
 Use the following syntax:
@@ -51,7 +51,7 @@ Use the following syntax:
 In the parameter list of the `__init__` method you define for which attributes a value has to be provided. In the method body, you set the corresponding attributes via `self`. Note that `__init__` doesn't `return` anything! It just sets attributes.
 {% endspoiler %}
 
-Second, write a `__str__` method. It doesn't take any parameters other than `self` and should return a string that properly describes the object. In this case, the returned string might look like this:
+**Second**, write a `__str__` method. It doesn't take any parameters other than `self` and should return a string that properly describes the object. In this case, the returned string might look like this:
 
     Ace of spades
 
@@ -67,17 +67,17 @@ Let's test your class! Below the class definition, add a line of code:
 
 Anything that's inside this `if` will only be executed if we run the file directly from the command line using `python cardgame.py`.
 
-In the `if`, write a few statements to create `Card` objects.
+In the `if`, **write** a few statements to create `Card` objects.
 
 {% spoiler "Syntax Help" %}
 Use the following syntax:
 
     var1 = ClassName(...)
 
-This assigns a new object of type `ClassName` to the variable `var1`. In the place of the `...` the parameters for the initializer should be provided.
+This assigns a new object of type `ClassName` to the variable `var1`. In the place of the `...` you should provided the required parameters for the initializer.
 {% endspoiler %}
 
-And after those statements, add a few statements that print the objects from the variables you created.
+And after those statements, **add** a few statements that print the objects from the variables you created.
 
 {% spoiler "Syntax Help" %}
 Use the following syntax:
@@ -87,7 +87,7 @@ Use the following syntax:
 When used like this, `print` will automatically use the `__str__` method that you wrote to provide a human-readable print of the object contents.
 {% endspoiler %}
 
-Now try it out! In the Terminal, run `python cardgame.py` and verify the results.
+Now try it out! In the Terminal, **run** `python cardgame.py` and verify the results.
 
 {% next "Next: the deck" %}
 
