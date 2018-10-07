@@ -13,12 +13,12 @@ Let's create a `Card` class first. For this lab, a `Card` is a very simple objec
 - the suit, or color, of the card
 - the value of the card
 
-The first step is to define a `Card` class in `cardgame.py`.
+Now, add a declaration of the `Card` class in `cardgame.py`.
 
 {% spoiler %}
 Use the following syntax:
 
-class ClassName(object):
+    class ClassName(object):
 {% endspoiler %}
 
 {% next %}
