@@ -1,17 +1,10 @@
-# An intro to Object-Oriented Programming in Python
+# Game of Cards
 
-Object-oriented programming is commonly used to model real-world things, like cars or businesses, as well as their interactions and behaviors. Each class represents a "kind of thing" and bundles all relevant functionality in the form of methods.
+Object-oriented programming is commonly used to model real-world things, like cars or businesses, as well as their behaviors and interactions. Each class represents a "kind of thing" and bundles relevant functionality in the form of methods. In this lab, you'll model a deck of 52 playing cards.
 
 <img src="https://raw.githubusercontent.com/Qvdpost/GameOfCards/master/Lab/card_deck.png" style="padding: 10px">
 
-In this lab, you'll model a deck of 52 playing cards.
-
 {% next "Start: Classes and Objects" %}
-
-## Downloading
-
-	$ wget https://cs50x.mprog.nl/course/problems/cards/cardgame.py
-	$ ls
 
 ## Classes
 
