@@ -112,7 +112,7 @@ The initializer is a good place for default values. Let us provide you with the 
 
 With those `suits` and `values`, the `Deck` class can now create a `Card` instance for each of 52 combinations. Write code to generate those `Card`s and add them to an attribute called `cards.`
 
-It's possible to generate all cards and add them to the `cards` variable in one line. However, it is no problem to use a few more! Make it work first, then optimize.
+It's possible to generate all cards and add them to the `cards` variable using a single line of code. However, it is no problem to use a few more! Make it work first, then optimize.
 
 {% spoiler "Syntax Help" %}
 Here is one suggestion for the pseudocode:
@@ -147,26 +147,27 @@ The first of our main methods for the `Deck` class is `shuffle`. It should take 
 
 **First**, import a useful method that comes with Python. It's actually called `shuffle`! Add the following line at the top of your program:
 
-    import random.shuffle
+    import random
 
 **Second**, write a `shuffle` method for the `Deck` class. It should do nothing other than call the `random.shuffle` with the `cards` as a parameter. This will provide shuffling functionality for your class, and *delegate* that functionality to another (Python-provided) module.
 
-With the code that you have now, you can't really test if the `shuffle` method works correctly. You could test one property
+{% spoiler "Syntax Help" %}
+`random.shuffle` can be used to shuffle lists like this:
 
-
-## Shuffling
-
-One of the core features of a deck is shuffling the cards around. A stacked deck is only its starting state. Now you might have already noticed the import statement at the top of `cardgame.py`. As the name of the imported function suggests, it can be used to shuffle! It is never a bad idea to read up on the documentation of a function, method or class that you're importing into your project, for shuffle's documentation see: https://docs.python.org/3/library/random.html#random.shuffle. But for now, you can trust that shuflle can be used to shuffle lists as follows:
 ```python
+import random
 numbers = [1, 2, 3, 4, 5]
-shuffle(numbers)
+random.shuffle(numbers)
 print(numbers)
 [2, 3, 1, 4, 5]
 ```
-Use it to shuffle the deck's `self.cards` in a newly declared method called `shuffle(self)`.
-Yes, you can actually call the method shuffle, because it can only be called by prefixing either the class-name or the object-name. Thus it does not conflict with the already existing name of the imported shuffle function.
 
-{% next "Continue: Drawing cards" %}
+Have a look at the [Python docs](https://docs.python.org/3/library/random.html#random.shuffle) for more information.
+{% endspoiler %}
+
+With the code that you have now, you can't really test if the `shuffle` method works correctly. You could test one property, though: after shuffling, the deck should still have 52 cards. Change your test code to create a `Deck`, call `shuffle` on it, and then print it. Is everything correct?
+
+{% next %}
 
 ## Dealing
 
