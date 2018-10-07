@@ -1,26 +1,10 @@
 # An intro to Object-Oriented Programming in Python
-## Getting Started
-Object-oriented programming is commonly used to model real-world things, like cars, and their interactions and behaviors. The objects bundle all relevant information and guarantee that their procedure (methods in case of Python) function as expected.
-But before getting into the nitty gritty of OOP, let's first walk through some of the concepts you've just learned.  
 
-<img align="left" src="https://raw.githubusercontent.com/Qvdpost/GameOfCards/master/Lab/card_deck.png" style="padding: 10px">
-We'll practice these concepts by creating a deck of 52 playing cards. Each card will be represented by an object and the deck itself will be an object too!
-Interacting with the deck will be done via its procedures, or methods if you will.
+Object-oriented programming is commonly used to model real-world things, like cars or businesses, as well as their interactions and behaviors. Each class represents a "kind of thing" and bundles all relevant functionality in the form of methods.
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<img src="https://raw.githubusercontent.com/Qvdpost/GameOfCards/master/Lab/card_deck.png" style="padding: 10px">
 
-For a quick refresher on Python basic objects watch the following Doug-talk starting at 27:30.
-
-{% video https://www.youtube.com/watch?v=8xCzjOnfQbw&feature=youtu.be&t=1650 %}
+In this lab, you'll model a deck of 52 playing cards.
 
 {% next "Start: Classes and Objects" %}
 
