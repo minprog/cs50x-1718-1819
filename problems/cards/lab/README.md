@@ -55,7 +55,7 @@ In the parameter list of the `__init__` method you define for which attributes a
 
     Ace of spades
 
-Where `Ace` and `spades` should be replaced by the values from `self.suit` and `self.value`.
+where `Ace` and `spades` should be replaced by the values from `self.suit` and `self.value`.
 
 {% next "Next: Testing" %}
 
@@ -93,40 +93,62 @@ Now try it out! In the Terminal, **run** `python cardgame.py` and verify the res
 
 ## Deck: a class that contains cards
 
-A Card is represented by its suit and value, as can be seen from the `__init__`, these values can be anything however. So a deck of apples and strawberries could also be made using this same Card class.
-Our Deck uses the traditional suits (Hearts, Diamonds, Clubs and Spades) and values (Ace through King).
+In this lab, a Deck will be a standard deck of hearts, diamonds, clubs and spades, with values Ace through King. It will have methods to shuffle, and to deal one card out of the deck:
 
-All these attributes are defined within the `__init__` method, often times this is the very first method you'll define for your class.
+![A UML representation of the Deck class, containing a cards attribute, which is a list of Card objects and two methods, one called shuffle and one called deal. both take no arguments.](deck_class.png)
 
-To start out, let's create a deck. Add `deck = Deck()` to the `if __name__ == "__main__"` statement at the bottom of the file and run the script via `python cardgame.py` in the terminal.
-If everything went well, you'll be notified that a deck object was successfully created. However, the deck has no card yet!
+**Add** a declaration for the `Deck` class to your code. Then, **add** an initializer. In this case, the initializer doesn't take any arguments besides `self`, because a `Deck` will always be the same.
 
-{% next "Continue: Methods" %}
+The initializer is a good place for default values. Let us provide you with the declarations of two important attributes for this class:
 
-## Methods
+    self.suits = ['Hearts','Diamonds','Clubs','Spades']
+    self.values = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
 
-Now let's get started with the methods. Firstly there's the `__init__`, it is called the constructor. When you create an object, the `__init__` is used to set it up with the correct values. As you can see, we've already supplied it with suits and values, but not the actual card objects yet.
-To initialize the cards we're going to use a method. Let's call it `initialize_cards(self)`. Adding a method is like declaring a function, only at an indented level under the class it belongs to. The function can usually only be called by the class it is attached to.
+**Copy** those declarations into your initializer.
 
-Before getting into the actual code, it is advised to write a docstring for your method.
-A docstring is a comment between two lines of three quotation marks, each class already has a docstring for example (the `__init__`s do not! Note where the docstring is placed). Keeping your comments up to date and relevant will pay off greatly down the line.
+But that's not enough! You'll need to create a `Card` instance for *each* combination of suits and values. Write code to generate those `Card`s and add them to an attribute called `cards.`
 
-Now it's time to fill the deck with cards. Once again you'll have to create an object, but this time it needs arguments. Take a look at Card's `__init__`, it expects a self, suit and value. Python 'automagically' supplies self as an argument, so only suit and value have to be passed by us.
-To iteratively create all the cards we'll use a nested for loop. For each suit in the list of suits we'll create a card for each value in the list of values. Then the created card is appended to a list which can later be returned. It would look like this:
-```python
-cards = []
-for suit in self.suits:
-  for value in self.values:
-    card = Card(suit, value)
-    cards.append(card)
-```
-Make sure to `return` the list of created cards. Then change `self.cards = []` into `self.cards = self.initialize_cards()`.
-As you can see we need to prefix 'self' before properties and methods inherent to our class. Also, we can call methods and functions within the `__init__`! Only call on the ones needed for initialization though, don't implement your entire program here.
+{% spoiler "Syntax Help" %}
+It's possible to generate all cards and add them to the `cards` variable in one line. However, it is no problem to use a few more! Make it work first, then optimize. Here is one suggestion for the pseudocode:
 
-Add the following print statement to the `if __name__ == "__main__"` statement, right below creating the deck object: `print(f"There are {len(deck.cards)} cards in the deck.")`.
-Rerun the script with `python cardgame.py`, This time you should also see that 52 cards have been put in the deck. This time however the deck is stacked, or rather it is unshuffled!
+    create empty list of cards
+    for each suit do
+        for each value do
+            create new Card with that combination
+            add it to the list
+{% end %}
 
-{% next "Continue: Shuffling" %}
+Let's test.
+
+{% next %}
+
+## Deck: testing
+
+**Add** a `__str__` method to `Deck`:
+
+    return f"{len(self.cards)} cards in the deck"
+
+Now you can test the class. Go to the `if __name__ == "__main__"` section of your program and **replace** the contents. Just create one instance of a `Deck` and print it:
+
+    deck = Deck()
+    print(deck)
+
+When run, your program will hopefully print that the deck contains 52 cards!
+
+{% next %}
+
+## Deck: shuffle
+
+The first of our main methods for the `Deck` class is `shuffle`. It should take the list of `Card`s and shuffle it pseudorandomly.
+
+**First**, import a useful method that comes with Python. It's actually called `shuffle`! Add the following line at the top of your program:
+
+    import random.shuffle
+
+**Second**, write a `shuffle` method for the `Deck` class. It should do nothing other than call the `random.shuffle` with the `cards` as a parameter. This will provide shuffling functionality for your class, and *delegate* that functionality to another (Python-provided) module.
+
+With the code that you have now, you can't really test if the `shuffle` method works correctly. You could test one property
+
 
 ## Shuffling
 
