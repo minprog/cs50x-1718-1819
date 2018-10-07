@@ -154,7 +154,7 @@ The first of our main methods for the `Deck` class is `shuffle`. It should take 
 **Second**, write a `shuffle` method for the `Deck` class. It should do nothing other than call `random.shuffle` with `cards` as a parameter. This will provide shuffling functionality for your class, and *delegate* that functionality to another (Python-provided) module.
 
 {% spoiler "Syntax Help" %}
-`random.shuffle` can be used to shuffle lists like this:
+As an example, `random.shuffle` can be used to shuffle lists like this:
 
 ```python
 import random
@@ -167,13 +167,13 @@ print(numbers)
 Have a look at the [Python docs](https://docs.python.org/3/library/random.html#random.shuffle) for more information.
 {% endspoiler %}
 
-With the code that you have now, you can't really test if the `shuffle` method works correctly. You could test one property, though: after shuffling, the deck should still have 52 cards. Change your test code to create a `Deck`, call `shuffle` on it, and then print it. Is everything correct?
+Now, with the code that you currently wrote, you can't really see if the `shuffle` method works correctly. You could test one particular property, though: after shuffling, the deck should still have 52 cards (computers definitely do not lose cards during shuffling). Change your test code to create a `Deck`, call `shuffle` on it, and then print it. Is everything correct?
 
 {% next %}
 
 ## Deck: dealing
 
-Now that the deck is shuffled, we can draw cards from the deck. **Create** a method `deal` that removes the top card from the attribute `cards` and `return` it. Removal means that after calling `deal`, the number of cards in `cards` will have decremented.
+Now that the deck might be shuffled, it should be possible to draw cards from the deck. **Create** a method `deal` that removes the top card from the attribute `cards` and `return` it. Removal means that after calling `deal`, the number of cards in `cards` will have decreased by 1.
 
 Once again, it's possible to re-use standard Python functionality to remove one `Card` from `cards`. Take a look at the docs for [Python lists](https://docs.python.org/3/tutorial/datastructures.html) and find an appropriate method to do this. Then use that method in your own `deal` method! Don't forget to actually `return` the card that you got from the deck.
 
@@ -197,13 +197,13 @@ Your classes now should look like this:
 
 ![A UML diagram comprising the Deck and Card classes as described earlier](overview.png)
 
-Note that some of the methods that you wrote aren't in this diagram. Usually, we keep everything that's not relevant out of the diagrams. But what is relevant?
+Note that some of the methods that you wrote aren't in this diagram. Usually, we keep everything that's not relevant out of the diagrams.
 
-To determine that, we look at classes from a "user" perspective. What information do we need to use the class well? We wouldn't need to know that `Deck` has a `cards` attribute, because `Deck` has two well-defined methods that we need to work with the deck: `shuffle` and `deal`. Everything else is *implementation detail*.
+To determine what is relevant, we look at classes from a "user" perspective. What information do we need to use the class well? We wouldn't need to know that `Deck` has all cards in a Python list called `cards`, because `Deck` has two well-defined methods that we need to work with the deck: `shuffle` and `deal`. Everything else is *implementation detail*.
 
-In other words, classes' data is kept private and only through their methods can their attributes be manipulated. This idea is called *encapsulation*. Exceptions are data classes, like `Card`, which are purposely designed to hold some basic data, just like a `struct` in C.
+In other words, classes' data is kept private and only through their methods should their attributes be manipulated. This idea is called *encapsulation*. However, data classes like `Card` are an exception to this rule. Data classes are purposely designed to hold some basic data, just like a `struct` in C, and attributes are usually manipulated directly, not through methods.
 
-But if you're keen to check your implementation *exactly*, press Next for a UML diagram that contains all methods and attributes from an implementation perspective.
+If you're keen to check your implementation *exactly*, press Next for a UML diagram that contains all methods and attributes from an implementation perspective.
 
 {% next %}
 
@@ -212,5 +212,7 @@ But if you're keen to check your implementation *exactly*, press Next for a UML 
 This is what your classes should look like from an implementation perspective:
 
 ![A UML diagram that's augmented from the earlier diagrams. For the card class, it adds the init and str methods. For the deck class, it adds the init and str methods, as well as the cards, suits and values attributes.](overview_implementation.png)
+
+If not quite the same, think about the differences and why you decided to do it differently. Your design might as well be better! Ask your neighbor to discuss.
 
 This was Game of Cards.
