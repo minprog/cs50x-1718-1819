@@ -19,7 +19,7 @@ In UML, it looks like this:
 
 ![a class called Card with two attributes: one is called suit of type string, the other is called value, also of type string](card_class.png)
 
-Now, write a declaration for the `Card` class in `cardgame.py`.
+Now, write a declaration for the `Card` class. In the editor to the right, write the new class in `cardgame.py`
 
 {% spoiler "Syntax Help" %}
 Use the following syntax:
@@ -86,6 +86,8 @@ Use the following syntax:
 
 When used like this, `print` will automatically use the `__str__` method that you wrote to provide a human-readable print of the object contents.
 {% endspoiler %}
+
+Now try it out! In the Terminal, run `python cardgame.py` and verify the results.
 
 {% next "Next: the deck" %}
 
