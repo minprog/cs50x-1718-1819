@@ -97,7 +97,7 @@ In this lab, a Deck will be a standard deck of hearts, diamonds, clubs and spade
 
 ![A UML representation of the Deck class, containing a cards attribute, which is a list of Card objects and two methods, one called shuffle and one called deal. both take no arguments.](deck_class.png)
 
-**Add** a declaration for the `Deck` class to your code. Then, **add** an initializer. In this case, the initializer doesn't take any arguments besides `self`, because a `Deck` will always be the same.
+**Add** a declaration for the `Deck` class to your code. Then, **add** an initializer. The initializer doesn't take any arguments besides `self`, because a `Deck` will always be the same.
 
 The initializer is a good place for default values. Let us provide you with the declarations of two important attributes for this class:
 
@@ -110,10 +110,12 @@ The initializer is a good place for default values. Let us provide you with the 
 
 ## Deck: instantiating cards
 
-But that's not enough! You'll need to create a `Card` instance for *each* combination of suits and values. Write code to generate those `Card`s and add them to an attribute called `cards.`
+With those `suits` and `values`, the `Deck` class can now create a `Card` instance for each of 52 combinations. Write code to generate those `Card`s and add them to an attribute called `cards.`
+
+It's possible to generate all cards and add them to the `cards` variable in one line. However, it is no problem to use a few more! Make it work first, then optimize.
 
 {% spoiler "Syntax Help" %}
-It's possible to generate all cards and add them to the `cards` variable in one line. However, it is no problem to use a few more! Make it work first, then optimize. Here is one suggestion for the pseudocode:
+Here is one suggestion for the pseudocode:
 
     create empty list of cards
     for each suit do
@@ -121,8 +123,6 @@ It's possible to generate all cards and add them to the `cards` variable in one 
             create new Card with that combination
             add it to the list
 {% endspoiler %}
-
-Let's test.
 
 {% next %}
 
