@@ -93,11 +93,13 @@ Now try it out! In the Terminal, **run** `python cardgame.py` and verify the res
 
 ## Deck: a class that contains cards
 
-In this lab, a Deck will be a standard deck of hearts, diamonds, clubs and spades, with values Ace through King. It will have methods to shuffle, and to deal one card out of the deck:
+In this lab, a Deck will be a standard deck of hearts, diamonds, clubs and spades, with values Ace through King. It will have two methods: one to shuffle, and one to deal a card out of the deck:
 
 ![A UML representation of the Deck class, containing a cards attribute, which is a list of Card objects and two methods, one called shuffle and one called deal. both take no arguments.](deck_class.png)
 
-**Add** a declaration for the `Deck` class to your code. Then, **add** an initializer. The initializer doesn't take any arguments besides `self`, because a `Deck` will always be the same.
+Before writing those methods, declare the class and add an initializer.
+
+**Add** a declaration for the `Deck` class to your code. Then, **add** an initializer. The initializer for this class doesn't take any arguments besides `self`, because a `Deck` will always be the same.
 
 The initializer is a good place for default values. Let us provide you with the declarations of two important attributes for this class:
 
@@ -110,9 +112,9 @@ The initializer is a good place for default values. Let us provide you with the 
 
 ## Deck: instantiating cards
 
-With those `suits` and `values`, the `Deck` class can now create a `Card` instance for each of 52 combinations. Write code to generate those `Card`s and add them to an attribute called `cards.`
+With those `suits` and `values`, the `Deck` class should now be able to create a `Card` instance for each of 52 combinations. Code to do this should be added to the end of the initializer. **Write** code to generate all 52 `Card`s and add them to an list called `cards.`
 
-It's possible to generate all cards and add them to the `cards` variable using a single line of code. However, it is no problem to use a few more! Make it work first, then optimize.
+It's possible to generate all cards and add them to the `cards` variable using a single line of code. However, it is no problem to use more lines! Make it work first, then optimize.
 
 {% spoiler "Syntax Help" %}
 Here is one suggestion for the pseudocode:
@@ -137,7 +139,7 @@ Now you can test the class. Go to the `if __name__ == "__main__"` section of you
     deck = Deck()
     print(deck)
 
-When run, your program will hopefully print that the deck contains 52 cards!
+When run, your program will hopefully report that the deck contains 52 cards!
 
 {% next %}
 
@@ -145,11 +147,11 @@ When run, your program will hopefully print that the deck contains 52 cards!
 
 The first of our main methods for the `Deck` class is `shuffle`. It should take the list of `Card`s and shuffle it pseudorandomly.
 
-**First**, import a useful method that comes with Python. It's actually called `shuffle`! Add the following line at the top of your program:
+**First**, import a useful module that comes with Python. It's called `random` and happens to provide a `shuffle` method! Add the following line at the top of your program:
 
     import random
 
-**Second**, write a `shuffle` method for the `Deck` class. It should do nothing other than call the `random.shuffle` with the `cards` as a parameter. This will provide shuffling functionality for your class, and *delegate* that functionality to another (Python-provided) module.
+**Second**, write a `shuffle` method for the `Deck` class. It should do nothing other than call `random.shuffle` with `cards` as a parameter. This will provide shuffling functionality for your class, and *delegate* that functionality to another (Python-provided) module.
 
 {% spoiler "Syntax Help" %}
 `random.shuffle` can be used to shuffle lists like this:
