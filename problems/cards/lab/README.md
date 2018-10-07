@@ -8,7 +8,9 @@ Object-oriented programming is commonly used to model real-world things, like ca
 
 ## Cards
 
-Let's create a `Card` class first. For this lab, a `Card` is a very simple object. It only contains the bare minimum needed to define what kind of card it is:
+Let's create a `Card` class first. For this lab, a `Card` is very simple *Data Class*. It only contains a few properties and the methods necessary to fill those.
+
+In this case, the fields will be bare minimum needed to define what kind of card it is:
 
 - the suit, or color, of the card (like Spades :spades:)
 - the value of the card (2, 3, A, J, ...)
