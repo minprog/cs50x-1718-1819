@@ -169,61 +169,40 @@ With the code that you have now, you can't really test if the `shuffle` method w
 
 {% next %}
 
-## Dealing
+## Deck: dealing
 
-Now that the deck is shuffled, it's time to draw cards from the deck. In OOP it is common to only let classes/objects directly change their properties. In other words, their data is kept private and only through their callable methods can their properties be manipulated. This concept is called encapsulation. In our case it means that the list of cards within the deck object is managed by the deck itself.
-So instead taking cards directly from the deck, we'll let the deck 'deal' them to us.
+Now that the deck is shuffled, we can draw cards from the deck. **Create** a method `deal` that removes the top card from the attribute `cards` and `return` it. Removal means that after calling `deal`, the number of cards in `cards` will have decremented.
 
-Once again create a method, this time call it `deal(self)`, that removes the top card in the self.cards list and `return`s that card. Consider cards to be stacked from first to last card as bottom to top card. Thus `deal` will have to remove the last card in the self.cards list.
+Once again, it's possible to re-use standard Python functionality to remove one `Card` from `cards`. Take a look at the docs for [Python lists](https://docs.python.org/3/tutorial/datastructures.html) and find an appropriate method to do this. Then use that method in your own `deal` method! Don't forget to actually `return` the card that you got from the deck.
 
-Python itself already implemented a useful method within their list class, called `pop()`. Documentation can be found at https://docs.python.org/3/tutorial/datastructures.html. Use this method in your `deal(self)` method, and don't forget to actually `return` the card!
+{% next %}
 
-Notice how an object can be passed around and used much like any other variable can? Python actually has everything wrapped in classes. Every integer and string you've used in Python has always been an object.
+## Deck: testing again
 
-{% next "Continue: Printing cards" %}
+In your testing code, add
 
-## Printing
+    card = deck.deal()
 
-To test if shuffling the cards works as we hope it would, we're going to see what card is on top before and after shuffling. Before shuffling we expect to see the King of Spades and after shuffling we expect.. well any card really.
+right after creating the `Deck`. Because the deck hasn't been shuffled yet, this card should be the King of Spades. Use `print(card)` to print the card. **Try** it out!
 
-First let's add `card = deck.deal()` to the `if __name__ == "__main__"`, right under the creation of the deck. This should be our King of Spades, so let's check by printing. Use `print(card)` to print the card object given back by the deck's deal method.
-Hmmm that's not very helpful is it? It printed something like "<__main__.Card object at 0x7f2fbb828128>", at least it should. If it didn't, retrace your steps to see what went wrong before continuing.
-If your terminal output does look alike, let me explain what we're seeing. First we have the "__main__.Card object" which tells us we printed an instance (object) of type Card originating from our main file. Secondly the "at 0x7f2fbb828128" tells us where that object was allocated in memory. So, was this the King of Spades then?
-To check, instead of printing the object, we could try and print its properties.
-Below your earlier print statement add `print(f"{card.value} of {card.suit}")` and execute the script once more. This should print "K of Spades", it being the last card created by our initialization method.
+Now test the `shuffle` method! Call it in your testing code and verify that the shuffling is indeed pseudorandom.
 
-Having to construct strings for every object each time you're printing them is rather arduous though. Preferably we want to be able to use `print(card)`. To this end, we'll have to overwrite one of python's built in methods for the Card class. It's called the `__str__(self)` method. This method is called on by the print function and always returns a string. Add it to the Card class and have it `return` the f-string we used in the print statement earlier.
-Now execute the script once more and both print statements should produce the same result. If so, remove the redundant print statement, else retrace and check for mistakes.
+{% next "Final Checkup" %}
 
-Now test the shuffle method! Insert it just above `card = deck.deal()` and wrap the deal and print statements in a for loop like this:
-```python
-for i in range(5):
-  card = deck.deal()
-  print(card)
-```
-This should print 5 different playing cards in no particular order. If they are ordered, first rerun the script a couple of times. The chance of drawing a straight flush from a shuffled deck multiple times in a row is astronomically low. If you get dealt the same 5 cards multiple times, retrace and fix your mistake!
+## Final Checkup
 
-{% next "Continue: Printing lists" %}
+Your classes now should look like this:
 
-## Printing a list of objects
+![A UML diagram comprising the Deck and Card classes as described earlier](overview.png)
 
-Naturally you would expect printing the deck would be much the same, but there's a small caveat. Try printing the deck.cards list by adding `print(deck.cards)` to the `if __name__ == "__main__"`. See how we end up with those memory locations again?
+Note that some of the methods that you wrote aren't in this diagram. Usually, we keep everything that's not relevant out of the diagrams. But what is relevant?
 
-What happens is, when printing a list the re declared `__str__` method isn't called, instead the `__repr__` method is called. But before you go rewriting that method, let me first tell you that you shouldn't actually be printing lists like that in the first place. When printing a list, you should be unpacking each element and print them individually. Much like printing arrays in C, printing a list in Python is done iteratively. Add the following to the bottom of the `if __name__ == "__main__"` statement in cardgame.py:
-```python
-for card in deck.cards:
-  print(card)
-```
-Now you can see how your deck is shuffled, remember the final card in the list is the top card of the deck!
+To determine that, we look at classes from a "user" perspective. What information do we need to use the class well? We wouldn't need to know that `Deck` has a `cards` attribute, because `Deck` has two well-defined methods that we need to work with the deck: `shuffle` and `deal`. Everything else is *implementation detail*.
 
-{% next "Continue: Final Remarks" %}
+In other words, classes' data is kept private and only through their methods can their attributes be manipulated. This idea is called *encapsulation*. Exceptions are data classes, like `Card`, which are purposely designed to hold some basic data, just like a `struct` in C.
 
-## Closing Statement
+But if you're keen to check your implementation *exactly*, here's a UML diagram that contains all methods and attributes from an implementation perspective:
 
-These are the basics of working with objects in Python. You should now have a firmer grasp on how to define classes and what parts of your program should have its data contained within a class.
+![A UML diagram that's augmented from the earlier diagrams. For the card class, it adds the init and str methods. For the deck class, it adds the init and str methods, as well as the cards, suits and values attributes.](overview-implementation.png)
 
-Use your understanding of these concepts to tackle your next exercise; implementing one of the earliest video games, "Adventure"!
-
-Below you'll find an example of what your code could (or should) look like by the end of the exercise.
-
-{% next "Solution" %}
+This was Game of Cards.
