@@ -1,8 +1,16 @@
+<style>
+img
+{
+     height: 50%;
+     width: 50%;
+}
+</style>
+
 # Game of Cards
 
 Object-oriented programming is commonly used to model real-world things, like cars or businesses, as well as their behaviors and interactions. Each class represents a "kind of thing" and bundles relevant functionality in the form of methods. In this lab, you'll model a deck of 52 playing cards.
 
-<img src="https://raw.githubusercontent.com/Qvdpost/GameOfCards/master/Lab/card_deck.png" style="padding: 10px">
+![A few playing cards for illustration](card_deck.png)
 
 {% next "Let's get started" %}
 
@@ -17,7 +25,7 @@ In this case, the attributes will contain the minimum of information needed to u
 
 In UML, the class looks like this:
 
-![a class called Card with two attributes: one is called suit of type string, the other is called value, also of type string](card_class.png)
+![A class called Card with two attributes: one is called suit of type string, the other is called value, also of type string.](card_class.png){:}
 
 **Write** a declaration for the `Card` class. In the editor to the right, add it to `cardgame.py`. You'll write the class body in a minute!
 
@@ -195,7 +203,7 @@ Now test the `shuffle` method! Call it in your testing code and verify that the 
 
 Your classes now should look like this:
 
-![A UML diagram comprising the Deck and Card classes as described earlier](overview.png)
+![A UML diagram comprising the Deck and Card classes as described earlier.](overview.png)
 
 Note that some of the methods that you wrote aren't in this diagram. Usually, we keep everything that's not relevant out of the diagrams.
 
