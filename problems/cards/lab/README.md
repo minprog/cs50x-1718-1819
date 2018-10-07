@@ -6,11 +6,11 @@ Object-oriented programming is commonly used to model real-world things, like ca
 
 {% next "Let's get started" %}
 
-## Cards
+## Card: a data class
 
-Let's create a `Card` class first. For this lab, a `Card` is very simple *Data Class*. It only contains a few properties and the methods necessary to fill those.
+Let's create a `Card` class first. For this lab, a `Card` is very simple *data class*: it only contains a few properties, as well as the method necessary to fill those.
 
-In this case, the fields will be bare minimum needed to define what kind of card it is:
+In this case, the fields will contain the minimum of information needed to uniquely define what kind of card it is:
 
 - the suit, or color, of the card (like Spades :spades:)
 - the value of the card (2, 3, A, J, ...)
@@ -26,12 +26,40 @@ Use the following syntax:
 
     class ClassName(object):
 
-This includes the keyword `class`, the name of your class, as well as the parent class, which is usually `object`.
+First the `class` keyword, then the name of your class, and finally the parent class, which is usually `object`.
 {% endspoiler %}
 
-The class is not complete yet, so let's do that next.
+But a class declaration is not complete without a body, so let's do that next.
 
 {% next %}
+
+## Card: the class body
+
+Because `Card` is a data class, there are only two methods that are really needed to make it useful:
+
+- `__init__` to set values when creating one specific object of type `Card`
+- `__str__` to provide an easily readable description of the `Card` object
+
+First, write an initializer that takes `suit` and `value` parameters and initializes fields with the same name.
+
+{% spoiler "Syntax Help" %}
+Use the following syntax:
+
+    def __init__(self, field1, ...):
+        self.field1 = field1
+
+You can choose for which fields a value has to be provided to initialize an object. These should be named in the parameter list of the `__init__` method. In the method body, set the corresponding properties via `self`. Note that `__init__` doesn't `return` anything! It just sets properties.
+{% endspoiler %}
+
+Second, write a `__str__` method. It doesn't take any parameters other than `self` and should return a string that properly describes the object. In this case, the returned string might look like this:
+
+    Ace of spades
+
+Where `Ace` and `spades` should be replaced by the values from `self.suit` and `self.value`.
+
+{% next "Next: Testing" %}
+
+## Card: testing
 
 A Card is represented by its suit and value, as can be seen from the `__init__`, these values can be anything however. So a deck of apples and strawberries could also be made using this same Card class.
 Our Deck uses the traditional suits (Hearts, Diamonds, Clubs and Spades) and values (Ace through King).
