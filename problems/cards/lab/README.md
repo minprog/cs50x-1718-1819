@@ -10,16 +10,16 @@ Object-oriented programming is commonly used to model real-world things, like ca
 
 Let's create a `Card` class first. For this lab, a `Card` is very simple *data class*: it only contains a few attributes, as well as the initializer method necessary to fill those.
 
-In this case, the attributes will contain the minimum of information needed to uniquely define what kind of card it is:
+The attributes of a `Card` will contain the minimum of information needed to uniquely define what kind of card it is:
 
 - the suit, or color, of the card (like Spades :spades:)
 - the value of the card (2, 3, A, J, ...)
 
-In UML, the class looks like this:
+In a UML diagram, the class looks like this:
 
-![A class called Card with two attributes: one is called suit of type string, the other is called value, also of type string.](card_class.png)
+![A UML diagram of a class called Card with two attributes: one is called suit of type string, the other is called value, also of type string.](card_class.png)
 
-**Write** a declaration for the `Card` class. In the editor to the right, add it to `cardgame.py`. You'll write the class body in a minute!
+**Write** a declaration for the `Card` class. In the editor to the right, add it to `cardgame.py`. Don't worry about putting something *in* the class; you'll write the class body in a minute!
 
 {% spoiler "Syntax Help" %}
 Use the following syntax:
