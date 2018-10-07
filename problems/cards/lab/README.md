@@ -15,7 +15,7 @@ In this case, the fields will contain the minimum of information needed to uniqu
 - the suit, or color, of the card (like Spades :spades:)
 - the value of the card (2, 3, A, J, ...)
 
-In UML it should look like this:
+In UML, it looks like this:
 
 ![a class called Card with two fields: one is called suit of type string, the other is called value, also of type string](card_class.png)
 
@@ -60,6 +60,36 @@ Where `Ace` and `spades` should be replaced by the values from `self.suit` and `
 {% next "Next: Testing" %}
 
 ## Card: testing
+
+Let's test your class! Below the class definition, add a line of code:
+
+    if __name__ == "__main__":
+
+Anything that's inside this `if` will only be executed if we run the file directly from the command line using `python cardgame.py`.
+
+In the `if`, write a few statements to create `Card` objects.
+
+{% spoiler "Syntax Help" %}
+Use the following syntax:
+
+    var1 = ClassName(...)
+
+This assigns a new object of type `ClassName` to the variable `var1`. In the place of the `...` the parameters for the initializer should be provided.
+{% endspoiler %}
+
+And after those statements, add a few statements that print the objects from the variables you created.
+
+{% spoiler "Syntax Help" %}
+Use the following syntax:
+
+    print(var1)
+
+When used like this, `print` will automatically use the `__str__` method that you wrote to provide a human-readable print of the object contents.
+{% endspoiler %}
+
+{% next "Next: the deck" %}
+
+## Deck: a class that contains cards
 
 A Card is represented by its suit and value, as can be seen from the `__init__`, these values can be anything however. So a deck of apples and strawberries could also be made using this same Card class.
 Our Deck uses the traditional suits (Hearts, Diamonds, Clubs and Spades) and values (Ace through King).
