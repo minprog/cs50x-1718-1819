@@ -116,7 +116,7 @@ It's possible to generate all cards and add them to the `cards` variable in one 
         for each value do
             create new Card with that combination
             add it to the list
-{% end %}
+{% endspoiler %}
 
 Let's test.
 
