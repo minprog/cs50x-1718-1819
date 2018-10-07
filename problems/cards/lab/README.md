@@ -8,7 +8,7 @@ Object-oriented programming is commonly used to model real-world things, like ca
 
 ## Card: a data class
 
-Let's create a `Card` class first. For this lab, a `Card` is very simple *data class*: it only contains a few attributes, as well as the method necessary to fill those.
+Let's create a `Card` class first. For this lab, a `Card` is very simple *data class*: it only contains a few attributes, as well as the initializer method necessary to fill those.
 
 In this case, the attributes will contain the minimum of information needed to uniquely define what kind of card it is:
 
@@ -56,6 +56,12 @@ In the parameter list of the `__init__` method you define for which attributes a
     Ace of spades
 
 where `Ace` and `spades` should be replaced by the values from `self.suit` and `self.value`.
+
+{% spoiler "Syntax Help" %}
+Return an f-string like this one:
+
+    f"{var1} is {var2}"
+{% endspoiler %}
 
 {% next "Next: Testing" %}
 
