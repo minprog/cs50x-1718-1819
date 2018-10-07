@@ -142,12 +142,12 @@ It's possible to generate all cards and add them to the `cards` variable using a
 
     return f"{len(self.cards)} cards in the deck"
 
-Now you can test the class. Go to the `if __name__ == "__main__"` section of your program and **replace** the contents. Just create one instance of a `Deck` and print it:
+Now you can test the class. Go to the `if __name__ == "__main__"` section of your program and **replace** the contents with the following lines:
 
     deck = Deck()
     print(deck)
 
-When run, your program will hopefully report that the deck contains 52 cards!
+This creates one instance of a `Deck` and prints it. When run, your program will hopefully report that the deck contains 52 cards!
 
 {% next %}
 
