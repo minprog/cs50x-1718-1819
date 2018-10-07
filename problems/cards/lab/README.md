@@ -201,8 +201,14 @@ To determine that, we look at classes from a "user" perspective. What informatio
 
 In other words, classes' data is kept private and only through their methods can their attributes be manipulated. This idea is called *encapsulation*. Exceptions are data classes, like `Card`, which are purposely designed to hold some basic data, just like a `struct` in C.
 
-But if you're keen to check your implementation *exactly*, here's a UML diagram that contains all methods and attributes from an implementation perspective:
+But if you're keen to check your implementation *exactly*, press Next for a UML diagram that contains all methods and attributes from an implementation perspective.
 
-![A UML diagram that's augmented from the earlier diagrams. For the card class, it adds the init and str methods. For the deck class, it adds the init and str methods, as well as the cards, suits and values attributes.](overview-implementation.png)
+{% next %}
+
+## Implementation diagram
+
+This is what your classes should look like from an implementation perspective:
+
+![A UML diagram that's augmented from the earlier diagrams. For the card class, it adds the init and str methods. For the deck class, it adds the init and str methods, as well as the cards, suits and values attributes.](overview_implementation.png)
 
 This was Game of Cards.
