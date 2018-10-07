@@ -122,8 +122,6 @@ With those `suits` and `values`, there is enough information in the `Deck` class
 
 **Write** code to generate all 52 `Card`s and add them to an list called `cards`. Code to do this should be added to the end of the initializer.
 
-It's possible to generate all cards and add them to the `cards` variable using a single line of code. However, it is no problem to use more lines! Make it work first, then optimize.
-
 {% spoiler "Syntax Help" %}
 Here is one suggestion for the pseudocode:
 
@@ -133,6 +131,8 @@ Here is one suggestion for the pseudocode:
             create new Card with that combination
             add it to the list
 {% endspoiler %}
+
+It's possible to generate all cards and add them to the `cards` variable using a single line of code. However, it is no problem to use more lines! Make it work first, then optimize.
 
 {% next %}
 
