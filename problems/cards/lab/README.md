@@ -8,16 +8,16 @@ Object-oriented programming is commonly used to model real-world things, like ca
 
 ## Card: a data class
 
-Let's create a `Card` class first. For this lab, a `Card` is very simple *data class*: it only contains a few properties, as well as the method necessary to fill those.
+Let's create a `Card` class first. For this lab, a `Card` is very simple *data class*: it only contains a few attributes, as well as the method necessary to fill those.
 
-In this case, the fields will contain the minimum of information needed to uniquely define what kind of card it is:
+In this case, the attributes will contain the minimum of information needed to uniquely define what kind of card it is:
 
 - the suit, or color, of the card (like Spades :spades:)
 - the value of the card (2, 3, A, J, ...)
 
 In UML, it looks like this:
 
-![a class called Card with two fields: one is called suit of type string, the other is called value, also of type string](card_class.png)
+![a class called Card with two attributes: one is called suit of type string, the other is called value, also of type string](card_class.png)
 
 Now, write a declaration for the `Card` class in `cardgame.py`.
 
@@ -29,7 +29,7 @@ Use the following syntax:
 First the `class` keyword, then the name of your class, and finally the parent class, which is usually `object`.
 {% endspoiler %}
 
-But a class declaration is not complete without a body, so let's do that next.
+After writing the declaration, press Next to go on.
 
 {% next %}
 
@@ -40,15 +40,15 @@ Because `Card` is a data class, there are only two methods that are really neede
 - `__init__` to set values when creating one specific object of type `Card`
 - `__str__` to provide an easily readable description of the `Card` object
 
-First, write an initializer that takes `suit` and `value` parameters and initializes fields with the same name.
+First, write an initializer that takes `suit` and `value` parameters and initializes attributes with the same name.
 
 {% spoiler "Syntax Help" %}
 Use the following syntax:
 
-    def __init__(self, field1, ...):
-        self.field1 = field1
+    def __init__(self, attr1, ...):
+        self.attr1 = attr1
 
-You can choose for which fields a value has to be provided to initialize an object. These should be named in the parameter list of the `__init__` method. In the method body, set the corresponding properties via `self`. Note that `__init__` doesn't `return` anything! It just sets properties.
+In the parameter list of the `__init__` method you define for which attributes a value has to be provided. In the method body, you set the corresponding attributes via `self`. Note that `__init__` doesn't `return` anything! It just sets attributes.
 {% endspoiler %}
 
 Second, write a `__str__` method. It doesn't take any parameters other than `self` and should return a string that properly describes the object. In this case, the returned string might look like this:
@@ -94,7 +94,7 @@ When used like this, `print` will automatically use the `__str__` method that yo
 A Card is represented by its suit and value, as can be seen from the `__init__`, these values can be anything however. So a deck of apples and strawberries could also be made using this same Card class.
 Our Deck uses the traditional suits (Hearts, Diamonds, Clubs and Spades) and values (Ace through King).
 
-All these properties are defined within the `__init__` method, often times this is the very first method you'll define for your class.
+All these attributes are defined within the `__init__` method, often times this is the very first method you'll define for your class.
 
 To start out, let's create a deck. Add `deck = Deck()` to the `if __name__ == "__main__"` statement at the bottom of the file and run the script via `python cardgame.py` in the terminal.
 If everything went well, you'll be notified that a deck object was successfully created. However, the deck has no card yet!
