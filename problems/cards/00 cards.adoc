@@ -1,9 +1,0 @@
----
-layout: 2018/spring
----
-
-= Game of Cards
-
-Get familiar with objects through link:https://lab.cs50.io/uva/cs50x/master/problems/cards/lab[a Game of Cards]. You might need to create an account for GitHub first.
-
-No submission is required for this exercise. The aim is to get familiar with Object-Oriented Programming (OOP) in Python.
