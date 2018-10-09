@@ -279,7 +279,7 @@ Here room_id is the id for the room where the item can initially be found.
 Just like rooms, items all share the same three attributes. But unlike rooms they have little ways of interacting with the game other than just being there.
 That's what makes them best suited for a data class, per example of the follow UML diagram.
 
-TODO: UML
+image::item_class.png[Item, role="related thumb"]
 
 Neither the class `Item` or the function to load them have been implemented yet. So you'll have to create the files and functions yourself.
 
@@ -290,7 +290,7 @@ To do so, let's set up an `Inventory` class to manage those items for both the p
 
 The following UML diagram describes the methods that should be in your class, but the data fields are yours to figure out.
 
-TODO: UML
+image::inventory.png[Inventory, role="related thumb"]
 
 As you can see the inventory only has methods that it displays publicly. Its attributes are kept private, and are only meant to be accessed through these methods.
 Make sure you can add and remove items using their names from the inventory.
