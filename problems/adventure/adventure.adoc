@@ -249,7 +249,7 @@ Have it behave as follows:
 
 === Items. Tiny.
 
-Now that we have the basics of our game completed; a player can move between rooms and use a few commands to help out with the game, it's time to implement some of the more advanced features of the game.
+Now that we have the basics of our game implemented; a player can move between rooms and use a few commands to help out with the game, it's time to implement some of the more advanced features of the game.
 We're going to add items to the game for the player to pick up and interact with.
 
 === Adding items.
@@ -321,6 +321,8 @@ Don't forget to add this feature to the `LOOK` coomand!
 === Taking and dropping items.
 
 Now implement the `TAKE` <item> command. By use of `TAKE` the player can pick up an item from a room they're in. In other words, the item moves from a room to the player.
+Implement an `Adventure.take()` method that transfers an item for the inventory of a room to the inventory of the player.
+
 Of course there is some error catching to do, what happens for instance if a player takes something that is not in the room? Or an item that is located inside a room the player is not currently in?
 Both cases should be met by printing "`No such item.`" Resulting in the following gameplay:
 ----
