@@ -12,7 +12,7 @@ Let's create a `Card` class first. For this lab, a `Card` is very simple *data c
 
 The attributes of a `Card` will contain the minimum of information needed to uniquely define what kind of card it is:
 
-- the suit, or color, of the card (like Spades :spades:)
+- the suit, or color, of the card (like Spades)
 - the value of the card (2, 3, A, J, ...)
 
 In a UML diagram, the class looks like this:
@@ -33,7 +33,7 @@ After writing the declaration, press Next to go on.
 
 {% next %}
 
-## Card: the class body
+## Card: initializer
 
 Because `Card` is a data class, there are only two methods that are really needed to make it useful:
 
@@ -48,14 +48,18 @@ Use the following syntax:
     def __init__(self, attr1, ...):
         self.attr1 = attr1
 
-In the parameter list of the `__init__` method you define for which attributes a value has to be provided. In the method body, you set the corresponding attributes via `self`. Note that `__init__` doesn't `return` anything! It just sets attributes.
+In the parameter list of the `__init__` method, you define for which attributes a value has to be provided. In the method body, you set the corresponding attributes via `self`. Note that `__init__` doesn't `return` anything! It just sets attributes.
 {% endspoiler %}
+
+{% next %}
+
+## Card: __str__
 
 **Second**, write a `__str__` method. It doesn't take any parameters other than `self`, and should `return` a string that properly describes the object. In this case, the returned string might look like this:
 
     Ace of spades
 
-where `Ace` and `spades` are the values from attributes `self.suit` and `self.value`.
+`Ace` comes from the attribute `self.value` and `spades` from `self.suit`.
 
 {% spoiler "Syntax Help" %}
 Return a formatted string like this one:
@@ -90,7 +94,7 @@ Use the following syntax:
 
     print(var1)
 
-When used like this, `print` will automatically use the `__str__` method that you wrote to provide a human-readable print of the object contents.
+When used like this, `print` will automatically use the `__str__` method that you wrote to provide a human-readable description of the object contents.
 {% endspoiler %}
 
 Now try it out! In the Terminal, **run** `python cardgame.py` and verify the results.
@@ -120,7 +124,7 @@ The initializer is a good place for default values. Let us provide you with the 
 
 With those `suits` and `values`, there is enough information in the `Deck` class to be able to create a `Card` instance for each of 52 combinations.
 
-**Write** code to generate all 52 `Card`s and add them to an list called `cards`. Code to do this should be added to the end of the initializer.
+**Write** code to generate all 52 `Card`s and add them to a list called `cards`. Code to do this should be added to the end of the initializer.
 
 {% spoiler "Syntax Help" %}
 Here is one suggestion for the pseudocode:
@@ -130,6 +134,8 @@ Here is one suggestion for the pseudocode:
         for each value do
             create new Card with that combination
             add it to the list
+
+The list of cards should be an attribute (using `self`), so it can be accessed in other methods!
 {% endspoiler %}
 
 It's possible to generate all cards and add them to the `cards` variable using a single line of code. However, it is no problem to use more lines! Make it work first, then optimize.
