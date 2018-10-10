@@ -86,7 +86,7 @@ Keeping code seperated is a key part of OOP, and makes your code more easily rea
 
 In the data folder are 6 datafiles with which you can create 3 versions of Adventure:
 
-- `TinyRooms.txt` and `TinyItems.txt` together are the smallest adventure game consisting of 3 rooms and 2 items. Great for starting out with!
+- `TinyRooms.txt` and `TinyItems.txt` together are the smallest adventure game, consisting of 3 rooms and 2 items. Great for starting out with!
 
 - `SmallRooms.txt` and `SmallItems.txt` are a bit larger and include some more advanced interactions.
 
@@ -110,7 +110,7 @@ from room import Room
 This line ensures that the `Room` class from `room.py` is available to use from `adventure.py`, which makes it possible to instantiate `Room`-type objects for use in the adventure game:
 
 ----
-`Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')`
+Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')
 ----
 
 Inside the `Adventure` class are a couple of methods that make the game work.
@@ -133,32 +133,32 @@ This is your `Room` class, where al code related to rooms will be collected. It 
 
 `TinyRooms.txt`, the smallest version of the game, contains the following data:
 ----
-    1
-    Outside building
-    You are standing at the end of a road before a small brick
-    building.  A small stream flows out of the building and
-    down a gully to the south.  A road runs up a small hill
-    to the west.
-    -----
-    WEST     2
-    UP       2
-    NORTH    3
-    IN       3
+1
+Outside building
+You are standing at the end of a road before a small brick
+building.  A small stream flows out of the building and
+down a gully to the south.  A road runs up a small hill
+to the west.
+-----
+WEST     2
+UP       2
+NORTH    3
+IN       3
 
-    2
-    End of road
-    You are at the end of a road at the top of a small hill.
-    You can see a small building in the valley to the east.
-    -----
-    EAST     1
-    DOWN     1
+2
+End of road
+You are at the end of a road at the top of a small hill.
+You can see a small building in the valley to the east.
+-----
+EAST     1
+DOWN     1
 
-    3
-    Inside building
-    You are inside a building, a well house for a large spring.
-    -----
-    SOUTH     1
-    OUT       1
+3
+Inside building
+You are inside a building, a well house for a large spring.
+-----
+SOUTH     1
+OUT       1
 ----
 
 These are the details for all rooms in the game and how to navigate between them. Each room consists of 4 parts:
@@ -169,35 +169,44 @@ These are the details for all rooms in the game and how to navigate between them
   ---
   <routes>
 ----
-Where <routes> are made up of a <direction> and <id>. For example, Room 2 - End of road is connected to room 1 - Outside building by directions 'EAST' and 'DOWN'.
+
+A `<routes>` line contains both a <direction> and an <id>. For example, `Room 2 - End of road` is connected to room `1 - Outside building` by directions 'EAST' and 'DOWN'.
 
 You'll find that the name is actually a short description of the room, whereas the 'description' is fully descriptive. Keep this in mind for later parts of the game!
 First we'll have to parse this data into our program. Since a room is a bit more complicated than a simple string or integer we have set you up with a class named Room in room.py.
 
 In adventure.py you'll find the `load_rooms` method. As you can see we've already opened the file for you, but you'll have to do the parsing part.
-Implement the `Room` class and `load_rooms` method so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
 
-Hint: When parsing the file, look for recurring elements that seperate data entries. It also might be a good idea to strip any trailing newlines from the data-fields.
+Implement the `Room` class and `load_rooms` method so that each room from `TinyRooms.txt` is instantiated as a Room object. Start with `id`, `name` and `description` and, for now, leave out the routes to other rooms.
+
+Hint: To parse the file, analyse precisely how the file is formatted. What recurring elements do you see that seperate data entries?
+
+Hint: When reading lines, your string may contain extra newlines from the data file. You can strip these extra characters using standard Python methods!
 
 
 === Moving around
 
-Next up is moving to and from rooms. To be able to move though, we'll first have to implement the routes. Parse the routes from the data file to see which rooms are connected.
-Add an attribute and/or a method to the Room class that can be used to see if the given command is a valid move.
+Now that we have a couple of rooms, we can almost start playing the game. But we left out connections from room to room, so we can't really move yet!
 
-Then create a `current_room` attribute to find and update the player's location. Use this attribute in the `Adventure.move()` method and update it when a move is made.
-Don't forget to set it to the room with `id` 0 though! The game always starts at the very first room.
+In the `Room` class, add an attribute to hold connections. What kind of Python data structure can you use for this?
 
-Always check for a valid connection when attempting to move.
-I.E. Can we `move` "EAST" from the first room? If not, let the player know they tried an "Invalid command.".
+Then, add code to the `load_rooms` method in `Adventure` to read the connections from the data file and add those to the `Room` objects.
 
-You can test moving around by adding the following code to the `if __name__ == '__main__'`:
+Next, add a method to the `Room` class that can be used to see if the given command is a valid move.
+
+Now, we can create a `current_room` attribute in `Adventure` to keep track of where our player is. Make sure to initialize that attribute to 0 at the start of the game, and to update it in the `move()` method.
+
+Hint: Always check for a valid connection when attempting to move. I.E. Can we `move` "EAST" from the first room? If not, let the player know they tried an "Invalid command".
+
+You can test moving around by adding the following code to `if __name__ == '__main__'`:
 ----
   adventure.move("WEST") # should move to the 'room 2' object
   print(adventure.current_location) # should print room 2: "End of road"
   adventure.move("IN") # should move to the 'room 3' object
   print(adventure.current_location) # should print room 3: "Inside building"
 ----
+
+Make sure this works before going on!
 
 
 === Prompt for commands
