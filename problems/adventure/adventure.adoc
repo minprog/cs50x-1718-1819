@@ -177,7 +177,7 @@ First we'll have to parse this data into our program. Since a room is a bit more
 
 In adventure.py you'll find the `load_rooms` method. As you can see we've already opened the file for you, but you'll have to do the parsing part.
 
-We've already called he `load_rooms` method in the `__init__` of the Adventure class for you. We use it there because everytime we create a game, we want it to have a list of rooms. 
+We've already called he `load_rooms` method in the `__init__` of the Adventure class for you. We use it there because everytime we create a game, we want it to have a list of rooms.
 
 Implement the `Room` class and `load_rooms` method so that each room from `TinyRooms.txt` is instantiated as a Room object. Start with `id`, `name` and `description` and, for now, leave out the routes to other rooms.
 
@@ -324,10 +324,12 @@ Make sure you can add and remove items using their names from the inventory.
 
 === Placing items
 
-First add an inventory to each room you create, so they can hold an item when they're created.
+First add an inventory to each room you create, so each room can hold items.
 Now, when you load the items, place them in the room they should initially be in.
 
-Use the initial room id of the item to find the correct room. Then use the methods of the rooms inventory class to add the items!
+Use the room id of the item to find the correct room. Then use the methods of the rooms inventory class to add the items!
+Note that when you add an `Item` to an `Inventory`, you should do so by passing the item itself to the `Inventory.add(item)` method.
+Removing an `Item` is done by passing the 'item name' to the `Inventory.remove(item_name)` method.
 
 === Finding items
 
