@@ -345,7 +345,7 @@ Don't forget to add this feature to the `LOOK` coomand!
 === Taking and dropping items
 
 Now implement the `TAKE` <item> command. By use of `TAKE` the player can pick up an item from a room they're in. In other words, the item moves from a room to the player.
-Notice how the command consists of two parts, instead of just the one for moving in a direction. You might want to either split the user input to recocgnize a `TAKE` or `DROP` command.
+Notice how the command consists of two parts, instead of just the one for moving in a direction. You might want to either split the user input to recognize a `TAKE` or `DROP` command.
 Implement an `Adventure.take()` method that transfers an item for the inventory of a room to the inventory of the player.
 
 Of course there is some error catching to do, what happens for instance if a player takes something that is not in the room? Or an item that is located inside a room the player is not currently in?
