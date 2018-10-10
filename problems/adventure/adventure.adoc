@@ -177,6 +177,8 @@ First we'll have to parse this data into our program. Since a room is a bit more
 
 In adventure.py you'll find the `load_rooms` method. As you can see we've already opened the file for you, but you'll have to do the parsing part.
 
+We've already called he `load_rooms` method in the `__init__` of the Adventure class for you. We use it there because everytime we create a game, we want it to have a list of rooms. 
+
 Implement the `Room` class and `load_rooms` method so that each room from `TinyRooms.txt` is instantiated as a Room object. Start with `id`, `name` and `description` and, for now, leave out the routes to other rooms.
 
 Hint: To parse the file, analyse precisely how the file is formatted. What recurring elements do you see that seperate data entries?
