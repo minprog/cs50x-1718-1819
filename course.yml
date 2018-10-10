@@ -23,7 +23,7 @@ feedback_templates:
         explanation: "Will ask student to re-submit because of problem with link."
         feedback: "De link die je hebt ingestuurd voor Scratch is voor ons niet zichtbaar. Check of je je programma hebt geshared volgens de instructies onderaan de opdracht. Je kunt nog een keer submitten als het gecorrigeerd is; je moet dan zowel de link als het .sb2-bestand opnieuw insturen. Mocht het niet lukken, vraag een assistent!"
         grade: 0
-    doenst_compile:
+    doesnt_compile:
         explanation: "Will ask student to re-submit version that does compile."
-        feedback: "You send in a file that doens't compile! Please have a look at your code and make sure it compiles before submitting. You can compile it yourself or you can use check50 to ensure it works."
+        feedback: "You sent in a file that doesn't compile! Please have a look at your code and make sure it compiles before submitting. You can compile it yourself or you can use check50 to ensure it works."
         grade: 0
