@@ -201,9 +201,9 @@ Hint: Always check for a valid connection when attempting to move. I.E. Can we `
 You can test moving around by adding the following code to `if __name__ == '__main__'`:
 ----
   adventure.move("WEST") # should move to the 'room 2' object
-  print(adventure.current_location) # should print room 2: "End of road"
+  print(adventure.current_room) # should print room 2: "End of road"
   adventure.move("IN") # should move to the 'room 3' object
-  print(adventure.current_location) # should print room 3: "Inside building"
+  print(adventure.current_room) # should print room 3: "Inside building"
 ----
 
 Make sure this works before going on!
