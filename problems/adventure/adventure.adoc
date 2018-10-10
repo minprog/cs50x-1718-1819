@@ -77,9 +77,7 @@ adventure.py  data/  room.py
 
 === Understanding
 
-Though Crowther originally wrote his game in Fortran, an imperative programming language that has been around since the 1950s, we will be taking a more modern aproach to its implementation.
-
-You will make your first foray into Object-Oriented Programming (OOP), instead of having your main function keep track of all relevant variables and states we'll disperse this information over a variety of classes.
+Though Crowther originally wrote his game in Fortran, an imperative programming language that has been around since the 1950s, we will be taking a more modern aproach to its implementation, making your first foray into Object-Oriented Programming (OOP). Instead of having your main function keep track of all relevant variables and states we'll break up the logic over a variety of classes.
 We've gone ahead and made a basic setup for you. The player and room classes have been seperated from the main file, but it's up to you to implement their unfinished methods.
 
 Keeping code seperated is a key part of OOP, and makes your code more easily readable and maintainable. See for yourself!
@@ -117,11 +115,11 @@ There are 6 datafiles with which you can create 3 versions of Adventure. TinyRoo
 SmallRooms.txt and SmallItems.txt is a bit larger and includes some more advanced interactions.
 The full game of Adventure is contained within CrowtherRooms.txt and CrowtherItems.txt.
 
-== What to do? Tiny.
+== Step 1: Loading and moving around
 
-=== Parsing data files.
+=== Parsing data files
 
-TinyRooms, the smallest version of the game, contains the following data:
+`TinyRooms.txt`, the smallest version of the game, contains the following data:
 ----
     1
     Outside building
@@ -170,7 +168,7 @@ Implement the `Room` class and `load_rooms` method so that each room from TinyRo
 Hint: When parsing the file, look for recurring elements that seperate data entries. It also might be a good idea to strip any trailing newlines from the data-fields.
 
 
-=== Moving around.
+=== Moving around
 
 Next up is moving to and from rooms. To be able to move though, we'll first have to implement the routes. Parse the routes from the data file to see which rooms are connected.
 Add an attribute and/or a method to the Room class that can be used to see if the given command is a valid move.
@@ -190,7 +188,7 @@ You can test moving around by adding the following code to the `if __name__ == '
 ----
 
 
-=== Prompt for commands.
+=== Prompt for commands
 
 Time for your first steps into making this a game; have players give commands.
 
@@ -218,7 +216,7 @@ Like so:
 If a player enters a room they've already seen, only give them the short description.
 Check the `SmallSynonyms.txt` for all directions your game should be able to handle.
 
-=== Additional commands.
+=== Additional commands
 
 Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT`, `HELP` and `LOOK` commands.
 
@@ -251,12 +249,12 @@ Have it behave as follows:
 ----
 
 
-=== Items. Tiny.
+== Step 2: Finding and picking up items
 
 Now that we have the basics of our game implemented; a player can move between rooms and use a few commands to help out with the game, it's time to implement some of the more advanced features of the game.
 We're going to add items to the game for the player to pick up and interact with.
 
-=== Adding items.
+=== Adding items
 
 Items in Adventure have a name, description and location. To add these items to the game we'll again have to parse their data file first. You can find them inside the `TinyItems.txt`, `SmallItems.txt` and `CrowtherItems.txt`.
 They look alot like rooms, but are just a bit simpeler.
@@ -287,7 +285,7 @@ image::item_class.png[Item, role="related thumb"]
 
 Neither the class `Item` or the method to load them have been implemented yet. So you'll have to create the files and methods yourself.
 
-=== Holding items.
+=== Holding items
 
 Items can be either located in the rooms inventory or the players inventory.
 To do so, let's set up an `Inventory` class to manage those items for both the player and the rooms.
@@ -299,14 +297,14 @@ image::inventory_class.png[Inventory, role="related thumb"]
 As you can see the inventory only has methods that it displays publicly. Its attributes are kept private, and are only meant to be accessed through these methods.
 Make sure you can add and remove items using their names from the inventory.
 
-=== Placing items.
+=== Placing items
 
 First add an inventory to each room you create, so they can hold an item when they're created.
 Now, when you load the items, place them in the room they should initially be in.
 
 Use the initial room id of the item to find the correct room. Then use the methods of the rooms inventory class to add the items!
 
-=== Finding items.
+=== Finding items
 
 When a player visits a room with one or more items the game will have to let the player know which items there are in addition to the description of the room:
 ----
@@ -322,7 +320,7 @@ It is formatted as follows:
 
 Don't forget to add this feature to the `LOOK` coomand!
 
-=== Taking and dropping items.
+=== Taking and dropping items
 
 Now implement the `TAKE` <item> command. By use of `TAKE` the player can pick up an item from a room they're in. In other words, the item moves from a room to the player.
 Notice how the command consists of two parts, instead of just the one for moving in a direction. You might want to either split the user input to recocgnize a `TAKE` or `DROP` command.
@@ -378,7 +376,7 @@ It should print all items currently owned by the player, like this:
   >
 ----
 
-=== Items and routes. Small.
+== Step 3: Conditional movement
 
 Time to step up our game. Let's get started on the Small version of adventure.
 Small has items as well as interaction with those items. In `SmallRooms.txt` you'll find some rooms actually have an item listed in their routes.
@@ -395,8 +393,6 @@ You'll need these new routes for the next part; conditional movements.
   DOWN       8/KEYS
   DOWN       7
 ----
-
-=== Conditional movements.
 
 Moving to a room can now depend on items being in the inventory of the player. Room 6, for instance, allows access to rooms 7 and 8 through the same movement `DOWN`, depending on whether the player owns the keys. To progress in the game the player will first need to find the keys.
 
@@ -433,7 +429,7 @@ A conditional movement would look like this:
   >
 ----
 
-=== Forced movement.
+== Step 4: forced movement
 
 Sometimes a player will attempt a movement they cannot make yet, because they are missing the required item. Passing the steel grate in room 6 for example requires keys.
 Instead of printing a custom message, we'll have the player move into a special sort of room. This room displays a description for what happened, and then forcefully moves the player to where the forced movement points.
@@ -464,8 +460,7 @@ Remember to always print the full description when a room `FORCED` is entered. T
 
 Hint: You'll most likely want to do a check each time you move to a new room. And if there's a forced movement in the new room, take a good look around and follow the forced route.
 
-=== The winner takes all.
-
+== Step 5: The winner takes all
 
 Now that you have implemented all the features of Adventures, Crowther game is finally playable.
 But let's also make it winnable. For example, in the `CrowtherRooms.txt` file you can see that room 77 corresponds to victory.
@@ -486,7 +481,3 @@ Implement an Object-Oriented version of Crowther's Adventure game.
 style50 adventure.py
 style50 room.py
 ```
-
-=== Web
-
-http://playfic.com/games/mgscox/adventure
