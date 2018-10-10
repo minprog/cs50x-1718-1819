@@ -1,0 +1,7 @@
+name: speller
+files:
+    required:
+        - dictionary.c
+        - dictionary.h
+        - Makefile
+

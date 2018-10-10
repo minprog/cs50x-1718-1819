@@ -77,78 +77,88 @@ adventure.py  data/  room.py
 
 === Understanding
 
-Though Crowther originally wrote his game in Fortran, an imperative programming language that has been around since the 1950s, we will be taking a more modern aproach to its implementation.
-
-You will make your first foray into Object-Oriented Programming (OOP), instead of having your main function keep track of all relevant variables and states we'll disperse this information over a variety of classes.
+Though Crowther originally wrote his game in Fortran, an imperative programming language that has been around since the 1950s, we will be taking a more modern aproach to its implementation, making your first foray into Object-Oriented Programming (OOP). Instead of having your main function keep track of all relevant variables and states we'll break up the logic over a variety of classes.
 We've gone ahead and made a basic setup for you. The player and room classes have been seperated from the main file, but it's up to you to implement their unfinished methods.
 
 Keeping code seperated is a key part of OOP, and makes your code more easily readable and maintainable. See for yourself!
 
+==== `data/`
+
+In the data folder are 6 datafiles with which you can create 3 versions of Adventure:
+
+- `TinyRooms.txt` and `TinyItems.txt` together are the smallest adventure game, consisting of 3 rooms and 2 items. Great for starting out with!
+
+- `SmallRooms.txt` and `SmallItems.txt` are a bit larger and include some more advanced interactions.
+
+- Lastly, the full original Adventure is contained within `CrowtherRooms.txt` and `CrowtherItems.txt`.
+
 ==== `adventure.py`
 
+Take a look at `adventure.py`. The file currently has three components:
+
+- an `import` statement
+- an `Adventure` class
+- an `if __name__ == "__main__"` part
+
 Instead of working from a single file, we've split up our classes into seperate files. This keeps our files short and tidy, but we'll still have to link them up. For that we'll have to import them as follows:
+
 [source]
 ----
 from room import Room
 ----
-This line tells python to look for the file room.py make its contents available from within adventure.py.
-The Room class can now be freely used in `adventure.py`.
-For example `Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a Room object with the correct attributes.
 
-You'll be creating these objects in the `load_rooms` method, though for now it is little more than a TODO.
+This line ensures that the `Room` class from `room.py` is available to use from `adventure.py`, which makes it possible to instantiate `Room`-type objects for use in the adventure game:
 
-`Won` will let the game know when you've completed the game. You still have to let won know when the game is won however.
+----
+Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')
+----
 
-Moving around in the game is done via the `move` method. Here you'll make use of the rooms you've created earlier.
+Inside the `Adventure` class are a couple of methods that make the game work.
 
-The `play` method contains the main loop that makes your game playable. We've already given you a headstart here, but you'll have to figure out how to best use your classes.
-See how we check if a command is in a list of directions? Expand this list to your needs and perhaps create lists of your own to bundle other commands.
+You'll be creating `Room` objects in the `load_rooms` method, though for now it is little more than a `TODO`.
+
+The `won` method will eventually decide if the game has been won by the player.
+
+Moving around in the game is handled by the `move` method. Here you'll make use of the room objects you've created earlier.
+
+The `play` method contains the main loop that makes your game playable. One important part of this is translating commands given by your player into method calls that handle the actions. We've already given you a headstart here. See how we check if a command is a "direction" like `EAST` or `WEST`?
 
 ==== `room.py`
 
-This is your room class. The blueprint for the room objects that your game will need to function properly.
-It is still mostly empty, the implementation is all up to you!
+This is your `Room` class, where al code related to rooms will be collected. It is still mostly empty!
 
-==== `data/`
+== Step 1: Loading and moving around
 
-Within the data folder you can find everything you need to create your items and rooms with.
-There are 6 datafiles with which you can create 3 versions of Adventure. TinyRooms.txt and TinyItems.txt, the smallest version, only have 3 rooms and 2 items. Great for starting out with!
+=== Parsing data files
 
-SmallRooms.txt and SmallItems.txt is a bit larger and includes some more advanced interactions.
-The full game of Adventure is contained within CrowtherRooms.txt and CrowtherItems.txt.
-
-== What to do? Tiny.
-
-=== Parsing data files.
-
-TinyRooms, the smallest version of the game, contains the following data:
+`TinyRooms.txt`, the smallest version of the game, contains the following data:
 ----
-    1
-    Outside building
-    You are standing at the end of a road before a small brick
-    building.  A small stream flows out of the building and
-    down a gully to the south.  A road runs up a small hill
-    to the west.
-    -----
-    WEST     2
-    UP       2
-    NORTH    3
-    IN       3
+1
+Outside building
+You are standing at the end of a road before a small brick
+building.  A small stream flows out of the building and
+down a gully to the south.  A road runs up a small hill
+to the west.
+-----
+WEST     2
+UP       2
+NORTH    3
+IN       3
 
-    2
-    End of road
-    You are at the end of a road at the top of a small hill.
-    You can see a small building in the valley to the east.
-    -----
-    EAST     1
-    DOWN     1
+2
+End of road
+You are at the end of a road at the top of a small hill.
+You can see a small building in the valley to the east.
+-----
+EAST     1
+DOWN     1
 
-    3
-    Inside building
-    You are inside a building, a well house for a large spring.
-    -----
-    SOUTH     1
-    OUT       1
+3
+Inside building
+You are inside a building, a well house for a large spring.
+-----
+SOUTH     1
+OUT       1
 ----
 
 These are the details for all rooms in the game and how to navigate between them. Each room consists of 4 parts:
@@ -159,29 +169,36 @@ These are the details for all rooms in the game and how to navigate between them
   ---
   <routes>
 ----
-Where <routes> are made up of a <direction> and <id>. For example, Room 2 - End of road is connected to room 1 - Outside building by directions 'EAST' and 'DOWN'.
+
+A `<routes>` line contains both a <direction> and an <id>. For example, `Room 2 - End of road` is connected to room `1 - Outside building` by directions 'EAST' and 'DOWN'.
 
 You'll find that the name is actually a short description of the room, whereas the 'description' is fully descriptive. Keep this in mind for later parts of the game!
 First we'll have to parse this data into our program. Since a room is a bit more complicated than a simple string or integer we have set you up with a class named Room in room.py.
 
 In adventure.py you'll find the `load_rooms` method. As you can see we've already opened the file for you, but you'll have to do the parsing part.
-Implement the `Room` class and `load_rooms` method so that each room from TinyRooms.txt is represented by a Room object. Note that for now you can leave out the routes, just start out with an id, name and description.
 
-Hint: When parsing the file, look for recurring elements that seperate data entries. It also might be a good idea to strip any trailing newlines from the data-fields.
+Implement the `Room` class and `load_rooms` method so that each room from `TinyRooms.txt` is instantiated as a Room object. Start with `id`, `name` and `description` and, for now, leave out the routes to other rooms.
+
+Hint: To parse the file, analyse precisely how the file is formatted. What recurring elements do you see that seperate data entries?
+
+Hint: When reading lines, your string may contain extra newlines from the data file. You can strip these extra characters using standard Python methods!
 
 
-=== Moving around.
+=== Moving around
 
-Next up is moving to and from rooms. To be able to move though, we'll first have to implement the routes. Parse the routes from the data file to see which rooms are connected.
-Add an attribute and/or a method to the Room class that can be used to see if the given command is a valid move.
+Now that we have a couple of rooms, we can almost start playing the game. But we left out connections from room to room, so we can't really move yet!
 
-Then create a `current_room` attribute to find and update the player's location. Use this attribute in the `Adventure.move()` method and update it when a move is made.
-Don't forget to set it to the room with `id` 0 though! The game always starts at the very first room.
+In the `Room` class, add an attribute to hold connections. What kind of Python data structure can you use for this?
 
-Always check for a valid connection when attempting to move.
-I.E. Can we `move` "EAST" from the first room? If not, let the player know they tried an "Invalid command.".
+Then, add code to the `load_rooms` method in `Adventure` to read the connections from the data file and add those to the `Room` objects.
 
-You can test moving around by adding the following code to the `if __name__ == '__main__'`:
+Next, add a method to the `Room` class that can be used to see if the given command is a valid move.
+
+Now, we can create a `current_room` attribute in `Adventure` to keep track of where our player is. Make sure to initialize that attribute to 0 at the start of the game, and to update it in the `move()` method.
+
+Hint: Always check for a valid connection when attempting to move. I.E. Can we `move` "EAST" from the first room? If not, let the player know they tried an "Invalid command".
+
+You can test moving around by adding the following code to `if __name__ == '__main__'`:
 ----
   adventure.move("WEST") # should move to the 'room 2' object
   print(adventure.current_location) # should print room 2: "End of road"
@@ -189,13 +206,15 @@ You can test moving around by adding the following code to the `if __name__ == '
   print(adventure.current_location) # should print room 3: "Inside building"
 ----
 
+Make sure this works before going on!
 
-=== Prompt for commands.
+
+=== Prompt for commands
 
 Time for your first steps into making this a game; have players give commands.
 
 Remove the code used to test moving around from the `if __name__ == '__main__'` and instead add `adventure.play()`.
-Now when you run the script you should be met with a welcome message and be prompted for a command. It's time to implement playability.
+Now when you run the script you should be met with a welcome message and be prompted for a command. But alas, not much happens when actually entering such a command!
 
 Each time a player enters a room for the first time, we'll provide them with a full description of the room.
 Following the description we'll prompt the player for a command. The '>' will mark this prompt. It should look like this:
@@ -215,12 +234,13 @@ Like so:
   >
 ----
 
-If a player enters a room they've already seen, only give them the short description.
+If a player enters a room they've already seen, only give them the short description. How should we keep track of that?
+
 Check the `SmallSynonyms.txt` for all directions your game should be able to handle.
 
-=== Additional commands.
+=== Additional commands
 
-Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT`, `HELP` and `LOOK` commands.
+As a final step for making the basic game work, we'll add a few commands that make it easier to use: `QUIT`, `HELP` and `LOOK`.
 
 `HELP` prints instructions to remind the player of their commands and how to use them.
 Have it behave as follows:
@@ -251,15 +271,15 @@ Have it behave as follows:
 ----
 
 
-=== Items. Tiny.
+== Step 2: Finding and picking up items
 
-Now that we have the basics of our game implemented; a player can move between rooms and use a few commands to help out with the game, it's time to implement some of the more advanced features of the game.
-We're going to add items to the game for the player to pick up and interact with.
+Now that a player can move between rooms, it's time to implement some of the more advanced features of the game.
 
-=== Adding items.
+In this stage, we're going to add items to the game for the player to pick up and interact with.
 
-Items in Adventure have a name, description and location. To add these items to the game we'll again have to parse their data file first. You can find them inside the `TinyItems.txt`, `SmallItems.txt` and `CrowtherItems.txt`.
-They look alot like rooms, but are just a bit simpeler.
+=== Adding items
+
+Items in Adventure have a name, description and location. To add these items to the game, you will need to add code that parses an extra data file. You can find them inside the `TinyItems.txt`, `SmallItems.txt` and `CrowtherItems.txt`. The formatting of the files is similar to that of the room files.
 
 `TinyItems.txt` contains the following data:
 ----
@@ -276,18 +296,18 @@ These are the details for all items in the Tiny game. Each item consists of 3 pa
 ----
   <name>
   <description>
-  <room_id>
+  <initial_room_id>
 ----
-Here room_id is the id for the room where the item can initially be found.
+Here `<initial_room_id>` is the id for the room where the item can initially be found.
 
 Just like rooms, items all share the same three attributes. But unlike rooms they have little ways of interacting with the game other than just being there.
-That's what makes them best suited for a data class, per example of the follow UML diagram.
+That's what makes them quite suited for a data class, per the following diagram.
 
 image::item_class.png[Item, role="related thumb"]
 
-Neither the class `Item` or the method to load them have been implemented yet. So you'll have to create the files and methods yourself.
+Implement the `Item` class by creating a new Python source file, and add code to load items and instantiate them at the start of a game. Don't forget to `import` your new file into `adventure.py`!
 
-=== Holding items.
+=== Holding items
 
 Items can be either located in the rooms inventory or the players inventory.
 To do so, let's set up an `Inventory` class to manage those items for both the player and the rooms.
@@ -299,14 +319,14 @@ image::inventory_class.png[Inventory, role="related thumb"]
 As you can see the inventory only has methods that it displays publicly. Its attributes are kept private, and are only meant to be accessed through these methods.
 Make sure you can add and remove items using their names from the inventory.
 
-=== Placing items.
+=== Placing items
 
 First add an inventory to each room you create, so they can hold an item when they're created.
 Now, when you load the items, place them in the room they should initially be in.
 
 Use the initial room id of the item to find the correct room. Then use the methods of the rooms inventory class to add the items!
 
-=== Finding items.
+=== Finding items
 
 When a player visits a room with one or more items the game will have to let the player know which items there are in addition to the description of the room:
 ----
@@ -322,10 +342,10 @@ It is formatted as follows:
 
 Don't forget to add this feature to the `LOOK` coomand!
 
-=== Taking and dropping items.
+=== Taking and dropping items
 
 Now implement the `TAKE` <item> command. By use of `TAKE` the player can pick up an item from a room they're in. In other words, the item moves from a room to the player.
-Notice how the command consists of two parts, instead of just the one for moving in a direction. You might want to either split the user input to recocgnize a `TAKE` or `DROP` command.
+Notice how the command consists of two parts, instead of just the one for moving in a direction. You might want to either split the user input to recognize a `TAKE` or `DROP` command.
 Implement an `Adventure.take()` method that transfers an item for the inventory of a room to the inventory of the player.
 
 Of course there is some error catching to do, what happens for instance if a player takes something that is not in the room? Or an item that is located inside a room the player is not currently in?
@@ -378,7 +398,7 @@ It should print all items currently owned by the player, like this:
   >
 ----
 
-=== Items and routes. Small.
+== Step 3: Conditional movement
 
 Time to step up our game. Let's get started on the Small version of adventure.
 Small has items as well as interaction with those items. In `SmallRooms.txt` you'll find some rooms actually have an item listed in their routes.
@@ -395,8 +415,6 @@ You'll need these new routes for the next part; conditional movements.
   DOWN       8/KEYS
   DOWN       7
 ----
-
-=== Conditional movements.
 
 Moving to a room can now depend on items being in the inventory of the player. Room 6, for instance, allows access to rooms 7 and 8 through the same movement `DOWN`, depending on whether the player owns the keys. To progress in the game the player will first need to find the keys.
 
@@ -433,7 +451,7 @@ A conditional movement would look like this:
   >
 ----
 
-=== Forced movement.
+== Step 4: forced movement
 
 Sometimes a player will attempt a movement they cannot make yet, because they are missing the required item. Passing the steel grate in room 6 for example requires keys.
 Instead of printing a custom message, we'll have the player move into a special sort of room. This room displays a description for what happened, and then forcefully moves the player to where the forced movement points.
@@ -464,8 +482,7 @@ Remember to always print the full description when a room `FORCED` is entered. T
 
 Hint: You'll most likely want to do a check each time you move to a new room. And if there's a forced movement in the new room, take a good look around and follow the forced route.
 
-=== The winner takes all.
-
+== Step 5: The winner takes all
 
 Now that you have implemented all the features of Adventures, Crowther game is finally playable.
 But let's also make it winnable. For example, in the `CrowtherRooms.txt` file you can see that room 77 corresponds to victory.
@@ -486,7 +503,3 @@ Implement an Object-Oriented version of Crowther's Adventure game.
 style50 adventure.py
 style50 room.py
 ```
-
-=== Web
-
-http://playfic.com/games/mgscox/adventure

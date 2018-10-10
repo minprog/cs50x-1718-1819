@@ -1,0 +1,6 @@
+name: whodunit
+files:
+    required:
+        - whodunit.c
+        - verdict.bmp
+        - README.md

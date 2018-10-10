@@ -35,15 +35,22 @@ grades:
     vigenere: *automatic
     crack: *automatic
     music: *automatic
-    find: *automatic
-    whodunit: *fullyauto
-    resize: *automatic
+    find_less: *automatic
+    find_more: *automatic
+    whodunit:
+        type: float
+        subgrades:
+            correctness: integer
+        calculation: (correctness / 5.0 * 9 + 1).round(1)
+        hide_calculated: true
+    resize_less: *automatic
+    resize_more: *automatic
     recover: *automatic
     quiz1:
         type: pass
         subgrades:
             points: integer
-        calculation: points >= 18 && -1 || 0
+        calculation: points >= 28 && -1 || 0
     resit1:
         type: pass
         subgrades:
@@ -53,6 +60,7 @@ grades:
     sentimental: *automatic
     cards: *fullyauto
     adventure: *automatic
+    similarities: *automatic
     finance: *automatic
     quiz2:
         type: pass

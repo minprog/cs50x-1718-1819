@@ -13,6 +13,8 @@ Implement a program that resizes BMPs, per the below.
 $ [underline]#./resize 4 small.bmp large.bmp#
 ----
 
+If among those "more comfortable" with programming, you might choose to do link:/problems/resize-more[another version of this problem] instead!
+
 == Background
 
 Be sure you're familiar with the structure of 24-bit uncompressed BMPs, as introduced in link:../../whodunit/whodunit[Whodunit].

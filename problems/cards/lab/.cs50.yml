@@ -3,5 +3,6 @@ lab50:
     - editor
     - readme
     - terminal
-  file:
-    - cardgame.py
+  files:
+    - !exclude "*"
+    - !include cardgame.py
