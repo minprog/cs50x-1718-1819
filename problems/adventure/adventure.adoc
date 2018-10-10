@@ -194,7 +194,7 @@ Then, add code to the `load_rooms` method in `Adventure` to read the connections
 
 Next, add a method to the `Room` class that can be used to see if the given command is a valid move.
 
-Now, we can create a `current_room` attribute in `Adventure` to keep track of where our player is. Make sure to initialize that to the room with id 0 at the start of the game, and to update it in the `move()` method.
+Now, we can create a `current_room` attribute in `Adventure` to keep track of where our player is. Make sure to initialize that to the room with id 1 at the start of the game, and to update it in the `move()` method.
 
 Hint: Always check for a valid connection when attempting to move. I.E. Can we `move` "EAST" from the first room? If not, let the player know they tried an "Invalid command".
 
@@ -202,6 +202,7 @@ You can test moving around by adding the following code to `if __name__ == '__ma
 ----
   adventure.move("WEST") # should move to the 'room 2' object
   print(adventure.current_room) # should print room 2: "End of road"
+  adventure.move("DOWN") # should move to the 'room 1' object
   adventure.move("IN") # should move to the 'room 3' object
   print(adventure.current_room) # should print room 3: "Inside building"
 ----
