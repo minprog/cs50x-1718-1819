@@ -97,15 +97,17 @@ For example `Room(3, 'Inside building', 'You are inside a building, a well house
 
 You'll be creating these objects in the `load_rooms` method, though for now it is little more than a TODO.
 
+`Won` will let the game know when you've completed the game. You still have to let won know when the game is won however.
+
+Moving around in the game is done via the `move` method. Here you'll make use of the rooms you've created earlier.
+
 The `play` method contains the main loop that makes your game playable. We've already given you a headstart here, but you'll have to figure out how to best use your classes.
 See how we check if a command is in a list of directions? Expand this list to your needs and perhaps create lists of your own to bundle other commands.
 
 ==== `room.py`
 
-These are your classes. The blueprints for objects that your game will need to function properly.
-The Player class contains most of the commands already, but they've not been implemented yet. Whereas Room is still mostly empty, that one is all up to you!
-
-Plenty of TODO's here as well!
+This is your room class. The blueprint for the room objects that your game will need to function properly.
+It is still mostly empty, the implementation is all up to you!
 
 ==== `data/`
 
@@ -192,9 +194,11 @@ You can test moving around by adding the following code to the `if __name__ == '
 
 Time for your first steps into making this a game; have players give commands.
 
+Remove the code used to test moving around from the `if __name__ == '__main__'` and instead add `adventure.play()`.
+Now when you run the script you should be met with a welcome message and be prompted for a command. It's time to implement playability.
+
 Each time a player enters a room for the first time, we'll provide them with a full description of the room.
 Following the description we'll prompt the player for a command. The '>' will mark this prompt. It should look like this:
-
 ----
   You are standing at the end of a road before a small brick
   building.  A small stream flows out of the building and
