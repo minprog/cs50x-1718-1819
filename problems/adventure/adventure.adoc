@@ -82,38 +82,50 @@ We've gone ahead and made a basic setup for you. The player and room classes hav
 
 Keeping code seperated is a key part of OOP, and makes your code more easily readable and maintainable. See for yourself!
 
+==== `data/`
+
+In the data folder are 6 datafiles with which you can create 3 versions of Adventure:
+
+- `TinyRooms.txt` and `TinyItems.txt` together are the smallest adventure game consisting of 3 rooms and 2 items. Great for starting out with!
+
+- `SmallRooms.txt` and `SmallItems.txt` are a bit larger and include some more advanced interactions.
+
+- Lastly, the full original Adventure is contained within `CrowtherRooms.txt` and `CrowtherItems.txt`.
+
 ==== `adventure.py`
 
+Take a look at `adventure.py`. The file currently has three components:
+
+- an `import` statement
+- an `Adventure` class
+- an `if __name__ == "__main__"` part
+
 Instead of working from a single file, we've split up our classes into seperate files. This keeps our files short and tidy, but we'll still have to link them up. For that we'll have to import them as follows:
+
 [source]
 ----
 from room import Room
 ----
-This line tells python to look for the file room.py make its contents available from within adventure.py.
-The Room class can now be freely used in `adventure.py`.
-For example `Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')` should create a Room object with the correct attributes.
 
-You'll be creating these objects in the `load_rooms` method, though for now it is little more than a TODO.
+This line ensures that the `Room` class from `room.py` is available to use from `adventure.py`, which makes it possible to instantiate `Room`-type objects for use in the adventure game:
 
-`Won` will let the game know when you've completed the game. You still have to let won know when the game is won however.
+----
+`Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')`
+----
 
-Moving around in the game is done via the `move` method. Here you'll make use of the rooms you've created earlier.
+Inside the `Adventure` class are a couple of methods that make the game work.
 
-The `play` method contains the main loop that makes your game playable. We've already given you a headstart here, but you'll have to figure out how to best use your classes.
-See how we check if a command is in a list of directions? Expand this list to your needs and perhaps create lists of your own to bundle other commands.
+You'll be creating `Room` objects in the `load_rooms` method, though for now it is little more than a `TODO`.
+
+The `won` method will eventually decide if the game has been won by the player.
+
+Moving around in the game is handled by the `move` method. Here you'll make use of the room objects you've created earlier.
+
+The `play` method contains the main loop that makes your game playable. One important part of this is translating commands given by your player into method calls that handle the actions. We've already given you a headstart here. See how we check if a command is a "direction" like `EAST` or `WEST`?
 
 ==== `room.py`
 
-This is your room class. The blueprint for the room objects that your game will need to function properly.
-It is still mostly empty, the implementation is all up to you!
-
-==== `data/`
-
-Within the data folder you can find everything you need to create your items and rooms with.
-There are 6 datafiles with which you can create 3 versions of Adventure. TinyRooms.txt and TinyItems.txt, the smallest version, only have 3 rooms and 2 items. Great for starting out with!
-
-SmallRooms.txt and SmallItems.txt is a bit larger and includes some more advanced interactions.
-The full game of Adventure is contained within CrowtherRooms.txt and CrowtherItems.txt.
+This is your `Room` class, where al code related to rooms will be collected. It is still mostly empty!
 
 == Step 1: Loading and moving around
 
