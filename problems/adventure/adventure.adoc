@@ -214,7 +214,7 @@ Make sure this works before going on!
 Time for your first steps into making this a game; have players give commands.
 
 Remove the code used to test moving around from the `if __name__ == '__main__'` and instead add `adventure.play()`.
-Now when you run the script you should be met with a welcome message and be prompted for a command. It's time to implement playability.
+Now when you run the script you should be met with a welcome message and be prompted for a command. But alas, not much happens when actually entering such a command!
 
 Each time a player enters a room for the first time, we'll provide them with a full description of the room.
 Following the description we'll prompt the player for a command. The '>' will mark this prompt. It should look like this:
@@ -234,12 +234,13 @@ Like so:
   >
 ----
 
-If a player enters a room they've already seen, only give them the short description.
+If a player enters a room they've already seen, only give them the short description. How should we keep track of that?
+
 Check the `SmallSynonyms.txt` for all directions your game should be able to handle.
 
 === Additional commands
 
-Let's help the player out when they get stuck by giving them a few extra commands. Implement the `QUIT`, `HELP` and `LOOK` commands.
+As a final step for making the basic game work, we'll add a few commands that make it easier to use: `QUIT`, `HELP` and `LOOK`.
 
 `HELP` prints instructions to remind the player of their commands and how to use them.
 Have it behave as follows:
@@ -272,13 +273,13 @@ Have it behave as follows:
 
 == Step 2: Finding and picking up items
 
-Now that we have the basics of our game implemented; a player can move between rooms and use a few commands to help out with the game, it's time to implement some of the more advanced features of the game.
-We're going to add items to the game for the player to pick up and interact with.
+Now that a player can move between rooms, it's time to implement some of the more advanced features of the game.
+
+In this stage, we're going to add items to the game for the player to pick up and interact with.
 
 === Adding items
 
-Items in Adventure have a name, description and location. To add these items to the game we'll again have to parse their data file first. You can find them inside the `TinyItems.txt`, `SmallItems.txt` and `CrowtherItems.txt`.
-They look alot like rooms, but are just a bit simpeler.
+Items in Adventure have a name, description and location. To add these items to the game, you will need to add code that parses an extra data file. You can find them inside the `TinyItems.txt`, `SmallItems.txt` and `CrowtherItems.txt`. The formatting of the files is similar to that of the room files.
 
 `TinyItems.txt` contains the following data:
 ----
@@ -295,16 +296,16 @@ These are the details for all items in the Tiny game. Each item consists of 3 pa
 ----
   <name>
   <description>
-  <room_id>
+  <initial_room_id>
 ----
-Here room_id is the id for the room where the item can initially be found.
+Here `<initial_room_id>` is the id for the room where the item can initially be found.
 
 Just like rooms, items all share the same three attributes. But unlike rooms they have little ways of interacting with the game other than just being there.
-That's what makes them best suited for a data class, per example of the follow UML diagram.
+That's what makes them quite suited for a data class, per the following diagram.
 
 image::item_class.png[Item, role="related thumb"]
 
-Neither the class `Item` or the method to load them have been implemented yet. So you'll have to create the files and methods yourself.
+Implement the `Item` class by creating a new Python source file, and add code to load items and instantiate them at the start of a game. Don't forget to `import` your new file into `adventure.py`!
 
 === Holding items
 
