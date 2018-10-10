@@ -194,7 +194,7 @@ Then, add code to the `load_rooms` method in `Adventure` to read the connections
 
 Next, add a method to the `Room` class that can be used to see if the given command is a valid move.
 
-Now, we can create a `current_room` attribute in `Adventure` to keep track of where our player is. Make sure to initialize that attribute to 0 at the start of the game, and to update it in the `move()` method.
+Now, we can create a `current_room` attribute in `Adventure` to keep track of where our player is. Make sure to initialize that to the room with id 0 at the start of the game, and to update it in the `move()` method.
 
 Hint: Always check for a valid connection when attempting to move. I.E. Can we `move` "EAST" from the first room? If not, let the player know they tried an "Invalid command".
 
