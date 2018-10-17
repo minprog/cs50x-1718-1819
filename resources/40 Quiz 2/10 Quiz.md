@@ -1,10 +1,10 @@
 # Quiz Prep
 
-On this page you can find some study materials for the exam of 'Programmeren 2'. For each week we have selected the relevant lecture notes, subjects on CS50 Study and homebrewed practice exercises.
+<!-- On this page you can find some study materials for the exam of 'Programmeren 2'. For each week we have selected the relevant lecture notes, subjects on CS50 Study and homebrewed practice exercises. -->
 
 Please keep in mind that all knowledge, skills, and other material acquired in 'Programmeren 1' are also possible exam material for 'Programmeren 2'.
 
-## Week 4 - Forensics
+<!-- ## Week 4 - Forensics
 
 ### Lecture Notes
 
@@ -76,8 +76,8 @@ Week 7 is interesting (you should watch it if you haven't already), but the Mach
 
 - [CSS](/practice/css): spice up your site
 - [SQL](/practice/sql): SELECT * FROM practice
-- [XKCD](/practice/xkcd): _en route_ with Flask.
+- [XKCD](/practice/xkcd): _en route_ with Flask. -->
 
 ## Quiz
 
-[This is an example quiz. Use it to prepare for the real one!](quiz2.pdf)
+[This is an example quiz. Use it to prepare for the real one!](Quiz2.pdf)
