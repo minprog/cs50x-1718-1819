@@ -239,7 +239,8 @@ Like so:
 
 If a player enters a room they've already seen, only give them the short description. How should we keep track of that?
 
-Check the `SmallSynonyms.txt` for all directions your game should be able to handle.
+To allow for quicker gameplay, instead of having the player write the full commands each time, make sure to allow abbreviations to be input.
+Check the `SmallSynonyms.txt` for all abbreviations your game should be able to handle. This is not a complete list of commands!
 
 === Additional commands
 
