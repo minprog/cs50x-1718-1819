@@ -388,6 +388,7 @@ Dropping items looks alot like picking them up:
 Make sure you can pick up items that you previously dropped!
 
 For the player to keep track of their owned items you'll have to implement the `INVENTORY` command.
+Don't forget to let the player know their inventory is empty if they don't hold any item.
 It should print all items currently owned by the player, like this:
 ----
   > INVENTORY
