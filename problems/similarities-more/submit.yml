@@ -1,0 +1,4 @@
+name: simil-more
+files:
+    required:
+        - helpers.py

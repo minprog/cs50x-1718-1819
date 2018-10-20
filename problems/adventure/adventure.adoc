@@ -239,7 +239,8 @@ Like so:
 
 If a player enters a room they've already seen, only give them the short description. How should we keep track of that?
 
-Check the `SmallSynonyms.txt` for all directions your game should be able to handle.
+To allow for quicker gameplay, instead of having the player write the full commands each time, make sure to allow abbreviations to be input.
+Check the `SmallSynonyms.txt` for all abbreviations your game should be able to handle. This is not a complete list of commands!
 
 === Additional commands
 
@@ -387,6 +388,7 @@ Dropping items looks alot like picking them up:
 Make sure you can pick up items that you previously dropped!
 
 For the player to keep track of their owned items you'll have to implement the `INVENTORY` command.
+Don't forget to let the player know their inventory is empty if they don't hold any item.
 It should print all items currently owned by the player, like this:
 ----
   > INVENTORY
