@@ -50,6 +50,7 @@ Implement in your `homepage` directory a website that must:
 * No need to include any JavaScript on your site for this problem set, unless so inclined!
 
 Optionally, you can try to do the following:
+  
 * Integrate one or more features from Bootstrap into your site. Bootstrap is a popular library (that comes with lots of CSS classes and more) via which you can beautify your site. See link:https://getbootstrap.com/docs/4.1/getting-started/introduction/[Bootstrap's documentation] to get started. To add Bootstrap to your site, it suffices to include
 +
 ```
