@@ -59,7 +59,8 @@ grades:
     speller: *automatic
     sentimental: *automatic
     adventure: *automatic
-    similarities: *automatic
+    simil-less: *automatic
+    simil-more: *automatic
     finance: *automatic
     quiz2:
         type: pass
