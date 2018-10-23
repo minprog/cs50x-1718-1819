@@ -105,6 +105,12 @@ Now look in `templates/`. In `login.html` is, essentially, just an HTML form, st
 
 Last up is `layout.html`. It's a bit bigger than usual, but that's mostly because it comes with a fancy, mobile-friendly "navbar" (navigation bar), also based on Bootstrap. Notice how it defines a block, `main`, inside of which templates (including `apology.html` and `login.html`) shall go. It also includes support for Flask's http://flask.pocoo.org/docs/0.12/patterns/flashing/[message flashing] so that you can relay messages from one route to another for the user to see.
 
+=== `POST` and `GET`
+
+video::4axL8Gfw2nI[youtube, height=540, width=960, options=notitle]
+
+Before starting out, you might want to take a look at this short from Doug wherein HTTP and its methods are explained. Refer to http://flask.pocoo.org/docs/1.0/quickstart/#http-methods[this link] to see how you can use this in your code.
+
 == Specification
 
 === `register`
