@@ -58,7 +58,6 @@ grades:
         calculation: points >= 16 && -1 || 0
     speller: *automatic
     sentimental: *automatic
-    cards: *fullyauto
     adventure: *automatic
     similarities: *automatic
     finance: *automatic
