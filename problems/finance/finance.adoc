@@ -264,3 +264,12 @@ If, upon running `flask`, you see this error, odds are you (still) have `flask` 
 === check50 ran into an error while running checks!
 
 If, upon running `check50`, you see this error, odds are you have a bug in your code somewhere! Open up the CS50.me produced by `check50` to see a detailed traceback to help you debug!
+
+== How to Submit
+
+Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `finance` folder and then select *Download*.
+
+You should find that your browser has downloaded `finance.zip`. If instead, you find a folder named `finance`, make a `.zip` from it and submit it, below.
+
+
+
