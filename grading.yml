@@ -92,7 +92,7 @@ psets1:
     submits:
         scratch: 0
         water: 0
-        mario: 12
+        mario: [12, mario, mario-more]
         cash-credit: [12, cash, credit]
         caesar: 12
         initials: [0, initials-less, initials_more]
