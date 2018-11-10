@@ -88,13 +88,20 @@ calculation:
         psets2: 100
 
 psets1:
-    drop: scope
+    drop: correctness
     submits:
-        scratch: 8
-        c: 23
-        crypto: 23
-        fifteen: 23
-        forensics: 23
+        scratch: 0
+        water: 0
+        mario: 12
+        cash-credit: [12, cash, credit]
+        caesar: 12
+        initials: [0, initials-less, initials_more]
+        vigenere-crack: [12, vigenere, crack]
+        music: 12
+        find: [12, find_less, find_more]
+        whodunit: 6
+        resize: [12, resize_less, resize_more]
+        recover: 10
 
 psets2:
     drop: scope
