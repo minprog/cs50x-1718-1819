@@ -104,12 +104,12 @@ psets1:
         recover: 10
 
 psets2:
-    drop: scope
     submits:
-        mispell: 1
-        sentimental: 1
-        finance: 1
-        mashup: 1
+        speller: 25
+        sentimental: 15
+        adventure: 25
+        similarities: [15, simil-less, simil-more]
+        finance: 20
 
 quiz1:
     required: true
