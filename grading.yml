@@ -95,7 +95,7 @@ psets1:
         mario: [12, mario, mario_more]
         cash-credit: [12, cash, credit]
         caesar: 12
-        initials: [0, initials-less, initials_more]
+        # initials: [0, initials-less, initials_more]
         vigenere-crack: [12, vigenere, crack]
         music: 12
         find: [12, find_less, find_more]
