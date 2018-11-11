@@ -99,10 +99,6 @@ Problems are the core of the course, enabling you to practice your problem solvi
 Problems are evaluated primarily along axes of correctness, design, and style, with scores
 ordinarily determined by 3 × correctness + 2 × design + 1 × style.
 
-Although you must submit all problems, your lowest score among those
-problems on which you received perfect scores for the axis of correctness will be
-dropped when final grades are determined (for Programming 1).
-
 Re-submission of problems is not possible until the following semester.
 
 
