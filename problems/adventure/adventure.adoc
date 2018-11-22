@@ -546,13 +546,13 @@ If you want to reduce time spent typing commands; parse the file and implement a
 
 Implement an Object-Oriented version of Crowther's Adventure game.
 
-. Implement methods for loading data into objects.
-. Implement a method for moving the player.
-. The game should prompt the user for commands and either execute those or warn about a non-existent command.
-. The game should make use of the room, Item and Inventory classes.
-. Implement methods to allow the user to pick up and drop items.
-. Implement conditional and forced movements.
-. The game must be winnable.
+* Implement methods for loading data into objects.
+* Implement a method for moving the player.
+* The game should prompt the user for commands and either execute those or warn about a non-existent command.
+* The game should make use of the room, Item and Inventory classes.
+* Implement methods to allow the user to pick up and drop items.
+* Implement conditional and forced movements.
+* The game must be winnable.
 
 === `check50`
 Adventure runs on the newest version of check50. To use that version run the following code in your IDE.
