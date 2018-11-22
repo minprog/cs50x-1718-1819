@@ -115,43 +115,43 @@ A schedule of problem deadlines and quizzes, subject to change, appears below. A
 
 #### Programming 1
 
-|               | Hispeed    |  
-| ------------- | ---------- |  
-| Module 0      | Mon 3-Sep  |  
-| Module 1      | Fri 7-Sep  |  
-| Module 2      | Fri 14-Sep |  
-| Module 3      | Fri 21-Sep |  
-| Module 4      | Fri 28-Sep |  
+|                        | Hispeed    |  
+| ---------------------- | ---------- |  
+| Module 0               | Mon 3-Sep  |  
+| Module 1               | Fri 7-Sep  |  
+| Module 2               | Fri 14-Sep |  
+| Module 3               | Fri 21-Sep |  
+| Module 4               | Fri 28-Sep |  
 
-|               | Hispeed    |  
-| ------------- | ---------- |  
-| Quiz          | Mon 24-Sep |  
-| Retake        | Mon 22-Oct |  
+|                        | Hispeed    |  
+| -------------          | ---------- |  
+| Quiz                   | Mon 24-Sep |  
+| Retake                 | Mon 22-Oct |  
 
-|               | Lospeed    |  
-| ------------- | ---------- |  
-| Quiz option 1 | Mon 22-Oct |  
-| Quiz option 2 | Mon 14-Jan |  
+|                        | Lospeed    |  
+| -------------          | ---------- |  
+| Quiz option 1          | Mon 22-Oct |  
+| Quiz option 2 (retake) | Mon 14-Jan |  
 
 #### Programming 2
 
-|               | Hispeed    |  
-| ------------- | ---------- |  
-| Module 5      | Fri 5-Oct  |  
-| Module 6      | Tue 9-Oct |  
-| Module 7      | Wed 17-Oct |  
-| Module 8      | Fri 19-Oct |  
-| Module 9      | Fri 26-Oct |  
+|                        | Hispeed    |  
+| ---------------------- | ---------- |  
+| Module 5               | Fri 5-Oct  |  
+| Module 6               | Tue 9-Oct  |  
+| Module 7               | Wed 17-Oct |  
+| Module 8               | Fri 19-Oct |  
+| Module 9               | Fri 26-Oct |  
 
-|               | Hispeed    |  
-| ------------- | ---------- |  
-| Quiz          | Mon 22-Oct |  
-| Retake        | Mon 17-Dec |  
+|                        | Hispeed    |  
+| -------------          | ---------- |  
+| Quiz                   | Mon 22-Oct |  
+| Retake                 | Mon 17-Dec |  
 
-|               | Lospeed 2  |  
-| ------------- | ---------- |  
-| Quiz option 1 | Mon 22-Oct |  
-| Quiz option 2 | Mon 14-Jan |  
+|                        | Lospeed 2  |  
+| -------------          | ---------- |  
+| Quiz option 1          | Mon 17-Dec |  
+| Quiz option 2 (retake) | Mon 14-Jan |  
 
 
 ## Books
