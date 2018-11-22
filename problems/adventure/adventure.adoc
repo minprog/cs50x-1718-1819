@@ -545,6 +545,7 @@ If you want to reduce time spent typing commands; parse the file and implement a
 == Specification
 
 Implement an Object-Oriented version of Crowther's Adventure game.
+
 . Implement methods for loading data into objects.
 . Implement a method for moving the player.
 . The game should prompt the user for commands and either execute those or warn about a non-existent command.
