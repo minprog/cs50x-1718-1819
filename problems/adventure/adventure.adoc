@@ -561,9 +561,9 @@ pip install git+https://github.com/Qvdpost/check50x
 ```
 You can run any of these checks depending on how far along you are in Adventure.
 ```
-check50 minprog/cs50x/master/adventure/check50/tiny
-check50 minprog/cs50x/master/adventure/check50/small
-check50 minprog/cs50x/master/adventure/check50/crowther
+check50x minprog/cs50x/master/adventure/check50/tiny
+check50x minprog/cs50x/master/adventure/check50/small
+check50x minprog/cs50x/master/adventure/check50/crowther
 ```
 
 === `style50`
