@@ -107,7 +107,8 @@ Instead of working from a single file, we've split up our classes into seperate 
 from room import Room
 ----
 
-This line ensures that the `Room` class from `room.py` is available to use from `adventure.py`, which makes it possible to instantiate `Room`-type objects for use in the adventure game:
+This line ensures that the `Room` class from `room.py` is available to use within `adventure.py`, which makes it possible to instantiate `Room`-type objects for use in the adventure game.
+The following call would create a `Room` object for you to use in Adventure:
 
 ----
 Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')
@@ -115,19 +116,28 @@ Room(3, 'Inside building', 'You are inside a building, a well house for a large 
 
 Inside the `Adventure` class are a couple of methods that make the game work.
 
-You'll be creating `Room` objects in the `load_rooms` method, though for now it is little more than a `TODO`.
+The `load_rooms` method is used to parse the data files and creates `Room` objects with that data.
 
-The `won` method will eventually decide if the game has been won by the player.
+The `game_over` method will eventually decide if the game has been won or lost by the player.
 
 Moving around in the game is handled by the `move` method. Here you'll make use of the room objects you've created earlier.
 
-The `play` method contains the main loop that makes your game playable. One important part of this is translating commands given by your player into method calls that handle the actions. We've already given you a headstart here. See how we check if a command is a "direction" like `EAST` or `WEST`?
+The `play` method contains the main loop that makes your game playable. One important part of this is translating commands given by your player into method calls that handle the actions. We've already given you a headstart here. See how we check if a command is a "direction" with which to move?
 
 ==== `room.py`
 
-This is your `Room` class, where al code related to rooms will be collected. It is still mostly empty!
+This is your `Room` class, where al code related to rooms will be collected.
+The `__init__()` method initializes each room with a given id, name and description.
 
-== Step 1: Loading and moving around
+So the call from earlier;
+----
+Room(3, 'Inside building', 'You are inside a building, a well house for a large spring.')
+----
+creates a room with `id` = 3, `name` = 'Inside building' and `description` = 'You are inside a building, a well house for a large spring.'.
+
+It also contains two methods, one for adding connections and one for checking connections, but you still have to implement them!
+
+== Step 0: Reading data files and the code
 
 === Parsing data files
 
@@ -172,33 +182,59 @@ These are the details for all rooms in the game and how to navigate between them
 
 A `<routes>` line contains both a <direction> and an <id>. For example, `Room 2 - End of road` is connected to room `1 - Outside building` by directions 'EAST' and 'DOWN'.
 
-You'll find that the name is actually a short description of the room, whereas the 'description' is fully descriptive. Keep this in mind for later parts of the game!
+You'll find that the name is actually a short description of the room, whereas the 'description' is fully descriptive (Keep this in mind for later parts of the game!).
 First we'll have to parse this data into our program. Since a room is a bit more complicated than a simple string or integer we have set you up with a class named Room in room.py.
 
-In adventure.py you'll find the `load_rooms` method. As you can see we've already opened the file for you, but you'll have to do the parsing part.
+In adventure.py you'll find the `load_rooms` method. We'll discuss how it is implemented shortly, but first let's see where it is used.
 
-We've already called he `load_rooms` method in the `__init__` of the Adventure class for you. We use it there because everytime we create a game, we want it to have a list of rooms.
+We call the `load_rooms` method in the `__init__()` of the Adventure class. We use it there because everytime we create a game, we want it to at least have a list of rooms. Any data an Adventure class needs to function properly is initialized here.
 
-Implement the `Room` class and `load_rooms` method so that each room from `TinyRooms.txt` is instantiated as a Room object. Start with `id`, `name` and `description` and, for now, leave out the routes to other rooms.
+Now let's look at `load_rooms` a little closer. We can divide the function into three parts.
 
-Hint: To parse the file, analyse precisely how the file is formatted. What recurring elements do you see that seperate data entries?
+==== Part 1
 
-Hint: When reading lines, your string may contain extra newlines from the data file. You can strip these extra characters using standard Python methods!
+The first task to parsing the file is dividing the rooms into a list of data about each individual room. Looking at the datafiles we see that rooms are divided by a single newline. This means we can read lines from the file and save them to a list, until we reach that newline. That creates the follow list:
+----
+  [id, name, description, connection, ..., connection]
+----
 
+Then, when a newline is read, we save those lines we just read to another list. This creates a list of lists with each set of data about a room. That list looks like this:
+----
+  [[room_data], ..., [room_data]]
+----
+
+==== Part 2
+
+Now that all rooms are loaded into memory and partitioned into seperate lists, it is time to initialize each room into an object of our Room class.
+
+For each set of room data we know that the first element is the `room_id`, the second element is its `name` and the third element is a `description`. We use those variables to make a `Room`, after wich we add that room to a dictionary of rooms using the room_id as the `key` for the `key`:`value` pair.
+
+==== Part 3
+
+To finalize the Room objects we'll have to update each room with its corresponding connections from the data file. Once again we iterate over each set of room_data, but this time we'll use the connections.
+Since we don't know how many connections each room has we'll have to slice till the end of each list. The start of each slice will be the fifth element of room data, that is the first element after the "-----" line.
+
+The connections ar then cleaned up a by splitting them into two strings, one for the direction and another for the connected room_id. Finally we use the room_id from the room_data to find the correct room in the dictionary we created in step 2.
+
+Here you'll find your first TODO.
+
+== Step 1: Loading connections and moving around
+
+Now it's up to you to add the connections to each individual room object.
+To do so, you'll first have to head over to room.py and implement the add_route method for the `Room` class. You might need to add additional attributes to the `__init__()` for a proper implementation.
+
+Then you can use that method to update each room with their respective connections.
 
 === Moving around
 
-Now that we have a couple of rooms, we can almost start playing the game. But we left out connections from room to room, so we can't really move yet!
+Now that we have a couple of rooms, we can almost start playing the game.
 
-In the `Room` class, add an attribute to hold connections. What kind of Python data structure can you use for this?
+First, implement the is_connected method in the `Room` class that can be used to see if the given command is a valid move. Use it to check if a given string has a connection for the room.
 
-Then, add code to the `load_rooms` method in `Adventure` to read the connections from the data file and add those to the `Room` objects.
+Next up is the `move()` method in `Adventure`. We've already initialized the `current_room` attribute in the `__init__()` and set it to the room with id 1.
+Make sure to use and update that attribute in `move()` so you can keep track of where the player is.
 
-Next, add a method to the `Room` class that can be used to see if the given command is a valid move.
-
-Now, we can create a `current_room` attribute in `Adventure` to keep track of where our player is. Make sure to initialize that to the room with id 1 at the start of the game, and to update it in the `move()` method.
-
-Hint: Always check for a valid connection when attempting to move. I.E. Can we `move` "EAST" from the first room? If not, let the player know they tried an "Invalid command".
+Hint: If an attempted move is not a valid connection, let the player know they tried an "Invalid command".
 
 You can test moving around by adding the following code to `if __name__ == '__main__'`:
 ----
@@ -219,6 +255,8 @@ Time for your first steps into making this a game; have players give commands.
 Remove the code used to test moving around from the `if __name__ == '__main__'` and instead add `adventure.play()`.
 Now when you run the script you should be met with a welcome message and be prompted for a command. But alas, not much happens when actually entering such a command!
 
+Start with letting the player know where they are in the game.
+
 Each time a player enters a room for the first time, we'll provide them with a full description of the room.
 Following the description we'll prompt the player for a command. The '>' will mark this prompt. It should look like this:
 ----
@@ -228,6 +266,9 @@ Following the description we'll prompt the player for a command. The '>' will ma
   to the west.
   >
 ----
+
+Now allow the player to actually move around wit valid commands. Each time they press enter you have to parse their input and check whether they can move in the indicated direction.
+Remeber not all users read the documentation. So be sure to allow for both UPPER and lower case commands.
 
 If the player attempts a command that cannot be executed tell them they attempted an "Invalid command." and prompt for another command using the '>'.
 Like so:
@@ -239,12 +280,12 @@ Like so:
 
 If a player enters a room they've already seen, only give them the short description. How should we keep track of that?
 
-To allow for quicker gameplay, instead of having the player write the full commands each time, make sure to allow abbreviations to be input.
-Check the `SmallSynonyms.txt` for all abbreviations your game should be able to handle. This is not a complete list of commands!
+Hint: Starting the game counts as 'entering' the first room! Make sure to provide a description of the starting location.
 
 === Additional commands
 
 As a final step for making the basic game work, we'll add a few commands that make it easier to use: `QUIT`, `HELP` and `LOOK`.
+Implement htem in the following way:
 
 `HELP` prints instructions to remind the player of their commands and how to use them.
 Have it behave as follows:
@@ -321,7 +362,6 @@ The following UML diagram describes the methods that should be in your class, bu
 image::inventory_class.png[Inventory, role="related thumb"]
 
 As you can see the inventory only has methods that it displays publicly. Its attributes are kept private, and are only meant to be accessed through these methods.
-Make sure you can add and remove items using their names from the inventory.
 
 === Placing items
 
@@ -496,13 +536,35 @@ But let's also make it winnable. For example, in the `CrowtherRooms.txt` file yo
 
 Implement the win condition into your game and gracefully terminate the game after attaining victory.
 
+== Optional: Abbreviations
+
+Between the datafiles you can also find a `SmallSynomyms.txt` file. Within that file is a list of commands and single-letter abbreviated versions.
+
+If you want to reduce time spent typing commands; parse the file and implement a way to also move or exete commands using their synonyms.
+
 == Specification
 
 Implement an Object-Oriented version of Crowther's Adventure game.
-- Implement methods for loading data into objects.
-- The game should make use of the room, item and inventory classes.
-- The game should prompt the user for commands and either execute those or warn about a non-existent command.
-- The game must be winnable.
+
+* Implement methods for loading data into objects.
+* Implement a method for moving the player.
+* The game should prompt the user for commands and either execute those or warn about a non-existent command.
+* The game should make use of the room, Item and Inventory classes.
+* Implement methods to allow the user to pick up and drop items.
+* Implement conditional and forced movements.
+* The game must be winnable.
+
+=== `check50`
+Adventure runs on the newest version of check50. To use that version run the following code in your IDE.
+```
+pip install git+https://github.com/Qvdpost/check50x
+```
+You can run any of these checks depending on how far along you are in Adventure.
+```
+check50x minprog/cs50x/master/adventure/check50/tiny
+check50x minprog/cs50x/master/adventure/check50/small
+check50x minprog/cs50x/master/adventure/check50/crowther
+```
 
 === `style50`
 
