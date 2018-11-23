@@ -2,5 +2,6 @@ name: adventure
 files:
     required:
         - adventure.py
-        - player.py
         - room.py
+        - inventory.py
+        - item.py

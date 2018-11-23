@@ -1,0 +1,5 @@
+name: finance
+files:
+    required:
+        - finance.zip
+

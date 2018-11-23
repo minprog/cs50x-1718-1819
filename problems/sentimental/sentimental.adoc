@@ -17,23 +17,23 @@ layout: 2018/spring
 . Implement the below exactly as specified but in Python:
 +
 --
-* link:/problems/hello/[Hello], in `pset6/hello/hello.py`
+* link:/problems/hello[Hello], in `pset6/hello/hello.py`
 --
 . Implement the below exactly as specified but in Python:
 +
 --
-* link:/problems/mario/more/[Mario], more comfortable, in `pset6/mario/mario.py`
+* link:/problems/mario-more[Mario], more comfortable, in `pset6/mario/mario.py`
 --
 +
 . Implement the below exactly as specified but in Python:
 +
 --
-* link:/problems/cash/[Cash], less comfortable, in `pset6/cash/cash.py`
+* link:/problems/cash[Cash], less comfortable, in `pset6/cash/cash.py`
 --
 . Implement the below exactly as specified but in Python:
 +
 --
-* link:/problems/vigenere/[Vigenère], less comfortable, in `pset6/vigenere/vigenere.py`
+* link:/problems/vigenere[Vigenère], less comfortable, in `pset6/vigenere/vigenere.py`
 --
 
 == Walkthroughs
