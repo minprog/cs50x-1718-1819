@@ -2,4 +2,4 @@ name: finance
 files:
     required:
         - finance.zip
-
+        - application.py

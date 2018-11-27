@@ -1,6 +1,6 @@
 # Module 9: Finance
 
-In this module, you'll implement C$50 Finance, learning about the web and web servers.
+In this module, you'll implement C$50 Finance, while learning about the web and web servers.
 
 ## Help
 
@@ -30,7 +30,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 7](/lectures/lecture-7), [Lecture 8](/lectures/lecture-8), and [Lecture 9](/lectures/lecture-9).
+1. Watch [Lecture 10](/lectures/lecture-10)
 
 4. Implement [C$50 Finance](/problems/finance)
 

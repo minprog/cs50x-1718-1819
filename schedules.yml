@@ -38,16 +38,16 @@ Lospeed:
         Lecture 6: /lectures/lecture-6
         Sentimental: /problems/sentimental
     Module 7:
-        Overview: /overviews/module-8
-        Lecture 8: /lectures/lecture-8
-        Lecture 9: /lectures/lecture-9
-        Similarities: /problems/similarities-less
-    Module 8:
         Overview: /overviews/module-7
         Lecture 7: /lectures/lecture-7
         Join GitHub: https://github.com/join
         Game of Cards: https://lab.cs50.io/uva/cs50x/master/problems/cards/lab
         Adventure: /problems/adventure
+    Module 8:
+        Overview: /overviews/module-8
+        Lecture 8: /lectures/lecture-8
+        Lecture 9: /lectures/lecture-9
+        Similarities: /problems/similarities-less
     Module 9:
         Overview: /overviews/module-9
         Lecture 10: /lectures/lecture-10
