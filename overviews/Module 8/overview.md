@@ -1,4 +1,4 @@
-# Module 7: Games
+# Module 8: Games
 
 In this module, you'll implement two games, while learning about object-oriented programming. This style of programming isn't available in C, but in Python, many people use it!
 
