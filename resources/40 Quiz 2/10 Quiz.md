@@ -4,6 +4,11 @@
 
 Please keep in mind that all knowledge, skills, and other material acquired in 'Programmeren 1' are also possible exam material for 'Programmeren 2'.
 
+- [This is an example quiz. Use it to prepare for the real one!](Quiz2.pdf)
+- [Reference/example sheet for the UML assignment](soccer_manager.pdf)
+
+
+
 <!-- ## Week 4 - Forensics
 
 ### Lecture Notes
@@ -78,6 +83,3 @@ Week 7 is interesting (you should watch it if you haven't already), but the Mach
 - [SQL](/practice/sql): SELECT * FROM practice
 - [XKCD](/practice/xkcd): _en route_ with Flask. -->
 
-## Quiz
-
-[This is an example quiz. Use it to prepare for the real one!](Quiz2.pdf)
