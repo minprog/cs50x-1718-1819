@@ -108,7 +108,7 @@ psets2:
         speller: 25
         sentimental: 15
         adventure: 25
-        # similarities: [15, simil-less, simil-more]
+        similarities: [15, simil-less, simil-more]
         finance: 20
 
 quiz1:
