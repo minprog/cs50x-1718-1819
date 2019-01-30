@@ -38,16 +38,16 @@ The final grade for this course is primarily determined by averaging the scores 
 | -------------- | -------- | -----: |  
 | Scratch        | Scratch  |     0% |  
 | Water          | C        |     0% |  
-| Mario          | C        |    12% |  
-| Cash/Credit    | C        |    12% |  
-| Caesar         | C        |    12% |  
+| Mario          | C        |  12,5% |  
+| Cash/Credit    | C        |  12,5% |  
+| Caesar         | C        |  12,5% |  
 | Initials       | C        |     0% |  
-| Vigenere/crack | C        |    12% |  
-| Find           | C        |    12% |  
-| Fifteen        | C        |    12% |  
-| Whodunit       | C        |     6% |  
-| Resize         | C        |    12% |  
-| Recover        | C        |    10% |  
+| Vigenere/crack | C        |  12,5% |  
+| Find           | C        |  12,5% |  
+| Fifteen        | C        |  12,5% |  
+| Whodunit       | C        |     0% |  
+| Resize         | C        |  12,5% |  
+| Recover        | C        |  12,5% |  
 
 <!--
 | Problem        | Language | Weight |  
