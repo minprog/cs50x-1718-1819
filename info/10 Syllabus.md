@@ -126,12 +126,12 @@ A schedule of problem deadlines and quizzes, subject to change, appears below. A
 |                        | Hispeed    | Semester 2 |  
 | -------------          | ---------- | ----       |  
 | Quiz                   | Mon 24-Sep | Mon 25-Feb |  
-| Retake                 | Mon 22-Oct | tbd        |  
+| Retake                 | Mon 22-Oct | Mon 25-Mar |  
 
-|                        | Lospeed    |  
-| -------------          | ---------- |  
-| Quiz option 1          | Mon 22-Oct |  
-| Quiz option 2 (retake) | Mon 14-Jan |  
+|                        | Lospeed    | Semester 2 |  
+| -------------          | ---------- | -          |  
+| Quiz option 1          | Mon 22-Oct | Mon 25-Mar |  
+| Quiz option 2 (retake) | Mon 14-Jan | Mon 27-May |  
 
 #### Programming 2
 
@@ -146,12 +146,12 @@ A schedule of problem deadlines and quizzes, subject to change, appears below. A
 |                        | Hispeed    | Semester 2 |  
 | -------------          | ---------- | -          |  
 | Quiz                   | Mon 22-Oct | Mon 25-Mar |  
-| Retake                 | Mon 17-Dec | tbd        |  
+| Retake                 | Mon 17-Dec | Mon 27-May |  
 
-|                        | Lospeed 2  |  
-| -------------          | ---------- |  
-| Quiz option 1          | Mon 17-Dec |  
-| Quiz option 2 (retake) | Mon 14-Jan |  
+|                        | Lospeed 2  | Semester 2 |  
+| -------------          | ---------- | -          |  
+| Quiz option 1          | Mon 17-Dec | Mon 27-May |  
+| Quiz option 2 (retake) | Mon 14-Jan | Mon 17-Jun |  
 
 
 ## Books
