@@ -115,18 +115,18 @@ A schedule of problem deadlines and quizzes, subject to change, appears below. A
 
 #### Programming 1
 
-|                        | Hispeed    |  
-| ---------------------- | ---------- |  
-| Module 0               | Mon 3-Sep  |  
-| Module 1               | Fri 7-Sep  |  
-| Module 2               | Fri 14-Sep |  
-| Module 3               | Fri 21-Sep |  
-| Module 4               | Fri 28-Sep |  
+|                        | Hispeed    | Semester 2 |  
+| ---------------------- | ---------- | ---------- |  
+| Module 0               | Mon 3-Sep  | Mon 4-Feb  |  
+| Module 1               | Fri 7-Sep  | Thu 7-Feb  |  
+| Module 2               | Fri 14-Sep | Wed 13-Feb |  
+| Module 3               | Fri 21-Sep | Wed 20-Feb |  
+| Module 4               | Fri 28-Sep | Thu 28-Feb |  
 
-|                        | Hispeed    |  
-| -------------          | ---------- |  
-| Quiz                   | Mon 24-Sep |  
-| Retake                 | Mon 22-Oct |  
+|                        | Hispeed    | Semester 2 |  
+| -------------          | ---------- | ----       |  
+| Quiz                   | Mon 24-Sep | Mon 25-Feb |  
+| Retake                 | Mon 22-Oct | tbd        |  
 
 |                        | Lospeed    |  
 | -------------          | ---------- |  
@@ -135,18 +135,18 @@ A schedule of problem deadlines and quizzes, subject to change, appears below. A
 
 #### Programming 2
 
-|                        | Hispeed    |  
-| ---------------------- | ---------- |  
-| Module 5               | Fri 5-Oct  |  
-| Module 6               | Tue 9-Oct  |  
-| Module 7               | Wed 17-Oct |  
-| Module 8               | Fri 19-Oct |  
-| Module 9               | Fri 26-Oct |  
+|                        | Hispeed    | Semester 2 |  
+| ---------------------- | ---------- | ---------- |  
+| Module 5               | Fri 5-Oct  | Mon 4-Mar  |  
+| Module 6               | Tue 9-Oct  | Wed 6-Mar  |  
+| Module 7               | Wed 17-Oct | Wed 13-Mar |  
+| Module 8               | Fri 19-Oct | Tue 19-Mar |  
+| Module 9               | Fri 26-Oct | Thu 29-Mar |  
 
-|                        | Hispeed    |  
-| -------------          | ---------- |  
-| Quiz                   | Mon 22-Oct |  
-| Retake                 | Mon 17-Dec |  
+|                        | Hispeed    | Semester 2 |  
+| -------------          | ---------- | -          |  
+| Quiz                   | Mon 22-Oct | Mon 25-Mar |  
+| Retake                 | Mon 17-Dec | tbd        |  
 
 |                        | Lospeed 2  |  
 | -------------          | ---------- |  
