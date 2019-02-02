@@ -1,6 +1,6 @@
 # CS50x University of Amsterdam<br><small>Programming 1+2</small>
 
-## Syllabus, Fall 2018
+## Syllabus, Fall 2018/Spring 2019
 
 WORK IN PROGRESS NOT FINAL
 
@@ -28,13 +28,28 @@ Do you have a question in writing? Maybe need an exception? Feel free to send an
 
 ## Grades
 
-All students must ordinarily submit all problems, take all tests and take the quiz in order to
-be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+All students must ordinarily submit a fully correct solution to all problems, take all tests and take the quiz in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-The final grade for this course is primarily determined by averaging the scores for the problems, as per the below. The quiz has to be passed, but has no weight in the final grade.
+The final grade for this course is primarily determined by averaging the scores for the problems, per the below. The tests and quiz have to be passed, but have no weight in the final grade.
 
 #### Programming 1
 
+| Problem        | Language | Weight |  
+| -------------- | -------- | -----: |  
+| Scratch        | Scratch  |     0% |  
+| Water          | C        |     0% |  
+| Mario          | C        |  12,5% |  
+| Cash/Credit    | C        |  12,5% |  
+| Caesar         | C        |  12,5% |  
+| Initials       | C        |     0% |  
+| Vigenere/crack | C        |  12,5% |  
+| Find           | C        |  12,5% |  
+| Fifteen        | C        |  12,5% |  
+| Whodunit       | C        |     0% |  
+| Resize         | C        |  12,5% |  
+| Recover        | C        |  12,5% |  
+
+<!--
 | Problem        | Language | Weight |  
 | -------------- | -------- | -----: |  
 | Scratch        | Scratch  |     0% |  
@@ -51,9 +66,22 @@ The final grade for this course is primarily determined by averaging the scores 
 | Recover        | C        |    10% |  
 | 11 Tests       |          |     0% |  
 | 1 Quiz         |          |     0% |  
+-->
 
 #### Programming 2
 
+|               | Language     | Weight |  
+| ------------- | ------------ | -----: |  
+| Homepage      | HTML         |     0% |  
+| Python        | Python       |     0% |  
+| Bleep         | Python       |    15% |  
+| Similarities  | Python       |    15% |  
+| Survey        | Python, HTML |    15% |  
+| Finance       | Python, HTML |    25% |  
+| Game of cards | Python       |     0% |  
+| Adventure     | Python       |    30% |  
+
+<!--
 |               | Language | Weight |  
 | ------------- | -------- | -----: |  
 | Speller       | C        |    25% |  
@@ -64,6 +92,7 @@ The final grade for this course is primarily determined by averaging the scores 
 | Finance       | HTML     |    20% |  
 | X Tests       |          |     0% |  
 | Quiz          |          |     0% |  
+-->
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
@@ -115,43 +144,43 @@ A schedule of problem deadlines and quizzes, subject to change, appears below. A
 
 #### Programming 1
 
-|                        | Hispeed    |  
-| ---------------------- | ---------- |  
-| Module 0               | Mon 3-Sep  |  
-| Module 1               | Fri 7-Sep  |  
-| Module 2               | Fri 14-Sep |  
-| Module 3               | Fri 21-Sep |  
-| Module 4               | Fri 28-Sep |  
+|                        | Hispeed    | Semester 2 |  
+| ---------------------- | ---------- | ---------- |  
+| Module 0               | Mon 3-Sep  | Mon 4-Feb  |  
+| Module 1               | Fri 7-Sep  | Thu 7-Feb  |  
+| Module 2               | Fri 14-Sep | Wed 13-Feb |  
+| Module 3               | Fri 21-Sep | Wed 20-Feb |  
+| Module 4               | Fri 28-Sep | Thu 28-Feb |  
 
-|                        | Hispeed    |  
-| -------------          | ---------- |  
-| Quiz                   | Mon 24-Sep |  
-| Retake                 | Mon 22-Oct |  
+|                        | Hispeed    | Semester 2 |  
+| -------------          | ---------- | ----       |  
+| Quiz                   | Mon 24-Sep | Mon 25-Feb |  
+| Retake                 | Mon 22-Oct | Mon 25-Mar |  
 
-|                        | Lospeed    |  
-| -------------          | ---------- |  
-| Quiz option 1          | Mon 22-Oct |  
-| Quiz option 2 (retake) | Mon 14-Jan |  
+|                        | Lospeed    | Semester 2 |  
+| -------------          | ---------- | -          |  
+| Quiz option 1          | Mon 22-Oct | Mon 25-Mar |  
+| Quiz option 2 (retake) | Mon 14-Jan | Mon 27-May |  
 
 #### Programming 2
 
-|                        | Hispeed    |  
-| ---------------------- | ---------- |  
-| Module 5               | Fri 5-Oct  |  
-| Module 6               | Tue 9-Oct  |  
-| Module 7               | Wed 17-Oct |  
-| Module 8               | Fri 19-Oct |  
-| Module 9               | Fri 26-Oct |  
+|                        | Hispeed    | Semester 2 |  
+| ---------------------- | ---------- | ---------- |  
+| Module 5               | Fri 5-Oct  | Mon 4-Mar  |  
+| Module 6               | Tue 9-Oct  | Wed 6-Mar  |  
+| Module 7               | Wed 17-Oct | Wed 13-Mar |  
+| Module 8               | Fri 19-Oct | Tue 19-Mar |  
+| Module 9               | Fri 26-Oct | Thu 29-Mar |  
 
-|                        | Hispeed    |  
-| -------------          | ---------- |  
-| Quiz                   | Mon 22-Oct |  
-| Retake                 | Mon 17-Dec |  
+|                        | Hispeed    | Semester 2 |  
+| -------------          | ---------- | -          |  
+| Quiz                   | Mon 22-Oct | Mon 25-Mar |  
+| Retake                 | Mon 17-Dec | Mon 27-May |  
 
-|                        | Lospeed 2  |  
-| -------------          | ---------- |  
-| Quiz option 1          | Mon 17-Dec |  
-| Quiz option 2 (retake) | Mon 14-Jan |  
+|                        | Lospeed 2  | Semester 2 |  
+| -------------          | ---------- | -          |  
+| Quiz option 1          | Mon 17-Dec | Mon 27-May |  
+| Quiz option 2 (retake) | Mon 14-Jan | Mon 17-Jun |  
 
 
 ## Books
