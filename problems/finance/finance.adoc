@@ -262,6 +262,3 @@ If you see this, make sure to remove or comment out any print statements from ap
 Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `finance` folder and then select *Download*.
 
 You should find that your browser has downloaded `finance.zip`. If instead, you find a folder named `finance`, make a `.zip` from it and submit it, below.
-
-
-
