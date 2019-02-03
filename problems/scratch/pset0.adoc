@@ -36,9 +36,9 @@ Head to https://scratch.mit.edu/[the Scratch website] and sign up for an account
 
 You might find these resources helpful (note that they show an earlier version of Scratch):
 
-1. [Scratch for Budding Computer Scientists](https://cs.harvard.edu/malan/scratch/)
-1. [Getting Started with Scratch](https://resources.scratch.mit.edu/www/guides/en/Getting-Started-Guide-Scratch2.pdf)
-1. [Scratch Cards](https://scratch.mit.edu/info/cards/)
+1. https://cs.harvard.edu/malan/scratch/[Scratch for Budding Computer Scientists]
+1. https://resources.scratch.mit.edu/www/guides/en/Getting-Started-Guide-Scratch2.pdf[Getting Started with Scratch]
+1. https://scratch.mit.edu/info/cards/[Scratch Cards]
 
 Stuck for ideas? Here are your predecessors' https://scratch.mit.edu/studios/4248580/[projects from last year]. But try to think of an idea on your own, and then set out to implement it. However, don't try to implement the entirety of your project all at once: pluck off one piece at a time. In other words, take baby steps: write a bit of code (i.e., drag and drop a few puzzle pieces), test, write a bit more, test, and so forth. And select **File > Save Now** every few minutes so that you don't lose any work!
 
