@@ -301,6 +301,12 @@ BSc programme. Find them here in [English] and [Dutch].
 [Dutch]: http://uva.nl/plagiaat
 [English]: http://student.uva.nl/en/az/content/plagiarism-and-fraud/plagiarism-and-fraud.html
 
-### Regret {#regret}
+### Regret clause {#regret}
 
 If you commit some act that is not reasonable but bring it to the attention of the course's heads within 72 hours, the course may impose local sanctions that may include an unsatisfactory or failing grade for work submitted, but the course will not refer the matter for further disciplinary action except in cases of repeated acts.
+
+### Brink clause
+
+(This is an experimental feature of the course, which may be changed at some point.)
+
+If push comes to shove, and you reach a breaking point this term, particularly late at night, and fear you're about to commit some act that is not reasonable, you may, up to the last moment before you cross that point of no return, email the course's heads to say that you see no other way out but invoke this clause. (And then go to sleep!) We will then meet with you and, together, get you back on track. For your honesty and your return from the brink, we will waive any penalty for lateness.
