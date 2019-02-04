@@ -1,8 +1,6 @@
-# CS50x University of Amsterdam<br><small>Programming 1+2</small>
+# CS50x University of Amsterdam<br><small>Programming 1, Programming 2</small>
 
-## Syllabus, Fall 2018/Spring 2019
-
-WORK IN PROGRESS NOT FINAL
+## Syllabus, Spring 2019
 
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python and SQL plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
 
@@ -70,6 +68,8 @@ The final grade for this course is primarily determined by averaging the scores 
 
 #### Programming 2
 
+Note: the exact weights will be decided by Feb 11, after which you'll find them here. Current weights are an indication, but not final.
+
 |               | Language     | Weight |  
 | ------------- | ------------ | -----: |  
 | Homepage      | HTML         |     0% |  
@@ -105,9 +105,9 @@ relative to your classmates but where you end up relative to yourself in Week 0.
 Lectures discuss theory that helps you solve your problems sets and prepare you for the final exam. Watch the lectures before or on your way to the lab sessions, in order to be able to spend your lab time programming and asking questions.
 
 
-## Sections
+## Tutoring sections
 
-For hispeed only, lectures are supplemented by weekly, 90-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your tutor and a group of classmates present, as well as to dive into hands-on activities.
+For hispeed only, lectures are supplemented by weekly, 60-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your tutor and a group of classmates present, as well as to dive into hands-on activities.
 
 
 ## Walkthroughs
@@ -123,24 +123,18 @@ course's teaching assistants. Office hours ordinarily take place on weekdays.
 
 ## Problems
 
-Problems are the core of the course, enabling you to practice your problem solving skills.
-
-Problems are evaluated primarily along axes of correctness, design, and style, with scores
-ordinarily determined by 3 × correctness + 2 × design + 1 × style.
-
-Re-submission of problems is not possible until the following semester.
+Problems are the core of the course, enabling you to practice your problem solving skills. Problems are assessed primarily along axes of correctness, design, and style, with scores
+ordinarily determined by the formula **3 × correctness + 2 × design + 1 × style**. Correctness for each submission is expected to be perfect.
 
 
 ## Exam
 
-The course has one 90-minute exam. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. You can only take the exam if you have submitted all problems up until the date of the exam. One retake is offered.
+Both parts of the course have one 90-minute exam. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. You can only take the exam if you have submitted all problems up until the date of the exam. Each student can have one exam resit per academic year.
 
 
 ## Schedule
 
-For fulltime students, each module is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency.
-
-A schedule of problem deadlines and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned, or just a little bit later.
+For fulltime students, each module is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency. A schedule of problem deadlines and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned, or just a little bit later.
 
 #### Programming 1
 
@@ -148,9 +142,9 @@ A schedule of problem deadlines and quizzes, subject to change, appears below. A
 | ---------------------- | ---------- | ---------- |  
 | Module 0               | Mon 3-Sep  | Mon 4-Feb  |  
 | Module 1               | Fri 7-Sep  | Thu 7-Feb  |  
-| Module 2               | Fri 14-Sep | Wed 13-Feb |  
-| Module 3               | Fri 21-Sep | Wed 20-Feb |  
-| Module 4               | Fri 28-Sep | Thu 28-Feb |  
+| Module 2               | Fri 14-Sep | Thu 14-Feb |  
+| Module 3               | Fri 21-Sep | Thu 21-Feb |  
+| Module 4               | Fri 28-Sep | Fri 1-Mar  |  
 
 |                        | Hispeed    | Semester 2 |  
 | -------------          | ---------- | ----       |  
@@ -163,6 +157,8 @@ A schedule of problem deadlines and quizzes, subject to change, appears below. A
 | Quiz option 2 (retake) | Mon 14-Jan | Mon 27-May |  
 
 #### Programming 2
+
+Deadlines for semester 2, below, are not final yet.
 
 |                        | Hispeed    | Semester 2 |  
 | ---------------------- | ---------- | ---------- |  
@@ -305,6 +301,12 @@ BSc programme. Find them here in [English] and [Dutch].
 [Dutch]: http://uva.nl/plagiaat
 [English]: http://student.uva.nl/en/az/content/plagiarism-and-fraud/plagiarism-and-fraud.html
 
-### Regret {#regret}
+### Regret clause {#regret}
 
 If you commit some act that is not reasonable but bring it to the attention of the course's heads within 72 hours, the course may impose local sanctions that may include an unsatisfactory or failing grade for work submitted, but the course will not refer the matter for further disciplinary action except in cases of repeated acts.
+
+### Brink clause
+
+(This is an experimental feature of the course, which may be changed at some point.)
+
+If push comes to shove, and you reach a breaking point this term, particularly late at night, and fear you're about to commit some act that is not reasonable, you may, up to the last moment before you cross that point of no return, email the course's heads to say that you see no other way out but invoke this clause. (And then go to sleep!) We will then meet with you and, together, get you back on track. For your honesty and your return from the brink, we will waive any penalty for lateness.
