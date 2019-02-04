@@ -1,7 +1,0 @@
-== HTML
-
-video::YK78KhMf7bs[youtube, height=540, width=960, options=notitle]
-
-== CSS
-
-video::Ub3FKU21ubk[youtube, height=540, width=960, options=notitle]

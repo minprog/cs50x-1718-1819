@@ -1,0 +1,5 @@
+= Lecture 8 - SQL
+
+video::LxDetsPQAPQ[youtube,height=540,width=960,options=notitle]
+
+Lecture notes can be found link:https://cs50.harvard.edu/college/weeks/8/notes/[here].
