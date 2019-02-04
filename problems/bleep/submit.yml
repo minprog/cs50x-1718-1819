@@ -1,0 +1,4 @@
+name: bleep
+files:
+    required:
+        - bleep.py

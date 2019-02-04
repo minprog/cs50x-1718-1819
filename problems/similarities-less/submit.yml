@@ -1,4 +1,0 @@
-name: simil-less
-files:
-    required:
-        - helpers.py
