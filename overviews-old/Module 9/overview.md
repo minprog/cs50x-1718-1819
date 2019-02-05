@@ -1,6 +1,6 @@
-# Module 5: Homepage
+# Module 9: Finance
 
-In this module, you'll learn about the web. You'll have the opportunity to build a nice website for yourself or about whatever topic you like.
+In this module, you'll implement C$50 Finance, while learning about the web and web servers.
 
 ## Help
 
@@ -25,11 +25,23 @@ Alright, here we go again!
 Log into <https://cs50.io/> and execute the below in a terminal window.
 
     update50
-    mkdir ~/workspace/pset5/
-    cd ~/workspace/pset5/
+    mkdir ~/workspace/pset9/
+    cd ~/workspace/pset9/
 
 ## What to Do
 
-1. Watch [Lecture 5](/lectures/lecture-5)
+1. Watch [Lecture 10](/lectures/lecture-10)
 
-2. Implement [Homepage](/problems/homepage)
+4. Implement [C$50 Finance](/problems/finance)
+
+## How to Submit
+
+1. When ready to submit, log into [CS50 IDE](https://cs50.io/).
+
+2. Download your `.py` files.
+
+3. Make sure you are signed in to this website!
+
+4. In the form below the problem, add the file that you downloaded.
+
+5. Press "Submit for grading". Presto!
