@@ -111,8 +111,12 @@ Lospeed sem2:
     Module 0:
         Lecture 0: /lectures/lecture-0
         Scratch: /problems/scratch
+    Module 1:
+        Overview: /overviews/module-1
 
 Hispeed sem2:
     Day 0:
         Lecture 0: /lectures/lecture-0
         Scratch: /problems/scratch
+    Module 1:
+        Overview: /overviews/module-1
