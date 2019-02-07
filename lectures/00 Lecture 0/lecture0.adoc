@@ -2,4 +2,4 @@
 
 video::5azaK2cBKGw[youtube,height=540,width=960,options=notitle]
 
-Lecture notes can be found link:here[https://cs50.harvard.edu/college/weeks/0//notes/].
+Lecture notes can be found link:https://cs50.harvard.edu/college/weeks/0//notes/[here].
