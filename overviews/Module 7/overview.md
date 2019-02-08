@@ -34,6 +34,8 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 4. Implement [Similarities](/problems/similarities)
 
+4. Implement [Survey](/problems/survey)
+
 ## How to Submit
 
 1. When ready to submit, log into [CS50 IDE](https://cs50.io/).

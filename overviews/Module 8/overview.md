@@ -1,6 +1,6 @@
-# Module 8: Games
+# Module 8: Finance
 
-In this module, you'll implement two games, while learning about object-oriented programming. This style of programming isn't available in C, but in Python, many people use it!
+In this module, you'll implement C$50 Finance, while learning about the web and web servers.
 
 ## Help
 
@@ -25,18 +25,14 @@ Alright, here we go again!
 Log into <https://cs50.io/> and execute the below in a terminal window.
 
     update50
-    mkdir ~/workspace/pset7/
-    cd ~/workspace/pset7/
+    mkdir ~/workspace/pset9/
+    cd ~/workspace/pset9/
 
 ## What to Do
 
-1. Watch [Lecture 7](/lectures/lecture-7)
+1. Watch [Lecture 10](/lectures/lecture-10)
 
-2. Create an account at [GitHub](https://github.com/join). For now, you'll only need it to access the Game of Cards exercises, but in later courses you'll be submitting your programs on this website!
-
-3. Practice with [Game of Cards](https://lab.cs50.io/uva/cs50x/master/problems/cards/lab)
-
-4. Implement [Adventure](/problems/adventure)
+4. Implement [C$50 Finance](/problems/finance)
 
 ## How to Submit
 

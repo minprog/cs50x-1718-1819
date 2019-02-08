@@ -34,6 +34,8 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 2. Implement [Sentimental](/problems/sentimental)
 
+2. Implement [Bleep](/problems/bleep)
+
 ## How to Submit
 
 1. When ready to submit, log into [CS50 IDE](https://cs50.io/).
