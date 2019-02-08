@@ -1,4 +1,4 @@
-# Module 6: Sentimental
+# Module 6: Python
 
 In this module, you'll learn yourself a new programming language! Hopefully the first of many. The module is relatively short, with problems that may seem quite familiar to you!
 
