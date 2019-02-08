@@ -30,7 +30,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 10](/lectures/lecture-10)
+1. Watch [Lecture 8](/lectures/lecture-8)
 
 4. Implement [C$50 Finance](/problems/finance)
 

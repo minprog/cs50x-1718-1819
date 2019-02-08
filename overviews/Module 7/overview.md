@@ -30,7 +30,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 8](/lectures/lecture-8) and [Lecture 9](/lectures/lecture-9)
+1. Watch [Lecture 7](/lectures/lecture-7)
 
 4. Implement [Similarities](/problems/similarities)
 

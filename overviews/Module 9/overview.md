@@ -30,13 +30,15 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 7](/lectures/lecture-7)
+1. Watch a Lecture on Object-orientation (forthcoming)
 
 2. Create an account at [GitHub](https://github.com/join). For now, you'll only need it to access the Game of Cards exercises, but in later courses you'll be submitting your programs on this website!
 
 3. Practice with [Game of Cards](https://lab.cs50.io/uva/cs50x/master/problems/cards/lab)
 
 4. Implement [Adventure](/problems/adventure)
+
+1. Watch [Lecture 9](/lectures/lecture-9)
 
 ## How to Submit
 
