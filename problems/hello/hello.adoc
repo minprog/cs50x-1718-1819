@@ -122,11 +122,9 @@ Hello, world!
 
 === `check50`
 
-Be sure to register for an account at link:https://github.com/[GitHub] and then head to link:https://cs50.me/[CS50.me] to enable ``check50``! Then, go to your mailbox to accept two invitations sent to you by ``bot50``!
-
 [source,text]
 ----
-check50 cs50/2018/spring/hello
+check50 --local cs50/2018/fall/hello
 ----
 
 Assuming your program is correct, you should then see output like
