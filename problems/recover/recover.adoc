@@ -1,5 +1,4 @@
 ---
-layout: 2018/spring
 ---
 
 = Recover
@@ -13,6 +12,10 @@ Implement a program that recovers JPEGs from a forensic image, per the below.
 $ [underline]#./recover card.raw#
 ----
 
+== Introduction
+
+video::vbdDZIDg-r8[youtube]
+
 == Background
 
 In anticipation of this problem, we spent the past several days taking photos of people we know, all of which were saved on a digital camera as JPEGs on a memory card. (Okay, it's possible we actually spent the past several days on Facebook instead.) Unfortunately, we somehow deleted them all! Thankfully, in the computer world, "deleted" tends not to mean "deleted" so much as "forgotten." Even though the camera insists that the card is now blank, we're pretty sure that's not quite true. Indeed, we're hoping (er, expecting!) you can write a program that recovers the photos for us!
@@ -24,7 +27,7 @@ Even though JPEGs are more complicated than BMPs, JPEGs have "signatures," patte
 0xff 0xd8 0xff
 ----
 
-from first byte to third byte, left to right. The fourth byte, meanwhile, is either `0xe0`, `0xe1`, `0xe2`, `0xe3`, `0xe4`, `0xe5`, `0xe6`, `0xe7`, `0xe8`, `0xe9`, `0xea`, `0xeb`, `0xec`, `0xed`, `0xee`, of `0xef`. Put another way, the fourth byte's first four bits are `1110`.
+from first byte to third byte, left to right. The fourth byte, meanwhile, is either `0xe0`, `0xe1`, `0xe2`, `0xe3`, `0xe4`, `0xe5`, `0xe6`, `0xe7`, `0xe8`, `0xe9`, `0xea`, `0xeb`, `0xec`, `0xed`, `0xee`, or `0xef`. Put another way, the fourth byte's first four bits are `1110`.
 
 Odds are, if you find this pattern of four bytes on media known to store photos (e.g., my memory card), they demarcate the start of a JPEG. To be fair, you might encounter these patterns on some disk purely by chance, so data recovery isn't an exact science.
 
@@ -36,18 +39,20 @@ Realize, of course, that JPEGs can span contiguous blocks. Otherwise, no JPEG co
 
 Now, I only have one memory card, but there are a lot of you! And so I've gone ahead and created a "forensic image" of the card, storing its contents, byte after byte, in a file called `card.raw`. So that you don't waste time iterating over millions of 0s unnecessarily, I've only imaged the first few megabytes of the memory card. But you should ultimately find that the image contains 50 JPEGs.
 
-== Distribution
+== Getting Started
 
-=== Downloading
+Here's how to download this problem's "distribution code" (i.e., starter code) into your own CS50 IDE. Log into link:https://cs50.io/[CS50 IDE] and then, in a terminal window, execute each of the below.
 
-[source]
-----
-$ mkdir recover
-$ cd recover
-$ wget http://cdn.cs50.net/2017/fall/psets/4/recover/card.raw
-$ ls
-card.raw
-----
+1. Execute `update50` to ensure your IDE is up-to-date. That command might take a few minutes to finish.
+1. Execute `cd` to ensure that you're in `~/workspace/` (i.e., a directory called `workspace` that's in your home directory, aka `~`).
+1. Execute `mkdir pset3` to make (i.e., create) a directory called `pset3` in your home directory.
+1. Execute `cd pset3` to change into (i.e., open) that directory.
+1. Execute `wget http://cdn.cs50.net/2018/fall/psets/3/recover/recover.zip` to download a (compressed) ZIP file with this problem's distribution.
+1. Execute `unzip recover.zip` to uncompress that file.
+1. Execute `rm recover.zip` followed by `yes` or `y` to delete that ZIP file.
+1. Execute `ls`. You should see a directory called `recover`, which was inside of that ZIP file.
+1. Execute `cd recover` to change into that directory.
+1. Execute `ls`. You should see this problem's distribution, including `card.raw` and `recover.c`.
 
 == Specification
 
@@ -86,9 +91,20 @@ $ [underline]#echo $?#
 
 === `check50`
 
+Here's how to evaluate the correctness of your code using `check50`. But be sure to compile and test it yourself as well!
+
 [source]
 ----
-check50 --local cs50/2018/spring/recover
+check50 cs50/2018/fall/recover
+----
+
+=== `style50`
+
+Here's how to evaluate the style of your code using `style50`.
+
+[source]
+----
+style50 recover.c
 ----
 
 == Staff's Solution
@@ -96,8 +112,6 @@ check50 --local cs50/2018/spring/recover
 Afraid having the staff's solution would spoil the challenge!
 
 == Hints
-
-Odds are you'll want to start by creating a file called `recover.c` (in the same directory as is `card.raw`). No need for the CS50 Library, but you will want to declare `main` in such a way that it supports command-line arguments. (Remember how?)
 
 Keep in mind that you can open `card.raw` programmatically with `fopen`, as with the below, provided `argv[1]` exists.
 
@@ -123,3 +137,9 @@ rm -f *.jpg
 ----
 
 Just be careful with that `-f` switch, as it "forces" deletion without prompting you.
+
+== Fabulous Prize
+
+And now a just-for-fun challenge! You are hereby challenged to find as many of the computer scientists featured in the photos that you just recovered as possible. To prove that you found someone, take a photo of yourself posing (anywhere) with the computer scientist (in such a way that they are aware of the photo and not just in the background). If a photo contains multiple computer scientists, you’re welcome to pose with each of them separately. Upload your photos (i.e., the photos you took, not the ones that you recovered) to a non-private album somewhere that supports bulk downloads (e.g., Dropbox, Google Photos, Imgur, etc.), then email your album’s URL to the course's heads by 11:59pm on Tue 10/16! We'll add your photos to a public gallery (unless you request otherwise).
+
+Whichever section finds and photographs the most computer scientists (and, in the event of a tie, submits first) shall be rewarded with a fabulous prize.
