@@ -1,0 +1,4 @@
+name: survey
+files:
+    required:
+        - survey.zip

@@ -1,6 +1,4 @@
 ---
-layout: 2018/spring
-toclevels: 1
 ---
 
 = C$50 Finance
@@ -15,11 +13,11 @@ image::finance.png["C$50 Finance",role="related thumb"]
 
 If you're not quite sure what it means to buy and sell stocks (i.e., shares of a company), head to http://www.investopedia.com/university/stocks/ for a tutorial.
 
-You're about to implement C$50 Finance, a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks' actual prices and portfolios' values, it will also let you buy (okay, "buy") and sell (okay, "sell") stocks by querying https://www.alphavantage.co/[AlphaVantage] for stocks' prices.
+You're about to implement C$50 Finance, a web app via which you can manage portfolios of stocks. Not only will this tool allow you to check real stocks' actual prices and portfolios' values, it will also let you buy (okay, "buy") and sell (okay, "sell") stocks by querying https://iextrading.com/developer/[IEX] for stocks' prices.
 
-Indeed, AlphaVantage lets you download stock quotes in CSV format via URLs like https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo&datatype=csv. Notice how Microsoft's symbol (MSFT) is embedded in this URL (as the value of the HTTP parameter called `symbol`); that's how AlphaVantage knows whose data to return. Notice also the value of the HTTP parameter called `function`. The value of that parameter tells AlphaVantage which fields of data to return to you. Incidentally, the API might sometimes returns prices in currencies other than US dollars (USD) without telling you which, but we'll assume everything's in US dollars for simplicity.
+Indeed, IEX lets you download stock quotes via their API (applivcation programming interface) using URLs like https://api.iextrading.com/1.0/stock/NFLX/quote. Notice how Netflix's symbol (NFLX) is embedded in this URL; that's how IEX knows whose data to return. If you follow that link, you'll see a reponse in JSON (JavaScript Object Notation) format. It's a bit messy, but notice how, between the curly braces, there's a comma-separated list of key-value pairs, with a colon separating each key from its value.
 
-Let's turn our attention now to the app's distribution code!
+Let's turn our attention now to this problem's distribution code!
 
 == Distribution
 
@@ -27,7 +25,7 @@ Let's turn our attention now to the app's distribution code!
 
 [source,subs="macros"]
 ----
-$ wget http://cdn.cs50.net/2018/spring/psets/7/finance/finance.zip
+$ wget http://cdn.cs50.net/2018/fall/psets/8/finance/finance.zip
 $ unzip finance.zip
 $ rm finance.zip
 $ cd finance
@@ -35,23 +33,6 @@ $ ls
 application.py  helpers.py        static/
 finance.db      requirements.txt  templates/
 ----
-
-=== Configuring
-
-Before getting started on this assignment, or indeed even tinkering with the distribution code, we'll need to register for an API key in order to be able to query AlphaVantage's data. To do so, follow these steps:
-
-. Visit https://www.alphavantage.co/support/#api-key[https://www.alphavantage.co/support/#api-key].
-. Enter your name and email address. When asked to describe yourself, choose *Student* from the drop-down.
-. Click *Get Free API Key*.
-. A text field should appear below. Copy the value after "Your dedicated access key is: " up to, but excluding, the period.
-. In a terminal window within CS50 IDE, execute:
-+
-[source]
-----
-export API_KEY=value
-----
-+
-where `value` is that (pasted) value, without any space immediately before or after the `=`. You also may wish to paste that value in a text document somewhere, in case you need it again later.
 
 === Running
 
@@ -73,7 +54,7 @@ Here on out, if you'd prefer a command line, you're welcome to use `sqlite3` ins
 
 Open up `application.py`. Atop the file are a bunch of imports, among them CS50's SQL module and a few helper functions. More on those soon.
 
-After configuring http://flask.pocoo.org/[Flask], notice how this file disables caching of responses (provided you're in debugging mode, which you are by default on CS50 IDE), lest you make a change to some file but your browser not notice. Notice next how it configures http://jinja.pocoo.org/[Jinja] with a custom "filter," `usd`, a function (defined in `helpers.py`) that will make it easier to format values as US dollars (USD). It then further configures Flask to store http://flask.pocoo.org/docs/0.12/quickstart/#sessions[sessions] on the local filesystem (i.e., disk) as opposed to storing them inside of (digitally signed) cookies, which is Flask's default. The file then configures CS50's SQL module to use `finance.db`, a SQLite database whose contents we'll soon see!
+After configuring http://flask.pocoo.org/[Flask], notice how this file disables caching of responses (provided you're in debugging mode, which you are by default on CS50 IDE), lest you make a change to some file but your browser not notice. Notice next how it configures http://jinja.pocoo.org/[Jinja] with a custom "filter," `usd`, a function (defined in `helpers.py`) that will make it easier to format values as US dollars (USD). It then further configures Flask to store http://flask.pocoo.org/docs/1.0/quickstart/#sessions[sessions] on the local filesystem (i.e., disk) as opposed to storing them inside of (digitally signed) cookies, which is Flask's default. The file then configures CS50's SQL module to use `finance.db`, a SQLite database whose contents we'll soon see!
 
 Thereafter are a whole bunch of routes, only two of which are fully implemented: `login` and `logout`. Read through the implementation of `login` first. Notice how it uses `db.execute` (from CS50's library) to query `finance.db`. And notice how it uses `check_password_hash` to compare hashes of users' passwords. Finally, notice how `login` "remembers" that a user is logged in by storing his or her `user_id`, an INTEGER, in `session`. That way, any of this file's routes can check which user, if any, is logged in. Meanwhile, notice how `logout` simply clears `session`, effectively logging a user out.
 
@@ -87,40 +68,34 @@ Next take a look at `helpers.py`. Ah, there's the implementation of `apology`. N
 
 Next in the file is `login_required`. No worries if this one's a bit cryptic, but if you've ever wondered how a function can return another function, here's an example!
 
-Thereafter is `lookup`, a function that, given a `symbol` (e.g., MSFT), returns a stock quote for that symbol in the form of a `dict` with two keys: `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`. There's a cryptic Python-looking call embedded in the URL to `os.getenv('API_KEY')`. The value of this environment variable were set with the `export` command we used earlier.
+Thereafter is `lookup`, a function that, given a `symbol` (e.g., NFLX), returns a stock quote for a company in the form of a `dict` with three keys: `name`, whose value is a `str`, the name of the company; `price`, whose value is a `float`; and `symbol`, whose value is a `str`, a canonicalized (uppercase) version of a stock's symbol, irrespective of how that symbol was capitalized when passed into `lookup`.
 
 Last in the file is `usd`, a short function that simply formats a `float` as USD (e.g., `1234.56` is formatted as `$1,234.56`).
 
 ==== `requirements.txt`
 
-Next take a quick look at `requirements.txt`. That file simply prescribes the packages on which this app will depend. You should not need to modify this file at all.
+Next take a quick look at `requirements.txt`. That file simply prescribes the packages on which this app will depend.
 
 ==== `static/`
 
-Glance too at `static/`, inside of which is `styles.css`. That's where some initial CSS lives. You're welcome to alter it as you see fit to get some additional practice with CSS.
+Glance too at `static/`, inside of which is `styles.css`. That's where some initial CSS lives. You're welcome to alter it as you see fit.
 
 ==== `templates/`
 
 Now look in `templates/`. In `login.html` is, essentially, just an HTML form, stylized with http://getbootstrap.com/[Bootstrap]. In `apology.html`, meanwhile, is a template for an apology. Recall that `apology` in `helpers.py` took two arguments: `message`, which was passed to `render_template` as the value of `bottom`, and, optionally, `code`, which was passed to `render_template` as the value of `top`. Notice in `apology.html` how those values are ultimately used! And https://github.com/jacebrowning/memegen[here's why]. 0:-)
 
-Last up is `layout.html`. It's a bit bigger than usual, but that's mostly because it comes with a fancy, mobile-friendly "navbar" (navigation bar), also based on Bootstrap. Notice how it defines a block, `main`, inside of which templates (including `apology.html` and `login.html`) shall go. It also includes support for Flask's http://flask.pocoo.org/docs/0.12/patterns/flashing/[message flashing] so that you can relay messages from one route to another for the user to see.
-
-=== `POST` and `GET`
-
-video::4axL8Gfw2nI[youtube, height=540, width=960, options=notitle]
-
-Before starting out, you might want to take a look at this short from Doug wherein HTTP and its methods are explained. Refer to http://flask.pocoo.org/docs/1.0/quickstart/#http-methods[this link] to see how you can use this in your code.
+Last up is `layout.html`. It's a bit bigger than usual, but that's mostly because it comes with a fancy, mobile-friendly "navbar" (navigation bar), also based on Bootstrap. Notice how it defines a block, `main`, inside of which templates (including `apology.html` and `login.html`) shall go. It also includes support for Flask's http://flask.pocoo.org/docs/1.0/patterns/flashing/[message flashing] so that you can relay messages from one route to another for the user to see.
 
 == Specification
 
 === `register`
 
-Complete the implementation of `register` in such a way that it allows a user to register for an account.
+Complete the implementation of `register` in such a way that it allows a user to register for an account via a form.
 
-* Require that a user input a username, implemented a text field whose `name` is `username`. Render an apology if the user's input is blank or the username already exists.
+* Require that a user input a username, implemented as a text field whose `name` is `username`. Render an apology if the user's input is blank or the username already exists.
 * Require that a user input a password, implemented as a text field whose `name` is `password`, and then that same password again, implemented as a text field whose `name` is `confirmation`. Render an apology if either input is blank or the passwords do not match.
 * Submit the user's input via `POST` to `/register`.
-* `INSERT` the new user into `users`, storing a hash of the user's password, not the password itself. Hash the user's password with http://werkzeug.pocoo.org/docs/0.12/utils/#werkzeug.security.generate_password_hash[`generate_password_hash`].
+* `INSERT` the new user into `users`, storing a hash of the user's password, not the password itself. Hash the user's password with http://werkzeug.pocoo.org/docs/0.14/utils/#werkzeug.security.generate_password_hash[`generate_password_hash`].
 * Odds are you'll want to create a new template (e.g., `register.html`) that's quite similar to `login.html`.
 
 Once you've implemented `register` correctly, you should be able to register for an account and log in (since `login` and `logout` already work)! And you should be able to see your rows via phpLiteAdmin or `sqlite3`.
@@ -153,7 +128,7 @@ Once you've implemented `buy` correctly, you should be able to see users' purcha
 
 === `index`
 
-Complete the implementation of `index` in such a way that it displays an HTML table summarizing, for the user currently logged in, which stocks the user owns (as by displaying ticker symbols), the numbers of shares owned, the current price of each stock, and the total value of each holding (i.e., shares times price). Also display the user's current cash balance along with a grand total (i.e., stocks' total value plus cash).
+Complete the implementation of `index` in such a way that it displays an HTML table summarizing, for the user currently logged in, which stocks the user owns, the numbers of shares owned, the current price of each stock, and the total value of each holding (i.e., shares times price). Also display the user's current cash balance along with a grand total (i.e., stocks' total value plus cash).
 
 * Odds are you'll want to execute multiple ``SELECT``s. Depending on how you implement your table(s), you might find https://www.google.com/search?q=SQLite+GROUP+BY[GROUP BY], https://www.google.com/search?q=SQLite+HAVING[HAVING], https://www.google.com/search?q=SQLite+SUM[SUM], and/or https://www.google.com/search?q=SQLite+WHERE[WHERE] of interest.
 * Odds are you'll want to call `lookup` for each stock.
@@ -174,6 +149,18 @@ Complete the implementation of `history` in such a way that it displays an HTML 
 * For each row, make clear whether a stock was bought or sold and include the stock's symbol, the (purchase or sale) price, the number of shares bought or sold, and the date and time at which the transaction occurred.
 * You might need to alter the table you created for `buy` or supplement it with an additional table. Try to minimize redundancies.
 
+=== `check`
+
+Complete the implementation of `check` in such a way that it checks whether a username is available.
+
+* The route should accept, via GET, an HTTP parameter called `username`.
+* If the value of `username` is of length at least 1 and does not already belong to a user in the database, the route should return, in JSON format, `true`, signifying that the username is (as of that moment) available. Else it should return, in JSON format, `false`. Recall that `jsonify` in Flask can return a value in JSON format.
+
+Finally, enhance your template for `register` with some JavaScript in such a way that it prevents submission of your registration form if the inputted username is already taken, letting the user know, as via `alert` or via a Bootstrap http://getbootstrap.com/docs/4.1/components/alerts/[alert] or http://getbootstrap.com/docs/4.1/components/forms/#validation[validation].
+
+* Use Ajax (e.g., jQuery's https://api.jquery.com/jquery.get/[`$.get`] method) to query `/check` to check whether the inputted username is available. 
+* Recall that you can prevent submission of a form with https://www.w3schools.com/jsref/event_preventdefault.asp[`preventDefault`], and you can programmatically induce submission of a form (once validated by you) with https://www.w3schools.com/jsref/met_form_submit.asp[`submit`].
+
 === personal touch
 
 Implement at least one personal touch of your choice:
@@ -184,11 +171,11 @@ Implement at least one personal touch of your choice:
 * Require users' passwords to have some number of letters, numbers, and/or symbols.
 * Implement some other feature of comparable scope.
 
-Make sure to clearly indicate in your code what you have implemented as your personal touch. This can be done by putting `PERSONAL TOUCH: <explanation>` in your comments.
-
 == Walkthroughs
 
-*Instead of `pwd_context.encrypt`, which Zamyla mentions in this video, be sure to use `generate_password_hash` instead, per the above.*
+*Instead of `pwd_context.encrypt`, which Zamyla mentions, be sure to use `generate_password_hash` instead.*
+
+*Note that Zamyla does not discuss `/check`, but you should still implement it!*
 
 video::sy1o1yLob5U[youtube,list=PLhQjrBD2T380UP0XpPRhaUNxWbhftko_b]
 
@@ -208,7 +195,7 @@ Be sure to test your web app manually too, as by
 
 [source]
 ----
-check50 --local cs50/2018/spring/finance
+check50 cs50/2018/fall/finance
 ----
 
 === Style
@@ -226,7 +213,7 @@ http://finance.cs50.net/
 
 Feel free to register for an account and play around. Do *not* use a password that you use on other sites.
 
-It is *reasonable* to look at the staff's HTML and CSS as you work on this problem.
+It is *reasonable* to look at the staff's HTML and CSS.
 
 == Hints
 
@@ -240,16 +227,16 @@ It is *reasonable* to look at the staff's HTML and CSS as you work on this probl
 +
 If an `INSERT` or `UPDATE` would violate some constraint (e.g., a `UNIQUE` index), then `execute` returns `None`. In cases of error, `execute` raises a `RuntimeError`.
 * Recall that `cs50.SQL` will log to your terminal window any queries that you execute via `execute` (so that you can confirm whether they're as intended).
-* Be sure to use named bind parameters (i.e., a https://www.python.org/dev/peps/pep-0249/#paramstyle[paramstyle] of `named`) when calling CS50's `execute` method, a la `WHERE name=:name`. Do *not* use f-strings, https://docs.python.org/3.1/library/functions.html#format[`format`], or `+` (i.e., concatenation), lest you risk a SQL injection attack.
+* Be sure to use named bind parameters (i.e., a https://www.python.org/dev/peps/pep-0249/#paramstyle[paramstyle] of `named`) when calling CS50's `execute` method, a la `WHERE name=:name`. Do *not* use f-strings, https://docs.python.org/3.6/library/functions.html#format[`format`], or `+` (i.e., concatenation), lest you risk a SQL injection attack.
 * If (and only if) already comfortable with SQL, you're welcome to use http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy Core] or http://flask-sqlalchemy.pocoo.org/[Flask-SQLAlchemy] (i.e., http://docs.sqlalchemy.org/en/latest/index.html[SQLAlchemy ORM]) instead of `cs50.SQL`.
 * You're welcome to add additional static files to `static/`.
 * Odds are you'll want to consult http://jinja.pocoo.org/docs/dev/[Jinja's documentation] when implementing your templates.
 * It is *reasonable* to ask others to try out (and try to trigger errors in) your site. Via *Share* in CS50 IDE's top-right corner can you share your *Application* by making it *Public*. Take care not to share your *Editor*, which would provide access to your Python code and SQLite database.
 * You're welcome to alter the aesthetics of the sites, as via
-** https://bootswatch.com/4-alpha/,
-** https://getbootstrap.com/docs/4.0/content/,
-** https://getbootstrap.com/docs/4.0/components/, and/or
-** https://memegen.link/api/templates.
+** https://bootswatch.com/,
+** https://getbootstrap.com/docs/4.1/content/,
+** https://getbootstrap.com/docs/4.1/components/, and/or
+** https://memegen.link/.
 
 == FAQs
 
@@ -265,11 +252,6 @@ If, upon running `flask`, you see this error, odds are you (still) have `flask` 
 
 If, upon running `check50`, you see this error, odds are you have a bug in your code somewhere! Open up the CS50.me produced by `check50` to see a detailed traceback to help you debug!
 
-== How to Submit
+=== check50 is taking longer than normal!
 
-Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `finance` folder and then select *Download*.
-
-You should find that your browser has downloaded `finance.zip`. If instead, you find a folder named `finance`, make a `.zip` from it and submit it, below.
-
-
-
+If you see this, make sure to remove or comment out any print statements from application.py and try `check50` again.
