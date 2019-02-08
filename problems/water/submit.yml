@@ -2,3 +2,6 @@ name: water
 files:
     required:
         - water.c
+check:
+    tool: check50v2
+    slug: cs50/2017/x/water

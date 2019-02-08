@@ -71,9 +71,7 @@ ROFL
 == Testing
 
 === Correctness
-No `check50` for this one! But odds are, if you can crack all ten passwords above, you're in good shape!
 
-**Update!:** check50 is now available!
 ----
 check50 crack@minprog/cs50x -l
 ----

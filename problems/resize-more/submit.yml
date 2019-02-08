@@ -2,3 +2,6 @@ name: resize_more
 files:
     required:
         - resize.c
+check:
+    tool: check50v2
+    slug: cs50/2018/fall/resize/more

@@ -68,7 +68,7 @@ Change owed: [underline]#0.41#
 
 [source]
 ----
-check50 --local cs50/2018/spring/cash
+check50 --local cs50/2018/fall/cash
 ----
 
 === Style

@@ -1,4 +1,7 @@
 name: initials_more
 files:
-    everyone:
+    required:
         - initials.c
+check:
+    tool: check50v2
+    slug: cs50/2017/x/initials/more

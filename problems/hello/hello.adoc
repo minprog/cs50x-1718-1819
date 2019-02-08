@@ -124,7 +124,7 @@ Hello, world!
 
 [source,text]
 ----
-check50 --local cs50/2018/fall/hello
+check50 --local cs50/2017/fall/hello
 ----
 
 Assuming your program is correct, you should then see output like
