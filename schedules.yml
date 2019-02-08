@@ -113,6 +113,12 @@ Lospeed sem2:
         Scratch: /problems/scratch
     Module 1:
         Overview: /overviews/module-1
+    Module 2:
+        Overview: /overviews/module-2
+    Module 3:
+        Overview: /overviews/module-3
+    Module 4:
+        Overview: /overviews/module-4
 
 Lospeed p2:
     Module 5:
@@ -126,3 +132,7 @@ Hispeed sem2:
         Overview: /overviews/module-1
     Module 2:
         Overview: /overviews/module-2
+    Module 3:
+        Overview: /overviews/module-3
+    Module 4:
+        Overview: /overviews/module-4

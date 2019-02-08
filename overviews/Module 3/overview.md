@@ -1,6 +1,6 @@
-# Module 3: Music
+# Module 3: Fifteen
 
-In this module, you'll learn about, ahem, musical notation, and about algorithms that you might implement in C. Searching and sorting algorithms will be part of many programs that you write!
+In this module, you'll learn about arrays and about algorithms that you might implement in C. Searching and sorting algorithms will be part of many programs that you write!
 
 ## Help
 
@@ -22,7 +22,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## Reminders
 
-Per [Lecture 3](/lectures/lecture-3):
+Per [Lecture 2](/lectures/lecture-2):
 
 * Use `help50` as needed.
 
@@ -42,11 +42,11 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 3](/lectures/lecture-3)
+1. Watch [Lecture 2](/lectures/lecture-2), from the previous module
 
-2. Practice with book chapter 6 (for loops), 7 (strings) and take the test
+2. Practice with the book chapter on *arrays* and *functions*.
 
-3. Implement [Music](/problems/music)
+3. Implement [Fifteen](/problems/fifteen)
 
 4. Implement either of:
 

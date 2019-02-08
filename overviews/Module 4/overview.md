@@ -32,9 +32,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 4](/lectures/lecture-4)
-
-2. Practice with book chapter 6 (for loops), 7 (strings) and take the test
+1. Watch [Lecture 3](/lectures/lecture-3)
 
 3. Figure out [whodunit](/problems/whodunit)
 
