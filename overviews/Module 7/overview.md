@@ -32,7 +32,11 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 1. Watch [Lecture 7](/lectures/lecture-7)
 
-4. Implement [Similarities](/problems/similarities)
+4. Implement either of:
+
+    - [Similarities](/problems/similarities-less), for those less comfortable
+
+    - [Similarities](/problems/similarities-more), for those more comfortable
 
 4. Implement [Survey](/problems/survey)
 
