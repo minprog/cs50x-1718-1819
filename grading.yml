@@ -35,6 +35,7 @@ grades:
     vigenere: *automatic
     crack: *automatic
     music: *automatic
+    fifteen: *automatic
     find_less: *automatic
     find_more: *automatic
     whodunit:
@@ -57,11 +58,14 @@ grades:
             points: integer
         calculation: points >= 16 && -1 || 0
     speller: *automatic
-    sentimental: *automatic
-    adventure: *automatic
+    homepage: *fullyauto
+    sentimental: *fullyauto
+    bleep: *automatic
     simil-less: *automatic
     simil-more: *automatic
+    survey: *automatic
     finance: *automatic
+    adventure: *automatic
     quiz2:
         type: pass
         subgrades:
