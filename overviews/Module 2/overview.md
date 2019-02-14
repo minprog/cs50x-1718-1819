@@ -50,8 +50,6 @@ Per [Lecture 2](/lectures/lecture-2):
 
     - book chapter 6 (for-loops) and take the test
 
-    - book chapter 7 (strings) and take the test
-
 7. Implement:
 
     - [Caesar](/problems/caesar)

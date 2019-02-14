@@ -44,7 +44,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 1. Watch [Lecture 2](/lectures/lecture-2), from the previous module
 
-2. Practice with the book chapter on *arrays* and *functions*.
+2. Practice with the book chapter on *strings*, *arrays* and *functions*.
 
 3. Implement [Fifteen](/problems/fifteen)
 
