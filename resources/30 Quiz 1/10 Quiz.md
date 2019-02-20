@@ -2,7 +2,11 @@
 
 On this page you can find some study materials for the exam of 'Programmeren 1'. For each week we have selected the relevant lecture notes, subjects on CS50 Study and homebrewed practice exercises.
 
-## Week 0 - Scratch
+## Practice exam
+
+[Download the practice exam](cs50x practice quiz 1.pdf)
+
+## Week 0
 
 ### Lecture Notes
 
@@ -13,7 +17,7 @@ On this page you can find some study materials for the exam of 'Programmeren 1'.
 - [Binary](https://study.cs50.net/binary)
 - [Conditions](https://study.cs50.net/conditions)
 
-## Week 1 - C
+## Week 1
 
 ### Lecture Notes
 
@@ -28,7 +32,7 @@ On this page you can find some study materials for the exam of 'Programmeren 1'.
 
 - [Unscratch](/practice/unscratch): check out the differences between loops in Scratch and loops in C
 
-## Week 2 - Crypto
+## Week 2
 
 ### Lecture Notes
 
@@ -41,11 +45,11 @@ On this page you can find some study materials for the exam of 'Programmeren 1'.
 - [Functions](https://study.cs50.net/functions)
 - [ASCII](https://study.cs50.net/ascii)
 
-## Week 3 - Music
+## Week 3
 
 ### Lecture Notes
 
-[Lecture Notes Week 3](https://cs50x.mprog.nl/lectures/lecture-3)
+(This was the same lecture as week 2)
 
 ### CS50 Study
 
