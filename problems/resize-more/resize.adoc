@@ -122,7 +122,7 @@ Here's how to check the correctness of your code using `check50`. But be sure to
 
 [source]
 ----
-check50 --local cs50/2018/fall/resize/more
+check50 --local resize/more@minprog/checks
 ----
 
 === `style50`

@@ -129,7 +129,7 @@ Usage: ./caesar k
 
 [source]
 ----
-check50 --local cs50/2018/fall/caesar
+check50 --local caesar@minprog/checks
 ----
 
 === Style

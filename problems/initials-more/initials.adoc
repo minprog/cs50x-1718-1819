@@ -53,7 +53,7 @@ RTB
 
 [source]
 ----
-check50 --local cs50/2017/x/initials/more
+check50 --local initials/more@minprog/checks
 ----
 
 == Staff's Solution

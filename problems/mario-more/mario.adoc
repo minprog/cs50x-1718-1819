@@ -86,7 +86,7 @@ pass:[####  ####]
 
 [source]
 ----
-check50  --local cs50/2018/spring/mario/more
+check50  --local mario/more@minprog/checks
 ----
 
 === Style

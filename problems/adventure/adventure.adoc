@@ -555,15 +555,9 @@ Implement an Object-Oriented version of Crowther's Adventure game.
 * The game must be winnable.
 
 === `check50`
-Adventure runs on the newest version of check50. To use that version run the following code in your IDE.
+
 ```
-pip install git+https://github.com/Qvdpost/check50x
-```
-You can run any of these checks depending on how far along you are in Adventure.
-```
-check50x minprog/cs50x/master/adventure/check50/tiny
-check50x minprog/cs50x/master/adventure/check50/small
-check50x minprog/cs50x/master/adventure/check50/crowther
+check50 --local adventure adventure@minprog/checks
 ```
 
 === `style50`

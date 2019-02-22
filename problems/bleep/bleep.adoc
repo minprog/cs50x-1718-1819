@@ -97,7 +97,7 @@ What message would you like to censor?
 
 [source]
 ----
-check50 --local cs50/2018/fall/bleep
+check50 --local bleep@minprog/checks
 ----
 
 === Style

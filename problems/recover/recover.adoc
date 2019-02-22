@@ -95,7 +95,7 @@ Here's how to evaluate the correctness of your code using `check50`. But be sure
 
 [source]
 ----
-check50 --local cs50/2018/fall/recover
+check50 --local recover@minprog/checks
 ----
 
 === `style50`

@@ -73,7 +73,7 @@ ROFL
 === Correctness
 
 ----
-check50 crack@minprog/cs50x -l
+check50 --local crack@minprog/checks
 ----
 
 === Style

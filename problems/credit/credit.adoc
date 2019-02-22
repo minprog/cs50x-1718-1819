@@ -96,7 +96,7 @@ INVALID
 
 [source]
 ----
-check50 --local cs50/2018/fall/credit
+check50 --local credit@minprog/checks
 ----
 
 === Style

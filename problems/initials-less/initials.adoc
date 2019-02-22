@@ -54,7 +54,7 @@ RTB
 
 [source]
 ----
-check50 --local cs50/2017/x/initials/less
+check50 --local initials/less@minprog/checks
 ----
 
 == Staff's Solution

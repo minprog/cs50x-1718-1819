@@ -47,10 +47,7 @@ video::5ueXMnDE-y8[youtube,list=PLhQjrBD2T381raeNI8WdI4D7GMu0XFGTh]
 === Correctness
 
 ```
-check50 --local cs50/2018/spring/sentimental/hello
-check50 --local cs50/2018/spring/sentimental/mario/more
-check50 --local cs50/2018/spring/sentimental/cash
-check50 --local cs50/2018/spring/sentimental/vigenere
+check50 --local sentimental@minprog/checks
 ```
 
 === Style

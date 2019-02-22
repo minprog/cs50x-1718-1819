@@ -126,7 +126,7 @@ Note that `check50` assumes that your board's blank space is implemented in `boa
 
 [source]
 ----
-check50 --local cs50/2017/x/fifteen
+check50 --local fifteen@minprog/checks
 ----
 
 == Staff's Solution
