@@ -85,6 +85,10 @@ $ [underline]#echo $?#
 0
 ----
 
+== Walkthrough
+
+video::iv9cw-PTSnA[youtube]
+
 == Hints
 
 With a program like this, we could have created `large.bmp` out of `small.bmp` by resizing the latter by a factor of 4 (i.e., by multiplying both its width and its height by 4), per the below.
