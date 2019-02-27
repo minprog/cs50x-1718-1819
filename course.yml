@@ -29,7 +29,7 @@ feedback_templates:
     #     grade: 0
     werkt_niet:
         explanation: "For scores < 5, asks student to confer with heads to remedy situation."
-        feedback: "Je inzending werkt niet met de check! Omdat dat wel vereist is, moet je zorgen dat dit verholpen wordt. We kunnen je daar natuurlijk bij helpen. Neem contact op via een reply!"
+        feedback: "Je inzending werkt niet met de check! Omdat dat wel vereist is, moet je zorgen dat dit verholpen wordt. Het eerste dat je even kunt checken is of de bestandsnaam exact zo is als gevraagd, anders kunnen we de checks niet draaien. En anders kunnen we je natuurlijk helpen met het oplossen van het probleem. Neem contact op via een reply!"
         grade: 0
     andere_versie:
         explanation: "Laat weten dat we een andere (more/less comfy) versie nakijken en deze niet"
