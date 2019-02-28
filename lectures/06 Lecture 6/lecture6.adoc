@@ -1,5 +1,7 @@
 = Lecture 6 - Python
 
+Note: if you're hi-speed, you can skip the first 13 minutes because it's a recap of web programming that you haven't learned yet :-)
+
 video::mvlTSMUNQN4[youtube,height=540,width=960,options=notitle]
 
 Lecture notes can be found link:https://cs50.harvard.edu/college/weeks/6/notes/[here].
