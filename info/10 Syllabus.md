@@ -162,11 +162,11 @@ Deadlines for semester 2, below, are not final yet.
 
 |                        | Hispeed    | Semester 2 |  
 | ---------------------- | ---------- | ---------- |  
-| Module 5               | Fri 5-Oct  | Mon 4-Mar  |  
-| Module 6               | Tue 9-Oct  | Wed 6-Mar  |  
-| Module 7               | Wed 17-Oct | Wed 13-Mar |  
-| Module 8               | Fri 19-Oct | Tue 19-Mar |  
-| Module 9               | Fri 26-Oct | Thu 29-Mar |  
+| Module 6               | Fri 5-Oct  | Tue  5-Mar |  
+| Module 9               | Tue 9-Oct  | Thu 14-Mar |  
+| Module 5               | Wed 17-Oct | Fri 15-Mar |  
+| Module 7               | Fri 19-Oct | Thu 21-Mar |  
+| Module 8               | Fri 26-Oct | Fri 29-Mar |  
 
 |                        | Hispeed    | Semester 2 |  
 | -------------          | ---------- | -          |  
