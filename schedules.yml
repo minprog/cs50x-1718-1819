@@ -144,8 +144,8 @@ Hispeed sem2:
         Overview: /overviews/module-3
     "Module 4: Forensics":
         Overview: /overviews/module-4
-    # "Module 6: Python":
-    #     Overview: /overviews/module-6
+    "Module 6: Python":
+        Overview: /overviews/module-6
     # "Module 9: Games":
     #     Overview: /overviews/module-9
     # "Module 5: Homepage":
