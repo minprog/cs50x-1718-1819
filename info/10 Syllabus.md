@@ -72,14 +72,14 @@ Note: the exact weights will be decided by Feb 11, after which you'll find them 
 
 |               | Language     | Weight |  
 | ------------- | ------------ | -----: |  
-| Homepage      | HTML         |     0% |  
-| Python        | Python       |     0% |  
+| Sentimental   | Python       |     0% |  
 | Bleep         | Python       |    15% |  
+| Game of cards | Python       |     0% |  
+| Adventure     | Python       |    30% |  
+| Homepage      | HTML         |     0% |  
 | Similarities  | Python       |    15% |  
 | Survey        | Python, HTML |    15% |  
 | Finance       | Python, HTML |    25% |  
-| Game of cards | Python       |     0% |  
-| Adventure     | Python       |    30% |  
 
 <!--
 |               | Language | Weight |  
