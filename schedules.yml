@@ -120,6 +120,19 @@ Lospeed sem2:
     "Module 4: Forensics":
         Overview: /overviews/module-4
 
+Lospeed sem2 av:
+    "Module 0: Scratch":
+        Lecture 0: /lectures/lecture-0
+        Scratch: /problems/scratch
+    "Module 1: C":
+        Overview: /overviews/module-1
+    "Module 2: Crypto":
+        Overview: /overviews/module-2
+    "Module 3: Fifteen":
+        Overview: /overviews/module-3
+    "Module 4: Forensics":
+        Overview: /overviews/module-4
+
 Lospeed p2:
     "Module 5: Homepage":
         Overview: /overviews/module-5
