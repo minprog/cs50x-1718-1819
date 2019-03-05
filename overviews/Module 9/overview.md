@@ -30,15 +30,21 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch a Lecture on Object-orientation (forthcoming)
+1. Watch:
+
+    - All videos on [object-oriented fundamentals](https://www.lynda.com/Python-tutorials/Object-oriented-thinking/731735/5002881-4.html)
+    - All videos on [class diagrams](https://www.lynda.com/Python-tutorials/Creating-class-diagrams-Attributes/731735/5002911-4.html)
 
 2. Create an account at [GitHub](https://github.com/join). For now, you'll only need it to access the Game of Cards exercises, but in later courses you'll be submitting your programs on this website!
 
 3. Practice with [Game of Cards](https://lab.cs50.io/uva/cs50x/master/problems/cards/lab)
 
-4. Implement [Adventure](/problems/adventure)
+1. Watch:
 
-1. Watch [Lecture 9](/lectures/lecture-9)
+    - Intro to object-oriented programming in Python, [part 1](https://www.youtube.com/watch?v=wYYzteRKU7U)
+    - Optionally, intro to object-oriented programming in Python, [part 2](https://www.youtube.com/watch?v=wYYzteRKU7U)
+
+4. Implement [Adventure](/problems/adventure)
 
 ## How to Submit
 
