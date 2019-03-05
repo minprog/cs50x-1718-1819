@@ -116,7 +116,7 @@ The initializer is a good place for default values. Let us provide you with the 
     self.suits = ['Hearts','Diamonds','Clubs','Spades']
     self.values = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
 
-**Copy** those declarations into your initializer.
+As you can see, we *hardcode* the suits and values, because in our program, these will always be the same. **Copy** those declarations into your initializer.
 
 {% next %}
 
