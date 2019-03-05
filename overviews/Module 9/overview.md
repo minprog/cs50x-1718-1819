@@ -38,13 +38,13 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 2. Create an account at [GitHub](https://github.com/join). For now, you'll only need it to access the Game of Cards exercises, but in later courses you'll be submitting your programs on this website!
 
-3. Practice with [Game of Cards](https://lab.cs50.io/uva/cs50x/master/problems/cards/lab)
-
 1. Watch:
 
     - Intro to object-oriented programming in Python, [part 1](https://www.youtube.com/watch?v=wYYzteRKU7U)
     
     - Optionally, intro to object-oriented programming in Python, [part 2](https://www.youtube.com/watch?v=wYYzteRKU7U)
+
+3. Practice with [Game of Cards](https://lab.cs50.io/uva/cs50x/master/problems/cards/lab)
 
 4. Implement [Adventure](/problems/adventure)
 
