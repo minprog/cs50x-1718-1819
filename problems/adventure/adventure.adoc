@@ -221,7 +221,7 @@ Here you'll find your first TODO.
 == Step 1: Loading connections and moving around
 
 First start with opening the correct datafile. Your program should accept a command line argument that is either "Tiny", "Small", or "Crowther" and no others.
-Use that argument for the `game` variable used in the `if \\__name__ == '\\__main__'` statement.
+Use that argument for the `game` variable used in the `if \\__name__ == '\\__main__'` statement. Make sure to return an exit code of 1 if the argument is incorrect!
 
 Now it's up to you to add the connections to each individual room object.
 To do so, you'll first have to head over to room.py and implement the add_route method for the `Room` class. You might need to add additional attributes to the `\\__init__()` for a proper implementation.
@@ -587,6 +587,7 @@ If you want to reduce time spent typing commands; parse the file and implement a
 
 Implement an Object-Oriented version of Crowther's Adventure game.
 
+* Handle command line arguments to open the correct datafile.
 * Implement methods for loading data into objects.
 * Implement a method for moving the player.
 * The game should prompt the user for commands and either execute those or warn about a non-existent command.
