@@ -99,10 +99,12 @@ psets1:
         water: 0
         mario: [12.5, mario, mario_more]
         cash-credit: [12.5, cash, credit]
+        # initials weggelaten ivm problemen met "max" van pass/fail cijfer berekenen
         # initials: [0, initials-less, initials_more]
         caesar: 12.5
         vigenere-crack: [12.5, vigenere, crack]
-        fifteen: 12.5
+        # accepteert nu nog music als alternatief
+        fifteen: [12.5, fifteen, music]
         find: [12.5, find_less, find_more]
         whodunit: 0
         resize: [12.5, resize_less, resize_more]
