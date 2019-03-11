@@ -96,16 +96,16 @@ psets1:
     submits:
         scratch: 0
         water: 0
-        mario: [12, mario, mario_more]
-        cash-credit: [12, cash, credit]
-        caesar: 12
-        # initials: [0, initials-less, initials_more]
-        vigenere-crack: [12, vigenere, crack]
-        music: 12
-        find: [12, find_less, find_more]
-        whodunit: 6
-        resize: [12, resize_less, resize_more]
-        recover: 10
+        mario: [12.5, mario, mario_more]
+        cash-credit: [12.5, cash, credit]
+        caesar: 12.5
+        initials: [0, initials-less, initials_more]
+        vigenere-crack: [12.5, vigenere, crack]
+        fifteen: 12.5
+        find: [12.5, find_less, find_more]
+        whodunit: 0
+        resize: [12.5, resize_less, resize_more]
+        recover: 12.5
 
 psets2:
     submits:
