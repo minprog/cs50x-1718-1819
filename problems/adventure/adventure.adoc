@@ -602,7 +602,7 @@ Initially, check your progress by navigating through rooms manually, picking up 
 
 Later, use `check50` to check for specific corner cases that you may not have found.
 
-And finally, you may use the commands in this link:/course/problems/adventure/win.txt[text file] to single out spots where the checks may not give you enough information to proceed.
+And finally, you may use the commands in this link:/course/problems/adventure/win.txt[text file] to single out spots where the checks may not give you enough information to proceed. These commands only work in the full-size Crowther adventure.
 
 === `check50`
 
