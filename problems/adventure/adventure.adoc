@@ -596,13 +596,22 @@ Implement an Object-Oriented version of Crowther's Adventure game.
 * Implement conditional and forced movements.
 * The game must be winnable.
 
+=== Testing
+
+Initially, check your progress by navigating through rooms manually, picking up objects and dropping them. Play the game!
+
+Later, use `check50` to check for specific corner cases that you may not have found.
+
+And finally, you may use the commands in this link:win.txt[text file] to single out spots where the checks may not give you enough information to proceed.
+
 === `check50`
-You can check your progress in Adventure by runnign the following:
+
 ```
 check50 --local adventure@minprog/checks
 ```
 
 === `style50`
+
 ```
 style50 adventure.py
 style50 room.py
