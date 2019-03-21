@@ -1,4 +1,5 @@
 name: simil-less
 files:
     required:
+        - index.html
         - helpers.py

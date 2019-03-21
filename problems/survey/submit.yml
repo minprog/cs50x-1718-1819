@@ -2,3 +2,5 @@ name: survey
 files:
     required:
         - survey.zip
+        - application.py
+        - form.html
