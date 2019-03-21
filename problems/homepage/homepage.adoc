@@ -123,8 +123,10 @@ For fairly comprehensive guides on the languages introduced in this problem, che
 
 Follow these steps to create a zip file that you can then submit:
 
-1. `cd ..` to the `pset5` directory
+1. `cd ..` to the directory _containing_ the `pset5` directory
 2. enter `zip -r pset5 pset5` to compress the complete pset5 folder into a zipfile
 3. download the zipfile by right-clicking in the IDE's file browser and clicking "Download"
 
 Your web browser may immediately decompress (unzip) the file after downloading. Unfortunately you can't submit it that way. Ask for help if needed!
+
+Note: below, you will need to upload the zip _and also_ your html and css files.

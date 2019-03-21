@@ -3,7 +3,6 @@ files:
     required:
         - homepage.zip
         - index.html
-    optional:
         - page1.html
         - page2.html
         - page3.html
