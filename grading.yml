@@ -58,7 +58,9 @@ grades:
             points: integer
         calculation: points >= 16 && -1 || 0
     speller: *automatic
-    homepage: *fullyauto
+    homepage:
+        type: float
+        hide_calculated: true
     sentimental: *fullyauto
     bleep: *automatic
     simil-less: *automatic
