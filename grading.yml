@@ -114,10 +114,12 @@ psets1:
 
 psets2:
     submits:
-        speller: 25
-        sentimental: 15
-        adventure: 25
+        sentimental: 0
+        bleep: 15
+        adventure: 30
+        homepage: 0
         similarities: [15, simil-less, simil-more]
+        survey: 15
         finance: 20
 
 quiz1:
