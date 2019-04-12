@@ -3,3 +3,6 @@ files:
     required:
         - finance.zip
         - application.py
+check:
+    tool: check50v2
+    slug: finance@minprog/checks
