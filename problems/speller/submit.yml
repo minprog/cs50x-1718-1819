@@ -4,4 +4,6 @@ files:
         - dictionary.c
         - dictionary.h
         - Makefile
-
+check:
+    tool: check50v2
+    slug: speller@minprog/checks

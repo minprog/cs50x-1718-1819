@@ -4,4 +4,4 @@ files:
         - initials.c
 check:
     tool: check50v2
-    slug: cs50/2017/x/initials/more
+    slug: initials/more@minprog/checks

@@ -3,3 +3,6 @@ files:
     required:
         - index.html
         - helpers.py
+check:
+    tool: check50v2
+    slug: similarities/more@minprog/checks

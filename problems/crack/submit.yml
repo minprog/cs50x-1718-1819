@@ -4,4 +4,4 @@ files:
         - crack.c
 check:
     tool: check50v2
-    slug: crack@minprog/cs50x
+    slug: crack@minprog/checks

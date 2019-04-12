@@ -4,4 +4,4 @@ files:
         - hello.c
 check:
     tool: check50v2
-    slug: cs50/2017/fall/hello
+    slug: hello@minprog/checks

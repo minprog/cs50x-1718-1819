@@ -4,4 +4,4 @@ files:
         - helpers.c
 check:
     tool: check50v2
-    slug: cs50/2017/x/find/more
+    slug: find/more@minprog/checks

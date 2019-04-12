@@ -4,4 +4,4 @@ files:
         - credit.c
 check:
     tool: check50v2
-    slug: cs50/2018/fall/credit
+    slug: credit@minprog/checks

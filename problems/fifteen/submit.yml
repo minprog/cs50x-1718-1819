@@ -6,4 +6,4 @@ files:
         - questions.txt
 check:
     tool: check50v2
-    slug: cs50/2017/x/fifteen
+    slug: fifteen@minprog/checks

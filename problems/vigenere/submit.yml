@@ -4,4 +4,4 @@ files:
         - vigenere.c
 check:
     tool: check50v2
-    slug: cs50/2018/fall/vigenere
+    slug: vigenere@minprog/checks

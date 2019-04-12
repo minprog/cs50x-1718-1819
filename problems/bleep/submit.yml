@@ -2,3 +2,6 @@ name: bleep
 files:
     required:
         - bleep.py
+check:
+    tool: check50v2
+    slug: bleep@minprog/checks
