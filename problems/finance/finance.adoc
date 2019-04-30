@@ -255,3 +255,12 @@ If, upon running `check50`, you see this error, odds are you have a bug in your 
 === check50 is taking longer than normal!
 
 If you see this, make sure to remove or comment out any print statements from application.py and try `check50` again.
+
+== How to submit
+
+In order to submit this problem, create a zipfile containing all of the files and directories for your application:
+
+- `cd finance`
+- `zip -r ../finance.zip .`
+
+Now your new file `finance.zip` will be put next to the `finance` directory. You can download it via the Download option in the CS50 IDE. Make sure that the file is not unzipped on your own computer, but instead left as-is, so you can add it to the form below.
