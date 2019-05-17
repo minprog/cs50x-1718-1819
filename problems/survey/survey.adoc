@@ -139,7 +139,7 @@ It is reasonable to view its HTML and CSS.
 
 In order to submit this problem, create a zipfile containing all of the files and directories for your application:
 
-- `cd survey`
-- `zip -r ../survey.zip .`
+- `cd psetXX`
+- `zip -r survey.zip survey`
 
 Now your new file `finance.zip` will be put next to the `finance` directory. You can download it via the Download option in the CS50 IDE. Make sure that the file is not unzipped on your own computer, but instead left as-is, so you can add it to the form below.
