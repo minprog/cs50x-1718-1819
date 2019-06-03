@@ -77,7 +77,7 @@ grades:
         type: pass
         subgrades:
             points: integer
-        calculation: points >= 15 && -1 || 0
+        calculation: points >= 17 && -1 || 0
 
 calculation:
     p1normal:
