@@ -1,179 +1,43 @@
-Lospeed:
+Parttime:
     Module 0:
-        Lecture 0: /lectures/lecture-0
-        Scratch: /problems/scratch
+        Overview: /overviews/scratch
     Module 1:
-        Overview: /overviews/module-1
-        Lecture 1: /lectures/lecture-1
-        IDE: /training/ide
-        Hello: /problems/hello
-        Water: /problems/water
-        Mario: /problems/mario-less
-        Cash: /problems/cash
+        Overview: /overviews/c
     Module 2:
-        Overview: /overviews/module-2
-        Lecture 2: /lectures/lecture-2
-        Initials: /problems/initials-less
-        Caesar: /problems/caesar
-        Vigenere: /problems/vigenere
+        Overview: /overviews/crypto
     Module 3:
-        Overview: /overviews/module-3
-        Lecture 3: /lectures/lecture-3
-        Music: /problems/music
-        Find: /problems/find-less
+        Overview: /overviews/fifteen
     Module 4:
-        Overview: /overviews/module-4
-        Lecture 4: /lectures/lecture-4
-        Whodunit: /problems/whodunit
-        Resize: /problems/resize-less
-        Recover: /problems/recover
-    Quiz 1:
-        Quiz preparations: /resources/quiz-1
+        Overview: /overviews/forensics
     Module 5:
-        Overview: /overviews/module-5
-        Lecture 5: /lectures/lecture-5
-        Speller: /problems/speller
+        Overview: /overviews/mispellings
     Module 6:
-        Overview: /overviews/module-6
-        Lecture 6: /lectures/lecture-6
-        Sentimental: /problems/sentimental
+        Overview: /overviews/python
     Module 7:
-        Overview: /overviews/module-7
-        Lecture 8: /lectures/lecture-8
-        Lecture 9: /lectures/lecture-9
-        Similarities: /problems/similarities-less
+        Overview: /overviews/web
     Module 8:
-        Overview: /overviews/module-8
-        Lecture 7: /lectures/lecture-7
-        Join GitHub: https://github.com/join
-        Game of Cards: https://lab.cs50.io/uva/cs50x/master/problems/cards/lab
-        Adventure: /problems/adventure
+        Overview: /overviews/hangman
     Module 9:
-        Overview: /overviews/module-9
-        Lecture 10: /lectures/lecture-10
-        Finance: /problems/finance
-    Quiz 2:
-        Quiz preparations: /resources/quiz-2
+        Overview: /overviews/adventure
 
-Hispeed:
-    Day 0:
-        Lecture 0: /lectures/lecture-0
-        Scratch: /problems/scratch
-    Week 1:
-        Overview: /overviews/module-1
-        Lecture 1: /lectures/lecture-1
-        IDE: /training/ide
-        Water: /problems/water
-        Mario: /problems/mario-less
-        Cash: /problems/cash
-    Week 2:
-        Overview: /overviews/module-2
-        Lecture 2: /lectures/lecture-2
-        Initials: /problems/initials-less
-        Caesar: /problems/caesar
-        Vigenere: /problems/vigenere
-    Week 3:
-        Overview: /overviews/module-3
-        Lecture 3: /lectures/lecture-3
-        Music: /problems/music
-        Find: /problems/find-less
-    Quiz 1:
-        Quiz preparations: /resources/quiz-1
-    Week 4:
-        Overview: /overviews/module-4
-        Lecture 4: /lectures/lecture-4
-        Whodunit: /problems/whodunit
-        Resize: /problems/resize-less
-        Recover: /problems/recover
-    Week 5:
-        Overview: /overviews/module-5
-        Lecture 5: /lectures/lecture-5
-        Speller: /problems/speller
-    Week 6 Part 1:
-        Overview 6: /overviews/module-6
-        Lecture 6: /lectures/lecture-6
-        Sentimental: /problems/sentimental
-    Week 6-7:
-        Overview: /overviews/module-7
-        Lecture 7: /lectures/lecture-7
-        Join GitHub: https://github.com/join
-        Game of Cards: https://lab.cs50.io/uva/cs50x/master/problems/cards/lab
-        Adventure: /problems/adventure
-        Similarities: /problems/similarities-less
-    Week 8:
-        Overview: /overviews/module-9
-        Lecture 8: /lectures/lecture-8
-        Lecture 9: /lectures/lecture-9
-        Lecture 10: /lectures/lecture-10
-        Finance: /problems/finance
-
-Lospeed sem2:
-    "Module 0: Scratch":
-        Lecture 0: /lectures/lecture-0
-        Scratch: /problems/scratch
-    "Module 1: C":
-        Overview: /overviews/module-1
-    "Module 2: Crypto":
-        Overview: /overviews/module-2
-    "Module 3: Fifteen":
-        Overview: /overviews/module-3
-    "Module 4: Forensics":
-        Overview: /overviews/module-4
-    "Module 5: Homepage":
-        Overview: /overviews/module-5
-    "Module 6: Python":
-        Overview: /overviews/module-6
-    "Module 7: Web":
-        Overview: /overviews/module-7
-    "Module 8: Finance":
-        Overview: /overviews/module-8
-    "Module 9: Games":
-        Overview: /overviews/module-9
-
-Lospeed sem2 av:
-    "Module 0: Scratch":
-        Lecture 0: /lectures/lecture-0
-        Scratch: /problems/scratch
-    "Module 1: C":
-        Overview: /overviews/module-1
-    "Module 2: Crypto":
-        Overview: /overviews/module-2
-    "Module 3: Fifteen":
-        Overview: /overviews/module-3
-    "Module 4: Forensics":
-        Overview: /overviews/module-4
-
-Lospeed p2:
-    "Module 5: Homepage":
-        Overview: /overviews/module-5
-    "Module 6: Python":
-        Overview: /overviews/module-6
-    "Module 7: Web":
-        Overview: /overviews/module-7
-    "Module 8: Finance":
-        Overview: /overviews/module-8
-    "Module 9: Games":
-        Overview: /overviews/module-9
-
-Hispeed sem2:
-    "Module 0: Scratch":
-        Lecture 0: /lectures/lecture-0
-        Scratch: /problems/scratch
-    "Module 1: C":
-        Overview: /overviews/module-1
-    "Module 2: Crypto":
-        Overview: /overviews/module-2
-    "Module 3: Fifteen":
-        Overview: /overviews/module-3
-    "Module 4: Forensics":
-        Overview: /overviews/module-4
-    "Module 6: Python":
-        Overview: /overviews/module-6
-    "Module 9: Games":
-        Overview: /overviews/module-9
-    "Module 5: Homepage":
-        Overview: /overviews/module-5
-    "Module 7: Web":
-        Overview: /overviews/module-7
-    "Module 8: Finance":
-        Overview: /overviews/module-8
+Fulltime:
+    Module 0:
+        Overview: /overviews/scratch
+    Module 1:
+        Overview: /overviews/c
+    Module 2:
+        Overview: /overviews/crypto
+    Module 3:
+        Overview: /overviews/fifteen
+    Module 4:
+        Overview: /overviews/forensics
+    Module 5:
+        Overview: /overviews/mispellings
+    Module 6:
+        Overview: /overviews/python
+    Module 7:
+        Overview: /overviews/web
+    Module 8:
+        Overview: /overviews/hangman
+    Module 9:
+        Overview: /overviews/adventure
