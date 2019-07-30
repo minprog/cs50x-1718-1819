@@ -1,5 +1,0 @@
-name: music
-files:
-    required:
-        - bday.txt
-        - helpers.c

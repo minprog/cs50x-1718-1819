@@ -1,4 +1,4 @@
-name: initials-less
+name: initials_less
 files:
     required:
         - initials.c

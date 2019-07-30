@@ -25,11 +25,11 @@ grades:
         calculation: -((correctness+1)/5)
     hello: *fullyauto
     water: *fullyauto
-    mario: *automatic
+    mario_less: *automatic
     mario_more: *automatic
     cash: *automatic
     credit: *automatic
-    initials-less: *fullyauto
+    initials_less: *fullyauto
     initials_more: *fullyauto
     caesar: *automatic
     vigenere: *automatic
@@ -63,8 +63,8 @@ grades:
         hide_calculated: true
     sentimental: *fullyauto
     bleep: *automatic
-    simil-less: *automatic
-    simil-more: *automatic
+    simil_less: *automatic
+    simil_more: *automatic
     survey: *automatic
     finance: *automatic
     adventure: *automatic
