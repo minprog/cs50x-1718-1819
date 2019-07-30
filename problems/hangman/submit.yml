@@ -1,0 +1,7 @@
+name: hangman
+files:
+    required:
+        - hangman.py
+check:
+    tool: check50v2
+    slug: hangman@minprog/checks
