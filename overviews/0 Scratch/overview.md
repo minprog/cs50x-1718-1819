@@ -26,4 +26,4 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## Grading
 
-Your Scratch program will be automatically checked for adherence to the requirements. If not sufficient, this will prevent you from continuing to the next module. Your tutor will also test out the game and provide some feedback during the next tutoring session!
+Your Scratch program will be automatically checked for adherence to the requirements. Your tutor will also test out your game, artwork or animation and provide some feedback during the next tutoring session!
