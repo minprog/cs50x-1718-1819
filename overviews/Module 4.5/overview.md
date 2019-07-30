@@ -1,6 +1,6 @@
-# Module 4: Forensics
+# Module 4.5: Mispellings
 
-In this module, you'll learn about all sorts of techniques to do with forensic research. See if you can recover those photos from that pesky old memory card!
+In this module, you'll learn about data structures by implementing a spell checker.
 
 ## Help
 
@@ -32,9 +32,9 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 3](/lectures/lecture-3)
+1. Watch [Lecture 4](/lectures/lecture-4)
 
-3. Figure out [whodunit](/problems/whodunit)
+3. Figure out [whodunit](/problems/speller)
 
 4. Implement either of:
 
