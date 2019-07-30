@@ -27,15 +27,15 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 2. Get started using the [IDE](/training/ide)
 
-2. Write your first program: [Hello](/problems/hello)
+2. Write your first program: [Hello](/problems/hello) [0%]
 
 3. Practice with book chapter 1 (calculations) and take the test
 
-4. Implement [Water](/problems/water)
+4. Implement [Water](/problems/water) [0%]
 
 5. Practice with book chapter 2 (logic) and take the test
 
-6. Implement either of:
+6. Implement either of: [50%]
 
     - [Mario](/problems/mario-less), for those less comfortable
 
@@ -43,7 +43,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 7. Practice with book chapter 3 (variables) and take the test
 
-8. Implement either of:
+8. Implement either of: [50%]
 
     - [Cash](/problems/cash), for those less comfortable
 
