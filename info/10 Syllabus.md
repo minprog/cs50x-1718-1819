@@ -49,13 +49,14 @@ The final grade for this course is primarily determined by averaging the scores 
 | Recover        | C        |  12,5% |  
 -->
 
-| Problem Set    | Language | Weight |  
-| -------------- | -------- | -----: |  
-| Scratch        | Scratch  |     0% |  
-| C              | C        |    25% |  
-| Crypto         | C        |    25% |  
-| Fifteen        | C        |    25% |  
-| Forensics      | C        |    25% |  
+| Problem Set            | Language | Weight |  
+| ---------------------- | -------- | -----: |  
+| Scratch                | Scratch  |     0% |  
+| C                      | C        |    20% |  
+| Crypto                 | C        |    20% |  
+| Fifteen                | C        |    20% |  
+| Forensics              | C        |    20% |  
+| Mispellings (extra)    | C        |    20% |
 
 
 #### Programming 2
