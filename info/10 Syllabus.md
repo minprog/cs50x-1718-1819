@@ -1,6 +1,6 @@
 # CS50x University of Amsterdam<br><small>Programming 1, Programming 2</small>
 
-## Syllabus, Spring 2019
+## Syllabus, Fall 2019
 
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python and SQL plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
 
@@ -32,6 +32,7 @@ The final grade for this course is primarily determined by averaging the scores 
 
 #### Programming 1
 
+<!--
 | Problem        | Language | Weight |  
 | -------------- | -------- | -----: |  
 | Scratch        | Scratch  |     0% |  
@@ -46,53 +47,39 @@ The final grade for this course is primarily determined by averaging the scores 
 | Whodunit       | C        |     0% |  
 | Resize         | C        |  12,5% |  
 | Recover        | C        |  12,5% |  
+-->
 
-<!--
 | Problem        | Language | Weight |  
 | -------------- | -------- | -----: |  
 | Scratch        | Scratch  |     0% |  
-| Water          | C        |     0% |  
-| Mario          | C        |    12% |  
-| Cash/Credit    | C        |    12% |  
-| Caesar         | C        |    12% |  
-| Initials       | C        |     0% |  
-| Vigenere/crack | C        |    12% |  
-| Music          | C        |    12% |  
-| Find           | C        |    12% |  
-| Whodunit       | C        |     6% |  
-| Resize         | C        |    12% |  
-| Recover        | C        |    10% |  
-| 11 Tests       |          |     0% |  
-| 1 Quiz         |          |     0% |  
--->
+| C              | C        |    25% |  
+| Crypto         | C        |    25% |  
+| Fifteen        | C        |    25% |  
+| Forensics      | C        |    25% |  
+
 
 #### Programming 2
 
-Note: the exact weights will be decided by Feb 11, after which you'll find them here. Current weights are an indication, but not final.
+<!--
+|               | Language     | Weight |  
+| ------------- | ------------ | -----: |  
+| Homepage      | HTML         |     0% |  
+| Sentimental   | Python       |     0% |  
+| Bleep         | Python       |    25% |  
+| Similarities  | Python       |  12,5% |  
+| Survey        | Python, HTML |  12,5% |  
+| Game of cards | Python       |     0% |  
+| Hangman       | Python       |    25% |  
+| Adventure     | Python       |    25% |  
+-->
 
 |               | Language     | Weight |  
 | ------------- | ------------ | -----: |  
-| Sentimental   | Python       |     0% |  
-| Bleep         | Python       |    15% |  
-| Game of cards | Python       |     0% |  
-| Adventure     | Python       |    30% |  
-| Homepage      | HTML         |     0% |  
-| Similarities  | Python       |    15% |  
-| Survey        | Python, HTML |    15% |  
-| Finance       | Python, HTML |    25% |  
+| Python        | HTML, Python |    25% |  
+| Web           | HTML, Python |    25% |  
+| Hangman       | Python       |    25% |  
+| Adventure     | Python       |    25% |  
 
-<!--
-|               | Language | Weight |  
-| ------------- | -------- | -----: |  
-| Speller       | C        |    25% |  
-| Sentimental   | Python   |    15% |  
-| Game of Cards | Python   |     0% |  
-| Adventure     | Python   |    25% |  
-| Similarities  | Python   |    15% |  
-| Finance       | HTML     |    20% |  
-| X Tests       |          |     0% |  
-| Quiz          |          |     0% |  
--->
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
@@ -136,6 +123,8 @@ Both parts of the course have one 90-minute exam. It is "closed-book," meaning t
 
 For fulltime students, each module is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency. A schedule of problem deadlines and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned, or just a little bit later.
 
+<!--
+
 #### Programming 1
 
 |                        | Hispeed    | Semester 2 |  
@@ -177,6 +166,8 @@ Deadlines for semester 2, below, are not final yet.
 | -------------          | ---------- | -          |  
 | Quiz option 1          | Mon 17-Dec | Mon 27-May |  
 | Quiz option 2 (retake) | Mon 14-Jan | Mon 17-Jun |  
+
+-->
 
 
 ## Books
