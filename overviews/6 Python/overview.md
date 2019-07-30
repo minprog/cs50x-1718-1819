@@ -33,3 +33,21 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 1. Watch [Lecture 5](/lectures/lecture-5)
 
 2. Implement [Homepage](/problems/homepage)
+
+1. Watch [Lecture 6](/lectures/lecture-6)
+
+2. Implement [Sentimental](/problems/sentimental)
+
+2. Implement [Bleep](/problems/bleep)
+
+## How to Submit
+
+1. When ready to submit, log into [CS50 IDE](https://cs50.io/).
+
+2. Download your `.py` files.
+
+3. Make sure you are signed in to this website!
+
+4. In the form below the problem, add the file that you downloaded.
+
+5. Press "Submit for grading". Presto!

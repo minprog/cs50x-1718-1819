@@ -1,4 +1,4 @@
-# Module 9: Games
+# Module 9: Adventure
 
 In this module, you'll implement two games, while learning about object-oriented programming. This style of programming isn't available in C, but in Python, many people use it!
 

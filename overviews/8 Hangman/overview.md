@@ -1,6 +1,6 @@
-# Module 6: Python
+# Module 8: Hangman
 
-In this module, you'll learn yourself a new programming language! Hopefully the first of many. The module is relatively short, with problems that may seem quite familiar to you!
+In this module, you'll implement C$50 Finance, while learning about the web and web servers.
 
 ## Help
 
@@ -10,9 +10,9 @@ For information on (or help with) this week:
 
 2. Attend your tutor's section (if you're hi-speed).
 
-3. Ask questions during office hours using the "Ask" tool on this website.
+4. Ask questions during office hours using the "Ask" tool on this website.
 
-4. Visit (or e-mail) the course's heads.
+5. Visit (or e-mail) the course's heads.
 
 ## Academic Honesty
 
@@ -25,16 +25,14 @@ Alright, here we go again!
 Log into <https://cs50.io/> and execute the below in a terminal window.
 
     update50
-    mkdir ~/workspace/pset6/
-    cd ~/workspace/pset6/
+    mkdir ~/workspace/pset9/
+    cd ~/workspace/pset9/
 
 ## What to Do
 
-1. Watch [Lecture 6](/lectures/lecture-6)
+1. Watch [Lecture 8](/lectures/lecture-8)
 
-2. Implement [Sentimental](/problems/sentimental)
-
-2. Implement [Bleep](/problems/bleep)
+4. Implement [C$50 Finance](/problems/finance)
 
 ## How to Submit
 
