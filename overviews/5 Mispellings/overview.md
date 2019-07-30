@@ -1,4 +1,4 @@
-# Module 4.5: Mispellings
+# Module 5: Mispellings
 
 In this module, you'll learn about data structures by implementing a spell checker.
 
@@ -32,17 +32,9 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 4](/lectures/lecture-4)
+1. Watch [Lecture 5](/lectures/lecture-5)
 
-3. Figure out [whodunit](/problems/speller)
-
-4. Implement either of:
-
-    - [Resize](/problems/resize-less), for those less comfortable
-
-    - [Resize](/problems/resize-more), for those more comfortable
-
-5. Implement [Recover](/problems/recover)
+2. Implement [Speller](/problems/speller)
 
 ## How to Submit
 
