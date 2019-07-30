@@ -1,6 +1,6 @@
-# CS50x University of Amsterdam<br><small>Programming 1, Programming 2</small>
+# CS50x University of Amsterdam
 
-## Syllabus, Fall 2019
+## Syllabus, Fall 2019<br><small>Programming 1, Programming 2</small>
 
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python and SQL plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
 
@@ -49,7 +49,7 @@ The final grade for this course is primarily determined by averaging the scores 
 | Recover        | C        |  12,5% |  
 -->
 
-| Problem        | Language | Weight |  
+| Problem Set    | Language | Weight |  
 | -------------- | -------- | -----: |  
 | Scratch        | Scratch  |     0% |  
 | C              | C        |    25% |  
@@ -73,7 +73,7 @@ The final grade for this course is primarily determined by averaging the scores 
 | Adventure     | Python       |    25% |  
 -->
 
-|               | Language     | Weight |  
+| Problem Set   | Language     | Weight |  
 | ------------- | ------------ | -----: |  
 | Python        | HTML, Python |    25% |  
 | Web           | HTML, Python |    25% |  
