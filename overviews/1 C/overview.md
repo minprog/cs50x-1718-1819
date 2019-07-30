@@ -2,6 +2,7 @@
 
 In this module, you'll learn about the C programming language. It's a great language that has been used to make small and large programs alike. You will start with the small ones!
 
+
 ## Help
 
 For information on (or help with) this week:
@@ -14,9 +15,11 @@ For information on (or help with) this week:
 
 4. Visit (or e-mail) the course's heads.
 
+
 ## Academic Honesty
 
 Do keep in mind the course's policy on [academic honesty](/syllabus#academic_honesty) (like plagiarism), particularly its ["regret clause"](/syllabus#regret).
+
 
 ## What to Do
 
@@ -46,6 +49,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
     - [Credit](/problems/credit), for those more comfortable
 
+
 ## How to Submit
 
 1. When ready to submit, log into [CS50 IDE](https://cs50.io/).
@@ -57,3 +61,10 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 4. In the form below the problem, add the file that you downloaded.
 
 5. Press "Submit for grading". Presto!
+
+
+## Grading
+
+Above, the weight of each problem is noted. All programs have to be submitted in full in order to progress to the next module, which will be automatically checked using `check50`. Normally, you can see the results on this website soon after submitting.
+
+Your tutor will assess your programs as soon as every student has finished the module, and assign a grade for "style" and "design" for all programs that count for more than 0% of the total (see above). Together with the `check50` results, this will add up to a grade for this assignment.

@@ -23,3 +23,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 1. Watch [Lecture 0](/lectures/lecture-0)
 
 2. Write your first program: [Scratch](/problems/scratch)
+
+## Grading
+
+Your Scratch program will be automatically checked for adherence to the requirements. If not sufficient, this will prevent you from continuing to the next module. Your tutor will also test out the game and provide some feedback during the next tutoring session!
