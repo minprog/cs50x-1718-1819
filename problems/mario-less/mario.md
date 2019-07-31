@@ -4,7 +4,7 @@
 
 Implement a program that prints out a half-pyramid of a specified height, per the below.
 
-----
+~~~~
 $ ./mario
 Height: 5
     ##
@@ -18,7 +18,7 @@ Height: 3
   ##
  ###
 ####
-----
+~~~~
 
 Although we would normally expect you to choose this version of the problem, aimed at students who are "less comfortable" with programming, you may choose to do the [version of Mario](/problems/mario-more) intended for "more comfortable" students instead!
 
@@ -38,10 +38,10 @@ For this first version, write a program (in `mario.c`) that simply prints one si
 
 The output should look like this:
 
-----
+~~~~
 $ ./mario
 #
-----
+~~~~
 
 ### Line
 
@@ -49,10 +49,10 @@ Now that the basic framework it setup, let's introduce a tiny bit of complexity.
 
 The output should look like this:
 
-----
+~~~~
 $ ./mario
 #####
-----
+~~~~
 
 Don't forget to print a single newline (`\n`) at the end of that line!
 
@@ -68,14 +68,14 @@ Now use this variable `size` in your loop to determine the number of times that 
 
 Let's say we would like to print a **block** of hash marks, like this:
 
-----
+~~~~
 $ ./mario
 #####
 #####
 #####
 #####
 #####
-----
+~~~~
 
 The height and the width of the block are equal: both have size 5. How do you get from your previous program to this block? Observe that the block is simmply 5 times the line! So, you would need to repeat the whole program 5 times, right? Think how you might use another loop to accomplish this. Exactly which part of the prgram needs to be repeated?
 
@@ -83,14 +83,14 @@ The height and the width of the block are equal: both have size 5. How do you ge
 
 Time to crunch your brain a little bit! To make a pyramid from a block, you'll need to notice that the number of hash marks varies on each line:
 
-----
+~~~~
 $ ./mario
 ##
 ###
 ####
 #####
 ######
-----
+~~~~
 
 So you will need to change the loop that determines the number of hashes that is printed on a single line. Instead of taking `size` each time, it needs to be **dependent** on the line number. Ask for help if needed!
 
@@ -98,14 +98,14 @@ So you will need to change the loop that determines the number of hashes that is
 
 Now how do we get that pyramid to right-align? It's a simply trick: the program needs to print **spaces** at the start of each line. But like the number of hashes, the number or spaces also varies.
 
-----
+~~~~
 $ ./mario
     ##
    ###
   ####
  #####
 ######
-----
+~~~~
 
 To get started, you might duplicate the loop that prints spaces for a single line. Change the hash mark to a space (or a period so you can better count the characters on your screen). And think about how the number of spaces on each line is related to the line number that is being printed.
 
@@ -133,21 +133,21 @@ video::EGWRG5e1O2s[youtube]
 
 Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
 
-----
+~~~~
 $ ./mario
 Height: 4
    ##
   ###
  ####
 #####
-----
+~~~~
 
-----
+~~~~
 $ ./mario
 Height: 0
-----
+~~~~
 
-----
+~~~~
 $ ./mario
 Height: -5
 Height: 4
@@ -155,9 +155,9 @@ Height: 4
   ###
  ####
 #####
-----
+~~~~
 
-----
+~~~~
 $ ./mario
 Height: -5
 Height: five
@@ -168,27 +168,27 @@ Height: 4
   ###
  ####
 #####
-----
+~~~~
 
 ## Testing
 
 ### Correctness
 
-----
+~~~~
 check50 --local mario/less@minprog/checks
-----
+~~~~
 
 ### Style
 
 [source]
-----
+~~~~
 style50 mario.c
-----
+~~~~
 
 ## Staff Solution
 
 [source]
-----
+~~~~
 ~cs50/pset1/mario
-----
+~~~~
 
