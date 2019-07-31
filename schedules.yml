@@ -12,12 +12,14 @@ Parttime:
     Module 5:
         Overview: /overviews/mispellings
     Module 6:
-        Overview: /overviews/python
+        Overview: /overviews/homepage
     Module 7:
-        Overview: /overviews/web
+        Overview: /overviews/python
     Module 8:
-        Overview: /overviews/hangman
+        Overview: /overviews/web
     Module 9:
+        Overview: /overviews/hangman
+    Module 10:
         Overview: /overviews/adventure
 
 Fulltime:
@@ -34,10 +36,12 @@ Fulltime:
     Module 5:
         Overview: /overviews/mispellings
     Module 6:
-        Overview: /overviews/python
+        Overview: /overviews/homepage
     Module 7:
-        Overview: /overviews/web
+        Overview: /overviews/python
     Module 8:
-        Overview: /overviews/hangman
+        Overview: /overviews/web
     Module 9:
+        Overview: /overviews/hangman
+    Module 10:
         Overview: /overviews/adventure
