@@ -30,7 +30,7 @@ For this problem, we will first focus on the algorithm that we need to calculate
 
 TODO insert first 2 minutes of Walktrough
 
-If we turn this idea of greedy change into an alogrithm, we notice that we need to keep track (while calculating) of two things:
+If we turn this idea of greedy change into an algorithm, we notice that we need to keep track of two things:
 
 - how many coins are going to be returned, the **count** (initially 0)
 - how much change do we still have to return, the **amount**
