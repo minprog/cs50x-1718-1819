@@ -1,4 +1,4 @@
-# Module 8: Hangman
+# Module 9: Hangman
 
 In this module, you'll implement C$50 Finance, while learning about the web and web servers.
 

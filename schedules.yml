@@ -1,47 +1,47 @@
 Parttime:
     Module 0:
-        Overview: /overviews/scratch
+        Scratch: /overviews/scratch
     Module 1:
-        Overview: /overviews/c
+        C: /overviews/c
     Module 2:
-        Overview: /overviews/crypto
+        Crypto: /overviews/crypto
     Module 3:
-        Overview: /overviews/fifteen
+        Fifteen: /overviews/fifteen
     Module 4:
-        Overview: /overviews/forensics
+        Forensics: /overviews/forensics
     Module 5:
-        Overview: /overviews/mispellings
+        Mispellings: /overviews/mispellings
     Module 6:
-        Overview: /overviews/homepage
+        Homepage: /overviews/homepage
     Module 7:
-        Overview: /overviews/python
+        Python: /overviews/python
     Module 8:
-        Overview: /overviews/web
+        Web: /overviews/web
     Module 9:
-        Overview: /overviews/hangman
+        Hangman: /overviews/hangman
     Module 10:
-        Overview: /overviews/adventure
+        Adventure: /overviews/adventure
 
 Fulltime:
     Module 0:
-        Overview: /overviews/scratch
+        Scratch: /overviews/scratch
     Module 1:
-        Overview: /overviews/c
+        C: /overviews/c
     Module 2:
-        Overview: /overviews/crypto
+        Crypto: /overviews/crypto
     Module 3:
-        Overview: /overviews/fifteen
+        Fifteen: /overviews/fifteen
     Module 4:
-        Overview: /overviews/forensics
+        Forensics: /overviews/forensics
     Module 5:
-        Overview: /overviews/mispellings
+        Mispellings: /overviews/mispellings
     Module 6:
-        Overview: /overviews/homepage
+        Homepage: /overviews/homepage
     Module 7:
-        Overview: /overviews/python
+        Python: /overviews/python
     Module 8:
-        Overview: /overviews/web
+        Web: /overviews/web
     Module 9:
-        Overview: /overviews/hangman
+        Hangman: /overviews/hangman
     Module 10:
-        Overview: /overviews/adventure
+        Adventure: /overviews/adventure

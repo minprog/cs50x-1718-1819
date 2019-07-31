@@ -1,4 +1,4 @@
-# Module 7: Web
+# Module 8: Web
 
 In this module, you'll implement a program that can detect similar parts in two texts, while learning about "natural language processing" and the Python NLP library.
 
