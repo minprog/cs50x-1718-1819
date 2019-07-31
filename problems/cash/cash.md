@@ -28,6 +28,8 @@ It turns out that this greedy approach (i.e., algorithm) is not only locally opt
 
 For this problem, we will first focus on the algorithm that we need to calculate greedy change. Let's take a look at what our options are!
 
+### Algorithm
+
 TODO insert first 2 minutes of Walktrough (https://docs.cs50.net/problems/cash/cash.html)
 
 If we turn this idea of greedy change into an algorithm, we notice that we need to keep track of two things:
@@ -39,7 +41,9 @@ In pseudocode, our algorithm may look like this the following. Note the presence
 
 ![Pseudocode for Cash](pseudo.png){: style="max-width:300px"}
 
-To get started, create a file called `cash.c` and insert a standard `main` function. Atop that `main` insert the following variables:
+### Implementation
+
+To get started implementing this algorithm, create a file called `cash.c` and insert a standard `main` function. Atop that `main` insert the following variables:
 
 	int count = 0;
 	int amount = 32;
