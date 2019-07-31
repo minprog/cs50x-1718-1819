@@ -30,7 +30,7 @@ This problem looks quite a bit like the `ints.c` program from lecture. Study the
 
 == Usage
 
-Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
+Your program should behave per the example below, assuming that the underlined text is what some user has typed.
 
 [source,subs=quotes,text]
 ----
@@ -43,7 +43,7 @@ Bottles: 120
 
 To check whether your program is running well according to specifications, you may use `check50`.
 
-=== `check50`
+=== check50
 
 [source,text]
 ----
