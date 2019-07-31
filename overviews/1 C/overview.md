@@ -29,13 +29,13 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 4. Implement and submit either of: [50%]
 
-    - [Mario](/problems/mario-less), for those less comfortable
+    - [Mario](/problems/mario-less), for most students
 
     - [Mario](/problems/mario-more), for those more comfortable
 
 5. Implement and submit either of: [50%]
 
-    - [Cash](/problems/cash), for those less comfortable
+    - [Cash](/problems/cash), for most students
 
     - [Credit](/problems/credit), for those more comfortable
 

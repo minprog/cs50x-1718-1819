@@ -86,7 +86,7 @@ pass:[####  ####]
 
 [source]
 ----
-check50  --local mario/more@minprog/checks
+check50 mario/more@minprog/checks
 ----
 
 === Style
@@ -94,13 +94,6 @@ check50  --local mario/more@minprog/checks
 [source]
 ----
 style50 mario.c
-----
-
-== Staff Solution
-
-[source]
-----
-~cs50/hacker1/mario
 ----
 
 == Hints
