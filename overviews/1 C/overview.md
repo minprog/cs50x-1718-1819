@@ -29,6 +29,8 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 3. Login to the [CS50 IDE](https://ide.cs50.io/) using your GitHub account (this currently only works in Chrome and Firefox!)
 
+4. Learn about using the [Command Line](https://www.youtube.com/embed/BnJ013X02b8?autoplay=1&rel=0) in the IDE
+
 3. Implement [Water](/problems/water)
 
 4. Implement and submit either of: [50%]
