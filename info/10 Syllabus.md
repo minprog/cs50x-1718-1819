@@ -32,23 +32,6 @@ The final grade for this course is primarily determined by averaging the scores 
 
 #### Programming 1
 
-<!--
-| Problem        | Language | Weight |  
-| -------------- | -------- | -----: |  
-| Scratch        | Scratch  |     0% |  
-| Water          | C        |     0% |  
-| Mario          | C        |  12,5% |  
-| Cash/Credit    | C        |  12,5% |  
-| Caesar         | C        |  12,5% |  
-| Initials       | C        |     0% |  
-| Vigenere/crack | C        |  12,5% |  
-| Find           | C        |  12,5% |  
-| Fifteen        | C        |  12,5% |  
-| Whodunit       | C        |     0% |  
-| Resize         | C        |  12,5% |  
-| Recover        | C        |  12,5% |  
--->
-
 | Problem Set            | Language | Weight |  
 | ---------------------- | -------- | -----: |  
 | Scratch                | Scratch  |     0% |  
@@ -58,29 +41,15 @@ The final grade for this course is primarily determined by averaging the scores 
 | Forensics              | C        |    25% |  
 | Mispellings (bonus)    | C        | 1 mark |
 
-
 #### Programming 2
-
-<!--
-|               | Language     | Weight |  
-| ------------- | ------------ | -----: |  
-| Homepage      | HTML         |     0% |  
-| Sentimental   | Python       |     0% |  
-| Bleep         | Python       |    25% |  
-| Similarities  | Python       |  12,5% |  
-| Survey        | Python, HTML |  12,5% |  
-| Game of cards | Python       |     0% |  
-| Hangman       | Python       |    25% |  
-| Adventure     | Python       |    25% |  
--->
 
 | Problem Set   | Language     | Weight |  
 | ------------- | ------------ | -----: |  
-| Python        | HTML, Python |    25% |  
+| Homepage      | HTML         |     0% |  
+| Python        | Python       |    25% |  
 | Web           | HTML, Python |    25% |  
 | Hangman       | Python       |    25% |  
 | Adventure     | Python       |    25% |  
-
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
