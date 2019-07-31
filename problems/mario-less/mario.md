@@ -191,13 +191,3 @@ check50 mario/less@minprog/checks
 ~~~~
 style50 mario.c
 ~~~~
-
-
-## Staff Solution
-
-If not quite sure how your program should work in ideal situations, feel free to take a peek at our solution! You can test it out using this command:
-
-~~~~
-~cs50/pset1/mario
-~~~~
-
