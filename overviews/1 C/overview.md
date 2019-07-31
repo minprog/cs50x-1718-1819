@@ -27,9 +27,9 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 2. Write your first program: [Hello](https://lab.cs50.io/cs50/labs/2019/x/hello/)
 
-3. Implement [Water](/problems/water)
+3. Login to the [CS50 IDE](https://ide.cs50.io/) using your GitHub account (this currently only works in Chrome and Firefox!)
 
-3. Login to the [CS50 IDE](https://ide.cs50.io/) using your GitHub account
+3. Implement [Water](/problems/water)
 
 4. Implement and submit either of: [50%]
 
