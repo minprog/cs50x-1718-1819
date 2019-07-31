@@ -21,7 +21,7 @@ Suffice it to say that the longer you shower, the more water you use. But just h
 
 == Steps
 
-This problem looks quite a bit like the `ints.c` program from lecture. Study the examples atop this document and think about which parts of `ints.c` you might reuse in your solution. Then, create a file `water.c` and try to make it work.
+This problem looks quite a bit like the `ints.c` program from link:/lectures/lecture-1[lecture]. Study the examples atop this document and think about which parts of `ints.c` you might reuse in your solution. Then, create a file `water.c` and try to make it work.
 
 == Specification
 
