@@ -134,7 +134,7 @@ Now that your basic algorithm is done, we need to take a look at the formal requ
 
 ## Usage
 
-Your program should behave exactly per the example below. A user starts `./mario`, types a height and ENTER, and then your program prints a pyramid of the desired height.
+Your program should behave exactly like in the examples below. A user starts `./mario`, types a height and ENTER, and then your program prints a pyramid of the desired height.
 
 ~~~~
 $ ./mario
