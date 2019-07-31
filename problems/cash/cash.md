@@ -79,6 +79,23 @@ When (almost) finished implementing the algorithm, it's time to test well. Run y
 
 * Incidentally, so that we can automate some tests of your code, we ask that your program's last line of output be only the minimum number of coins possible: an integer followed by `\n`.
 
+
+## Hints
+
+* Per the final bullet point of the Specification, above, don't forget to put a newline character at the end of your printout!
+
+* Do beware the inherent imprecision of floating-point values. For instance, `0.1` cannot be represented exactly as a `float`. Try printing its value to, say, `55` decimal places, with code like the below:
+
+  ~~~~
+  float f = 0.1;
+  printf("%.55f\n", f);
+  ~~~~
+
+  And so, before making change, you'll probably want to convert the user's input entirely to cents (i.e., from a `float` to an `int`) to avoid tiny errors that might otherwise add up! Of course, don't just cast the user's input from a `float` to an `int`! After all, how many cents does one dollar equal?
+
+* And take care to [round](https://reference.cs50.net/math/round) your cents (to the nearest penny); don't "truncate" (i.e., floor) your cents!
+
+
 ## Usage
 
 When finished, your program should behave per the example below.
@@ -114,17 +131,3 @@ check50 cash@minprog/checks
 style50 cash.c
 ~~~~
 
-## Hints
-
-* Per the final bullet point of the Specification, above, don't forget to put a newline character at the end of your printout!
-
-* Do beware the inherent imprecision of floating-point values. For instance, `0.1` cannot be represented exactly as a `float`. Try printing its value to, say, `55` decimal places, with code like the below:
-
-	~~~~
-	float f = 0.1;
-	printf("%.55f\n", f);
-	~~~~
-
-  And so, before making change, you'll probably want to convert the user's input entirely to cents (i.e., from a `float` to an `int`) to avoid tiny errors that might otherwise add up! Of course, don't just cast the user's input from a `float` to an `int`! After all, how many cents does one dollar equal?
-
-* And take care to https://reference.cs50.net/math/round[round] your cents (to the nearest penny); don't "truncate" (i.e., floor) your cents!
