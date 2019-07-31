@@ -176,7 +176,7 @@ Height: 4
 
 ## Testing
 
-Now before submitting, we expect you to take care that your program is as well-polished as possible. For some final feedback, use the tools `check50` and `style50` per the examples below!
+Before submitting, we expect you to take care that your program is as well-polished as possible. For some final feedback, use the tools `check50` and `style50` per the examples below!
 
 
 ### Correctness

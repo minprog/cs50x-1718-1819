@@ -24,6 +24,22 @@ What's all that mean? Well, suppose that a cashier owes a customer some change a
 
 It turns out that this greedy approach (i.e., algorithm) is not only locally optimal but also globally for America's currency (and also the European Union's). That is, so long as a cashier has enough of each coin, this largest-to-smallest approach will yield the fewest coins possible. How few? Well, you tell us!
 
+## Steps
+
+For this problem, we will first focus on the algorithm that we need to calculate greedy change. Let's take a look at what our options are!
+
+TODO insert first 2 minutes of Walktrough
+
+If we turn this idea of greedy change into an alogrithm, we notice that we need to keep track (while calculating) of two things:
+
+- how many coins are going to be returned, the **count** (initially 0)
+- how much change do we still have to return, the **amount**
+
+In pseudocode, our algorithm may look like this the following. Note the presence of `count` and `amount` in that algorithm.
+
+![Pseudocode for Cash](pseudo.png){: style="max-width:300px"}
+
+
 ## Specification
 
 * Write, in a file called `cash.c` in `~/workspace/pset1/cash/`, a program that first asks the user how much change is owed and then spits out the minimum number of coins with which said change can be made.
@@ -58,10 +74,12 @@ Change owed: 0.41
 
 ## Testing
 
+Before submitting, we expect you to take care that your program is as well-polished as possible. For some final feedback, use the tools `check50` and `style50` per the examples below!
+
 ### Correctness
 
 ~~~~
-check50 --local cash@minprog/checks
+check50 cash@minprog/checks
 ~~~~
 
 ### Style
