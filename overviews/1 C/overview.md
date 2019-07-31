@@ -23,13 +23,13 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 1. Watch [Lecture 1](/lectures/lecture-1)
 
-1. Create a GitHub account
+1. Create an account on [GitHub](https://github.com/join)
 
 2. Write your first program: [Hello](https://lab.cs50.io/cs50/labs/2019/x/hello/)
 
 3. Implement [Water](/problems/water)
 
-3. Login to the CS50 IDE
+3. Login to the [CS50 IDE](https://ide.cs50.io/) using your GitHub account
 
 4. Implement and submit either of: [50%]
 
