@@ -22,7 +22,7 @@ Height: 3
 ####
 ~~~~
 
-Although we would normally expect you to choose this version of the problem, aimed at students who are "less comfortable" with programming, you may choose to do the [version of Mario](/problems/mario-more) intended for "more comfortable" students instead!
+Although we would normally expect you to choose this version of the problem, aimed at students who are "less comfortable" with programming, you may instead choose to do the [version of Mario](/problems/mario-more) intended for "more comfortable" students!
 
 ## Background
 
