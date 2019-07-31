@@ -34,7 +34,7 @@ Let's deconstruct our problem and take it one step at a time. We will incrementa
 
 ###  1. Hash
 
-For this first version, write a program (in `mario.c`) that simply prints one single hash mark (#) to the screen. The program will look a lot like `hello.c` that you wrote, only shorter!
+For this first version, write a program (in a file named `mario.c`) that simply prints one single hash mark (#) to the screen. The program will look a lot like `hello.c` that you wrote, only shorter!
 
 The output should look like this:
 
