@@ -41,7 +41,7 @@ If we turn this idea of greedy change into an algorithm, we notice that we need 
 - how many coins are going to be returned, the **count** (initially 0)
 - how much change do we still have to return, the **amount**
 
-In pseudocode, our algorithm may look like this the following. Note the presence of both `count` and `amount` in that code:
+In fact, the idea of the algorithm is to *convert* the amount of change required into the count of coins that are minimally needed to make that amount. In pseudocode, our algorithm may look like this the following. Note the presence of both `count` and `amount` in that code:
 
 ![Pseudocode for Cash](pseudo.png){: style="max-width:300px"}
 
