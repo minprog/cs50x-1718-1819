@@ -53,6 +53,8 @@ In fact, the idea of the algorithm is to *convert* the amount of change required
 	(etc...)
 	print number of coins used
 
+Study this pseudocode; discuss the details. Do you understand every part? Do you have a notion of how it would be translated into C?
+
 ### 2. Basic implementation
 
 To get started implementing this algorithm, create a file called `cash.c` and insert a standard `main` function. Atop that `main` insert the following variables:

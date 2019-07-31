@@ -23,27 +23,23 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 1. Watch [Lecture 1](/lectures/lecture-1)
 
-2. Write your first program: [Hello](/problems/hello) [0%]
+2. Write your first program: [Hello](/problems/hello)
 
-3. Practice with book chapter 1 (calculations) and take the test
+3. Implement [Water](/problems/water)
 
-4. Implement [Water](/problems/water) [0%]
-
-5. Practice with book chapter 2 (logic) and take the test
-
-6. Implement either of: [50%]
+4. Implement and submit either of: [50%]
 
     - [Mario](/problems/mario-less), for those less comfortable
 
     - [Mario](/problems/mario-more), for those more comfortable
 
-7. Practice with book chapter 3 (variables) and take the test
-
-8. Implement either of: [50%]
+5. Implement and submit either of: [50%]
 
     - [Cash](/problems/cash), for those less comfortable
 
     - [Credit](/problems/credit), for those more comfortable
+
+6. Practice with book chapters 1, 2 and 3, and take the test
 
 
 ## How to Submit
