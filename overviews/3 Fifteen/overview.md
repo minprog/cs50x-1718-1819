@@ -48,9 +48,9 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 3. Learn more about [Functions](https://www.youtube.com/embed/n1glFqt3g38?autoplay=1&rel=0)
 
-4. Implement [Fifteen](/problems/fifteen)
+4. Implement [Fifteen](/problems/fifteen) [50%]
 
-5. Implement either of:
+5. Implement either of: [50%]
 
     - [Find](/problems/find-less), for those less comfortable
 

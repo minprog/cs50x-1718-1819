@@ -34,7 +34,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 1. Watch [Lecture 5](/lectures/lecture-5)
 
-2. Implement [Speller](/problems/speller)
+2. Implement [Speller](/problems/speller) [100%]
 
 3. For basic reference, check out [Pointers](https://www.youtube.com/embed/XISnO2YhnsY?autoplay=1&rel=0), [Dynamic memory](https://www.youtube.com/embed/9uhSYDY4sxA?autoplay=1&rel=0), [Recursion](https://www.youtube.com/embed/mz6tAJMVmfM?autoplay=1&rel=0), [Call stacks](https://www.youtube.com/embed/j_oJoK0LoJY?autoplay=1&rel=0).
 

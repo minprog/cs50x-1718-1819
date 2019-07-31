@@ -38,7 +38,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 3. Learn more about [Hexadecimal](https://www.youtube.com/embed/u_atXp-NF6w?autoplay=1&rel=0)
 
-4. Implement either of:
+4. Implement either of: [50%]
 
     - [Resize](/problems/resize-less), for those less comfortable
 
@@ -46,7 +46,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 5. Learn more about [Structures](https://www.youtube.com/embed/E4lb2gkyXr8?autoplay=1&rel=0)
 
-6. Implement [Recover](/problems/recover)
+6. Implement [Recover](/problems/recover) [50%]
 
 7. Learn more about [Files and file pointers](https://www.youtube.com/embed/bOF-SpEAYgk?autoplay=1&rel=0)
 

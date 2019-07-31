@@ -44,7 +44,7 @@ Per [Lecture 2](/lectures/lecture-2):
 
     - [Initials](/problems/initials-more), for those more comfortable
 
-3. Implement:
+3. Implement: [50%]
 
     - [Caesar](/problems/caesar)
 
@@ -52,7 +52,7 @@ Per [Lecture 2](/lectures/lecture-2):
 
 5. Learn more about cleaning up your code from [Magic numbers](https://www.youtube.com/embed/vK_naJkrtjc?autoplay=1&rel=0)
 
-6. Implement either of:
+6. Implement either of: [50%]
 
     - [Vigenere](/problems/vigenere), for most students
 
