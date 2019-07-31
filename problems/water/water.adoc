@@ -43,8 +43,6 @@ Bottles: 120
 
 To check whether your program is running well according to specifications, you may use `check50`.
 
-=== check50
-
 [source,text]
 ----
 check50 water@minprog/checks
