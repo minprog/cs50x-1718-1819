@@ -1,7 +1,0 @@
-name: hello
-files:
-    required:
-        - hello.c
-check:
-    tool: check50v2
-    slug: hello@minprog/checks
