@@ -48,15 +48,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## How to Submit
 
-1. When ready to submit, log into [CS50 IDE](https://ide.cs50.io/).
-
-2. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `hello.c` file (that's within your `pset1` directory) and then select **Download**. You should find that your browser has downloaded `hello.c`.
-
-3. Make sure you are signed in to this website!
-
-4. In the form below the problem, add the file that you downloaded.
-
-5. Press "Submit for grading". Presto!
+Instructions for submitting are included in the problem specifications as linked above.
 
 
 ## Grading

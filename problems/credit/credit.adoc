@@ -96,7 +96,7 @@ INVALID
 
 [source]
 ----
-check50 --local credit@minprog/checks
+check50 credit@minprog/checks
 ----
 
 === Style
@@ -104,13 +104,6 @@ check50 --local credit@minprog/checks
 [source]
 ----
 style50 credit.c
-----
-
-== Staff Solution
-
-[source]
-----
-~cs50/hacker1/credit
 ----
 
 == Hints

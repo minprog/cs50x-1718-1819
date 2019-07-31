@@ -62,7 +62,7 @@ Then you might implement the algorithm using the pseudocode above.
 
 ### 3. Testing
 
-When (almost) finished implementing the algorithm, it's time to test well. Run your program and see if it does indeed print `4` for the amount of 32 cents! And then change `amount` to 5 and see what it does. If satisfied with the result, proceed to the formal specification, below.
+When (almost) finished implementing the algorithm, it's time to test your program well. Run your program and see if it does indeed print `4` for the amount of 32 cents! And then change `amount` to 5 and see what it does. When satisfied with the results, proceed to the formal specification, below.
 
 
 ## Specification
@@ -129,3 +129,15 @@ check50 cash@minprog/checks
 style50 cash.c
 ~~~~
 
+
+## Submitting
+
+1. When ready to submit, log into [CS50 IDE](https://ide.cs50.io/).
+
+2. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `cash.c` file (that's within your `pset1` directory) and then select **Download**. You should find that your browser has downloaded `cash.c`.
+
+3. Make sure you are signed in to this website!
+
+4. In the form below the problem, add the file that you downloaded.
+
+5. Press "Submit for grading". Presto!

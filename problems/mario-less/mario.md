@@ -191,3 +191,16 @@ check50 mario/less@minprog/checks
 ~~~~
 style50 mario.c
 ~~~~
+
+
+## Submitting
+
+1. When ready to submit, log into [CS50 IDE](https://ide.cs50.io/).
+
+2. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `mario.c` file (that's within your `pset1` directory) and then select **Download**. You should find that your browser has downloaded `mario.c`.
+
+3. Make sure you are signed in to this website!
+
+4. In the form below the problem, add the file that you downloaded.
+
+5. Press "Submit for grading". Presto!
