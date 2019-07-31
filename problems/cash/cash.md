@@ -26,13 +26,9 @@ It turns out that this greedy approach (i.e., algorithm) is not only locally opt
 
 ## Steps
 
-For this problem, we will first focus on the algorithm that we need to calculate greedy change. Let's take a look at what our options are!
+For this problem, the most important part is the algorithm to calculate change in a greedy manner. Your task is to understand the algorithm and then to implement it. Only then will you add other stuff, like allowing user input.
 
 ### 1. Understanding the algorithm
-
-<!--
-TODO insert first 2 minutes of Walktrough (https://docs.cs50.net/problems/cash/cash.html)
--->
 
 <iframe width="640" height="480" src="https://ytcropper.com/embed/6w5d416684095b4/loop/noautoplay/" frameborder="0" allowfullscreen></iframe><a href="/" target="_blank">via ytCropper</a>
 
