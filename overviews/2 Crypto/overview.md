@@ -38,31 +38,29 @@ Per [Lecture 2](/lectures/lecture-2):
 
 1. Watch [Lecture 2](/lectures/lecture-2)
 
-2. Learn how to update the [IDE](/training/updating)
+2. Implement either of:
 
-5. Implement either of:
-
-    - [Initials](/problems/initials-less), for those less comfortable
+    - [Initials](/problems/initials-less), for most students
 
     - [Initials](/problems/initials-more), for those more comfortable
 
-6. Practice with:
-
-    - book chapter 4 (conditionals) and take the test
-
-    - book chapter 5 (while loops) and take the test
-
-    - book chapter 6 (for-loops) and take the test
-
-7. Implement:
+3. Implement:
 
     - [Caesar](/problems/caesar)
 
-8. Implement either of:
+4. Learn more about [Debugging](https://www.youtube.com/embed/w4TAY2HPLEg?autoplay=1&rel=0)
 
-    - [Vigenere](/problems/vigenere), for those less comfortable
+5. Learn more about cleaning up your code from [Magic numbers](https://www.youtube.com/embed/vK_naJkrtjc?autoplay=1&rel=0)
+
+6. Implement either of:
+
+    - [Vigenere](/problems/vigenere), for most students
 
     - [Crack](/problems/crack), for those more comfortable
+
+7. Learn more about [Variables and scope](https://www.youtube.com/embed/GiFbdVGjF9I?autoplay=1&rel=0) and [Command line arguments](https://www.youtube.com/embed/GiFbdVGjF9I?autoplay=1&rel=0).
+
+8. Learn more about [Arrays](https://www.youtube.com/embed/K1yC1xshF40?autoplay=1&rel=0), practice with book chapters 7, 8 and 9, and take the test.
 
 
 ## How to Submit

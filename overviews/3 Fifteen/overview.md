@@ -46,14 +46,19 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 2. Practice with the book chapter on *strings*, *arrays* and *functions*.
 
-3. Implement [Fifteen](/problems/fifteen)
+3. Learn more about [Functions](https://www.youtube.com/embed/n1glFqt3g38?autoplay=1&rel=0)
 
-4. Implement either of:
+4. Implement [Fifteen](/problems/fifteen)
+
+5. Implement either of:
 
     - [Find](/problems/find-less), for those less comfortable
 
     - [Find](/problems/find-more), for those more comfortable
 
+6. You might find [Algorithms](https://www.youtube.com/embed/ktWL3nN38ZA?autoplay=1&rel=0), [Linear search](https://www.youtube.com/embed/TwsgCHYmbbA?autoplay=1&rel=0), [Binary search](https://www.youtube.com/embed/T98PIp4omUA?autoplay=1&rel=0), [Selection sort](https://www.youtube.com/embed/3hH8kTHFw2A?autoplay=1&rel=0), [Bubble sort](https://www.youtube.com/embed/RT-hUXUWQ2I?autoplay=1&rel=0), [Insertion sort](https://www.youtube.com/embed/kU9M51eKSX8?autoplay=1&rel=0), [Merge sort](https://www.youtube.com/embed/yF3hMKmCk1A?autoplay=1&rel=0) interesting as a reference.
+
+7. [Computational complexity](https://www.youtube.com/embed/YoZPTyGL2IQ?autoplay=1&rel=0)
 
 ## How to Submit
 
