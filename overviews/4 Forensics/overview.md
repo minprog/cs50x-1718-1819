@@ -2,23 +2,24 @@
 
 In this module, you'll learn about all sorts of techniques to do with forensic research. See if you can recover those photos from that pesky old memory card!
 
+
 ## Help
 
-For information on (or help with) this week:
+For information on (or help with) this module:
 
-1. Watch the walkthroughs included in all problems.
+1. Attend your tutor's meeting.
 
-2. Attend your tutor's section (if you're hi-speed).
+2. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
 
-3. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+3. Ask questions during office hours using the "Ask" tool on this website.
 
-4. Ask questions during office hours using the "Ask" tool on this website.
+4. Visit (or e-mail) the course's heads in cases of emergency.
 
-5. Visit (or e-mail) the course's heads.
 
 ## Academic Honesty
 
 Do keep in mind the course's policy on [academic honesty](/syllabus#academic_honesty) (like plagiarism), particularly its ["regret clause"](/syllabus#regret).
+
 
 ## Getting Started
 
@@ -29,6 +30,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
     update50
     mkdir ~/workspace/pset4/
     cd ~/workspace/pset4/
+
 
 ## What to Do
 

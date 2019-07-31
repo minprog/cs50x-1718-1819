@@ -4,17 +4,16 @@ In this module, you'll learn about arrays and about algorithms that you might im
 
 ## Help
 
-For information on (or help with) this week:
+For information on (or help with) this module:
 
-1. Watch the walkthroughs included in all problems.
+1. Attend your tutor's meeting.
 
-2. Attend your tutor's section (if you're hi-speed).
+2. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
 
-3. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+3. Ask questions during office hours using the "Ask" tool on this website.
 
-4. Ask questions during office hours using the "Ask" tool on this website.
+4. Visit (or e-mail) the course's heads in cases of emergency.
 
-5. Visit (or e-mail) the course's heads.
 
 ## Academic Honesty
 
