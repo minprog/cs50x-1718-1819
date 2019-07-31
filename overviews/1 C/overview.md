@@ -7,13 +7,11 @@ In this module, you'll learn about the C programming language. It's a great lang
 
 For information on (or help with) this week:
 
-1. Watch the walkthroughs included in all problems.
+1. Attend your tutor's meeting.
 
-2. Attend your tutor's section (if you're hi-speed).
+2. Ask questions during office hours using the "Ask" tool on this website.
 
-3. Ask questions during office hours using the "Ask" tool on this website.
-
-4. Visit (or e-mail) the course's heads.
+3. Visit (or e-mail) the course's heads in cases of emergency.
 
 
 ## Academic Honesty
@@ -24,8 +22,6 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 ## What to Do
 
 1. Watch [Lecture 1](/lectures/lecture-1)
-
-2. Get started using the [IDE](/training/ide)
 
 2. Write your first program: [Hello](/problems/hello) [0%]
 
