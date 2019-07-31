@@ -131,9 +131,6 @@ Now that your basic algorithm is done, we need to take a look at the formal requ
 * Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
 * Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
 
-## Walkthrough
-
-video::EGWRG5e1O2s[youtube]
 
 ## Usage
 
@@ -176,13 +173,18 @@ Height: 4
 #####
 ~~~~
 
+
 ## Testing
+
+Now before submitting, we expect you to take care that your program is as well-polished as possible. For some final feedback, use the tools `check50` and `style50` per the examples below!
+
 
 ### Correctness
 
 ~~~~
-check50 --local mario/less@minprog/checks
+check50 mario/less@minprog/checks
 ~~~~
+
 
 ### Style
 
@@ -190,7 +192,10 @@ check50 --local mario/less@minprog/checks
 style50 mario.c
 ~~~~
 
+
 ## Staff Solution
+
+If not quite sure how your program should work in ideal situations, feel free to take a peek at our solution! You can test it out using this command:
 
 ~~~~
 ~cs50/pset1/mario
