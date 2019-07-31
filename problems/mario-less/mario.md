@@ -125,16 +125,16 @@ Odds are that you have tested your program only for size 5. Now is the time to c
 
 Now that your basic algorithm is done, we need to take a look at the formal requirements for our program. As it happens, there are some extra elements that we didn't take into account yet!
 
-* Write, in a file called `mario.c` in `~/workspace/pset1/mario/less/`, a program that recreates this half-pyramid using hashes (`#`) for blocks.
 * To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramid pictured above happens to be `8`.)
 * If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
+* Odds are you'll find inspiration for this in `positive.c` from lecture!
 * Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
 * Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
 
 
 ## Usage
 
-Your program should behave per the example below. Assumed that the underlined text is what some user has typed.
+Your program should behave exactly per the example below. A user starts `./mario`, types a height and ENTER, and then your program prints a pyramid of the desired height.
 
 ~~~~
 $ ./mario
