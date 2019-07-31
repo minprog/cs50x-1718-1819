@@ -30,7 +30,7 @@ Toward the end of World 1-1 in Nintendo's Super Mario Brothers, Mario must ascen
 
 ![Super Mario Brothers](pyramid.png){: style="width: 50%"}
 
-## Getting Started
+## Steps
 
 Let's deconstruct our problem and take it one step at a time. We will incrementally build our solution, starting from the most basic version that we can think of.
 
