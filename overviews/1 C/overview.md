@@ -55,4 +55,4 @@ Instructions for submitting are included in the problem specifications as linked
 
 Above, the weight of each problem is noted. All programs have to be submitted in full in order to progress to the next module, which will be automatically checked using `check50`. Normally, you can see the results on this website soon after submitting.
 
-Your tutor will assess your programs as soon as every student has finished the module, and assign a grade for "style" and "design" for all programs that count for more than 0% of the total (see above). Together with the `check50` results, this will add up to a grade for this assignment.
+Your tutor will assess your programs as soon as every student has finished the module, and assign a grade for "style" and "design" for your programs. Together with the `check50` results, this will add up to a grade for this assignment.
