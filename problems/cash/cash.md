@@ -28,7 +28,7 @@ It turns out that this greedy approach (i.e., algorithm) is not only locally opt
 
 For this problem, we will first focus on the algorithm that we need to calculate greedy change. Let's take a look at what our options are!
 
-### Algorithm
+### 1. Understanding the algorithm
 
 TODO insert first 2 minutes of Walktrough (https://docs.cs50.net/problems/cash/cash.html)
 
@@ -41,7 +41,7 @@ In pseudocode, our algorithm may look like this the following. Note the presence
 
 ![Pseudocode for Cash](pseudo.png){: style="max-width:300px"}
 
-### Implementation
+### 2. Basic implementation
 
 To get started implementing this algorithm, create a file called `cash.c` and insert a standard `main` function. Atop that `main` insert the following variables:
 
@@ -50,7 +50,7 @@ To get started implementing this algorithm, create a file called `cash.c` and in
 
 Then you can implement the algorithm using the pseudocode above. Try it!
 
-### Testing
+### 3. Testing
 
 When (almost) finished implementing the algorithm, it's time to test again. Run your program and see if it does indeed print `4` for the amount of 32 cents! And then change `amount` to 5 and see what it does. If satisfied with the result, proceed to the formal specification, below.
 
