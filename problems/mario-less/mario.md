@@ -43,6 +43,8 @@ $ ./mario
 #
 ~~~~
 
+Don't forget to print a single newline (\n) after that hash mark!
+
 ### 2. Line
 
 Now that the basic framework it setup, let's introduce a tiny bit of complexity. We now want our program to print a **line of five hash marks** instead of just one. And we would like to do it efficiently using a loop. Have a look at `cough1.c` from lecture!
@@ -77,7 +79,9 @@ $ ./mario
 #####
 ~~~~
 
-The height and the width of the block are equal: both have size 5. How do you get from your previous program to this block? Observe that the block is simmply 5 times the line! So, you would need to repeat the whole program 5 times, right? Think how you might use another loop to accomplish this. Exactly which part of the prgram needs to be repeated?
+The height and the width of the block are equal: both have size 5. How do you get from your previous program to this block? Observe that the block is nothing more than 5 times the same line! So, you would need to repeat the whole program 5 times, right? Think how you might use another loop to accomplish this. Exactly which part of the program needs to be repeated?
+
+Ideally, you now have two loops: one which loops for every line that should be printed, and one that loops over the number of hash marks that is printed on each line.
 
 ### 5. Left pyramid
 
@@ -92,7 +96,7 @@ $ ./mario
 ######
 ~~~~
 
-So you will need to change the loop that determines the number of hashes that is printed on a single line. Instead of taking `size` each time, it needs to be **dependent** on the line number. Ask for help if needed!
+So you will need to change the loop that determines the number of hashes that are printed on a single line. Instead of taking `size` each time, it needs to be **dependent** on the line number. But don't change the loop that determines the number of lines printed. That should still be the same as before. Ask for help if needed!
 
 ### 6. Right pyramid
 
@@ -180,14 +184,12 @@ check50 --local mario/less@minprog/checks
 
 ### Style
 
-[source]
 ~~~~
 style50 mario.c
 ~~~~
 
 ## Staff Solution
 
-[source]
 ~~~~
 ~cs50/pset1/mario
 ~~~~
