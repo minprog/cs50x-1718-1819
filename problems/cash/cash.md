@@ -30,7 +30,11 @@ For this problem, we will first focus on the algorithm that we need to calculate
 
 ### 1. Understanding the algorithm
 
+<!--
 TODO insert first 2 minutes of Walktrough (https://docs.cs50.net/problems/cash/cash.html)
+-->
+
+<iframe width="640" height="480" src="https://ytcropper.com/embed/6w5d416684095b4/loop/noautoplay/" frameborder="0" allowfullscreen></iframe><a href="/" target="_blank">via ytCropper</a>
 
 If we turn this idea of greedy change into an algorithm, we notice that we need to keep track of two things:
 
