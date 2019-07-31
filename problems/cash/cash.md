@@ -28,17 +28,27 @@ It turns out that this greedy approach (i.e., algorithm) is not only locally opt
 
 For this problem, we will first focus on the algorithm that we need to calculate greedy change. Let's take a look at what our options are!
 
-TODO insert first 2 minutes of Walktrough
+TODO insert first 2 minutes of Walktrough (https://docs.cs50.net/problems/cash/cash.html)
 
 If we turn this idea of greedy change into an algorithm, we notice that we need to keep track of two things:
 
 - how many coins are going to be returned, the **count** (initially 0)
 - how much change do we still have to return, the **amount**
 
-In pseudocode, our algorithm may look like this the following. Note the presence of `count` and `amount` in that algorithm.
+In pseudocode, our algorithm may look like this the following. Note the presence of `count` and `amount`:
 
 ![Pseudocode for Cash](pseudo.png){: style="max-width:300px"}
 
+To get started, create a file called `cash.c` and insert a standard `main` function. Atop that `main` insert the following variables:
+
+	int count = 0;
+	int amount = 32;
+
+Then you can implement the algorithm using the pseudocode above. Try it!
+
+### Testing
+
+When (almost) finished implementing the algorithm, it's time to test again. Run your program and see if it does indeed print `4` for the amount of 32 cents! And then change `amount` to 5 and see what it does. If satisfied with the result, proceed to the formal specification, below.
 
 ## Specification
 
@@ -49,13 +59,9 @@ In pseudocode, our algorithm may look like this the following. Note the presence
 * If the user fails to provide a non-negative value, your program should re-prompt the user for a valid amount again and again until the user complies.
 * Incidentally, so that we can automate some tests of your code, we ask that your program's last line of output be only the minimum number of coins possible: an integer followed by `\n`.
 
-## Walkthrough
-
-video::6w7Tws0seJk[youtube]
-
 ## Usage
 
-Your program should behave per the example below.
+When finished, your program should behave per the example below.
 
 ~~~~
 $ ./cash
