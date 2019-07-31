@@ -53,12 +53,11 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## How to Submit
 
-1. When ready to submit, log into [CS50 IDE](https://cs50.io/).
+Instructions for submitting are included in the problem specifications as linked above.
 
-2. Download your `.c` files.
 
-3. Make sure you are signed in to this website!
+## Grading
 
-4. In the form below the problem, add the file that you downloaded.
+Above, the weight of each problem is noted. All programs have to be submitted in full in order to progress to the next module, which will be automatically checked using `check50`. Normally, you can see the results on this website soon after submitting.
 
-5. Press "Submit for grading". Presto!
+Your tutor will assess your programs as soon as every student has finished the module, and assign a grade for "style" and "design" for your programs. Together with the `check50` results, this will add up to a grade for this assignment.
