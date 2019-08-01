@@ -92,6 +92,46 @@ Since you're building this project from scratch, you'll need to do a bit of plan
 
 3. Don't explicitly enumerate word families. If you are working with a word of length n, then there are 2n possible word families for each letter. However, most of these families don't actually appear in the English language. For example, no English words contain three consecutive U's, and no word matches the pattern E-EE-EE--E. Rather than explicitly generating every word family whenever the user enters a guess, see if you can generate word families only for words that actually appear in the word list. One way to do this would be to scan over the word list, storing each word in a table mapping word families to words in that family.
 
+## Steps
+
+### 1. The `Lexicon` class
+
+The first thing to implement is a class called `Lexicon`, which has the responsibility of managing the full word list and extracting words of a given length. It can be loaded once and asked for words whenever a new game is started.
+
+This Lexicon looks quite a bit like the `Dictionary` class from lecture. Its core functionality is a little bit different:
+
+- it does not need `size` and `unload`, the latter because it is not needed in Python
+- it does not need to `check` words, but it *does* need to provide words with a certain length
+
+So to implement this class, create a new python file called `hangman.py` and write a class definition. You can re-use the code from `Dictionary` to load the words into a set.
+
+A method that you need to implement is `get_words(self, length)` which extracts from the master set of words a new set of words that are exactly of length `length`. To do this, you can use a *generator expression* which filters the existing set into a new one.
+
+### 2. Testing the `Lexicon`
+
+Below the `Lexicon` class, you might insert a little bit of code that tests if the class is working correctly. For example, try to get words of length 8 and see if the result seems reasonable.
+
+	lex = Lexicon()
+	words = lex.get_words(8)
+	print(len(words))
+	print(words.pop())
+	print(words.pop())
+	print(words.pop())
+
+Is the number of words reasonable? Are each of the three random words actually 8 letters long? To add to this, in the description above, you can find some oddities that you might verify, too (e.g. how many words are there of length 27?).
+
+### 3. The `Hangman` class
+
+
+
+### 4. Testing the game
+
+
+### 5. Implementing user interaction
+
+
+
+
 ## Extensions
 
 The algorithm outlined in this handout is by no means optimal, and there are several cases in which it will make bad decisions. For example, suppose that the human has exactly one guess remaining and that computer has the following word list:
