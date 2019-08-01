@@ -49,7 +49,7 @@ Don't forget to print a single newline (\n) after that hash mark!
 
 ### 2. Line
 
-Now that the basic framework it setup, let's introduce a tiny bit of complexity. We now want our program to print a **line of five hash marks** instead of just one. And we would like to do it efficiently using a loop. Have a look at `cough1.c` from lecture!
+Now that you have set up the basic framework, let's introduce a tiny bit of complexity. We now want our program to print a **line of five hash marks** instead of just one. And we would like to do it efficiently using a loop. Have a look at `cough1.c` from lecture!
 
 The output should look like this:
 
