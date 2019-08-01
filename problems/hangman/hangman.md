@@ -82,9 +82,9 @@ Your assignment is to write a computer program which plays a game of Hangman usi
 
 Also, here are some general tips and tricks that might be useful:
 
-1. Letter position matters just as much as letter frequency. When computing word families, it's not enough to count the number of times a particular letter appears in a word; you also have to consider their positions. For example, “BEER” and “HERE” are in two different families even though they both have two E's in them. Consequently, representing word families as numbers representing the frequency of the letter in the word will get you into trouble.
+- Letter position matters just as much as letter frequency. When computing word families, it's not enough to count the number of times a particular letter appears in a word; you also have to consider their positions. For example, “BEER” and “HERE” are in two different families even though they both have two E's in them. Consequently, representing word families as numbers representing the frequency of the letter in the word will get you into trouble.
 
-2. Watch out for gaps in the dictionary. When the user specifies a word length, you will need to check that there are indeed words of that length in the dictionary. You might initially assume that if the requested word length is less than the length of the longest word in the dictionary, there must be some word of that length. Unfortunately, the dictionary contains a few “gaps.” The longest word in the dictionary has length 29, but there are no words of length 27 or 26. Be sure to take this into account when checking if a word length is valid.
+- Watch out for gaps in the dictionary. When the user specifies a word length, you will need to check that there are indeed words of that length in the dictionary. You might initially assume that if the requested word length is less than the length of the longest word in the dictionary, there must be some word of that length. Unfortunately, the dictionary contains a few “gaps.” The longest word in the dictionary has length 29, but there are no words of length 27 or 26. Be sure to take this into account when checking if a word length is valid.
 
 
 ## Steps
@@ -93,7 +93,7 @@ Also, here are some general tips and tricks that might be useful:
 
 The first thing to implement is a class called `Lexicon`, which has the responsibility of managing the full word list and extracting words of a given length. It can be loaded once and asked for words whenever a new game is started.
 
-This Lexicon looks quite a bit like the `Dictionary` class from lecture. Its core functionality is a little bit different:
+This Lexicon looks quite a bit like the `Dictionary` class from [lecture 6](/lectures/lecture-6). Its core functionality is a little bit different:
 
 - it does not need `size` and `unload`, the latter because it is not needed in Python
 - it does not need to `check` words, but it *does* need to provide words with a certain length
@@ -104,7 +104,11 @@ A method that you need to implement is `get_words(self, length)` which extracts 
 
 ### 2. Testing the `Lexicon`
 
-Below the `Lexicon` class, you might insert a little bit of code that tests if the class is working correctly. For example, try to get words of length 8 and see if the result seems reasonable.
+Below the `Lexicon` class, you might insert a little bit of code that tests if the class is working correctly. For example, try to get words of length 8 and see if the result seems reasonable. Start Python *interactively* using:
+
+	python -i hangman.md
+
+which will load your hangman program, and then at the Python prompt you can enter test commands:
 
 	lex = Lexicon()
 	words = lex.get_words(8)
@@ -113,7 +117,7 @@ Below the `Lexicon` class, you might insert a little bit of code that tests if t
 	print(words.pop())
 	print(words.pop())
 
-Is the number of words reasonable? Are each of the three random words actually 8 letters long? To add to this, in the description above, you can find some oddities that you might verify, too (e.g. how many words are there of length 27?).
+Now check if everything is in order. Is the number of words reasonable? Are each of the three random words actually 8 letters long? To add to this, in the description above, you can find some oddities that you might verify, too (e.g. how many words are there of length 27?).
 
 ### 3. The `Hangman` class
 
@@ -135,7 +139,7 @@ And purely for testing purposed, we would like to implement the `__str__` method
 
 It's up to you to think about how you want to partition words into word families. Think about what data structures would be best for tracking word families and the master word list. Would an associative array work? How about a stack or queue? Thinking through the design before you start coding will save you a lot of time and headache.
 
-Don't explicitly enumerate word families. If you are working with a word of length n, then there are 2n possible word families for each letter. However, most of these families don't actually appear in the English language. For example, no English words contain three consecutive U's, and no word matches the pattern E-EE-EE--E. Rather than explicitly generating every word family whenever the user enters a guess, see if you can generate word families only for words that actually appear in the word list. One way to do this would be to scan over the word list, storing each word in a table mapping word families to words in that family.
+Don't explicitly enumerate word families. If you are working with a word of length n, then there are 2n possible word families for each letter. However, most of these families don't actually appear in the English language. For example, no English words contain three consecutive U's, and no word matches the pattern `E-EE-EE--E`. Rather than explicitly generating every word family whenever the user enters a guess, see if you can generate word families only for words that actually appear in the word list. One way to do this would be to scan over the word list, storing each word in a table mapping word families to words in that family.
 
 
 ### 4. Testing the `Hangman` game
