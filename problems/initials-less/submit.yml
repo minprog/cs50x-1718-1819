@@ -1,7 +1,0 @@
-name: initials_less
-files:
-    required:
-        - initials.c
-check:
-    tool: check50v2
-    slug: initials/less@minprog/checks

@@ -1,5 +1,5 @@
 = Lecture 1 - C
 
-video::wEdvGqxafq8[youtube,height=540,width=960,options=notitle]
+video::3K4jWlpR4iY[youtube,height=540,width=960,options=notitle]
 
-Lecture notes can be found link:https://cs50.harvard.edu/college/weeks/1/notes/[here].
+Lecture notes can be found link:http://docs.cs50.net/2017/fall/notes/1/lecture1.html[here].

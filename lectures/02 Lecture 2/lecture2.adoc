@@ -1,5 +1,5 @@
 = Lecture 2 - Arrays
 
-video::u-kH-5JJSgU[youtube,height=540,width=960,options=notitle]
+video::IJNPHorTqQs[youtube,height=540,width=960,options=notitle]
 
-Lecture notes can be found link:https://cs50.harvard.edu/college/weeks/2/notes/[here].
+Lecture notes can be found link:http://docs.cs50.net/2017/fall/notes/2/lecture2.html[here].

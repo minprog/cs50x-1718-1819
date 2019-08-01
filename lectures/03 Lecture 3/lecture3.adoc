@@ -1,5 +1,5 @@
 = Lecture 3 - Memory
 
-video::cC9I3XxkZXw[youtube,height=540,width=960,options=notitle]
+video::U9o49qwa6hk[youtube,height=540,width=960,options=notitle]
 
-Lecture notes can be found link:https://cs50.harvard.edu/college/weeks/3/notes/[here].
+Lecture notes can be found link:http://docs.cs50.net/2017/fall/notes/3/lecture3.html[here].
