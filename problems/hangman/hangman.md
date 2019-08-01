@@ -1,5 +1,8 @@
 # Hangman
 
+> NOTE: check if lecture 6 from 2017 (classes for structs) is better than 2018 (dictionaries for structs)
+
+
 It's hard to write computer programs to play games. When we as humans sit down to play a game, we can draw on past experience, adapt to our opponents' strategies, and learn from our mistakes. Computers, on the other hand, blindly follow a preset algorithm that (hopefully) causes it to act somewhat intelligently. Though computers have bested their human masters in some games, most notably checkers and chess, the programs that do so often draw on hundreds of years of human game experience and use extraordinarily complex algorithms and optimizations to outcalculate their opponents.
 
 While there are many viable strategies for building competitive computer game players, there is one approach that has been fairly neglected in modern research --- cheating. Why spend all the effort trying to teach a computer the nuances of strategy when you can simply write a program to play dirty and win handily all the time? In this assignment, you will build a mischievous program that bends the rules of Hangman to trounce its human opponent time and time again. In doing so, you'll cement your skills with abstract data types and iterators, and will hone your general programming savvy. Plus, you'll end up with a piece of software which will be highly entertaining. At least, from your perspective.
@@ -188,7 +191,7 @@ There are several other places in which the algorithm does not function ideally.
 After you implement this assignment, take some time to think over possible improvements to the algorithm. You might weight the word families using some metric other than size. You might consider
 having the computer “look ahead” a step or two by considering what actions it might take in the future.
 
-* If you implement something interesting, feel free to include it with your solution... I'd love to see what you've cooked up!
+If you implement something interesting, make sure to document your `partition` method well by describing your changes in detail!
 
 ## Submitting
 
