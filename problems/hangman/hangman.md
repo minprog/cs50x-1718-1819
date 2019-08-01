@@ -122,12 +122,38 @@ Is the number of words reasonable? Are each of the three random words actually 8
 
 ### 3. The `Hangman` class
 
+As much as possible, we would like to gather all game "logic" into a single class called `Hangman`. We should be able to create a new game simply by instantiating the class (e.g. `game = Hangman(8)` for a new game using 8-letter words).
 
+After instantiating a new game, the resulting object should be able to respond to the following actions:
 
-### 4. Testing the game
+- guessing a letter
+- checking if the game has been won
 
+To fully implement the game, the object should take care of tracking:
+
+- guessed letters up until now
+- the set of currently remaining words
+
+And purely for testing purposed, we would like to implement the `__str__` method, which allows us to call `print(game)` and look at a couple of stats. The resulting print should look something like the following:
+
+	letters guessed are "aemnid", 201 words remaining, game not won
+
+### 4. Testing the `Hangman` game
+
+Let's test our game logic. We should be able to start a new game, and repeatedly guess letters. This is a perfect opportunity to use the `__str__` method, which gives us basics stats about the game --- which we use to verify its state.
+
+Again, test your game interactively by running `python -i hangman.md` and entering the following commands, or a variation thereof:
+
+	game = Hangman(8)
+	game.guess("e")
+	print(game)
+	game.guess("b")
+	print(game)
 
 ### 5. Implementing user interaction
+
+input num of letters wanted
+...
 
 
 
