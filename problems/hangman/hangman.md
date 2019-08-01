@@ -102,6 +102,11 @@ So to implement this class, create a new python file called `hangman.py` and wri
 
 A method that you need to implement is `get_words(self, length)` which extracts from the master set of words a new set of words that are exactly of length `length`. To do this, you can use a *generator expression* which filters the existing set into a new one.
 
+> check50 tests:
+> 
+> - dictionary loads without error
+> - dictionary responds correctly to get_words(4) (number of words in response)
+
 ### 2. Testing the `Lexicon`
 
 Below the `Lexicon` class, you might insert a little bit of code that tests if the class is working correctly. For example, try to get words of length 8 and see if the result seems reasonable. Start Python *interactively* using:
@@ -141,6 +146,12 @@ It's up to you to think about how you want to partition words into word families
 
 Don't explicitly enumerate word families. If you are working with a word of length n, then there are 2n possible word families for each letter. However, most of these families don't actually appear in the English language. For example, no English words contain three consecutive U's, and no word matches the pattern `E-EE-EE--E`. Rather than explicitly generating every word family whenever the user enters a guess, see if you can generate word families only for words that actually appear in the word list. One way to do this would be to scan over the word list, storing each word in a table mapping word families to words in that family.
 
+> check50 tests:
+> 
+> - hangman game starts without error for word length 4
+> - accepts guesses of e, a, n, u, z, l
+> - reports winning for combination of e, a, n, u, z, l
+> - does not report winning for combination of ...
 
 ### 4. Testing the `Hangman` game
 
