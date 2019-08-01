@@ -50,11 +50,11 @@ But what happens if your opponent guesses a letter that doesn't appear anywhere 
 
 There are two possible outcomes of this game. First, your opponent might be smart enough to pare the word list down to one word and then guess what that word is. In this case, you should congratulate her --- that's an impressive feat considering the scheming you were up to! Second, and by far the most common case, your opponent will be completely stumped and will run out of guesses. When this happens, you can pick any word you'd like from your list and say it's the word that you had chosen all along. The beauty of this setup is that your opponent will have no way of knowing that you were dodging guesses the whole time --- it looks like you simply picked an unusual word and stuck with it the whole way.
 
-## The Assignment
+## Specification
 
-Your assignment is to write a computer program which plays a game of Hangman using this “Evil Hangman” algorithm. In particular, your program should do the following:
+Your assignment is to write a computer program which plays a game of Hangman using this "Evil Hangman" algorithm. In particular, your program should do the following:
 
-1. Read the file dictionary.txt, which contains the full contents of the Official Scrabble Player's Dictionary, Second Edition. This word list has over 120,000 words, which should be more than enough for our purposes.
+1. Read the file `dictionary.txt`, which contains the full contents of the Official Scrabble Player's Dictionary, Second Edition. This word list has over 120,000 words, which should be more than enough for our purposes.
 
 2. Prompt the user for a word length, reprompting as necessary until she enters a number such that there's at least one word that's exactly that long. That is, if the user wants to play with words of length -42 or 137, since no English words are that long, you should reprompt her.
 
@@ -80,17 +80,12 @@ Your assignment is to write a computer program which plays a game of Hangman usi
 
 	   Ask if the user wants to play again and loop accordingly.
 
-6. It's up to you to think about how you want to partition words into word families. Think about what data structures would be best for tracking word families and the master word list. Would an associative array work? How about a stack or queue? Thinking through the design before you start coding will save you a lot of time and headache.
-
-## Advice, Tips, and Tricks
-
-Since you're building this project from scratch, you'll need to do a bit of planning to figure out what the best data structures are for the program. There is no “right way” to go about writing this program, but some design decisions are much better than others (e.g. you can store your word list in a stack or map, but this is probably not the best option). Here are some general tips and tricks that might be useful:
+Also, here are some general tips and tricks that might be useful:
 
 1. Letter position matters just as much as letter frequency. When computing word families, it's not enough to count the number of times a particular letter appears in a word; you also have to consider their positions. For example, “BEER” and “HERE” are in two different families even though they both have two E's in them. Consequently, representing word families as numbers representing the frequency of the letter in the word will get you into trouble.
 
 2. Watch out for gaps in the dictionary. When the user specifies a word length, you will need to check that there are indeed words of that length in the dictionary. You might initially assume that if the requested word length is less than the length of the longest word in the dictionary, there must be some word of that length. Unfortunately, the dictionary contains a few “gaps.” The longest word in the dictionary has length 29, but there are no words of length 27 or 26. Be sure to take this into account when checking if a word length is valid.
 
-3. Don't explicitly enumerate word families. If you are working with a word of length n, then there are 2n possible word families for each letter. However, most of these families don't actually appear in the English language. For example, no English words contain three consecutive U's, and no word matches the pattern E-EE-EE--E. Rather than explicitly generating every word family whenever the user enters a guess, see if you can generate word families only for words that actually appear in the word list. One way to do this would be to scan over the word list, storing each word in a table mapping word families to words in that family.
 
 ## Steps
 
@@ -138,6 +133,11 @@ And purely for testing purposed, we would like to implement the `__str__` method
 
 	letters guessed are "aemnid", 201 words remaining, game not won
 
+It's up to you to think about how you want to partition words into word families. Think about what data structures would be best for tracking word families and the master word list. Would an associative array work? How about a stack or queue? Thinking through the design before you start coding will save you a lot of time and headache.
+
+Don't explicitly enumerate word families. If you are working with a word of length n, then there are 2n possible word families for each letter. However, most of these families don't actually appear in the English language. For example, no English words contain three consecutive U's, and no word matches the pattern E-EE-EE--E. Rather than explicitly generating every word family whenever the user enters a guess, see if you can generate word families only for words that actually appear in the word list. One way to do this would be to scan over the word list, storing each word in a table mapping word families to words in that family.
+
+
 ### 4. Testing the `Hangman` game
 
 Let's test our game logic. We should be able to start a new game, and repeatedly guess letters. This is a perfect opportunity to use the `__str__` method, which gives us basics stats about the game --- which we use to verify its state.
@@ -155,7 +155,9 @@ Again, test your game interactively by running `python -i hangman.md` and enteri
 input num of letters wanted
 ...
 
+## Testing
 
+	check50 hangman@minprog/cs50
 
 
 ## Extensions
@@ -173,8 +175,6 @@ having the computer “look ahead” a step or two by considering what actions i
 
 * If you implement something interesting, feel free to include it with your solution... I'd love to see what you've cooked up!
 
-## Deliverables
+## Submitting
 
 To submit this assignment, you need to submit all of your source files, along with a short description of what you've written. If you've improved upon or modified the base algorithm in some way, this is your time to show off your extensions.
-
-Best of luck!
