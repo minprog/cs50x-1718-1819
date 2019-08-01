@@ -2,6 +2,21 @@
 
 > NOTE: check if lecture 6 from 2017 (classes for structs) is better than 2018 (dictionaries for structs)
 
+## tl;dr
+
+Implement a program that allows someone to play Evil Hangman against the computer.
+
+	$ python hangman.py
+	WELCOME TO EVIL HANGMAN >=)
+	I have a word in my mind of 8 letters.
+	Guess a letter: a
+	That's not in the word >=)
+	Guess a letter: n
+	It's in the word :(
+	_____N__
+	Guess a letter: ...
+
+## Background
 
 It's hard to write computer programs to play games. When we as humans sit down to play a game, we can draw on past experience, adapt to our opponents' strategies, and learn from our mistakes. Computers, on the other hand, blindly follow a preset algorithm that (hopefully) causes it to act somewhat intelligently. Though computers have bested their human masters in some games, most notably checkers and chess, the programs that do so often draw on hundreds of years of human game experience and use extraordinarily complex algorithms and optimizations to outcalculate their opponents.
 
