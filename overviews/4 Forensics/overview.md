@@ -38,19 +38,24 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 2. Figure out [whodunit](/problems/whodunit)
 
-3. Learn more about [Hexadecimal](https://www.youtube.com/embed/u_atXp-NF6w?autoplay=1&rel=0)
-
 4. Implement either of: [50%]
 
     - [Resize](/problems/resize-less), for those less comfortable
 
     - [Resize](/problems/resize-more), for those more comfortable
 
-5. Learn more about [Structures](https://www.youtube.com/embed/E4lb2gkyXr8?autoplay=1&rel=0)
-
 6. Implement [Recover](/problems/recover) [50%]
 
-7. Learn more about [Files and file pointers](https://www.youtube.com/embed/bOF-SpEAYgk?autoplay=1&rel=0)
+3. Learn more about [Functions](https://www.youtube.com/embed/n1glFqt3g38?autoplay=1&rel=0) and practice with the book chapter on *strings*, *arrays* and *functions*.
+
+
+## Reference
+
+- Learn more about [Hexadecimal](https://www.youtube.com/embed/u_atXp-NF6w?autoplay=1&rel=0)
+
+- Learn more about [Structures](https://www.youtube.com/embed/E4lb2gkyXr8?autoplay=1&rel=0)
+
+- Learn more about [Files and file pointers](https://www.youtube.com/embed/bOF-SpEAYgk?autoplay=1&rel=0)
 
 
 ## How to Submit

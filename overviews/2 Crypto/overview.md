@@ -52,7 +52,7 @@ Per [Lecture 2a](/lectures/lecture-2a):
 
     - [Crack](/problems/crack), for those more comfortable
 
-5. Learn more about [Arrays](https://www.youtube.com/embed/K1yC1xshF40?autoplay=1&rel=0), practice with book chapters 7, 8 and 9, and take the test.
+7. Learn more about [Conditionals](https://www.youtube.com/embed/1wsaV5nVC7g?autoplay=1&rel=0) and [Loops](https://www.youtube.com/embed/WgX8e_O7eG8?autoplay=1&rel=0), practice with book chapters 4, 5 and 6, and take the test
 
 
 ## Reference

@@ -49,8 +49,6 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 6. Learn more about [Data Types](https://www.youtube.com/embed/luDPUSmTcPc?autoplay=1&rel=0) and [Operators](https://www.youtube.com/embed/f1xZf4iJDWE?autoplay=1&rel=0), practice with book chapters 1, 2 and 3, and take the test.
 
-7. Learn more about [Conditionals](https://www.youtube.com/embed/1wsaV5nVC7g?autoplay=1&rel=0) and [Loops](https://www.youtube.com/embed/WgX8e_O7eG8?autoplay=1&rel=0), practice with book chapters 4, 5 and 6, and take the test
-
 
 ## How to Submit
 
