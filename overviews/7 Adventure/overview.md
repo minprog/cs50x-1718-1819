@@ -23,8 +23,8 @@ Alright, here we go again!
 Log into <https://cs50.io/> and execute the below in a terminal window.
 
     update50
-    mkdir ~/workspace/module9/
-    cd ~/workspace/module9s/
+    mkdir ~/workspace/pset7/
+    cd ~/workspace/pset7/
 
 ## What to Do
 
@@ -41,6 +41,12 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
     - Optionally, intro to object-oriented programming in Python, [part 2](https://www.youtube.com/watch?v=wYYzteRKU7U)
 
 4. Implement [Adventure](/problems/adventure)
+
+
+## Reference
+
+- [Python](https://www.youtube.com/watch?v=mgBpcQRDtl0)
+
 
 ## How to Submit
 

@@ -14,9 +14,11 @@ For information on (or help with) this week:
 
 5. Visit (or e-mail) the course's heads.
 
+
 ## Academic Honesty
 
 Do keep in mind the course's policy on [academic honesty](/syllabus#academic_honesty) (like plagiarism), particularly its ["regret clause"](/syllabus#regret).
+
 
 ## Getting Started
 
@@ -25,20 +27,31 @@ Alright, here we go again!
 Log into <https://cs50.io/> and execute the below in a terminal window.
 
     update50
-    mkdir ~/workspace/pset8/
-    cd ~/workspace/pset8/
+    mkdir ~/workspace/pset9/
+    cd ~/workspace/pset9/
+
 
 ## What to Do
 
 1. Watch [Lecture 7](/lectures/lecture-7)
 
-4. Implement either of:
+2. Implement either of:
 
     - [Similarities](/problems/similarities-less), for those less comfortable
 
     - [Similarities](/problems/similarities-more), for those more comfortable
 
-4. Implement [Survey](/problems/survey)
+3. Implement [Survey](/problems/survey)
+
+
+## Reference
+
+- [Internet Primer](https://www.youtube.com/watch?v=04GztBlVo_s)
+- [HTML](https://www.youtube.com/watch?v=YK78KhMf7bs)
+- [CSS](https://www.youtube.com/watch?v=Ub3FKU21ubk)
+- [HTTP](https://www.youtube.com/watch?v=4axL8Gfw2nI)
+- [Flask](https://www.youtube.com/watch?v=X0dwkDh8kwA)
+
 
 ## How to Submit
 

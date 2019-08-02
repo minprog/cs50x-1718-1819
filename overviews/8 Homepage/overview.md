@@ -27,8 +27,8 @@ Alright, here we go again!
 
 Log into <https://ide.cs50.io/> and execute the below in a terminal window.
 
-    mkdir ~/workspace/pset5/
-    cd ~/workspace/pset5/
+    mkdir ~/workspace/pset8/
+    cd ~/workspace/pset8/
 
 
 ## What to Do
@@ -36,3 +36,10 @@ Log into <https://ide.cs50.io/> and execute the below in a terminal window.
 1. Watch [Lecture 5](/lectures/lecture-5)
 
 2. Implement [Homepage](/problems/homepage)
+
+
+## Reference
+
+- [Internet Primer](https://www.youtube.com/watch?v=04GztBlVo_s)
+- [HTML](https://www.youtube.com/watch?v=YK78KhMf7bs)
+- [CSS](https://www.youtube.com/watch?v=Ub3FKU21ubk)
