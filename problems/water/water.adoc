@@ -22,14 +22,14 @@ Suffice it to say that the longer you shower, the more water you use. But just h
 == Getting Started
 
 Log into <https://ide.cs50.io/> and execute the below in a terminal window.
-+
+
 [source, c]
 ----
 update50
 mkdir ~/workspace/pset1/
 cd ~/workspace/pset1/
 ----
-+
+
 Then, to start implementing this problem, create a new file called "water.c" and proceed below.
 
 == Steps
