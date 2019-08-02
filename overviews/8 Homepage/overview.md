@@ -33,7 +33,7 @@ Log into <https://ide.cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 5](/lectures/lecture-5)
+1. Watch [Lecture 6](/lectures/lecture-6)
 
 2. Implement [Homepage](/problems/homepage)
 

@@ -33,7 +33,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 7](/lectures/lecture-7)
+1. Watch [Lecture 8](/lectures/lecture-8)
 
 2. Implement either of:
 

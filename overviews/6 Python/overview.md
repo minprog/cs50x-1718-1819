@@ -33,7 +33,7 @@ Log into <https://ide.cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 6](/lectures/lecture-6)
+1. Watch [Lecture 7](/lectures/lecture-7)
 
 3. Implement [Sentimental](/problems/sentimental)
 
