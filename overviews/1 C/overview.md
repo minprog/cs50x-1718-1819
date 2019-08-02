@@ -33,6 +33,12 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 3. Implement [Water](/problems/water)
 
+5. Implement and submit either of: [50%]
+
+    - [Cash](/problems/cash), for most students
+
+    - [Credit](/problems/credit), for those more comfortable
+
 1. Watch [Lecture 2a](/lectures/lecture-2a)
 
 4. Implement and submit either of: [50%]
@@ -40,12 +46,6 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
     - [Mario](/problems/mario-less), for most students
 
     - [Mario](/problems/mario-more), for those more comfortable
-
-5. Implement and submit either of: [50%]
-
-    - [Cash](/problems/cash), for most students
-
-    - [Credit](/problems/credit), for those more comfortable
 
 6. Learn more about [Data Types](https://www.youtube.com/embed/luDPUSmTcPc?autoplay=1&rel=0) and [Operators](https://www.youtube.com/embed/f1xZf4iJDWE?autoplay=1&rel=0), practice with book chapters 1, 2 and 3, and take the test.
 
