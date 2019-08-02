@@ -53,12 +53,12 @@ Study this pseudocode; discuss the details. Do you understand every part? Do you
 
 ### 2. Basic implementation
 
-To get started implementing this algorithm, create a file called `greedy.c` and insert a standard `main` function. Atop that `main` insert the following variables:
+To get started implementing this algorithm, create a file called `greedy.c` and insert a standard `main` function. Within that `main` function, insert the following two lines, which create the variables that are needed for the algorithm:
 
 	int count = 0;
 	int amount = 32;
 
-Then you might implement the algorithm using the pseudocode above.
+After those two lines, you might implement the algorithm using the pseudocode above. Ask for help!
 
 ### 3. Testing
 
