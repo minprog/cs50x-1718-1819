@@ -1,11 +1,11 @@
-# Cash
+# Greedy
 
 ## tl;dr
 
 Implement a program that calculates the minimum number of coins required to give a user change.
 
 ~~~~
-$ ./cash
+$ ./greedy
 Change owed: 0.41
 4
 ~~~~
@@ -53,7 +53,7 @@ Study this pseudocode; discuss the details. Do you understand every part? Do you
 
 ### 2. Basic implementation
 
-To get started implementing this algorithm, create a file called `cash.c` and insert a standard `main` function. Atop that `main` insert the following variables:
+To get started implementing this algorithm, create a file called `greedy.c` and insert a standard `main` function. Atop that `main` insert the following variables:
 
 	int count = 0;
 	int amount = 32;
@@ -99,13 +99,13 @@ When (almost) finished implementing the algorithm, it's time to test your progra
 When finished, your program should behave per the example below.
 
 ~~~~
-$ ./cash
+$ ./greedy
 Change owed: 0.41
 4
 ~~~~
 
 ~~~~
-$ ./cash
+$ ./greedy
 Change owed: -0.41
 Change owed: -0.41
 Change owed: foo
@@ -120,13 +120,13 @@ Before submitting, we expect you to take care that your program is as well-polis
 ### Correctness
 
 ~~~~
-check50 cash@minprog/checks
+check50 greedy@minprog/checks
 ~~~~
 
 ### Style
 
 ~~~~
-style50 cash.c
+style50 greedy.c
 ~~~~
 
 
@@ -134,7 +134,7 @@ style50 cash.c
 
 1. When ready to submit, log into [CS50 IDE](https://ide.cs50.io/).
 
-2. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `cash.c` file (that's within your `pset1` directory) and then select **Download**. You should find that your browser has downloaded `cash.c`.
+2. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `greedy.c` file (that's within your `pset1` directory) and then select **Download**. You should find that your browser has downloaded `greedy.c`.
 
 3. Make sure you are signed in to this website!
 

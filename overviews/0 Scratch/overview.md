@@ -1,6 +1,6 @@
 # Module 0: Scratch
 
-In this module, you'll learn about the C programming language. It's a great language that has been used to make small and large programs alike. You will start with the small ones!
+In this module, you'll write your first program! It will be written in Scratch, a fun language that makes a lot of complex things easy to do, like animating pictures on the screen.
 
 
 ## Help

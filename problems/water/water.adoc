@@ -19,11 +19,26 @@ Bottles: 120
 
 Suffice it to say that the longer you shower, the more water you use. But just how much? Even if you have a "low-flow" showerhead, odds are your shower spits out 1.5 gallons of water per minute. A gallon, meanwhile, is 128 ounces, and so that shower spits out 1.5 × 128 = 192 ounces of water per minute. A typical bottle of water (that you might have for a drink, not a shower), meanwhile, might be 16 ounces. So taking a 1-minute shower is akin to using 192 ÷ 16 = 12 bottles of water. Taking (more realistically, perhaps!) a 10-minute shower, then, is like using 120 bottles of water. Deer Park, that's a lot of water! Of course, bottled water itself is wasteful; best to use reusable containers when you can. But it does put into perspective what's being spent in a shower!
 
+== Getting Started
+
+Log into <https://ide.cs50.io/> and execute the below in a terminal window.
++
+[source, c]
+----
+update50
+mkdir ~/workspace/pset1/
+cd ~/workspace/pset1/
+----
++
+Then, to start implementing this problem, create a new file called "water.c" and proceed below.
+
 == Steps
 
 This problem looks quite a bit like the `ints.c` program from link:/lectures/lecture-1[lecture]. Study the examples atop this document and think about which parts of `ints.c` you might reuse in your solution. Then, create a file `water.c` and try to make it work.
 
 == Specification
+
+The specification, together with the examples of running the program, provides you with guidelines as to how your program should work _exactly_. Read them before starting, but more importantly, when you think you are finished, have another look and check if you haven't forgotten anything!
 
 * Write, in a file called `water.c` in your `~/workspace/pset1/` directory, a program that prompts the user for the length of his or her shower in minutes (as a positive integer) and then prints the equivalent number of bottles of water (as an integer)
 * For simplicity, you may assume that the user will input a positive integer, so no need for error-checking (or any loops) this time! And no need to worry about overflow!
