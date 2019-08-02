@@ -35,11 +35,13 @@ Log into <https://ide.cs50.io/> and execute the below in a terminal window.
 
 1. Watch [Lecture 6](/lectures/lecture-6)
 
-2. Implement [Sentimental](/problems/sentimental)
+2. Use Doug's [Python](https://www.youtube.com/watch?v=mgBpcQRDtl0) short for reference and:
 
-3. Implement [Bleep](/problems/bleep) [50%]
+	3. Implement [Sentimental](/problems/sentimental)
 
-4. Implement [Hangman](/problems/hangman) [50%]
+	4. Implement [Bleep](/problems/bleep) [50%]
+
+	5. Implement [Hangman](/problems/hangman) [50%]
 
 
 ## How to Submit
