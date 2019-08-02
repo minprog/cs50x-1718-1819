@@ -64,7 +64,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 - [Selection sort](https://www.youtube.com/embed/3hH8kTHFw2A?autoplay=1&rel=0)
 - [Bubble sort](https://www.youtube.com/embed/RT-hUXUWQ2I?autoplay=1&rel=0)
 - [Insertion sort](https://www.youtube.com/embed/kU9M51eKSX8?autoplay=1&rel=0)
-- [Merge sort](https://www.youtube.com/embed/yF3hMKmCk1A?autoplay=1&rel=0) interesting as a reference
+- [Merge sort](https://www.youtube.com/embed/yF3hMKmCk1A?autoplay=1&rel=0)
 - [Computational complexity](https://www.youtube.com/embed/YoZPTyGL2IQ?autoplay=1&rel=0)
 
 ## How to Submit

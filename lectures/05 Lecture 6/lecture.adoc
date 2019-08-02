@@ -1,4 +1,4 @@
-= Lecture 5 - HTTP, HTML, CSS
+= Lecture 6 - HTTP, HTML, CSS
 
 video::uEmF74eHRO8[youtube,height=540,width=960,options=notitle]
 

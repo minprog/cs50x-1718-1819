@@ -1,4 +1,4 @@
-= Lecture 6 - Python
+= Lecture 7 - Python
 
 Note: if you're hi-speed, you can skip the first 13 minutes because it's a recap of web programming that you haven't learned yet :-)
 

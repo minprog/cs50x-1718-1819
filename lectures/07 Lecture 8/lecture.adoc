@@ -1,4 +1,4 @@
-= Lecture 7 - Web Programming
+= Lecture 8 - Web Programming
 
 video::zzDUnnj2p8I[youtube,height=540,width=960,options=notitle]
 

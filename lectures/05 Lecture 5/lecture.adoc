@@ -1,0 +1,5 @@
+= Lecture 5 - Data Structures
+
+video::ed2lnJNf7HU[youtube,height=540,width=960,options=notitle]
+
+Lecture notes can be found link:https://cs50.harvard.edu/college/weeks/4/notes/[here].
