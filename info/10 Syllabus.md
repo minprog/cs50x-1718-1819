@@ -45,11 +45,10 @@ The final grade for this course is primarily determined by averaging the scores 
 
 | Problem Set   | Language     | Weight |  
 | ------------- | ------------ | -----: |  
-| Homepage      | HTML         |     0% |  
 | Python        | Python       |    25% |  
+| Adventure     | Python       |    50% |  
+| Homepage      | HTML         |     0% |  
 | Web           | HTML, Python |    25% |  
-| Hangman       | Python       |    25% |  
-| Adventure     | Python       |    25% |  
 
 Know that this course draws quite the spectrum of students, including "those
 less comfortable", "those more comfortable", and those somewhere in between.
