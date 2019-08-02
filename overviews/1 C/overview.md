@@ -35,7 +35,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 5. Implement and submit either of: [50%]
 
-    - [Cash](/problems/cash), for most students
+    - [Greedy](/problems/greedy), for most students
 
     - [Credit](/problems/credit), for those more comfortable
 
