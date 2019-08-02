@@ -1,5 +1,5 @@
 = Lecture 2b - Arrays
 
-<iframe src="https://player.vimeo.com/video/351604518" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+video::351604518[vimeo,height=540,width=960,options=notitle]
 
 Lecture notes can be found link:http://docs.cs50.net/2017/fall/notes/2/lecture2.html[here].
