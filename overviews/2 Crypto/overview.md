@@ -34,8 +34,6 @@ Per [Lecture 2](/lectures/lecture-2):
 
 ## What to Do
 
-1. Watch [Lecture 2](/lectures/lecture-2)
-
 2. Implement either of:
 
     - [Initials](/problems/initials-less), for most students

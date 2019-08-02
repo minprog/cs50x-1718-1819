@@ -33,6 +33,8 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 3. Implement [Water](/problems/water)
 
+1. Watch [Lecture 2](/lectures/lecture-2)
+
 4. Implement and submit either of: [50%]
 
     - [Mario](/problems/mario-less), for most students

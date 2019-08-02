@@ -37,7 +37,9 @@ Log into <https://ide.cs50.io/> and execute the below in a terminal window.
 
 2. Implement [Sentimental](/problems/sentimental)
 
-3. Implement [Bleep](/problems/bleep) [100%]
+3. Implement [Bleep](/problems/bleep) [50%]
+
+4. Implement [Hangman](/problems/hangman) [50%]
 
 
 ## How to Submit
