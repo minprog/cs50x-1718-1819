@@ -1,0 +1,5 @@
+= Lecture 2a - Tools
+
+<iframe src="https://player.vimeo.com/video/351604172" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+Lecture notes can be found link:http://docs.cs50.net/2017/fall/notes/2/lecture2.html[here].

@@ -1,5 +1,0 @@
-= Lecture 2 - Arrays
-
-video::IJNPHorTqQs[youtube,height=540,width=960,options=notitle]
-
-Lecture notes can be found link:http://docs.cs50.net/2017/fall/notes/2/lecture2.html[here].
