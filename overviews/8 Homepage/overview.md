@@ -1,4 +1,4 @@
-# Module 6: Homepage
+# Module 8: Homepage
 
 In this module, you'll learn about the web. You'll have the opportunity to build a nice website for yourself or about whatever topic you like.
 
