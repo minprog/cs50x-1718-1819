@@ -46,19 +46,22 @@ Per [Lecture 2](/lectures/lecture-2):
 
     - [Caesar](/problems/caesar)
 
-4. Learn more about [Debugging](https://www.youtube.com/embed/w4TAY2HPLEg?autoplay=1&rel=0)
-
-5. Learn more about cleaning up your code from [Magic numbers](https://www.youtube.com/embed/vK_naJkrtjc?autoplay=1&rel=0)
-
-6. Implement either of: [50%]
+4. Implement either of: [50%]
 
     - [Vigenere](/problems/vigenere), for most students
 
     - [Crack](/problems/crack), for those more comfortable
 
-7. Learn more about [Variables and scope](https://www.youtube.com/embed/GiFbdVGjF9I?autoplay=1&rel=0) and [Command line arguments](https://www.youtube.com/embed/GiFbdVGjF9I?autoplay=1&rel=0).
+5. Learn more about [Arrays](https://www.youtube.com/embed/K1yC1xshF40?autoplay=1&rel=0), practice with book chapters 7, 8 and 9, and take the test.
 
-8. Learn more about [Arrays](https://www.youtube.com/embed/K1yC1xshF40?autoplay=1&rel=0), practice with book chapters 7, 8 and 9, and take the test.
+
+## Reference
+
+- Learn more about [Debugging](https://www.youtube.com/embed/w4TAY2HPLEg?autoplay=1&rel=0)
+
+- Learn more about cleaning up your code from [Magic numbers](https://www.youtube.com/embed/vK_naJkrtjc?autoplay=1&rel=0)
+
+- Learn more about [Variables and scope](https://www.youtube.com/embed/GiFbdVGjF9I?autoplay=1&rel=0) and [Command line arguments](https://www.youtube.com/embed/GiFbdVGjF9I?autoplay=1&rel=0).
 
 
 ## How to Submit
