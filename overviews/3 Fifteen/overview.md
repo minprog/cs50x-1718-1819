@@ -21,7 +21,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## Reminders
 
-Per [Lecture 2](/lectures/lecture-2):
+Per [Lecture 2a](/lectures/lecture-2a):
 
 * Use `help50` as needed.
 
@@ -41,7 +41,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 2](/lectures/lecture-2), from the previous module
+1. Watch [Lecture 3](/lectures/lecture-3)
 
 2. Practice with the book chapter on *strings*, *arrays* and *functions*.
 
@@ -55,10 +55,17 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
     - [Find](/problems/find-more), for those more comfortable
 
-6. You might find [Algorithms](https://www.youtube.com/embed/ktWL3nN38ZA?autoplay=1&rel=0), [Linear search](https://www.youtube.com/embed/TwsgCHYmbbA?autoplay=1&rel=0), [Binary search](https://www.youtube.com/embed/T98PIp4omUA?autoplay=1&rel=0), [Selection sort](https://www.youtube.com/embed/3hH8kTHFw2A?autoplay=1&rel=0), [Bubble sort](https://www.youtube.com/embed/RT-hUXUWQ2I?autoplay=1&rel=0), [Insertion sort](https://www.youtube.com/embed/kU9M51eKSX8?autoplay=1&rel=0), [Merge sort](https://www.youtube.com/embed/yF3hMKmCk1A?autoplay=1&rel=0) interesting as a reference.
 
-7. [Computational complexity](https://www.youtube.com/embed/YoZPTyGL2IQ?autoplay=1&rel=0)
+## Reference
 
+- [Algorithms](https://www.youtube.com/embed/ktWL3nN38ZA?autoplay=1&rel=0)
+- [Linear search](https://www.youtube.com/embed/TwsgCHYmbbA?autoplay=1&rel=0)
+- [Binary search](https://www.youtube.com/embed/T98PIp4omUA?autoplay=1&rel=0)
+- [Selection sort](https://www.youtube.com/embed/3hH8kTHFw2A?autoplay=1&rel=0)
+- [Bubble sort](https://www.youtube.com/embed/RT-hUXUWQ2I?autoplay=1&rel=0)
+- [Insertion sort](https://www.youtube.com/embed/kU9M51eKSX8?autoplay=1&rel=0)
+- [Merge sort](https://www.youtube.com/embed/yF3hMKmCk1A?autoplay=1&rel=0) interesting as a reference
+- [Computational complexity](https://www.youtube.com/embed/YoZPTyGL2IQ?autoplay=1&rel=0)
 
 ## How to Submit
 

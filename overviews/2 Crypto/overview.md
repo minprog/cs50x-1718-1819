@@ -23,7 +23,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## Reminders
 
-Per [Lecture 2](/lectures/lecture-2):
+Per [Lecture 2a](/lectures/lecture-2a):
 
 * Use `help50` as needed.
 
