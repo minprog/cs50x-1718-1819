@@ -57,8 +57,8 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 Study and take the test on Thursday:
 
-- [Unscratch](/exercises/unscratch)
 - [Variables](/exercises/variables)
+- [Control Flow](/exercises/control-flow)
 
 
 ## How to Submit
