@@ -31,6 +31,10 @@ image:pyramids.png[Super Mario Brothers, width="50%"]
 * Then, generate (with the help of `printf` and one or more loops) the desired half-pyramids.
 * Take care to left-align the bottom-left corner of the left-hand half-pyramid with the left-hand edge of your terminal window.
 
+== Hints
+
+Try to establish a relationship between (a) the height the user would like the pyramid to be, (b) what row is currently being printed, and (c) how many spaces and how many hashes are in that row. Once you establish the formula, you can translate that to C!
+
 == Walkthrough
 
 video::xX7DQGkEG48[youtube]
@@ -95,7 +99,3 @@ check50 mario/more@minprog/checks
 ----
 style50 mario.c
 ----
-
-== Hints
-
-Try to establish a relationship between (a) the height the user would like the pyramid to be, (b) what row is currently being printed, and (c) how many spaces and how many hashes are in that row. Once you establish the formula, you can translate that to C!

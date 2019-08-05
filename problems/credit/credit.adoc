@@ -59,6 +59,15 @@ So, validating credit card numbers isn't hard, but it does get a bit tedious by 
 * For simplicity, you may assume that the user's input will be entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card).
 * Do not assume that the user's input will fit in an `int`! Best to use `get_long_long` from CS50's library to get users' input. (Why?)
 
+
+== Hints
+
+Test out your program with a whole bunch of inputs, both valid and invalid. (We certainly will!) Here are a few card numbers that PayPal recommends for testing:
+
+https://developer.paypal.com/docs/classic/payflow/payflow-pro/payflow-pro-testing/#credit-card-numbers-for-testing
+
+Google (or perhaps a roommate's wallet) should turn up more. (If your roommate asks what you're doing, don't mention us.) If your program behaves incorrectly on some inputs (or doesn't compile at all), time to debug!
+
 == Walkthrough
 
 video::06wNhN54P6k[youtube]
@@ -105,11 +114,3 @@ check50 credit@minprog/checks
 ----
 style50 credit.c
 ----
-
-== Hints
-
-Test out your program with a whole bunch of inputs, both valid and invalid. (We certainly will!) Here are a few card numbers that PayPal recommends for testing:
-
-https://developer.paypal.com/docs/classic/payflow/payflow-pro/payflow-pro-testing/#credit-card-numbers-for-testing
-
-Google (or perhaps a roommate's wallet) should turn up more. (If your roommate asks what you're doing, don't mention us.) If your program behaves incorrectly on some inputs (or doesn't compile at all), time to debug!

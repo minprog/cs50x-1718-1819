@@ -43,6 +43,16 @@ The specification, together with the examples of running the program, provides y
 * Write, in a file called `water.c` in your `~/workspace/pset1/` directory, a program that prompts the user for the length of his or her shower in minutes (as a positive integer) and then prints the equivalent number of bottles of water (as an integer)
 * For simplicity, you may assume that the user will input a positive integer, so no need for error-checking (or any loops) this time! And no need to worry about overflow!
 
+== Hints
+
+* You can use the function `get_int` to prompt the user to input an integer value, as per the below:
++
+[source, c]
+----
+int minutes = get_int();
+----
++
+
 == Usage
 
 Your program should behave per the example below, assuming that the underlined text is what some user has typed.
@@ -62,13 +72,3 @@ To check whether your program is running well according to specifications, you m
 ----
 check50 water@minprog/checks
 ----
-
-== Hints
-
-* You can use the function `get_int` to prompt the user to input an integer value, as per the below:
-+
-[source, c]
-----
-int minutes = get_int();
-----
-+

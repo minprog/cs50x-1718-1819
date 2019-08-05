@@ -21,6 +21,8 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## What to Do
 
+### Preparation
+
 1. Watch [Lecture 1](/lectures/lecture-1)
 
 1. Create an account on [GitHub](https://github.com/join)
@@ -33,11 +35,15 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 3. Implement [Water](/problems/water)
 
+### Greedy
+
 5. Implement and submit either of: [50%]
 
     - [Greedy](/problems/greedy), for most students
 
     - [Credit](/problems/credit), for those more comfortable
+
+### Mario
 
 1. Watch [Lecture 2a](/lectures/lecture-2a)
 
@@ -47,7 +53,12 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
     - [Mario](/problems/mario-more), for those more comfortable
 
-6. Learn more about [Data Types](https://www.youtube.com/embed/luDPUSmTcPc?autoplay=1&rel=0) and [Operators](https://www.youtube.com/embed/f1xZf4iJDWE?autoplay=1&rel=0), practice with book chapters 1, 2 and 3, and take the test.
+### Exercises
+
+Study and take the test on Thursday:
+
+- [Unscratch](/exercises/unscratch)
+- [Variables](/exercises/variables)
 
 
 ## How to Submit
