@@ -3,10 +3,11 @@ Parttime:
         Watch lecture 0: /lectures/lecture-0
         Implement Scratch: /overviews/scratch
     Module 1:
-        Preparation:
+        First steps:
             Watch Lecture 1: /lectures/lecture-1
             Create a GitHub account: https://github.com/join
             Implement Hello: https://lab.cs50.io/cs50/labs/2019/x/hello/
+        IDE:
             Create a CS50 IDE: https://ide.cs50.io/
             Learn about the Terminal: https://www.youtube.com/embed/BnJ013X02b8?autoplay=1&rel=0
             Implement Water: /problems/water
