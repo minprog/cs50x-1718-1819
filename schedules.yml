@@ -14,7 +14,7 @@ Parttime:
         Greedy:
             "Implement either of:":
                 Greedy: /problems/greedy
-                Credit: /problems/credit (very hard)
+                Credit (very hard): /problems/credit
         Mario:
             Watch Lecture 2a: /lectures/lecture-2a
             "Implement either of:":
@@ -55,7 +55,7 @@ Fulltime:
         Greedy:
             "Implement either of:":
                 Greedy: /problems/greedy
-                Credit: /problems/credit (very hard)
+                Credit (very hard): /problems/credit
         Mario:
             Watch Lecture 2a: /lectures/lecture-2a
             "Implement either of:":
