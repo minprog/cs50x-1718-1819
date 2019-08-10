@@ -22,7 +22,7 @@ keywords:
 *   In binary, with just two digits, we have powers of two for each place value:
 
     <pre>4 2 1
-    <b>0 0 0<b>
+    <b>0 0 0</b>
     </pre>
 
     *   This would still be equal to 0.
