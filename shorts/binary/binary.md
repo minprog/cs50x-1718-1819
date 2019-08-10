@@ -5,4 +5,4 @@ keywords:
   - binary
 ---
 
-![embed](https://www.youtube.com/watch?v=hacBFrgtQjQ)
+![embed](https://www.youtube.com/embed/hacBFrgtQjQ)

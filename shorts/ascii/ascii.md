@@ -6,4 +6,4 @@ keywords:
   - ASCII
 ---
 
-![embed](https://www.youtube.com/watch?v=UPlR4eMMCmI)
+![embed](https://www.youtube.com/embed/UPlR4eMMCmI)
