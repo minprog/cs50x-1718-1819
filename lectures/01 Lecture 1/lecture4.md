@@ -10,7 +10,7 @@ keywords:
 
 * Last time, we also created a nested set of conditions in Scratch:
 
-	![Nested conditions](conditions.png)
+	![Nested conditions](conditions.png){:.s50}
 
 * In C, the equivalent code will look like this:
 
