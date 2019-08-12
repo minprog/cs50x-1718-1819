@@ -1,8 +1,10 @@
 Parttime:
     Module 0:
+        Introduction: /overviews/scratch
         Watch lecture 0: /lectures/lecture-0
-        Implement Scratch: /overviews/scratch
+        Implement Scratch: /problems/scratch
     Module 1:
+        Introduction: /overviews/c
         First steps:
             Watch Lecture 1: /lectures/lecture-1
             Create a GitHub account: https://github.com/join
