@@ -8,7 +8,7 @@
 
 * The `say` block in Scratch is a function, which the equivalent in C is the following:
 
-      printf("hello,  world\n");
+		printf("hello,  world\n");
 
 	* Notice that the function itself is called `printf`, and that the arguments, or parameters, to the function are wrapped inside symmetrical parentheses, `(` and `)`.
 
@@ -33,19 +33,19 @@
 
 * A `forever` block can be translated to C like this:
 
-	while (true)
-	{
-	    printf("hello, world\n");
-	}
+		while (true)
+		{
+		    printf("hello, world\n");
+		}
 
 	* The `while` keyword means that the loop will run as long as the Boolean expression inside the parentheses is true. And since `true` will always be true, the loop will run forever.
 
 * To `repeat` something a certain number of times, we can use this:
 
-	for (int i = 0; i < 50; i++)
-	{
-	    printf("hello, world\n");
-	}
+		for (int i = 0; i < 50; i++)
+		{
+		    printf("hello, world\n");
+		}
 
 	* This is a little harder to figure out, but we can go through step by step. `for` is another keyword in C that indicates a loop.
 	
@@ -61,18 +61,18 @@
 
 * In C, the equivalent code will look like this:
 
-	if (x < y)
-	{
-	    printf("x is less than y\n");
-	}
-	else if (x > y)
-	{
-	    printf("x is greater than y\n");
-	}
-	else
-	{
-	    printf("x is equal to y\n");
-	}
+		if (x < y)
+		{
+		    printf("x is less than y\n");
+		}
+		else if (x > y)
+		{
+		    printf("x is greater than y\n");
+		}
+		else
+		{
+		    printf("x is equal to y\n");
+		}
 
 	* In our code, we assume that `x` and `y` have already been initialized or set to some other values beforehand.
 
@@ -151,13 +151,13 @@
 
 * We'll test out `get_string` with the following program:
 
-	#include <stdio.h>
+		#include <stdio.h>
 
-	int main(void)
-	{
-	    string s = get_string("Name: ");
-	    printf("hello, %s\n", s);
-	}
+		int main(void)
+		{
+		    string s = get_string("Name: ");
+		    printf("hello, %s\n", s);
+		}
 
 	* On line 5, we are declaring, or creating, a new variable called `s`, of type `string`. And the value it will store is whatever `get_string` returns. Some functions like `printf` might not return any value, but other functions like `get_string` can. When we call `get_string`, we pass in `"Name: "` as an argument, so it knows what to prompt the user.
 
@@ -179,39 +179,39 @@
 
 	* We add it, and our program compiles and runs as we'd expect, with this final code:
 
-		#include <cs50.h>
-		#include <stdio.h>
+			#include <cs50.h>
+			#include <stdio.h>
 
-		int main(void)
-		{
-		    int i = get_int("Integer: ");
-		    printf("hello, %i\n", i);
-		}
+			int main(void)
+			{
+			    int i = get_int("Integer: ");
+			    printf("hello, %i\n", i);
+			}
 
 	* The `get_int` function prompts the user over and over, until it receives an integer.
 
 * Let's take a look at ![[ints.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/ints.c.src):
 
-	// Integer arithmetic
+		// Integer arithmetic
 
-	#include <cs50.h>
-	#include <stdio.h>
+		#include <cs50.h>
+		#include <stdio.h>
 
-	int main(void)
-	{
-	    // Prompt user for x
-	    int x = get_int("x: ");
+		int main(void)
+		{
+		    // Prompt user for x
+		    int x = get_int("x: ");
 
-	    // Prompt user for y
-	    int y = get_int("y: ");
+		    // Prompt user for y
+		    int y = get_int("y: ");
 
-	    // Perform arithmetic
-	    printf("%i plus %i is %i\n", x, y, x + y);
-	    printf("%i minus %i is %i\n", x, y, x - y);
-	    printf("%i times %i is %i\n", x, y, x * y);
-	    printf("%i divided by %i is %i\n", x, y, x / y);
-	    printf("remainder of %i divided by %i is %i\n", x, y, x % y);
-	}
+		    // Perform arithmetic
+		    printf("%i plus %i is %i\n", x, y, x + y);
+		    printf("%i minus %i is %i\n", x, y, x - y);
+		    printf("%i times %i is %i\n", x, y, x * y);
+		    printf("%i divided by %i is %i\n", x, y, x / y);
+		    printf("remainder of %i divided by %i is %i\n", x, y, x % y);
+		}
 
 	* The first line, started with `//`, is a comment. Comment lines don't do anything, but are notes for future programmers.
 
@@ -225,22 +225,22 @@
 
 * We can fix this in ![[floats.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/floats.c.src), where we use variables of the type `float`, for floating-point arithmetic:
 
-	// Floating-point arithmetic
+		// Floating-point arithmetic
 
-	#include <cs50.h>
-	#include <stdio.h>
+		#include <cs50.h>
+		#include <stdio.h>
 
-	int main(void)
-	{
-	    // Prompt user for x
-	    float x = get_float("x: ");
+		int main(void)
+		{
+		    // Prompt user for x
+		    float x = get_float("x: ");
 
-	    // Prompt user for y
-	    float y = get_float("y: ");
+		    // Prompt user for y
+		    float y = get_float("y: ");
 
-	    // Perform division
-	    printf("%f divided by %f is %f\n", x, y, x / y);
-	}
+		    // Perform division
+		    printf("%f divided by %f is %f\n", x, y, x / y);
+		}
 
 	* Notice that we use `%f` instead of `%i`, to indicate that a float should be substituted in.
 
@@ -250,58 +250,58 @@
 
 * Let's look at how we can use conditions:
 
-	// Conditions and relational operators
+		// Conditions and relational operators
 
-	#include <cs50.h>
-	#include <stdio.h>
+		#include <cs50.h>
+		#include <stdio.h>
 
-	int main(void)
-	{
-	    // Prompt user for x
-	    int x = get_int("x: ");
+		int main(void)
+		{
+		    // Prompt user for x
+		    int x = get_int("x: ");
 
-	    // Prompt user for y
-	    int y = get_int("y: ");
+		    // Prompt user for y
+		    int y = get_int("y: ");
 
-	    // Compare x and y
-	    if (x < y)
-	    {
-	        printf("x is less than y\n");
-	    }
-	    else if (x > y)
-	    {
-	        printf("x is greater than y\n");
-	    }
-	    else
-	    {
-	        printf("x is equal to y\n");
-	    }
-	}
+		    // Compare x and y
+		    if (x < y)
+		    {
+		        printf("x is less than y\n");
+		    }
+		    else if (x > y)
+		    {
+		        printf("x is greater than y\n");
+		    }
+		    else
+		    {
+		        printf("x is equal to y\n");
+		    }
+		}
 
 	* All we did is what set up our program to use the example of conditions we say before.
 
 * Let's look at ![[noswitch.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/noswitch.c.src):
 
-	#include <cs50.h>
-	#include <stdio.h>
+		#include <cs50.h>
+		#include <stdio.h>
 
-	int main(void)
-	{
-	    char c = get_char("Answer: ");
+		int main(void)
+		{
+		    char c = get_char("Answer: ");
 
-	    if (c == 'Y' || c == 'y')
-	    {
-	        printf("yes\n");
-	    }
-	    else if (c == 'N' || c == 'n')
-	    {
-	        printf("no\n");
-	    }
-	    else
-	    {
-	        printf("error\n");
-	    }
-	}
+		    if (c == 'Y' || c == 'y')
+		    {
+		        printf("yes\n");
+		    }
+		    else if (c == 'N' || c == 'n')
+		    {
+		        printf("no\n");
+		    }
+		    else
+		    {
+		        printf("error\n");
+		    }
+		}
 
 	* We get a character `c`, and compare it to either `Y` or `y`, or `N` or `n`. We use `==` for a comparison, since a single `=` assigns a value. And C uses `||` to represent a logical *or*, where only one of the expressions need to be true for that condition to be followed and `&&` for *and*, where both expressions must be true.
 
@@ -311,29 +311,29 @@
 
 * Let's look at another way to implement this program:
 
-	// switch
+		// switch
 
-	#include <cs50.h>
-	#include <stdio.h>
+		#include <cs50.h>
+		#include <stdio.h>
 
-	int main(void)
-	{
-	    // Prompt user for answer
-	    char c = get_char("Answer: ");
+		int main(void)
+		{
+		    // Prompt user for answer
+		    char c = get_char("Answer: ");
 
-	    // Check answer
-	    switch (c)
-	    {
-	        case 'Y':
-	        case 'y':
-	            printf("yes\n");
-	            break;
-	        case 'N':
-	        case 'n':
-	            printf("no\n");
-	            break;
-	    }
-	}
+		    // Check answer
+		    switch (c)
+		    {
+		        case 'Y':
+		        case 'y':
+		            printf("yes\n");
+		            break;
+		        case 'N':
+		        case 'n':
+		            printf("no\n");
+		            break;
+		    }
+		}
 
 	* A *switch* is another construct in C where the value of a variable is compared to various cases, and the indented code beneath a matching case will be executed.
 
@@ -341,24 +341,24 @@
 
 * Let's write our own function that returns a value:
 
-	// Return value
+		// Return value
 
-	#include <cs50.h>
-	#include <stdio.h>
+		#include <cs50.h>
+		#include <stdio.h>
 
-	int square(int n);
+		int square(int n);
 
-	int main(void)
-	{
-	    int x = get_int("x: ");
-	    printf("%i\n", square(x));
-	}
+		int main(void)
+		{
+		    int x = get_int("x: ");
+		    printf("%i\n", square(x));
+		}
 
-	// Return square of n
-	int square(int n)
-	{
-	    return n * n;
-	}
+		// Return square of n
+		int square(int n)
+		{
+		    return n * n;
+		}
 
 	* Line 5 declares the prototype, or definition, of a function we will write, called `square`. The `int` before `square` indicate that `square` will return an `int`, and `int n` inside the parentheses indicate that `square` takes in an `int` that it will refer to as `n`. We need a prototype because our compiler for C reads in files from top to bottom, and the `main` function calls `square` before it's defined unless we have that line above it.
 
@@ -372,41 +372,41 @@
 
 * As a result, one problem we can run into is *integer overflow*. Imagine that we have a binary number with 8 bits:
 
-	1 1 1 1 1 1 1 0
+		1 1 1 1 1 1 1 0
 
 * If we added `1` to that, we'll get `1 1 1 1 1 1 1 1`, but what happens if we add another `1` to that? We'll start carrying over all the ``0``s to get `0 0 0 0 0 0 0 0`, but we don't have an extra bit to the left to actually store that larger value.
 
 * We can see this in a program, ![[overflow.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/overflow.c.src):
 
-	// Integer overflow
+		// Integer overflow
 
-	#include <stdio.h>
-	#include <unistd.h>
+		#include <stdio.h>
+		#include <unistd.h>
 
-	int main(void)
-	{
-	    // Iteratively double i
-	    for (int i = 1; ; i *= 2)
-	    {
-	        printf("%i\n", i);
-	        sleep(1);
-	    }
-	}
+		int main(void)
+		{
+		    // Iteratively double i
+		    for (int i = 1; ; i *= 2)
+		    {
+		        printf("%i\n", i);
+		        sleep(1);
+		    }
+		}
 
 * If we compile and run this, we see:
 
-	1
-	2
-	4
-	8
-	16
-	...
-	1073741824
-	overflow.c:9:25: runtime error: signed integer overflow: 1073741824 * 2 cannot be represented in type 'int'
-	-2147483648
-	0
-	0
-	...
+		1
+		2
+		4
+		8
+		16
+		...
+		1073741824
+		overflow.c:9:25: runtime error: signed integer overflow: 1073741824 * 2 cannot be represented in type 'int'
+		-2147483648
+		0
+		0
+		...
 
 	* We see that our program noticed an error, as we doubled `i` too many times for its value to fit into the bytes allocated for it.
 
@@ -414,12 +414,12 @@
 
 * Let's write a simple program to see this firsthand:
 
-	#include <stdio.h>
+		#include <stdio.h>
 
-	int main(void)
-	{
-	    printf("%.55f\n", 1.0 / 10.0);
-	}
+		int main(void)
+		{
+		    printf("%.55f\n", 1.0 / 10.0);
+		}
 
 	* The new part, `%.55f`, just tells `printf` to print 55 digits after the decimal point.
 
