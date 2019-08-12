@@ -18,13 +18,13 @@
 
 * First, let's create a new file. We'll use `File > Save`, and call our new file `hello.c`:
 
-	![Saving in CS50 IDE](save.png)
+	![Saving in CS50 IDE](save.png){:.w400}
 
 	* Since we are going to write a program in C, we will end our file with the `.c` extension. And we'll only use lowercase, with underscores or hyphens instead of space, by convention.
 
 * We can type out our basic program, compile it, and run it:
 
-	![Compiling hello.c in CS50 IDE](hello.png)
+	![Compiling hello.c in CS50 IDE](hello.png){:.w400}
 
 	* Notice that the editor automatically makes our code colorful, or has syntax highlighting, to help us see patterns.
 
@@ -34,19 +34,19 @@
 
 * To run it, we can't just click on it. Instead, this program runs in a command-line environment, also known as the terminal. So we type `./a.out` to run it. `.` indicates the current directory:
 
-	![Running hello.c in CS50 IDE](running_hello.png)
+	![Running hello.c in CS50 IDE](running_hello.png){:.w300}
 
 * We see the output of our program, but the next line of our terminal prompt is on the same line. We needed to add `\n` in our source code, which is a special, escaped character that adds a new line to what we printed to the terminal.
 
 * Now we can save, compile, and run our program again. We can actually pass in command-line arguments to `clang`, or additional parameters that changes its behavior:
 
-	![clang -o in CS50 IDE](clang_o.png)
+	![clang -o in CS50 IDE](clang_o.png){:.w300}
 	
 	* Here, we are telling `clang` to name the output file `hello`.
 
 * There are other commands built into our environment that we can use:
 
-	![Commands in CS50 IDE](commands.png)
+	![Commands in CS50 IDE](commands.png){:.w400}
 	
 	* `ls` lists the files in the current directory, which we see in blue in the terminal screen above.
 
