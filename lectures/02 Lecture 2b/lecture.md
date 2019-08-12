@@ -67,9 +67,9 @@
 
 * Let's add this to our previous program:
 
-	#include <cs50.h>
-	#include <stdio.h>
-	#include <string.h>
+		#include <cs50.h>
+		#include <stdio.h>
+		#include <string.h>
 
 		int main(void)
 		{
@@ -84,9 +84,9 @@
 
 * Now, we can work with strings directly. For example, we can capitalize a string, letter by letter:
 
-	#include <cs50.h>
-	#include <stdio.h>
-	#include <string.h>
+		#include <cs50.h>
+		#include <stdio.h>
+		#include <string.h>
 
 		int main(void)
 		{
