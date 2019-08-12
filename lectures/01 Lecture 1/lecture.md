@@ -86,7 +86,7 @@
 
 * This conversion is done by software called a *compiler*. We'll set everyone up with the same environment, or the same platform.
 
-* This environment is the CS50 IDE (Integrated Development Environment), at ![[cs50.io](http://cs50.io). We can think of it as a web application, inside which we can write, compile, and run code:
+* This environment is the CS50 IDE (Integrated Development Environment), at ![cs50.io](http://cs50.io). We can think of it as a web application, inside which we can write, compile, and run code:
 
 	![CS50 IDE](cs50ide.png)
 
@@ -94,7 +94,7 @@
 
 	* Notice that we have a file browser to the left, where we can upload or download files from it, the code editor on the right, and the terminal at bottom right, into which we can type commands that our virtual environment will run.
 
-	* We'll have instructions to log in for ![[Problem Set 1](http://docs.cs50.net/2017/fall/psets/1/pset1.html), but for now, just follow along!
+	* We'll have instructions to log in for, but for now, just follow along!
 
 	* By default, we have a `~/workspace` folder where we can save files to.
 
@@ -190,7 +190,7 @@
 
 	* The `get_int` function prompts the user over and over, until it receives an integer.
 
-* Let's take a look at ![[ints.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/ints.c.src):
+* Let's take a look at ![ints.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/ints.c.src):
 
 		// Integer arithmetic
 
@@ -223,7 +223,7 @@
 
 * It turns out that integers discard anything after the decimal point, if we try to store some number with a decimal into it. In this case, `1 / 2` should be `0.5`, but the decimal part is thrown away, and all we're left with is `0`.
 
-* We can fix this in ![[floats.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/floats.c.src), where we use variables of the type `float`, for floating-point arithmetic:
+* We can fix this in ![floats.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/floats.c.src), where we use variables of the type `float`, for floating-point arithmetic:
 
 		// Floating-point arithmetic
 
@@ -280,7 +280,7 @@
 
 	* All we did is what set up our program to use the example of conditions we say before.
 
-* Let's look at ![[noswitch.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/noswitch.c.src):
+* Let's look at ![noswitch.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/noswitch.c.src):
 
 		#include <cs50.h>
 		#include <stdio.h>
@@ -376,7 +376,7 @@
 
 * If we added `1` to that, we'll get `1 1 1 1 1 1 1 1`, but what happens if we add another `1` to that? We'll start carrying over all the ``0``s to get `0 0 0 0 0 0 0 0`, but we don't have an extra bit to the left to actually store that larger value.
 
-* We can see this in a program, ![[overflow.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/overflow.c.src):
+* We can see this in a program, ![overflow.c](http://cdn.cs50.net/2017/fall/lectures/1/src1/overflow.c.src):
 
 		// Integer overflow
 
@@ -425,7 +425,7 @@
 
 * Now when we compile and run this, we get:
 
-	0.100000000000000000555111512312578...
+		0.100000000000000000555111512312578...
 
 * Remember that floats have a finite number of bits. But there are an infinite number of real numbers, so a computer has to round and represent some numbers inaccurately. So in this case, the closest approximation a computer can make to `0.1` is that number.
 
