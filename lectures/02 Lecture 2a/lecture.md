@@ -124,7 +124,7 @@
 
 	* In this case, `n` only exists within the `do` part of the loop, since it is initialized inside. To fix this, we need to make the following change:
 
-	![mario3 working](mario3_working.png)
+		![mario3 working](mario3_working.png)
 
 	* We can initialize `n` outside the do-while loop with no value, and it will be accessible inside the loop since the loop is within the scope of the `main` function (the curly braces that surround the initialization of `n`).
 

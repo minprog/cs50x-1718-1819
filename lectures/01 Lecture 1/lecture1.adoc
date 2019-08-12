@@ -1,5 +1,3 @@
-= Lecture 1 - C
+= Lecture 1
 
 video::3K4jWlpR4iY[youtube,height=540,width=960,options=notitle]
-
-Lecture notes can be found link:http://docs.cs50.net/2017/fall/notes/1/lecture1.html[here].
