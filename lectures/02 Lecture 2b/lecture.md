@@ -39,23 +39,23 @@
 
 * A TF in New Haven, Stelios, can store his name, character by character, in memory like so:
 
-	| S | t | e | l | i | o | s |
+		| S | t | e | l | i | o | s |
 
 * Indeed, a string is just an abstraction for a sequence of characters. Let's experiment with [`string0.c`](http://cdn.cs50.net/2017/fall/lectures/2/src2/string0.c.src):
 
-	#include <cs50.h>
-	#include <stdio.h>
-	#include <string.h>
+		#include <cs50.h>
+		#include <stdio.h>
+		#include <string.h>
 
-	int main(void)
-	{
-	    string s = get_string("input:  ");
-	    printf("output: ");
-	    for (int i = 0; i < strlen(s); i++)
-	    {
-	        printf("%c\n", s[i]);
-	    }
-	}
+		int main(void)
+		{
+		    string s = get_string("input:  ");
+		    printf("output: ");
+		    for (int i = 0; i < strlen(s); i++)
+		    {
+		        printf("%c\n", s[i]);
+		    }
+		}
 
 	* First, we start a `for` loop since we want to print each character of a string that's provided as input. The loop should end at the end of the string, so we can determine that with `strlen(s)`, a function that returns to us the length of the string.
 
@@ -71,14 +71,14 @@
 	#include <stdio.h>
 	#include <string.h>
 
-	int main(void)
-	{
-	    string s = get_string("Name: ");
-	    for (int i = 0; i < strlen(s); i++)
-	    {
-	        printf("%c %i\n", s[i], (int) s[i]);
-	    }
-	}
+		int main(void)
+		{
+		    string s = get_string("Name: ");
+		    for (int i = 0; i < strlen(s); i++)
+		    {
+		        printf("%c %i\n", s[i], (int) s[i]);
+		    }
+		}
 
 	* Notice that we are substituting `(int) s[i]` for the `%i` in the string we print out, and `(int)` typecasts the character at `s[i]` to an `int`.
 
@@ -88,23 +88,23 @@
 	#include <stdio.h>
 	#include <string.h>
 
-	int main(void)
-	{
-	    string s = get_string("before: ");
-	    printf("after:  ");
-	    for (int i = 0, n = strlen(s); i < n; i++)
-	    {
-	        if (s[i] >= 'a' && s[i] <= 'z')
-	        {
-	            printf("%c", s[i] - ('a' - 'A'));
-	        }
-	        else
-	        {
-	            printf("%c", s[i]);
-	        }
-	    }
-	    printf("\n");
-	}
+		int main(void)
+		{
+		    string s = get_string("before: ");
+		    printf("after:  ");
+		    for (int i = 0, n = strlen(s); i < n; i++)
+		    {
+		        if (s[i] >= 'a' && s[i] <= 'z')
+		        {
+		            printf("%c", s[i] - ('a' - 'A'));
+		        }
+		        else
+		        {
+		            printf("%c", s[i]);
+		        }
+		    }
+		    printf("\n");
+		}
 
 	* First, we notice that the `for` loop now initializes two variables, `i` and `n`, at the start. `n` is set to the length of `s`, and we can do this once at the beginning of the loop since we know the length won't change. Then, the loop won't need to compute the length of the string on each iteration when it compares `i` to `strlen`. Instead, it can just compare it to `n`, which we already saved.
 
@@ -112,28 +112,28 @@
 
 * It turns out, C has built-in functions that are really helpful for doing this:
 
-	#include <cs50.h>
-	#include <ctype.h>
-	#include <stdio.h>
-	#include <string.h>
+		#include <cs50.h>
+		#include <ctype.h>
+		#include <stdio.h>
+		#include <string.h>
 
-	int main(void)
-	{
-	    string s = get_string("before: ");
-	    printf("after:  ");
-	    for (int i = 0, n = strlen(s); i < n; i++)
-	    {
-	        if (islower(s[i]))
-	        {
-	            printf("%c", toupper(s[i]));
-	        }
-	        else
-	        {
-	            printf("%c", s[i]);
-	        }
-	    }
-	    printf("\n");
-	}
+		int main(void)
+		{
+		    string s = get_string("before: ");
+		    printf("after:  ");
+		    for (int i = 0, n = strlen(s); i < n; i++)
+		    {
+		        if (islower(s[i]))
+		        {
+		            printf("%c", toupper(s[i]));
+		        }
+		        else
+		        {
+		            printf("%c", s[i]);
+		        }
+		    }
+		    printf("\n");
+		}
 
 	* `islower` and `toupper` are functions from yet another library, `ctype.h,` that we can use to achieve the same effects as what we manually did earlier.
 
@@ -141,21 +141,21 @@
 
 * We can, by looking at the documentation, realize that `toupper` will work on any character and only convert it to uppercase if it's already lowercase, so we don't even need to make that check ourselves:
 
-	#include <cs50.h>
-	#include <ctype.h>
-	#include <stdio.h>
-	#include <string.h>
+		#include <cs50.h>
+		#include <ctype.h>
+		#include <stdio.h>
+		#include <string.h>
 
-	int main(void)
-	{
-	    string s = get_string("before: ");
-	    printf("after:  ");
-	    for (int i = 0, n = strlen(s); i < n; i++)
-	    {
-	        printf("%c", toupper(s[i]));
-	    }
-	    printf("\n");
-	}
+		int main(void)
+		{
+		    string s = get_string("before: ");
+		    printf("after:  ");
+		    for (int i = 0, n = strlen(s); i < n; i++)
+		    {
+		        printf("%c", toupper(s[i]));
+		    }
+		    printf("\n");
+		}
 
 * Now let's go in the other direction, and see if we can try to implement `strlen` ourselves.
 
@@ -173,19 +173,19 @@
 
 * Knowing that, we can write the following code:
 
-	#include <cs50.h>
-	#include <stdio.h>
+		#include <cs50.h>
+		#include <stdio.h>
 
-	int main(void)
-	{
-	    string s = get_string();
-	    int n = 0;
-	    while (s[n] != '\0')
-	    {
-	        n++;
-	    }
-	    printf("%i\n", n);
-	}
+		int main(void)
+		{
+		    string s = get_string();
+		    int n = 0;
+		    while (s[n] != '\0')
+		    {
+		        n++;
+		    }
+		    printf("%i\n", n);
+		}
 
 	* We create a variable `n` to store the length of our string, and check that the character at each index of `n` is not the null character, before we increment it.
 
@@ -201,20 +201,20 @@
 
 * We can try the following with [`argv0.c`](http://cdn.cs50.net/2017/fall/lectures/2/src2/argv0.c.src):
 
-	#include <cs50.h>
-	#include <stdio.h>
+		#include <cs50.h>
+		#include <stdio.h>
 
-	int main(int argc, string argv[])
-	{
-	    if (argc == 2)
-	    {
-	        printf("hello, %s\n", argv[1]);
-	    }
-	    else
-	    {
-	        printf("hello, world\n");
-	    }
-	}
+		int main(int argc, string argv[])
+		{
+		    if (argc == 2)
+		    {
+		        printf("hello, %s\n", argv[1]);
+		    }
+		    else
+		    {
+		        printf("hello, world\n");
+		    }
+		}
 
 	* Notice that `main` now takes in two arguments. The first, `argc`, is a count of how many arguments were passed in. The second, `argv`, is an array of strings, each of which are the arguments typed at the prompt.
 
