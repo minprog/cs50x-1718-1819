@@ -18,12 +18,12 @@
 
 * To make this a complete program, we can add the following:
 
-	#include <stdio.h>
+		#include <stdio.h>
 
-	int main(void)
-	{
-	    printf("hello, world\n");
-	}
+		int main(void)
+		{
+		    printf("hello, world\n");
+		}
 
 	* Just like how we need the `when green flag clicked` block in Scratch to start our program, our C program won't run unless we write a few lines to set it up.
 
