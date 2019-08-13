@@ -1,17 +1,17 @@
 # Module 0: Scratch
 
-In this module, you'll write your first program! It will be written in Scratch, a fun language that makes a lot of complex things easy to do, like animating pictures on the screen.
+In this module, you'll write your first program! You'll do this in Scratch, a fun language that makes a lot of complex things easy to do, like animating pictures on the screen.
 
 
 ## Help
 
 For information on (or help with) this module:
 
-2. Attend your TA's section meeting.
+1. Attend your TA's section meeting.
 
-3. Ask questions during office hours using the "Ask" tool on this website.
+2. Ask questions during office hours using the "Ask" tool on this website.
 
-4. Visit (or e-mail) the course's heads.
+3. Visit (or e-mail) the course's heads.
 {: start="0"}
 
 

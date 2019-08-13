@@ -1,17 +1,18 @@
 # Module 1: C
 
-In this module, you'll learn about the C programming language. It's a great language that has been used to make small and large programs alike. You will start with the small ones!
+In this module, you'll learn about the C programming language. It's a great language that has been used to make small and large programs alike. You'll start with the small ones!
 
 
 ## Help
 
 For information on (or help with) this module:
 
-1. Attend your tutor's meeting.
+1. Attend your TA's section meeting.
 
 2. Ask questions during office hours using the "Ask" tool on this website.
 
-3. Visit (or e-mail) the course's heads in cases of emergency.
+3. Visit (or e-mail) the course's heads.
+{: start="0"}
 
 
 ## Academic Honesty
@@ -21,13 +22,15 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## What to Do
 
-### Preparation
+### Hello
 
 1. Watch [Lecture 1](/lectures/lecture-1)
 
 1. Create an account on [GitHub](https://github.com/join)
 
 2. Write your first program: [Hello](https://lab.cs50.io/cs50/labs/2019/x/hello/)
+
+### Water
 
 3. Login to the [CS50 IDE](https://ide.cs50.io/) using your GitHub account (this currently only works in Chrome and Firefox!)
 
