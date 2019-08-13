@@ -130,7 +130,7 @@ keywords:
 
 *   We can even put a number of times into our cough function, so we only need a single block to cough any number of times:  
 
-    ![two sets of blocks. the first set of blocks is: "define cough n times", "repeat n", say cough for 1 seconds", "wait 1 seconds". the second set is: "when green flag clicked", "cough 3 times"](cough_function_2.png){:.w400}
+    ![two sets of blocks. the first set of blocks is: "define cough n times", "repeat n", say cough for 1 seconds", "wait 1 seconds". the second set is: "when green flag clicked", "cough 3 times"](cough_function_2.png){:.w300}
 
 *   As we use higher-level programming languages, we'll see more examples of how collections of code written by others, called libraries, will be useful for us to write programs of our own.
 

@@ -10,7 +10,7 @@ keywords:
 
 *   So now we can represent inputs and outputs. The black box earlier will contain _algorithms_, step-by-step instructions for solving a problem:  
 
-    ![box with word "algorithms"](algorithms.png){:.w300}
+    ![box with word "algorithms"](algorithms.png){:.w200}
 
 *   Let's say we wanted to find a friend, Mike Smith, in a phone book.
 
