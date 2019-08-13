@@ -7,14 +7,12 @@ In this module, you'll write your first program! It will be written in Scratch, 
 
 For information on (or help with) this module:
 
-1. Watch the walkthroughs included in all problems.
-
 2. Attend your tutor's section (if you're hi-speed).
 
 3. Ask questions during office hours using the "Ask" tool on this website.
 
 4. Visit (or e-mail) the course's heads.
-
+{: start="0"}
 
 ## Academic Honesty
 
@@ -26,7 +24,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 1. Watch [Lecture 0](/lectures/lecture-0)
 
 2. Write and submit your first program: [Scratch](/problems/scratch)
-
+{: start="0"}
 
 ## Grading
 

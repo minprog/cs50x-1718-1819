@@ -9,7 +9,7 @@
 
 ## Help
 
-For help with Week 0 and Problem Set 0:
+For help with Module 0 and Problem Set 0:
 
 * Ask questions in class using the "Ask" tool on this website.
 * Watch Zamyla's walkthrough, below.
