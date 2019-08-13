@@ -40,11 +40,11 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ### Greedy
 
-5. Implement and submit either of: [50%]
+Implement and submit either of: [50%]
 
-    - [Greedy](/problems/greedy), for most students
+- [Greedy](/problems/greedy), for most students
 
-    - [Credit](/problems/credit), for those more comfortable
+- [Credit](/problems/credit), for those more comfortable
 
 ### Mario
 
@@ -61,6 +61,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 Study and take the test on Thursday:
 
 - [Variables](/exercises/variables)
+
 - [Control Flow](/exercises/control-flow)
 
 
