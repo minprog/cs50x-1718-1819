@@ -40,7 +40,7 @@
 
 * Now we can save, compile, and run our program again. We can actually pass in command-line arguments to `clang`, or additional parameters that changes its behavior:
 
-	![clang -o in CS50 IDE](clang_o.png){:.w400}
+	![clang -o in CS50 IDE](clang_o.png){:.w300}
 	
 	* Here, we are telling `clang` to name the output file `hello`.
 
