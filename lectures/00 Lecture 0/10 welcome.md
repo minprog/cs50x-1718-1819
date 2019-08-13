@@ -1,3 +1,7 @@
+# Lecture 0<br><small>Computational thinking, Scratch</small>
+
+![embed](https://www.youtube.com/embed/5azaK2cBKGw)
+
 ## Welcome
 
 *   When David was a freshman, he was too intimidated to take any computer science classes. But even if the topic feels out of your comfort zone, know that we'll fill in all the blanks along the way, until we are all on the same page.
