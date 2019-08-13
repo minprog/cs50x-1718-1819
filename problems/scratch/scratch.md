@@ -3,7 +3,9 @@
 ## tl;dr
 
 0. Watch [Week 0's lecture](/lectures/lecture-0).
+
 1. Program in Scratch.
+
 2. Submit a form.
 {:start="0"}
 
