@@ -22,23 +22,23 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## What to Do
 
-### Hello
+#### Hello
 
-1. Watch [Lecture 1](/lectures/lecture-1)
+- Watch [Lecture 1](/lectures/lecture-1)
 
-1. Create an account on [GitHub](https://github.com/join)
+- Create an account on [GitHub](https://github.com/join)
 
-2. Write your first program: [Hello](https://lab.cs50.io/cs50/labs/2019/x/hello/)
+- Write your first program: [Hello](https://lab.cs50.io/cs50/labs/2019/x/hello/)
 
-### Water
+#### Water
 
-3. Login to the [CS50 IDE](https://ide.cs50.io/) using your GitHub account (this currently only works in Chrome and Firefox!)
+- Login to the [CS50 IDE](https://ide.cs50.io/) using your GitHub account (this currently only works in Chrome and Firefox!)
 
-4. Learn about using the [Command Line](https://www.youtube.com/embed/BnJ013X02b8?autoplay=1&rel=0) in the IDE
+- Learn about using the [Command Line](https://www.youtube.com/embed/BnJ013X02b8?autoplay=1&rel=0) in the IDE
 
-3. Implement [Water](/problems/water)
+- Implement [Water](/problems/water)
 
-### Greedy
+#### Greedy
 
 Implement and submit either of: [50%]
 
@@ -46,17 +46,17 @@ Implement and submit either of: [50%]
 
 - [Credit](/problems/credit), for those more comfortable
 
-### Mario
+#### Mario
 
-1. Watch [Lecture 2a](/lectures/lecture-2a)
+- Watch [Lecture 2a](/lectures/lecture-2a)
 
-4. Implement and submit either of: [50%]
+- Implement and submit either of: [50%]
 
     - [Mario](/problems/mario-less), for most students
 
     - [Mario](/problems/mario-more), for those more comfortable
 
-### Exercises
+#### Thursday exercises
 
 Study and take the test on Thursday:
 
