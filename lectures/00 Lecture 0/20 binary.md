@@ -53,9 +53,9 @@ keywords:
 
 *   It turns out that both letters with accent marks, as well as emoji, can be represented as characters with multiple bytes, with a standard called [Unicode](https://en.wikipedia.org/wiki/Unicode) (one specific version of which is called UTF-8).
 
-	![text editor with various options for accent marks over the letter a](unicode.png){:.400}
+	![text editor with various options for accent marks over the letter a](unicode.png){:.w400}
 	
-	![on-screen emoji selector](emoji.png){:.w300}
+	![on-screen emoji selector](emoji.png){:.w200}
 
     * When we receive an emoji, our computer is actually just receiving a decimal number like `128514` (`11111011000000010` in binary, if you can read that more easily) that it then maps to the image of the emoji.
 
