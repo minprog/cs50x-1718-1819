@@ -7,18 +7,6 @@
 2. Submit a form.
 {:start="0"}
 
-## Help
-
-For help with Module 0 and Problem Set 0:
-
-* Ask questions in class using the "Ask" tool on this website.
-* Watch Zamyla's walkthrough, below.
-* Email or visit the course's heads.
-
-## Academic Honesty
-
-Do keep in mind the course's policy on [academic honesty](/syllabus#academic_honesty), particularly its ["regret clause"](/syllabus#regret).
-
 ## Itching to Program?
 
 It's time to choose your own adventure! Your assignment, quite simply, is to implement in Scratch any project of your choice, be it an interactive story, game, animation, or anything else, subject only to the following requirements:
