@@ -2,10 +2,10 @@
 
 ## tl;dr
 
-0. Watch link:/lectures/lecture-0[Week 0's lecture].
+0. Watch [Week 0's lecture](/lectures/lecture-0).
 1. Program in Scratch.
 2. Submit a form.
-{:start=0}
+{:start="0"}
 
 ## Help
 
