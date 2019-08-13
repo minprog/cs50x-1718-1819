@@ -26,15 +26,15 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 - Watch [Lecture 1](/lectures/lecture-1)
 
-- Create an account on [GitHub](https://github.com/join)
+- Create an account on [GitHub](https://github.com/join){:.external}
 
-- Write your first program: [Hello](https://lab.cs50.io/cs50/labs/2019/x/hello/)
+- Write your first program: [Hello](https://lab.cs50.io/cs50/labs/2019/x/hello/){:.external}
 
 #### Water
 
-- Login to the [CS50 IDE](https://ide.cs50.io/) using your GitHub account (this currently only works in Chrome and Firefox!)
+- Login to the [CS50 IDE](https://ide.cs50.io/){:.external} using your GitHub account (this currently only works in Chrome and Firefox!)
 
-- Learn about using the [Command Line](https://www.youtube.com/embed/BnJ013X02b8?autoplay=1&rel=0) in the IDE
+- Learn about using the [Command Line](/shorts/command-line) in the IDE
 
 - Implement [Water](/problems/water)
 
