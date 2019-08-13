@@ -30,11 +30,11 @@ In this assignment you have to make an application to register the subgroups of 
 
 ## Running
 
-Install this problem’s dependencies (within practical/):
+Install this problem's dependencies (within practical/):
 
     pip3 install --user -r requirements.txt
 
-Start Flask’s built-in web server (within practical/):
+Start Flask's built-in web server (within practical/):
 
     flask run
 

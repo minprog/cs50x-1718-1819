@@ -12,7 +12,7 @@ Before you get started you might want to have a look at this video:
 
 ## Getting started
 
-If you haven’t done so yet, create a directory called `practice` in your workspace:
+If you haven't done so yet, create a directory called `practice` in your workspace:
 
 
     mkdir ~/workspace/practice
@@ -134,7 +134,7 @@ For the last step, try to do both at the same time:
 
 ## Rehash
 
-Remember Mario? We’re going to do something similar, but we make it a bit more challenging, for both Mario and you. Your goal is to create a pyramid of which each step is twice as high as the original Mario assignment:
+Remember Mario? We're going to do something similar, but we make it a bit more challenging, for both Mario and you. Your goal is to create a pyramid of which each step is twice as high as the original Mario assignment:
 
 
         #

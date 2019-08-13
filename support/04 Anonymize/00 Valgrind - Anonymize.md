@@ -31,7 +31,7 @@ Then, download the files for this problem:
 
 Debug the program `numbers.c` so that valgrind shows no errors on completion. The program `./numbers` expects one command line argument, your name. Once it starts, it will welcome the user, get the users favourite numbers from a `.txt` file, and then reads those numbers out to the user.
 
-For this assignment you don’t have to worry about the user input. You may assume that the user will input only their first name.
+For this assignment you don't have to worry about the user input. You may assume that the user will input only their first name.
 
 ### Hints
 

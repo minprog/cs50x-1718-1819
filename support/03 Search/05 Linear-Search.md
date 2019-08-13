@@ -25,7 +25,7 @@ First create a new directory and step into it:
 
 Write a program that can find a needle in a haystack using linear search. Remember linear search? It is the slow way of going through the phone book. You start with the first name in the book and you go through the book name after name until you find the person you were looking for.
 
-In our case, we won't be looking for names in a phone book, but a number (integer) in a list (array). For the purpose of this exercise we’ll call our array the *haystack* and our number the *needle*. The output of the program should look something like this (where the numbers at the end of each line denote the user input):
+In our case, we won't be looking for names in a phone book, but a number (integer) in a list (array). For the purpose of this exercise we'll call our array the *haystack* and our number the *needle*. The output of the program should look something like this (where the numbers at the end of each line denote the user input):
 
 
     $ ./find-linear 42
@@ -53,7 +53,7 @@ The program `./find-linear` expects one command line argument: the needle. Once 
 
 ### Assignment
 
-For this assignment you don’t have to worry about the user input. This has already been implemented for you. You will have two tasks to complete:
+For this assignment you don't have to worry about the user input. This has already been implemented for you. You will have two tasks to complete:
 
 1. Implement the function `print_array`. This function will take an integer array as input and will have to print its contents.
 2. Implement the function `search`. With this function you will implement linear search. The input are an integer array and an integer value as input and will return `true` if and only if, the value is found in the array.
@@ -87,17 +87,17 @@ You will get an output similar to this:
 
     Didn't find needle in haystack.
 
-It doesn’t work yet! It does not find the needle, and it does not show the array. You still have to write the functions that do this.
+It doesn't work yet! It does not find the needle, and it does not show the array. You still have to write the functions that do this.
 
 ### find-linear.c
 
-Let’s look at the file `find-linear.c`. When you open it you will see that there is already a lot of code written. You can leave most of this code alone. The only thing you will have to implement are the functions:
+Let's look at the file `find-linear.c`. When you open it you will see that there is already a lot of code written. You can leave most of this code alone. The only thing you will have to implement are the functions:
 
 
     bool search(int value, int values[], int size)
     void print_array(int values[], int size)
 
-But before getting to that, let’s briefly step through the existing code in order to provide some context.
+But before getting to that, let's briefly step through the existing code in order to provide some context.
 
 ### Declarations
 
@@ -109,7 +109,7 @@ Near the top of the file, right after the `include`‘s you see the declaration 
 
 ### main
 
-After that we have the `main` function. You don’t have to change this function. Line 22 to 30 of the main function deal with the command line argument. This provides us with the needle. Line 33-47 is the code to create the haystack based on the user input.
+After that we have the `main` function. You don't have to change this function. Line 22 to 30 of the main function deal with the command line argument. This provides us with the needle. Line 33-47 is the code to create the haystack based on the user input.
 
 Take a look at line 53 and 56 in the main function. Here you see the calls to the functions `print_array` and `search`, respectively.
 
@@ -129,15 +129,15 @@ Start by implementing the function `print_array`. The current implementation sta
         return;
     }
 
-As you can see, it doesn’t do much yet. Don’t get distracted by the lines:
+As you can see, it doesn't do much yet. Don't get distracted by the lines:
 
 
         (void)values;
         (void)size;
 
-They don’t actually do anything. These lines should be removed when you start implementing the function. The reason why these lines are there is a little beyond the scope of this assignment. But, if you are curious, feel free to ask the teacher/TA about it.
+They don't actually do anything. These lines should be removed when you start implementing the function. The reason why these lines are there is a little beyond the scope of this assignment. But, if you are curious, feel free to ask the teacher/TA about it.
 
-To implement this function try to keep the formatting readable. A common way to print an array is with square brackets around it and interspaced with comma’s, like so:
+To implement this function try to keep the formatting readable. A common way to print an array is with square brackets around it and interspaced with comma's, like so:
 
 
     [3, 14, 15, 42, 11235, 1]

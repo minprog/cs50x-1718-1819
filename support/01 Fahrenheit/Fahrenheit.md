@@ -4,14 +4,14 @@
 The goal of this assignment is to create a program that can convert temperatures from Celcius to Fahrenheit. In this assignment you learn how to create, compile and run a C-program.
 
 ## Getting started
-First, log into CS50 IDE. If you haven’t created an account yet, this is the moment to do so! If you have already created a Cloud9 workspace, you can skip this step and continue with [Update](#update).
+First, log into CS50 IDE. If you haven't created an account yet, this is the moment to do so! If you have already created a Cloud9 workspace, you can skip this step and continue with [Update](#update).
 
 ### Create a Cloud9 workspace
-First, register on [edx.org](https://courses.edx.org/register), which will provide you with an account to log on to the CS50 IDE. If you already have an edX account, it’s no problem to use that one.
+First, register on [edx.org](https://courses.edx.org/register), which will provide you with an account to log on to the CS50 IDE. If you already have an edX account, it's no problem to use that one.
 
 Now head to [cs50.io](https://cs50.io/) and log into CS50 IDE. You may be prompted (again) for your email address. If so, after providing it, click **Private** under **Hosted workspace**, then click **Create workspace**.
 
-You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is “creating your workspace” and “creating your container,” which might take a moment. You should eventually see your workspace.
+You should then be informed that CS50 IDE (aka Cloud9, the software that underlies CS50 IDE) is "creating your workspace" and "creating your container," which might take a moment. You should eventually see your workspace.
 
 ### Create a new folder
 Once logged in, execute
@@ -32,7 +32,7 @@ to move yourself into (i.e., open) that directory. Your prompt should now resemb
 You can create a new file using the file browser tab. Under `filesystem`, click on the `workspace` directory to open it. Now right-click on the directory `section1` and select `New File`. Give your file the name `fahrenheit.c`. Now double click on the file to open it.
 
 ### Edit
-Let’s start with something simple. Let’s create a program that will print “Hello, world!”. Copy the following code into the file:
+Let's start with something simple. Let's create a program that will print "Hello, world!". Copy the following code into the file:
 
     #include <stdio.h>
 
@@ -76,7 +76,7 @@ Keep in mind that you can use the up and down arrow keys to repeat previously ex
 ## Specification
 
 ### Fahrenheit
-Now, the goal of this program is not to print “Hello, world!”. Your assignment is to write a program that converts a temperature in Celsius to Fahrenheit, as per the sample output below, wherein `100` represents some user’s input.
+Now, the goal of this program is not to print "Hello, world!". Your assignment is to write a program that converts a temperature in Celsius to Fahrenheit, as per the sample output below, wherein `100` represents some user's input.
 ```
 ./fahrenheit
 C: 100
@@ -99,7 +99,7 @@ You will want to ask the user for input. There are inbuilt functions in C to do 
 
 This library implements the functions `get_string()`, `get_int()`, and `get_float()`, which ask the user for an input of the corresponding datatype.
 
-For example the program below asks the user to enter their name (a string), and outputs “Hello, <name>!”.
+For example the program below asks the user to enter their name (a string), and outputs "Hello, <name>!".
 
     #include <cs50.h>
     #include <stdio.h>
@@ -113,7 +113,7 @@ For example the program below asks the user to enter their name (a string), and 
 
 
 ### Printing
-Know that `printf` can be used to specify how many places after the decimal point you wish to display to the user. For example, assuming you’ve written the following program in a file called `truncate.c`:
+Know that `printf` can be used to specify how many places after the decimal point you wish to display to the user. For example, assuming you've written the following program in a file called `truncate.c`:
 
     #include <stdio.h>
 

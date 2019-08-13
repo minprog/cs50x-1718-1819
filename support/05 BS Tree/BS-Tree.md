@@ -2,7 +2,7 @@
 
 ## Goal
 
-For this assignment your team will write a function in C which inserts leaves/nodes into a binary search tree in C. Remember binary search trees? [Here’s David explaining them](https://video.cs50.net/2016/fall/lectures/5?t=1h0m59s).
+For this assignment your team will write a function in C which inserts leaves/nodes into a binary search tree in C. Remember binary search trees? [Here's David explaining them](https://video.cs50.net/2016/fall/lectures/5?t=1h0m59s).
 
 ## Getting started
 
@@ -128,11 +128,11 @@ This is the main building block for the search tree. The struct has three fields
 - `left`, a pointer that points to the left child of this node.
 - `right`, a pointer that points to the right child of this node.
 
-Note that a node does *not* always have a left or right child. If the node for instance does not have a left child, the `left` pointer should be set to `NULL`. The same goes for the right child. If the node doesn’t have any children at all, both pointers should be set to `NULL` and we call such a node, a *leaf*.
+Note that a node does *not* always have a left or right child. If the node for instance does not have a left child, the `left` pointer should be set to `NULL`. The same goes for the right child. If the node doesn't have any children at all, both pointers should be set to `NULL` and we call such a node, a *leaf*.
 
 ### provided functions
 
-To get you started we’ve already implemented a couple of functions for you:
+To get you started we've already implemented a couple of functions for you:
 
 
     /* Declaration of provided functions */
@@ -140,7 +140,7 @@ To get you started we’ve already implemented a couple of functions for you:
     node* create_node(int value);
     void print_tree(node* tree);
 
-The function `create_an_example_tree()` is only there to get you started. Once you’re done with this assignment you should be able to remove this function. It can be helpful to look at the content of this function to get a better understanding of how to build a tree.
+The function `create_an_example_tree()` is only there to get you started. Once you're done with this assignment you should be able to remove this function. It can be helpful to look at the content of this function to get a better understanding of how to build a tree.
 
 The function `create_node` creates, you guessed it, a new node. It allocates the memory for the node, initializes the fields.
 
@@ -153,11 +153,11 @@ The next line is the declaration of the `insert` function that you will have to 
     // TODO: implement insert
     void insert(int key, struct node* tree);
 
-Before you start implementing `insert` it could help to first look at the `main()` function. You’ll have to comment out one line before you can proceed.
+Before you start implementing `insert` it could help to first look at the `main()` function. You'll have to comment out one line before you can proceed.
 
 ### main
 
-The `main()` function has already been implemented for you. But, you’ll have to modify it a bit.
+The `main()` function has already been implemented for you. But, you'll have to modify it a bit.
 
 The first line creates a root node containing the first element of the array.
 

@@ -12,7 +12,7 @@ You might want to have another look at pointers before you start. Check out this
 
 ## Getting started
 
-If you haven’t done so yet, create a directory called `practice` in your workspace:
+If you haven't done so yet, create a directory called `practice` in your workspace:
 
     mkdir ~/workspace/practice
 

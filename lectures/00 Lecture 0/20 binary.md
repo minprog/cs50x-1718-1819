@@ -35,7 +35,7 @@ keywords:
 
 *   With enough bits, or binary digits, computers can count much higher.
 
-*   To represent letters, all we need to do is decide how numbers map to letters. Some humans, many years ago, collectively decided on a standard mapping called [ASCII](https://en.wikipedia.org/wiki/ASCII). The letter “A”, for example, is the number 65, and “B” is 66, and so on.
+*   To represent letters, all we need to do is decide how numbers map to letters. Some humans, many years ago, collectively decided on a standard mapping called [ASCII](https://en.wikipedia.org/wiki/ASCII). The letter "A", for example, is the number 65, and "B" is 66, and so on.
 
     *   A byte is 8 bits, and we use that as a unit to manage bits. The number 72, for example, fits into one byte.
 
@@ -45,7 +45,7 @@ keywords:
 
 *   **Abstraction** is a concept in computer science where some low-level implementation (such as how data is ultimately stored in binary) is simplified or taken for granted, so we can use that implementation at a higher level (such as representing letters, that we can then use in our programs).
 
-*   On a standard American keyboard, letters with accent marks, and many other symbols and characters, aren’t visible:
+*   On a standard American keyboard, letters with accent marks, and many other symbols and characters, aren't visible:
 
 	![computer keyboard with labeled keys](keyboard.png){:.w400}
 	
@@ -73,7 +73,7 @@ keywords:
 
 *   And videos are just many, many images displayed one after another, at some number of frames per second.
 
-*   On newer iPhones, the “Animoji” feature is just lots of images, generated and displayed one after another:
+*   On newer iPhones, the "Animoji" feature is just lots of images, generated and displayed one after another:
 
 	![various animoji](animoji.png){:.w500}
 

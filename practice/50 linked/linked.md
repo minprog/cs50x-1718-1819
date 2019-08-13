@@ -11,7 +11,7 @@ Have another look at linked lists with this video:
 
 ## Getting started
 
-If you haven’t done so yet, create a directory called `practice` in your workspace:
+If you haven't done so yet, create a directory called `practice` in your workspace:
 
     mkdir ~/workspace/practice
 

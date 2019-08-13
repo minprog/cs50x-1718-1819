@@ -6,7 +6,7 @@ Get some practice with integer division and modulo.
 
 ## Getting started
 
-If you haven’t done so yet, create a directory called `practice` in your workspace:
+If you haven't done so yet, create a directory called `practice` in your workspace:
 
 
     mkdir ~/workspace/practice
@@ -21,7 +21,7 @@ Create a directory `modulo` in `practice` and step into it:
 
 Do you rember modulo? If not have another look at the [lecture notes of week 1](https://cs50x.mprog.nl/lectures/week-1). The last section shows an example of the use of modulo. Also, take a look here: [https://study.cs50.net/math](https://study.cs50.net/math). On slide 8, modulo is explained.
 
-Before we start programming, let’s do some pen and paper exercises. 
+Before we start programming, let's do some pen and paper exercises. 
 
 Give the value of x and y:
 
@@ -44,15 +44,15 @@ int y = 12%3;
 
 ## Minicrypto
 
-We’re going to write a program that finds the divisors of a number. Example output:
+We're going to write a program that finds the divisors of a number. Example output:
 
 
     Number:   18
     Divisors: 1 2 3 6 9 18 
 
-When you enter the number `18` into this program, it shows that it’s divisible by the numbers `1` (all numbers are), `2`, `3`, `6`, `9`, and `18` (itself).
+When you enter the number `18` into this program, it shows that it's divisible by the numbers `1` (all numbers are), `2`, `3`, `6`, `9`, and `18` (itself).
 
-Finding the divisors of a number is a problem that you’ll run across a lot in computer science, most notably in the cryptography that keeps our internet communication secure.  
+Finding the divisors of a number is a problem that you'll run across a lot in computer science, most notably in the cryptography that keeps our internet communication secure.  
 
 ###Step 1:
 Create a new file in the directory `modulo` called `divisors.c`. Copy the following code into it:
