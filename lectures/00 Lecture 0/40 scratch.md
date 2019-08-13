@@ -114,7 +114,7 @@ keywords:
 
 *   With events, we can have two sprites, each with their own script, interact with each other:  
 
-    ![blocks labeled "forever", "if key space pressed? then", "say Marco for 2 seconds", "broadcast event"](marco.png){:.w300}
+    ![blocks labeled "forever", "if key space pressed? then", "say Marco for 2 seconds", "broadcast event"](marco.png){:.w200}
 
     ![blocks labeled "when I receive event", "say Polo for 2 seconds"](polo.png){:.w200}
 
