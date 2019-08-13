@@ -4,7 +4,7 @@
 
 0. Watch [Week 0's lecture](/lectures/lecture-0).
 
-1. Program in Scratch.
+1. Create an interactive visualization, game, or artwork in Scratch.
 
 2. Submit a form.
 {:start="0"}
