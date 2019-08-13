@@ -30,7 +30,7 @@ For this problem, the most important part is the algorithm to calculate change i
 
 ### 1. Understanding the algorithm
 
-<iframe width="640" height="480" src="https://ytcropper.com/embed/6w5d416684095b4/loop/noautoplay/" frameborder="0" allowfullscreen></iframe><a href="/" target="_blank">via ytCropper</a>
+![embed](https://player.vimeo.com/video/353578615?byline=0&portrait=0)
 
 If we turn this idea of greedy change into an algorithm, we notice that we need to keep track of two things:
 
