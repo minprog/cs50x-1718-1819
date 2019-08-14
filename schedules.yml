@@ -26,7 +26,16 @@ Parttime:
             Variables: /exercises/variables
             Control flow: /exercises/control-flow
     Module 2:
-        Crypto: /overviews/crypto
+        Introduction: /overviews/crypto
+        Watch Lecture 2b: /lectures/lecture-2b
+        Implement either of:
+            Initials: /problems/initials-less
+            Initials: /problems/initials-more
+        Implement:
+            Caesar: /problems/caesar
+        Implement either of:
+            Vigenere: /problems/vigenere
+            Crack: /problems/crack
     Module 3:
         Fifteen: /overviews/fifteen
     Module 4:

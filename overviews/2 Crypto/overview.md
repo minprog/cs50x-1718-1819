@@ -7,13 +7,14 @@ In this module, you'll learn about cryptographic techniques and about strings in
 
 For information on (or help with) this module:
 
-1. Attend your tutor's meeting.
+1. Attend your TA's section meeting.
 
-2. Use `help50` (if unsure what an error message means) and `debug50` (if your code is buggy).
+1. Use `help50`, `eprintf` and `debug50` as needed.
 
-3. Ask questions during office hours using the "Ask" tool on this website.
+1. Ask questions during office hours using the "Ask" tool on this website.
 
-4. Visit (or e-mail) the course's heads in cases of emergency.
+1. Visit (or e-mail) the course's heads.
+{: start="0"}
 
 
 ## Academic Honesty
@@ -21,32 +22,21 @@ For information on (or help with) this module:
 Do keep in mind the course's policy on [academic honesty](/syllabus#academic_honesty) (like plagiarism), particularly its ["regret clause"](/syllabus#regret).
 
 
-## Reminders
-
-Per [Lecture 2a](/lectures/lecture-2a):
-
-* Use `help50` as needed.
-
-* Use `eprintf` as needed.
-
-* Use `debug50` as needed.
-
-
 ## What to Do
 
-1. Watch [Lecture 2b](/lectures/lecture-2b)
+- Watch [Lecture 2b](/lectures/lecture-2b)
 
-2. Implement either of:
+- Implement either of:
 
     - [Initials](/problems/initials-less), for most students
 
     - [Initials](/problems/initials-more), for those more comfortable
 
-3. Implement: [50%]
+- Implement: [50%]
 
     - [Caesar](/problems/caesar)
 
-4. Implement either of: [50%]
+- Implement either of: [50%]
 
     - [Vigenere](/problems/vigenere), for most students
 
