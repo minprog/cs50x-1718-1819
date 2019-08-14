@@ -36,6 +36,10 @@ Parttime:
         "Implement either  of:":
             Vigenere: /problems/vigenere
             Crack: /problems/crack
+        Thursday exercises:
+            Unscratch: /exercises/unscratch
+            Sequences: /exercises/sequences
+            Nested loops: /exercises/nested-loops
     Module 3:
         Fifteen: /overviews/fifteen
     Module 4:
