@@ -28,12 +28,12 @@ Parttime:
     Module 2:
         Introduction: /overviews/crypto
         Watch Lecture 2b: /lectures/lecture-2b
-        Implement either of:
+        "Implement either of:":
             Initials: /problems/initials-less
             Initials: /problems/initials-more
-        Implement:
+        "Implement:":
             Caesar: /problems/caesar
-        Implement either of:
+        "Implement either  of:":
             Vigenere: /problems/vigenere
             Crack: /problems/crack
     Module 3:
