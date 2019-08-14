@@ -35,7 +35,7 @@ Parttime:
             Caesar: /problems/caesar
         "Implement either  of:":
             Vigenere: /problems/vigenere
-            Crack: /problems/crack
+            Crack (darn hard!): /problems/crack
         Thursday exercises:
             Unscratch: /exercises/unscratch
             Sequences: /exercises/sequences
