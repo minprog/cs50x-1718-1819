@@ -1,3 +1,0 @@
-= Lecture 2018-3 - Memory
-
-video::cC9I3XxkZXw[youtube,height=540,width=960,options=notitle]
