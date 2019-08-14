@@ -1,3 +1,0 @@
-= Lecture 2b
-
-video::351604518[vimeo,height=540,width=960,options=notitle]

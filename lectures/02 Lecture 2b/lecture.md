@@ -1,3 +1,8 @@
+# Lecture 2b<br><small>Arrays</small>
+
+![embed](https://player.vimeo.com/video/351604518)
+
+
 ## Strings, Arrays
 
 * There are several functions in the CS50 Library that allow us to get variables from the user:

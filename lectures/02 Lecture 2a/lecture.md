@@ -1,3 +1,8 @@
+# Lecture 2a<br><small>Tools</small>
+
+![embed](https://player.vimeo.com/video/351604172)
+
+
 ## C, continued
 
 * Last time, we learned how to use the CS50 IDE to write and compile source code, and run the compiled program in our terminal.

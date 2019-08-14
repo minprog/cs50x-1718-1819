@@ -1,4 +1,7 @@
-# Lecture 3
+# Lecture 4<br><small>Memory</small>
+
+![embed](https://www.youtube.com/embed/cC9I3XxkZXw)
+
 
 ## Enhance
 

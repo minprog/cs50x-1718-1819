@@ -1,3 +1,0 @@
-= Lecture 1
-
-video::3K4jWlpR4iY[youtube,height=540,width=960,options=notitle]

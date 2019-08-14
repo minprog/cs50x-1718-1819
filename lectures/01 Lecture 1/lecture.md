@@ -1,3 +1,8 @@
+# Lecture 1<br><small>C</small>
+
+![embed](https://www.youtube.com/embed/3K4jWlpR4iY)
+
+
 ## C
 
 * Last week we used Scratch to better understand ideas and concepts in programming, like loops and functions.

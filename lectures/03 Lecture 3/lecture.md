@@ -1,3 +1,8 @@
+# Lecture 3<br><small>Algorithms</small>
+
+![embed](https://www.youtube.com/embed/U9o49qwa6hk)
+
+
 ## Strings
 
 * We talked last time about memory chips in our computers that simply store bits, one after another, with addresses that we can use to access each byte.
