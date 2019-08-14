@@ -39,11 +39,30 @@ Parttime:
         Thursday exercises:
             Unscratch: /exercises/unscratch
             Sequences: /exercises/sequences
-            Nested loops: /exercises/nested-loops
     Module 3:
-        Fifteen: /overviews/fifteen
+        Introduction: /overviews/fifteen
+        Watch Lecture 3: /lectures/lecture-3
+        "Implement:":
+            Fifteen: /problems/fifteen
+        "Implement either  of:":
+            Find: /problems/find-less
+            Find (harder): /problems/find-more
+        Thursday exercises:
+            Arrays: /exercises/arrays
+            Nested loops: /exercises/nested-loops
     Module 4:
-        Forensics: /overviews/forensics
+        Introduction: /overviews/forensics
+        Watch Lecture 4: /lectures/lecture-4
+        "Implement:":
+            Whodunit: /problems/whodunit
+        "Implement either  of:":
+            Resize: /problems/resize-less
+            Resize (harder): /problems/resize-more
+        "Implement: ":
+            Recover: /problems/recover
+        Thursday exercises:
+            Functions: /exercises/functions
+            Algorithms: /exercises/algorithms
     Module 5:
         Mispellings: /overviews/mispellings
     Module 6:
