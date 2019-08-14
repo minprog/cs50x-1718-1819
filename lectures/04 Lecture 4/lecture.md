@@ -1,20 +1,10 @@
-## [Lecture 3](#lecture-3)
+# Lecture 3
 
-*   [Enhance](#enhance)
-*   [Last time](#last-time)
-*   [CS50 IDE](#cs50-ide)
-*   [Tools](#tools)
-*   [Strings](#strings)
-*   [Memory](#memory)
-*   [Memory layout](#memory-layout)
-*   [Structs](#structs)
-*   [Enhance?](#enhance-1)
-
-## [Enhance](#enhance)
+## Enhance
 
 *   We watch a clip, [CSI Zoom Enhance](https://www.youtube.com/watch?v=i3gv2zOmJiA), where the main characters zoom in further and further into an image, revealing more and more details. Today, we’ll see how that works (or doesn’t) in reality.
 
-## [Last time](#last-time)
+## Last time
 
 *   We talked about the details of compiling, which is actually made of four steps:
     *   First, our source code is _preprocessed_, so any header files like `stdio.h` that we include, are actually included.
@@ -26,10 +16,10 @@
     *   `printf`, which can help us understand our program as it runs
     *   `style50`, which checks the style of our code so it’s more readable and consistent
 
-## [CS50 IDE](#cs50-ide)
+## CS50 IDE
 
 *   CS50 IDE is like the CS50 Sandbox, but with more features. It is an online development environment, with a code editor and a terminal window, but also tools for debugging and collaborating:  
-    ![browser window with CS50 IDE, panel of files on left, code editor on top right, terminal window on bottom right](/college/2018/fall/weeks/3/notes/cs50_ide.png)
+    ![browser window with CS50 IDE, panel of files on left, code editor on top right, terminal window on bottom right](cs50_ide.png)
 *   Once we log in, we’ll see a workspace that looks similar to that of CS50 Sandbox, but now our workspace will be saved to our account.
 *   We can create a new file with File > New File (or the green plus sign), and use File > Save to save it as `hello.c` in the folder `~/workspace/`. Now we’ll write our simple program:
 
@@ -56,21 +46,21 @@
 *   We can delete files and folders with the graphical file tree, right-clicking them as we might be familiar with already. But we can do the same in the command line, with `rm hello`, which will remove files. The command will ask us for a confirmation, and we can type `yes` or `y` (or `n`, if we’ve changed our minds).
 *   We can create directories with `mkdir test`, and `rmdir` to remove them.
 
-## [Tools](#tools)
+## Tools
 
 *   In the CS50 IDE, we’ve also added another tool, `check50`. Like `style50`, we wrote this tool to automatically check the correctness of your programs, by passing in inputs and looking at their outputs.
 *   After we write a program from a problem set, and have tested it ourselves with a few inputs, we can type `check50 cs50/2018/fall/hello`. The `cs50/2018/fall/hello` is an indicator for the program specification that `check50` should check, and once we run that command, we’ll see `check50` uploading our code and checking it.
 *   We can also now use a tool called a _debugger_, built into the CS50 IDE.
 *   After we compile our code, we can run `debug50 ./hello`, which will tell us to set a breakpoint first. A _breakpoint_ indicates a line of code where the debugger should pause our program, until we choose to continue it. For example, we can click to the left of a line of our code, and a red circle will appear:  
-    ![code editor with red icon next to line 6 of code](/college/2018/fall/weeks/3/notes/breakpoint.png)
+    ![code editor with red icon next to line 6 of code](breakpoint.png)
 *   Now, if we run `debug50 ./hello` again, we’ll see the debugger panel open on the right:  
-    ![debugger panel with controls, variables](/college/2018/fall/weeks/3/notes/debugger_panel.png)
+    ![debugger panel with controls, variables](debugger_panel.png)
 *   We see that the variable we made, `name`, is under the `Local Variables` section, and see that there’s a value of `0x0` (which is `null`), and a type of `string`, as we expected.
 *   Our breakpoint has paused our program _before_ line 6, so to continue, we have a few controls in the debugger panel. The blue triangle will continue our program until we reach another breakpoint. The curved arrow to its right will “step over” the line, running it and pausing our program again immediately after. The arrow pointing downward will “step into” the line, if there is a function being called. And the arrow pointing up and to the right will “step out” of a function, if we are in one.
 *   So, we’ll use the curved arrow to run the next line, and see what changes after. After we type in our name, we’ll see that the `name` variable is also updated in the debugger.
 *   We can save lots of time in the future by investing a little bit now to learn how the debugger works!
 
-## [Strings](#strings)
+## Strings
 
 *   We’ve been using helpful functions from the CS50 Library, like `get_int` or `get_string`, to get input of a specific type from the user. These functions are generally tricky to write, because we want to prompt the user over and over again, if the input they give us isn’t actually valid.
 *   Today, we’ll look into the `string` type. As we learned last week, a string is just an array of characters, stored back-to-back. But let’s investigate what a `string` variable actually is.
@@ -137,10 +127,10 @@
     *   Hmm, no matter what we type in for our strings, our program thinks they are different.
 *   It turns out, `string` is not actually a data type in C. The word “string” is common in computer science, but there is no way to store strings in C. Instead, we defined that type in the CS50 Library.
 *   Recall that strings are just arrays of characters, so when we ran our `compare1` program, we got two strings as input from the user, and those might be stored in memory as the following:  
-    !["Brian\0" and "Veronica\0" in different grids](/college/2018/fall/weeks/3/notes/strings.png)
+    !["Brian\0" and "Veronica\0" in different grids](strings.png)
     *   Each character is in one byte, and somewhere we have bytes in memory containing the values for each of string.
 *   It turns out, each byte in memory has a numeric location, or _address_. For example, the character `B` might have the address 100, and `V` might have ended up in `900` (depending on what parts of memory were available, or free):  
-    !["Brian\0" and "Veronica\0" in different grids, with each grid, or byte in memory, labelled](/college/2018/fall/weeks/3/notes/strings_with_addresses.png)
+    !["Brian\0" and "Veronica\0" in different grids, with each grid, or byte in memory, labelled](strings_with_addresses.png)
     *   Notice that, since each string is an array of characters, each character within the array has consecutive addresses, since they are stored next to each other in memory. But the strings themselves might have very different addresses.
 *   So, `get_string` actually returns just the address of the first character of the string. (We can tell where it ends by looking for the `null` character, `\0`.) Now, we can infer that comparing two “strings” actually just compares two addresses (which will always be different, since `get_string` stores the input in a new place each time), even if the characters stored at those addresses are the same.
 *   Other data types in C, such as `int`s or `float`s, are generally passed and stored as their values, since they are always a fixed number of bytes. Strings, on the other hand, are passed as their addresses, since they could be really long.
@@ -373,7 +363,7 @@
     *   We get a string `s`, and copy the value of `s` into `t`. Then, we capitalize the first letter in `t`.
     *   But when we run our program, we see that both `s` and `t` are now capitalized.
     *   Since we set `s` and `t` to the same values, they’re actually pointers to the same character, and so we capitalized the same character:  
-        ![s and t variables pointing to the same string](/college/2018/fall/weeks/3/notes/pointers.png)
+        ![s and t variables pointing to the same string](pointers.png)
 *   To actually make a copy of a string, we have to do a little more work:
 
     <div class="language-c highlighter-rouge">
@@ -496,7 +486,7 @@
     *   Notice that we can pass in `s` as an address, since arrays can be treated like pointers to the first element in the array.
     *   But if we were to type in a much longer string, we eventually get a “segmentation fault”, where we tried to access a segment of memory we couldn’t or shouldn’t. It turns out that `scanf` doesn’t know how much memory is allocated, so it keeps writing to memory, starting at the address `s`, for as much input as is passed in, even though we might not have allocated as much. `get_string` handles this for us, and allocates memory as needed. (And if you’re super interested, the [source code](https://github.com/cs50/libcs50/blob/develop/src/cs50.c) for the CS50 Library is available!)
 
-## [Memory](#memory)
+## Memory
 
 *   To tie this all together, recall that we have physical chips of RAM in our computers, that store all the bytes we have. And each byte has an address. We can see this with `addresses.c`:
 
@@ -625,14 +615,14 @@
     *   The addresses of `x` and `y` are passed in from `main` to `swap`, and we use the `*a` syntax to _follow_ (or _dereference_) a pointer and get the value stored there. We save that to `tmp`, and then take the _value_ at `b` and store that as the _value_ of `a`. Finally, we store the value of `tmp` as the value of `b`, and we’re done.
     *   We’ll click to the left of the line `int x = 1` to set a breakpoint with the red icon, and run `debug50 ./swap` again, to step through our program one line at a time. We can use the “step into” button now, to go into our `swap` function and see how it works.
 
-## [Memory layout](#memory-layout)
+## Memory layout
 
 *   Within our computer’s memory, the different types of data that need to be stored for our program are organized into different sections:  
-    ![Grid with sections, from top to bottom: text, initialized data, uninitialized data, heap (with arrow pointing downward), stack (with arrow pointing upward), and environment variables](/college/2018/fall/weeks/3/notes/memory_layout.png)
+    ![Grid with sections, from top to bottom: text, initialized data, uninitialized data, heap (with arrow pointing downward), stack (with arrow pointing upward), and environment variables](memory_layout.png)
     *   The _text_ section is our compiled program’s binary code. When we run our program, that code is loaded into the “top” of memory.
     *   The _heap_ section is an open area where `malloc` can get free memory from, for our program to use.
     *   The _stack_ section is used by functions in our program as they are called. For example, our `main` function is at the very bottom of the stack, and has the variables `x` and `y`. The `swap` function, when it’s called, has some memory that’s on top of `main`, with the variables `a`, `b`, and `tmp`:  
-        ![Stack section with swap (a, b, tmp) above main (1, 2)](/college/2018/fall/weeks/3/notes/stack.png)
+        ![Stack section with swap (a, b, tmp) above main (1, 2)](stack.png)
         *   Once the function `swap` returns, the memory it was using is freed for the next function call, and we lose anything we did, other than the return values.
         *   So by passing in the addresses of `x` and `y` from `main` to `swap`, we could actually change the values of `x` and `y`.
     *   Global variables are in the initialized data and uninitialized data sections, and environment variables from the command-line are also stored in a section.
@@ -666,7 +656,7 @@
 *   We watch another clip, [Pointer Fun with Binky](https://www.youtube.com/watch?v=_d0jFalGxnQ).
 *   We might have used the website [StackOverflow](http://stackoverflow.com), a Q&A site commonly used for programming questions. Now, we can understand that the name of the site comes from a reference to the stack overflowing, or having too many function calls to fit in our computer’s memory.
 
-## [Structs](#structs)
+## Structs
 
 *   We can create variables of our own type with a concept called structs.
 *   For example, if we wanted to store both names and dorms of individual students, we might have arrays for each:
@@ -778,11 +768,11 @@
 
     *   This is just a sneak preview of what we’ll learn to use in the next problem set!
 
-## [Enhance?](#enhance-1)
+## Enhance?
 
 *   Now, if we try to zoom in on an image, we’ll eventually see the pixels that it’s made of. But since images are represented as a finite number of bytes, we can’t possibly see details that aren’t already captured.
 *   Images can be represented as a _bitmap_, or map of bits:  
-    ![mapping of bits in a grid to a smiley face](/college/2018/fall/weeks/3/notes/bitmap.png)
+    ![mapping of bits in a grid to a smiley face](bitmap.png)
     *   Each `1` maps to a black pixel, and a `0` to a white pixel.
     *   An image with color will use more than one bit per pixel.
 *   And an image file will also include special data values, at the beginning of the file, so that programs can open them correctly. In the problem set, we’ll learn about one such image file format, `.bmp`, for bitmaps. And we’ll learn to tweak images digitally, resizing or filtering them as we’d like.
