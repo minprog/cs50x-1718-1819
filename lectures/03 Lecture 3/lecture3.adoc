@@ -1,4 +1,4 @@
-= Lecture 3 - Algorithms
+= Lecture 2017-3 - Algorithms
 
 video::U9o49qwa6hk[youtube,height=540,width=960,options=notitle]
 
