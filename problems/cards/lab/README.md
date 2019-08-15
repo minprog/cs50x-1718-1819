@@ -24,9 +24,9 @@ In a UML diagram, the class looks like this:
 {% spoiler "Syntax Help" %}
 Use the following syntax:
 
-    class ClassName(object):
+    class ClassName:
 
-First the `class` keyword, then the name of your class, and finally the parent class, which is usually `object`.
+First the `class` keyword, and then the name of your class.
 {% endspoiler %}
 
 After writing the declaration, press Next to go on.
