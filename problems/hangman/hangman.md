@@ -172,11 +172,11 @@ To fully implement the game, the object should take care of tracking:
 - The set of currently remaining words
 - The number of guesses remaining
 
-And purely for testing purposed, we would like to implement the `__str__` method, which allows us to call `print(game)` and look at a couple of stats. The resulting print could look something like the following:
+And purely for testing purposes, we would like to implement the `__str__` method, which allows us to call `print(game)` and look at a couple of stats. The resulting print could look something like the following:
 
 	letters guessed are "aemnid", 201 words remaining, game not won
 
-In other words, your code should look something like the following.
+In other words, your code should follow the following structure. It is up to you to fill in the methods.
 
     class Hangman:
         def __init__(self, length, num_guesses):
@@ -228,7 +228,9 @@ Don't explicitly enumerate all potential new board states. If you are working wi
 > - Hangman does not start with length for which no words are available.
 > - Hangman does not start with non-positive guesses.
 > - Hangman starts with an unfinished game.
+> - Hangman starts with an empty board.
 > - Accepts guesses of e, a, n, u, z, l
+> - After one or two guesses, the board is still empty.
 > - Reports winning for combination of e, a, n, u, z, l
 > - Reports finished game after combination of e, a, n, u, z, l
 > - Does not report winning for combination of a, e, o, i, u, b
@@ -292,7 +294,7 @@ There are several other places in which the algorithm does not function ideally.
 After you implement this assignment, take some time to think over possible improvements to the algorithm. You might weight the word families using some metric other than size. You might consider
 having the computer "look ahead" a step or two by considering what actions it might take in the future.
 
-If you implement something interesting, make sure to document your `partition` method well by describing your changes in detail!
+If you implement something interesting, make sure to document your partition method well by describing your changes in detail!
 
 ## Submitting
 
