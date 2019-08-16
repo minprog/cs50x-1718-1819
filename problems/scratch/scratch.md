@@ -21,7 +21,7 @@ It's time to choose your own adventure! Your assignment, quite simply, is to imp
 
 Head to [the Scratch website](https://scratch.mit.edu/) and sign up for an account on MIT's website by clicking **Join Scratch** atop the page. Any username (that's available) is fine, but take care to remember it and your choice of password.  After registering and confirming your email address, click the orange "**Start Creating**" button to begin.
 
-You might find these resources helpful (note that they show an earlier version of Scratch):
+You might find these resources helpful (note that they show an earlier version of Scratch, although the blocks haven't changed much since!):
 
 1. [Scratch for Budding Computer Scientists](https://cs.harvard.edu/malan/scratch/)
 1. [Getting Started with Scratch](https://resources.scratch.mit.edu/www/guides/en/Getting-Started-Guide-Scratch2.pdf)
