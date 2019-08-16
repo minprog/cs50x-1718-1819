@@ -1,11 +1,7 @@
 # Exercises: Functions
 
-Watch these videos for an introduction to the topic:
+Watch this video for an introduction to functions. Functions are often use to solve partial programming problems, which can then be connected together to solve a larger problem.
 
-- [Functions](https://www.youtube.com/watch?v=n1glFqt3g38)
+![embed](https://www.youtube.com/watch?v=n1glFqt3g38)
 
-Now print and practice with chapters 10 and 11 of the practice book:
-
-- [Practice book 10 and 11]()
-
-Then, plan a test.
+After watching, collect chapters 10 and 11 of the practice book and do all exercises. In the exercises, you again focus on tracing, specifially with function calls and return values.

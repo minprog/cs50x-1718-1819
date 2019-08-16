@@ -1,3 +1,3 @@
 # Exercises: Queue
 	
-	https://cs50x.mprog.nl/support/queue
+<https://cs50x.mprog.nl/support/queue>
