@@ -1,1 +1,1 @@
-# Exercise: Nested Loops
+# Exercises: Nested Loops

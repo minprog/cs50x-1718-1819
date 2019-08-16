@@ -1,4 +1,4 @@
-# Exercise: Functions
+# Exercises: Functions
 
 Watch these videos for an introduction to the topic:
 

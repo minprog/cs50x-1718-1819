@@ -1,4 +1,4 @@
-# Exercise: Unscratch
+# Exercises: Unscratch
 
 ## Goal
 

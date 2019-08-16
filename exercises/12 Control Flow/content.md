@@ -1,4 +1,4 @@
-# Exercise: Control Flow
+# Exercises: Control Flow
 
 Watch these videos for an introduction to conditionals and loops. These are the two most important concepts you'll encounter, and both will be part of all programs that you will be writing (and reading!). 
 

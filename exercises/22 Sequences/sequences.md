@@ -1,1 +1,1 @@
-# Exercise: Sequences
+# Exercises: Sequences
