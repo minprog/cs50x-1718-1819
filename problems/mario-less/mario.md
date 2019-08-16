@@ -130,8 +130,7 @@ Odds are that you have tested your program only for size 5 until now. So this is
 Now that your basic algorithm is done, we need to take a look at the formal requirements for our program. As it happens, there are some extra elements that we didn't take into account yet.
 
 * To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramid pictured above happens to be `8`.)
-* If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
-    * Odds are you'll find inspiration for this in `positive.c` from lecture!
+* If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again. A perfect case for using a `do`-`while` loop!
 * Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
 * Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
 
