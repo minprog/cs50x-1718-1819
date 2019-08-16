@@ -1,12 +1,12 @@
 Parttime:
     Module 0:
         Introduction: /overviews/scratch
-        Watch lecture 0: /lectures/lecture-0
+        "Lecture: Scratch": /lectures/scratch
         Implement Scratch: /problems/scratch
     Module 1:
         Introduction: /overviews/c
         Hello:
-            Watch Lecture 1: /lectures/lecture-1
+            "Lecture: C": /lectures/c
             Create a GitHub account: https://github.com/join
             Implement Hello: https://lab.cs50.io/uva/cs50x/master/problems/hello/
         Water:
@@ -18,7 +18,7 @@ Parttime:
                 Greedy: /problems/greedy
                 Credit (very hard): /problems/credit
         Mario:
-            Watch Lecture 2a: /lectures/lecture-2a
+            "Lecture: Tools": /lectures/tools
             "Implement either of:":
                 Mario: /problems/mario-less
                 Mario (harder): /problems/mario-more
@@ -27,7 +27,7 @@ Parttime:
             Control flow: /exercises/control-flow
     Module 2:
         Introduction: /overviews/crypto
-        Watch Lecture 2b: /lectures/lecture-2b
+        "Lecture: Arrays": /lectures/arrays
         "Implement either of:":
             Initials: /problems/initials-less
             Initials (harder): /problems/initials-more
@@ -41,7 +41,7 @@ Parttime:
             Sequences: /exercises/sequences
     Module 3:
         Introduction: /overviews/fifteen
-        Watch Lecture 3: /lectures/lecture-3
+        "Lecture: Algorithms": /lectures/algorithms
         "Implement:":
             Fifteen: /problems/fifteen
         "Implement either  of:":
@@ -52,7 +52,7 @@ Parttime:
             Nested loops: /exercises/nested-loops
     Module 4:
         Introduction: /overviews/forensics
-        Watch Lecture 4: /lectures/lecture-4
+        "Lecture: Memory": /lectures/memory
         "Implement:":
             Whodunit: /problems/whodunit
         "Implement either  of:":

@@ -24,7 +24,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 #### Hello
 
-- Watch [Lecture 1](/lectures/lecture-1)
+- Watch the lecture on [C](/lectures/c)
 
 - Create an account on [GitHub](https://github.com/join){:.external}
 
@@ -48,7 +48,7 @@ Implement and submit either of: [50%]
 
 #### Mario
 
-- Watch [Lecture 2a](/lectures/lecture-2a)
+- Watch the lecture on [Tools](/lectures/tools)
 
 - Implement and submit either of: [50%]
 

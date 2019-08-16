@@ -21,7 +21,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## Reminders
 
-Per [Lecture 2a](/lectures/lecture-2a):
+Per the lecture on [Tools](/lectures/tools):
 
 * Use `help50` as needed.
 
@@ -41,7 +41,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 3](/lectures/lecture-3)
+1. Watch the lecture on [Algorithms](/lectures/algorithms)
 
 4. Implement [Fifteen](/problems/fifteen) [50%]
 

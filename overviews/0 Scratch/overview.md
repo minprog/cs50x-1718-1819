@@ -22,7 +22,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## What to Do
 
-1. Watch [Lecture 0](/lectures/lecture-0)
+1. Watch the lecture on [Scratch](/lectures/scratch)
 
 2. Write and submit your first program: [Scratch](/problems/scratch)
 {: start="0"}
