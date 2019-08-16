@@ -1,4 +1,4 @@
-# Control Flow
+# Exercise: Control Flow
 
 Watch these videos for an introduction to the topic:
 
