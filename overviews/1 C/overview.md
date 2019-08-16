@@ -28,7 +28,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 - Create an account on [GitHub](https://github.com/join){:.external}
 
-- Write your first program: [Hello](https://lab.cs50.io/cs50/labs/2019/x/hello/){:.external}
+- Write your first program: [Hello](https://lab.cs50.io/uva/cs50x/master/problems/hello/){:.external}
 
 #### Water
 
