@@ -1,4 +1,4 @@
-# Lecture 1<br><small>C</small>
+# Lecture: C
 
 ![embed](https://www.youtube.com/embed/3K4jWlpR4iY)
 

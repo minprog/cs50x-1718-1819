@@ -1,4 +1,4 @@
-# Lecture 2a<br><small>Tools</small>
+# Lecture: Tools
 
 ![embed](https://player.vimeo.com/video/351604172)
 

@@ -1,7 +1,7 @@
 Parttime:
     Module 0:
         Introduction: /overviews/scratch
-        "Lecture: Scratch": /lectures/scratch
+        "Lecture: Computational Thinking": /lectures/scratch
         Implement Scratch: /problems/scratch
     Module 1:
         Introduction: /overviews/c
