@@ -18,7 +18,7 @@ Implement a program that allows someone to play Evil Hangman against the compute
 
 ## Background
 
-It's hard to write computer programs to play games. When we as humans sit down to play a game, we can draw on past experience, adapt to our opponents' strategies, and learn from our mistakes. Computers, on the other hand, blindly follow a preset algorithm that (hopefully) causes it to act somewhat intelligently. Though computers have bested their human masters in some games, most notably checkers and chess, the programs that do so often draw on hundreds of years of human game experience and use extraordinarily complex algorithms and optimizations to out-calculate their opponents.
+It's hard to write computer programs to play games. When we as humans sit down to play a game, we can draw on past experience, adapt to our opponents' strategies, and learn from our mistakes. Computers, on the other hand, blindly follow a preset algorithm that (hopefully) causes them to act somewhat intelligently. Though computers have bested their human masters in some games, most notably chess and go, the programs that do so often draw on hundreds of years of human game experience and use extraordinarily complex algorithms and optimizations to out-calculate their opponents.
 
 While there are many viable strategies for building competitive computer game players, there is one approach that has been fairly neglected in modern research --- cheating. Why spend all the effort trying to teach a computer the nuances of strategy when you can simply write a program to play dirty and win handily all the time? In this assignment, you will build a mischievous program that bends the rules of Hangman to trounce its human opponent time and time again. In doing so, you'll cement your skills with abstract data types and iterators, and will hone your general programming savvy. Plus, you'll end up with a piece of software which will be highly entertaining. At least, from your perspective.
 
@@ -46,7 +46,7 @@ Now, suppose that your opponent guesses the letter 'E.' You now need to tell you
 - `E--E`, containing `ELSE`.
 - `---E`, containing `HOPE`.
 
-Since the letters you reveal have to correspond to some word in your word list, you can choose to reveal any one of the above five families. There are many ways to pick which family to reveal – perhaps you want to steer your opponent toward a smaller family with more obscure words, or toward a larger family in the hopes of keeping your options open. In this assignment, in the interests of simplicity, we'll adopt the latter approach and always choose the largest of the remaining word families. In this case, it means that you should pick the family `----`. This reduces your word list down to
+Since the letters you reveal have to correspond to some word in your word list, you can choose to reveal any one of the above five patterns. There are many ways to pick which pattern to reveal – perhaps you want to steer your opponent toward a smaller family with more obscure words, or toward a larger family in the hopes of keeping your options open. In this assignment, in the interests of simplicity, we'll adopt the latter approach and always choose the largest of the remaining word families. In this case, it means that you should pick the pattern `----`. This reduces your word list down to
 
 	ALLY  COOL  GOOD
 
@@ -57,11 +57,11 @@ Let's see a few more examples of this strategy. Given this three-word word list,
 - `-OO-`, containing COOL and GOOD.
 - `----`, containing ALLY.
 
-The first of these families is larger than the second, and so you choose it, revealing two O's in the word and reducing your list down to
+The first of these families is larger than the second, and so you choose the pattern `-OO-`, revealing two O's in the word and reducing your list down to
 
 	COOL GOOD
 
-But what happens if your opponent guesses a letter that doesn't appear anywhere in your word list? For example, what happens if your opponent now guesses 'T'? This isn't a problem. If you try splitting these words apart into word families, you'll find that there's only one family --- the family `----` in which T appears nowhere and which contains both COOL and GOOD. Since there is only one word family here, it's trivially the largest family, and by picking it you'd maintain the word list you already had.
+But what happens if your opponent guesses a letter that doesn't appear anywhere in your word list? For example, what happens if your opponent now guesses 'T'? This isn't a problem. If you try splitting these words apart into word families, you'll find that there's only one family --- the one with the pattern `----` in which T appears nowhere and which contains both COOL and GOOD. Since there is only one word family here, it's trivially the largest family, and by picking it you'd maintain the word list you already had.
 
 There are two possible outcomes of this game. First, your opponent might be smart enough to pare the word list down to one word and then guess what that word is. In this case, you should congratulate her --- that's an impressive feat considering the scheming you were up to! Second, and by far the most common case, your opponent will be completely stumped and will run out of guesses. When this happens, you can pick any word you'd like from your list and say it's the word that you had chosen all along. The beauty of this setup is that your opponent will have no way of knowing that you were dodging guesses the whole time --- it looks like you simply picked an unusual word and stuck with it the whole way.
 
@@ -93,7 +93,7 @@ Your assignment is to write a computer program which plays a game of Hangman usi
 
 	7. If the player correctly guesses the word, congratulate her.
 
-	   Ask if the user wants to play again and loop accordingly.
+	   Ask if the user wants to play again and loop or exit accordingly.
 
 Your program will consist of three major parts.
 
@@ -153,26 +153,27 @@ Now check if everything is in order. Is the number of words reasonable? Are each
 
 ### 3. The `Hangman` class
 
-As much as possible, we would like to gather all game "logic" into a single class called `Hangman`. We should be able to create a new game simply by instantiating the class (e.g. `game = Hangman(length=8, num_guesses=5)` for a new game using 8-letter words, where you lose after 5 failed guesses).
+As much as possible, we would like to gather all game "logic" into a single class called `Hangman`. We should be able to create a new game simply by instantiating the class. For example, `game = Hangman(length=8, num_guesses=5)` for a new game using 8-letter words, where you lose after 5 failed guesses.
 
 After instantiating a new game, the resulting object should be able to respond to the following actions:
 
 - Guessing a letter
-- Producing the current state of the "board"
+- Producing the current pattern
 - Producing the letters that have been guessed so far
-- Producing a word that is consistent with the current board (to display to the user once the game has been lost)
+- Producing a word that is consistent with the current pattern (to display to the user once the game has been lost)
 - Checking if the game is finished
 - Checking if the game has been won
 - Checking if the game has been lost
 
-To fully implement the game, the object should take care of tracking:
+To fully implement the game, the object should at least take care of tracking:
 
-- The current state of the "board"
 - Guessed letters up until now
 - The set of currently remaining words
 - The number of guesses remaining
 
-And purely for testing purposes, we would like to implement the `__str__` method, which allows us to call `print(game)` and look at a couple of stats. The resulting print could look something like the following:
+Note that you can track other things, like the total number of guesses, or the current pattern (even though this is implicit in the word list and the guessed letters).
+
+Purely for testing purposes, we would like to implement the `__str__` method, which allows us to call `print(game)` and look at a couple of stats. The resulting print could look something like the following:
 
 	letters guessed are "aemnid", 201 words remaining, game not won
 
@@ -185,8 +186,12 @@ In other words, your code should follow the following structure. It is up to you
 
         def guess(self, letter):
             # Update the game for a guess of letter. Return True if the letter
-            # is added to the board, return False if it is not.
+            # is added to the pattern, return False if it is not.
             pass
+
+        def pattern(self):
+            # Return a string of the current game pattern. Use underscores in 
+            # place of missing letters. Example: "_AN_MAN".
 
         def guessed_string(self):
             # Produce a string of all letters guessed so far, in the order they
@@ -194,7 +199,7 @@ In other words, your code should follow the following structure. It is up to you
             pass
 
         def consistent_word(self):
-            # Produce a word that is consistent with the current board.
+            # Produce a word that is consistent with the current pattern.
             pass
 
         def finished(self):
@@ -219,7 +224,7 @@ In other words, your code should follow the following structure. It is up to you
 
 It's up to you to think about how you want to partition words into word families. Think about what data structures would be best for tracking word families and the master word list. Would an associative array work? How about a stack or queue? Thinking through the design before you start coding will save you a lot of time and headache.
 
-Don't explicitly enumerate all potential new board states. If you are working with a word of length `n`, then there are `2**n` possible word families for each letter. However, most of these families don't actually appear in the English language. For example, no English words contain three consecutive U's, and no word matches the pattern `E-EE-EE--E`. Rather than explicitly generating every word family whenever the user enters a guess, see if you can generate word families only for words that actually appear in the word list. One way to do this would be to scan over the word list, storing each word in a table mapping word families to words in that family.
+Don't explicitly enumerate all potential new patterns. If you are working with a word of length `n`, then there are `2**n` possible patterns, and thus word families, for each letter. However, most of these families don't actually appear in the English language. For example, no English words contain three consecutive U's, and no word matches the pattern `E-EE-EE--E`. Rather than explicitly generating every pattern whenever the user enters a guess, see if you can generate patterns only for words that actually appear in the word list. One way to do this would be to scan over the word list, storing each word in a table mapping patterns to words in the corresponding family.
 
 > check50 tests:
 > 
@@ -228,9 +233,9 @@ Don't explicitly enumerate all potential new board states. If you are working wi
 > - Hangman does not start with length for which no words are available.
 > - Hangman does not start with non-positive guesses.
 > - Hangman starts with an unfinished game.
-> - Hangman starts with an empty board.
+> - Hangman starts with an empty (all underscores) pattern.
 > - Accepts guesses of e, a, n, u, z, l
-> - After one or two guesses, the board is still empty.
+> - After one or two guesses, the pattern is still empty.
 > - Reports winning for combination of e, a, n, u, z, l
 > - Reports finished game after combination of e, a, n, u, z, l
 > - Does not report winning for combination of a, e, o, i, u, b
@@ -247,10 +252,16 @@ Again, test your game interactively by running `python -i hangman.py` and enteri
 	game = Hangman(8, 6)
 	game.guess("e")
 	print(game)
-	game.guess("b")
+    game.guess("a")
 	print(game)
     print(game.finished())
     print(game.consistent_word())
+    print(game.pattern())
+    game.guess("o")
+    game.guess("i")
+    game.guess("u")
+    print(game.pattern())
+    print(game)
 
 ### 5. Implementing user interaction
 
@@ -269,13 +280,15 @@ Your user interface should at least
     1. Prompt the user for a guess. The guess should be a single letter that
        has not yet been guessed.
 
-    2. Show an updated game board, and the number of guesses remaining.
+    2. Show an updated pattern, and the number of guesses remaining.
 
     3. Show detailed game statistics, if she asked for those.
 
     4. If the game has finished, either congratulate the player (on a win), or
        tell the player the Hangman word (any word that is consistent with the
-       current board). Then ask the player if she wants to play again.
+       current pattern). Then ask the player if she wants to play again.
+
+Note that the program shown in the introduction at the top of the assignment is not a valid solution; it is just an illustration.
 
 ## Testing
 
@@ -287,7 +300,7 @@ The algorithm outlined in this handout is by no means optimal, and there are sev
 
 	DEAL   TEAR   MONK
 
-If the human guesses the letter 'E' here, the computer will notice that the word family `-E--` has two elements and the word family `----` has just one. Consequently, it will pick the family containing DEAL and TEAR, revealing an E and giving the human another chance to guess. However, since the human has only one guess left, a much better decision would be to pick the family `----` containing MONK, causing the human to lose the game.
+If the human guesses the letter 'E' here, the computer will notice that the word family for the pattern `-E--` has two elements and the word family for the pattern `----` has just one. Consequently, it will pick the family containing DEAL and TEAR, revealing an E and giving the human another chance to guess. However, since the human has only one guess left, a much better decision would be to pick the family `----` containing MONK, causing the human to lose the game.
 
 There are several other places in which the algorithm does not function ideally. For example, suppose that after the player guesses a letter, you find that there are two word families, the family `--E-` containing 10,000 words and the family `----` containing 9,000 words. Which family should the computer pick? If the computer picks the first family, it will end up with more words, but because it revealed a letter the user will have more chances to guess the words that are left. On the other hand, if the computer picks the family `----`, the computer will have fewer words left but the human will have fewer guesses as well. More generally, picking the largest word family is not necessarily the best way to cause the human to lose. Often, picking a smaller family will be better.
 
