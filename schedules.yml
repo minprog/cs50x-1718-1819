@@ -42,11 +42,11 @@ Parttime:
     Module 3:
         Introduction: /overviews/fifteen
         "Lecture: Algorithms": /lectures/algorithms
-        "Implement:":
-            Fifteen: /problems/fifteen
         "Implement either  of:":
             Find: /problems/find-less
             Find (harder): /problems/find-more
+        "Implement:":
+            Fifteen: /problems/fifteen
         Thursday exercises:
             Arrays: /exercises/arrays
             Nested loops: /exercises/nested-loops

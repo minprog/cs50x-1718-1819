@@ -43,13 +43,13 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 1. Watch the lecture on [Algorithms](/lectures/algorithms)
 
-4. Implement [Fifteen](/problems/fifteen) [50%]
-
 5. Implement either of: [50%]
 
     - [Find](/problems/find-less), for those less comfortable
 
     - [Find](/problems/find-more), for those more comfortable
+
+4. Implement [Fifteen](/problems/fifteen) [50%]
 
 5. Learn more about [Arrays](https://www.youtube.com/embed/K1yC1xshF40?autoplay=1&rel=0), practice with book chapters 7, 8 and 9, and take the test.
 
