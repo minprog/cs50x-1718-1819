@@ -4,7 +4,8 @@
 
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches you how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python and SQL plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. Designed for concentrators and non-concentrators alike, with or without prior programming experience.
 
-## Expectations
+
+## What to do
 
 You are expected to:
 
@@ -14,7 +15,7 @@ You are expected to:
 - take all tests, and
 - take a quiz.
 
-You are also expected to attend the lab sessions as required, and for each problem set, discuss your feedback with your tutor or mentor.
+You are also expected to attend the lab sessions as required, and for each module, discuss feedback with your mentor.
 
 
 ## Asking Questions
@@ -26,34 +27,43 @@ Do you have a question in writing? Maybe need an exception? Feel free to send an
 
 ## Grades
 
-All students must ordinarily submit a fully correct solution to all problems, take all tests and take the quiz in order to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
+All students must ordinarily submit a fully correct solution to all problems, pass all tests and pass the quiz in order to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 
-The final grade for this course is primarily determined by averaging the scores for the problems, per the below. The tests and quiz have to be passed, but have no weight in the final grade.
+The final grade for this course is determined by the points scored for each module. Each module can earn you 1--5 points. For each module, several aspects are listed upon which the grading is primarily based.
 
-#### Programming 1
+5. exceptional quality on all aspects, with methodical or creative ...
+4. solid quality on all aspects
+3. evident attention given to most aspects, with good resulting quality on some
+2. evident attention given to a few aspects
+1. minimal attention given to quality
+{: start="5" reversed=""}
 
-| Problem Set            | Language | Weight |  
-| ---------------------- | -------- | -----: |  
-| Scratch                | Scratch  |     0% |  
-| C                      | C        |    25% |  
-| Crypto                 | C        |    25% |  
-| Fifteen                | C        |    25% |  
-| Forensics              | C        |    25% |  
-| Mispellings (bonus)    | C        | 1 mark |
+Tackling the "hacker edition" of a module, if available, may earn you one extra point. Tests and quiz have to be passed, but have no weight in the final grade.
 
-#### Programming 2
 
-| Problem Set   | Language     | Weight |  
-| ------------- | ------------ | -----: |  
-| Python        | Python       |    25% |  
-| Adventure     | Python       |    50% |  
-| Homepage      | HTML         |     0% |  
-| Web           | HTML, Python |    25% |  
+## Deadlines
 
-Know that this course draws quite the spectrum of students, including "those
-less comfortable", "those more comfortable", and those somewhere in between.
-However, what ultimately matters in this course is not so much where you end up
-relative to your classmates but where you end up relative to yourself in Week 0.
+Each module is due by a pre-set deadline. A schedule of problem deadlines and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned.
+
+|          | deadline   |
+| ---------| ---------- |
+| Module 0 | Mon  2-Sep |
+| Module 1 | Fri  6-Sep |
+| Module 2 | Fri 13-Sep |
+| Module 3 | Fri 20-Sep |
+| Module 4 | Fri 27-Sep |
+| Module 5 | Fri  4-Oct |
+| Module 6 | Fri 18-Oct |
+| Module 7 | Fri 25-Oct |
+
+In case of scheduling problems or illness, deadlines may be extended by 1--3 days, in exchange for a penalty. This extension is automatic and you do not need to report immediately that you have used it, but it may be good to confer with your mentor about meeting later deadlines. Module 0 is not eligible for extension.
+
+| extension | penalty   |
+| --------- | --------- |
+| 1 day     | 1/2 point |
+| 3 days    | 1 point   |
+
+Later work is not ordinarily accepted, except in cases of medical emergency. In that case, always send an e-mail to the courses heads to inform them.
 
 
 ## Lectures
@@ -61,48 +71,22 @@ relative to your classmates but where you end up relative to yourself in Week 0.
 Lectures discuss theory that helps you solve your problems sets and prepare you for the final exam. Watch the lectures before or on your way to the lab sessions, in order to be able to spend your lab time programming and asking questions.
 
 
-## Tutoring sections
+## Sections
 
-For hispeed only, lectures are supplemented by weekly, 60-minute sections led by the teaching assistants. Sections provide you with opportunities to explore the course's material in a more intimate environment, with only your tutor and a group of classmates present, as well as to dive into hands-on activities.
+Lectures are supplemented by weekly, 60-minute sections led by the teaching assistants. Sections provide you with opportunities to reflect on your progress in the course, to discuss ways to tackle problems, and to get to know your fellow students and mentor better.
 
-
-## Walkthroughs
-
-Embedded into problem sets are "walkthroughs," videos via which the course's staff offer direction on where to begin and how to approach a challenge. You are expected to watch walkthroughs while starting with your problem sets.
+Aanwezigheid bij de werkgroepen is vereist.
 
 
 ## Office Hours
 
-Office hours are opportunities for assistance with problem sets alongside the
-course's teaching assistants. Office hours ordinarily take place on weekdays.
-
-
-## Problems
-
-Problems are the core of the course, enabling you to practice your problem solving skills. Problems are assessed primarily along axes of correctness, design, and style, with scores
-ordinarily determined by the formula **3 × correctness + 2 × design + 1 × style**. Correctness for each submission is expected to be perfect.
+Office hours are opportunities for assistance with problem sets alongside the course's teaching assistants. Office hours ordinarily take place on weekdays.
 
 
 ## Exam
 
 Both parts of the course have one 90-minute exam. It is "closed-book," meaning that you are allowed as attributes a pen or pencil, and nothing else. You can only take the exam if you have submitted all problems up until the date of the exam. Each student can have one exam resit per academic year.
 
-
-## Schedule
-
-For fulltime students, each module is due by a pre-set deadline. Late work is not ordinarily accepted, except in cases of medical emergency. A schedule of problem deadlines and quizzes, subject to change, appears below. All deadlines are at 23:59 on the date mentioned, or just a little bit later.
-
-<!--
-
-#### Programming 1
-
-|                        | Hispeed    | Semester 2 |  
-| ---------------------- | ---------- | ---------- |  
-| Module 0               | Mon 3-Sep  | Mon 4-Feb  |  
-| Module 1               | Fri 7-Sep  | Thu 7-Feb  |  
-| Module 2               | Fri 14-Sep | Thu 14-Feb |  
-| Module 3               | Fri 21-Sep | Thu 21-Feb |  
-| Module 4               | Fri 28-Sep | Fri 1-Mar  |  
 
 |                        | Hispeed    | Semester 2 |  
 | -------------          | ---------- | ----       |  
@@ -114,18 +98,6 @@ For fulltime students, each module is due by a pre-set deadline. Late work is no
 | Quiz option 1          | Mon 22-Oct | Mon 25-Mar |  
 | Quiz option 2 (retake) | Mon 14-Jan | Mon 27-May |  
 
-#### Programming 2
-
-Deadlines for semester 2, below, are not final yet.
-
-|                        | Hispeed    | Semester 2 |  
-| ---------------------- | ---------- | ---------- |  
-| Module 6               | Fri 5-Oct  | Tue  5-Mar |  
-| Module 9               | Tue 9-Oct  | Thu 14-Mar |  
-| Module 5               | Wed 17-Oct | Fri 15-Mar |  
-| Module 7               | Fri 19-Oct | Thu 21-Mar |  
-| Module 8               | Fri 26-Oct | Fri 29-Mar |  
-
 |                        | Hispeed    | Semester 2 |  
 | -------------          | ---------- | -          |  
 | Quiz                   | Mon 22-Oct | Mon 25-Mar |  
@@ -135,8 +107,6 @@ Deadlines for semester 2, below, are not final yet.
 | -------------          | ---------- | -          |  
 | Quiz option 1          | Mon 17-Dec | Mon 27-May |  
 | Quiz option 2 (retake) | Mon 14-Jan | Mon 17-Jun |  
-
--->
 
 
 ## Books
@@ -177,13 +147,13 @@ ISBN 9780321842688
 
 ## Re-taking the course
 
-Resubmission of problem sets is not possible after you complete the course successfully. Should you fail the course, the following rules apply when submitting any problem set for a second time:
+Resubmission of modules is not possible after you complete the course successfully. Should you fail the course due to failing grades for the problems, the following rules apply when submitting any module for the second time:
 
-- Resubmitting problem sets is not possible until the next semester.
+- Resubmitting modules is not possible until the next semester.
 
-- Re-submissions are required to be complete and bug-free, so as to not burden the staff with grading (i.e., correctness has to be perfect).
+- Only full modules can be resubmitted, and all included programs should be bug-free.
 
-- Only correctness will be re-graded. Scores for design and style will not be changed even when you improve said design and style of your program (even though we do encourage this!).
+- All modules that were insufficient in any aspect have to be resubmitted and will be re-graded. 
 
 - Any re-submissions must be done before retaking the exam.
 
