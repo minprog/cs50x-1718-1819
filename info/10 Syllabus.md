@@ -35,7 +35,7 @@ The final grade for this course is determined by the points scored for each modu
 4. solid quality on most aspects, including those from earlier modules
 3. good quality on some aspects, with evident attention to most other aspects
 2. evident attention given to a few aspects
-1. minimal attention given to quality as seen from the code
+1. minimal attention given to quality as evident from the code
 {: start="5" reversed=""}
 
 Based on the scheme above, the maximum score for this course is determined as 20 points (4 modules times 5 points). Additionally, tackling the "hacker edition" of a module, if available, may earn you one extra point. Tests and quiz have to be passed, but have no weight in the final grade.
