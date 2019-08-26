@@ -29,16 +29,16 @@ Do you have a question in writing? Maybe need an exception? Feel free to send an
 
 All students must ordinarily submit a fully correct solution to all problems, pass all tests and pass the quiz in order to be eligible for a satisfactory grade, unless granted an exception in writing by the course's heads.
 
-The final grade for this course is determined by the points scored for each module. Each module can earn you 1--5 points. For each module, several aspects are listed upon which the grading is primarily based.
+The final grade for this course is determined by the points scored for each module. Each module can earn you 1--5 points. In each module, you'll find several aspects listed upon which grading is primarily based (but not exclusively!). From those aspects, points are determined as follows:
 
-5. exceptional quality on all aspects, with methodical or creative ...
-4. solid quality on all aspects
-3. evident attention given to most aspects, with good resulting quality on some
+5. exceptional quality, taking into account all listed and many unlisted aspects
+4. solid quality on most aspects, including those from earlier modules
+3. good quality on some aspects, with evident attention to most other aspects
 2. evident attention given to a few aspects
-1. minimal attention given to quality
+1. minimal attention given to quality as seen from the code
 {: start="5" reversed=""}
 
-Tackling the "hacker edition" of a module, if available, may earn you one extra point. Tests and quiz have to be passed, but have no weight in the final grade.
+Based on the scheme above, the maximum score for this course is determined as 20 points (4 modules times 5 points). Additionally, tackling the "hacker edition" of a module, if available, may earn you one extra point. Tests and quiz have to be passed, but have no weight in the final grade.
 
 
 ## Deadlines
