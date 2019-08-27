@@ -18,8 +18,7 @@ Om de cursus tot een goed einde te brengen, verwachten we dat je:
 - alle werkgroepen bijwoont,
 - alle uren aanwezig bent in het lab,
 - alle opdrachten volledig uitgewerkt instuurt,
-- alle toetsjes maakt en haalt,
-- je feedback regelmatig doorspreekt met je mentor, en
+- alle toetsjes maakt en haalt, en
 - het tentamen maakt en haalt.
 
 
