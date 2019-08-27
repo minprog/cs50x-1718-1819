@@ -32,9 +32,9 @@ Heb je een schriftelijke vraag, bijvoorbeeld omdat je een uitzondering nodig heb
 
 ## Cijfers
 
-Alle studenten moeten minimaal een geheel correcte oplossing voor elk probleem inleveren, alle toetsjes halen en het tentamen halen om een voldoende te halen voor het vak, tenzij daarop een schriftelijke uitzondering is gegeven door de vakdocenten.
+Alle studenten moeten minimaal een geheel correcte oplossing voor elk opdracht inleveren, alle toetsjes halen en het tentamen halen om een voldoende te halen voor het vak, tenzij daarop een schriftelijke uitzondering is gegeven door de vakdocenten.
 
-Het eindcijfer voor deze cursus wordt bepaald door het aantal gescoorde punten voor elke module. De modules kunnen 1--5 punten opleveren. Voor elke module zijn diverse aspecten aangegeven op basis waarvan de punten voornamelijk (maar niet uitsluitend) worden bepaald. De schaal is als volgt:
+Het eindcijfer voor deze cursus wordt bepaald door het aantal gescoorde punten voor elke module. De modules kunnen 1--5 punten opleveren, en voor elke module zijn diverse aspecten aangegeven op basis waarvan de punten voornamelijk (maar niet uitsluitend) worden bepaald. De schaal is als volgt:
 
 5. uitzonderlijke kwaliteit op alle genoemde aspecten en vele niet-genoemde aspecten
 4. gedegen kwaliteit op vrijwel alle aspecten, inclusief aspecten van eerdere modules
