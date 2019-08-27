@@ -65,8 +65,8 @@ In het geval van planningsproblemen of ziekte is het mogelijk de deadline met 1 
 
 | uitstel | aftrek   |
 | --------- | --------- |
-| 1 dag     | 1/2 punt |
-| 3 dagen    | 1 punt   |
+| maximaal 1 dag     | 1/2 punt |
+| maximaal 3 dagen    | 1 punt   |
 
 Nog later ingeleverd werk kan normaliter niet geaccepteerd worden, behalve in gevallen van medische noodgevallen. In dat geval is het noodzakelijk om direct contact op te nemen met de docenten, maar in ieder geval vóór je doorgaat met werken aan de opdrachten.
 
