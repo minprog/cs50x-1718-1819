@@ -43,7 +43,7 @@ Het eindcijfer voor deze cursus wordt bepaald door het aantal gescoorde punten v
 1. minimale aandacht voor kwaliteit zoals zichtbaar in de code
 {: start="5" reversed=""}
 
-Op basis van bovenstaand schema is de maximumscore voor deze cursus 20 punten (4 modules x 5 punten), die wordt omgerekend naar een cijfer tussen 1 en 10, zoals gebruikelijk. Daarnaast kan het doen van een "hacker edition" van een opdracht, indien beschikbaar, je een extra punt voor een module opleveren. Toetsjes en het tentamen leveren geen punten op voor het eindcijfer, maar moeten wel gehaald worden.
+Op basis van bovenstaand schema is de maximumscore voor deze cursus 20 punten (4 modules x 5 punten), die wordt omgerekend naar een cijfer tussen 1 en 10, zoals gebruikelijk. Daarnaast kan het doen van een "hacker edition" van een opdracht, indien beschikbaar, een extra punt voor een module opleveren. Toetsjes en het tentamen leveren geen punten op voor het eindcijfer, maar moeten wel gehaald worden.
 
 
 ## Deadlines
@@ -61,7 +61,7 @@ Elke module moet op de vooraf bepaalde deadline ingeleverd zijn. Een voorlopig s
 | Module 6 | Fri 18-Oct |
 | Module 7 | Fri 25-Oct |
 
-In het geval van planningsproblemen of ziekte is het mogelijk de deadline met 1 tot 3 dagen op te schuiven, in ruil voor een bescheiden puntenaftrek. Dit gaat volledig automatisch bij later inleveren en hoeft dus in beginsel niet gemeld te worden. Toch is het verstandig om je mentor aan te spreken en te overleggen of advies te vragen over het halen van verdere deadlines. Voor module 0 is geen uitstel mogelijk.
+In het geval van planningsproblemen of ziekte is het mogelijk de deadline met 1 tot 3 dagen op te schuiven, in ruil voor een bescheiden puntenaftrek. Dit gaat volledig automatisch bij later inleveren en hoeft dus in beginsel niet gemeld te worden. Toch is het verstandig om je mentor aan te spreken om te overleggen of advies te vragen over het halen van verdere deadlines. Voor module 0 is geen uitstel mogelijk.
 
 | uitstel | aftrek   |
 | --------- | --------- |
@@ -189,4 +189,4 @@ Hieronder vind je een incomplete lijst van voorbeelden die een beeld schetsen va
 
 * Naar de oplossing voor een opdracht van iemand anders kijken, en vervolgens jouw oplossing daarop baseren.
 
-In alle gevallen volgen we de plagiaatregeling van de Universiteit van Amsterdam en die van de Bachelor Informatiekunde. Deze vind je [hier](http://uva.nl/plagiaat).
+In alle gevallen volgen we de [plagiaatregeling](http://uva.nl/plagiaat) van de Universiteit van Amsterdam en de richtlijnen voor de Bachelor Informatica/Minor Programmeren.
