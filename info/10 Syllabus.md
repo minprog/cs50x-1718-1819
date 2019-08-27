@@ -43,7 +43,7 @@ Het eindcijfer voor deze cursus wordt bepaald door het aantal gescoorde punten v
 1. minimale aandacht voor kwaliteit zoals zichtbaar in de code
 {: start="5" reversed=""}
 
-Op basis van bovenstaand schema is de maximumscore voor deze cursus 20 punten (4 modules x 5 punten). Daarnaast kan het doen van een "hacker edition" van een opdracht, indien beschikbaar, je een extra punt voor een module opleveren. Toetsjes en het tentamen leveren geen punten op voor het eindcijfer, maar moeten wel gehaald worden.
+Op basis van bovenstaand schema is de maximumscore voor deze cursus 20 punten (4 modules x 5 punten), die wordt omgerekend naar een cijfer tussen 1 en 10, zoals gebruikelijk. Daarnaast kan het doen van een "hacker edition" van een opdracht, indien beschikbaar, je een extra punt voor een module opleveren. Toetsjes en het tentamen leveren geen punten op voor het eindcijfer, maar moeten wel gehaald worden.
 
 
 ## Deadlines
