@@ -51,7 +51,6 @@ The specification, together with the examples of running the program, provides y
 ----
 int minutes = get_int();
 ----
-+
 
 == Usage
 

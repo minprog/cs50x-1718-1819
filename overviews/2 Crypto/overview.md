@@ -24,7 +24,7 @@ Do keep in mind the course's policy on [academic honesty](/syllabus#academic_hon
 
 ## What to Do
 
-- Watch [Lecture 2b](/lectures/lecture-2b)
+- Watch the lecture on [Arrays](/lectures/arrays)
 
 - Implement either of:
 

@@ -1,4 +1,4 @@
-# Lecture 2b<br><small>Arrays</small>
+# Lecture: Arrays
 
 ![embed](https://player.vimeo.com/video/351604518)
 

@@ -45,11 +45,11 @@ $ ./mario
 #
 ~~~~
 
-Don't forget to print a single newline (\n) after that hash mark!
+Don't forget to print a newline (`\n`) after that hash mark, like you did in "Hello world"!
 
 ### 2. Line
 
-Now that you have set up the basic framework, let's introduce a tiny bit of complexity. We now want our program to print a **line of five hash marks** instead of just one. And we would like to do it efficiently using a loop. Have a look at `cough1.c` from lecture!
+Now that you have set up the basic framework for your program, let's introduce a tiny bit of complexity. We now want our program to print a **line of five hash marks** instead of just one. And we would like to do it efficiently using a loop. Have a look at the `for`-loop example from lecture!
 
 The output should look like this:
 
@@ -58,7 +58,7 @@ $ ./mario
 #####
 ~~~~
 
-Don't forget to print a single newline (`\n`) at the end of that line!
+Don't forget to print a single newline (`\n`) at the end of that line, but not after each hash mark!
 
 ### 3. Parametrize
 
@@ -67,6 +67,8 @@ So currently you should have a program that can print one line of hash marks. No
 	int size = 5;
 
 Now use this variable `size` in your loop to determine the number of times that the loop should run, and hence, how many hash marks should be printed. The output of your program should be the same as before, *unless* you change the value of the variable. In that case your loop should automatically print more (or less) hash marks.
+
+Note that while you could print exactly 5 hash marks *without* using a `for`-loop, now that you use a variable to determine the number of marks, you are required to use such a loop. You wouldn't be able to solve this problem without one!
 
 ### 4. Block
 
@@ -81,9 +83,9 @@ $ ./mario
 #####
 ~~~~
 
-The height and the width of the block are equal: both have size 5. How do you get from your previous program to this block? Observe that the block is nothing more than 5 times the same line! So, you would need to repeat the whole program 5 times, right? Think how you might use another loop to accomplish this. Exactly which part of the program needs to be repeated?
+The height and the width of the block are equal: both have size 5. How do you get from your previous program to this block? Well, observe that this block is nothing more than 5 times the same line! So, you would need to repeat the whole program 5 times, right? Think how you might use another loop to accomplish this. Exactly which part of the program needs to be repeated?
 
-Ideally, you now have two loops: one which loops for every line that should be printed, and one that loops over the number of hash marks that is printed on each line.
+Ideally, you now have two loops: one which loops for every line that should be printed, and one that loops over the number of hash marks that is printed on each line. And not only that, the loops are **nested:** one is *inside* the other.
 
 ### 5. Left pyramid
 
@@ -102,7 +104,9 @@ So you will need to change the loop that determines the number of hashes that ar
 
 ### 6. Right pyramid
 
-Now how do we get that pyramid to right-align? It's a simply trick: the program needs to print **spaces** at the start of each line. But like the number of hashes, the number or spaces also varies.
+Now how do we get that pyramid to right-align? It's a simple trick: the program needs to print **spaces** at the start of each line. If you print a space, it takes up... space, but you can't see it. Perfect!
+
+Like the number of hashes, the number or spaces also varies per line of output:
 
 ~~~~
 $ ./mario
@@ -113,21 +117,20 @@ $ ./mario
 ######
 ~~~~
 
-To get started, you might duplicate the loop that prints spaces for a single line. Change the hash mark to a space (or a period so you can better count the characters on your screen). And think about how the number of spaces on each line is related to the line number that is being printed.
+To get started, you might duplicate the loop that prints hash marks on a single line. In the duplicated loop, change the `#` into a space. And think about how the number of spaces on each line is related to the line number that is being printed. It's different from the number of hash marks.
 
 
 ### 7. Testing
 
-Odds are that you have tested your program only for size 5. Now is the time to check if you can still change the variable `size` to another number and that your program still works correctly. Compare to the examples atop this document! If stuck on a bug, be sure to ask for help.
+Odds are that you have tested your program only for size 5 until now. So this is the time to check if you can again change the variable `size` to another number and that your program still works correctly. Compare to the examples atop this document! If stuck on a bug, be sure to ask for help.
 
 
 ## Specification
 
-Now that your basic algorithm is done, we need to take a look at the formal requirements for our program. As it happens, there are some extra elements that we didn't take into account yet!
+Now that your basic algorithm is done, we need to take a look at the formal requirements for our program. As it happens, there are some extra elements that we didn't take into account yet.
 
 * To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramid pictured above happens to be `8`.)
-* If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
-    * Odds are you'll find inspiration for this in `positive.c` from lecture!
+* If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again. A perfect case for using a `do`-`while` loop!
 * Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
 * Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
 
@@ -176,7 +179,7 @@ Height: 4
 
 ## Testing
 
-Before submitting, we expect you to take care that your program is as well-polished as possible. For some final feedback, use the tools `check50` and `style50` per the examples below!
+Before submitting, we expect you to take care that your program is as well-polished as possible. For some final feedback, use the `check50` and `style50` tools per the examples below!
 
 
 ### Correctness
@@ -197,10 +200,10 @@ style50 mario.c
 
 1. When ready to submit, log into [CS50 IDE](https://ide.cs50.io/).
 
-2. Toward CS50 IDE's top-left corner, within its "file browser" (not within a terminal window), control-click or right-click your `mario.c` file (that's within your `pset1` directory) and then select **Download**. You should find that your browser has downloaded `mario.c`.
+2. Toward CS50 IDE's top-left corner, within its "file browser", control-click or right-click your `mario.c` file (that's within your `pset1` directory) and then select **Download**. You should find that your browser has downloaded you file `mario.c`.
 
 3. Make sure you are signed in to this website!
 
-4. In the form below the problem, add the file that you downloaded.
+4. In the form below, browse for the file that you downloaded.
 
 5. Press "Submit for grading". Presto!

@@ -1,4 +1,4 @@
-# Lecture 4<br><small>Memory</small>
+# Lecture: Memory
 
 ![embed](https://www.youtube.com/embed/cC9I3XxkZXw)
 

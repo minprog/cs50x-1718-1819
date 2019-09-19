@@ -34,7 +34,7 @@ Log into <https://cs50.io/> and execute the below in a terminal window.
 
 ## What to Do
 
-1. Watch [Lecture 4](/lectures/lecture-4)
+1. Watch the lecture on [Memory](/lectures/memory)
 
 2. Figure out [whodunit](/problems/whodunit)
 

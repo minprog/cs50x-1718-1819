@@ -39,7 +39,8 @@ If we turn this idea of greedy change into an algorithm, we notice that we need 
 
 In fact, the idea of the algorithm is to *convert* the amount of change required into the count of coins that are minimally needed to make that amount. In pseudocode, our algorithm may look like this the following. Note the presence of both `count` and `amount` in that code:
 
-	set amount in cents
+	set amount to 32 cents
+	set count to 0
 	while (quarters can be used)
 		increase count
 		decrease amount by one quarter
@@ -55,8 +56,8 @@ Study this pseudocode; discuss the details. Do you understand every part? Do you
 
 To get started implementing this algorithm, create a file called `greedy.c` and insert a standard `main` function. Within that `main` function, insert the following two lines, which create the variables that are needed for the algorithm:
 
-	int count = 0;
 	int amount = 32;
+	int count = 0;
 
 After those two lines, you might implement the algorithm using the pseudocode above. Ask for help!
 
@@ -66,6 +67,8 @@ When (almost) finished implementing the algorithm, it's time to test your progra
 
 
 ## Specification
+
+Your program currently has `amount` hardcoded into the program. You'll need to change it to allow a user to input an amount from the keyboard each time the program is run.
 
 * Use `get_float` from the CS50 Library to get the user's input and `printf` from the Standard I/O library to output your answer. Assume that the only coins available are quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢).
 

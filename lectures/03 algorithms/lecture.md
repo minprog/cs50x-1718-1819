@@ -1,4 +1,4 @@
-# Lecture 3<br><small>Algorithms</small>
+# Lecture: Algorithms
 
 ![embed](https://www.youtube.com/embed/U9o49qwa6hk)
 

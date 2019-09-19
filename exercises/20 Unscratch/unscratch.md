@@ -1,4 +1,4 @@
-# Unscratch
+# Exercises: Unscratch
 
 ## Goal
 
@@ -53,6 +53,3 @@ You can verify your answer here: [https://scratch.mit.edu/projects/183260929/](h
 
 ###Step 2:
 Create a new file called `counter3.c` in the directory `unscratch` and recreate the scratch program above in C.
-
-
-

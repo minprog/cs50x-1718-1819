@@ -1,4 +1,4 @@
-# Lecture 0<br><small>Computational thinking, Scratch</small>
+# Lecture: Computational thinking
 
 ![embed](https://www.youtube.com/embed/5azaK2cBKGw)
 
