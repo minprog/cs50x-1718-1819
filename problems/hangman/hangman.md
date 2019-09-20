@@ -245,9 +245,9 @@ Again, test your game interactively by running `python -i` and then `import hang
     print(game.pattern())
     print(game)
 
-## Exceptions
+#### Exceptions
 
-What happens when you type `game = Hangman(-5, 6)`? Maybe your code tries to create a hangman game with a word of length -5. Of course, that should not work.
+What happens when you type `game = Hangman(-5, 6)`? Try it yourself! Maybe your code tries to create a hangman game with a word of length -5. Of course, that should not work.
 
 Because the `Hangman` object does not interface directly with the user, it makes no sense for it to reprompt the user for new input. However, we still need to be able to signal when something is wrong.
 
@@ -256,9 +256,45 @@ When you write code that does not interface with a person, but instead with *oth
 You can see a simple exception for yourself. Try running the following Python code.
 
     my_list = [1, 2, 3, 4]
-    print(my_list[5])
+    my_value = my_list[5]
 
-There is no element in the list at index 5, so something goes wrong. You should get a message about an `IndexError`, which is a kind of exception.
+There is no element in the list at index 5, so something goes wrong. You should get a message about an `IndexError`, which is a kind of exception. It makes no sense for the list object to reprompt what index was meant. It also makes no sense to continue computation, because we don't know what the value of `my_value` should be. So the problem halts.
+
+This is different from the program just crashing, though: the point of exceptions is that you can deal with them. For example, you could write the following code.
+
+    my_list = [1, 2, 3, 4]
+    
+    try:
+        my_value = my_list[5]
+    except IndexError as ex:
+        print("I got an error:", ex)
+        print("I am going to continue, but set my_value to 0.")
+        my_value = 0
+
+This construction is called a *try-except* block. All the code directly after `try:` is indented, just like with `if`. This block of code executes as normal until it gives an exception. At that point, execution stops, and the code in the except block starts to execute. You can even catch an exception in a variable (above, it gets put into the variable `ex`) so you can report information about it. This code will execute normally, report the error message, and afterwards the variable `my_value` will be set to `0`.
+
+In order for your Hangman class to be easy to work with, it should deal with faulty input using exceptions. This means that running `game = Hangman(-5, 6)` should cause some kind of exception. How can you do that?
+
+In Python, we `raise` exceptions. The easiest way to do this is to just use a basic `Exception`. For example, you could start your Hangman class as follows.
+
+    class Hangman:
+        def __init__(self, length, num_guesses):
+            if length < 1:
+                raise Exception("Hangman word needs to have positive length.")
+            if num_guesses < 1:
+                raise Exception("You need at least one guess to play Hangman.")
+            # ... and here follows other code.
+
+Then, if your code creates a Hangman object *within* a try-block, it can catch these exceptions. For example, you could try the following:
+
+    game = None
+    while game == None:
+        try:
+            length = get_int("How long should the word be?)
+            num_guesses = get_int("How many wrong guesses until you lose?")
+            game = Hangman(length, num_guesses)
+        except Exception as ex:
+            print("Could not create a Hangman object with those parameters.")
 
 ### 5. Implementing user interaction
 
