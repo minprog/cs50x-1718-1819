@@ -1,7 +1,5 @@
 # Hangman
 
-> NOTE: check if lecture 6 from 2017 (classes for structs) is better than 2018 (dictionaries for structs)
-
 ## tl;dr
 
 Implement a program that allows someone to play Evil Hangman against the computer.
@@ -113,6 +111,12 @@ Finally, here are some general tips and tricks that might be useful:
 
 ## Steps
 
+### 0. Before you get started
+
+In this assignment, we do not just want your entire program to work correctly, but the classes you write should also work individually. In particular, we want to test them using check50. This means that when your python file `hangman.py` is *imported*, it should not do anything except import the classes.
+
+That means that code that interfaces with the user should be wrapped in `if __name__ == '__main__':`, so it is only run when the file is used directly.
+
 ### 1. The `Lexicon` class
 
 The first thing to implement is a class called `Lexicon`, which has the responsibility of managing the full word list and extracting words of a given length. It can be loaded once and asked for words whenever a new game is started.
@@ -129,18 +133,13 @@ The Lexicon class should implement two methods: the `__init__(self)` method for 
             # Try doing this with a generator expression to filter the words.
             pass
 
-> check50 tests:
-> 
-> - Lexicon loads dictionary without error
-> - Lexicon responds correctly to get_words(4) (correct number of words in response)
-
 ### 2. Testing the `Lexicon`
 
-Below the `Lexicon` class, you might insert a little bit of code that tests if the class is working correctly. For example, try to get words of length 8 and see if the result seems reasonable. Start Python *interactively* using:
+Before we move on to the next step, we want to test if the class is working correctly. For example, try to get words of length 8 and see if the result seems reasonable. Start Python *interactively* using:
 
-	python -i hangman.py
+	python -i
 
-which will load your hangman program, and then at the Python prompt you can enter test commands:
+Now, in the prompt that appears, run `import hangman`, which will *import* your python program. If you followed step 0 correctly, it should just load the Lexicon class and do nothing else. Then you could try some of the following.
 
 	lex = Lexicon()
 	words = lex.get_words(8)
@@ -149,7 +148,7 @@ which will load your hangman program, and then at the Python prompt you can ente
 	print(words.pop())
 	print(words.pop())
 
-Now check if everything is in order. Is the number of words reasonable? Are each of the three random words actually 8 letters long? To add to this, in the description above, you can find some oddities that you might verify, too (e.g. how many words are there of length 27?).
+Check if everything is in order. Is the number of words reasonable? Are each of the three random words actually 8 letters long? To add to this, in the description above, you can find some oddities that you might verify, too (e.g. how many words are there of length 27?).
 
 ### 3. The `Hangman` class
 
@@ -226,28 +225,11 @@ It's up to you to think about how you want to partition words into word families
 
 Don't explicitly enumerate all potential new patterns. If you are working with a word of length `n`, then there are `2**n` possible patterns, and thus word families, for each letter. However, most of these families don't actually appear in the English language. For example, no English words contain three consecutive U's, and no word matches the pattern `E-EE-EE--E`. Rather than explicitly generating every pattern whenever the user enters a guess, see if you can generate patterns only for words that actually appear in the word list. One way to do this would be to scan over the word list, storing each word in a table mapping patterns to words in the corresponding family.
 
-> check50 tests:
-> 
-> - Hangman game starts without error for word length 4 with 5 guesses.
-> - Hangman game does not start with non-positive length.
-> - Hangman does not start with length for which no words are available.
-> - Hangman does not start with non-positive guesses.
-> - Hangman starts with an unfinished game.
-> - Hangman starts with an empty (all underscores) pattern.
-> - Accepts guesses of e, a, n, u, z, l
-> - After one or two guesses, the pattern is still empty.
-> - Reports winning for combination of e, a, n, u, z, l
-> - Reports finished game after combination of e, a, n, u, z, l
-> - Does not report winning for combination of a, e, o, i, u, b
-> - Reports finished game after combination of a, e, o, i, u, b
-> - Hangman reports a consistent word that is indeed consistent after a failed
->   game.
-
 ### 4. Testing the `Hangman` game
 
 Let's test our game logic. We should be able to start a new game, and repeatedly guess letters. This is a perfect opportunity to use the `__str__` method, which gives us basics stats about the game --- which we use to verify its state.
 
-Again, test your game interactively by running `python -i hangman.py` and entering the following commands, or a variation thereof:
+Again, test your game interactively by running `python -i` and then `import hangman`, and entering the following commands, or a variation thereof:
 
 	game = Hangman(8, 6)
 	game.guess("e")
@@ -262,6 +244,57 @@ Again, test your game interactively by running `python -i hangman.py` and enteri
     game.guess("u")
     print(game.pattern())
     print(game)
+
+#### Exceptions
+
+What happens when you type `game = Hangman(-5, 6)`? Try it yourself! Maybe your code tries to create a hangman game with a word of length -5. Of course, that should not work.
+
+Because the `Hangman` object does not interface directly with the user, it makes no sense for it to reprompt the user for new input. However, we still need to be able to signal when something is wrong.
+
+When you write code that does not interface with a person, but instead with *other code*, you should still be able to deal with faulty input. To do so, Python (and many other languages) uses *exceptions*. Exceptions are like a warning signal: "Something went wrong! I'm stopping here!"
+
+You can see a simple exception for yourself. Try running the following Python code.
+
+    my_list = [1, 2, 3, 4]
+    my_value = my_list[5]
+
+There is no element in the list at index 5, so something goes wrong. You should get a message about an `IndexError`, which is a kind of exception. It makes no sense for the list object to reprompt what index was meant. It also makes no sense to continue computation, because we don't know what the value of `my_value` should be. So the problem halts.
+
+This is different from the program just crashing, though: the point of exceptions is that you can deal with them. For example, you could write the following code.
+
+    my_list = [1, 2, 3, 4]
+    
+    try:
+        my_value = my_list[5]
+    except IndexError as ex:
+        print("I got an error:", ex)
+        print("I am going to continue, but set my_value to 0.")
+        my_value = 0
+
+This construction is called a *try-except* block. All the code directly after `try:` is indented, just like with `if`. This block of code executes as normal until it gives an exception. At that point, execution stops, and the code in the except block starts to execute. You can even catch an exception in a variable (above, it gets put into the variable `ex`) so you can report information about it. This code will execute normally, report the error message, and afterwards the variable `my_value` will be set to `0`.
+
+In order for your Hangman class to be easy to work with, it should deal with faulty input using exceptions. This means that running `game = Hangman(-5, 6)` should cause some kind of exception. How can you do that?
+
+In Python, we `raise` exceptions. The easiest way to do this is to just use a basic `Exception`. For example, you could start your Hangman class as follows.
+
+    class Hangman:
+        def __init__(self, length, num_guesses):
+            if length < 1:
+                raise Exception("Hangman word needs to have positive length.")
+            if num_guesses < 1:
+                raise Exception("You need at least one guess to play Hangman.")
+            # ... and here follows other code.
+
+Then, if your code creates a Hangman object *within* a try-block, it can catch these exceptions. For example, you could try the following:
+
+    game = None
+    while game == None:
+        try:
+            length = get_int("How long should the word be?)
+            num_guesses = get_int("How many wrong guesses until you lose?")
+            game = Hangman(length, num_guesses)
+        except Exception as ex:
+            print("Could not create a Hangman object with those parameters.")
 
 ### 5. Implementing user interaction
 
